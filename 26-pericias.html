@@ -1,0 +1,1449 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tabela de Perícias — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html" class="atual">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Tabela de Perícias</h1><div class="meta">versão 2 · atualizado em 2026-09-11 · Tabelas de referência</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Lista fechada.</strong> O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha. Extraída verbete a verbete do <strong>GURPS Módulo Básico</strong>, do <strong>GURPS Magia</strong> e do <strong>GURPS Grimório</strong>, mais as quatro perícias da casa criadas por decisão do Árbitro (<code>25</code>, decisão 4).
+<strong>Versão 2, de 10/09/2026.</strong> Vinte e nove perícias de livro que a versão 1 tinha deixado de fora entraram; <strong>Caligrafia</strong> passou de mental para <strong>Física/Média</strong>, como está no livro; <strong>Boemia</strong> saiu da nota das mentais, porque é física; e as duas perícias da casa cujo nome já estava ocupado por mágica foram renomeadas (§4).
+<strong>Como se lê uma linha de ficha está no <code>24</code>.</strong> Toda perícia entra na ficha com sete campos: nome · tipo/dificuldade · relativo ao atributo · pontos · NH comprado · bônus com a fonte · NH efetivo.</p>
+</blockquote>
+<h1>1. Custo em pontos</h1>
+<p>O custo depende de <strong>duas coisas só</strong>: quanto acima do atributo você quer chegar, e a dificuldade da perícia.</p>
+<h2>Físicas — baseadas em DX (algumas em ST ou HT)</h2>
+<p><strong>Saem de HT, não de DX:</strong> Boemia (Média), Canto (Fácil), Corrida (Difícil). <strong>Sai de ST:</strong> nenhuma no cânone da Garganta. A tabela abaixo é a mesma; só muda o atributo de onde se conta.</p>
+<table>
+<thead>
+<tr>
+<th>Nível final</th>
+<th>Fácil</th>
+<th>Média</th>
+<th>Difícil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DX−3</td>
+<td>—</td>
+<td>—</td>
+<td>½</td>
+</tr>
+<tr>
+<td>DX−2</td>
+<td>—</td>
+<td>½</td>
+<td>1</td>
+</tr>
+<tr>
+<td>DX−1</td>
+<td>½</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>DX+0</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>DX+1</td>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>DX+2</td>
+<td>4</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>DX+3</td>
+<td>8</td>
+<td>16</td>
+<td>24</td>
+</tr>
+<tr>
+<td>DX+4</td>
+<td>16</td>
+<td>24</td>
+<td>32</td>
+</tr>
+<tr>
+<td>DX+5</td>
+<td>24</td>
+<td>32</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Não existe perícia física Muito Difícil.</strong> Acima de +5, cada nível custa <strong>8 pontos</strong>.</p>
+<h2>Mentais — baseadas em IQ (duas saem de HT)</h2>
+<p><strong>Saem de HT, não de IQ:</strong> Sex-Appeal (Média) e Controle da Respiração (Muito Difícil). <strong>Boemia não está aqui</strong> — é Física/Média, também de HT, e vive na tabela física. Erro corrigido em 10/09/2026: a versão anterior listava Boemia como mental.</p>
+<table>
+<thead>
+<tr>
+<th>Nível final</th>
+<th>Fácil</th>
+<th>Média</th>
+<th>Difícil</th>
+<th>Muito Difícil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IQ−4</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>½</td>
+</tr>
+<tr>
+<td>IQ−3</td>
+<td>—</td>
+<td>—</td>
+<td>½</td>
+<td>1</td>
+</tr>
+<tr>
+<td>IQ−2</td>
+<td>—</td>
+<td>½</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>IQ−1</td>
+<td>½</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>IQ+0</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>IQ+1</td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+<td>12</td>
+</tr>
+<tr>
+<td>IQ+2</td>
+<td>4</td>
+<td>6</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>IQ+3</td>
+<td>6</td>
+<td>8</td>
+<td>10</td>
+<td>20</td>
+</tr>
+<tr>
+<td>IQ+4</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>24</td>
+</tr>
+<tr>
+<td>IQ+5</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+<td>28</td>
+</tr>
+</tbody>
+</table>
+<p>Acima de +5: <strong>4 pontos</strong> por nível em Muito Difícil, <strong>2 pontos</strong> nas demais.</p>
+<p><strong>As duas curvas não são iguais.</strong> A física é barata no começo e trava depressa — o patamar chega entre DX+3 e DX+5. A mental sobe em ritmo parelho e não trava. É por isso que o hoplita compra a lança até DX+3 e para, e a escriba continua subindo.</p>
+<h1>2. Perícias físicas</h1>
+<table>
+<thead>
+<tr>
+<th>Perícia</th>
+<th>Dificuldade</th>
+<th>Livro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acrobacia</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Aparar Projéteis</td>
+<td>Difícil</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Arco</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Armas Arremessadas</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Armas de Haste</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Arremessador de Lança</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Arremesso</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Arremesso de Faca</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Arremesso de Lança</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Arremesso de Machado</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Arremesso de Mágica</td>
+<td>Fácil</td>
+<td>Magia · Grimório</td>
+</tr>
+<tr>
+<td>Bastão</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Besta</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Boemia</td>
+<td>Média (sai de <strong>HT</strong>)</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Boleadeiras</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Briga</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Broquel</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Caligrafia</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Canto</td>
+<td>Fácil (sai de <strong>HT</strong>)</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Caratê</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Cavalgar</strong> (por tipo de montaria)</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Chicote</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Corrida</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Dança</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Escalada</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Escudo</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Escultura</strong></td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Esgrima</strong></td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Espadas Curtas</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Espadas de Duas Mãos</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Espadas de Lâmina Larga</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Esqui</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Faca</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Fuga</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Funda</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Furtividade</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Jato Mágico</td>
+<td>Fácil</td>
+<td>Magia</td>
+</tr>
+<tr>
+<td>Judô</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Lança</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Lança de Justa</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Maça</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Machado de Duas Mãos/Maça</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Machado/Maça</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Mangual</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Marcenaria</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Natação</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Percepção do Corpo</td>
+<td>Difícil</td>
+<td>Magia</td>
+</tr>
+<tr>
+<td>Prestidigitação</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Punga</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Rapidez de Recarga</strong> (por tipo de arma)</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Rede</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Sacar Rápido</strong> (por tipo de arma)</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Salto</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Sopro Mágico</td>
+<td>Fácil</td>
+<td>Magia</td>
+</tr>
+<tr>
+<td><strong>Vela</strong></td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Vôo</td>
+<td>Média</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Zarabatana</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+</tbody>
+</table>
+<h1>3. Perícias mentais</h1>
+<table>
+<thead>
+<tr>
+<th>Perícia</th>
+<th>Dificuldade</th>
+<th>Livro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adestramento de Animais</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Administração</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Agronomia</strong></td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Alquimia</td>
+<td>Muito Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Antropologia</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Armadilhas</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Armeiro</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Arqueologia</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Arquitetura</strong></td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Arrombamento</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Arte Ilusionista</strong></td>
+<td>Difícil</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Artista</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Astronomia</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Atuação</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Botânica</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Camuflagem</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Captação</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Carpintaria</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Carregamento</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Carreiro</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Cartografia</strong></td>
+<td>Média</td>
+<td><strong>da casa</strong> (<code>25</code>)</td>
+</tr>
+<tr>
+<td>Cerâmica</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Cirurgia</strong></td>
+<td><strong>Muito Difícil</strong></td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Comércio</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Conhecimento do Terreno</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Construção de Naves</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Contabilidade</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Controle da Respiração</td>
+<td>Muito Difícil (sai de <strong>HT</strong>)</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Criminologia</strong></td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Criptologia</td>
+<td>Difícil</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Culinária</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Detecção de Mentiras</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Diagnose</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Diplomacia</strong></td>
+<td><strong>Difícil</strong></td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Disfarce</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Dissimulação</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Ecologia</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Economia</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Escrita</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Estratégia</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Falcoaria</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Falsificação</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Ferreiro</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Fisiologia</strong></td>
+<td>Muito Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Geologia</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Heráldica</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Hipnotismo</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>História</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Instrumento Musical</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Interrogatório</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Intimidação</strong></td>
+<td>Média</td>
+<td><strong>da casa</strong> (<code>25</code>)</td>
+</tr>
+<tr>
+<td><strong>Joalheiro</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Jogo</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Jurisprudência</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Lábia</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Leitura Labial</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Liderança</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Linguagem de Sinais</strong></td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Lingüística</td>
+<td>Muito Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Literatura</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Manha</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Marinhagem</strong></td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Matemática</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Medicina</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Mergulho</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Metalografia</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Metereologia</strong></td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Mímica/Pantomima</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Naturalista</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Navegação</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Ocultamento</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Ocultismo</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Pedagogia</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Pescaria</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Pesquisa</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Poesia</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Política</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Presságio</td>
+<td>Muito Difícil</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Primeiros Socorros</td>
+<td><strong>Fácil</strong></td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Prospecção</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Psicologia</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Química</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Rastreamento</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Rito Funerário</strong></td>
+<td>Difícil</td>
+<td><strong>da casa</strong> (<code>25</code>)</td>
+</tr>
+<tr>
+<td><strong>Selos e Sigilos</strong></td>
+<td>Média</td>
+<td><strong>da casa</strong> (<code>25</code>)</td>
+</tr>
+<tr>
+<td><strong>Serviço Secreto</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Sex-Appeal</td>
+<td>Média (sai de <strong>HT</strong>)</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Sobrevivência (tipo de área)</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Sombra</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Tática</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Tatuagem</td>
+<td>Média</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Taumatologia</td>
+<td>Muito Difícil</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Técnicas Judiciais</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Teologia</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Trabalhos em Couro</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Trato Social</td>
+<td>Fácil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Trovador</td>
+<td>Média</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Venefício</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td>Ventriloquismo</td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Veterinária</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+<tr>
+<td><strong>Zoologia</strong></td>
+<td>Difícil</td>
+<td>Básico</td>
+</tr>
+</tbody>
+</table>
+<h1>4. As quatro perícias da casa</h1>
+<p>Não existem em livro nenhum. Entram por <strong>decisão do Árbitro de 10/09/2026</strong> (<code>25</code>, decisão 4), com a dificuldade que faz as fichas já homologadas fecharem sem mexer em um ponto. <strong>São divergência declarada, não erro a corrigir.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Perícia</th>
+<th>Tipo/Dif.</th>
+<th>O que faz na mesa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cartografia</strong></td>
+<td>Mental/Média</td>
+<td>Levanta planta de andar, lê mapa alheio, detecta mapa falso. A economia da campanha já vende mapa — não há mercado de mapa sem a perícia que faz mapa</td>
+</tr>
+<tr>
+<td><strong>Intimidação</strong></td>
+<td>Mental/Média</td>
+<td>Força reação por ameaça crível. <strong>Disputa contra a Vontade do alvo</strong></td>
+</tr>
+<tr>
+<td><strong>Rito Funerário</strong></td>
+<td>Mental/Difícil</td>
+<td>Põe o morto-que-anda de volta no lugar. <strong>Não é magia e não exige Aptidão</strong> — é ofício litúrgico. Fengdu e Ámenti licenciam</td>
+</tr>
+<tr>
+<td><strong>Selos e Sigilos</strong></td>
+<td>Mental/Média</td>
+<td>Faz, lê e reconhece selo, sinete e talismã, <strong>inclusive falso</strong>. Não encanta: quem encanta é mago</td>
+</tr>
+</tbody>
+</table>
+<h2>Por que duas delas mudaram de nome em 10/09/2026</h2>
+<p>Duas se chamavam <strong>Exorcismo</strong> e <strong>Talismã</strong>. Os dois nomes já estavam <strong>ocupados por mágicas de livro</strong>, e nome repetido na mesa custa caro: um jogador diz "faço Exorcismo" e ninguém sabe se é o teste de perícia ou o feitiço de 10 de energia.</p>
+<table>
+<thead>
+<tr>
+<th>Nome antigo</th>
+<th>Colide com</th>
+<th>Nome novo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exorcismo</td>
+<td><strong>mágica Exorcismo</strong>, escola de Comunicação e Empatia (<em>GURPS Magia</em>) — Com/R-mágica, 10 energia, ← Passageiro da Alma ou Possessão</td>
+<td><strong>Rito Funerário</strong></td>
+</tr>
+<tr>
+<td>Talismã</td>
+<td><strong>encantamento Talismã</strong> (<em>GURPS Grimório</em>), que soma ao teste de resistência de quem o usa</td>
+<td><strong>Selos e Sigilos</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nenhuma ficha muda de conta.</strong> Mesma dificuldade, mesmos pontos, mesmo NH — só o nome na linha. Cartografia e Intimidação ficam como estavam: conferi os três livros e nenhum dos dois nomes existe neles.</p>
+<h1>5. Idiomas</h1>
+<p>A <strong>língua natal é grátis, no nível do seu IQ</strong>, e subir acima dela tem tabela própria e barata: <strong>IQ+1 custa 1, IQ+2 custa 2, IQ+3 custa 3.</strong></p>
+<p>Língua estrangeira é perícia mental normal. A dificuldade varia:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Dificuldade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jargão comercial, língua franca simples</td>
+<td>Fácil</td>
+</tr>
+<tr>
+<td><strong>A maioria das línguas</strong> — grego, nórdico antigo, egípcio, náuatle, chinês, hindu, iorubá</td>
+<td><strong>Média</strong></td>
+</tr>
+<tr>
+<td>Língua de estrutura estranha à fala humana</td>
+<td>Difícil</td>
+</tr>
+<tr>
+<td>Língua que a boca humana não produz</td>
+<td>Muito Difícil</td>
+</tr>
+</tbody>
+</table>
+<p><strong>O Falar do Limiar é Média, e é praticamente obrigatório</strong>: sem ele você não negocia fora da própria embaixada.</p>
+<p><strong>Facilidade para Línguas</strong> soma ao IQ <strong>só para língua</strong>, e a ficha escreve isso no cabeçalho do bloco: <code>IQ para língua = 15 (IQ 14 + Facilidade 1)</code>.</p>
+<h2>O que cada nível de língua significa</h2>
+<table>
+<thead>
+<tr>
+<th>NH</th>
+<th>O que você consegue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4 ou menos</td>
+<td>reconhece algumas palavras importantes</td>
+</tr>
+<tr>
+<td>5–6</td>
+<td>entende frases simples, ditas devagar</td>
+</tr>
+<tr>
+<td>7–8</td>
+<td>vocabulário para ler e conversar; sotaque marcante</td>
+</tr>
+<tr>
+<td>9–10</td>
+<td>domínio de falante nativo médio; leve sotaque</td>
+</tr>
+<tr>
+<td>11–12</td>
+<td>domínio de pessoa educada; leve sotaque</td>
+</tr>
+<tr>
+<td>13–14</td>
+<td>domínio completo, com expressões idiomáticas; <strong>sem sotaque</strong></td>
+</tr>
+<tr>
+<td>15+</td>
+<td>fluência total; pensa na língua</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quando duas pessoas se comunicam mal</strong>, role contra o <strong>menor NH mais ⅕ do maior</strong>, arredondando para baixo. Conversa apressada ou instrução complexa: de −2 a −8.</p>
+<p><strong>Alfabetização custa 0 pontos na Garganta</strong> — as sete cidades são cultura letrada, por decisão registrada (<code>23</code>). <strong>Analfabetismo existe como desvantagem de −10</strong> para quem quiser jogá-la.</p>
+<h1>6. Nomes que NÃO existem, e o que usar no lugar</h1>
+<p>Todos estiveram em uso no cânone e foram corrigidos em 10/09/2026.</p>
+<table>
+<thead>
+<tr>
+<th>Estava</th>
+<th>É</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adaga</td>
+<td><strong>Faca</strong></td>
+</tr>
+<tr>
+<td>Avaliação</td>
+<td><strong>Comércio</strong></td>
+</tr>
+<tr>
+<td>Bajulação</td>
+<td><strong>Lábia</strong></td>
+</tr>
+<tr>
+<td>Burocracia</td>
+<td><strong>Administração</strong></td>
+</tr>
+<tr>
+<td>Capa</td>
+<td><strong>não existe</strong> — a Esgrima já dá duas aparadas por rodada</td>
+</tr>
+<tr>
+<td>Conhecimento de Área</td>
+<td><strong>Conhecimento do Terreno</strong></td>
+</tr>
+<tr>
+<td>Direito Comparado · Direito (Thing)</td>
+<td><strong>Jurisprudência</strong></td>
+</tr>
+<tr>
+<td>Escrita Antiga</td>
+<td><strong>não existe</strong> — é a língua + Alfabetização</td>
+</tr>
+<tr>
+<td>Etiqueta</td>
+<td><strong>Trato Social</strong></td>
+</tr>
+<tr>
+<td>Herança Antiga</td>
+<td><strong>Arqueologia</strong></td>
+</tr>
+<tr>
+<td>Lança-Dardo (arremessador)</td>
+<td><strong>Arremessador de Lança</strong></td>
+</tr>
+<tr>
+<td>Luta Livre</td>
+<td><strong>Judô</strong></td>
+</tr>
+<tr>
+<td>Naturalismo</td>
+<td><strong>Naturalista</strong></td>
+</tr>
+<tr>
+<td>Observação</td>
+<td><strong>não existe</strong> — percepção é teste de IQ ou de Visão</td>
+</tr>
+<tr>
+<td>Ocultação</td>
+<td><strong>Ocultamento</strong></td>
+</tr>
+<tr>
+<td>Oratória</td>
+<td><strong>Trovador</strong> — o livro cita "Oratória" no meio de uma frase sobre Voz Melodiosa, mas <strong>não tem verbete para ela</strong>. A perícia de falar bem em público, com verbete, é Trovador</td>
+</tr>
+<tr>
+<td>Sedução</td>
+<td><strong>Atuação</strong> ou <strong>Sex-Appeal</strong></td>
+</tr>
+<tr>
+<td>Táticas</td>
+<td><strong>Tática</strong></td>
+</tr>
+<tr>
+<td>Teologia comparada</td>
+<td><strong>Teologia</strong></td>
+</tr>
+<tr>
+<td>Toxicologia</td>
+<td><strong>Venefício</strong></td>
+</tr>
+<tr>
+<td>Exorcismo <em>(como perícia)</em></td>
+<td><strong>Rito Funerário</strong> — Exorcismo continua existindo, mas <strong>como mágica</strong></td>
+</tr>
+<tr>
+<td>Talismã <em>(como perícia)</em></td>
+<td><strong>Selos e Sigilos</strong> — Talismã continua existindo, mas <strong>como encantamento do Grimório</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Percepção não é perícia.</strong> Quem quer ser bom nisso compra vantagem: <strong>Prontidão, 5 por nível</strong> (todos os sentidos) ou <strong>Visão Aguçada, 2 por nível</strong>. Em quase toda ficha, Visão Aguçada +2 por 4 pontos rende mais do que a perícia rendia.</p>
+<p><strong>Agarrar e imobilizar também não são perícia.</strong> São manobras de Combate de Perto, por Disputa de DX e de ST, com o Judô entrando como desempate.</p>
+<h1>7. Nível pré-definido — usar o que você não comprou</h1>
+<p>Quase toda perícia tem um nível em que você a usa sem treino nenhum.</p>
+<table>
+<thead>
+<tr>
+<th>Dificuldade</th>
+<th>Pré-definido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fácil</td>
+<td>atributo −4</td>
+</tr>
+<tr>
+<td>Média</td>
+<td>atributo −5</td>
+</tr>
+<tr>
+<td>Difícil</td>
+<td>atributo −6</td>
+</tr>
+<tr>
+<td>Muito Difícil</td>
+<td>em geral <strong>nenhum</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Há exceções, e algumas perícias se pré-definem <strong>umas nas outras</strong> — Espadas de Lâmina Larga é DX−5 <strong>ou</strong> Espadas Curtas −2, o que for melhor. <strong>Perícia sem pré-definido não se tenta</strong>: Caratê, Judô, Alquimia e a maioria das Muito Difíceis.</p>
+<h1>8. Pré-requisitos e pré-definidos cruzados</h1>
+<p><strong>Pré-requisito é obrigação:</strong> sem a perícia da esquerda, a da direita <strong>não se compra</strong>. Ficha que traga a de cima sem a de baixo volta para conserto.</p>
+<table>
+<thead>
+<tr>
+<th>Perícia</th>
+<th>Exige antes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caligrafia</td>
+<td>Alfabetização</td>
+</tr>
+<tr>
+<td>Contabilidade</td>
+<td>Alfabetização</td>
+</tr>
+<tr>
+<td>Carregamento</td>
+<td>Adestramento de Animais</td>
+</tr>
+<tr>
+<td>Lança de Justa</td>
+<td><strong>Cavalgar</strong></td>
+</tr>
+<tr>
+<td>Cirurgia</td>
+<td><strong>Medicina</strong></td>
+</tr>
+<tr>
+<td>Bioquímica</td>
+<td>Química com NH 12+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pré-definido cruzado é desconto, não obrigação.</strong> Você usa a perícia que não comprou pelo melhor dos caminhos abaixo. Não se paga por isso e não entra na conta da ficha.</p>
+<table>
+<thead>
+<tr>
+<th>Perícia</th>
+<th>Pré-definidos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caligrafia</td>
+<td>Artista−2 <strong>ou</strong> DX−5</td>
+</tr>
+<tr>
+<td>Cirurgia</td>
+<td>Veterinária−5, Medicina−5, Fisiologia−8</td>
+</tr>
+<tr>
+<td>Diagnose</td>
+<td>IQ−6, Primeiros Socorros−8, Veterinária−5, Medicina−4</td>
+</tr>
+<tr>
+<td>Escultura</td>
+<td>DX−5 <strong>ou</strong> IQ−5</td>
+</tr>
+<tr>
+<td>Espadas de Lâmina Larga</td>
+<td>DX−5 <strong>ou</strong> Espadas Curtas−2</td>
+</tr>
+<tr>
+<td>Lança de Justa</td>
+<td>Lança−3, para quem tenha Cavalgar 12+</td>
+</tr>
+<tr>
+<td>Medicina</td>
+<td>Veterinária−5</td>
+</tr>
+<tr>
+<td>Presságio</td>
+<td>Teologia−4 <strong>ou</strong> Ocultismo−3</td>
+</tr>
+<tr>
+<td>Primeiros Socorros</td>
+<td>Medicina, <strong>sem redutor</strong></td>
+</tr>
+<tr>
+<td>Venefício</td>
+<td>IQ−6, Química−5, Medicina−3, Culinária−3 ou Trato Social−3 na cultura certa</td>
+</tr>
+<tr>
+<td>Arte Ilusionista</td>
+<td>IQ−6 <strong>ou</strong> Artista−3</td>
+</tr>
+<tr>
+<td>Carregamento</td>
+<td>IQ−6 <strong>ou</strong> Adestramento de Animais−6</td>
+</tr>
+<tr>
+<td>Contabilidade</td>
+<td>IQ−10, Comércio−5 <strong>ou</strong> Matemática−5</td>
+</tr>
+</tbody>
+</table>
+<h1>9. O que existe em livro e <strong>não</strong> existe na Garganta</h1>
+<p>Não é lacuna: é recorte de mundo. Estas perícias têm verbete nos livros e <strong>estão fora</strong> porque exigem nível tecnológico que as sete cidades não têm.</p>
+<p>Armas de Fogo · Armas de Feixe · Armas de Pólvora · Artilharia · Astronavegação · Ciclismo · Demolição · Demolição Subaquática · Eletrônica · Escudo de Força · Espada de Luz · Física Nuclear · Fotografia · Genética · Gravidade Zero · Motociclismo · Operação de Aparelhos Eletrônicos · Operação de Computadores · Pára-quedismo · Programação de Computadores · Sistemas de Segurança · Telegrafia · Traje de Combate · Traje Pressurizado</p>
+<p><strong>Se um andar fundo devolver algo dessa lista</strong>, o Árbitro abre Pendência e decide caso a caso — não se compra na criação.</p>
+<h1>10. Alcance desta tabela, dito na cara</h1>
+<ul>
+<li><strong>As perícias</strong> vêm dos três livros, verbete a verbete, <strong>completas</strong> para o nível tecnológico da campanha.</li>
+<li><strong>As mágicas</strong> (<code>27</code>) vêm da Relação das Mágicas do <strong>GURPS Magia</strong>: 413 mágicas, todas as escolas. <strong>As mágicas e encantamentos exclusivos do GURPS Grimório ainda não foram transcritos</strong> — o Grimório não traz tabela consolidada, e a transcrição verbete a verbete é trabalho próprio, registrado como Pendência aberta. Enquanto isso, mágica de Grimório <strong>entra só por autorização do Árbitro</strong>, uma a uma.</li>
+<li><strong>Talismã</strong>, do Grimório, é um desses encantamentos: existe, mas ainda não está tabelado. É por isso que a perícia da casa com esse nome foi renomeada em vez de disputar o nome.</li>
+</ul>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/26-pericias.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

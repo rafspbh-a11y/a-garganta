@@ -1,0 +1,289 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Dádiva de Zeus e o recorte de Clima — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html" class="atual">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>A Dádiva de Zeus e o recorte de Clima</h1><div class="meta">versão 1 · atualizado em 2026-09-11 · Decisões e retificações</div></div>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Duas Pendências decididas pelo Árbitro em 11/09/2026</strong>, as duas abertas pela ficha de Karthoz. <strong>Onde este documento divergir do <code>17</code>, do <code>23</code> §2.3 ou do <code>25</code> §1, vale este documento</strong> — as três páginas receberam remissão. As decisões foram tomadas com o <em>GURPS Magia</em> e o <em>GURPS Grimório</em> abertos, e cada número abaixo tem página de livro atrás dele.</p>
+</blockquote>
+<h1>1 · A Dádiva de Zeus — Noção do Perigo, e só ela</h1>
+<blockquote>
+<p><strong>DECISÃO: Zeus concede Noção do Perigo, 15 pontos.</strong> Uma Dádiva, não duas.</p>
+</blockquote>
+<p><strong>O argumento teológico é o presságio.</strong> Zeus <strong>Panomphaios</strong> — <em>Ilíada</em> 8.250 — é o autor de todo agouro, e a águia é como o sinal chega. A vantagem faz exatamente isso e nada além: <em>o Árbitro te avisa, sem explicar, quando algo está errado</em>. Não é palpite do jogador; é o mundo falando pela boca de quem opera o mundo.</p>
+<p><strong>O precedente é firme.</strong> Loki já concede Noção do Perigo (<code>17</code>, Parte 3, 09/09). Duas Casas dividirem Dádiva é o padrão desde Afrodite e Hermes, e é o que a decisão 7 do <code>25</code> já tinha ensinado a mesa a ler: <strong>reconhecer o efeito é um fato, atribuir a Casa é uma acusação.</strong> Quem foi avisado não sabe quem avisou.</p>
+<h2>Visão Aguçada foi pedida e está recusada</h2>
+<p>Fica escrito por quê, para que o pedido não volte sem argumento novo.</p>
+<p><strong>Primeiro: é o mesmo argumento duas vezes.</strong> A águia de Zeus é a portadora do sinal, não uma luneta. O olho da águia <strong>é</strong> o presságio — já está pago pela Noção do Perigo. Dádiva nova precisa de domínio novo, não de reformulação do mesmo domínio.</p>
+<p><strong>Segundo: não é vantagem sobrenatural.</strong> Dádiva é o que só existe dentro do domínio da divindade (<code>02</code> §5, <code>17</code> Parte 3). Declarar Zeus dono de Visão Aguçada ou não faz nada, ou proíbe todo batedor das outras seis cidades de enxergar bem — e quebraria os modelos do <code>08</code>.</p>
+<p><strong>Terceiro, e é o que pesa: o arquivo se contradiria.</strong> A Retificação 04 da ficha do Karthoz ofereceu Visão Aguçada a ele <strong>como compra comum</strong>, quando Zeus ainda não tinha Dádiva nenhuma. Transformá-la em Dádiva agora validaria retroativamente uma vantagem que o próprio Árbitro já tinha entregue pela via aberta.</p>
+<blockquote>
+<p><strong>Visão Aguçada continua vantagem comum, 2 pontos por nível, comprável por qualquer personagem de qualquer cidade</strong> — exatamente como Reflexos em Combate (<code>17</code>, Parte 3). Nenhuma Casa a monopoliza.</p>
+</blockquote>
+<h2>Por que uma Dádiva só</h2>
+<p>A maioria das Casas do cânone tem uma: Tyr, Ixchel, Zhong Kui, Oxum, Sekhmet, Agni, Hefesto, Huitzilopochtli. Zeus com <strong>Clima mais uma Dádiva</strong> já fica entre as mais bem servidas da mesa — e <strong>três das cinco fichas ativas são de Ônfalos</strong>. Generosidade com Zeus não é generosidade com um jogador: é pressão sobre a geografia inteira da campanha.</p>
+<h2>Fraqueza estrutural</h2>
+<p><strong>Noção do Perigo avisa e nunca explica.</strong> O marcado de Zeus sabe que alguma coisa está errada e nunca sabe o quê — que é precisamente a armadilha do presságio no mito. Quem o mito pune não é quem não recebeu o sinal: é quem recebeu e leu errado.</p>
+<h2>Consequência política</h2>
+<p><strong>O sinal vem da Casa, e a Casa pode perguntar o que você viu.</strong> Em Ônfalos, <strong>Theano de Duas Tintas</strong> recebe o marcado que chega, lê a Marca nas costas e arquiva o que viu. Um marcado de Zeus que foi avisado e não relatou está sonegando à Casa — e o Dever da Marca dele é chamado em 12 ou menos.</p>
+<p>Isso vale para toda a linha de Zeus, não só para uma ficha: <strong>presságio é matéria registrável, e a Casa de Zeus tem arquivo.</strong> As outras seis cidades sabem disso, e é a razão de um marcado de Zeus ser convidado para certas descidas e mantido fora de certas conversas.</p>
+<h1>2 · O recorte de Clima — a fronteira é a árvore, não a lista</h1>
+<h2>O que estava errado</h2>
+<p>O <code>23</code> §2.3 fixou que <em>quem concede Clima concede um recorte de Ar e de Água, e a concessão de Clima não abre o resto de nenhuma das duas</em>. A intenção estava certa. O efeito, conferido no livro, é que <strong>o colégio ficava literalmente vazio</strong>: não existe uma única mágica de clima que não se apoie em mágica de Ar de raiz.</p>
+<table>
+<thead>
+<tr>
+<th>Mágica de clima</th>
+<th>Pré-requisito de livro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Previsão do Tempo</td>
+<td>4 mágicas de Ar</td>
+</tr>
+<tr>
+<td>Tufão</td>
+<td>Moldar Ar <em>(o verbete diz Semear Ventos — v. §7)</em></td>
+</tr>
+<tr>
+<td>Furacão</td>
+<td>Tufão</td>
+</tr>
+<tr>
+<td>Nuvens</td>
+<td>4 mágicas de Ar <strong>e 4 de Água</strong></td>
+</tr>
+<tr>
+<td>Chuva</td>
+<td>Nuvens</td>
+</tr>
+<tr>
+<td>Relâmpago</td>
+<td><strong>6 mágicas de Ar</strong></td>
+</tr>
+<tr>
+<td>Neve</td>
+<td>Nuvens, Geada</td>
+</tr>
+<tr>
+<td>Granizo</td>
+<td>Neve</td>
+</tr>
+</tbody>
+</table>
+<p>E o <em>GURPS Grimório</em> fecha a questão na abertura da própria seção: <em>"A Eletricidade, começando pela mágica Relâmpago, é parte da Escola do Ar."</em> O mesmo livro, na abertura de Clima–Água: <em>"As mágicas de controle do clima são encontradas tanto na Escola do Ar como na da Água."</em></p>
+<p>Lido ao pé da letra, o <code>23</code> §2.3 dava a Zeus um colégio com <strong>zero mágicas alcançáveis</strong> — e contradizia a nota do próprio <code>17</code> §6.6 de que <em>o mago de Zeus lança raio sem nenhum ônus extra</em>.</p>
+<h2>A decisão</h2>
+<blockquote>
+<p><strong>A concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima — e nada além. A fronteira não é uma lista: é a árvore.</strong></p>
+</blockquote>
+<p>Isso preserva o que o <code>23</code> §2.3 quis — Clima <strong>não</strong> dá Ar inteiro nem Água inteira — e conserta o que ele não viu. <strong>Vale para as cinco Casas de tempestade</strong>, não só para Zeus: Thor, Indra, Tláloc e Xangô ganham a mesma porta e o mesmo limite.</p>
+<p><strong>O que Clima é.</strong> As mágicas de clima propriamente ditas, de Ar e de Água: Previsão do Tempo, Nuvens, Chuva, Tufão, Furacão, Relâmpago, Nevoeiro, Geada, Neve, Granizo — <strong>mais a sub-escola de Eletricidade inteira</strong> (<code>25</code> §1), relacionada na §4 abaixo.</p>
+<p><strong>O que Clima abre por pré-requisito, e só por isso.</strong> Em Ar: Purificação de Ar, Criar Ar, Semear Ventos, Moldar Ar, Destruir Ar. Em Água: Localizar Água, Purificação de Água, Criar Água, Moldar Água — as quatro que o pré-requisito de Nuvens exige, mais Geada.</p>
+<p><strong>O que Clima NÃO abre, e fica escrito para nenhum Mestre de Cena inventar:</strong> Jato de Ar, Corpo de Ar, Caminhar no Ar, Eliminar Odor, Odor, Mau Cheiro, Respirar Água, Respirar Ar, e os Elementais do Ar e da Água. Nenhuma delas é pré-requisito de mágica de clima. Um marcado de Zeus que queira qualquer uma precisa de <strong>acordo</strong>, como qualquer um — e acordo tem dono e tem dívida (<code>17</code> §6.6).</p>
+<h1>3 · A corrente de Ar até o Relâmpago</h1>
+<p>Sete compras, <strong>1 ponto cada no chão</strong> (<code>23</code> §2.1). Esta é a rota canônica, e nenhum Mestre de Cena a encurta:</p>
+<blockquote>
+<p><strong>Purificação de Ar → Criar Ar → Semear Ventos → Moldar Ar → Previsão do Tempo → Tufão → Relâmpago</strong></p>
+</blockquote>
+<p>A corrente é boa de propósito: purificar o ar, criar ar, semear vento, moldar vento, ler o céu, chamar a tempestade — e <strong>só então</strong> o raio. É o mago de tempestade que o mito descreve, e ele paga exatamente o que o livro cobra de qualquer um. <strong>A nota do <code>17</code> §6.6 fica honrada ao pé da letra: nenhum ônus extra, e nenhum desconto.</strong></p>
+<p><strong>Destruir Ar serve como sexta no lugar de Previsão do Tempo</strong>, se o jogador preferir; as duas custam 1 ponto e as duas contam para o pré-requisito de 6.</p>
+<p><strong>O mínimo para lançar raio:</strong> Aptidão Mágica 1 (15) + 7 mágicas (7) = <strong>22 pontos</strong>. Com IQ 14 isso dá IQ efetivo 15 e chão NH 13. <strong>Aptidão 2 custa 32</strong> e abre Arma Elétrica e Corpo de Relâmpago, que exigem AM 2.</p>
+<p><strong>Do andar 9 para baixo o degrau vira.</strong> Com o +2 de mana alta (<code>17</code> §6.5), NH 13 vira 15 efetivo — e 15 é exatamente onde o <code>23</code> §2.2 abre a redução de <strong>−1 de energia</strong>. Um Relâmpago de custo 1 a 3 passa a custar 0 a 2, e a metade da fadiga da faixa alta vem por cima. <strong>O mago de tempestade é barato lá embaixo e caro aqui em cima</strong>, como todos os outros.</p>
+<h1>4 · A sub-escola de Eletricidade — conteúdo integral</h1>
+<p>Doze mágicas do <em>GURPS Grimório</em>, entram por força da decisão 1 do <code>25</code>. <strong>Todas penduradas em Relâmpago</strong>, e é isso que torna a §2 obrigatória: sem a corrente de Ar, a sub-escola inteira é inalcançável.</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Imunidade a Relâmpagos</td>
+<td>Comum</td>
+<td>6 mágicas de Ar — <strong>também é Proteção e Advertência</strong></td>
+</tr>
+<tr>
+<td>Toque Chocante</td>
+<td>Comum</td>
+<td>Relâmpago</td>
+</tr>
+<tr>
+<td>Chicote de Relâmpago</td>
+<td>Comum</td>
+<td>AM, Relâmpago</td>
+</tr>
+<tr>
+<td>Muralha de Relâmpagos</td>
+<td>Área</td>
+<td>AM, Relâmpago</td>
+</tr>
+<tr>
+<td>Bola de Relâmpagos</td>
+<td>Comum</td>
+<td>Aporte, Relâmpago</td>
+</tr>
+<tr>
+<td>Arma Elétrica</td>
+<td>Comum</td>
+<td><strong>AM 2</strong>, Relâmpago</td>
+</tr>
+<tr>
+<td>Projéteis Elétricos</td>
+<td>Comum</td>
+<td>Arma Elétrica</td>
+</tr>
+<tr>
+<td>Olhar de Relâmpago*</td>
+<td>Comum</td>
+<td>AM, Relâmpago, Imunidade a Relâmpagos</td>
+</tr>
+<tr>
+<td>Armadura Elétrica</td>
+<td>Comum</td>
+<td>AM, Relâmpago, Imunidade a Relâmpagos</td>
+</tr>
+<tr>
+<td>Corpo de Relâmpago*</td>
+<td>Com/R-HT</td>
+<td><strong>AM 2</strong>, Relâmpago</td>
+</tr>
+<tr>
+<td>Nuvem de Faíscas</td>
+<td>Área</td>
+<td><strong>Moldar Ar</strong>, Relâmpago</td>
+</tr>
+<tr>
+<td>Tempestade de Faíscas</td>
+<td>Área</td>
+<td><strong>Tufão</strong>, Relâmpago</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tempestade de Faíscas é o teto do mago de tempestade</strong>: um Tufão que, a cada turno, atinge uma vítima aleatória dentro da área com raio — e ninguém dentro do olho. É puro Clima, e exige as duas pontas da árvore.</p>
+<p><strong>Duas exigem Ar de raiz por cima do Relâmpago</strong> — Nuvem de Faíscas pede Moldar Ar, Tempestade de Faíscas pede Tufão. É a prova mecânica da regra da §2.</p>
+<h1>5 · Duas regras de raio que vêm junto, e que o <code>25</code> §1 não pegou</h1>
+<h2>5.1 Dano elétrico atordoa — regra adotada</h2>
+<p>O <em>Grimório</em> traz como opcional, e <strong>o Árbitro adota</strong>:</p>
+<blockquote>
+<p>Toda vez que um ser sofrer <strong>dano elétrico</strong>, ele faz um teste de <strong>HT+2</strong> para não ficar fisicamente atordoado (MB pág. 127). <strong>Hipoalgia dá +3</strong> a este teste; <strong>Hiperalgia dá −4</strong> à HT.</p>
+</blockquote>
+<p><strong>Isto muda combate e muda política.</strong> O raio deixa de ser só dano e vira controle: um Toque Chocante barato pode tirar um turno de quem quer que seja. E cria a coisa mais útil que uma regra pode criar — <strong>um antídoto com dono</strong>. <strong>Hipoalgia é Dádiva de Tyr e de Ogum.</strong> A Casa que vende a única defesa real contra a Casa de Zeus é a Casa de Tyr, e as duas sabem disso.</p>
+<h2>5.2 Armadura de metal não protege contra raio</h2>
+<p>O <em>Magia</em> diz que armadura metálica conta como <strong>RD 0, DP 1</strong> contra Relâmpago. O <em>Grimório</em> grafa <strong>DP 0, RD 1</strong> na abertura da Eletricidade — é a mesma regra com os rótulos trocados, e pela ordem de precedência da decisão 1 do <code>25</code> (Básico → Magia → Grimório) <strong>vale a redação do <em>Magia</em></strong>.</p>
+<blockquote>
+<p><strong>Armadura metálica não oferece proteção contra dano elétrico.</strong> As demais armaduras protegem normalmente.</p>
+</blockquote>
+<p><strong>Isto morde a Economia, e a mordida é boa.</strong> A decisão B do <code>03</code> faz Gapheim vender armadura a preço de livro para cidadão e portador de contrato — e a malha de Gapheim <strong>não vale nada</strong> contra Ônfalos. Couro vale. Pela primeira vez a escolha de armadura deixa de ser só preço e vira leitura de quem você vai encontrar lá embaixo.</p>
+<h1>6 · A consequência de mesa que sai de tudo isto</h1>
+<p><strong>O raio é barato e a chuva é cara.</strong></p>
+<p>Relâmpago custa 6 mágicas de Ar. Chuva custa 4 de Ar <strong>e 4 de Água</strong>, mais Nuvens por cima — e Neve e Granizo vêm depois disso. O deus da tempestade da Garganta <strong>mata muito antes de conseguir molhar um campo</strong>.</p>
+<p>As cidades que precisam de água — Deméter pelo grão, Tláloc e Oxum pela própria teologia — não precisam de Zeus para nada, e Ônfalos descobre que tem a arma e não tem a bênção. <strong>Um mago de Zeus é contratado para descer, nunca para ajudar na colheita.</strong> É a fraqueza estrutural da Casa, e ela é de mundo antes de ser de ficha.</p>
+<h1>7 · O que fica aberto</h1>
+<ol>
+<li><strong>Divergência tabela × verbete no Ar.</strong> A Relação das Mágicas dá <code>Moldar Ar</code> como pré-requisito de <strong>Tufão</strong>, <strong>Corpo de Ar</strong> e <strong>Caminhar no Ar</strong>; os três verbetes dizem <code>Semear Ventos</code>. Pelo precedente da decisão 3 do <code>25</code> — <em>vale a tabela</em> — fica <strong>Moldar Ar</strong>. Na corrente de Zeus não muda nada: ele compra os dois de qualquer maneira.</li>
+<li><strong>A regra de fronteira do <code>27</code> precisa de ressalva.</strong> Ela diz que quem tem qualquer uma das duas Casas pode comprar a mágica de fronteira. Mas <strong>Imunidade a Relâmpagos</strong> é Eletricidade <strong>e</strong> Proteção e Advertência, e exige 6 mágicas de Ar — que nenhum marcado de Atena, Ísis, Zhong Kui ou Tyr consegue ter. Fica escrito: <strong>a fronteira abre a escola, não dispensa o pré-requisito.</strong></li>
+<li><strong>O resto do Grimório continua fora do <code>27</code>, e é Pendência.</strong> A decisão 1 do <code>25</code> mandou o Grimório entrar, mas só quatro mágicas foram nomeadas — Ensebar, Deslizar, Localizar Metal e Identificar Metal, que <strong>entram agora</strong>. As sub-escolas de <strong>Metal e Plástico</strong> (Terra), <strong>Gelo</strong> e <strong>Ácido</strong> (Água), e as mágicas novas de <strong>Clima–Água</strong> do Grimório, continuam sem transcrição. Não foram improvisadas de propósito: a tabela do Grimório não sai legível do arquivo, e transcrevê-la exige passar o PDF verbete por verbete. <strong>É um passe próprio, e fica marcado como tal.</strong></li>
+</ol>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/31-dadiva-de-zeus-e-clima.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

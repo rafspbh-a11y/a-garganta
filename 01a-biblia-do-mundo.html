@@ -1,0 +1,311 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bíblia do Mundo — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html" class="atual">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Bíblia do Mundo</h1><div class="meta">versão 2 · atualizado em 2026-09-11 · O mundo</div></div>
+<p><em>(edição de mesa)</em></p>
+<blockquote>
+<p><strong>Nota.</strong>
+Imutável durante a temporada. Nenhum Mestre de Cena pode contradizê-la. Exceções passam por Pendência.</p>
+</blockquote>
+<h1>PARTE I — O POÇO</h1>
+<h2>1.1 O que é</h2>
+<p>Há um buraco no mundo. Dois quilômetros de boca, paredes que nem sempre são de rocha, e nenhum fundo conhecido.</p>
+<p><strong>Não é um além-mundo. É um corredor.</strong> O eixo vertical do mundo, mais antigo que os sete panteões — estava ali quando os deuses chegaram, e nenhum deles o construiu. É o único fato sobre o qual as sete teologias concordam, e nenhuma gosta dele.</p>
+<table>
+<thead>
+<tr>
+<th>Cidade</th>
+<th>Nome que dá ao poço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ônfalos</td>
+<td>Ônfalo — o Umbigo</td>
+</tr>
+<tr>
+<td>Ámenti</td>
+<td>a Boca do Oeste</td>
+</tr>
+<tr>
+<td>Gapheim</td>
+<td>Ginnungagap — o vazio anterior</td>
+</tr>
+<tr>
+<td>Tulán</td>
+<td>o caminho branco invertido</td>
+</tr>
+<tr>
+<td>Fengdu</td>
+<td>o Poço Amarelo</td>
+</tr>
+<tr>
+<td>Amaravati</td>
+<td>Bilamukha — a boca da caverna</td>
+</tr>
+<tr>
+<td>Ilê Ifé</td>
+<td>a Boca</td>
+</tr>
+</tbody>
+</table>
+<p>No Limiar se diz apenas <strong>a Garganta</strong>.</p>
+<h2>1.2 Os andares</h2>
+<p>Cada andar é uma <strong>região inteira</strong>, não um patamar: quilômetros de extensão, com clima, luz, água e fauna próprios. Há andares que são planície, floresta, ruína urbana, calor seco. Mais fundo, onde a mana é alta, há biomas que a superfície não produz e nenhuma teologia explica.</p>
+<p><strong>Não se desce a Garganta de corda.</strong> A parede do poço é vazada por uma rede de galerias, túneis, escadarias talhadas, rampas e mausoléus que liga andar a andar. Anda-se. Corda serve para marcar rota e para segurança — nunca é o acesso.</p>
+<p><strong>Entre dois andares há sempre mais de um caminho.</strong> Alguns são conhecidos, escorados e cobrados; a maioria não está em mapa nenhum. É por isso que dois grupos no mesmo andar, na mesma semana, não veem a mesma coisa.</p>
+<p><strong>Não há fundo conhecido.</strong> O registro mais profundo é o andar 34, de uma expedição que não voltou. O 30 é o mais fundo alcançado com retorno, e isso foi há dezenove anos.</p>
+<p>Os andares <strong>mudam</strong>. Um mapa de dez anos atrás é peça de museu. O que não muda é a ordem: o andar 12 é sempre o andar 12.</p>
+<h2>1.3 As portas</h2>
+<p>Em certas profundidades existem <strong>portas</strong>. Cada uma dá em um além-mundo.</p>
+<p>São reconhecíveis — quem chega numa porta de Duat sabe que é Duat, porque tudo nela corresponde ao que os textos descrevem. Não foram construídas por ninguém das sete cidades. Foram <strong>encontradas</strong>, e a data de cada descoberta está nos arquivos de Ámenti.</p>
+<p><strong>Atravessar uma porta significa que você está morto, ou que cometeu um erro grave.</strong> Os poucos registros de retorno são disputados e provavelmente falsos.</p>
+<p>Há sete portas mapeadas, entre os andares 14 e 29. Presume-se que existam outras mais fundo, e essa presunção move metade da política das sete cidades.</p>
+<h2>1.4 Mana</h2>
+<ul>
+<li><strong>Andares 1 a 8</strong> — mana normal. Magia como na superfície.</li>
+<li><strong>Andares 9 a 20</strong> — mana alta. Feitiços ganham potência e escapam do controle com mais facilidade.</li>
+<li><strong>Andares 21+</strong> — mana muito alta. Magos de superfície não são treinados para isso.</li>
+<li><strong>Bolsões de mana nula</strong> — existem, são imprevisíveis, e ali magia simplesmente não funciona. Saber onde ficam é informação militar. As cidades pagam caro por ela.</li>
+</ul>
+<h1>PARTE II — O QUE VIVE LÁ</h1>
+<h2>2.1 Os nativos — o que não é de ninguém</h2>
+<p>As criaturas rasas <strong>não pertencem a nenhuma mitologia</strong>. Fauna estranha, coisas de carne e instinto que nenhuma tradição reivindica.</p>
+<p>Isso incomoda os teólogos há trezentos anos. A hipótese menos popular, e a mais provável, é que sejam <strong>nativas do poço</strong> — anteriores aos deuses.</p>
+<p>É o chão de fábrica. Dezenas de esquadras de rank F a D trabalhando ali todo dia, a Guilda gerindo aquilo como logística portuária. Perigoso, rotineiro, letal para quem se descuida.</p>
+<p><strong>A fauna nativa não para no andar 10.</strong> Ela continua mais fundo e, do 11 em diante, divide espaço com o que vazou. Separar uma coisa da outra é trabalho de perícia e de arquivo — e quem sabe fazer isso vale dinheiro.</p>
+<p><em>Emenda do Árbitro: corrige a leitura anterior, de que a fauna nativa terminava no andar 10.</em></p>
+<h2>2.2 Andares 11 a 20 — o que vazou</h2>
+<p>Aqui você <strong>também</strong> reconhece as coisas: draugr, jiangshi, rakshasa, empusa, camazotz, servos de Ammit, ajogun, preta.</p>
+<p>Que suba coisa de uma porta é velho e catalogado: perto de uma porta de Diyu, espera-se jiangshi, e Fengdu registra isso há séculos sem se espantar. <strong>O problema é o que aparece longe da porta certa.</strong> Um draugr a duzentos metros de uma porta que deveria dar em Diyu. Um jiangshi na aproximação que Ámenti mapeou como sua.</p>
+<p>Evidência de que as portas estão derivando. As sete cidades sabem. Nenhuma divulga.</p>
+<h2>2.3 Os fundidos</h2>
+<p>Aparecem há três anos. Criaturas que são <strong>duas tradições ao mesmo tempo</strong>, de um jeito que nenhuma teologia explica sem se contradizer.</p>
+<p>Raros, sem padrão de aparição. Cada um é crise diplomática, porque aceitar o que são significa aceitar que algo fundamental está errado.</p>
+<h2>2.4 O que os deuses da morte NÃO são</h2>
+<p><strong>Nenhum deus da morte está dentro da Garganta.</strong></p>
+<p>Anúbis e Osíris governam Duat, no oeste, para onde o sol viaja à noite. Os Senhores de Xibalbá governam Xibalbá e suas casas de provação. Hel governa Helheim. Yanluo Wang preside os dez tribunais de Diyu. Yama julga em Naraka. Hades tem seu reino. Os mortos de Ilê Ifé vão para o orum.</p>
+<p>Cada um no seu lugar, com a geografia que a tradição descreve.</p>
+<p>São <strong>potências distantes que você pode ofender</strong>, não chefes que você enfrenta. Isso é mais fiel e mais perigoso: um deus da morte ofendido não desce para lutar. Ele age por sacerdotes, tribunais, presságios — e pela morte que virá te buscar de qualquer jeito.</p>
+<h1>PARTE III — AS SETE CIDADES</h1>
+<p>Todas humanas. Todas na borda. Trezentos anos desde o tratado do Limiar. A Garganta é muito mais antiga que qualquer uma.</p>
+<h2>3.1 ÔNFALOS — grega</h2>
+<p><strong>Governo:</strong> assembleia de cidadãos, capturada pelas Casas divinas. Nada se decide sem dois deuses brigando em público.</p>
+<p><strong>Caráter:</strong> agonística. Atletismo, retórica, beleza, guerra, sedução — tudo é disputa. Prestígio é a única moeda que os deuses respeitam.</p>
+<p><strong>Casas:</strong> Zeus, Hera, Atena, Apolo, Ártemis, Ares, Afrodite, Hefesto, Hermes, Deméter, Dioniso, Posêidon.</p>
+<p><strong>Fiel ao mito:</strong> Zeus tem filhos entre os aventureiros e Hera sabe de todos — ser marcado por ele é honra e sentença. <em>Correção de 10/09/2026:</em> a sentença é dos <strong>filhos</strong> de Zeus; ser marcado pela Casa não é ser filho, e o mago da Casa lança raio sem ônus extra (<code>17</code> §6.6). Atena e Posêidon disputam o patronato e cada geração revota. Ares e Afrodite se encontram, e Hefesto sabe.</p>
+<p><strong>Fraqueza:</strong> os deuses se odeiam mais do que odeiam as outras cidades. Ônfalos raramente age unida.</p>
+<h2>3.2 ÁMENTI — egípcia</h2>
+<p><strong>Governo:</strong> o Tribunal de Maat. Burocracia sacerdotal que registra tudo: cada descida, cada morte, cada dívida, cada palavra dita em juízo. Os arquivos são o maior acervo do mundo sobre a Garganta, e a cidade os usa como arma.</p>
+<p><strong>Caráter:</strong> ordem, memória, julgamento. Nada se perde e nada se perdoa.</p>
+<p><strong>Casas:</strong> Rá, Osíris, Ísis, Hórus, Anúbis, Thoth, Set, Sekhmet, Bastet, Néftis, Geb.</p>
+<p><strong>Fiel ao mito:</strong> o coração é pesado contra a pena. Ámenti vende <strong>intercessão junto a Anúbis</strong> — não ressurreição, e sim petição. Custa fortuna, exige patrocínio de uma Casa, e quase nunca funciona. Set matou Osíris e Osíris governa mesmo assim: conflito frio, institucional, eterno.</p>
+<p><strong>Fraqueza:</strong> lentidão. Ámenti nunca decide nada em menos de um mês.</p>
+<h2>3.3 GAPHEIM — nórdica</h2>
+<p><strong>Governo:</strong> o Thing. Qualquer homem livre pode falar, e palavra dita é vinculante.</p>
+<p><strong>Caráter:</strong> juramento, dívida de sangue, hospitalidade sagrada. E fatalismo — sabem que vão perder no fim, e isso os deixa perigosamente livres.</p>
+<p><strong>Casas:</strong> Odin, Thor, Frigg, Loki (tolerado, jamais confiado), Freyja, Frey, Tyr, Heimdall, Skadi.</p>
+<p><strong>Fiel ao mito:</strong> Odin <strong>vai te trair</strong> se isso servir ao que ele prepara — e sabe o preço. Juramento feito em Gapheim com testemunhas tem força que os outros povos consideram superstição, até tentarem quebrar um. Tyr perdeu a mão honrando acordo com um monstro; essa história é o fundamento jurídico da cidade.</p>
+<p><strong>Fraqueza:</strong> feuds. Duas famílias em disputa paralisam uma expedição inteira.</p>
+<h2>3.4 TULÁN — mesoamericana</h2>
+<p><strong>Governo:</strong> realeza divina e colégio de sacerdotes-calendaristas. O que se faz e quando se faz vem do calendário, e o calendário não negocia.</p>
+<p><strong>Caráter:</strong> precisão, ciclo, dívida. O mundo já acabou quatro vezes. Os deuses sangraram para fazer os homens, e os homens devolvem.</p>
+<p><strong>Casas:</strong> Quetzalcóatl, Tezcatlipoca, Tláloc, Huitzilopochtli, Ixchel, Kukulkán.</p>
+<p><strong>Fiel ao mito:</strong> o sacrifício é real e a cidade funciona muito bem — melhores colheitas, menos doença, expedições mais bem-sucedidas. Ninguém de fora quer olhar de perto. A maior parte é autossacrifício ritual; parte não é. Tezcatlipoca desfaz o que Quetzalcóatl constrói — não é vilania, é função cósmica.</p>
+<p><em>Narrado com elipse. O peso político é canônico; a descrição gráfica não entra em cena.</em></p>
+<p><strong>Fraqueza:</strong> as datas. Tulán não pode agir fora do calendário, e as outras cidades exploram isso.</p>
+<h2>3.5 FENGDU — chinesa</h2>
+<p><strong>Governo:</strong> administração imperial com exames de admissão. Mérito documentado, hierarquia rígida, Mandato Celestial que pode ser perdido.</p>
+<p><strong>Caráter:</strong> ordem, protocolo, paciência longa. Fengdu pensa em séculos.</p>
+<p><strong>Casas:</strong> o Imperador de Jade, Guanyin, Nezha, o Rei Dragão, Zhong Kui, a Rainha-Mãe do Oeste, Leigong, Yanluo Wang.</p>
+<p><strong>Fiel ao mito:</strong> Yanluo Wang preside os dez tribunais e tem Casa aqui — como Anúbis a tem em Ámenti. Ter Casa na cidade não é estar na Garganta: ele julga em Diyu, e a Casa é o endereço dele entre os vivos. Junto com Ámenti, é a única que licencia Necromancia. Os mortos passam pelos dez tribunais de Diyu e são reencarnados. Fengdu vende <strong>petição de reencarnação favorável</strong> — igualmente cara, igualmente incerta. Há em Fengdu gente que é reencarnação documentada de heróis anteriores e carrega a dívida deles.</p>
+<p><strong>Fraqueza:</strong> o Mandato. Se a terra apodrece ou o povo passa fome, o Céu retira a legitimidade — e as outras seis vigiam os sinais.</p>
+<h2>3.6 AMARAVATI — hindu</h2>
+<p><strong>Governo:</strong> rajás sob conselho de brâmanes. Lei do dharma: o certo depende de quem você é, e não é o mesmo para todos.</p>
+<p><strong>Caráter:</strong> tempo cósmico, ciclo, dever. A mais antiga das sete e a que menos tem pressa.</p>
+<p><strong>Casas:</strong> Indra, Agni, Varuna, Vayu, Sarasvati, Lakshmi, Kali, Hanuman.</p>
+<p><strong>Fiel ao mito:</strong> o dever supera o desejo, e às vezes supera a decência — essa tensão é o coração da cidade. Indra é rei e é falho; já perdeu o trono mais de uma vez. Os <strong>Nagas</strong> têm reivindicação antiga sobre trechos profundos do poço, e Amaravati é a única cidade que a reconhece — o que a coloca em rota de colisão com as outras seis.</p>
+<p><em>Tradição viva. Tratada com dignidade, nunca como exotismo.</em></p>
+<p><strong>Fraqueza:</strong> o dharma amarra. Amaravati não pode fazer certas coisas mesmo quando são obviamente vantajosas.</p>
+<h2>3.7 ILÊ IFÉ — iorubá</h2>
+<p><strong>Governo:</strong> conselho de casas de culto, cada uma com autoridade sobre um domínio da vida da cidade. Decisão por consulta oracular — o jogo de búzios é instrumento de estado.</p>
+<p><strong>Caráter:</strong> axé, movimento, negociação. A única cidade que entende poder como algo que circula, não que se acumula.</p>
+<p><strong>Casas:</strong> Oxalá, Ogum, Xangô, Iansã, Oxum, Iemanjá, Omulu, Oxóssi, Exu.</p>
+<p><strong>Fiel ao mito:</strong> Exu abre e fecha caminhos, e nada começa sem ele — nem as descidas. Ilê Ifé entende melhor que todas que a Garganta é caminho e não destino, e por isso suas leituras se provam certas com frequência desconfortável. Xangô julga, e o julgamento é definitivo de um modo que assusta os outros povos.</p>
+<p><em>Tradição viva. Tratada com dignidade, nunca como exotismo.</em></p>
+<p><strong>Fraqueza:</strong> Ilê Ifé se recusa a competir nos termos das outras cidades, o que a deixa fora de acordos importantes.</p>
+<h1>PARTE IV — O LIMIAR E A GUILDA</h1>
+<h2>4.1 O Limiar</h2>
+<p>Distrito circular na boca da Garganta. Nenhuma cidade tem soberania. Fundado pelo tratado, há trezentos anos.</p>
+<p>A neutralidade é garantida pelos <strong>deuses de encruzilhada</strong> — os únicos que todas as sete reconhecem como mensageiros legítimos: Hermes, Thoth, Heimdall, Exu, Ganesha e outros conforme a teologia. Eles não governam. Garantem que quem violar o Limiar perde o direito de passagem, e essa é a única sanção que funciona.</p>
+<p>Contém: a Guilda, as sete embaixadas, o mercado livre de espólio, casas de descanso e câmbio, e <strong>o Poço</strong> — a única entrada oficial.</p>
+<p>É o palco compartilhado, onde personagens de cidades diferentes se encontram.</p>
+<h2>4.2 A Guilda</h2>
+<p>Registra aventureiros, classifica por rank, publica contratos, avalia espólio, cobra a taxa de passagem.</p>
+<p>Não tem exército. Seu poder é <strong>o registro</strong>: quem o perde perde acesso legal à Garganta, e as sete cidades honram a expulsão porque todas dependem do sistema funcionar.</p>
+<p>Há <strong>milhares de registrados</strong>. Você é um deles.</p>
+<h2>4.3 Ranks</h2>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Pontos</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F</td>
+<td>150</td>
+<td>Registrado. Ninguém te conhece.</td>
+</tr>
+<tr>
+<td>E</td>
+<td>170</td>
+<td>Sobreviveu ao primeiro ano.</td>
+</tr>
+<tr>
+<td>D</td>
+<td>190</td>
+<td>Aceito em esquadras.</td>
+</tr>
+<tr>
+<td>C</td>
+<td>210</td>
+<td>Nome conhecido no Limiar.</td>
+</tr>
+<tr>
+<td>B</td>
+<td>235</td>
+<td>Reconhecido pelas embaixadas. Reputação +1.</td>
+</tr>
+<tr>
+<td>A</td>
+<td>260</td>
+<td>Elite. Guildas grandes te procuram. Reputação +2.</td>
+</tr>
+<tr>
+<td>S</td>
+<td>285</td>
+<td>Nome nas sete cidades. Reputação +3.</td>
+</tr>
+<tr>
+<td>SS</td>
+<td>300+</td>
+<td>Lenda viva. Cada aparição é evento político.</td>
+</tr>
+</tbody>
+</table>
+<p>Rank é <strong>reconhecimento externo</strong>, não poder interno. Abre contratos, andares e portas em salas onde se decide coisa importante. Promoção exige avaliação jogada, e a Guilda pode segurá-la por motivo político.</p>
+<p><strong>Inatividade prolongada faz perder rank</strong> — e isso é o mundo funcionando, não punição. Em número: seis semanas de mundo seguidas sem <strong>nenhuma</strong> ação de mundo e o Registro move o nome para inativo, o que custa <strong>um rank</strong>, nunca abaixo de F. Recupera-se com uma avaliação jogada na Guilda, que custa uma ação de mundo — uma só, e volta o rank inteiro.</p>
+<p>Seis semanas de mundo são três meses reais. É lento e é reversível de propósito: Carta do Árbitro, artigo 8. Quem sumiu duas semanas não perde nada, não paga nada, e volta exatamente onde estava.</p>
+<h2>4.4 Progresso e Pressão</h2>
+<p><strong>Progresso</strong> (permanente): Inexplorado → Mapeado → <strong>Ancorado</strong>. Ancorado significa acampamento fixo e descida direta. É conquista, e não regride.</p>
+<p><strong>Pressão</strong> (semanal): quanta coisa está viva ali agora. Sobe se ninguém desce; cai quando desce gente.</p>
+<p><strong>Se a Pressão de um andar raso sobe demais, as coisas sobem</strong> — para o andar acima, depois para o Limiar, depois para as cidades.</p>
+<p>O normal é a contenção funcionar. Vira crise quando falha, e a falha é sempre política: uma cidade retirou suas esquadras, a Guilda perdeu gente demais, os fortes estão todos caçando glória no fundo.</p>
+<p>Isso mantém os andares 1 a 10 permanentemente relevantes e dá trabalho digno e remunerado a personagem novo.</p>
+<h1>PARTE V — DETALHES DE MUNDO</h1>
+<p><strong>Tecnologia:</strong> idade do ferro e antiguidade clássica. Sem pólvora. Cada cidade puxa para a estética do seu panteão.</p>
+<p><strong>Línguas:</strong> sete, mais o <strong>falar do Limiar</strong> — língua franca de comércio que quase todos falam mal. Quem só domina a própria língua está politicamente cego.</p>
+<p><strong>Povos:</strong> as sete cidades são humanas. Não-humanos existem e vêm do poço. Ver Regras da Mesa.</p>
+<p><strong>Moeda:</strong> cada cidade cunha a sua. O Limiar negocia por peso, com unidade de conta comum.</p>
+<p><strong>A Marca:</strong> todo aventureiro registrado carrega a marca de uma divindade. Aparece nas costas. Quem sabe ler identifica o deus, a cidade e o quanto você já cresceu.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/01a-biblia-do-mundo.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

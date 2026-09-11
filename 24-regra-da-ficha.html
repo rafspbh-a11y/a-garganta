@@ -1,0 +1,263 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Regra de Escrita da Ficha — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html" class="atual">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Regra de Escrita da Ficha</h1><div class="meta">versão 2 · atualizado em 2026-09-11 · Seu personagem</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Versão 2, de 10/09/2026</strong> — segunda rodada de conferência. Entraram três travas que estavam implícitas e não escritas: bônus condicional fica fora do Efetivo; bônus por item exige o item no equipamento; especialização exige a especialidade declarada.
+<strong>Nenhuma ficha entra em mesa, e nenhuma alteração é homologada, fora deste formato.</strong> Ele existe por um motivo concreto: uma ficha da campanha precisou ser reconstruída do zero para se descobrir que estava 22,5 pontos acima, porque não havia como saber quanto cada linha tinha custado. <strong>Ficha que só mostra o nível não é auditável — é uma afirmação.</strong></p>
+</blockquote>
+<h1>1. A linha de perícia</h1>
+<p>Sete campos, nesta ordem:</p>
+<pre><code>Nome · Tipo/Dificuldade · relativo · pontos · NH comprado · bônus · NH efetivo
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>O que é</th>
+<th>Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>o nome <strong>do livro</strong>, nunca um apelido</td>
+<td>se não está no <code>26</code>, não entra</td>
+</tr>
+<tr>
+<td><strong>Tipo/Dificuldade</strong></td>
+<td>Física ou Mental, e Fácil / Média / Difícil / Muito Difícil</td>
+<td>vem do livro, <strong>nunca de outra ficha</strong></td>
+</tr>
+<tr>
+<td><strong>Relativo</strong></td>
+<td>DX−1, IQ+2…</td>
+<td>é o que a tabela de custo lê</td>
+</tr>
+<tr>
+<td><strong>Pontos</strong></td>
+<td>quanto foi gasto <strong>nesta linha</strong></td>
+<td>a soma tem que bater com a conta</td>
+</tr>
+<tr>
+<td><strong>NH comprado</strong></td>
+<td>atributo + relativo</td>
+<td><strong>sem bônus nenhum</strong></td>
+</tr>
+<tr>
+<td><strong>Bônus</strong></td>
+<td>cada bônus <strong>com a fonte escrita</strong></td>
+<td>vantagem, item, magia, situação</td>
+</tr>
+<tr>
+<td><strong>NH efetivo</strong></td>
+<td>o número que se rola na mesa</td>
+<td>comprado + bônus <strong>permanentes</strong>. Bônus condicional <strong>fica fora</strong> — ver abaixo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplo:</strong></p>
+<p><code>Diplomacia · Mental/Difícil · IQ+1 · 6 pts · NH 15 · +2 Voz Melodiosa · efetivo 17</code></p>
+<p><code>Esgrima · Física/Média · DX+2 · 8 pts · NH 14 · — · efetivo 14</code></p>
+<blockquote>
+<p><strong>A regra de ouro: bônus nunca entra no NH comprado.</strong>
+Se a Voz Melodiosa dá +2 em Diplomacia, a ficha escreve <strong>15 comprado, +2 da vantagem, 17 efetivo</strong> — e nunca "Diplomacia 17". Ficha que soma bônus dentro do nível esconde pontos e faz o jogador <strong>pagar duas vezes pela mesma coisa</strong>. Aconteceu, e foi assim que se descobriu.</p>
+</blockquote>
+<h2>Fontes de bônus que precisam ser nomeadas</h2>
+<table>
+<thead>
+<tr>
+<th>Fonte</th>
+<th>Como escrever</th>
+<th>Entra no efetivo?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vantagem</td>
+<td><code>+2 Voz Melodiosa</code></td>
+<td>sim, é permanente</td>
+</tr>
+<tr>
+<td>Item mágico</td>
+<td><code>+1 anel de Baukis</code></td>
+<td><strong>só com o item na mão</strong> — e some em bolsão de mana nula</td>
+</tr>
+<tr>
+<td>Item comum ou obra-prima</td>
+<td><code>+1 obra-prima</code></td>
+<td>sim, enquanto tiver o item</td>
+</tr>
+<tr>
+<td>Magia ativa</td>
+<td><code>+2 Apressar</code></td>
+<td><strong>não</strong> — é temporário, vai no Estado de Retomada</td>
+</tr>
+<tr>
+<td>Status ou Reputação</td>
+<td><code>+1 Status 2, só em Ônfalos</code></td>
+<td>condicional: <strong>escreva a condição</strong></td>
+</tr>
+<tr>
+<td>Especialização</td>
+<td><code>+5 Comércio (armas), −1 fora</code></td>
+<td>escreva os dois lados</td>
+</tr>
+<tr>
+<td>Equipamento de ofício</td>
+<td><code>+1 kit de primeiros socorros</code></td>
+<td>só com o kit</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bônus condicional escreve a condição.</strong> "+2 só contra quem ouve a voz dele" é diferente de "+2", e o Mestre de Cena precisa saber qual dos dois sem perguntar.</p>
+<blockquote>
+<p><strong>Bônus condicional NÃO entra na coluna Efetivo.</strong> Isto era convenção não escrita e passou a ser regra em 10/09/2026, porque as sete fichas já faziam assim e o texto não dizia. O Efetivo traz <strong>NH + bônus permanentes</strong> e mais nada; o condicional fica na coluna Bônus, com a condição, e o Mestre soma na hora em que a condição existir. Assim o número que se rola por padrão é o do Efetivo, e ninguém aplica por engano um +1 de kit que ficou em casa.</p>
+<p><strong>Bônus por item exige o item no equipamento.</strong> Se a linha diz <code>+1 só com kit</code>, a linha de Equipamento tem que trazer o kit. Três fichas da mesa carregavam esse +1 <strong>sem kit nenhum comprado</strong> — descoberto na conferência de 10/09 e corrigido na cara, com o preço do kit escrito ao lado para o jogador decidir. <strong>A ficha não empresta objeto que o personagem não comprou.</strong></p>
+<p><strong>Especialização exige a especialidade declarada.</strong> <code>+5 numa mercadoria, −1 fora</code> sem dizer <strong>qual</strong> mercadoria é uma linha que só pode piorar: o −1 vale sempre e o +5 nunca. Enquanto a escolha não estiver escrita na ficha, <strong>nenhum dos dois lados se aplica</strong> e a perícia roda pelo NH limpo.</p>
+</blockquote>
+<h1>2. A linha de feitiço</h1>
+<pre><code>Nome · escola · relativo ao IQ efetivo · pontos · NH · energia · pré-requisito
+</code></pre>
+<p>Toda mágica é <strong>Mental/Difícil</strong> salvo asterisco, então a dificuldade não vai na linha — mas <strong>o IQ efetivo vai no cabeçalho do bloco</strong>, porque é dele que sai o custo:</p>
+<p><code>IQ efetivo 16 (IQ 14 + Aptidão Mágica 2)</code></p>
+<p><code>Silêncio · Som · IQ−2 · 1 pt · NH 14 · 2 básico × raio · ← Som ✓</code></p>
+<p><strong>O pré-requisito vai escrito, com o visto.</strong> Foi a ausência disso que deixou nove das dezesseis mágicas de uma ficha ilegais sem ninguém perceber.</p>
+<p><strong>A redução de energia entra como bônus, com a fonte:</strong> <code>NH 15 · energia −1 (NH≥15)</code>. <strong>O degrau seguinte é o NH 20, e vale −2</strong> — não o 18, que muda o ritual e não a energia (<code>27</code>). Do andar 9 para baixo, o +2 da mana alta pode empurrar uma mágica de 13 para 15 efetivo — e aí a linha ganha <code>· no 9+: NH 15, energia −1, e metade da faixa alta</code>.</p>
+<h1>3. A linha de vantagem e de desvantagem</h1>
+<pre><code>Nome · custo · o que dá na mesa, com os números
+</code></pre>
+<p><code>Voz Melodiosa · 10 · +2 em Trovador, Diplomacia, Atuação, Política, Trato Social e Canto, e +2 na reação de quem ouve</code></p>
+<p><strong>Vantagem que dá bônus tem que dizer em quais perícias</strong>, com os nomes de livro — senão a coluna de bônus não pode ser conferida.</p>
+<p>Vantagem com componente variável escreve o cálculo:</p>
+<p><code>Reputação +1 entre quem leu seus escritos · 1 · 5 por +1, ×⅓ por grupo pequeno = 1</code></p>
+<p><code>Aliado: arquivista de Ámenti · 5 · 76–100 pontos, aparece frequentemente (×1)</code></p>
+<h1>4. A conta — obrigatória, no fim da ficha</h1>
+<blockquote>
+<p><strong>A conta:</strong> 65 atributos + 63 vantagens + 46 perícias + 21 feitiços − 40 desvantagens − 5 peculiaridades = <strong>150</strong></p>
+</blockquote>
+<p><strong>Ficha sem esta linha não é homologada.</strong></p>
+<p>Quando o personagem ganha pontos em jogo, viram duas linhas:</p>
+<blockquote>
+<p><strong>A conta:</strong> … = <strong>150</strong> de criação
+<strong>Ganhos:</strong> +3 (Semana 1, homologação da mesa conjunta) = <strong>153 totais, 3 não gastos</strong></p>
+</blockquote>
+<p><strong>Cada ponto ganho diz de onde veio</strong>, com semana e homologação. Cada ponto gasto depois da criação vira linha nova, com data:</p>
+<blockquote>
+<p><strong>Semana 3:</strong> 3 pontos em Jurisprudência, IQ+1 → IQ+2 (6 → 8 pts). Sobra 1.</p>
+</blockquote>
+<h1>5. Checklist de homologação</h1>
+<p>Antes de qualquer ficha entrar em mesa, nesta ordem:</p>
+<ol>
+<li><strong>Todo nome está no <code>26</code>?</strong> Nome que não está vira Pendência antes de virar linha.</li>
+<li><strong>Toda linha tem os sete campos?</strong> Sem exceção, inclusive as de ½ ponto.</li>
+<li><strong>Todo bônus tem fonte nomeada?</strong> Bônus sem fonte é bônus inventado.</li>
+<li><strong>Nenhum bônus está dentro do NH comprado?</strong></li>
+<li><strong>Toda mágica tem o pré-requisito escrito e comprado?</strong> A cadeia inteira, até a raiz (<code>27</code>).</li>
+<li><strong>Toda mágica fora do domínio da Casa tem acordo registrado?</strong> Com dono, mesmo que o dono só exista na camada do Árbitro.</li>
+<li><strong>A soma das linhas bate com a linha da conta?</strong></li>
+<li><strong>A conta fecha no orçamento?</strong> 150 na criação.</li>
+<li><strong>Desvantagens dentro de −40, com o Dever da Marca lá dentro?</strong> Peculiaridades até 5.</li>
+<li><strong>Os derivados batem?</strong> PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · Deslocamento=Esquiva=Vel. arredondada · Aparar=perícia÷2, ou <strong>⅔ em Esgrima e Bastão</strong> · Bloquear=Escudo÷2.</li>
+<li><strong>As Amarras estão preenchidas?</strong> Dois NPCs, uma dívida, um segredo.</li>
+</ol>
+<p><strong>Onze itens. Se um falhar, a ficha volta.</strong> Vale para a ficha do Árbitro também — Carta, artigo 4.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/24-regra-da-ficha.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

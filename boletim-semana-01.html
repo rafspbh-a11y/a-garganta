@@ -1,0 +1,228 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boletim da Semana 1 — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Boletim da Semana 1</h1><div class="meta">semana 1 · publicado em 2026-09-11</div></div>
+<p><strong>Caminho no Notion:</strong> A Garganta / Estado do Mundo / Boletins
+<strong>Base de origem:</strong> Boletins (collection://c97575a2-6144-46a2-9322-19eaf618fee8)</p>
+<h2>Propriedades</h2>
+<table>
+<thead>
+<tr>
+<th>Propriedade</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boletim</td>
+<td>Semana 1 — abertura</td>
+</tr>
+<tr>
+<td>Semana</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Publicado</td>
+</tr>
+<tr>
+<td>Publicado em</td>
+<td>2026-09-07</td>
+</tr>
+<tr>
+<td>Prazo de registro</td>
+<td>2026-09-14</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>A Garganta · Limiar · Registro da Guilda</em></p>
+<h1>Estado do Poço</h1>
+<p>A contenção está funcionando. Não é notícia — é o que se espera, e por isso mesmo vale registrar que esta semana foi normal.</p>
+<table>
+<thead>
+<tr>
+<th>Andar</th>
+<th>Progresso</th>
+<th>Pressão</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–3</td>
+<td>Ancorado</td>
+<td>1</td>
+<td>Rotina. Tráfego alto.</td>
+</tr>
+<tr>
+<td>4–5</td>
+<td>Ancorado</td>
+<td>1</td>
+<td>Bacia com movimento acima da média.</td>
+</tr>
+<tr>
+<td>6–7</td>
+<td>Ancorado</td>
+<td>2</td>
+<td>Mata Pálida com duas baixas registradas.</td>
+</tr>
+<tr>
+<td>8–9</td>
+<td>Ancorado</td>
+<td>2</td>
+<td>Comboio do Fôlego atrasou dois dias.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Acampamento sazonal</td>
+<td>3</td>
+<td><strong>Elevado.</strong> Ver aviso abaixo.</td>
+</tr>
+<tr>
+<td>11–12</td>
+<td>Não ancorado</td>
+<td>3</td>
+<td><strong>Elevado.</strong> Sem operação organizada, e é esse o motivo.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!WARNING]
+<strong>Aviso do Comando de Contenção.</strong> Yax Balam registrou que o Campo de Ossos está com Pressão 3 pela terceira semana seguida. Solicitou reforço às sete embaixadas. Duas responderam.</p>
+<p>Registra também que o 11 e o 12 estão em 3 e que ninguém os contém, porque ninguém opera ali. A Guilda não comenta a ligação entre as duas coisas.</p>
+</blockquote>
+<h1>Contratos abertos</h1>
+<p>Sete, todos na base de <strong>Contratos</strong> — onde ficam rank exigido, recompensa e prazo. Nomeados aqui apenas para quem está escolhendo:</p>
+<ul>
+<li>Contenção rasa, andares 1 a 5</li>
+<li>Colheita no Crepúsculo</li>
+<li>Limpeza de ninho</li>
+<li>Recuperação no Corte</li>
+<li>Escolta de comboio ao Fôlego</li>
+<li>Reforço ao Campo de Ossos</li>
+<li>Cartografia do 11</li>
+</ul>
+<p>O número vem da base, não deste Boletim.</p>
+<h1>Rumores em circulação</h1>
+<p><em>A Guilda não confirma nem desmente.</em></p>
+<p><strong>Primeiro.</strong> Um grupo que voltou do andar 11 na semana passada diz ter encontrado alguma coisa que falava. Em nórdico antigo. Nenhum deles é de Gapheim, e nenhum sabe nórdico antigo — mas dois repetiram o mesmo som, e alguém da embaixada de Gapheim empalideceu ao ouvir.</p>
+<p><strong>Segundo.</strong> Ixkab Treze-Vento, de Tulán, cancelou três operações programadas neste mês sem dar motivo. Tulán nunca cancela sem citar a data que impede. Desta vez não citou nenhuma.</p>
+<p><strong>Terceiro.</strong> Mira Seis-Dedos está pagando — pagando, não cobrando — por qualquer relato de criatura encontrada em andar onde ela não deveria estar. Ninguém sabe quem é o cliente dela.</p>
+<h1>Registro e movimento</h1>
+<p>Sete promoções a rank E esta semana. Uma a rank C. Nenhuma acima disso.</p>
+<p><strong>Baixas registradas:</strong> onze. Nove nos andares 1 a 7, dentro da média. Duas na Mata Pálida, que é o número que preocupa.</p>
+<p><strong>Nota do Mestre do Registro.</strong> Três aventureiros perderam registro por comércio não declarado. Os nomes estão afixados. Korvas de Anéis lembra que espólio não registrado é contrabando, e contrabando cassa registro.</p>
+<h1>Nas embaixadas</h1>
+<p><strong>Ônfalos</strong> — Kallisthe convocou reunião sobre a contenção do andar 10. Compareceram Ilê Ifé e Fengdu. Ámenti mandou um secretário. Gapheim, Tulán e Amaravati não foram.</p>
+<p><strong>Ámenti</strong> — o Tribunal de Maat abriu consulta pública sobre a classificação de objetos recuperados do andar 12. A consulta durará quatro meses, o que todos entendem como uma forma de dizer não.</p>
+<p><strong>Gapheim</strong> — Sigrun a Lei-Dita julgou disputa entre um aventureiro de Gapheim e um de Ônfalos sobre um achado do andar 8. Julgou contra o de Gapheim. Ninguém comentou publicamente, e todos comentaram.</p>
+<p><strong>Amaravati</strong> — Raj Indravarman repetiu, pela quarta vez este ano, que a reivindicação dos Nagas sobre os andares profundos é legítima. Foi ignorado pela quarta vez.</p>
+<p><strong>Ilê Ifé</strong> — Babalorixá Adebayo fez uma leitura pública, o que é raro. Não divulgou o resultado, o que é ainda mais raro.</p>
+<hr />
+<h1>Onde a Semana 1 começa</h1>
+<p>Você está no <strong>Limiar</strong>, com registro na mão. Rank F.</p>
+<p>O Poço fica a dez minutos de caminhada. A rampa desce até o andar 3 e há carroças subindo e descendo o dia inteiro. Há mais de mil aventureiros registrados nesta cidade e a maioria vai descer amanhã, como desceu ontem.</p>
+<p>Você não é o escolhido. É mais um contratado.</p>
+<p>A pergunta da sua primeira sessão é simples: <strong>qual contrato você pega?</strong></p>
+<hr />
+<p><strong>Prazo desta semana de mundo:</strong> fecha em <strong>14 de setembro</strong>. Até lá, cada personagem tem <strong>três ações de mundo</strong> e cenas livres ilimitadas. O prazo fecha tenha todo mundo jogado ou não — quem não jogou simplesmente não agiu, e ninguém trava ninguém.</p>
+<p>Relatório ao Árbitro até o prazo. Nada entra no banco sem homologação.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/boletim-atual.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

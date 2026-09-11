@@ -1,0 +1,896 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Economia e Tabelas — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html" class="atual">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Economia e Tabelas</h1><div class="meta">versão 7 · atualizado em 2026-09-11 · Economia</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+Estas tabelas existem para tirar a discricionariedade do Mestre de Cena sobre a economia. Nenhum Claude decide quanto vale o quê — ele consulta. Isso resolve dois problemas de uma vez: trapaça, e mestres diferentes premiando de forma incompatível sem má-fé nenhuma.</p>
+</blockquote>
+<h1>1. Pontos de personagem</h1>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Pontos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Semana jogada, sem risco relevante</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Semana com descida ou risco real</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Descida por varredura bem-sucedida (<code>02</code>, Ritmo) — sem risco relevante</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Objetivo declarado alcançado</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Feito excepcional (a critério do Árbitro)</td>
+<td>+1 a +3</td>
+</tr>
+<tr>
+<td><strong>Teto por semana sem aprovação do Árbitro</strong></td>
+<td><strong>5</strong></td>
+</tr>
+</tbody>
+</table>
+<p>O Mestre de Cena <strong>nunca</strong> concede acima de 5 sem Pendência aprovada.</p>
+<p><strong>A escada do feito excepcional</strong> — fixada em 10/09/2026, e o Mestre de Cena só <em>propõe</em>, pelo bloco <code>[JOGO]</code> do <code>04</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Bônus</th>
+<th>Quando</th>
+<th>Quem concede</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+1</td>
+<td>Interpretou vantagem ou desvantagem <strong>com custo real</strong> para o personagem (o Código de Honra que recusou o atalho; a Compulsão que aceitou a aposta ruim) — <strong>ou</strong> a solução decisiva foi ideia do jogador, não do Mestre</td>
+<td>a homologação, se o bloco <code>[JOGO]</code> mostra o fato</td>
+</tr>
+<tr>
+<td>+2</td>
+<td>As duas coisas acima na mesma semana, ou uma solução que mudou o resultado para a mesa inteira, com risco pessoal</td>
+<td>o Árbitro</td>
+</tr>
+<tr>
+<td>+3</td>
+<td>Semana que fica na história da campanha</td>
+<td>o Árbitro, e raro</td>
+</tr>
+</tbody>
+</table>
+<p>Peso no resultado <em>ausente</em> não recebe bônus. O personagem do Árbitro só recebe +2 ou +3 por decisão explícita e registrada do próprio Árbitro — Carta, artigo 4. O teto de 5 continua valendo sobre a soma.</p>
+<h2>Rank por pontos totais</h2>
+<p>F 150 · E 170 · D 190 · C 210 · B 235 · A 260 · S 285 · SS 300+</p>
+<p>Promoção exige avaliação jogada na Guilda, e pode ser segurada por motivo político.</p>
+<h1>2. A moeda</h1>
+<p>Cada cidade cunha a sua. O Limiar negocia por peso, e a unidade de conta comum é o <strong>grão</strong> (g).</p>
+<table>
+<thead>
+<tr>
+<th>Referência</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Refeição simples</td>
+<td>2 g</td>
+</tr>
+<tr>
+<td>Noite em casa de descanso</td>
+<td>5 g</td>
+</tr>
+<tr>
+<td>Taxa de passagem pelo Poço (por descida)</td>
+<td>10 g</td>
+</tr>
+<tr>
+<td>Salário semanal de trabalhador comum</td>
+<td>30 g</td>
+</tr>
+<tr>
+<td>Espada de boa qualidade</td>
+<td>400 g</td>
+</tr>
+<tr>
+<td>Cota de malha</td>
+<td>825 g no Limiar, 550 em Gapheim</td>
+</tr>
+<tr>
+<td>Ano de vida modesta no Limiar</td>
+<td>1.500 g</td>
+</tr>
+</tbody>
+</table>
+<p>Riqueza inicial padrão (Riqueza Média): <strong>1.000 g</strong>.</p>
+<h1>3. Espólio por profundidade</h1>
+<p>Faixa <strong>por aventureiro, por descida bem-sucedida</strong>, já descontada a taxa da Guilda.</p>
+<table>
+<thead>
+<tr>
+<th>Andares</th>
+<th>Faixa (g)</th>
+<th>Natureza do espólio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–3</td>
+<td>40 – 120</td>
+<td>Matéria comum: peles, quitina, ossos, minério raso</td>
+</tr>
+<tr>
+<td>4–7</td>
+<td>100 – 300</td>
+<td>Reagente alquímico, metal incomum, partes úteis</td>
+</tr>
+<tr>
+<td>8–11</td>
+<td>250 – 700</td>
+<td>Reagente raro, metal profundo, primeiras peças antigas</td>
+</tr>
+<tr>
+<td>12–16</td>
+<td>600 – 1.800</td>
+<td>Objetos de tumba, ligas que a superfície não produz</td>
+</tr>
+<tr>
+<td>17–21</td>
+<td>1.500 – 5.000</td>
+<td>Bens funerários íntegros, material de porta</td>
+</tr>
+<tr>
+<td>22–26</td>
+<td>4.000 – 15.000</td>
+<td>Peças nomeadas, registros, coisas com procedência</td>
+</tr>
+<tr>
+<td>27–30</td>
+<td>12.000 – 50.000</td>
+<td>Praticamente tudo é achado histórico ou político</td>
+</tr>
+<tr>
+<td>31+</td>
+<td>sem tabela</td>
+<td>Passa por Pendência. Sempre.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A faixa é da descida inteira; o número da ficha é da carcaça.</strong> O valor de espólio que o <code>06 — Bestiário</code> dá em cada criatura é <strong>por carcaça</strong>. A faixa acima é outra unidade: é o que <strong>um aventureiro</strong> leva de <strong>uma descida bem-sucedida</strong>, já líquida da taxa da Guilda, somando carcaças, recuperação e tudo o que se trouxe de volta. Uma criatura sozinha normalmente não fecha a faixa, e não precisa fechar — quem fecha é a descida.</p>
+<p><strong>Fechada a conta da descida:</strong> abaixo do piso, paga-se o piso. Acima do teto sem justificativa registrada, o excedente não se entrega — <strong>vira Pendência</strong>. Isto não mexe em nenhum número de criatura do <code>06</code>; existe para que eles parem de parecer errados.</p>
+<p><strong>Descida malsucedida rende de 0 a 30% da faixa.</strong> Fracasso é comum e é conteúdo.</p>
+<p><strong>Onde se cai dentro da faixa é decidido pela Muda</strong> — ver <code>06b — Muda dos Andares</code>. A Muda posiciona; ela nunca estoura a faixa. A única exceção é o resultado Bolsão, que é Pendência obrigatória.</p>
+<p><strong>O grosso do comércio não é item mágico.</strong> É matéria: metal, reagente, parte de criatura. É isso que sustenta sete cidades e paga o salário de milhares de aventureiros.</p>
+<h1>4. Itens mágicos</h1>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Reescrito em 10/09/2026.</strong> A versão anterior tratava todo item mágico como raridade funerária. Não é mais assim, e a mudança é de mundo, não só de regra — ver "A Garganta está acordando", no fim desta seção.</p>
+</blockquote>
+<h2>Duas categorias, e o teste é o que o item faz</h2>
+<p><strong>Se o item muda um número, é comum. Se o item muda o que o personagem <em>é</em>, é obra-prima.</strong></p>
+<h3>Item encantado comum</h3>
+<p>Bônus fixo, dentro de tetos. Compra-se no balcão, tem preço de tabela, não tem nome. <strong>As tabelas completas — armas, proteção, joias, atributo, vestes, regeneração, gemas, cajado, consumíveis — e as quatro regras de uso estão no <code>21 — Loot, Balcão e Registro</code>, §2.</strong> Este documento não as repete, para que só exista uma versão.</p>
+<p>Pode ser comprado na criação de personagem, dentro do que a Riqueza dá (9.3).</p>
+<h3>Obra-prima</h3>
+<p>Tudo acima dos tetos do comum — perícia +3, atributo +2, PV ou Fadiga além de +3, regeneração mais rápida que 6 horas, gema maior que 15 ou que recarrega em horas, gema de magia com feitiço de pré-requisito ou nível acima de 12, mais de dois encaixes — e todo efeito <strong>qualitativo</strong>: dano <strong>elemental</strong>, feitiço <strong>automático e sem custo</strong>, cajado que <strong>amplia a mana</strong> ao redor, item com <strong>opinião</strong>, e tudo o que não cabe numa linha de tabela.</p>
+<p><strong>Não se compra.</strong> Tem nome, procedência e opinião. Quem a carrega vira alguém que o mundo olha, cobra e segue — e é isso que faz o personagem virar peça da trama.</p>
+<p><strong>Não tem tabela.</strong> Cada obra-prima é escrita pelo Árbitro, uma a uma, com a fraqueza estrutural e o preço político dela. Nenhum Mestre de Cena inventa uma, nem os efeitos de uma, nem o que ela quer.</p>
+<p><strong>Vira questão teológica.</strong> Ámenti considera a maior parte da recuperação profanação, e registra cada peça. Gapheim considera espólio legítimo, ganho com risco. As duas posições são coerentes, incompatíveis, e isso é comércio, lei e guerra fria ao mesmo tempo.</p>
+<p><strong>Itens muito bons têm opinião</strong> sobre quem os carrega. E o dono anterior pode não ter terminado de usá-los.</p>
+<h2>O que se acha em cada andar</h2>
+<p>A escada abaixo não classifica o item — classifica <strong>onde ele aparece</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Andares</th>
+<th>O que se acha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–3</td>
+<td>Lista <strong>Simples</strong> do baú (<code>21</code> §3): item comum +1</td>
+</tr>
+<tr>
+<td>4–7</td>
+<td>Lista <strong>Bom</strong>: item comum +1 e +2</td>
+</tr>
+<tr>
+<td>8–12</td>
+<td>Lista <strong>Raro</strong>: comum +2, atributo +1 — e, só no 3 natural do baú, a primeira obra-prima, pequena, de um efeito só</td>
+</tr>
+<tr>
+<td>13–20</td>
+<td>Obra-prima com nome registrado e procedência conhecida. A faixa das portas; listas ainda não escritas</td>
+</tr>
+<tr>
+<td>21+</td>
+<td>Obra-prima sepulcral: poder sério, vontade própria, e alguém a quer de volta</td>
+</tr>
+</tbody>
+</table>
+<p><strong>O Baú da Garganta</strong> — o sorteio de item por andar, presente em <strong>toda descida explorada</strong> e rolado depois da Muda — está no <code>06b</code> §10. É a única fonte aleatória de item, e é fechada: nada sai dele que não esteja na tabela.</p>
+<p><strong>Obra-prima não aparece à venda no mercado aberto.</strong> Se aparece, alguém morreu ou alguém roubou — e isso é gancho, não detalhe.</p>
+<h2>Fabricação</h2>
+<p><strong>Item comum, pela Casa.</strong> A Casa divina do personagem encanta no santuário: <strong>+1 em uma semana, +2 em um mês.</strong> Paga-se o preço de tabela em grão, mais o que a Casa pedir — e a Casa às vezes pede em Dever.</p>
+<p><strong>Item comum, pelo mago.</strong> Quem tem Aptidão Mágica encanta pelo livro. Mas cada dia de trabalho vale pela mana do lugar: <strong>1 em mana normal, 5 em alta, 25 em muito alta</strong> (<code>17</code> §6.5). O +1 que na superfície leva oito meses de um mago leva cinquenta dias no andar 9 — e dez, com um círculo de cinco. Encantar exige oficina do 9 para baixo, e quem segura uma câmara de mana alta segura a forja das sete cidades. É por isso que o andar 9 é político.</p>
+<p><strong>Obra-prima.</strong> Só a Casa, só no santuário, e <strong>só como arco</strong>: a Casa que te forja a lâmina te chama para a guerra dela. O prazo, o material e o Dever são escritos pelo Árbitro caso a caso. Um mago jogador pode chegar a forjar uma — e no dia em que chegar, isso é Pendência e é Boletim.</p>
+<h2>A Garganta está acordando</h2>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Fato de mundo, registrado em 10/09/2026, com efeito a partir da Semana 2.</strong> Os itens funerários que dormiam começam a <em>responder</em>. Encantamentos que levavam estações passam a fechar em dias no santuário certo. Os magos de Casa sentem; os arquivistas de Ámenti registram; <strong>ninguém sabe por quê</strong>, e quem diz que sabe está mentindo ou vendendo.</p>
+<p><strong>A linha da mana sobe.</strong> Hoje a mana alta começa no andar 9. Ela vai subir — e cada subida é anunciada pelo Boletim, nunca antes. Consulte sempre o campo <code>Mana</code> da base <code>Andares</code>; não presuma pelo número do andar.</p>
+<p>A causa é do Árbitro e mora na Camada Reservada. Nenhum Mestre de Cena a insinua, nomeia ou explica. O que o personagem vê é o efeito: mais lâminas com brilho, mais gente com pressa, e as sete cidades olhando para o mesmo lugar.</p>
+</blockquote>
+<h1>5. Comércio</h1>
+<p><strong>A Guilda avalia e registra.</strong> Todo espólio passa por avaliação e taxa. Item não registrado é contrabando; contrabando cassa registro; sem registro não há acesso legal à Garganta.</p>
+<p><strong>Taxa da Guilda:</strong> 15% do valor avaliado. Já descontada nas faixas da seção 3.</p>
+<p><strong>As sete cidades compram coisas diferentes.</strong> Ámenti paga acima da tabela por qualquer coisa com inscrição. Gapheim paga acima por arma. Fengdu paga acima por registro e documento. Amaravati recusa comprar certos bens funerários por princípio, e isso cria mercado paralelo. Vender na cidade certa rende de 10 a 30% a mais — e é jogada política, não só comercial.</p>
+<p><strong>A Guilda vende leitura de muda:</strong> levantamento recente da população de um andar. Vale uma semana de mundo, e quem compra conhece o resultado da Muda antes de descer.</p>
+<table>
+<thead>
+<tr>
+<th>Andares</th>
+<th>Preço (g)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–7</td>
+<td>30</td>
+</tr>
+<tr>
+<td>8–12</td>
+<td>80</td>
+</tr>
+<tr>
+<td>13+</td>
+<td>200, e nem sempre existe</td>
+</tr>
+</tbody>
+</table>
+<p>Fengdu registra e revende leituras. Leitura vencida vale metade; leitura falsificada é crime de registro.</p>
+<p><strong>Dinheiro em rank alto vira alavanca:</strong> financiar esquadras, comprar contratos antes do rival, sustentar presença em embaixada, pagar intercessão por um morto.</p>
+<h1>6. Contratos</h1>
+<table>
+<thead>
+<tr>
+<th>Rank exigido</th>
+<th>Recompensa típica (g)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F–E</td>
+<td>50 – 200</td>
+</tr>
+<tr>
+<td>D–C</td>
+<td>200 – 900</td>
+</tr>
+<tr>
+<td>B</td>
+<td>900 – 3.000</td>
+</tr>
+<tr>
+<td>A</td>
+<td>3.000 – 12.000</td>
+</tr>
+<tr>
+<td>S–SS</td>
+<td>negociado, e raramente em moeda</td>
+</tr>
+</tbody>
+</table>
+<p>Contrato de <strong>contenção</strong> (andares 1–10) é permanente, remunerado e honroso. Nunca falta. É o que segura as cidades de pé.</p>
+<p><strong>Contenção paga por cabeça: 120 g por aventureiro registrado, por semana em que ele desceu em contenção</strong>, jogada ou varrida, pagos pela Guilda no balcão. É a folha de pagamento da operação de Yax Balam, e é por isso que quem pega contenção não fecha a semana no vermelho. Os outros contratos desta tabela pagam <strong>por contrato</strong>, e a esquadra divide como combinou antes do cesto.</p>
+<h1>7. Pressão dos andares</h1>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–1</td>
+<td>Contido. Rotina.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Elevado. Contratos de contenção pagam mais.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Alto. Coisas alcançam o andar acima.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Crítico. Alcança o Limiar. A Guilda convoca.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Ruptura. Alcança as cidades. Evento de campanha.</td>
+</tr>
+</tbody>
+</table>
+<p>Cada descida com combate reduz a Pressão. Uma semana sem descidas a aumenta. <strong>O normal é a contenção funcionar</strong> — nível 3 ou mais é sempre consequência de uma falha política.</p>
+<h1>8. O que o Mestre de Cena não pode fazer</h1>
+<ul>
+<li>Conceder acima de 5 pontos por semana</li>
+<li>Conceder espólio fora da faixa da profundidade</li>
+<li>Entregar obra-prima sem Pendência</li>
+<li>Vender obra-prima no mercado aberto</li>
+<li>Alterar taxa, preço ou recompensa tabelados</li>
+<li>Sugerir, oferecer ou lembrar rolagem de Comércio ou de Avaliação</li>
+<li>Aplicar prêmio de venda sem perícia declarada pelo jogador</li>
+<li>Vender abaixo do piso ou comprar acima do teto da Regra do Corredor (seção 9)</li>
+<li>Declarar andar Ancorado sem registro em <code>Andares</code></li>
+</ul>
+<p>Se a narrativa exigir qualquer uma dessas coisas, <strong>abre-se Pendência</strong>. Um jogo travado por meia hora é melhor que uma economia que se parte.</p>
+<h1>9. Preço de balcão e a Regra do Corredor</h1>
+<blockquote>
+<p><strong>Nota.</strong>
+Esta seção fecha o que faltava: quanto custa cada coisa, e o que a perícia do jogador consegue fazer com isso. A trava da seção 8 continua valendo — o Mestre de Cena consulta, não decide.</p>
+</blockquote>
+<h2>9.1 A âncora</h2>
+<p>Riqueza Média é 1.000 g, que é exatamente a riqueza inicial média do livro. Logo:</p>
+<p><strong>1 grão = \$1 do GURPS.</strong></p>
+<p>Item que não estiver listado aqui usa o preço do livro, em grãos, sem conversão. Isso importa a tabela inteira para o cânone sem que ninguém precise inventar valor.</p>
+<h2>9.2 Ágio de armadura</h2>
+<p><strong>Armadura custa 1,5× o preço de livro no Limiar.</strong> Arma tem oferta; proteção não. Gapheim controla a forja de placa e malha, todo mundo que desce precisa de uma, e ninguém vende barato para estrangeiro.</p>
+<p>Nas praças de Gapheim, armadura sai a preço de livro para cidadão gapheimita e para quem carrega contrato da cidade. O ágio é literalmente a diferença que o estrangeiro paga. É fonte de renda para Gapheim e fonte de rancor para as outras seis — e é por isso que esquadras mistas contratam gapheimita para fazer a compra.</p>
+<p>Arma, suprimento e serviço não têm ágio.</p>
+<table>
+<thead>
+<tr>
+<th>Descida e vida</th>
+<th>g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tocha</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Ração, por dia</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Óleo, frasco</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Corda, 30 m</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Kit de primeiros socorros</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Refeição simples</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Noite em casa de descanso</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Taxa de passagem pelo Poço</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A tabela de balcão completa — arma, armadura, elmo e escudo — está na seção 9.4, logo abaixo da Riqueza.</strong> Esta tabela cobre só suprimento.</p>
+<h2>9.3 Níveis de Riqueza em grãos</h2>
+<p>A âncora é a seção 9.1: Riqueza Média = 1.000 g. Os demais níveis são múltiplos dela.</p>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Custo em pontos</th>
+<th>Riqueza inicial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pobre</td>
+<td>−15</td>
+<td>200 g</td>
+</tr>
+<tr>
+<td>Batalhador</td>
+<td>−10</td>
+<td>500 g</td>
+</tr>
+<tr>
+<td><strong>Média</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1.000 g</strong></td>
+</tr>
+<tr>
+<td><strong>Confortável</strong></td>
+<td><strong>+10</strong></td>
+<td><strong>2.000 g</strong></td>
+</tr>
+<tr>
+<td>Rica</td>
+<td>+20</td>
+<td>5.000 g</td>
+</tr>
+</tbody>
+</table>
+<p>Média e Confortável já eram cânone — a primeira pela seção 2, a segunda pela Parte 3 do <code>17</code>, que diz que Confortável dobra o dinheiro inicial. <strong>Pobre, Batalhador e Rica foram conferidos contra o Módulo Básico em 07/09/2026 e fecham como estavam:</strong> o livro dá Pobre a um quinto da média por −15 pontos, Batalhador à metade por −10, e Rico ao quíntuplo por +20. Não há mais valor marcado <code>°</code> nesta seção. Acima de Rica, Pendência: riqueza inicial dessa ordem é fato político, não compra de ficha.</p>
+<p><strong>O número em Equipamento nos Modelos do </strong><strong><code>08</code></strong><strong> é riqueza inicial, não troco.</strong> É com ele que se compra o kit inteiro pela tabela 9.4 — o que sobra depois de comprar é que é troco, e costuma ser pouco.</p>
+<h2>9.4 Tabela de balcão</h2>
+<p>Preços em grãos, à vista, no Limiar. <strong>Conferidos contra o livro em 07/09/2026</strong> — não há mais valor marcado <code>°</code> nesta seção.</p>
+<p><strong>Arma não tem ágio:</strong> o preço abaixo é o do livro, em grãos.</p>
+<table>
+<thead>
+<tr>
+<th>Arma</th>
+<th>Perícia</th>
+<th>g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adaga</td>
+<td>Faca</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Faca</td>
+<td>Faca</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Facão</td>
+<td>Faca</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Machadinha</td>
+<td>Machado/Maça</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Lança</td>
+<td>Lança</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Machado · Maça</td>
+<td>Machado/Maça</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Besta (+ virote 2)</td>
+<td>Besta</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Arco longo (+ flecha 2)</td>
+<td>Arco</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Gládio</td>
+<td>Espada Curta</td>
+<td>400</td>
+</tr>
+<tr>
+<td>Terçado</td>
+<td>Esgrima</td>
+<td>400</td>
+</tr>
+<tr>
+<td><strong>Montante</strong></td>
+<td>Espadas de Lâmina Larga</td>
+<td><strong>500</strong></td>
+</tr>
+<tr>
+<td>Rapieira</td>
+<td>Esgrima</td>
+<td>500</td>
+</tr>
+<tr>
+<td>Cimitarra</td>
+<td>Lâmina Larga</td>
+<td>650</td>
+</tr>
+<tr>
+<td>Sabre</td>
+<td>Esgrima</td>
+<td>700</td>
+</tr>
+<tr>
+<td><strong>Espadão</strong></td>
+<td>Espadas de Duas Mãos</td>
+<td><strong>800</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Cuidado com o nome.</strong> No livro, <strong>Montante</strong> é a espada larga de uma mão (500) e <strong>Espadão</strong> é a de duas mãos (800). A redação anterior desta tabela trocava os dois, listando "espada larga 500" e "montante 800". Use os nomes do livro; são os que a ficha vai ter.</p>
+</blockquote>
+<h3>Armadura — preço já com o ágio de 1,5×</h3>
+<table>
+<thead>
+<tr>
+<th>Peça</th>
+<th>PD</th>
+<th>RD</th>
+<th>g no Limiar</th>
+<th>g em Gapheim</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roupa de inverno</td>
+<td>0</td>
+<td>1</td>
+<td>90</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Laudel (acolchoado)</td>
+<td>1</td>
+<td>1</td>
+<td>270</td>
+<td>180</td>
+</tr>
+<tr>
+<td>Coura (couro leve)</td>
+<td>1</td>
+<td>1</td>
+<td>315</td>
+<td>210</td>
+</tr>
+<tr>
+<td>Loriga de couro</td>
+<td>2</td>
+<td>2</td>
+<td>525</td>
+<td>350</td>
+</tr>
+<tr>
+<td><strong>Cota de malha</strong></td>
+<td>3</td>
+<td>4</td>
+<td><strong>825</strong></td>
+<td>550</td>
+</tr>
+<tr>
+<td>Loriga de escamas</td>
+<td>3</td>
+<td>4</td>
+<td>1.125</td>
+<td>750</td>
+</tr>
+<tr>
+<td>Mista placa/cota</td>
+<td>4</td>
+<td>5</td>
+<td>3.000</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Armadura de placas</td>
+<td>4</td>
+<td>6</td>
+<td>6.000</td>
+<td>4.000</td>
+</tr>
+<tr>
+<td>Placas reforçada</td>
+<td>4</td>
+<td>7</td>
+<td>9.000</td>
+<td>6.000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cota de malha contra perfurante:</strong> PD 1 e RD 2, não 3 e 4. Na Garganta isso importa muito — boca-de-poço, prumo e draugr batem perfurante, e é exatamente por isso que a lança vence a espada contra casca-de-osso.</p>
+<p><strong>As três armaduras com placa incluem elmo</strong>, e portanto trazem <strong>−1 em toda perícia de combate e −3 em Visão e Audição.</strong> No andar 8, onde já não se ouve nada, isso é uma escolha e não um detalhe.</p>
+<h3>Elmo avulso e escudo</h3>
+<table>
+<thead>
+<tr>
+<th>Peça</th>
+<th>PD</th>
+<th>RD</th>
+<th>g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capacete de couro (com ágio)</td>
+<td>2</td>
+<td>2</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Celada (com ágio)</td>
+<td>3</td>
+<td>4</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Elmo fechado (com ágio)</td>
+<td>4</td>
+<td>7</td>
+<td>510</td>
+</tr>
+<tr>
+<td>Broquel</td>
+<td>1</td>
+<td>—</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Escudo pequeno</td>
+<td>2</td>
+<td>—</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Escudo médio</td>
+<td>3</td>
+<td>—</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Escudo grande</td>
+<td>4</td>
+<td>—</td>
+<td>90</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Escudo não paga ágio.</strong> Qualquer carpinteiro faz um, e Gapheim não monopoliza madeira. O ágio da seção 9.2 vale para o que sai da forja: armadura de metal e elmo.</p>
+<p>O elmo fechado dá −1 em perícia de combate e −3 em Visão e Audição. A celada, não.</p>
+<h2>9.5 Armaduras sobrepostas</h2>
+<p><strong>A regra geral: a camada de dentro soma RD e nunca soma PD.</strong></p>
+<ul>
+<li><strong>Normalmente veste-se uma armadura só.</strong> As exceções abaixo são as únicas.</li>
+<li><strong>Cota de malha exige laudel por baixo</strong>, e o preço de 825 já inclui. Sem o laudel, a cota cai para <strong>PD 3 / RD 3</strong> — e para <strong>PD 0 / RD 1</strong> contra perfurante, que é quase nada.</li>
+<li><strong>Sob placas, loriga de couro ou lorigas em geral</strong> cabe um laudel ou uma coura: <strong>+1 de RD</strong>, o PD não muda, e o peso sobe.</li>
+<li><strong>Cota de malha sob armadura de placas: +2 de RD.</strong> O peso é proibitivo para quem não tem ST alta, e é a única combinação que leva um personagem a RD 8.</li>
+<li>Peça de cabeça, mão e pé não é sobreposição: soma normalmente, cada uma na sua área.</li>
+</ul>
+<p>Isto é onde a compra de equipamento vira decisão de verdade. Loriga de couro (525) com laudel por baixo (270) dá <strong>PD 2 / RD 3</strong> por 795 grãos — mais barato que a cota de malha, com um ponto a menos de RD, e sem a queda para RD 2 contra perfurante. Quem desce ao andar 9 atrás de boca-de-poço faz essa conta e escolhe couro. Quem desce ao 6 atrás de andarilho, que bate contundente, escolhe a cota.</p>
+<h2>9.6 A Regra do Corredor</h2>
+<p>O preço de tabela é <strong>P</strong>.</p>
+<ul>
+<li><strong>Comprando:</strong> o balcão cobra P. Um teste de Comércio bem-sucedido desce até o <strong>piso de 80% de P</strong>.</li>
+<li><strong>Vendendo equipamento usado:</strong> o lojista abre em 50% de P. Comércio sobe até o <strong>teto de 70% de P</strong>.</li>
+</ul>
+<p>O teto de venda fica abaixo do piso de compra. Comprar e revender <strong>sempre</strong> perde pelo menos 10%, por melhor que seja a perícia. Não existe ciclo que imprima dinheiro.</p>
+<p>Três travas:</p>
+<ol>
+<li><strong>Uma rolagem por comerciante por semana.</strong> Sem re-rolagem, sem outro personagem tentando de novo pelo mesmo item.</li>
+<li><strong>Sucesso decisivo não estoura o piso.</strong> Paga em outra moeda: crédito na casa, prioridade de encomenda, o nome de quem vendeu aquela peça antes. Acesso, não dinheiro.</li>
+<li><strong>Falha crítica</strong> fecha o preço em 110% de P, e o comerciante lembra do rosto.</li>
+</ol>
+<h2>9.7 Comércio e Avaliação sobre o espólio</h2>
+<p>As duas perícias são as da seção 4 do documento 02. Na mesa se diz "barganhar" e "conhecer o mercado"; na ficha se escreve <strong>Comércio</strong> e <strong>Avaliação</strong>.</p>
+<p>A faixa da seção 3 é intocável — nenhuma perícia a aumenta. O que a perícia alcança é o <strong>prêmio de 10 a 30% da seção 5</strong>, o dinheiro de vender na cidade certa. Esse prêmio já existia no cânone; o que muda aqui é quem o captura.</p>
+<ul>
+<li><strong>Avaliação</strong> diz quanto a peça vale de verdade e qual cidade paga acima por aquele tipo de bem.</li>
+<li><strong>Comércio</strong> define onde, dentro dos 10 a 30%, o negócio fecha.</li>
+<li>Nunca acima de 30%, nunca fora da faixa, nunca duas vezes sobre o mesmo lote.</li>
+</ul>
+<p><strong>Nada disso nasce sem o jogador declarar.</strong> O Mestre de Cena não oferece, não pergunta, não insinua e não lembra. O comerciante abre um preço e cala. Sem perícia declarada, vale a faixa da seção 3, limpa — não é punição, é o preço honesto de quem não negociou.</p>
+<p>Fica registrado no relatório: perícia usada, rolagem, resultado. A homologação confere.</p>
+<p><strong>A regra de justiça que acompanha esta:</strong> isto está escrito na seção 4 do documento 02, que todo jogador lê antes da primeira sessão. Ninguém precisa ser lembrado em cena, e ninguém descobre tarde demais que a perícia servia para algo.</p>
+<h1>10. O custo de sobreviver</h1>
+<blockquote>
+<p><strong>Nota.</strong>
+Sem sumidouro, dinheiro só se acumula, e em vinte semanas todo mundo está rico e nada mais custa nada. Esta seção é o sumidouro. Ela sai de dentro do próprio cânone: 1.500 g por ano de vida modesta dá 29 g por semana, que é o salário semanal do trabalhador comum. O trabalhador comum ganha exatamente uma vida modesta — o resto desta seção se apoia nisso.</p>
+</blockquote>
+<h2>10.1 Manutenção semanal</h2>
+<table>
+<thead>
+<tr>
+<th>Padrão</th>
+<th>g / semana</th>
+<th>O que é</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Miserável</td>
+<td>8</td>
+<td>Catre coletivo, comida ruim, roupa que não seca. Não se recupera plenamente entre descidas, e a Guilda percebe.</td>
+</tr>
+<tr>
+<td>Modesta</td>
+<td>30</td>
+<td>Quarto dividido, comida quente, uma muda decente. É o padrão de quem desce.</td>
+</tr>
+<tr>
+<td>Confortável</td>
+<td>90</td>
+<td>Quarto próprio, comida boa, lavanderia, alguém guardando o equipamento enquanto você dorme.</td>
+</tr>
+<tr>
+<td>De presença</td>
+<td>300</td>
+<td>Casa no anel de dentro, criadagem, mesa que se pode oferecer a alguém que importa. Sem isto não se sustenta convite de embaixada.</td>
+</tr>
+</tbody>
+</table>
+<p>Cobra-se na virada do Boletim, <strong>nas semanas em que o personagem agiu</strong> — isto é, gastou ao menos uma das três ações de mundo. Quem não agiu não paga e não desce de degrau.</p>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Por que a ausência não custa.</strong> A redação anterior cobrava toda semana, jogada ou não, e derrubava o degrau de quem não pagasse. Isso contraria o artigo 8 da Carta do Árbitro — <em>a ausência não penaliza</em> — e a Carta vence o cânone. Corrigido em 07/09/2026.</p>
+<p>Cenas livres não contam como agir. Quem passou a semana na taverna sem gastar ação de mundo não pagou nada, e está certo: cena livre não mexe no banco, nem para dar nem para tirar.</p>
+</blockquote>
+<p>Quem agiu e não paga desce um degrau na semana seguinte — e descer de degrau é público. Portas que estavam abertas param de abrir, e ninguém explica por quê.</p>
+<h2>10.2 Cesto de descida</h2>
+<p>Ninguém rastreia tocha por tocha. Preço fechado, por pessoa, por descida, cobrindo luz, ração, água, óleo, ataduras, flecha perdida e corda gasta.</p>
+<table>
+<thead>
+<tr>
+<th>Andares</th>
+<th>g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 – 7</td>
+<td>15</td>
+</tr>
+<tr>
+<td>8 – 16</td>
+<td>40</td>
+</tr>
+<tr>
+<td>17 – 24</td>
+<td>100</td>
+</tr>
+<tr>
+<td>25 +</td>
+<td>250</td>
+</tr>
+</tbody>
+</table>
+<p>Soma-se à taxa de passagem pelo Poço, 10 g. Quem quiser comprar item por item pode, e economiza no máximo 20% — a diferença não paga o tempo de mesa que custa.</p>
+<h2>10.3 Desgaste</h2>
+<p>Descida com combate: reparo de arma e armadura custa <strong>5%</strong> do preço de tabela das peças usadas. Descida malsucedida: <strong>10%</strong>. Quem adia o reparo acumula: no terceiro adiamento, a peça falha, e falha na hora ruim. Armeiro do Limiar não fia para quem já deve.</p>
+<h2>10.4 Cura, e o preço teológico dela</h2>
+<p>Ferimento grave tratado por meio comum: <strong>50 g e uma semana parado</strong>. Tratado em santuário: <strong>200 g e nenhuma semana</strong> — mas santuário é serviço de uma Casa divina, e Casa divina não esquece a quem atendeu.</p>
+<p>Estrangeiro paga o dobro em cidade cuja Casa não é a sua. Alguns santuários recusam certos pacientes por princípio, e essa recusa sustenta um mercado paralelo de curandeiros sem registro. Isso é gancho, não obstáculo.</p>
+<h2>10.5 Registro</h2>
+<p>Renovação anual do registro na Guilda: <strong>50 g</strong>. Barato de propósito — o registro não é fonte de renda da Guilda, é o cadastro que a torna indispensável.</p>
+<p>Lote não registrado continua sendo contrabando, com o efeito da seção 5: cassa o registro. Não existe multa que compre a volta. Existe intercessão política, e ela custa muito mais que qualquer multa.</p>
+<h2>10.6 A conta fecha assim</h2>
+<p>Rank F, andares 1 a 3, duas descidas bem-sucedidas na semana: entra de 80 a 240 g — e na prática mais perto do piso, porque andar Ancorado puxa a Muda para baixo (<code>06b</code>, seção 2).</p>
+<p>Sai 30 de vida modesta, 50 de taxa e cesto, e <strong>10 a 25 de desgaste</strong> pela seção 10.3, que a redação anterior desta seção esquecia. Total de 90 a 105 g.</p>
+<p><strong>Sobram de −25 a +150 g por semana.</strong> O piso é negativo de propósito: semana ruim custa dinheiro, e é isso que faz a semana boa valer alguma coisa.</p>
+<p><strong>O que segura o piso é o contrato, não o espólio.</strong> Contenção rasa paga 120 g, é rank F, e pela seção 6 <strong>nunca falta</strong>. Quem pega contenção não fecha a semana no vermelho, por pior que role. Quem despreza o trabalho honesto e só desce atrás de espólio, fecha — às vezes. Essa é a lição econômica do rank F e ela é de propósito.</p>
+<p>Uma cota de malha custa 825 g pela tabela 9.4 — 550 para quem tem como comprá-la em Gapheim, e é por isso que esquadra mista manda o gapheimita ao balcão. Mesmo na melhor semana, a das +150 g de sobra do parágrafo acima, são <strong>cinco semanas e meia</strong> guardando tudo e não gastando em mais nada. Na semana mediana, o dobro disso: <strong>dois a três meses de trabalho honesto</strong> para um rank F. É exatamente isso que faz a malha significar alguma coisa quando ele finalmente a veste.</p>
+<p>Em rank alto o consumo deixa de ser freio: quem tira 700 g por descida não é contido por 40 g de cesto. Lá o freio é político — financiar esquadra, sustentar presença em embaixada, pagar intercessão por um morto. Está na seção 5, e é de propósito.</p>
+<h2>10.7 Contratados</h2>
+<p>Três linhas, e nenhuma pede decisão do jogador — a conta é do Árbitro na homologação.</p>
+<ul>
+<li><strong>Contratado custa 30 g por semana agida.</strong> Carregador, 35. Não recebe parte do espólio.</li>
+<li><strong>Lâmina de aluguel é rank F, modelo fixo:</strong> ST 11 · DX 11 · IQ 10 · HT 11 · PV 11 · uma arma em 12 · couro leve. Não tem ficha. Subir disso é Pendência.</li>
+<li><strong>Espólio é por aventureiro registrado na Guilda.</strong> Contratado não é aventureiro: não entra na conta da faixa.</li>
+</ul>
+<p>Contratado que consta em ficha homologada é NPC nomeado e <strong>morre em −HT</strong> (<code>20</code> §5.4.1). Conta como corpo na esquadra para a varredura (<code>02</code>, Ritmo).</p>
+<p><strong>Aventureiro encontrado na Garganta</strong> é NPC de cena: ajuda naquela descida se quiser, não recebe parte, e só vira contratado com contrato registrado na Guilda — a partir da semana seguinte, pelas três linhas acima.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/03-economia-e-tabelas.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

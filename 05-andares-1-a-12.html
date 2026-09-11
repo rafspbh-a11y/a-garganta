@@ -1,0 +1,189 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Andares 1 a 12 — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html" class="atual">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Andares 1 a 12</h1><div class="meta">versão 2 · atualizado em 2026-09-11 · A Garganta</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+Cobre os andares 1 a 12, que são a faixa de rank <strong>F a C</strong> — o 12 é o teto do C. O rank B começa no 13, e essa faixa não está aqui. Nenhum Mestre de Cena inventa terreno ou extração fora desta descrição.</p>
+</blockquote>
+<h1>Como se desce</h1>
+<p>Do Limiar, pelo <strong>Poço</strong> — o único acesso oficial. Uma rampa espiralada talhada na parede, larga o bastante para carroça, que desce até o andar 3. Foi construída pelas sete cidades ao longo de oitenta anos e é a maior obra de engenharia do mundo conhecido.</p>
+<p><strong>A Garganta não se desce de corda.</strong> A parede do poço é vazada por uma rede de galerias, túneis, escadarias e mausoléus que liga andar a andar, e entre dois andares há sempre mais de um caminho. Os oficiais são escorados, vigiados e cobrados; os outros não estão em mapa nenhum.</p>
+<p><strong>Cada andar é uma região</strong>, com clima, luz, água e fauna próprios — e da faixa de mana alta em diante, com biomas que a superfície não produz.</p>
+<p><strong>Andar Ancorado</strong> significa acampamento fixo, guarnição da Guilda e descida direta por rota estabelecida. Os andares 1 a 9 estão Ancorados. O 10 tem acampamento sazonal. Do 11 em diante, você monta o seu.</p>
+<p><strong>Luz:</strong> não existe luz natural abaixo do andar 2. Ficar sem luz na Garganta é uma das causas mais comuns de morte registrada por Ámenti.</p>
+<h1>Trânsito — como se chega ao 3 sem nada acontecer</h1>
+<p><strong>A rota oficial entre andares Ancorados é passagem livre:</strong> sem rolagem, sem encontro, sem Muda. Desce-se pela rampa até o 3, pelas galerias escoradas dali para baixo, entre guarnições da Guilda. A descida "acontece" no andar-alvo, e só nele. <strong>Fixado em 10/09/2026.</strong></p>
+<p><strong>Sair da rota é exploração a partir dali</strong> — atalho, galeria não escorada, um dos caminhos "que não estão em mapa nenhum". Joga-se o andar em que se saiu.</p>
+<p><strong>A rota pode fechar.</strong> Andar de passagem com Pressão Crítica no Boletim interdita a rota: ou se joga aquele andar, ou não se desce. Quando o 2 fecha, todo mundo do 3 para baixo sente.</p>
+<p><strong>Do 10 para baixo não há rota.</strong> Cada andar é exploração, inclusive para passar.</p>
+<h1>ANDAR 1 — a Descida</h1>
+<p><strong>Terreno.</strong> Ainda se vê o céu. Encosta larga em terraços, com a rampa cortando a parede. Há barracões, guinchos, cantina e três tavernas — mais parece obra que masmorra.</p>
+<p><strong>Extração.</strong> Quase nenhuma. Quem trabalha aqui é carregador.</p>
+<p><strong>Perigo.</strong> Queda — mata mais gente no andar 1 do que criatura alguma. Galeria entupida, que é metade do trabalho pago daqui. E gente: roubo, briga, cobrança.</p>
+<p><strong>Acampamento.</strong> Ancoradouro Alto, guarnição permanente.</p>
+<h1>ANDAR 2 — o Crepúsculo</h1>
+<p><strong>Terreno.</strong> Última luz. Fungo em placas cobre a rocha com brilho fraco e esverdeado — não o bastante para ler, o bastante para andar.</p>
+<p><strong>Extração.</strong> <strong>Fungo-lume</strong>. Base de metade dos lampiões alquímicos do Limiar. Trabalho remunerado e entediante.</p>
+<p><strong>Perigo.</strong> Cavadores-cinzentos em ninhos nas fendas. Aprendizes fazem sua primeira morte aqui.</p>
+<p><strong>Acampamento.</strong> Ancoradouro do Crepúsculo. Última guarnição com médico permanente.</p>
+<h1>ANDAR 3 — a Planície de Cascalho</h1>
+<p><strong>Terreno.</strong> Amplo, quase plano, cascalho solto que denuncia qualquer passo. Escuridão total. Ecoa muito.</p>
+<p><strong>Extração.</strong> Minério raso — ferro, cobre. Quitina de cavador.</p>
+<p><strong>Perigo.</strong> O barulho. Tudo ouve você chegar. Bandos de cavadores, primeiros lampejos.</p>
+<p><strong>Acampamento.</strong> Fim da rampa. Entreposto com balança de avaliação. É até aqui que carroça chega.</p>
+<p><strong>Descida para o 4.</strong> Três galerias descendentes, estreitas e tortuosas, escoradas e mantidas pela Guilda. Passa-se a pé, em fila, com a carga na mão. Ponto de estrangulamento — e de cobrança.</p>
+<h1>ANDAR 4 — os Dentes</h1>
+<p><strong>Terreno.</strong> Agulhas de rocha de dez a trinta metros, passagens estreitas entre elas. Labiríntico. Os mapas divergem.</p>
+<p><strong>Extração.</strong> Cristal de fenda, usado em foco mágico. Primeiro reagente de valor.</p>
+<p><strong>Perigo.</strong> Emboscada de cima. Prumos se ancoram nas fendas altas e despencam de ponta sobre quem passa embaixo.</p>
+<p><strong>Acampamento.</strong> Casa dos Dentes, posto pequeno.</p>
+<h1>ANDAR 5 — a Bacia</h1>
+<p><strong>Terreno.</strong> Depressão larga com lago de água escura e fria. Potável depois de fervida — o que torna o andar 5 vital: é o último reabastecimento fácil.</p>
+<p><strong>Extração.</strong> Peixe cego, lodo-negro, água.</p>
+<p><strong>Perigo.</strong> O que vive no lago. A Guilda proíbe nadar, e a proibição é obedecida.</p>
+<p><strong>Acampamento.</strong> Ancoradouro da Bacia — o maior abaixo da rampa. Cem a duzentas pessoas. Taverna, ferreiro, e um sacerdote de cada cidade em rodízio.</p>
+<h1>ANDAR 6 — a Mata Pálida</h1>
+<p><strong>Terreno.</strong> Floresta de estruturas altas e brancas que parecem árvores e não são. Crescem, e ninguém sabe do quê. Visibilidade de vinte metros.</p>
+<p><strong>Extração.</strong> Madeira pálida, leve e resistente, cotada alto na superfície.</p>
+<p><strong>Perigo.</strong> Andarilhos-pálidos, que imitam a forma das estruturas até você passar.</p>
+<p><strong>Acampamento.</strong> O Corte — clareira aberta a machado e mantida assim.</p>
+<p><strong>Descida para o 7.</strong> Um dos troncos é oco e desce. Não se sabe por quê.</p>
+<h1>ANDAR 7 — os Degraus</h1>
+<p><strong>Terreno.</strong> Terraços regulares demais para serem naturais. Alguém talhou isso, e não foi nenhuma das sete cidades — a datação de Ámenti diz que é anterior ao tratado por milhares de anos.</p>
+<p><strong>Extração.</strong> Pedra trabalhada, fragmentos de inscrição. <strong>Aqui começa o material que interessa aos arquivos.</strong></p>
+<p><strong>Perigo.</strong> Casca-de-osso, alojada nos degraus, que não se move até você estar em cima.</p>
+<p><strong>Acampamento.</strong> Ancoradouro dos Degraus. Última guarnição com mais de vinte pessoas.</p>
+<p><strong>Descida para o 8.</strong> Os degraus continuam. Simplesmente continuam.</p>
+<h1>ANDAR 8 — o Silêncio</h1>
+<p><strong>Terreno.</strong> Câmaras conectadas, teto baixo, e o som não se propaga direito. Grito a dez metros chega abafado. Ninguém explicou.</p>
+<p><strong>Mana.</strong> Ainda normal. O silêncio do 8 é acústico, não mágico — e magia não resolve nada aqui.</p>
+<p><strong>Extração.</strong> Metal profundo — liga escura que a superfície não produz. Gapheim paga muito bem.</p>
+<p><strong>Perigo.</strong> O silêncio. Você não ouve o que se aproxima, e seus companheiros não te ouvem gritar.</p>
+<p><strong>Acampamento.</strong> O Posto Mudo. Pequeno, tenso, alta rotatividade.</p>
+<h1>ANDAR 9 — o Calor</h1>
+<p><strong>Terreno.</strong> Trinta e cinco a quarenta graus, ar seco, chão morno. Não há fogo visível e a fonte nunca foi encontrada. Água é o limite operacional.</p>
+<p><strong>Mana.</strong> Aqui começa a faixa <strong>alta</strong>, e vai até o 20. <strong>Ela não fabrica mago.</strong> Sem Aptidão Mágica não existe feitiço — no 9 como no 1, como em qualquer andar, e nenhuma mana alta abre essa porta. O que a mana alta faz é para quem <strong>já tem</strong> Aptidão: o feitiço sai com mais potência e escapa do controle com mais facilidade. Os números finos estão no <code>17</code>. Que a mana suba exatamente onde há calor sem fonte é a coincidência que os alquimistas do Limiar discutem há décadas sem concluir nada.</p>
+<p><strong>Extração.</strong> Sais e reagentes de calor, muito valiosos para alquimia e forja. E trabalho conjurado: no 9 um mago rende o que não rende em cima, e a esquadra paga por isso.</p>
+<p><strong>Perigo.</strong> Exaustão — testes de HT regulares. E boca-de-poço, que caça perto da água que os grupos carregam. E o mago do próprio grupo: em mana alta, feitiço que escapa cobra de quem está do lado.</p>
+<p><strong>Quem lucra, quem perde.</strong> A Aptidão continua sendo concedida por uma Casa divina, e isso não muda em profundidade nenhuma — magia segue sendo monopólio de magos. O que quebra no 9 é o monopólio <strong>das Casas sobre os magos</strong>. Lá embaixo a mana faz o mago de rua — o excomungado, o aprendiz que rompeu, o sacerdote de santuário pobre, gente com dois feitiços rasos e nenhum foco caro — alcançar efeito que, na superfície, só o mago formado por uma Casa alcança. Esquadra que jamais pagaria o preço de um formado contrata o de rua e desce. <strong>Lucram</strong> os magos sem escola, os alquimistas que compram o sal de calor, e a Guilda, que cobra a passagem dos dois. <strong>Perdem</strong> as Casas: do 9 para baixo, a formação delas vale menos, e nenhuma chama isso pelo nome.</p>
+<p><strong>Acampamento.</strong> O Fôlego. Abastecido por comboio semanal — e quem controla o comboio controla quem trabalha no 9. É por isso que é alvo político recorrente.</p>
+<h1>ANDAR 10 — o Campo de Ossos</h1>
+<p><strong>Terreno.</strong> Planície coberta de ossos. Não de uma espécie: de muitas, e algumas não correspondem a nada catalogado. Camadas de vários metros.</p>
+<p><strong>Isto não é cemitério. É acúmulo.</strong> Alguma coisa trouxe estes ossos para cá, e ninguém sabe o quê nem por quê. É o achado mais perturbador dos andares rasos, e a Guilda desestimula a especulação.</p>
+<p><strong>Extração.</strong> Osso antigo, para alquimia e arquivos.</p>
+<p><strong>Perigo.</strong> Terreno instável que afunda. Casca-de-osso em grande número.</p>
+<p><strong>Acampamento.</strong> Sazonal, montado e desmontado conforme a Pressão. Não há guarnição permanente.</p>
+<p><strong>Descida para o 11.</strong> Uma boca aberta entre os ossos, com degraus que descem por dentro em espiral. Foi encontrada, não cavada.</p>
+<h1>ANDAR 11 — a Névoa</h1>
+<p><strong>Terreno.</strong> Névoa densa e permanente, visibilidade de cinco metros. Bússola não funciona. Perde-se gente com regularidade.</p>
+<p><strong>Aqui começa a faixa onde as coisas estão no lugar errado.</strong> É o primeiro andar onde aparece criatura reconhecível de alguma mitologia — e a porta mais próxima é a de Diyu, três andares abaixo. Não deveria haver draugr aqui.</p>
+<p><strong>Extração.</strong> Pouca. Quem desce ao 11 está indo mais fundo.</p>
+<p><strong>Acampamento.</strong> Nenhum fixo. Grupos marcam a própria rota com cordas.</p>
+<h1>ANDAR 12 — a Cidade Vazia</h1>
+<p><strong>Terreno.</strong> Ruínas de estrutura urbana. Ruas, praças, o que foram casas. A escala é humana, ou quase. Vazia há muito tempo.</p>
+<p><strong>Não corresponde a nenhuma das sete arquiteturas.</strong> Nem às cidades atuais, nem a qualquer registro. Ámenti tem uma ala inteira dedicada a isso e nenhuma conclusão publicada.</p>
+<p><strong>Extração.</strong> Objetos de tumba, ligas desconhecidas, inscrições. Cada peça vira disputa teológica: Ámenti quer registrar, Gapheim quer vender, Amaravati quer que fique onde está.</p>
+<p><strong>Perigo.</strong> Tudo aqui. Limite da faixa de rank C, e grupos despreparados morrem inteiros.</p>
+<p><strong>Acampamento.</strong> Praça do Acordo, usada por convenção pelos grupos experientes.</p>
+<h1>Nota de mesa</h1>
+<p>Os andares 1 a 10 são o <strong>chão de fábrica</strong>: dezenas de esquadras trabalhando todo dia, e a economia de sete cidades dependendo disso. Personagem de rank F não está pegando migalha — está fazendo o que segura as cidades de pé.</p>
+<p>Do 11 em diante, o tom muda. Menos trabalho, mais descoberta, e o primeiro sinal de que alguma coisa fundamental está errada.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/05-andares-1-a-12.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

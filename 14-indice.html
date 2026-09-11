@@ -1,0 +1,389 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Índice e Regra de Escrita — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html" class="atual">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Índice e Regra de Escrita</h1><div class="meta">versão 7 · atualizado em 2026-09-11 · A mesa</div></div>
+<h1>PARTE 1 — OS DOCUMENTOS</h1>
+<h2>Camada Aberta — vai para o Projeto de todo jogador</h2>
+<table>
+<tr>
+<th>#</th>
+<th>Documento</th>
+</tr>
+<tr>
+<td>**01a**</td>
+<td>Bíblia do Mundo (edição de mesa) — **sem a Parte V**</td>
+</tr>
+<tr>
+<td>**02**</td>
+<td>Regras da Mesa</td>
+</tr>
+<tr>
+<td>**03**</td>
+<td>Economia e Tabelas</td>
+</tr>
+<tr>
+<td>**04**</td>
+<td>Protocolo do Mestre-IA — cola nas instruções do Projeto</td>
+</tr>
+<tr>
+<td>**05**</td>
+<td>Andares 1 a 12</td>
+</tr>
+<tr>
+<td>**06**</td>
+<td>Bestiário</td>
+</tr>
+<tr>
+<td>**06b**</td>
+<td>Muda dos Andares — composição variável e posição na faixa</td>
+</tr>
+<tr>
+<td>**07a**</td>
+<td>NPCs Nomeados (edição de mesa) — **sem as dívidas**</td>
+</tr>
+<tr>
+<td>**08**</td>
+<td>Modelos de Personagem</td>
+</tr>
+<tr>
+<td>**10**</td>
+<td>Carta do Árbitro — **precisa ser pública**</td>
+</tr>
+<tr>
+<td>**13**</td>
+<td>Sessão Zero</td>
+</tr>
+<tr>
+<td>**18**</td>
+<td>Ficha Pública e Notoriedade</td>
+</tr>
+<tr>
+<td>**15**</td>
+<td>Geografia: a Coroa e as Sete Cidades</td>
+</tr>
+<tr>
+<td>**17**</td>
+<td>Guia de Criação e Manual de Magia</td>
+</tr>
+<tr>
+<td>**18b**</td>
+<td>Gabarito de ficha pública</td>
+</tr>
+<tr>
+<td>**20**</td>
+<td>Como se joga — as regras básicas</td>
+</tr>
+<tr>
+<td>**21**</td>
+<td>Loot, Balcão e Registro — as tabelas de item e o que se registra</td>
+</tr>
+<tr>
+<td>**22**</td>
+<td>A Magia no Mundo e as Sete Forjas</td>
+</tr>
+<tr>
+<td>**30**</td>
+<td>Improviso, Círculo e Lavra — como se cria magia nova</td>
+</tr>
+<tr>
+<td>**04b**</td>
+<td>Entrega do Relatório pelo Google Drive</td>
+</tr>
+<tr>
+<td>**14**</td>
+<td>Este documento</td>
+</tr>
+</table>
+
+<h2>Camada Reservada</h2>
+<p>A Camada Reservada existe, nunca é anexada a Projeto de jogador e não se lê.</p>
+<h1>PARTE 2 — A REGRA DE ESCRITA</h1>
+<h2>Quem pode escrever o quê</h2>
+<table>
+<tr>
+<th>Quem</th>
+<th>Pode escrever</th>
+<th>Nunca escreve</th>
+</tr>
+<tr>
+<td>**Árbitro**</td>
+<td>Tudo. Cânone, Boletins, todas as bases.</td>
+<td>—</td>
+</tr>
+<tr>
+<td>**Mestre de Cena** (Claude do jogador)</td>
+<td>Nada direto. Produz textos que o jogador envia.</td>
+<td>Cânone, ficha alheia, número tabelado, Cronologia</td>
+</tr>
+<tr>
+<td>**Jogador**</td>
+<td>A própria página de personagem.</td>
+<td>Todas as outras bases</td>
+</tr>
+</table>
+
+<p><strong>A trava é a permissão do Notion.</strong> As bases de Estado são somente leitura para jogadores. Isso roda fora do Claude, e é a única fronteira real do sistema.</p>
+<h2>O que o Mestre de Cena nunca decide</h2>
+<p>Se a narrativa exigir qualquer uma destas, <strong>ele para e abre Pendência</strong>:
+- Pontos acima de 5 por semana
+- Espólio fora da faixa da profundidade
+- Obra-prima entregue, ou obra-prima à venda no mercado aberto
+- Qualquer preço, taxa ou recompensa tabelado
+- Sugerir rolagem de Comércio ou de Avaliação, ou aplicar vantagem de negociação que o jogador não declarou
+- Morte de NPC nomeado no cânone
+- Ação contra personagem de outro jogador
+- Declarar um andar Ancorado
+- Rolar a Muda mais de uma vez por descida, ou inventar traço fora da lista de seis
+- Contradizer a Bíblia do Mundo
+- Avançar o Relógio do Mundo
+<strong>A tabela decide o número, não o Mestre.</strong> Resolve dois problemas de uma vez: trapaça, e dez mestres premiando de forma incompatível sem má-fé nenhuma.</p>
+<h2>O ciclo de uma sessão</h2>
+<ol>
+<li>O Mestre lê o <strong>Boletim</strong> e o <strong>Estado de Retomada</strong>.</li>
+<li>Joga-se. O Mestre improvisa livre no que não é cânone.</li>
+<li>Ao fim, quatro saídas: <strong>Relatório, Crônica, Fio Solto, Estado de Retomada</strong>.</li>
+<li>O jogador <strong>envia o Relatório ao Árbitro</strong>.</li>
+<li>O Árbitro <strong>homologa</strong> e grava na Cronologia.
+Nada entra no banco sem passar pelo passo 5.</li>
+</ol>
+<h2>O ciclo de uma semana de mundo</h2>
+<p><strong>Uma semana de mundo = duas semanas reais.</strong>
+1. O Árbitro publica o Boletim da Semana N.
+2. Cada jogador joga quando puder: até <strong>3 ações de mundo</strong>, e <strong>cenas livres ilimitadas</strong>.
+3. Relatórios chegam e são homologados.
+4. No prazo, o Árbitro roda a <strong>Sessão do Mundo</strong> e publica o Boletim seguinte.
+<strong>O prazo fecha tenha todo mundo jogado ou não.</strong> Ninguém trava ninguém.</p>
+<h2>As três visibilidades</h2>
+<ul>
+<li><strong>Público</strong> — alguém no Limiar poderia ter visto ou ouvido</li>
+<li><strong>Boato</strong> — circula como conversa de taverna, pode ser falso</li>
+<li><strong>Segredo</strong> — sem testemunhas. Só o Árbitro lê.
+Marcar tudo como Segredo mata o jogo. Marcar tudo como Público também.</li>
+</ul>
+<h2>Como a trama chega à mesa</h2>
+<p>O Mestre de Cena não conhece a espinha, e é isso que impede o vazamento. Três canais, todos operados pelo Árbitro:
+- <strong>O Boletim</strong> — fato já acontecido. O Mestre narra sem saber o que significa.
+- <strong>A injeção de cena</strong> — bloco que o Árbitro manda ao jogador para colar na conversa.
+- <strong>A Pendência</strong> — o Mestre chega perto de algo reservado, para, e pergunta.</p>
+<h2>Regra de append</h2>
+<p><strong>A Cronologia nunca é editada.</strong> Correção é linha nova apontando para a anterior. História é útil; apagar não. O mesmo vale para o cânone: quando o Árbitro erra, corrige com registro, não com borracha.</p>
+<h1>PARTE 3 — AS BASES</h1>
+<table>
+<tr>
+<th>Base</th>
+<th>Para quê</th>
+<th>Quem escreve</th>
+</tr>
+<tr>
+<td>**Boletins**</td>
+<td>Uma página por semana. Primeira leitura de toda sessão.</td>
+<td>Árbitro</td>
+</tr>
+<tr>
+<td>**Personagens**</td>
+<td>Fichas, rank, pontos, ações usadas, Estado de Retomada</td>
+<td>Árbitro + o dono da ficha</td>
+</tr>
+<tr>
+<td>**Cronologia**</td>
+<td>Registro append-only</td>
+<td>Árbitro</td>
+</tr>
+<tr>
+<td>**Andares**</td>
+<td>Progresso (permanente) e Pressão (semanal)</td>
+<td>Árbitro</td>
+</tr>
+<tr>
+<td>**Facções**</td>
+<td>Cidades, Casas, ordens</td>
+<td>Árbitro</td>
+</tr>
+<tr>
+<td>**Contratos**</td>
+<td>Missões. O campo do edital oculto é reservado.</td>
+<td>Árbitro</td>
+</tr>
+<tr>
+<td>**Pendências**</td>
+<td>Fila de arbitragem</td>
+<td>Qualquer um abre, só o Árbitro resolve</td>
+</tr>
+</table>
+
+<h1>PARTE 4 — ORDEM DE PRECEDÊNCIA</h1>
+<ol>
+<li><strong>Carta do Árbitro</strong> — vence tudo, inclusive regra escrita pela própria Árbitro</li>
+<li><strong>Bíblia do Mundo</strong> — em matéria de fato do mundo</li>
+<li><strong>Economia e Tabelas</strong> — em matéria de número</li>
+<li><strong>Regras da Mesa</strong> — em matéria de mecânica</li>
+<li>Os demais
+E acima de todos, em matéria de GURPS: <strong>o livro do Árbitro vence o registro da IA.</strong> Divergência encontrada vira Pendência.</li>
+</ol>
+<h1>PARTE 5 — CORREÇÕES DO ÍNDICE</h1>
+<p>Por append, conforme a regra de escrita: o índice não se apaga, corrige-se por linha nova.
+<strong>Correção 01 — 07/09/2026.</strong> A tabela da Parte 1 estava incompleta. Acrescentar à <strong>Camada Aberta</strong>:</p>
+<table>
+<tr>
+<th>#</th>
+<th>Documento</th>
+</tr>
+<tr>
+<td>**15**</td>
+<td>Geografia: a Coroa e as Sete Cidades</td>
+</tr>
+<tr>
+<td>**17**</td>
+<td>Guia de Criação e Manual de Magia — GURPS para quem nunca jogou</td>
+</tr>
+<tr>
+<td>—</td>
+<td>Atlas — mapas e vistas das cidades</td>
+</tr>
+</table>
+
+<blockquote>
+<p><strong>Nota.</strong>
+Os números <strong>09, 11 e 12</strong> seguem sem uso nesta lista.
+<strong>Correção 02 — 07/09/2026.</strong> Fora da edição de mesa.
+<strong>Correção 03 — 07/09/2026.</strong> Fora da edição de mesa.
+<strong>Correção 04 — 07/09/2026.</strong> Varredura completa do cânone. As correções abaixo entraram todas no mesmo dia; nenhuma linha anterior foi apagada.
+<strong>Anexos do Projeto de jogador.</strong> A lista única, agora idêntica no <code>04</code> e aqui: <strong>01a · 02 · 03 · 05 · 06 · 06b · 07a · 08 · 10 · 13 · 15 · 17 · 18 · Atlas</strong> — <em>ampliada em 10/09/2026 para incluir 04 · 04b · 14 · 20 · 21 · 22; a lista vigente é a da Parte 1.</em> O Atlas é material de mesa e sempre foi — a linha do <code>04</code> que mandava não abri-lo estava errada e caiu.
+<strong>Números corrigidos contra a Economia.</strong> Recuperação no Corte passou a rank D (o andar 6 já exigia D, e 400 g cabe na faixa D–C). Reforço ao Campo de Ossos desceu de 1.200 para 900, teto da faixa. Contenção rasa recebeu 120 g e prazo 1, que faltavam.
+<strong>A mana alta começa no 9, não no 8.</strong> Quatro documentos diziam 9 e dois diziam 8. Corrigidos o <code>05</code> e a base <code>Andares</code>. A seção 6.5 do <code>17</code> ganhou a tabela de modificador que não existia em lugar nenhum — com os valores marcados <code>°</code>, aguardando o livro.
+<strong>Muda.</strong> O sinal do Progresso inverteu-se: Ancorado −1, Mapeado 0, Inexplorado +1. Andar trabalhado está catado; a fronteira paga mais. Modificador agora tem teto de 17, então só o 18 natural é Bolsão. Anômalo nunca puxa do 13.
+<strong>A ausência deixou de custar.</strong> Manutenção só se cobra em semana em que o personagem agiu, e a inatividade prolongada ganhou número: seis semanas de mundo, um rank, nunca abaixo de F, revertido com uma avaliação. Carta, artigo 8.
+<strong>Outras.</strong> O jiangshi deixou de ser anomalia e virou a linha de base contra a qual a anomalia se mede (<code>06</code> e <code>01a</code> §2.2). O <code>01a</code> foi renumerado e vai de I a V sem lacuna. Riqueza ganhou tabela em grãos na seção 9.35 do <code>03</code>. Personagem de substituição teve "do grupo" definido. Exu passou a conceder colégio; Geb, Leigong e Yanluo Wang ganharam Casa; Chaac saiu e Tláloc entrou. O <code>06</code> ganhou faixa de rank A, S e SS. Os três guarnecedores da brecha do 13 foram escritos. Três furos lógicos dos andares profundos foram fechados.
+<strong>Nota.</strong>
+Os números <strong>09, 11 e 12</strong> seguem sem uso — ver a Correção 05.</p>
+</blockquote>
+<p><strong>Correção 05 — 10/09/2026. Os números 23 a 29, e o fim das lacunas 09, 11 e 12.</strong></p>
+<p>O passe de livro de 10/09 criou seis documentos e usou três números que estavam vagos.</p>
+<table>
+<tr><td>**23**</td><td>Retificações de livro — o que o GURPS diz e o cânone dizia diferente. **Vence o 17 e o 02**</td><td>Camada Aberta</td></tr>
+<tr><td>**24**</td><td>Regra de escrita da ficha — os sete campos da linha e o checklist de homologação</td><td>Camada Aberta · **no site**</td></tr>
+<tr><td>**25**</td><td>As treze decisões de 10/09/2026 — cada Pendência com a decisão e o porquê</td><td>Camada Aberta</td></tr>
+<tr><td>**26**</td><td>Tabela de Perícias — lista fechada, com tipo, dificuldade e custo</td><td>Camada Aberta · **no site**</td></tr>
+<tr><td>**27**</td><td>Tabela de Mágicas — 413 mágicas, com escola, classe, energia e pré-requisito</td><td>Camada Aberta · **no site**</td></tr>
+<tr><td>**28**</td><td>Tabela de Vantagens — custo e efeito em números</td><td>Camada Aberta · **no site**</td></tr>
+<tr><td>**29**</td><td>Tabela de Desvantagens e Peculiaridades — custo, efeito e escalas próprias</td><td>Camada Aberta · **no site**</td></tr>
+</table>
+
+<p><strong>Os números 09, 11 e 12 seguem vagos</strong>, e agora por decisão e não por esquecimento: ficam guardados para a faixa de andares profundos, que é o que ainda vai crescer.</p>
+<p><strong>Ordem de precedência, para quem tiver dois documentos que discordam:</strong> o <strong>23</strong> vence o <code>17</code> e o <code>02</code> em tudo que for regra de livro. O <strong>26 a 29</strong> vencem qualquer tabela avulsa dentro de outro documento. O <strong>24</strong> vence qualquer formato de ficha anterior. A <strong>Cronologia</strong> nunca é vencida — ela não se edita, e correção é linha nova apontando para a anterior.</p>
+<p><strong>Segunda rodada de conferência — 10/09/2026, à noite.</strong> Quatro agentes conferiram o que os quatro anteriores tinham escrito, e acharam erro real em todos os cinco documentos novos. O que mudou: a mágica <strong>Conexão</strong> tinha se perdido na transcrição e voltou; catorze linhas de mágica tinham o pré-requisito colado na coluna de energia e foram separadas; o <strong>mínimo comprável de mágica</strong> era ½ ponto e passou a <strong>1 ponto</strong>, que é o que o livro exige; a <strong>redução de −2 de energia</strong> abria no NH 18 e passou a abrir no <strong>20</strong>; <strong>Exorcismo</strong> e <strong>Talismã</strong>, duas perícias da casa, colidiam com nomes de mágica e viraram <strong>Rito Funerário</strong> e <strong>Selos e Sigilos</strong>; vinte e nove perícias de livro que faltavam entraram; cinco desvantagens de livro entraram e duas que <strong>não existem no Módulo Básico</strong> (Obsessão e Segredo) passaram a vir marcadas como regra da casa. <strong>Nenhum jogador perdeu ponto em nenhuma dessas correções.</strong></p>
+<p><strong>Correção 06 — 11/09/2026. O índice publicado deixou de falar com o Árbitro.</strong></p>
+<p>Esta é a <strong>edição de mesa</strong> do índice, e segue a mesma regra do <code>01a</code> e do
+<code>07a</code>: a versão que vai para o Projeto do jogador não traz o que é reservado.
+Saiu daqui toda frase cujo destinatário era o Árbitro — primeiro os nomes de
+documento e as faixas de profundidade, depois as frases que contavam ou
+descreviam o que tinha entrado no reservado. As Correções 02 e 03 eram só isso,
+e ficam aqui com a data e o número.</p>
+<p><strong>Nenhuma decisão mudou, e nenhuma correção anterior foi apagada</strong> — cada uma
+continua aqui, com a data e o número que tinha. O que saiu foi o que só o
+Árbitro precisa ler, não o registro do que se decidiu. <strong>A versão completa do
+índice fica com o Árbitro.</strong></p>
+<p>A regra que fica valendo, e vale para todo documento aberto, é o <strong>teste do
+destinatário</strong>: uma menção ao que é reservado só se justifica quando quem lê o
+documento publicado é o destinatário da frase. "Não leia o reservado", dito ao
+Mestre de Cena, fala com quem lê, e fica. Uma frase que conta ou descreve o que
+entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O <code>04</code>, o
+<code>04b</code>, o <code>03</code> e o <code>22</code> falam com quem os lê, e continuam como estão.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/14-indice.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

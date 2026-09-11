@@ -1,0 +1,150 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Garganta — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>A Garganta</h1><div class="meta">cânone aberto · semana 1 · atualizado em 2026-09-11</div></div>
+<p>Sete cidades ao redor de um poço sem fundo. Mais de mil aventureiros registrados no Limiar, e a maioria desce amanhã como desceu ontem. Você não é o escolhido — é mais um contratado.</p>
+<p>Este é o cânone aberto: tudo que a mesa pode saber. Se você acabou de chegar, comece pela <a href="13-sessao-zero.html">Sessão Zero</a> e por <a href="20-como-se-joga.html">Como se joga</a>.</p>
+<h2>A semana</h2><div class="cartoes"><div class="cartao"><a href="boletim-atual.html">Boletim da Semana 1</a><p>O que o mundo soube esta semana: contratos abertos, baixas, promoções, rumores.</p></div></div>
+<h2>Comece aqui</h2><div class="cartoes">
+<div class="cartao"><a href="13-sessao-zero.html">Sessão Zero</a><p>Como criar seu personagem e entrar na mesa.</p></div>
+<div class="cartao"><a href="20-como-se-joga.html">Como se joga</a><p>As regras básicas: rolagem, combate, ferimento, fadiga.</p></div>
+<div class="cartao"><a href="02-regras-da-mesa.html">Regras da Mesa</a><p>O que vale nesta campanha: ações, relógio, morte, ranks.</p></div>
+</div>
+<h2>O mundo</h2><div class="cartoes">
+<div class="cartao"><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a><p>Os deuses, as sete cidades, o poço e como tudo começou.</p></div>
+<div class="cartao"><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a><p>O mapa político: estradas, distâncias, neutralidade.</p></div>
+<div class="cartao"><a href="07a-npcs-nomeados.html">NPCs Nomeados</a><p>Quem manda, quem cobra, quem se pode contratar.</p></div>
+<div class="cartao"><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a><p>Como a magia vive nas sete cidades, e como cada uma forja.</p></div>
+</div>
+<h2>A Garganta</h2><div class="cartoes">
+<div class="cartao"><a href="05-andares-1-a-12.html">Andares 1 a 12</a><p>Terreno, extração, perigo e política de cada andar.</p></div>
+<div class="cartao"><a href="06-bestiario.html">Bestiário, andares 1 a 12</a><p>O que vive lá embaixo, e o que se tira de cada carcaça.</p></div>
+<div class="cartao"><a href="06b-muda-dos-andares.html">Muda dos Andares</a><p>Como se lê o estado de um andar antes de descer.</p></div>
+</div>
+<h2>Seu personagem</h2><div class="cartoes">
+<div class="cartao"><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a><p>Pontos, vantagens, perícias, e como a magia funciona aqui.</p></div>
+<div class="cartao"><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a><p>Como se cria magia nova: improviso, círculo cerimonial e a corrida pela Lavra.</p></div>
+<div class="cartao"><a href="08-modelos-de-personagem.html">Modelos de Personagem</a><p>Sete fichas prontas de 150 pontos, uma por cidade.</p></div>
+<div class="cartao"><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a><p>O que a Guilda registra sobre você, e o que os outros veem.</p></div>
+<div class="cartao"><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a><p>Os sete campos de uma linha de ficha, e o que confere com o quê.</p></div>
+</div>
+<h2>Economia</h2><div class="cartoes">
+<div class="cartao"><a href="03-economia-e-tabelas.html">Economia e Tabelas</a><p>Grãos, preços, espólio por profundidade, custo de vida.</p></div>
+<div class="cartao"><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a><p>O que se ganha, o que se compra, o que se troca e o que se registra.</p></div>
+</div>
+<h2>A mesa</h2><div class="cartoes">
+<div class="cartao"><a href="10-carta-do-arbitro.html">Carta do Árbitro</a><p>Os vinte compromissos de quem opera este mundo.</p></div>
+<div class="cartao"><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a><p>As instruções que vão no Projeto do jogador.</p></div>
+<div class="cartao"><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a><p>Como o relatório chega ao Árbitro e como a homologação volta.</p></div>
+<div class="cartao"><a href="14-indice.html">Índice e Regra de Escrita</a><p>Como o cânone é escrito e mantido.</p></div>
+</div>
+<h2>Decisões e retificações</h2><div class="cartoes">
+<div class="cartao"><a href="23-retificacoes-de-livro.html">Retificações de livro</a><p>O que o cânone dizia errado e o que o livro corrigiu, linha a linha.</p></div>
+<div class="cartao"><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a><p>Quinze Pendências fechadas de uma vez: o Grimório, as forjas, as perícias da casa, a matéria.</p></div>
+<div class="cartao"><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a><p>O que Zeus concede, o que Clima abre, e a sub-escola de Eletricidade.</p></div>
+</div>
+<h2>Tabelas de referência</h2><div class="cartoes">
+<div class="cartao"><a href="26-pericias.html">Tabela de Perícias</a><p>Lista fechada de perícias, com tipo, dificuldade e custo em pontos.</p></div>
+<div class="cartao"><a href="27-magias.html">Tabela de Mágicas</a><p>429 mágicas, com escola, classe, pré-requisito, energia e tempo.</p></div>
+<div class="cartao"><a href="28-vantagens.html">Tabela de Vantagens</a><p>Custo e efeito em números, com as perícias que recebem bônus.</p></div>
+<div class="cartao"><a href="29-desvantagens.html">Tabela de Desvantagens</a><p>Custo e efeito em números, com as escalas próprias e as peculiaridades.</p></div>
+</div>
+<h2>Para o Mestre de Cena</h2><p>O Claude de cada jogador lê <a href="estado.md"><code>estado.md</code></a> no início de toda sessão para conferir se os documentos anexados estão na versão atual, e lê os documentos em <a href="txt/indice.md">texto puro</a> quando precisa da versão nova.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/index.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

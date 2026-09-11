@@ -1,0 +1,967 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tabela de Desvantagens — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html" class="atual">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Tabela de Desvantagens</h1><div class="meta">versão 3 · atualizado em 2026-09-11 · Tabelas de referência</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Custo e efeito em números, do GURPS Módulo Básico.</strong> Desvantagem não é castigo: é financiamento. Você aceita um problema e recebe pontos por ele — e <strong>o problema vai aparecer na mesa</strong>, que é para isso que ele serve.
+<strong>Escolha desvantagem que faça alguém agir contra você.</strong> Uma alergia a nozes não gera cena. Uma dívida com a Casa de Hefesto gera doze.
+<strong>Versão 3, de 10/09/2026.</strong> Entraram cinco desvantagens de livro que faltavam — <strong>Disopia, Disosmia/Ageusia, Eunuco, Desdobramento de Personalidade</strong> e o degrau <strong>Pessoa-objeto</strong> do Estigma Social. <strong>Daltonismo</strong> ganhou Química, que o livro lista e a versão 1 tinha perdido. E <strong>Obsessão</strong> e <strong>Segredo</strong> foram marcadas com ⚠︎: <strong>não existem no Módulo Básico</strong> e ficam declaradas como regra da casa, não como regra de livro.</p>
+</blockquote>
+<h1>1. As regras que valem para todas</h1>
+<table>
+<thead>
+<tr>
+<th>Regra</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Limite</strong></td>
+<td><strong>−40 pontos</strong> em desvantagens</td>
+</tr>
+<tr>
+<td><strong>Dever da Marca</strong></td>
+<td><strong>obrigatório</strong>, e ocupa de −5 a −15 <strong>dentro</strong> do −40</td>
+</tr>
+<tr>
+<td>Teste de desvantagem mental</td>
+<td>quando a desvantagem permite teste de IQ ou Vontade, <strong>qualquer resultado 14 ou mais é falha</strong>, por mais alto que seja o NH</td>
+</tr>
+<tr>
+<td>Desvantagem física adquirida em jogo</td>
+<td><strong>não dá pontos</strong> — o Árbitro subtrai do total</td>
+</tr>
+<tr>
+<td>Desvantagens contraditórias</td>
+<td><strong>proibidas</strong>: nada anulado por uma vantagem que você tenha</td>
+</tr>
+<tr>
+<td>Peculiaridades</td>
+<td>até 5, a −1 cada, <strong>fora</strong> do limite de −40</td>
+</tr>
+</tbody>
+</table>
+<h1>2. A lista</h1>
+<table>
+<thead>
+<tr>
+<th>Desvantagem</th>
+<th>Custo</th>
+<th>Efeito em números</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Albinismo</td>
+<td>−10</td>
+<td>1 de dano por 30 min ao sol (15 min no verão); <strong>−2 em Visão e em arma de longo alcance</strong> ao sol</td>
+</tr>
+<tr>
+<td>Alcoolismo</td>
+<td>−15 / −20</td>
+<td>Teste de Vontade a cada exposição; falha = porre de 2D horas e ressaca pelo dobro, com <strong>−3 em todos os atributos e perícias</strong></td>
+</tr>
+<tr>
+<td>Analfabetismo</td>
+<td>−10</td>
+<td>Não lê nem escreve. <strong>Na Garganta vale −10</strong>, porque as sete cidades são cultura letrada</td>
+</tr>
+<tr>
+<td>Aparência: Desagradável / Feio / Hediondo</td>
+<td>−5 / −10 / −20</td>
+<td>−1 (só com a própria raça) / −2 / <strong>−4</strong> em todo teste de reação</td>
+</tr>
+<tr>
+<td>Avareza</td>
+<td>−10</td>
+<td>Teste de Vontade para gastar dinheiro; <strong>−5 ou pior</strong> se a despesa for grande</td>
+</tr>
+<tr>
+<td>Azar</td>
+<td>−10</td>
+<td><strong>Um evento adverso por sessão</strong>, escolhido pelo Árbitro. Ele não pode matar você com isso</td>
+</tr>
+<tr>
+<td>Cegueira</td>
+<td>−50</td>
+<td><strong>−6 em toda perícia de combate</strong>; +1 de reação em país civilizado; sem penalidade por escuridão</td>
+</tr>
+<tr>
+<td>Cleptomania</td>
+<td>−15</td>
+<td>Teste de Vontade <strong>com até −3</strong> sempre que houver chance de roubar</td>
+</tr>
+<tr>
+<td>Cobiça</td>
+<td>−15</td>
+<td>Teste de Vontade para resistir; <strong>−5 ou mais</strong> para o pobre diante de prêmio rico. Honestidade dá +5 e +10</td>
+</tr>
+<tr>
+<td><strong>Código de Honra</strong></td>
+<td><strong>−5 a −15</strong></td>
+<td>Ver §3</td>
+</tr>
+<tr>
+<td><strong>Compulsão</strong></td>
+<td><strong>−5 a −15</strong></td>
+<td>Teste de Vontade para evitar, em situação ou dia específico. O valor sai do estrago que ela causa</td>
+</tr>
+<tr>
+<td>Covardia</td>
+<td>−10</td>
+<td>Teste de Vontade ao surgir risco físico, <strong>−5</strong> se houver risco de vida; <strong>−2</strong> de reação de soldados e guardas que saibam</td>
+</tr>
+<tr>
+<td>Credulidade</td>
+<td>−10</td>
+<td>Teste de IQ para não acreditar, <strong>−6</strong> se a mentira for bem contada; <strong>−3 em Comércio</strong>. <strong>Não pode aprender Detecção de Mentiras</strong></td>
+</tr>
+<tr>
+<td>Daltonismo</td>
+<td>−10</td>
+<td>Não distingue <strong>nenhuma</strong> cor. <strong>−1</strong> em Condução, Pilotagem, <strong>Química</strong>, Rastreamento e Comércio. Mais as dificuldades que o Árbitro impuser onde a cor decide — comprar pedra, reconhecer libré, ler selo colorido</td>
+</tr>
+<tr>
+<td><strong>Desdobramento de Personalidade</strong></td>
+<td>−10 / −15</td>
+<td>Duas ou mais personalidades, <strong>cada uma com sua própria ficha</strong> e pelo menos <strong>50 pontos de diferença</strong> entre elas. Permite carregar desvantagens mentais incompatíveis entre si (Pacifismo numa, Fúria noutra). ST, DX e HT podem variar um pouco; IQ e perícias podem ser outros</td>
+</tr>
+<tr>
+<td>Deficiente Físico</td>
+<td>−15 / −25 / −35</td>
+<td>Perna mutilada: Deslocamento −3, <strong>−3</strong> em tudo que exija andar. Perneta: <strong>−6</strong>, Deslocamento máx. 2, não corre. Sem pernas: velocidade ST÷4, <strong>−6</strong> para lutar com espada</td>
+</tr>
+<tr>
+<td><strong>Dependentes</strong></td>
+<td><strong>variável</strong></td>
+<td>Ver §3. <strong>Máximo 2</strong></td>
+</tr>
+<tr>
+<td><strong>Dever</strong></td>
+<td><strong>−2 a −15</strong></td>
+<td>Ver §3. <strong>É a desvantagem da Marca</strong>, e é obrigatória</td>
+</tr>
+<tr>
+<td><strong>Disopia</strong> (visão imperfeita)</td>
+<td><strong>−10</strong>, e <strong>−25 na Garganta</strong></td>
+<td>Míope ou hipermétrope, à escolha. <strong>−2</strong> em toda perícia com arma de mão; com arremesso ou projétil, <strong>conta o dobro da distância real</strong>. Hipermétrope: <strong>triplo do tempo</strong> para ler e <strong>−3 de DX</strong> em trabalho manual. <strong>Óculos só existem a partir do NT5</strong> — nas sete cidades não há correção, então o Árbitro paga o valor cheio de −25 em vez de −10</td>
+</tr>
+<tr>
+<td><strong>Disosmia / Ageusia</strong></td>
+<td>−5</td>
+<td>Não sente cheiro nem sabor de nada. <strong>Não detecta veneno, fumaça, gás nem podridão pelo olfato</strong>; em compensação, come qualquer coisa e não é afetado por fedor</td>
+</tr>
+<tr>
+<td>Dislexia</td>
+<td>−5 / −15</td>
+<td>−5 em NT≤4, −15 acima. Estuda perícia mental sem professor a <strong>¼ da velocidade</strong>. <strong>Não pode aprender magia</strong></td>
+</tr>
+<tr>
+<td>Distração</td>
+<td>−15</td>
+<td><strong>−5</strong> em qualquer teste de IQ fora da tarefa em foco; teste de Vontade−5 a cada 5 min para se concentrar em tarefa maçante</td>
+</tr>
+<tr>
+<td>Duro de Ouvido</td>
+<td>−10</td>
+<td><strong>−4</strong> em todo teste de Audição e ao entender alguém falando</td>
+</tr>
+<tr>
+<td>Epilepsia</td>
+<td>−30</td>
+<td>Teste de HT em situação de tensão; falha = crise de 1D minutos <strong>e 1D de Fadiga</strong></td>
+</tr>
+<tr>
+<td>Estigma Social</td>
+<td>−5 / −10 / −15</td>
+<td>Cidadão de segunda: <strong>−1</strong> de reação fora da própria classe. <strong>Pessoa-objeto: −10</strong> — liberdade limitada e nenhum respeito intelectual; a mesa combina os detalhes caso a caso. Minoria: <strong>−2</strong> fora, <strong>+2</strong> dentro. Forasteiro: <strong>−3</strong> fora, <strong>+3</strong> com os seus longe de casa. <strong>Quem assume Estigma tem que jogá-lo</strong> — não vale ficar com os pontos e agir como se não existisse</td>
+</tr>
+<tr>
+<td><strong>Eunuco</strong></td>
+<td>−5</td>
+<td>Só homens. <strong>Imune a sedução</strong> e incapaz de seduzir; <strong>−1</strong> de reação de quem saiba</td>
+</tr>
+<tr>
+<td>Excesso de Confiança</td>
+<td>−10</td>
+<td>Teste de IQ para demonstrar cautela; <strong>+2</strong> de reação de jovens e ingênuos, <strong>−2</strong> de veteranos</td>
+</tr>
+<tr>
+<td>Excesso de Peso</td>
+<td>−5</td>
+<td>Peso +30%, conta como Carga; <strong>+2 em Natação</strong>; −1 de reação onde isso importa</td>
+</tr>
+<tr>
+<td>Fanatismo</td>
+<td>−15</td>
+<td>A causa vem antes de tudo, inclusive da própria vida</td>
+</tr>
+<tr>
+<td>Fanfarronice</td>
+<td>−10</td>
+<td>Teste de Vontade para evitar a bravata; <strong>−2 em todo teste de reação</strong></td>
+</tr>
+<tr>
+<td>Fantasias</td>
+<td>−1 a −15</td>
+<td>−1 sem redutor · −5 dá <strong>−1</strong> de reação · −10 dá <strong>−2</strong> · −15 dá <strong>−3</strong></td>
+</tr>
+<tr>
+<td><strong>Fobias</strong></td>
+<td><strong>variável</strong></td>
+<td>Ver §3</td>
+</tr>
+<tr>
+<td>Fúria</td>
+<td>−15</td>
+<td>Teste de Vontade sempre que atingido <strong>mais de 3 vezes numa rodada</strong>. Enfurecido faz <strong>Ataque Total</strong>; imune a atordoamento e a penalidade de ferimento; testa para viver contra <strong>HT+4</strong>; morre em −5×HT. Incompatível com Mau Humor</td>
+</tr>
+<tr>
+<td>Gagueira</td>
+<td>−10</td>
+<td><strong>−2</strong> em todo teste de reação que exija conversa. <strong>Diplomacia, Lábia, Trovador e Atuação ficam impossíveis</strong></td>
+</tr>
+<tr>
+<td>Gigantismo</td>
+<td>−10</td>
+<td>Altura +20%; <strong>−2</strong> de reação, <strong>+1</strong> em combate iminente</td>
+</tr>
+<tr>
+<td>Gula</td>
+<td>−5</td>
+<td>Teste de Vontade diante de iguaria ou bom vinho</td>
+</tr>
+<tr>
+<td>Hábitos Detestáveis</td>
+<td>−5 / −10 / −15</td>
+<td><strong>−1 de reação para cada −5 pontos</strong>, de quem observar o hábito</td>
+</tr>
+<tr>
+<td>Hemofilia</td>
+<td>−30</td>
+<td>Ferimento não enfaixado <strong>sangra por minuto o dano original</strong> até ser estancado. HT máxima 10</td>
+</tr>
+<tr>
+<td>Hiperalgia (baixo limiar de dor)</td>
+<td>−10</td>
+<td><strong>Dobra o choque</strong>: 3 de dano dá −6 em DX no turno seguinte. <strong>−4</strong> para resistir a tortura</td>
+</tr>
+<tr>
+<td>Honestidade</td>
+<td>−10</td>
+<td>Teste de IQ diante de lei irracional; teste de Vontade para não se entregar depois. <strong>+1</strong> de reação onde não há combate, <strong>+3</strong> em questão de honra</td>
+</tr>
+<tr>
+<td>Idade</td>
+<td>−3 por ano acima de 50</td>
+<td>Jogadas de envelhecimento por atributo</td>
+</tr>
+<tr>
+<td>Impulsividade</td>
+<td>−10</td>
+<td>Teste de Vontade para conseguir esperar e ponderar</td>
+</tr>
+<tr>
+<td><strong>Inimigo</strong></td>
+<td><strong>variável</strong></td>
+<td>Ver §3. <strong>Máximo 2, ou 60 pontos</strong></td>
+</tr>
+<tr>
+<td>Intolerância</td>
+<td>−5 / −10</td>
+<td>Total: <strong>−3</strong> de reação a qualquer um de fora. Religiosa a uma seita: −5. A todo não-membro: −10</td>
+</tr>
+<tr>
+<td>Inveja</td>
+<td>−10</td>
+<td>Reação automaticamente ruim a quem pareça superior</td>
+</tr>
+<tr>
+<td><strong>Juramento / Voto</strong></td>
+<td><strong>−1 a −15</strong></td>
+<td>Ver §3. <strong>Em Gapheim tem peso jurídico</strong></td>
+</tr>
+<tr>
+<td>Juventude</td>
+<td>−2 a −6</td>
+<td>−2 por ano abaixo da maioridade; <strong>−2</strong> de reação com adultos. Recompra obrigatória ao crescer</td>
+</tr>
+<tr>
+<td>Luxúria</td>
+<td>−15</td>
+<td>Teste de Vontade em contato com pessoa atraente; <strong>−5</strong> se bonita, <strong>−10</strong> se muito bonita</td>
+</tr>
+<tr>
+<td>Magreza</td>
+<td>−5</td>
+<td>HT máxima 14; <strong>ST −2</strong> para dar e resistir a Encontrão; <strong>−2</strong> em Disfarce e Sombra em multidão</td>
+</tr>
+<tr>
+<td>Maneta (um braço)</td>
+<td>−20</td>
+<td><strong>−4 em DX</strong> nos casos limítrofes; nada que exija duas mãos, <strong>inclusive espada com escudo</strong></td>
+</tr>
+<tr>
+<td>Maneta (uma mão)</td>
+<td>−15</td>
+<td>Prótese: <strong>−1</strong> de reação e DX reduzida em 2 (mão) ou 4 (garra)</td>
+</tr>
+<tr>
+<td>Mau Humor</td>
+<td>−10</td>
+<td>Teste de Vontade em situação de tensão. Incompatível com Fúria</td>
+</tr>
+<tr>
+<td>Megalomania</td>
+<td>−10</td>
+<td><strong>+2</strong> de reação de jovens e fanáticos, <strong>−2</strong> de todo o resto</td>
+</tr>
+<tr>
+<td>Mentir Compulsivamente</td>
+<td>−15</td>
+<td>Teste contra <strong>Vontade−4</strong> para dizer uma verdade simples</td>
+</tr>
+<tr>
+<td>Mudez</td>
+<td>−25</td>
+<td><strong>+3</strong> em Mímica e Linguagem de Sinais</td>
+</tr>
+<tr>
+<td>Nanismo</td>
+<td>−15</td>
+<td>Altura 60%; Deslocamento −1; <strong>−1</strong> para quem o acerte com projétil</td>
+</tr>
+<tr>
+<td>Obesidade</td>
+<td>−10 / −20</td>
+<td>−1 ou <strong>−2</strong> de reação; HT máxima 15 ou 13; <strong>−3</strong> em Disfarce e Sombra; <strong>+5 em Natação</strong>; <strong>+2</strong> em Encontrão</td>
+</tr>
+<tr>
+<td><strong>Obsessão</strong> ⚠︎</td>
+<td>−5 a −15</td>
+<td><strong>Não tem verbete no Módulo Básico.</strong> Fica como <strong>regra da casa</strong>, com a faixa de Compulsão: teste de Vontade para não perseguir o objeto da obsessão, e o valor sai do estrago que ela causa. <strong>Quem quiser jogar seguro compra Compulsão, que é de livro</strong></td>
+</tr>
+<tr>
+<td>Pacifismo</td>
+<td>−15 / −30</td>
+<td>Não-violência total: −30. Só auto-defesa: −15. Incapaz de matar: −15, e depois de matar fica <strong>3D dias inútil</strong></td>
+</tr>
+<tr>
+<td>Paralisia Frente ao Combate</td>
+<td>−15</td>
+<td><strong>Teste de HT</strong>, não de IQ, sempre que lesão pareça iminente; <strong>qualquer resultado acima de 13 falha</strong>; falha = atordoamento</td>
+</tr>
+<tr>
+<td>Paranóia</td>
+<td>−10</td>
+<td><strong>−2</strong> nas reações dos outros a você</td>
+</tr>
+<tr>
+<td>Piromania</td>
+<td>−5</td>
+<td>Teste de Vontade para reprimir o impulso</td>
+</tr>
+<tr>
+<td><strong>Pobreza</strong></td>
+<td><strong>variável</strong></td>
+<td>Ver a tabela de Riqueza no <code>28</code></td>
+</tr>
+<tr>
+<td>Preguiça</td>
+<td>−10</td>
+<td>Promoção e aumento pela metade; <strong>renda mensal pela metade</strong> por conta própria</td>
+</tr>
+<tr>
+<td>Primitivismo</td>
+<td>−5 por NT de diferença</td>
+<td>Nenhum conhecimento nem pré-definido para equipamento de NT superior</td>
+</tr>
+<tr>
+<td><strong>Má Reputação</strong></td>
+<td><strong>variável</strong></td>
+<td>Ver §3</td>
+</tr>
+<tr>
+<td>Sadismo</td>
+<td>−15</td>
+<td><strong>−3</strong> de reação de quem o conheça como tal; teste de Vontade para se controlar</td>
+</tr>
+<tr>
+<td>Sanguinolência</td>
+<td>−10</td>
+<td>Teste de Vontade para aceitar rendição ou fazer prisioneiro</td>
+</tr>
+<tr>
+<td><strong>Segredo</strong> ⚠︎</td>
+<td>−5 a −30</td>
+<td><strong>Não tem verbete no Módulo Básico.</strong> Fica como <strong>regra da casa</strong>: o valor sai do estrago que o vazamento causa — vergonha (−5), perda de emprego ou Status (−10), morte ou banimento (−20 a −30). O equivalente de livro é a <strong>Má Reputação latente</strong> somada a um <strong>Inimigo</strong>. É ótimo motor de trama, mas <strong>entra declarado como divergência</strong>, não como se fosse do livro</td>
+</tr>
+<tr>
+<td><strong>Senso de Dever</strong></td>
+<td><strong>−5 a −20</strong></td>
+<td>Ver §3. <strong>+2</strong> nas reações de quem o conheça por isso</td>
+</tr>
+<tr>
+<td>Status negativo</td>
+<td>−5 por nível</td>
+<td>De −1 a −4. O redutor de reação é a <strong>diferença</strong> de Status, com piso de −4</td>
+</tr>
+<tr>
+<td>Surdez</td>
+<td>−20</td>
+<td><strong>−3 em IQ</strong> ao aprender língua; <strong>+3</strong> em Mímica, Sinais e Leitura Labial</td>
+</tr>
+<tr>
+<td>Teimosia</td>
+<td>−5</td>
+<td><strong>−1</strong> nas reações das outras pessoas</td>
+</tr>
+<tr>
+<td>Timidez</td>
+<td>−5 / −10 / −15</td>
+<td><strong>−1</strong>, <strong>−2</strong> ou impossível em Dissimulação, Trovador, Boemia, Diplomacia, Lábia, Liderança, Comércio, Política, Trato Social, Sex-Appeal e Pedagogia</td>
+</tr>
+<tr>
+<td>Veracidade</td>
+<td>−5</td>
+<td>Teste de Vontade para calar uma verdade; <strong>−5</strong> para de fato mentir</td>
+</tr>
+<tr>
+<td>Vício</td>
+<td>variável</td>
+<td>Ver §3</td>
+</tr>
+<tr>
+<td>Vontade Fraca</td>
+<td>−8/nível</td>
+<td><strong>−1 por nível</strong> em todo teste de Vontade. Incompatível com Força de Vontade</td>
+</tr>
+<tr>
+<td>Zarolho</td>
+<td>−15</td>
+<td><strong>DX −1</strong> em combate; <strong>−3</strong> com projétil, arremesso e condução rápida; −1 de reação</td>
+</tr>
+</tbody>
+</table>
+<h1>3. As desvantagens com escala própria</h1>
+<h2>Inimigo — poder × frequência</h2>
+<table>
+<thead>
+<tr>
+<th>Poder</th>
+<th>Base</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indivíduo acima da média (50 pontos)</td>
+<td>−5</td>
+</tr>
+<tr>
+<td>indivíduo formidável (100 pontos), ou grupo de 3 a 5 pessoas médias</td>
+<td>−10</td>
+</tr>
+<tr>
+<td><strong>grupo médio, 6 a 20 pessoas</strong></td>
+<td><strong>−20</strong></td>
+</tr>
+<tr>
+<td>grupo grande (20 a 1.000), ou grupo médio com gente formidável</td>
+<td>−30</td>
+</tr>
+<tr>
+<td>um governo, uma escola de feiticeiros, uma organização inteira</td>
+<td>−40</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Frequência</th>
+<th>Jogada</th>
+<th>Multiplicador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quase todo o tempo</td>
+<td>≤15</td>
+<td>×3</td>
+</tr>
+<tr>
+<td>muita frequência</td>
+<td>≤12</td>
+<td>×2</td>
+</tr>
+<tr>
+<td>frequentemente</td>
+<td>≤9</td>
+<td>×1</td>
+</tr>
+<tr>
+<td>muito raramente</td>
+<td>≤6</td>
+<td><strong>metade</strong>, arredondando para cima</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grupo médio aparecendo em 6 ou menos = −10 exato.</strong> É o valor da casa de Hrafnkel, do clã da mãe de Runirsson, dos Fiadores de Karthoz e do feud do Jurado. <strong>Máximo 2 inimigos, ou 60 pontos.</strong></p>
+<h2>Dependentes — capacidade × importância × frequência</h2>
+<table>
+<thead>
+<tr>
+<th>Capacidade</th>
+<th>Base</th>
+<th></th>
+<th>Importância</th>
+<th>Fator</th>
+<th></th>
+<th>Frequência</th>
+<th>Jogada</th>
+<th>Fator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>51+ pontos</td>
+<td>0 (é Aliado grátis)</td>
+<td></td>
+<td>empregado ou conhecido</td>
+<td>×½</td>
+<td></td>
+<td>quase o tempo todo</td>
+<td>≤15</td>
+<td>×3</td>
+</tr>
+<tr>
+<td>26 a 50</td>
+<td>−6</td>
+<td></td>
+<td>amigo</td>
+<td>×1</td>
+<td></td>
+<td>muita frequência</td>
+<td>≤12</td>
+<td>×2</td>
+</tr>
+<tr>
+<td>1 a 25</td>
+<td>−12</td>
+<td></td>
+<td>amado</td>
+<td>×2</td>
+<td></td>
+<td>pouca frequência</td>
+<td>≤9</td>
+<td>×1</td>
+</tr>
+<tr>
+<td>0 ou menos</td>
+<td>−16</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>muito raramente</td>
+<td>≤6</td>
+<td>×½</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Máximo 2 dependentes.</strong> Nenhum ponto de aventura em que o dependente morra ou seja gravemente ferido.</p>
+<h2>Dever — a desvantagem da Marca</h2>
+<table>
+<thead>
+<tr>
+<th>Frequência</th>
+<th>Jogada</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quase todo o tempo</td>
+<td>≤15</td>
+<td>−15</td>
+</tr>
+<tr>
+<td>muito frequente</td>
+<td>≤12</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>frequente</td>
+<td>≤9</td>
+<td>−5</td>
+</tr>
+<tr>
+<td>ocasionalmente</td>
+<td>≤6</td>
+<td>−2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Se o dever não trouxer risco de vida ao menos de vez em quando, tire 5 pontos</strong> — o que zera qualquer dever abaixo de "muito frequente".</p>
+<h2>Senso de Dever</h2>
+<table>
+<thead>
+<tr>
+<th>A quem</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>companheiros e amigos íntimos</td>
+<td>−5</td>
+</tr>
+<tr>
+<td>uma nação, ou um grupo grande</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>todos que conhece pessoalmente</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>toda a humanidade</td>
+<td>−15</td>
+</tr>
+<tr>
+<td>todos os seres vivos</td>
+<td>−20</td>
+</tr>
+</tbody>
+</table>
+<h2>Código de Honra</h2>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>piratas, bandoleiros, gangues</td>
+<td>−5</td>
+</tr>
+<tr>
+<td>cavalheiros</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>cavaleiros</td>
+<td>−15</td>
+</tr>
+</tbody>
+</table>
+<h2>Voto / Juramento</h2>
+<table>
+<thead>
+<tr>
+<th>Gravidade</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trivial — sempre usar vermelho, nunca beber</td>
+<td>−1 (peculiaridade)</td>
+</tr>
+<tr>
+<td>menor — silêncio diurno, vegetarianismo</td>
+<td>−5</td>
+</tr>
+<tr>
+<td>importante — não usar lâmina, nunca dormir sob teto</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>muito importante — nunca recusar pedido de ajuda</td>
+<td>−15</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Voto de menos de um ano é frívolo e não vale pontos.</strong></p>
+<h2>Fobias — o valor é o da versão suave; a grave vale o dobro</h2>
+<p><strong>Suave:</strong> Verificação de Pânico; controlada, <strong>−2 em IQ e DX</strong> enquanto durar a causa, com nova jogada a cada 10 minutos.
+<strong>Grave:</strong> recusa de contato; se forçado, Verificação de Pânico <strong>com −4</strong> e <strong>−3 em IQ e DX</strong>.
+<strong>Ameaçado com o objeto temido:</strong> Verificação de Pânico <strong>com +4</strong>, suave ou grave.</p>
+<table>
+<thead>
+<tr>
+<th>Fobia</th>
+<th>Suave / Grave</th>
+<th>Redutor específico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Escuridão</strong> (nictofobia)</td>
+<td>−15 / −30</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Espaços fechados</strong> (claustrofobia)</td>
+<td>−15 / −30</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Morte e mortos</strong> (necrofobia)</td>
+<td>−10 / −20</td>
+<td>−4 se o corpo for conhecido; <strong>−6</strong> se animado ou fantasma</td>
+</tr>
+<tr>
+<td><strong>Monstros</strong> (teratofobia)</td>
+<td>−15 / −30</td>
+<td>−1 a −4 conforme tamanho, perigo ou número</td>
+</tr>
+<tr>
+<td><strong>Magia</strong> (manafobia)</td>
+<td>−15 / −30 onde a magia é comum</td>
+<td>−3 se for alvo de magia benigna, <strong>−6</strong> se hostil. <strong>Nunca aprende magia</strong></td>
+</tr>
+<tr>
+<td>Altura (acrofobia)</td>
+<td>−10 / −20</td>
+<td>−5 se houver queda real possível</td>
+</tr>
+<tr>
+<td>Armas (hoplofobia)</td>
+<td>−20 / −40</td>
+<td>−2 ao usar ou ser ameaçado</td>
+</tr>
+<tr>
+<td>Coisas afiadas</td>
+<td>−15 / −30</td>
+<td>−2 ao usar ou ser ameaçado</td>
+</tr>
+<tr>
+<td>Estranhos e desconhecidos (xenofobia)</td>
+<td>−15 / −30</td>
+<td>−3 se não forem humanos</td>
+</tr>
+<tr>
+<td>Espaços abertos (agorafobia)</td>
+<td>−10 / −20</td>
+<td>sem parede num raio de 15 m</td>
+</tr>
+<tr>
+<td>Insetos</td>
+<td>−10 / −20</td>
+<td>−3 grandes ou venenosos; <strong>−6</strong> muito grandes ou em massa</td>
+</tr>
+<tr>
+<td>Multidões</td>
+<td>−15 / −30</td>
+<td>−1 acima de 25 pessoas; −2 de 100; −3 de 1.000; −4 de 10.000</td>
+</tr>
+<tr>
+<td>Oceanos</td>
+<td>−10 / −20</td>
+<td>viagem marítima impossível</td>
+</tr>
+<tr>
+<td>Répteis</td>
+<td>−10 / −20</td>
+<td>−2 muito grande ou venenoso; −4 em quantidade</td>
+</tr>
+<tr>
+<td>Ruídos altos</td>
+<td>−10 / −20</td>
+<td>ruído súbito exige teste imediato</td>
+</tr>
+<tr>
+<td>Sujeira</td>
+<td>−10 / −20</td>
+<td>Vontade−5 para comer comida desconhecida</td>
+</tr>
+<tr>
+<td>Maquinaria</td>
+<td>−5 / −10 em NT baixo</td>
+<td>−3 com engenho complexo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>As cinco primeiras são as que mais aparecem na Garganta.</strong> Escolha com o poço em mente: escuridão e espaço fechado são o cenário, não um acidente.</p>
+<h2>Má Reputação</h2>
+<p><strong>(−5 × redutor) × tamanho do grupo × frequência</strong>, arredondando para baixo em cada corte. As tabelas de tamanho e frequência são as mesmas da Reputação, no <code>28</code> §2.</p>
+<h2>Vício — some os fatores</h2>
+<table>
+<thead>
+<tr>
+<th>Fator</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dose diária até $20</td>
+<td>−5</td>
+</tr>
+<tr>
+<td>dose de $21 a $100</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>dose acima de $100</td>
+<td>−20</td>
+</tr>
+<tr>
+<td>droga alucinógena ou incapacitante</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>altamente viciadora (−5 na Regeneração)</td>
+<td>−5</td>
+</tr>
+<tr>
+<td>totalmente viciadora (−10 na Regeneração)</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>droga legal no mundo de origem</td>
+<td><strong>+5</strong></td>
+</tr>
+</tbody>
+</table>
+<h1>4. Peculiaridades</h1>
+<p><strong>Até cinco, a −1 cada.</strong> São <strong>cinco pontos de graça</strong> em troca de o personagem parecer gente, e <strong>não entram no limite de −40</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Regra</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Efeito mecânico</td>
+<td><strong>nenhum</strong></td>
+</tr>
+<tr>
+<td>Não pode ser</td>
+<td>algo anulado por uma vantagem que você tenha</td>
+</tr>
+<tr>
+<td>Não pode ser</td>
+<td>forte o bastante para ser desvantagem própria — Cobiça é desvantagem, <em>"insiste em ser pago em ouro"</em> é peculiaridade</td>
+</tr>
+<tr>
+<td><strong>Tem que ser representada</strong></td>
+<td>se não for, o Árbitro penaliza por má atuação, e a perda supera o ganho</td>
+</tr>
+<tr>
+<td>Pode ficar em aberto</td>
+<td>dá para deixar 2 ou 3 em branco na criação e preencher depois de algumas sessões</td>
+</tr>
+<tr>
+<td>Troca</td>
+<td>possível com aprovação, se algo justificar mudança de personalidade</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Também valem como peculiaridade:</strong> fantasia trivial, aversão (fobia muito suave, sem penalidade), voto trivial, e intolerância contra vítimas raras.</p>
+<p><strong>Não deixe em branco.</strong> É o campo mais barato da ficha e o que mais faz o personagem existir na mesa.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/29-desvantagens.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

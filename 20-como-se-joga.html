@@ -1,0 +1,1248 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Como se joga — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html" class="atual">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Como se joga</h1><div class="meta">versão 6 · atualizado em 2026-09-11 · Comece aqui</div></div>
+<blockquote>
+<p>[!NOTE]
+<strong>Este documento é sobre jogar.</strong> O <code>17 — Guia de Criação e Manual de Magia</code> ensina a <strong>montar</strong> um personagem; este ensina a <strong>usar</strong> o que ficou na ficha. O <code>02 — Regras da Mesa</code> é a folha curta de referência; este é o manual de operação, e serve tanto ao jogador que nunca tocou em GURPS quanto ao Mestre de Cena, que resolve a cena com ele aberto.</p>
+<p><strong>Todo número aqui saiu do <em>GURPS Módulo Básico</em>, edição clássica</strong>, conferido linha por linha em 08/09/2026, com a página do livro citada ao lado. Nada foi estimado. Onde este documento divergir do livro, <strong>o livro vence</strong>, e a divergência vira Pendência (<code>14</code>).</p>
+</blockquote>
+<hr />
+<h1>1. A rolagem</h1>
+<h2>1.1 Como se rola</h2>
+<p>Toda ação incerta é um <strong>teste</strong>. Role <strong>3d6</strong> e compare com o <strong>Nível de Habilidade</strong> (NH) do atributo ou da perícia. <strong>Igual ou menor passa.</strong> (pág. 86)</p>
+<p>Três dados dão uma curva, não uma linha reta: o 10 e o 11 saem o tempo todo, o 3 e o 18 quase nunca. É por isso que dois pontos de NH mudam tanta coisa.</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Quem rola é sempre o Mestre de Cena.</strong> Não é combinado de mesa e não se pergunta: em toda mesa desta campanha, todos os dados — os do personagem do jogador, os dos NPCs, os do bicho, dano, defesa, reação — são rolados pela IA que conduz a cena. O jogador declara a ação, o Mestre diz o modificador, o Mestre rola e diz em voz alta o que saiu, contra qual nível e com quais modificadores.</p>
+<p>Número que o jogador traz de fora não entra em teste nenhum, pela mesma razão que nenhum valor ditado pelo jogador entra no espólio. E o resultado nunca some: rolagem que ninguém pode conferir é indistinguível de rolagem inventada. A única que não se diz na cena é a que o livro manda fazer escondida, e essa se grava antes de narrar e aparece na homologação (seção 1.6). Ver <code>04</code>, seção Mecânica.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>NH</th>
+<th>Chance de passar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>37%</td>
+</tr>
+<tr>
+<td>12</td>
+<td>74%</td>
+</tr>
+<tr>
+<td>14</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>16</td>
+<td>98%</td>
+</tr>
+</tbody>
+</table>
+<p><em>(As três primeiras linhas estão no <code>17</code>, Parte 1.)</em></p>
+<p><strong>Nível efetivo</strong> é o NH da ficha mais ou menos os modificadores da situação. Todos os modificadores são cumulativos. (pág. 86)</p>
+<p><strong>Não se rola com nível efetivo 3 ou menos</strong> — a ação simplesmente não acontece. A única exceção é jogada de defesa. (pág. 86)</p>
+<p><strong>Não se rola o trivial.</strong> Se nem falha crítica nem sucesso decisivo fazem sentido, não há teste: o carregador atravessa a Praça do Poço sem rolar nada. Mas se existe qualquer chance de dar errado, rola-se. (pág. 87)</p>
+<h2>1.2 Sucesso decisivo e falha crítica</h2>
+<table>
+<thead>
+<tr>
+<th>Resultado</th>
+<th>O que é</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 ou 4</td>
+<td><strong>Sucesso decisivo</strong>, sempre</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sucesso decisivo se o nível efetivo for <strong>15 ou mais</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Sucesso decisivo se o nível efetivo for <strong>16 ou mais</strong></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Falha comum se o nível efetivo for <strong>16 ou mais</strong>; <strong>falha crítica</strong> se for 15 ou menos</td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>Falha crítica</strong>, sempre</td>
+</tr>
+<tr>
+<td>Qualquer resultado que exceda o nível efetivo em <strong>10 ou mais</strong></td>
+<td><strong>Falha crítica</strong></td>
+</tr>
+</tbody>
+</table>
+<p>(pág. 86 e pág. 202)</p>
+<p>O que o sucesso decisivo <em>dá</em> e o que a falha crítica <em>cobra</em> fora de combate é decisão do Mestre de Cena: sempre algo bom, sempre algo ruim, e quanto mais extremo o resultado, mais forte o efeito. (pág. 86) Dentro de combate há tabela, e ela está na seção 4.</p>
+<blockquote>
+<p>[!WARNING]
+<strong>Falhar por 1 pode custar tanto quanto falhar por 10.</strong> O livro diz isso com todas as letras, e na Garganta a frase tem endereço: a corda que não se amarrou direito no andar 6 não se importa com a sua margem.</p>
+</blockquote>
+<h2>1.3 Margem</h2>
+<p><strong>Margem de sucesso</strong> é a diferença entre o nível efetivo e o que saiu nos dados. Nível 13, saiu 8: margem 5.</p>
+<p>A margem decide <strong>disputas</strong> e decide <strong>resistência a magia</strong> (seção 7.3). Fora disso, ela é o que o Mestre usa para graduar a narração — passar por 1 e passar por 6 não são a mesma cena.</p>
+<h2>1.4 Modificadores, e quando eles são ditos</h2>
+<p>O livro não traz uma tabela geral de dificuldade de tarefa. Ele trabalha por exemplo: forçar uma fechadura no escuro é <strong>−5</strong>; uma fechadura antiquada e tosca é <strong>+10</strong>; as duas coisas juntas dão <strong>+5</strong> líquido. (pág. 86)</p>
+<p>Para a mesa, a regra de operação é esta:</p>
+<p><strong>O modificador é declarado antes dos dados, sempre.</strong> O jogador diz o que faz e com quê; o Mestre diz o modificador; então rola-se. Modificador que aparece depois do resultado não vale.</p>
+<p>Isso <strong>não</strong> contradiz o <code>04</code>, seção "A perícia é do jogador, não sua": o Mestre continua sem sugerir perícia, sem lembrar ninguém do que está na ficha e sem perguntar se alguém quer rolar. Ele só não esconde o preço de uma ação já declarada.</p>
+<p>Os modificadores de combate estão tabelados no livro e entram na seção 4.5.</p>
+<h2>1.5 Disputas</h2>
+<p>Quando dois personagens se opõem diretamente, faz-se uma <strong>Disputa de Habilidades</strong>. Cada um testa a sua, com os modificadores da situação. (pág. 87)</p>
+<ul>
+<li><strong>Disputa rápida</strong> — resolve em um turno. Se um passa e o outro falha, ganhou o que passou. Se os dois passam (ou os dois falham), ganha a <strong>maior margem</strong> de sucesso — ou a menor de fracasso. Empate: ninguém venceu.</li>
+<li><strong>Disputa normal</strong> — dura vários turnos. Braço de ferro, perseguição a pé.</li>
+</ul>
+<h2>1.6 Quando o Mestre rola escondido</h2>
+<p>Duas situações, e o livro é explícito: o personagem não deveria saber se acertou (Detecção de Mentiras, perícia científica, Empatia), ou o jogador não deveria saber que há algo ali (Observação, Noção do Perigo). Numa falha, o Mestre escolhe entre mentir e não dizer nada — e quanto pior a falha, maior a mentira. (pág. 87)</p>
+<p><strong>Nesta campanha, escondido não é invisível.</strong> Rolagem escondida é indistinguível de rolagem inventada (1.1), então o Mestre de Cena <strong>grava o dado e o alvo na pasta do jogador antes de narrar</strong> — num arquivo <code>semana-NN-rolagem-NN</code>, uma rolagem por arquivo (<code>04b</code> §3) — e narra só o que o personagem percebe. O número aparece na homologação. É a mesma trava do baú (<code>06b</code> §10.4): o que se grava antes não se rola de novo. <strong>Fixado em 10/09/2026.</strong></p>
+<p>Na prática: ninguém pede "façam um teste de Observação" antes de descrever a galeria do andar 3. O Mestre rola, e ou o carregador vê a marca de mordida na rocha, ou não vê.</p>
+<hr />
+<h1>2. Os quatro atributos e o que sai deles</h1>
+<p>Quatro números, base 10, que é a média humana. Entre 8 e 12 é gente normal; acima de 16 é raro; acima de 20 não é humano. (pág. 12–13)</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Rege, na prática</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ST</strong> Força</td>
+<td>Dano de arma branca, quanto se carrega, agarrar e arrastar. É também a sua <strong>Fadiga</strong>.</td>
+</tr>
+<tr>
+<td><strong>DX</strong> Destreza</td>
+<td>Quase todo combate, Furtividade, Escalada, ofício de mão. Entra na Velocidade Básica.</td>
+</tr>
+<tr>
+<td><strong>IQ</strong> Inteligência</td>
+<td>Todo saber, política, negociação, magia. É a base da <strong>Vontade</strong>.</td>
+</tr>
+<tr>
+<td><strong>HT</strong> Vitalidade</td>
+<td>Quanto dano você aguenta. É literalmente os seus <strong>Pontos de Vida</strong>. Entra na Velocidade Básica.</td>
+</tr>
+</tbody>
+</table>
+<h2>2.1 Os derivados</h2>
+<table>
+<thead>
+<tr>
+<th>Derivado</th>
+<th>Conta</th>
+<th>Onde está no livro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pontos de Vida (PV)</strong></td>
+<td>= HT</td>
+<td>pág. 12</td>
+</tr>
+<tr>
+<td><strong>Fadiga</strong></td>
+<td>= ST</td>
+<td>pág. 134</td>
+</tr>
+<tr>
+<td><strong>Velocidade Básica</strong></td>
+<td>= (DX + HT) ÷ 4, <strong>sem arredondar</strong></td>
+<td>pág. 15</td>
+</tr>
+<tr>
+<td><strong>Deslocamento</strong></td>
+<td>= Velocidade Básica − nível de Carga, arredondado para baixo</td>
+<td>pág. 77</td>
+</tr>
+<tr>
+<td><strong>Esquiva</strong></td>
+<td>= Deslocamento</td>
+<td>pág. 77 e 98</td>
+</tr>
+<tr>
+<td><strong>Aparar</strong></td>
+<td>= NH da arma ÷ 2, para baixo</td>
+<td>pág. 99</td>
+</tr>
+<tr>
+<td><strong>Aparar com Esgrima ou Bastão</strong></td>
+<td>= NH × ⅔, para baixo</td>
+<td>pág. 99</td>
+</tr>
+<tr>
+<td><strong>Bloquear</strong></td>
+<td>= NH de Escudo ÷ 2, para baixo</td>
+<td>pág. 98</td>
+</tr>
+</tbody>
+</table>
+<p>A fração da Velocidade Básica não é enfeite: ela desempata iniciativa. Velocidade 6,75 joga antes de 6,25, e as duas andam 6. (pág. 15 e 95)</p>
+<h2>2.2 Carga</h2>
+<p>O peso que você carrega, medido contra a sua ST. (pág. 76)</p>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Peso até</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nenhuma (0)</td>
+<td>ST kg</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Leve (1)</td>
+<td>2 × ST</td>
+<td>−1 no Deslocamento</td>
+</tr>
+<tr>
+<td>Média (2)</td>
+<td>3 × ST</td>
+<td>−2 no Deslocamento</td>
+</tr>
+<tr>
+<td>Pesada (3)</td>
+<td>6 × ST</td>
+<td>−3 no Deslocamento</td>
+</tr>
+<tr>
+<td>Muito Pesada (4)</td>
+<td>10 × ST</td>
+<td>−4 no Deslocamento</td>
+</tr>
+</tbody>
+</table>
+<p>15 × ST é o maior peso que se ergue, e não se anda com ele. (pág. 76)</p>
+<p>Carga também é <strong>fadiga de combate</strong> (seção 6) e penalidade em Natação e Escalada. Um jurado de Gapheim de ST 13 em cota de malha e escudo raramente passa de Carga Leve; o mesmo homem carregando o espólio de dois companheiros mortos desce para Média e perde um ponto de Esquiva — e é aí que ele morre.</p>
+<hr />
+<h1>3. Perícias</h1>
+<h2>3.1 Como se lê uma linha de ficha</h2>
+<p>Na ficha do hoplita de Ônfalos (<code>08</code>) está escrito:</p>
+<blockquote>
+<p><strong>Lança 17 (16)</strong></p>
+</blockquote>
+<p><strong>17 é o Nível de Habilidade.</strong> É contra ele que se rolam os 3d6. <strong>16 é quanto custou em pontos.</strong> O parêntese não entra em nenhuma rolagem — ele existe para auditar a conta da ficha.</p>
+<h2>3.2 Dificuldade</h2>
+<p>Toda perícia tem um grau — <strong>Fácil, Média, Difícil, Muito Difícil</strong> — e é ele que decide quantos pontos custa cada nível acima do atributo. Perícias <strong>físicas</strong> rodam sobre DX (algumas sobre ST ou HT); <strong>mentais</strong>, sobre IQ. (pág. 43)</p>
+<p>Para jogar, o grau importa por um motivo só: <strong>ele já está embutido no número da ficha.</strong> Ninguém consulta tabela de dificuldade no meio da cena. A tabela de custo está no livro (pág. 43–44) e é assunto de criação, não de mesa — ver <code>17</code> e a ressalva da seção 9 deste documento.</p>
+<h2>3.3 Perícia que você não tem</h2>
+<p>Muitas perícias têm <strong>nível pré-definido</strong>: você pode tentar sem treino, com redutor. A regra geral do livro (pág. 44):</p>
+<table>
+<thead>
+<tr>
+<th>Dificuldade</th>
+<th>Pré-definido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fácil</td>
+<td>DX−4 ou IQ−4</td>
+</tr>
+<tr>
+<td>Média</td>
+<td>DX−5 ou IQ−5</td>
+</tr>
+<tr>
+<td>Difícil</td>
+<td>DX−6 ou IQ−6</td>
+</tr>
+</tbody>
+</table>
+<p>Há exceções, e a descrição de cada perícia manda. Algumas perícias <strong>não têm pré-definido</strong> — Muito Difíceis, sobretudo. Não importa quão esperto você seja: sem treino você não lê a escrita antiga de Ámenti, e o <code>02</code> já avisa que isso é acesso a arquivo, não enfeite.</p>
+<p>Quando a perícia tem mais de um pré-definido, <strong>use o melhor</strong>. Escalada é ST−5 ou DX−5; o Rastreador de Uruk-Kalam, ST 11 e DX 14, escala em 9, não em 6. (pág. 87)</p>
+<p>Se o pré-definido de uma perícia for um atributo, atributo sobre-humano conta como 20 e não mais. (pág. 87)</p>
+<hr />
+<h1>4. Combate</h1>
+<blockquote>
+<p>[!WARNING]
+<strong>GURPS é letal e a Garganta é pior.</strong> Um homem médio tem 10 a 12 PV, e uma espada bem dada tira 6 de uma vez. O próprio livro fecha o capítulo dizendo "os combates são mortais; tente evitá-los" (pág. 126). O <code>02</code>, seção 8, diz a mesma coisa com outras palavras: combate é para ser evitado, planejado, ou vencido antes de começar. Vale para os monstros também — o murador do andar 1 se dispersa com um pano aberto e uma corrente de ar, e essa é a lição de abertura da campanha.</p>
+</blockquote>
+<h2>4.1 O turno</h2>
+<p><strong>Cada turno é 1 segundo.</strong> Os personagens agem um por vez até todos terem agido; então recomeça. Seu turno começa quando você escolhe a manobra. (pág. 95)</p>
+<p><strong>Uma manobra por turno.</strong> A manobra escolhida vale até o seu próximo turno e <strong>decide quais defesas você terá</strong> se for atacado nesse intervalo. Ninguém escolhe defesa antes de ser atacado — mas quem escolheu Ataque Total já escolheu não ter nenhuma. (pág. 95)</p>
+<h2>4.2 Sequência</h2>
+<p>Duas formas, as duas no livro (pág. 95):</p>
+<ul>
+<li><strong>Simples</strong> — o Mestre rola 1d para cada personagem; o maior começa, e segue no sentido da mesa.</li>
+<li><strong>Realista</strong> — ordem por <strong>Deslocamento</strong>, do maior para o menor. Empate: desempata a <strong>Velocidade Básica</strong> cheia, com a fração. Empate ainda: o livro manda rolar dados; <strong>nesta mesa desempata a DX maior e, persistindo, a ordem de declaração</strong> (fixado em 10/09/2026; é a linha 0 da tabela da seção 4.10).</li>
+</ul>
+<p>Para mesa assíncrona, o realista é melhor: é determinístico, não precisa de rolagem de abertura e não muda entre uma sessão e outra.</p>
+<h2>4.3 Manobras</h2>
+<p>Estas são as manobras que a mesa vai usar de verdade. Nomes e efeitos do livro (pág. 95–96 e 104–105); a tabela-resumo do livro está na pág. 203.</p>
+<table>
+<thead>
+<tr>
+<th>Manobra</th>
+<th>Movimento</th>
+<th>O que faz</th>
+<th>Defesa que sobra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Deslocamento</strong></td>
+<td>até o Deslocamento inteiro</td>
+<td>Só anda.</td>
+<td>Qualquer uma</td>
+</tr>
+<tr>
+<td><strong>Avançar e Atacar</strong></td>
+<td>1 metro</td>
+<td>Um ataque com arma preparada. Pode atacar e depois andar.</td>
+<td>Qualquer uma</td>
+</tr>
+<tr>
+<td><strong>Ataque Total</strong></td>
+<td>até 2 m, <strong>ou</strong> metade do Deslocamento, o que for maior</td>
+<td>Escolha <strong>uma</strong> das quatro: (a) dois ataques, se tiver duas armas preparadas ou arma que não precisa repreparar; (b) finta e depois ataque; (c) <strong>um ataque com +4 no NH</strong>; (d) um ataque com NH normal e <strong>+2 de dano</strong></td>
+<td><strong>Nenhuma.</strong> Só a Defesa Passiva.</td>
+</tr>
+<tr>
+<td><strong>Defesa Total</strong></td>
+<td>1 metro</td>
+<td>Nada além de se defender. <strong>Duas jogadas de defesa diferentes</strong> contra o mesmo ataque. Máximo de dois Aparar e dois Bloquear no turno.</td>
+<td>Duas, diferentes</td>
+</tr>
+<tr>
+<td><strong>Apontar</strong></td>
+<td>metade do Deslocamento, máx. 2 m depois do primeiro turno</td>
+<td>Mira arma de longo alcance já preparada. Primeiro turno: soma a <strong>Precisão</strong> da arma. Cada turno a mais: <strong>+1</strong>, até <strong>+3</strong>.</td>
+<td>Qualquer uma — <strong>mas defender estraga a mira e some com tudo o que foi acumulado</strong></td>
+</tr>
+<tr>
+<td><strong>Preparar</strong></td>
+<td>1 metro</td>
+<td>Saca, engatilha, recarrega, apanha o escudo.</td>
+<td>Qualquer uma, com a ressalva abaixo</td>
+</tr>
+<tr>
+<td><strong>Concentrar</strong></td>
+<td>1 metro</td>
+<td>Feitiço ou tarefa mental.</td>
+<td>Qualquer uma, <strong>mas defender exige teste de IQ−3 para não perder a concentração</strong></td>
+</tr>
+<tr>
+<td><strong>Mudança de Posição</strong></td>
+<td>nenhum</td>
+<td>De pé, ajoelhado, deitado. Deitado para em pé leva dois turnos.</td>
+<td>Qualquer uma</td>
+</tr>
+<tr>
+<td><strong>Aguardar</strong></td>
+<td>1 metro</td>
+<td>Não faz nada até o inimigo entrar no alcance; então ataca (ataque normal, não total).</td>
+<td>Qualquer uma</td>
+</tr>
+<tr>
+<td><strong>Finta</strong></td>
+<td>1 metro</td>
+<td>Disputa Rápida da sua arma contra a arma ou escudo do inimigo (ou a DX dele). Se você vence, <strong>a sua margem é subtraída da defesa ativa dele</strong> no seu próximo ataque.</td>
+<td>Qualquer uma</td>
+</tr>
+</tbody>
+</table>
+<p>Notas que a mesa vai precisar:</p>
+<ul>
+<li><strong>Espada e faca nunca ficam despreparadas.</strong> Machado, maça e arma de haste ficam: depois de golpear, gasta-se um turno preparando. Não se apara com machado no mesmo turno em que se atacou com ele. (pág. 97 e 104)</li>
+<li><strong>Recarregando arma de projétil, a única defesa é Esquiva</strong> — e esquivar cancela o turno de recarga. (pág. 95)</li>
+<li><strong>Sem apontar</strong>, arma de longo alcance ataca a <strong>−4</strong>. (pág. 95)</li>
+<li>A finta vale por uma rodada, e <strong>só o seu ataque aproveita o redutor</strong>, não o dos aliados. Finta no escuro ou contra quem não te vê não vale nada. (pág. 96 e 105)</li>
+</ul>
+<h2>4.4 O ataque: três rolagens</h2>
+<p><strong>Todo golpe são três jogadas</strong> (pág. 97):</p>
+<ol>
+<li><strong>Ataque</strong> — o atacante rola 3d6 contra o NH da arma, com modificadores.</li>
+<li><strong>Defesa</strong> — se o ataque passou, o defensor rola 3d6 contra a defesa dele.</li>
+<li><strong>Dano</strong> — se a defesa falhou, o atacante rola o dano da arma.</li>
+</ol>
+<p>Se qualquer uma das três não acontece, o golpe não passa.</p>
+<h2>4.5 Modificadores de ataque</h2>
+<p>Do livro, pág. 97. Estes são os que a Garganta usa toda descida:</p>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Modificador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Iluminação ruim</td>
+<td>−1 a −9</td>
+</tr>
+<tr>
+<td>Escuridão total</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>Apoio ruim para os pés</td>
+<td>−2 ou pior</td>
+</tr>
+<tr>
+<td>Atacante em posição estranha</td>
+<td>−2 ou pior</td>
+</tr>
+<tr>
+<td>Cego</td>
+<td>−6</td>
+</tr>
+<tr>
+<td>Subitamente cego</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>Rastejando</td>
+<td>−4</td>
+</tr>
+<tr>
+<td>Agachado ou sentado</td>
+<td>−2</td>
+</tr>
+<tr>
+<td>Ataque precipitado (mão errada)</td>
+<td>−4, e nenhum se for ambidestro</td>
+</tr>
+<tr>
+<td>Atacar usando escudo grande</td>
+<td>−2</td>
+</tr>
+<tr>
+<td>ST abaixo da ST mínima da arma</td>
+<td>−1 por ponto de diferença</td>
+</tr>
+<tr>
+<td><strong>Ferimento</strong></td>
+<td>redutor igual aos <strong>PV perdidos na rodada anterior</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!NOTE]
+<strong>Iluminação é a mecânica central desta campanha e quase ninguém percebe isso na primeira sessão.</strong> A escala de −1 a −10 do livro é o preço da tocha apagada, e o cesto de descida do <code>03</code>, seção 10.2, existe em boa parte para pagá-la. Um bolsão de mana nula no meio de uma galeria não é problema só do mago: é a lanterna encantada de alguém apagando.</p>
+</blockquote>
+<h2>4.6 Defesa: passiva mais ativa</h2>
+<p>Este é o ponto que a folha curta do <code>02</code> não detalha, e é onde o Mestre de Cena mais erra. A conta é esta (pág. 98):</p>
+<blockquote>
+<p><strong>Defesa total do defensor = Defesa Passiva + a defesa ativa escolhida.</strong>
+Rola-se 3d6 contra esse total. Igual ou menor: o golpe não passou.</p>
+</blockquote>
+<p><strong>Defesa Passiva (PD)</strong> vem da armadura, do escudo e de magia, e <strong>sempre protege</strong> — inclusive quem está inconsciente ou não sabe que vai ser atacado. Armadura dá de 1 a 6; escudo dá de 1 (broquel) a 4 (escudo grande). PD e RD de cada peça estão no <code>03</code>, seções 9.4 e 9.5. (pág. 99)</p>
+<p><strong>Defesa ativa</strong> é uma só por ataque, escolhida na hora entre as que a manobra do turno anterior permite.</p>
+<p>Exemplo do livro, traduzido para a mesa: o jurado de Gapheim tem NH 14 em Escudo (Bloquear 7), escudo de PD 2 e malha de PD 3. Contra um golpe frontal ele rola contra <strong>7 + 2 + 3 = 12</strong>. Não contra 7.</p>
+<p>Mais regras que decidem cena:</p>
+<ul>
+<li><strong>Jogada de defesa 3 ou 4 sempre passa</strong>, mesmo que o total seja 1 ou 2. <strong>17 ou 18 sempre falha.</strong> (pág. 98)</li>
+<li><strong>Atordoado: −4 em todas as defesas ativas.</strong> (pág. 98)</li>
+<li><strong>Reflexos em Combate: +1 em cada defesa ativa.</strong> (pág. 98) É a razão de a vantagem aparecer em metade dos modelos do <code>08</code>.</li>
+<li><strong>Há ataques sem defesa ativa nenhuma:</strong> facada pelas costas, emboscada, armadilha. A Passiva continua valendo. (pág. 98)</li>
+<li>Contra um <strong>golpe fulminante</strong> não há defesa ativa. (pág. 98)</li>
+</ul>
+<h2>4.7 As três defesas ativas</h2>
+<table>
+<thead>
+<tr>
+<th>Defesa</th>
+<th>Vale</th>
+<th>Quantas por rodada</th>
+<th>Detalhes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Esquiva</strong> = Deslocamento</td>
+<td>Contra quase tudo que você <strong>sabe</strong> que vem</td>
+<td><strong>Ilimitadas</strong></td>
+<td>A melhor defesa de quem não tem perícia nem escudo. Animal esquiva com metade do Deslocamento ou metade da DX, o que for maior, teto 10.</td>
+</tr>
+<tr>
+<td><strong>Bloquear</strong> = ½ NH de Escudo</td>
+<td>Lâmina, clava, machado, lança, arremesso, flecha, pedra de funda</td>
+<td><strong>1</strong> (2 em Defesa Total)</td>
+<td>Precisa do escudo preparado. Não bloqueia bala nem feixe.</td>
+</tr>
+<tr>
+<td><strong>Aparar</strong> = ½ NH da arma (⅔ com Esgrima ou Bastão)</td>
+<td>Só ataques com <strong>arma de mão</strong></td>
+<td><strong>1</strong> (2 com duas armas, 2 em Defesa Total; <strong>esgrimista apara 2 por turno, e quantas quiser em Defesa Total</strong>)</td>
+<td>Precisa da arma preparada. Faca apara a <strong>−1</strong>. Arma arremessada apara a −1; faca arremessada, −2. Mangual apara a −4.</td>
+</tr>
+</tbody>
+</table>
+<p>Quebra de arma ao aparar: <strong>1/3 de chance</strong> se a arma que vem pesa 3 vezes ou mais que a sua. Espada barata: 2/3. Espada de qualidade superior: 1/6. Espada de altíssima qualidade: nunca. (pág. 74 e 99)</p>
+<p>Aparar golpe de mão limpa com arma pode <strong>ferir o atacante</strong>: role de novo contra o NH da arma; passando, rola dano normal. (pág. 99)</p>
+<h2>4.8 Golpe fulminante e erro crítico</h2>
+<p><strong>Golpe fulminante</strong> é sucesso decisivo num ataque. O alvo <strong>não tem defesa ativa</strong>. (pág. 98)</p>
+<table>
+<thead>
+<tr>
+<th>Resultado no ataque</th>
+<th>Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3</strong></td>
+<td>Acerta e provoca o <strong>dano máximo</strong> dos dados. Um 1d+2 vira 8.</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>Acerta e provoca <strong>dano normal</strong>.</td>
+</tr>
+<tr>
+<td><strong>5</strong> ou <strong>6</strong></td>
+<td>Golpe fulminante se o nível efetivo for 15+ (para o 5) ou 16+ (para o 6); dano normal.</td>
+</tr>
+<tr>
+<td><strong>17</strong> ou <strong>18</strong></td>
+<td>Erra sempre. Erro crítico: <strong>Tabela de Erros Críticos</strong>, pág. 202.</td>
+</tr>
+</tbody>
+</table>
+<p>Não importa o NH: <strong>3 e 4 sempre acertam, 17 e 18 sempre erram.</strong> (pág. 97)</p>
+<blockquote>
+<p>[!WARNING]
+<strong>Decisão pendente do Árbitro.</strong> O livro oferece dois tratamentos para o golpe fulminante e diz explicitamente para <strong>não usar os dois juntos</strong>: a regra do dano máximo acima, e a <strong>Tabela de Golpes Fulminantes</strong> da pág. 202, que sorteia efeitos por resultado (nocaute, dano triplo, membro incapacitado). Este documento roda a regra do dano máximo, que é mais rápida e cabe em mesa assíncrona. Trocar pela tabela é escolha do Árbitro, não do Mestre de Cena. A <strong>Tabela de Erros Críticos</strong> (pág. 202) vale nos dois casos.</p>
+</blockquote>
+<h2>4.9 Dano</h2>
+<h3>Dano básico por ST</h3>
+<p>Duas colunas: <strong>Golpe de Ponta (GDP)</strong> — lança, punho, estocada — e <strong>Balanço</strong> — espada, clava, machado. O balanço rende mais porque a arma funciona como alavanca. (pág. 73–74)</p>
+<table>
+<thead>
+<tr>
+<th>ST</th>
+<th>Golpe de Ponta</th>
+<th>Balanço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4 ou menos</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1d−5</td>
+<td>1d−5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1d−4</td>
+<td>1d−4</td>
+</tr>
+<tr>
+<td>7</td>
+<td>1d−3</td>
+<td>1d−3</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1d−3</td>
+<td>1d−2</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1d−2</td>
+<td>1d−1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1d−2</td>
+<td>1d</td>
+</tr>
+<tr>
+<td>11</td>
+<td>1d−1</td>
+<td>1d+1</td>
+</tr>
+<tr>
+<td>12</td>
+<td>1d−1</td>
+<td>1d+2</td>
+</tr>
+<tr>
+<td>13</td>
+<td>1d</td>
+<td>2d−1</td>
+</tr>
+<tr>
+<td>14</td>
+<td>1d</td>
+<td>2d</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1d+1</td>
+<td>2d+1</td>
+</tr>
+<tr>
+<td>16</td>
+<td>1d+1</td>
+<td>2d+2</td>
+</tr>
+<tr>
+<td>17</td>
+<td>1d+2</td>
+<td>3d−1</td>
+</tr>
+<tr>
+<td>18</td>
+<td>1d+2</td>
+<td>3d</td>
+</tr>
+<tr>
+<td>19</td>
+<td>2d−1</td>
+<td>3d+1</td>
+</tr>
+<tr>
+<td>20</td>
+<td>2d−1</td>
+<td>3d+2</td>
+</tr>
+</tbody>
+</table>
+<p>A arma soma o próprio bônus por cima (pág. 75). Cortante ou perfurante <strong>nunca faz menos de 1</strong> de dano básico, mesmo que os dados deem zero ou negativo; contundente pode fazer 0. (pág. 73)</p>
+<h3>Da rolagem ao PV perdido</h3>
+<p>Três passos, nesta ordem, e a ordem importa (pág. 74 e 100):</p>
+<ol>
+<li><strong>Role o dano</strong> da arma.</li>
+<li><strong>Subtraia a RD</strong> — Resistência a Dano da armadura, da pele ou de magia.</li>
+<li><strong>Multiplique o que sobrou</strong>, pelo tipo:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Multiplicador do que passou pela RD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Contusão</strong> (punho, clava, marreta)</td>
+<td>× 1</td>
+</tr>
+<tr>
+<td><strong>Corte</strong> (espada, machado)</td>
+<td><strong>+50%</strong>, arredondando para baixo</td>
+</tr>
+<tr>
+<td><strong>Perfuração</strong> (lança, flecha, estocada)</td>
+<td><strong>× 2</strong></td>
+</tr>
+</tbody>
+</table>
+<p>O resultado é o que sai dos PV.</p>
+<p><strong>Exemplo, com a boca-de-poço do andar 9.</strong> O hoplita de Ônfalos, ST 12, estoca com a lança: GDP 1d−1, e a lança soma. Saem 7 de dano básico. A criatura tem RD 3: passam 4. Perfurante dobra: <strong>8 PV</strong>.</p>
+<p>O mesmo hoplita, mesmo alvo, com o gládio em balanço: 1d+2, saem 6, passam 3, corte soma 50% (arredondando para baixo, 1): <strong>4 PV</strong>.</p>
+<p><strong>É por isso que a escolha do tipo de golpe é decisão tática, não sabor.</strong> Contra alvo bem couraçado, um balanço pesado que vence a RD vale mais que uma estocada que não vence; contra carne sem armadura, o perfurante mata mais rápido. O livro diz isso na pág. 74, e o bestiário do <code>06</code> já vinha aplicando: contra o abafador do andar 8, "perfurante e fogo funcionam; contundente quase não".</p>
+<h2>4.10 A sequência de combate — tabela do Mestre</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Quem</th>
+<th>O que acontece</th>
+<th>Rolagem</th>
+<th>Se falha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Todos</td>
+<td><strong>Ordem do turno.</strong> Deslocamento decrescente; desempata Velocidade Básica cheia; persistindo, DX maior; persistindo, ordem de declaração (fixado em 10/09/2026).</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Combatente</td>
+<td><strong>Declara a manobra.</strong> Ela vale até o próximo turno dele e decide as defesas que ele terá.</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Mestre</td>
+<td><strong>Anuncia os modificadores de ataque</strong> (iluminação, apoio, posição, ferimento da rodada anterior).</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Atacante</td>
+<td><strong>Jogada de ataque.</strong></td>
+<td>3d6 ≤ NH efetivo da arma</td>
+<td>Errou. Fim do golpe.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>—</td>
+<td><strong>Checa crítico.</strong> 3 = dano máximo, sem defesa. 4, 5 ou 6 (conforme NH) = acerto sem defesa. 17 ou 18 = Tabela de Erros Críticos.</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Defensor</td>
+<td><strong>Jogada de defesa.</strong> Escolhe <strong>uma</strong> defesa ativa entre as que a manobra dele permite; soma a Defesa Passiva.</td>
+<td>3d6 ≤ (PD + defesa ativa)</td>
+<td>Foi atingido.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Atacante</td>
+<td><strong>Rola o dano</strong> da arma.</td>
+<td>dados da arma</td>
+<td>—</td>
+</tr>
+<tr>
+<td>7</td>
+<td>—</td>
+<td><strong>Subtrai a RD</strong> do alvo.</td>
+<td>—</td>
+<td>Se não sobra nada, não houve ferimento.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>—</td>
+<td><strong>Multiplica pelo tipo:</strong> contusão ×1, corte +50%, perfuração ×2.</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Defensor</td>
+<td><strong>Perde os PV.</strong></td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Defensor</td>
+<td><strong>Consequências</strong>, na ordem: Choque · Prostração e Atordoamento se perdeu mais que HT/2 num golpe · Nocaute se foi golpe na cabeça ou órgão vital · limiares de PV da seção 5.4.</td>
+<td>testes de HT</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>5. Ferimento, incapacitação e morte</h1>
+<h2>5.1 Choque</h2>
+<p>Todo ferimento derruba <strong>IQ e DX em pontos iguais ao dano sofrido</strong>, <strong>só no turno seguinte</strong>. Perdeu 3 PV: −3 em IQ, DX e em toda perícia baseada nelas, por um turno. (pág. 126)</p>
+<p><strong>O choque não afeta as defesas ativas</strong> — o livro é explícito: defesa ativa não é perícia baseada em DX. (pág. 127)</p>
+<p>O que ele afeta, e muito, é <strong>atacar e conjurar</strong>. O livro sugere a resposta certa: depois de um ferimento sério, Defesa Total ou fuga rendem mais que contra-ataque. (pág. 127)</p>
+<p>Em separado disso, a jogada de <strong>ataque</strong> leva um redutor igual aos <strong>PV perdidos na rodada anterior</strong>, e ferimentos da mesma rodada somam. (pág. 97)</p>
+<h2>5.2 Prostração e atordoamento</h2>
+<p><strong>Perder mais que HT/2 num único golpe</strong> obriga a um <strong>teste de HT imediato</strong> (pág. 127):</p>
+<ul>
+<li><strong>Falhou:</strong> cai no chão e fica <strong>atordoado</strong>.</li>
+<li><strong>Passou:</strong> fica em pé, e <strong>ainda assim fica atordoado</strong>.</li>
+</ul>
+<p><strong>Atordoado</strong> significa <strong>−4 em todas as defesas ativas</strong>. No início do turno seguinte, teste de <strong>HT básico</strong>: passando, age normalmente naquele mesmo turno; falhando, continua parado e atordoado, sem manobra, e testa de novo no turno seguinte. (pág. 127)</p>
+<p>Também atordoa: <strong>golpe fulminante recebido</strong>, <strong>golpe no cérebro que tire mais que HT/3</strong>, e qualquer lesão cegante ou incapacitante. (pág. 127)</p>
+<p><strong>Atordoamento mental</strong> — surpresa, choque — funciona igual, mas se sai dele com teste de <strong>IQ</strong>, não de HT. Você não está ferido, está confuso. (pág. 127)</p>
+<h2>5.3 Nocaute</h2>
+<p>Golpe na cabeça ou no cérebro, ou esmagamento de órgão vital, obriga a <strong>teste de HT</strong> mesmo que o dano tenha sido inteiramente absorvido pela RD. Falhou, cai inconsciente. <strong>Golpe no cérebro que tire mais que HT/2 é nocaute automático.</strong> (pág. 127)</p>
+<h2>5.4 Os limiares de PV</h2>
+<table>
+<thead>
+<tr>
+<th>PV restantes</th>
+<th>O que acontece</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3, 2 ou 1</strong></td>
+<td><strong>Deslocamento e Esquiva caem à metade</strong>, para baixo. Você está cambaleando. (pág. 126 e 99)</td>
+</tr>
+<tr>
+<td><strong>0 ou menos</strong></td>
+<td><strong>No início de cada turno</strong>, teste de HT (somando Força de Vontade, subtraindo Vontade Fraca). Passou: o turno corre normal. Falhou: desmaia. (pág. 126)</td>
+</tr>
+<tr>
+<td><strong>−HT</strong></td>
+<td>Teste de <strong>HT básico ou morre</strong>. Sobrevivendo, ainda fala e luta. <strong>Novo teste a cada 5 PV perdidos</strong> depois disso — e um golpe de 6 ou mais que cruze duas faixas obriga a <strong>dois testes</strong>. (pág. 126)</td>
+</tr>
+<tr>
+<td><strong>−5 × HT</strong></td>
+<td><strong>Morte automática.</strong> (pág. 126)</td>
+</tr>
+<tr>
+<td><strong>−10 × HT</strong></td>
+<td>O corpo pode ter sido destruído. (pág. 126)</td>
+</tr>
+</tbody>
+</table>
+<p>Para HT 12: cambaleia em 3 PV, arrisca desmaiar em 0, arrisca morrer em −12, testa de novo em −17, −22, −27, e morre sem teste em −60.</p>
+<p><strong>Morte instantânea</strong> existe fora dessa conta: decapitação, garganta cortada, e <strong>pessoa indefesa ou inconsciente atacada de maneira claramente letal está morta</strong>, sem rolagem de dano. Vítima apenas desprevenida <strong>não</strong> entra nessa regra — quem se aproxima de uma sentinela em silêncio precisa mirar um órgão vital e atacar, com <strong>+4</strong> por ela estar parada, e ela não tem defesa ativa. (pág. 126)</p>
+<blockquote>
+<p>[!WARNING]
+<strong>Na Garganta a morte é permanente</strong> (<code>02</code>, seção 9). Ámenti vende intercessão junto a Anúbis e Fengdu vende petição de reencarnação; as duas custam fortuna, exigem patrocínio de Casa, e <strong>quase nunca funcionam</strong>. O resultado padrão é não. O que existe de verdade é a regra de personagem novo do <code>02</code>, seção 9 — e ela é rápida e digna de propósito.</p>
+</blockquote>
+<h2>5.4.1 Quem morre quando — regra de casa</h2>
+<p>A escada de 5.4 é do livro e vale integralmente para personagem de jogador. Aplicada a bicho de bando, ela faz o monstro-tutorial virar maratona: numa mesa de catorze turnos, quatro cavadores-cinzentos absorveram setenta e cinco pontos de dano, e um deles passou em <strong>seis</strong> testes de morte seguidos. Não é bug — é a curva do sistema. O Árbitro a corta pela regra máxima do GURPS, que é a de que o Mestre muda a regra. <strong>Fixado em 10/09/2026.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Quem</th>
+<th>Morre em</th>
+<th>Testes de morte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bicho de bestiário</strong> — sem nome registrado</td>
+<td><strong>0 PV</strong></td>
+<td>Nenhum. Morto — ou em fuga, se o <code>06</code> diz que a espécie foge. Fora da luta de qualquer jeito, e não volta nela.</td>
+</tr>
+<tr>
+<td><strong>NPC nomeado e chefe de encontro</strong></td>
+<td><strong>−HT</strong></td>
+<td>Nenhum. Morre ao cruzar a linha.</td>
+</tr>
+<tr>
+<td><strong>Personagem de jogador</strong>, em qualquer combate</td>
+<td>escada completa de 5.4</td>
+<td>Todos.</td>
+</tr>
+<tr>
+<td><strong>Combate entre personagens de jogador</strong></td>
+<td>escada completa de 5.4, para os dois lados</td>
+<td>Todos.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Chefe de encontro</strong> é o que o <code>06</code> marca como tal, ou a criatura que o Mestre de Cena declarar como chefe <strong>antes do primeiro dado do combate</strong>. Declarada depois, não vale: bicho não sobe de categoria no meio da luta para sobreviver.</p>
+<p><strong>NPC nomeado</strong> é quem tem verbete no <code>07a</code>, nome na Cronologia, ou nome numa ficha homologada — o que inclui a esquadra contratada de um jogador. NPC de cena sem registro é bicho de bestiário para esta tabela.</p>
+<p><strong>O que não muda:</strong> a 3, 2 ou 1 PV, Deslocamento e Esquiva caem à metade para todo mundo, bicho inclusive. O golpe de misericórdia continua exigindo alvo <strong>indefeso ou inconsciente</strong> — atordoado não basta, porque atordoado ainda tem defesa ativa, só que a −4. E o espólio de carcaça é o mesmo, morra o bicho a 0 ou a −60.</p>
+<h2>5.5 Lesões incapacitantes</h2>
+<p>Quando o Mestre está localizando ferimento por parte do corpo (pág. 127 e 203):</p>
+<table>
+<thead>
+<tr>
+<th>Membro</th>
+<th>Fica incapacitado com</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mão ou pé</td>
+<td>dano ≥ <strong>HT/3</strong></td>
+</tr>
+<tr>
+<td>Braço ou perna</td>
+<td>dano ≥ <strong>HT/2</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Dano além do necessário para incapacitar o membro <strong>é perdido</strong>, num golpe ou numa série. Mão incapacitada larga o que segurava. Perna incapacitada derruba a vítima. Os efeitos duram até o fim da luta; falhando um teste de HT, podem durar mais, ou ser permanentes.</p>
+<p><strong>Escolher onde bater tem preço em NH</strong> (pág. 203): cérebro <strong>−7</strong>, cabeça <strong>−5</strong>, olhos <strong>−9</strong>, braço <strong>−4</strong> ou <strong>−2</strong> conforme o lado, mão <strong>−4</strong>, perna <strong>−2</strong>, pé <strong>−4</strong>, órgãos vitais <strong>−3</strong>, tronco <strong>0</strong>. Órgãos vitais recebem <strong>dano triplo</strong> de perfurante.</p>
+<h2>5.6 Recuperação</h2>
+<table>
+<thead>
+<tr>
+<th>Meio</th>
+<th>Efeito</th>
+<th>Tempo</th>
+<th>Onde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Atadura</strong>, por qualquer pessoa</td>
+<td><strong>1 PV</strong>, e nunca mais que isso</td>
+<td>30 min por ferido</td>
+<td>pág. 127</td>
+</tr>
+<tr>
+<td><strong>Primeiros Socorros</strong>, NT 2–3</td>
+<td><strong>1d−3 PV</strong>, mínimo 1. Sucesso decisivo: recupera <strong>todo</strong> o PV. Falha crítica: <strong>−2 PV</strong> e as ataduras não servem mais. Não soma com atadura.</td>
+<td>30 min por ferido</td>
+<td>pág. 128</td>
+</tr>
+<tr>
+<td><strong>Cura natural</strong></td>
+<td>Teste de <strong>HT ao fim de cada dia</strong> de repouso e boa alimentação. Passou: <strong>1 PV</strong>.</td>
+<td>por dia</td>
+<td>pág. 128</td>
+</tr>
+<tr>
+<td><strong>Médico com NH 12+ em Medicina</strong></td>
+<td><strong>+1</strong> nos testes de cura do paciente. Em NT 1–3 o médico ainda rola contra Medicina <strong>uma vez por semana</strong>: sucesso dá <strong>1 PV extra</strong>, decisivo dá 2, falha crítica <strong>custa</strong> 1 PV.</td>
+<td>semanal</td>
+<td>pág. 128</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!NOTE]
+<strong>A conta de mesa é a do <code>03</code>, seção 10.4, e ela substitui a contagem dia a dia.</strong> Ferimento grave tratado por meio comum: <strong>50 g e uma semana parado</strong> — que é exatamente a cura natural do livro, com o preço do tratamento e do tempo já fechados num número. Tratado em <strong>santuário</strong>: <strong>200 g e nenhuma semana parada</strong> — e santuário é serviço de Casa divina, e Casa divina não esquece a quem atendeu. Estrangeiro paga o dobro em cidade cuja Casa não é a sua.</p>
+<p>Use a tabela do livro para arranhão dentro da descida — ataduras e Primeiros Socorros no meio do andar 6 são jogo. Use o <code>03</code> para o que sai da descida.</p>
+</blockquote>
+<hr />
+<h1>6. Fadiga</h1>
+<p><strong>Fadiga é perda de ST</strong>, do mesmo jeito que ferimento é perda de HT. ST 10 significa 10 pontos de Fadiga antes do desmaio. <strong>Fadiga não afeta a HT.</strong> (pág. 134)</p>
+<h2>6.1 O que gasta</h2>
+<table>
+<thead>
+<tr>
+<th>Fonte</th>
+<th>Custo</th>
+<th>Página</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Luta de mais de 10 segundos</strong></td>
+<td>nível de <strong>Carga + 1</strong>. Sem carga, 1 ponto; Carga muito pesada, 5.</td>
+<td>134</td>
+</tr>
+<tr>
+<td><strong>Marcha</strong>, por hora de estrada</td>
+<td>2 pontos com Carga leve; 3 no calor; mais conforme a carga</td>
+<td>134</td>
+</tr>
+<tr>
+<td><strong>Corrida ou natação</strong></td>
+<td>teste de HT a cada 100 m; cada falha custa 1 ponto</td>
+<td>134</td>
+</tr>
+<tr>
+<td><strong>Esforço extra</strong> — erguer, saltar, arrastar acima do peso</td>
+<td>1 ponto por tentativa</td>
+<td>134</td>
+</tr>
+<tr>
+<td><strong>Noite sem dormir</strong></td>
+<td><strong>5 pontos</strong>. Meia noite: 2.</td>
+<td>134</td>
+</tr>
+<tr>
+<td><strong>Refeição perdida</strong></td>
+<td>1 ponto, e essa só volta com <strong>um dia inteiro de descanso</strong> e 3 refeições</td>
+<td>128</td>
+</tr>
+<tr>
+<td><strong>Sem água</strong></td>
+<td>1 ponto de fadiga <strong>e</strong> 1 PV por dia; menos de um litro por dia, 2 de cada</td>
+<td>128</td>
+</tr>
+<tr>
+<td><strong>Magia</strong></td>
+<td>conforme o feitiço</td>
+<td>134, e <code>17</code> §6.4</td>
+</tr>
+</tbody>
+</table>
+<p>Combate <strong>não</strong> drena o mago do mesmo jeito que o guerreiro: quem não cruza espada não paga a fadiga de luta. Paga a dos feitiços. (pág. 134)</p>
+<h2>6.2 O que a fadiga cobra</h2>
+<ul>
+<li>Perícias e testes baseados em <strong>ST</strong> rodam com a ST reduzida. ST 10 com 4 de fadiga funciona como ST 6. (pág. 134)</li>
+<li><strong>O dano básico das armas não muda.</strong> Simplificação deliberada do livro, para não recalcular arma a cada rodada. (pág. 134)</li>
+<li><strong>Deslocamento não muda</strong> até a ST cair a <strong>3</strong>; daí para baixo, cai à metade. (pág. 134)</li>
+<li><strong>ST 1:</strong> você desfalece. Não faz nada físico até recuperar 1 ponto. Ainda fala e ainda conjura. (pág. 134)</li>
+<li><strong>ST 0:</strong> desmaia, e descansa automaticamente até voltar a 1. Fadiga negativa não existe. (pág. 134)</li>
+</ul>
+<h2>6.3 Recuperação</h2>
+<p><strong>1 ponto a cada 10 minutos de descanso tranquilo.</strong> Falar e pensar pode; andar, não. O Mestre pode dar <strong>1 ponto extra</strong> se houver uma refeição decente no descanso. Fadiga de falta de sono só some com uma noite de sono, e só quando ela acontecer. (pág. 134)</p>
+<h2>6.4 Por que isso é decisivo para o mago</h2>
+<p>Feitiço custa fadiga, e <strong>fadiga = ST</strong>, que é o atributo que mago nenhum compra alto. É esse o teto real de um conjurador — não a lista de feitiços.</p>
+<p>E é exatamente esse teto que a <strong>profundidade</strong> mexe. Do <code>17</code>, seção 6.5:</p>
+<table>
+<thead>
+<tr>
+<th>Faixa</th>
+<th>Mana</th>
+<th>Efeito na fadiga</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andares 1–8</td>
+<td>Normal</td>
+<td>Custo cheio</td>
+</tr>
+<tr>
+<td>Andares 9–20</td>
+<td><strong>Alta</strong></td>
+<td><strong>+2 no nível efetivo</strong> e <strong>metade da fadiga</strong>, arredondando para cima</td>
+</tr>
+<tr>
+<td>Andares 21+</td>
+<td><strong>Muito alta</strong></td>
+<td><strong>Nenhuma fadiga</strong> — e toda falha comum vira falha crítica</td>
+</tr>
+<tr>
+<td>Bolsão</td>
+<td><strong>Nula</strong></td>
+<td>Nada funciona</td>
+</tr>
+</tbody>
+</table>
+<p>Do andar 9 para baixo, a mesma ST paga o dobro de feitiços. É o que faz o andar 9 ser político, e o <code>17</code> explica por quê. <strong>Sem Aptidão Mágica não há feitiço em nenhuma faixa</strong> — decisão do Árbitro, e vale acima do livro (<code>17</code>, §6.2 e §6.5).</p>
+<h2>6.5 Asfixia e fôlego</h2>
+<p>Entra aqui porque é dano de fadiga, não de PV — e porque o abafador do andar 8 é isto e nada mais (pág. 91 e 122):</p>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Quanto se prende a respiração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parado, sem esforço</td>
+<td><strong>HT × 10 segundos</strong></td>
+</tr>
+<tr>
+<td>Esforço leve — andar, nadar devagar</td>
+<td><strong>HT × 4 segundos</strong></td>
+</tr>
+<tr>
+<td>Esforço pesado — lutar</td>
+<td><strong>HT segundos</strong></td>
+</tr>
+<tr>
+<td>Passivo nas mãos do agressor (exige teste de Vontade)</td>
+<td><strong>4 × HT turnos</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Acabado o fôlego: <strong>1 ponto de fadiga por turno</strong>. Quando a fadiga iguala a ST, a vítima desmaia. Se o agressor não soltar, ela <strong>morre em 4 minutos</strong>, independentemente da HT. Solta a tempo, ela volta a si rápido. Asfixia <strong>não tira PV</strong> — mata o cérebro.</p>
+<hr />
+<h1>7. Testes de resistência</h1>
+<h2>7.1 Vontade</h2>
+<p><strong>Vontade = IQ</strong>, mais os níveis da vantagem <strong>Força de Vontade</strong> (4 pontos por nível), menos os da desvantagem <strong>Vontade Fraca</strong>. (pág. 20)</p>
+<p>Testa-se Vontade para resistir a Diplomacia, Lábia, Sex Appeal, Interrogatório, Hipnotismo, e a tentativa de dominar sua mente por magia. Também para manter a mira depois de ser ferido, e para manter a concentração num feitiço enquanto se defende. <strong>Vontade não ajuda contra choque de combate.</strong> (pág. 20, 95, 105)</p>
+<p>Em disputa social, é a Vontade que entra: o Sex Appeal da espiã contra a IQ do alvo, com os níveis de Força de Vontade somados ao alvo. (pág. 20)</p>
+<h2>7.2 HT</h2>
+<p>Testa-se HT para: não desmaiar a 0 PV ou menos (somando Força de Vontade), não morrer a −HT, não cair na Prostração, sair do Atordoamento, não ser nocauteado, cura natural, veneno, doença, e fadiga de corrida. É o atributo mais rolado da campanha depois das perícias de arma.</p>
+<h2>7.3 Resistir a magia</h2>
+<p>A magia hostil e resistível resolve por <strong>comparação de margens</strong> (pág. 150):</p>
+<ol>
+<li>O conjurador testa o feitiço. <strong>Falhou, o alvo não percebe nada.</strong> Passou, anota-se a <strong>margem</strong>.</li>
+<li>Contra alvo vivo, <strong>o conjurador rola contra 16 no máximo</strong>, mesmo que o NH seja maior. Vitória automática sobre resistência não existe.</li>
+<li>O alvo testa <strong>IQ, ST, DX ou HT</strong>, conforme o feitiço, <strong>somando sempre a Força de Vontade</strong> e o Abascanto se tiver.</li>
+<li><strong>Se a margem do alvo for maior ou igual à do conjurador, a magia não funciona</strong> — mas a energia foi gasta do mesmo jeito. O alvo consciente sente um desconforto e nada mais. <strong>O conjurador sabe que foi rechaçado.</strong></li>
+</ol>
+<p>Magia de área: rola-se uma vez o feitiço, e depois <strong>uma resistência por alvo dentro da área</strong>. Abascanto conta em dobro contra magia de área.</p>
+<p>O alvo <strong>pode escolher não resistir</strong>.</p>
+<hr />
+<h1>8. O que esta campanha faz diferente do livro</h1>
+<p>Lista curta, cada linha apontando o documento que manda.</p>
+<table>
+<thead>
+<tr>
+<th>Regra da casa</th>
+<th>Onde está</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A morte é permanente.</strong> Intercessão de Ámenti e petição de Fengdu custam fortuna e o resultado padrão é não. Personagem novo entra com a média da mesa −10%, piso de 150.</td>
+<td><code>02</code> §9</td>
+</tr>
+<tr>
+<td><strong>Ranks por pontos totais</strong>, e morte a partir do rank B desbloqueia personagem não-humano.</td>
+<td><code>02</code> §7 e <code>03</code> §1</td>
+</tr>
+<tr>
+<td><strong>Economia em grãos</strong>, não em dólares do livro. Espólio por profundidade, preço de balcão, ágio de armadura de 1,5× no Limiar, manutenção semanal. Nenhum preço se estima na cena.</td>
+<td><code>03</code></td>
+</tr>
+<tr>
+<td><strong>Cura tem preço fixo e teológico:</strong> 50 g e uma semana parado, ou 200 g em santuário e nenhuma semana.</td>
+<td><code>03</code> §10.4</td>
+</tr>
+<tr>
+<td><strong>Sem Aptidão Mágica não existe feitiço</strong>, em nenhum andar. O livro diz que mana alta permite a qualquer um conjurar; <strong>aqui não</strong>.</td>
+<td><code>17</code> §6.2 e §6.5</td>
+</tr>
+<tr>
+<td><strong>Mana alta dá +2 no nível efetivo e metade da fadiga.</strong> Número da casa, decidido pelo Árbitro — o livro não dá mecânica nenhuma à faixa alta depois que se corta o efeito acima.</td>
+<td><code>17</code> §6.5</td>
+</tr>
+<tr>
+<td><strong>A Marca custa 0 pontos</strong> e é a premissa do mundo, mas traz Dever obrigatório com a Casa divina.</td>
+<td><code>02</code> §5</td>
+</tr>
+<tr>
+<td><strong>Três ações de mundo por semana</strong>, que não acumulam. Cenas livres, ilimitadas.</td>
+<td><code>02</code> §11</td>
+</tr>
+<tr>
+<td><strong>Uma semana de mundo é uma semana real.</strong> O relógio corre sozinho; ninguém entra na Semana N+1 antes do Boletim.</td>
+<td><code>02</code> §11</td>
+</tr>
+<tr>
+<td><strong>Nenhum conflito entre jogadores sem consentimento explícito dos dois.</strong> Conflito por procuração é o caminho preferido.</td>
+<td><code>02</code> §10</td>
+</tr>
+<tr>
+<td><strong>O Mestre de Cena não sugere rolagem.</strong> Perícia é do jogador.</td>
+<td><code>02</code> §4 e <code>04</code></td>
+</tr>
+<tr>
+<td><strong>Quem rola os dados é sempre o Mestre de Cena</strong>, nunca o jogador — e o resultado nunca some. A rolagem que o livro manda fazer escondida se grava na pasta do jogador antes de narrar e aparece na homologação.</td>
+<td><code>04</code> (Mecânica); aqui, §1.1 e §1.6</td>
+</tr>
+<tr>
+<td><strong>Bicho de bestiário morre a 0 PV; NPC nomeado e chefe a −HT; personagem de jogador pela escada do livro.</strong></td>
+<td>§5.4.1</td>
+</tr>
+<tr>
+<td><strong>Empate na ordem do turno se desempata pela DX e depois pela ordem de declaração</strong>, não por dados. Mesa assíncrona precisa de ordem que não mude entre uma sessão e outra.</td>
+<td>§4.2 e §4.10</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>9. Divergências abertas</h1>
+<p>Encontradas ao conferir este documento contra o livro em 08/09/2026. Nenhuma foi corrigida aqui — pela regra de precedência do <code>14</code>, correção entra por linha nova, e a decisão é do Árbitro.</p>
+<ol>
+<li>
+<p><em>Resolvida em 08/09/2026 — o <code>02</code> §4 já traz as duas tabelas do livro; a linha abaixo fica como registro.</em> <strong>A tabela de custo de perícias do <code>02</code>, seção 4, estava um degrau acima do livro.</strong> O livro (pág. 43–44) traz <strong>duas</strong> tabelas — físicas e mentais — e a física não tem coluna Muito Difícil. Nas mentais, ½ ponto compra Fácil em <strong>IQ−1</strong>, não em IQ+0; 1 ponto compra Fácil em <strong>IQ</strong>, não em IQ+1; e assim por diante, em toda a tabela. <strong>As fichas do <code>08</code> já usam os números do livro</strong>, não os do <code>02</code>: o hoplita tem Lança 17 com 16 pontos, que é DX+3 numa perícia Física/Média — exatamente a linha do livro. A tabela do <code>02</code> é que está fora.</p>
+</li>
+<li>
+<p><em>Resolvida em 08/09/2026 — o <code>02</code> §2 já diz "Recuar é de todo mundo"; a linha abaixo fica como registro.</em> <strong>"A esgrima permite recuo ao aparar" (<code>02</code>, seção 2) era impreciso.</strong> No livro, <strong>Recuar</strong> é opção de qualquer um: afastar-se um metro do adversário soma <strong>+3 em qualquer bloquear, aparar ou esquivar</strong>, uma vez por rodada, e não se recua sentado, ajoelhado nem atordoado (pág. 109). O que a Esgrima dá de fato é <strong>Aparar a ⅔</strong>, <strong>duas aparadas por turno</strong> e <strong>aparadas ilimitadas em Defesa Total</strong> (pág. 99) — e o <strong>Bastão também apara a ⅔</strong>, o que o <code>02</code> não menciona.</p>
+</li>
+<li>
+<p><strong>A campanha nunca declarou um Nível Tecnológico.</strong> A tabela de Primeiros Socorros do livro depende dele. Este documento usa <strong>NT 2–3</strong> (Roma / Idade Média), que é o que o equipamento do <code>03</code> descreve — gládio, aspis, cota de malha, besta. Convém fixar por decisão.</p>
+</li>
+<li>
+<p><strong>Golpe fulminante: o livro oferece duas regras e proíbe usar as duas.</strong> Está na seção 4.8, com a escolha marcada como decisão do Árbitro.</p>
+</li>
+<li>
+<p><strong>O deslocamento do Ataque Total tem duas redações no próprio livro.</strong> O texto (pág. 105) diz "até 2 hexágonos, ou metade do Deslocamento, o que for maior"; a tabela de Manobras (pág. 203) diz só "metade do Deslocamento". Este documento segue o texto.</p>
+</li>
+<li>
+<p><strong>A morte automática está escrita de forma confusa no livro</strong> (pág. 126): "Vitalidade igual −5 × HT: morte automática. Isto significa que você perdeu um número de pontos de vida igual a 6 vezes o valor de sua HT." As duas frases dizem a mesma coisa por caminhos diferentes, e o exemplo da coluna lateral confirma: <strong>HT 14 morre em −70</strong>. O limiar é <strong>−5 × HT</strong>, e é esse que a tabela da seção 5.4 usa.</p>
+</li>
+<li>
+<p><strong>A perda de Esquiva a 3 PV aparece só na coluna lateral do capítulo de combate</strong> (pág. 99); o capítulo de ferimentos (pág. 126) menciona apenas o Deslocamento. Como Esquiva <strong>é</strong> o Deslocamento, o efeito é o mesmo, e este documento diz os dois.</p>
+</li>
+<li>
+<p><strong>O livro não tem tabela geral de dificuldade de tarefa.</strong> Ele dá exemplos e a lista de condições adversas de combate (pág. 97), que está na seção 4.5. Fora de combate, o modificador é decisão do Mestre de Cena, dita antes dos dados.</p>
+</li>
+</ol>
+<hr />
+<h1>10. Correções</h1>
+<p>Por registro, conforme o <code>14</code>: linha corrigida não some sem que fique dito o que ela dizia.</p>
+<p><strong>Correção de 11/09/2026.</strong> Três passagens contradiziam o resto do cânone. A seção 4.2 dizia "Empate ainda: dados", resíduo anterior à decisão de 10/09 que a tabela da seção 4.10 já trazia; passou a dizer a regra da casa — DX, depois ordem de declaração —, e a regra entrou na tabela da seção 8. A seção 1.1 e a tabela da seção 8 diziam que o resultado nunca se esconde, sem a exceção da rolagem escondida da seção 1.6; passaram a apontar para ela. E a seção 1.6 mandava gravar a rolagem escondida "no relatório da semana ou num arquivo <code>semana-NN-rolagens</code>": o relatório só se escreve no fim da sessão, depois da cena, e arquivo entregue não se edita, então passou a ser um arquivo por rolagem, <code>semana-NN-rolagem-NN</code>, descrito no <code>04b</code>, seção 3. Nenhum número mudou.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/20-como-se-joga.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

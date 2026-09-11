@@ -1,0 +1,633 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guia de Criação e Manual de Magia — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html" class="atual">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Guia de Criação e Manual de Magia</h1><div class="meta">versão 8 · atualizado em 2026-09-11 · Seu personagem</div></div>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Atenção.</strong>
+<strong>Remissão, 11/09/2026.</strong> A <strong>Dádiva de Zeus</strong> e o <strong>recorte do colégio Clima</strong> foram decididos em documento próprio: <strong><code>31</code> — A Dádiva de Zeus e o recorte de Clima</strong>. Onde este guia divergir do <code>31</code> nesses dois pontos, <strong>vale o <code>31</code></strong>.</p>
+<p><strong>Remissão, 10/09/2026.</strong> A criação de magia nova saiu deste guia e virou documento próprio: <strong><code>30</code> — Improviso, Círculo e Lavra</strong>. A Garganta adota o Capítulo 8 do <em>GURPS Magia</em> (Magia de Improviso), que substitui <em>A Criação de Mágicas Novas</em> da pág. 15. <strong>A lista de mágicas do mundo não é mais fechada.</strong> Onde este guia divergir do <code>30</code> no que toca a criar mágica, vale o <code>30</code>.</p>
+<p><strong>Nota.</strong>
+Para quem nunca jogou GURPS. Complementa o <strong>02 — Regras da Mesa</strong> (mecânica) e o <strong>08 — Modelos de Personagem</strong> (fichas prontas). Onde este guia divergir do livro do Árbitro, <strong>o livro vence</strong> — a divergência vira Pendência. A única exceção é <strong>decisão do Árbitro registrada em nota</strong>, como a da 6.5: essa é escolha de campanha, não erro.</p>
+</blockquote>
+<h1>PARTE 1 — GURPS EM CINCO MINUTOS</h1>
+<p>Você rola <strong>3d6</strong> e quer tirar <strong>igual ou menos</strong> que o seu nível. Nível 12 significa que você acerta em cerca de 74% das vezes. Nível 14, 90%. Nível 9, 37%. É só isso.
+Você <strong>compra</strong> o personagem com pontos. Tudo custa: cada ponto de atributo, cada vantagem, cada perícia, cada feitiço. Nada é sorteado.
+<strong>Seu orçamento:</strong>
+- <strong>150 pontos</strong> de partida
+- <strong>até −40</strong> em desvantagens, que voltam como pontos para gastar
+- <strong>até 5 peculiaridades</strong>, a −1 cada
+- Total efetivo: <strong>195 pontos</strong>
+Desvantagem não é castigo — é financiamento. Você aceita um problema e recebe pontos por ele. O problema vai aparecer na mesa; é para isso que ele serve.</p>
+<h1>PARTE 2 — ATRIBUTOS</h1>
+<p>Quatro, base 10 (a média humana): <strong>ST</strong> força · <strong>DX</strong> destreza · <strong>IQ</strong> inteligência · <strong>HT</strong> saúde. A tabela de custo está no 02.
+O que dá para saber sem decorar tabela:
+- <strong>DX e IQ são caros e valem caro.</strong> DX rege quase todo combate e furtividade; IQ rege quase todo saber, política e magia.
+- <strong>ST e HT são baratos e mantêm você vivo.</strong> HT é literalmente seus pontos de vida.
+- <strong>Cada +1 acima de 13 fica desproporcionalmente caro.</strong> Um 14 em DX custa 45 pontos, quase um terço da ficha.
+Regra prática: escolha <strong>um</strong> atributo alto (14), <strong>um</strong> bom (12–13), e não deixe nada abaixo de 10 sem motivo de personagem.</p>
+<h1>PARTE 3 — VANTAGENS</h1>
+<p>Vantagem é qualquer coisa boa e permanente: um talento, um sentido melhor, dinheiro, posição social, gente que te deve favor.
+<strong>Custos conferidos contra o Módulo Básico em 07/09/2026.</strong> Use o nome do livro — é o que a ficha vai ter.</p>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Registro de correção, 07/09/2026.</strong> A tabela abaixo <strong>já está com os custos do livro</strong>. Esta nota guarda o que mudou, para quem tem ficha antiga na mão.</p>
+<p><strong>Visão Aguçada</strong> custa <strong>2 pontos por nível</strong>, não 10 — um +3 sai por 6. <strong>Voz</strong> chama-se <strong>Voz Melodiosa</strong> e custa <strong>10</strong>, não 5. <strong>Talento para Idiomas</strong> não existe: é <strong>Facilidade para Línguas</strong>, 2 por nível, e dá <strong>+1 por nível ao aprender língua</strong> — não é desconto de metade. <strong>Sentido de Perigo</strong> chama-se <strong>Noção do Perigo</strong> e <strong>Sentido de Direção</strong> chama-se <strong>Senso de Direção</strong>; os custos, 15 e 5, estavam certos.</p>
+<p>E duas vantagens que o cânone usava <strong>não existem no Módulo Básico</strong>: <strong>Vigor</strong> e <strong>Imunidade a Medo</strong>. Saíram da tabela, e saíram das Dádivas. Foram trocadas por equivalentes de livro que servem melhor:</p>
+<p><strong>Hipoalgia (alto limiar de dor), 10 pontos</strong> — você não fica atordoado nem perde DX por dor. É a Dádiva de Tyr, e é mais fiel ao mito do que "Vigor": ele pôs a mão na boca do lobo e não recuou.</p>
+<p><strong>Força de Vontade, 4 pontos por nível</strong> — soma à resistência contra medo, dor e dominação. É a Dádiva de Zhong Kui, e é como o livro faz alguém difícil de assustar.</p>
+<p><strong>Senso de Direção funciona no subsolo</strong> — o livro diz isso com todas as letras, e dá +3 em Navegação. Numa campanha dentro de um poço, é a vantagem de 5 pontos mais subestimada da lista.
+<strong>Custos em uso no cânone</strong>, conferidos linha a linha contra o Módulo Básico. Cada linha desta tabela sustenta uma Dádiva ou um modelo do <code>08</code>:</p>
+</blockquote>
+<table>
+<tr>
+<th>Vantagem</th>
+<th>Custo</th>
+<th>O que faz na prática</th>
+</tr>
+<tr>
+<td>Reflexos em Combate</td>
+<td>15</td>
+<td>+1 em todas as defesas ativas, +6 para não ser surpreendido. A melhor compra defensiva do jogo.</td>
+</tr>
+<tr>
+<td>Noção do Perigo</td>
+<td>15</td>
+<td>O Árbitro te avisa, sem explicar, quando algo está errado. Na Garganta isso salva vidas.</td>
+</tr>
+<tr>
+<td>Hipoalgia (alto limiar de dor)</td>
+<td>10</td>
+<td>Dor não te atordoa nem derruba sua DX no turno seguinte, e +3 para aguentar tortura. Não te faz mais duro; te faz não parar.</td>
+</tr>
+<tr>
+<td>Força de Vontade</td>
+<td>4 / nível</td>
+<td>Soma ao IQ em todo teste de Vontade: medo, dor, interrogatório, sedução, e dominação por magia.</td>
+</tr>
+<tr>
+<td>Memória Eidética</td>
+<td>30</td>
+<td>Você lembra de tudo que viu e ouviu — e **todo ponto gasto em perícia mental conta em dobro** (magia não). Cara, e transforma o personagem em arquivo ambulante.</td>
+</tr>
+<tr>
+<td>Intuição</td>
+<td>15</td>
+<td>Uma pergunta por problema ao Árbitro, respondida por palpite mecânico.</td>
+</tr>
+<tr>
+<td>Empatia</td>
+<td>15</td>
+<td>Você sente o que a pessoa à sua frente sente, e se ela está sendo sincera. Não dá a verdade; dá a sinceridade.</td>
+</tr>
+<tr>
+<td>Bom Senso</td>
+<td>10</td>
+<td>Quando você vai fazer uma bobagem, o Árbitro avisa antes. É a cabeça fria comprada com pontos.</td>
+</tr>
+<tr>
+<td>Visão Aguçada</td>
+<td>2 / nível</td>
+<td>+1 por nível para enxergar. Combina com arco e com batedor, e é barata.</td>
+</tr>
+<tr>
+<td>Olfato/Paladar Apurado</td>
+<td>2 / nível</td>
+<td>+1 por nível de faro e paladar. Rota pelo cheiro, e veneno na comida antes do segundo gole.</td>
+</tr>
+<tr>
+<td>Facilidade para Línguas</td>
+<td>2 / nível</td>
+<td>+1 por nível **ao aprender** língua. Não é desconto: é cada idioma saindo vários níveis mais alto pelo mesmo ponto.</td>
+</tr>
+<tr>
+<td>Voz Melodiosa</td>
+<td>10</td>
+<td>+2 em Diplomacia, Política, Trato Social, Atuação, Trovador e Canto, e +2 na reação de quem te ouve.</td>
+</tr>
+<tr>
+<td>Carisma</td>
+<td>5 / nível</td>
+<td>+1 por nível em todo teste de reação de criatura inteligente. Liderança que não depende de cara bonita.</td>
+</tr>
+<tr>
+<td>Senso de Direção</td>
+<td>5</td>
+<td>Você não se perde, e refaz qualquer trajeto dos últimos 30 dias. Funciona no subsolo, e dá +3 em Navegação. Dentro de um poço sem fundo, isso é dinheiro.</td>
+</tr>
+<tr>
+<td>Recuperação Alígera</td>
+<td>5</td>
+<td>+5 na HT efetiva para se recuperar de ferimento. Exige HT 10 ou mais. Barata, e encurta a semana parado.</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>5 / nível</td>
+<td>Você é alguém na sua cidade. Portas abrem — e custa dinheiro manter.</td>
+</tr>
+<tr>
+<td>Reputação</td>
+<td>5 por +1 de reação</td>
+<td>Modificada pelo tamanho do grupo que te conhece e pela frequência: fama restrita a uma cidade sai pela metade.</td>
+</tr>
+<tr>
+<td>Riqueza Confortável</td>
+<td>10</td>
+<td>Dobra o dinheiro inicial: 2.000 g em vez de 1.000. Equipamento melhor muda a curva de sobrevivência.</td>
+</tr>
+<tr>
+<td>Aliado</td>
+<td>5+</td>
+<td>Um NPC de 76 a 100 pontos que aparece e é confiável. É política antes da primeira sessão.</td>
+</tr>
+<tr>
+<td>Patrono</td>
+<td>10+</td>
+<td>Uma pessoa ou casa poderosa que às vezes aparece por você. Conforme poder e frequência.</td>
+</tr>
+</table>
+
+<p>Qualquer vantagem fora desta lista pode ser comprada pelo livro. Se o custo divergir do que está aqui, <strong>vale o livro</strong> e o Árbitro corrige por linha nova.</p>
+<h2>As Dádivas</h2>
+<p>Dádiva é vantagem sobrenatural, comprada com pontos normais, mas <strong>só dentro do domínio da sua divindade</strong>. Fora do domínio, não existe compra possível.
+Exemplos já canônicos: <strong>Atena</strong> dá Reflexos em Combate e Bom Senso · <strong>Thoth</strong> dá Memória Eidética e Facilidade para Línguas · <strong>Tyr</strong> dá Hipoalgia · <strong>Ixchel</strong> dá Intuição · <strong>Zhong Kui</strong> dá Força de Vontade · <strong>Agni</strong> dá Aptidão Mágica · <strong>Hermes</strong> dá Carisma e Voz Melodiosa · <strong>Oxóssi</strong> dá Senso de Direção e Olfato/Paladar Apurado, que é o faro de rota · <strong>Ogum</strong> dá Reflexos em Combate e Hipoalgia · <strong>Oxum</strong> dá Empatia · <strong>Sekhmet</strong> dá Recuperação Alígera · <strong>Hefesto</strong> dá Aptidão Mágica · <strong>Loki</strong> dá Voz Melodiosa e Noção do Perigo · <strong>Afrodite</strong> dá Voz Melodiosa e Carisma · <strong>Huitzilopochtli</strong> dá Recuperação Alígera · <strong>Zeus</strong> dá Noção do Perigo.</p>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Corrigido em 07/09/2026.</strong> A lista anterior distribuía Talento Tático, Talento para Idiomas, Vigor, Imunidade a Medo, Velocidade Superior, Talento Social, Talento com Armas e Recuperação Rápida. <strong>Nenhuma dessas existe no Módulo Básico.</strong> A troca manteve o sentido de cada dádiva e a ordem de grandeza do custo: Tyr continua sendo quem não recua (Hipoalgia), Zhong Kui continua sendo quem não se assusta com o morto (Força de Vontade), Thoth continua sendo quem lê tudo o que está escrito (Facilidade para Línguas).</p>
+<p>Duas saíram por outro motivo. <strong>Cura</strong> não é vantagem: é colégio, e quem concede está na tabela da 6.6 — Oxum concede o colégio, não uma vantagem chamada Cura. E <strong>Fúria</strong> existe no livro, mas é <strong>desvantagem de −15 pontos</strong>: a fúria de Sekhmet não se compra, se aceita, e quem a aceita <strong>recebe</strong> pontos por ela.
+Se quiser uma Dádiva que não está listada, escreva <strong>por que ela pertence ao domínio daquele deus</strong>. Argumento teológico bom é aprovado. É assim que o mundo cresce.
+<strong>Nota.</strong>
+<strong>Acrescentado em 09/09/2026, por três homologações do mesmo dia.</strong></p>
+<p><strong>Hefesto dá Aptidão Mágica.</strong> A 6.6 já lhe dá Fogo, Terra e Fazer e Quebrar, e a 6.1 diz que quem concede a Aptidão é a Casa. O precedente é a Dádiva de Agni. Homologação de Runirsson Ákmon.</p>
+<p><strong>Loki, na Casa de Gapheim, dá Voz Melodiosa e Noção do Perigo</strong>, e concede os colégios de <strong>Ilusão e Criação</strong> e <strong>Comunicação e Empatia</strong> (v. 6.6). O Dever da Marca de Loki tem nome próprio: <strong>o Contraditório, −10</strong> — a Casa mantém em Gapheim o ofício de quem sustenta a causa que ninguém sustenta, e quando ela convoca, o marcado defende quem ela mandar, inclusive quem julga culpado. A Casa não escolhe as causas por justiça: escolhe para manter o Thing testado. Chamado em 12 ou menos. <strong>Nota teológica, e é a fraqueza estrutural da Casa:</strong> a metamorfose de Loki chega à mesa como <strong>ilusão, não como transformação</strong> — o disfarce engana o olho e não sobrevive a uma mão que toca. Homologação de Eilif Kverk.</p>
+<p><strong>Afrodite dá Voz Melodiosa e Carisma</strong>, e o domínio dela nesta campanha é <strong>encanto, graça e persuasão</strong> — reação e palavra, não feitiço. É o que o Dever da Marca dela cobra: promessa quebrada, honra de família, desavença pública, reconciliação. Hermes já dava as duas: <strong>duas Casas dividirem Dádiva é o padrão, não a exceção.</strong> Homologação de Anastásia.</p>
+<p><strong>Acrescentado em 09/09/2026, mais tarde no mesmo dia.</strong> <strong>Huitzilopochtli, na Casa de Tulán, dá Recuperação Alígera.</strong> Ele é o sol que atravessa a noite lutando e nasce inteiro de manhã: recuperar do que deveria ter parado é o próprio mito, e a Dádiva é essa e não outra. <strong>Sekhmet já dava a mesma</strong>, e isso não é problema — pela regra fixada com Afrodite e Hermes, duas Casas dividirem Dádiva é o padrão. Huitzilopochtli <strong>não concede colégio de magia nenhum</strong> (v. 6.6): quem se marca por ele não lança feitiço, em nenhum andar, e a Dádiva do corpo é o que ele tem a oferecer. Homologação de Itzcoatl Nove-Casa.</p>
+<p><strong>Nota.</strong>
+<strong>Acrescentado em 11/09/2026 — a Dádiva de Zeus.</strong> <strong>Zeus, em Ônfalos, dá Noção do Perigo (15).</strong> O argumento é <strong>Zeus Panomphaios</strong> (<em>Ilíada</em> 8.250), o autor de todo presságio, e a vantagem é a função literal dele: o Árbitro avisa, sem explicar. <strong>Loki já dava a mesma</strong>, e duas Casas dividirem Dádiva é o padrão desde Afrodite e Hermes — com a consequência da decisão 7 do <code>25</code>: quem foi avisado <strong>não sabe quem avisou</strong>.</p>
+<p><strong>Uma Dádiva só, e Visão Aguçada está recusada.</strong> A águia de Zeus é a portadora do sinal, não uma luneta — o olho da águia <strong>é</strong> o presságio, e já está pago. Além disso Visão Aguçada <strong>não é vantagem sobrenatural</strong>: continua comum, 2 pontos por nível, comprável por qualquer personagem de qualquer cidade, como Reflexos em Combate. Os três motivos completos estão no <code>31</code> §1. Homologação de Karthoz.</p>
+<p><strong>E uma que não é Dádiva de ninguém: Reflexos em Combate.</strong> Vantagem comum, comprável por qualquer personagem, sem argumento teológico. A Caçadora de Fengdu do <code>08</code>, modelo 5, compra os 15 sem ser de Atena nem de Ogum. Atena e Ogum a <strong>concedem</strong>; ninguém a monopoliza.</p>
+</blockquote>
+<h1>PARTE 4 — DESVANTAGENS</h1>
+<p>Você tem <strong>−40</strong> para gastar, e o <strong>Dever da Marca é obrigatório</strong> e já ocupa de −5 a −15 desse limite. Sobram cerca de −25 a −35 para escolher.
+Escolha desvantagens que <strong>façam alguém agir contra você</strong>. Uma alergia a nozes não gera cena. Uma dívida com a Casa de Hefesto gera doze.</p>
+<table>
+<tr>
+<th>Desvantagem</th>
+<th>Faixa</th>
+<th>O que ela produz na mesa</th>
+</tr>
+<tr>
+<td>Dever (a Casa, à Guilda, à esquadra)</td>
+<td>−5 a −15</td>
+<td>Você é chamado e vai. Quanto mais frequente, mais pontos.</td>
+</tr>
+<tr>
+<td>Senso de Dever</td>
+<td>−5 a −15</td>
+<td>Você não abandona os seus. Limita fuga, e é a desvantagem mais nobre do jogo.</td>
+</tr>
+<tr>
+<td>Código de Honra</td>
+<td>−5 a −15</td>
+<td>Há coisas que você não faz, mesmo sozinho, mesmo perdendo.</td>
+</tr>
+<tr>
+<td>Juramento</td>
+<td>−5 a −15</td>
+<td>Uma promessa específica. Em Gapheim tem peso jurídico.</td>
+</tr>
+<tr>
+<td>Inimigo</td>
+<td>−5 a −30</td>
+<td>Alguém quer te ver mal. Conforme poder e frequência.</td>
+</tr>
+<tr>
+<td>Dependente</td>
+<td>−5 a −30</td>
+<td>Alguém depende de você e pode ser usado contra você.</td>
+</tr>
+<tr>
+<td>Reputação Ruim</td>
+<td>−5 a −10</td>
+<td>Reação pior de um grupo específico. Reputação boa custa pontos; ruim paga.</td>
+</tr>
+<tr>
+<td>Dívida</td>
+<td>−5 a −15</td>
+<td>Você deve, e o credor tem nome e agenda.</td>
+</tr>
+<tr>
+<td>Segredo</td>
+<td>−5 a −30</td>
+<td>Conforme o estrago se vazar. Ótimo motor de trama.</td>
+</tr>
+<tr>
+<td>Curiosidade</td>
+<td>−5</td>
+<td>Você abre a porta. Sempre.</td>
+</tr>
+<tr>
+<td>Impulsividade</td>
+<td>−10</td>
+<td>Você age antes do plano.</td>
+</tr>
+<tr>
+<td>Teimosia</td>
+<td>−5</td>
+<td>Você não muda de ideia por argumento.</td>
+</tr>
+<tr>
+<td>Honestidade</td>
+<td>−10</td>
+<td>Você não mente, nem por educação, nem por conveniência.</td>
+</tr>
+<tr>
+<td>Orgulho / Vaidade</td>
+<td>−5 a −10</td>
+<td>Você não engole desaforo.</td>
+</tr>
+<tr>
+<td>Compulsão / Obsessão</td>
+<td>−5 a −15</td>
+<td>Você tem que fazer aquilo.</td>
+</tr>
+<tr>
+<td>Fobia</td>
+<td>−5 a −15</td>
+<td>Escuro, altura, insetos, mortos. Escolha com a Garganta em mente.</td>
+</tr>
+<tr>
+<td>Ganância / Avareza</td>
+<td>−10 a −15</td>
+<td>O ouro decide por você.</td>
+</tr>
+</table>
+
+<p><strong>Armadilha comum:</strong> encher a ficha de desvantagens mentais leves só para chegar aos −40. Três desvantagens fortes e conectadas à política do mundo rendem mais jogo — e mais pontos — que sete tiques.</p>
+<h2>Peculiaridades</h2>
+<p>Cinco, a −1 cada, e não têm efeito mecânico nenhum. São hábitos: reza antes de descer, corrige a gramática alheia, não senta de costas para a porta. São <strong>cinco pontos de graça</strong> em troca de o personagem parecer gente. Não deixe em branco.</p>
+<h1>PARTE 5 — PERÍCIAS</h1>
+<p>Perícia é qualquer coisa que você aprendeu. Ela sai de um atributo (a maioria de DX ou IQ) e tem uma <strong>dificuldade</strong>: Fácil, Média, Difícil, Muito Difícil. Quanto mais difícil, menos nível você tira pelo mesmo ponto. A tabela de custo está no 02.
+A leitura curta: <strong>1 ponto</strong> te dá o básico, <strong>4 pontos</strong> te dão competência profissional, <strong>8 pontos</strong> te dão um especialista. Físicas ficam caras acima de 8; mentais não.
+<strong>Por função:</strong>
+- <strong>Quem luta:</strong> a arma escolhida, Escudo, Táticas, Observação, Primeiros Socorros. Uma arma boa vale mais que três medianas — você só usa uma por vez.
+- <strong>Quem explora:</strong> Furtividade, Rastreamento, Sobrevivência (Garganta), Escalada, Cartografia, Observação. Cartografia é subvalorizada: mapa vendido é renda passiva.
+- <strong>Quem negocia:</strong> Diplomacia, Bajulação, Detecção de Mentiras, Política, Liderança, Comércio, Avaliação. Avaliação evita que te roubem no espólio, toda semana, para sempre.
+- <strong>Quem sabe:</strong> Herança Antiga, Ocultismo, Teologia, Pesquisa, Escrita Antiga, Astronomia. Saber, aqui, é acesso a arquivo, e arquivo é vantagem política.</p>
+<h2>Idiomas — leia isto mesmo que pule o resto</h2>
+<p>Sua língua natal é <strong>grátis</strong>, no nível do seu IQ. O <strong>Falar do Limiar</strong> custa como perícia normal e é praticamente obrigatório: <strong>sem ele você não negocia fora da própria embaixada</strong>.
+Cada idioma estrangeiro a mais é investimento político real, não enfeite. Quem lê a escrita antiga de Ámenti entra em arquivos que valem mais que espólio de andar 8.</p>
+<h1>PARTE 6 — MAGIA</h1>
+<h2>6.1 Quem pode ser mago</h2>
+<p><strong>Não existe mago sem deus.</strong> A Aptidão Mágica é comprada com os seus pontos, mas quem <strong>concede</strong> é uma Casa divina — e o que se concede, se retira. Mago excomungado perde o acesso. Isso não é ameaça de fundo: é uma alavanca que existe e que alguém vai puxar.
+<strong>Custo da Aptidão Mágica</strong> (como está em uso no cânone, no modelo de Agni):
+- Aptidão 1 — 15 pontos
+- Aptidão 2 — 25 pontos
+- Aptidão 3 — 35 pontos</p>
+<h2>6.2 O que a Aptidão faz</h2>
+<p>Três coisas:
+1. <strong>Permite aprender feitiços.</strong> Sem ela, nenhum.
+2. <strong>Soma ao nível de todos os seus feitiços.</strong> Aptidão 2 é +2 em cada um, para sempre. É por isso que ela é cara e por isso que quase sempre compensa comprar nível 2 em vez de nível 1 mais feitiços.
+3. <strong>Faz você sentir mana.</strong> Você percebe quando a magia vai falhar antes de tentar — o que na Garganta é informação de sobrevivência.</p>
+<h2>6.3 Feitiço é perícia</h2>
+<p>Cada feitiço é comprado separadamente, como perícia mental. Seu nível é <strong>IQ + Aptidão + o que você investiu</strong>. Um IQ 14 com Aptidão 2 e 1 ponto num feitiço fica em torno de 15 — bom o bastante para usar sob pressão.
+Feitiços têm <strong>pré-requisitos</strong>: você não aprende Bola de Fogo sem antes Criar Fogo. A árvore é real e planejar por ela é mais barato que corrigir depois.</p>
+<h2>6.4 Lançar um feitiço</h2>
+<ul>
+<li>Você <strong>rola 3d6 contra o nível do feitiço</strong>. Igual ou menos, funciona.</li>
+<li>Custa <strong>fadiga</strong> (sua Fadiga = seu ST). Fadiga zerada é personagem inconsciente no meio do andar 9.</li>
+<li>Quase tudo leva <strong>1 segundo</strong>; feitiços grandes levam mais, e conjurar leva tempo que o inimigo usa.</li>
+<li><strong>Manter</strong> custa cerca de metade do custo original, por período.</li>
+<li>Nível alto <strong>reduz o custo em fadiga</strong>. É a razão econômica para aprofundar poucos feitiços em vez de colecionar muitos.</li>
+<li><strong>Falha crítica com magia é pior que falha crítica com espada.</strong> O feitiço acontece errado, e do andar 21 para baixo acontece errado o tempo todo.<blockquote>
+<p><strong>Atenção.</strong>
+Números finos de custo, tempo e redução por nível saem do livro, não deste guia. Divergência encontrada vira Pendência, conforme a ordem de precedência do 14.</p>
+</blockquote>
+</li>
+</ul>
+<h2>6.5 Mana e profundidade</h2>
+<table>
+<tr>
+<th>Faixa</th>
+<th>Mana</th>
+<th>Quem consegue lançar</th>
+<th>O que muda</th>
+</tr>
+<tr>
+<td>Andares 1–8</td>
+<td>Normal</td>
+<td>**Só quem tem Aptidão Mágica**</td>
+<td>Regras normais</td>
+</tr>
+<tr>
+<td>Andares 9–20</td>
+<td>**Alta**</td>
+<td>**Só quem tem Aptidão Mágica**</td>
+<td>**+2 no nível de habilidade efetivo** e custo em fadiga **pela metade**, arredondado para cima. O risco não muda: falha e falha crítica funcionam como na superfície</td>
+</tr>
+<tr>
+<td>Andares 21+</td>
+<td>**Muito alta**</td>
+<td>**Só quem tem Aptidão Mágica**</td>
+<td>Mago não gasta fadiga nenhuma. Mas **toda falha comum é tratada como falha crítica**, e falha crítica vira desastre</td>
+</tr>
+<tr>
+<td>Bolsão</td>
+<td>**Nula**</td>
+<td>Ninguém</td>
+<td>Objeto encantado para de funcionar e volta a funcionar quando sai de lá</td>
+</tr>
+</table>
+
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Decisão do Árbitro, 07/09/2026, e nesta campanha ela vale acima do livro: sem Aptidão Mágica não existe feitiço.</strong> Nenhuma faixa de mana muda isso, em nenhum andar. O Módulo Básico diz que em mana alta e muito alta qualquer um lança o que souber; <strong>aqui não</strong>. Guerreiro não vira mago descendo, ninguém "compra uma mágica solta", e a porta continua sendo a Aptidão — que é concedida por uma Casa. A divergência com o livro é deliberada e está registrada; não é erro a corrigir.</p>
+<p><strong>Os números da faixa alta são decisão do Árbitro, 07/09/2026, e a Pendência está fechada.</strong> Conferido no <em>GURPS Magia</em>: o único efeito que o livro dá ao mana alto é justamente o que a decisão acima proíbe — "qualquer um é capaz de fazer mágicas se conhecer o procedimento". Ele não dá bônus, desconto nem penalidade. Cortado esse efeito, a faixa ficaria sem mecânica nenhuma, e ela ganhou a nossa: <strong>+2 no nível de habilidade efetivo e metade da fadiga, para quem tem Aptidão</strong>. O +2 é o espelho do −5 que o livro dá ao mana baixo. Nenhuma penalidade extra na faixa alta — o risco só muda no 21, e ali a regra é do livro.
+<strong>O que isso significa para a mesa, e é maior do que um bônus.</strong>
+Do <strong>andar 9 para baixo, o mago rende pelo dobro e acerta mais.</strong> A mesma fadiga paga o dobro de feitiços — o que ele lançava uma vez por descida ele lança três — e o +2 no nível transforma o feitiço que ele arriscava no feitiço com que ele conta. O preço não está no ato de lançar: está em onde é preciso estar para ter isso.
+Quem colhe esse ganho é <strong>sempre um mago</strong>. Mas não é sempre <strong>o mesmo</strong> mago. A Casa concede a Aptidão — e controla, com muito mais ciúme do que a concessão, a <strong>formação</strong>: a árvore de pré-requisitos, os feitiços caros, o santuário onde se estuda, o mestre que assina. Na superfície essa diferença decide tudo. O mago de rua tem a concessão de um culto pequeno de bairro, três ou quatro feitiços e nível baixo, e ao lado de um formado por Casa ele é ornamento.
+Do <strong>9 para baixo, a mana fecha essa distância.</strong> Metade da fadiga e +2 no nível são exatamente o que falta ao mal formado para sustentar o que o bem formado sustenta — dois níveis de perícia custam pontos que ele não tem, e o andar dá de graça. Lá embaixo ele alcança efeitos que, na superfície, só o mago de Casa alcança — e alcança sem dever escola a ninguém.
+<strong>É por isso que o andar 9 é político.</strong> O que quebra por baixo não é o monopólio das Casas sobre a magia: continua não havendo feitiço sem Aptidão, e não havendo Aptidão sem concessão. O que quebra é o monopólio das Casas sobre os <strong>magos</strong> — a certeza de que só quem passou pela escola faz trabalho de escola. Do 9 para baixo o mago sem Casa fica competitivo, e as sete cidades já perceberam. Nenhuma gosta de falar sobre o assunto.
+Do <strong>21 para baixo</strong>, o mago fica sem custo e sem rede. Ele conjura o dia inteiro de graça e cada erro pequeno vira catástrofe — é literalmente o que a página do andar 21 já dizia antes de eu conferir o livro: <em>feitiços funcionam demais e falham pior.</em> Um mago de rank S no 25 é a coisa mais perigosa do grupo, para os dois lados.
+<strong>A mana também encanta.</strong> Cada dia de trabalho de encantamento vale 1 em mana normal, <strong>5 em alta, 25 em muito alta</strong> — a regra completa, com os prazos da Casa e as duas categorias de item, está no <code>03</code> §4. É a segunda razão de o andar 9 ser político.</p>
+</blockquote>
+<p><strong>A mana marca a faixa, não o andar.</strong> O 8 é normal, mesmo sendo estranho. O 9 é alto, mesmo parecendo só quente. Consulte o campo <code>Mana</code> na base <code>Andares</code>; não estime pelo clima da descrição.
+<strong>Bolsões de mana nula:</strong> sua magia simplesmente não funciona. É armadilha para quem depende dela e refúgio para quem não depende. <strong>Mapear um bolsão vale dinheiro</strong> — e é uma das poucas informações que as sete cidades compram sem discutir preço. Um bolsão não se anuncia: quem tem Aptidão Mágica sente a ausência ao entrar (é a terceira função da Aptidão, seção 6.2), e quem não tem descobre quando o mago do grupo fica branco.
+O mago fica mais forte descendo. Também fica mais perigoso para o próprio grupo, e a partir do 21 isso deixa de ser figura de linguagem.</p>
+<h2>6.6 Os colégios, e quem concede cada um</h2>
+<p>Você só aprende feitiços dos colégios que são <strong>domínio do seu deus</strong>. Fora disso, não é caro: é impossível.</p>
+<p><strong>Impossível de comprar — não impossível de ter.</strong> Existem magos carregando feitiço fora do domínio do próprio deus. Não foi compra: foi acordo. Alguém ensinou o que não devia, alguém abriu exceção, alguém cobrou alguma coisa em troca — e essa pessoa existe, tem nome e continua viva na história do personagem. Quem tem um feitiço assim sabe de quem o recebeu, mesmo que não conte a ninguém, e às vezes não conta nem ao Mestre de Cena. Na Sessão Zero o Árbitro pergunta a origem uma vez; <strong>"ainda não sei" é resposta válida</strong>, e então a origem passa a ser do Árbitro para escrever — e ela volta. O que não existe é feitiço fora de domínio sem ninguém do outro lado.</p>
+<table>
+<tr>
+<th>Colégio</th>
+<th>O que faz</th>
+<th>Casas que concedem</th>
+</tr>
+<tr>
+<td>**Fogo**</td>
+<td>Criar, moldar, arremessar e apagar fogo; calor e resistência ao frio</td>
+<td>Agni · Hefesto · Xangô · Rá</td>
+</tr>
+<tr>
+<td>**Ar**</td>
+<td>Vento, respirar onde não se respira, atenuar queda</td>
+<td>Vayu · Kukulkán · Skadi</td>
+</tr>
+<tr>
+<td>**Água**</td>
+<td>Criar e moldar água, respirar submerso, gelo</td>
+<td>Posêidon · Varuna · Tláloc · Oxum</td>
+</tr>
+<tr>
+<td>**Terra**</td>
+<td>Moldar pedra, abrir e fechar passagem, detectar metal e veio</td>
+<td>Hefesto · Ogum · Geb</td>
+</tr>
+<tr>
+<td>**Movimento**</td>
+<td>Deslocar, levitar, apressar, aliviar carga</td>
+<td>Hermes · Vayu · Kukulkán · Exu</td>
+</tr>
+<tr>
+<td>**Luz e Trevas**</td>
+<td>Iluminar, escurecer, cegar, enxergar no escuro</td>
+<td>Apolo · Rá · Ixchel</td>
+</tr>
+<tr>
+<td>**Proteção e Aviso**</td>
+<td>Escudos, alarmes, detectar o que vem</td>
+<td>Atena · Ísis · Zhong Kui · Tyr</td>
+</tr>
+<tr>
+<td>**Cura**</td>
+<td>Fechar ferida, deter veneno, tirar fadiga</td>
+<td>Apolo · Ísis · Ixchel · Oxum</td>
+</tr>
+<tr>
+<td>**Conhecimento**</td>
+<td>Detectar magia, ler o passado de um objeto, localizar</td>
+<td>Thoth · Atena · Sarasvati · Odin</td>
+</tr>
+<tr>
+<td>**Comunicação e Empatia**</td>
+<td>Falar à distância, ler intenção, emprestar sentido</td>
+<td>Hermes · Thoth · Oxum · Exu · Loki</td>
+</tr>
+<tr>
+<td>**Mente**</td>
+<td>Sugestão, sono, coragem, esquecimento</td>
+<td>Odin · Freyja · Yanluo</td>
+</tr>
+<tr>
+<td>**Ilusão e Criação**</td>
+<td>Fazer parecer o que não é</td>
+<td>Hermes · Ixchel · Loki</td>
+</tr>
+<tr>
+<td>**Fazer e Quebrar**</td>
+<td>Consertar, arruinar, afiar, enfraquecer</td>
+<td>Hefesto · Ogum</td>
+</tr>
+<tr>
+<td>**Vegetal**</td>
+<td>Plantas, veneno, alimento, caminho na mata</td>
+<td>Deméter · Oxóssi · Ixchel</td>
+</tr>
+<tr>
+<td>**Animal**</td>
+<td>Falar com bicho, acalmar, controlar</td>
+<td>Oxóssi · Ártemis</td>
+</tr>
+<tr>
+<td>**Som**</td>
+<td>Silêncio, voz que atravessa, ruído que engana</td>
+<td>Sarasvati · Leigong</td>
+</tr>
+<tr>
+<td>**Clima**</td>
+<td>Chuva, raio, névoa</td>
+<td>Zeus · Thor · Indra · Tláloc · Xangô</td>
+</tr>
+<tr>
+<td>**Necromancia**</td>
+<td>Falar com o morto, deter o morto-que-anda</td>
+<td>**Regulada.** Ámenti e Fengdu, e só com licença</td>
+</tr>
+<tr>
+<td>**Meta-Feitiços**</td>
+<td>Magia sobre magia: anular, roubar, sustentar</td>
+<td>Thoth · Odin — sempre com pré-requisito pesado</td>
+</tr>
+<tr>
+<td>**Portais**</td>
+<td>—</td>
+<td>**Não disponível na criação.** Qualquer pedido vira Pendência.</td>
+</tr>
+</table>
+
+<p><strong>Necromancia</strong> não é proibida: é <strong>licenciada</strong>. Praticar sem licença de Ámenti ou de Fengdu é crime nas duas cidades e escândalo nas outras cinco. É jogável, e é caro em política, não em pontos.
+<strong>Portais</strong> está fechado por decisão do Árbitro, e continua fechado até haver decisão em contrário.
+<strong>Exu</strong>, em Ilê Ifé, concede Movimento e Comunicação e Empatia — abrir e fechar caminho, e levar recado. É o domínio dele e sempre foi. Duas notas de mesa, e as duas importam: a obrigação <strong>vem antes</strong> do que se pede, nunca depois, e o que se abre é caminho, não vantagem. Exu não luta por ninguém e não resolve cena. Ele faz a porta existir; atravessar é com você.
+<strong>Loki</strong>, em Gapheim, concede Ilusão e Criação e Comunicação e Empatia — parecer o que não é, e ler quem está do outro lado. A Casa é <strong>tolerada, jamais confiada</strong> (<code>01a</code>, 3.3), e a Marca vai nas costas. Duas notas de mesa: a ilusão de Loki <strong>não sobrevive ao toque</strong>, porque a metamorfose do deus chega aqui como aparência e não como transformação; e a Aptidão Mágica concedida por essa Casa é <strong>retirável por ela</strong>, o que nenhuma outra Casa faz. Quem se marca por Loki compra defesa contra o olho, nunca contra a mão — e joga sabendo que o patrono pode cobrar de volta.</p>
+<p><strong>Zeus</strong>, em Ônfalos, concede <strong>Clima</strong> — chuva, raio, névoa. Ele estava fora desta tabela por omissão, não por decisão: a linha de Clima recolhe os deuses de tempestade de todas as tradições da mesa, e faltava justamente aquele de quem o raio é a assinatura. Corrigido em 10/09/2026.</p>
+<p><strong>O recorte de Clima foi fixado em 11/09/2026, e vale para as cinco Casas de tempestade</strong> — Zeus, Thor, Indra, Tláloc e Xangô. <strong>A concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima, e nada além</strong>: a fronteira é a <strong>árvore</strong>, não uma lista. A regra inteira, a corrente de sete compras até o Relâmpago e a <strong>sub-escola de Eletricidade</strong> estão no <code>31</code>; a tabela está no <code>27</code>, seção <strong>Clima</strong>. O que o <code>23</code> §2.3 dizia — que Clima não abre o resto de Ar nem de Água — continua valendo; o que muda é que a raiz de Ar que o pré-requisito exige <strong>não é "o resto", é o próprio Clima subindo</strong>.</p>
+<p><strong>E Zeus ganhou Dádiva: Noção do Perigo, 15.</strong> Zeus Panomphaios (<em>Ilíada</em> 8.250) é o autor de todo presságio, e a vantagem é a função literal dele — o Árbitro avisa, sem explicar. <strong>Uma Dádiva só; Visão Aguçada foi pedida e recusada</strong>, e continua vantagem comum comprável por qualquer personagem. Os três motivos estão no <code>31</code> §1.</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Ser marcado pela Casa de Zeus não é ser filho de Zeus, e a diferença tem consequência.</strong></p>
+<p>O <code>01a</code> 3.1 diz que <em>Zeus tem filhos entre os aventureiros e Hera sabe de todos — ser marcado por ele é honra e sentença</em>. <strong>A sentença é dos filhos.</strong> A Casa marca quem ela quer, como todas as outras Casas marcam, e o marcado comum não carrega Hera nas costas: carrega o Dever da Marca e mais nada.</p>
+<p><strong>Filiação é fato de mundo e é do Árbitro</strong>, nunca escolha de ficha e nunca invenção de Mestre de Cena. Nenhum jogador se declara filho de Zeus na Sessão Zero. Se um personagem for filho, ele saberá pelo Árbitro, e o dia em que Hera souber também é do Árbitro.</p>
+<p>Na prática de mesa: <strong>o mago de Zeus lança raio sem nenhum ônus extra</strong>. O que ele carrega é o que qualquer marcado carrega.</p>
+</blockquote>
+<p>Todos os patronos citados nesta tabela têm Casa no <code>01a</code>. Se alguém quiser um que não tenha, isso é Pendência antes de ser ficha — Casa nova é fato de mundo, e fato de mundo é da Bíblia.</p>
+<blockquote>
+<p><strong>Nota.</strong>
+As tradições vivas — Ilê Ifé e Amaravati entre elas — entram na mesa com dignidade. Orixás e devas não são distribuidores de poder; o que se joga é a relação, a obrigação e o preço dela. Quando uma dessas tradições precisar de antagonista, o antagonista é humano.</p>
+</blockquote>
+<h2>6.7 O que cada tipo de mago faz de útil aqui embaixo</h2>
+<ul>
+<li><strong>Mago de combate</strong> (Fogo, Clima): resolve encontro, gasta fadiga rápido, e chama atenção de tudo no andar. Bom pico, péssima autonomia.</li>
+<li><strong>Mago de apoio</strong> (Proteção e Aviso, Cura, Movimento): não brilha na cena e é o motivo de o grupo voltar inteiro. <strong>É o mago mais valioso numa campanha de morte permanente.</strong></li>
+<li><strong>Mago de saber</strong> (Conhecimento, Comunicação): Detectar Magia e Analisar transformam espólio duvidoso em espólio avaliado, toda descida. É o mago que paga o próprio salário.</li>
+<li><strong>Mago de terreno</strong> (Terra, Vegetal, Luz e Trevas): abre rota onde não há rota. Quem controla rota controla contrato.
+<strong>Três combos que funcionam com 150 pontos:</strong>
+1. <strong>Aptidão 2 + Luz + Detectar Magia + Criar Fogo + um feitiço de ataque.</strong> Barato, útil desde o andar 1.
+2. <strong>Aptidão 2 + Proteção + Cura + Movimento.</strong> O grupo te contrata; você nunca fica sem trabalho.
+3. <strong>O mago sem Casa: Aptidão 1 + Detectar Magia + Luz + dois feitiços do seu colégio, e o resto em perícia de mundo</strong> — Comércio, Avaliação, Sobrevivência, Furtividade. Acima do 9 você é um mago de segunda e vai ouvir isso de gente formada. Do 9 para baixo, com a fadiga pela metade, você faz o trabalho de um formado — e alguém vai reparar. É o combo mais barato da lista e o mais interessante de jogar. Não é o mais seguro.</li>
+</ul>
+<blockquote>
+<p><strong>Nota.</strong>
+Nos combos 1 e 3, <strong>Luz e Detectar Magia só entram direto se o seu deus cobrir Luz e Trevas ou Conhecimento</strong> (v. 6.6). Se não cobrir, eles continuam ao seu alcance — pela exceção da 6.6, com dono e com dívida. Sai barato em pontos e caro em história, o que nesta campanha costuma ser bom negócio.</p>
+</blockquote>
+<h1>PARTE 7 — ARMADILHAS DE QUEM ESTÁ COMEÇANDO</h1>
+<ol>
+<li><strong>Espalhar pontos.</strong> Dez perícias em nível 11 perdem para quatro em nível 15. GURPS é letal; medíocre morre.</li>
+<li><strong>Esquecer o Falar do Limiar.</strong> Você fica preso na própria embaixada.</li>
+<li><strong>Comprar desvantagem que nunca aparece.</strong> Se ninguém pode usá-la contra você, ela não devia ter pago pontos.</li>
+<li><strong>Ignorar defesa.</strong> Reflexos em Combate, um escudo, ou Esgrima. Sem uma dessas três, sua primeira falha de defesa costuma ser a última.</li>
+<li><strong>Deixar as Amarras em branco.</strong> Dois NPCs, uma dívida, um segredo. Não é opcional, e é o que faz você existir na política do mundo na primeira cena em vez de na décima.</li>
+<li><strong>Gastar tudo.</strong> Guarde de 10 a 15 pontos livres. Depois de duas sessões você vai saber muito melhor onde eles fazem falta.</li>
+</ol>
+<h1>PARTE 8 — CHECKLIST FINAL</h1>
+<ol>
+<li>Conceito em uma frase: quem é, de onde vem, <strong>por que desce</strong></li>
+<li>Cidade e divindade patrona</li>
+<li>Atributos</li>
+<li>Derivados (PV, Fadiga, Velocidade, Deslocamento, Esquiva)</li>
+<li>Vantagens, incluindo Dádivas e Aptidão Mágica</li>
+<li>Desvantagens até −40, <strong>com o Dever da Marca dentro</strong></li>
+<li>Cinco peculiaridades</li>
+<li>Perícias, com Falar do Limiar</li>
+<li>Feitiços, se houver, com os pré-requisitos comprados</li>
+<li>Equipamento pelo nível de Riqueza</li>
+<li><strong>Amarras:</strong> dois NPCs, uma dívida, um segredo</li>
+<li>Confira o total: 150 + desvantagens + peculiaridades</li>
+</ol>
+<h1>O QUE ESTE GUIA NÃO DECIDE</h1>
+<p>Custo exato de vantagem fora da lista da Parte 3, custo em fadiga e tempo de conjuração feitiço a feitiço, e a árvore completa de pré-requisitos. Tudo isso sai do livro do Árbitro. <strong>Divergência encontrada não se corrige na conversa: abre-se Pendência</strong>, e a correção entra por linha nova.</p>
+<h1>RETIFICAÇÃO — 11/09/2026. O Chamado de Loki é 12 ou menos.</h1>
+<p>A linha da Dádiva de Loki, na Parte 3, seção As Dádivas, dizia <strong>"Chamado em 9 ou
+menos"</strong> com o Dever da Marca a <strong>−10</strong>. Esse par não existe no Módulo Básico: a
+página 39 traz três, e só três — 15 ou menos vale −15, 12 ou menos vale −10, e 9
+ou menos vale −5. A Retificação de 11/09/2026 na ficha de Eilif Kverk homologou
+<strong>−10 com 12 ou menos</strong>, e é o que passa a valer aqui. Nada mais muda na Dádiva:
+a Voz Melodiosa, a Noção do Perigo, os colégios e o nome do Dever continuam como
+estavam.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/17-criacao-e-magia.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

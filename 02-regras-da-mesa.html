@@ -1,0 +1,937 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Regras da Mesa — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html" class="atual">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Regras da Mesa</h1><div class="meta">versão 6 · atualizado em 2026-09-11 · Comece aqui</div></div>
+<p><strong>Sistema:</strong> GURPS, edição clássica · <strong>Orçamento inicial:</strong> 150 pontos</p>
+<p><strong>Regra zero:</strong> onde o registro do Mestre de Cena divergir do livro do Árbitro, <strong>o livro vence.</strong> Registrar a divergência em Pendências.</p>
+<h1>1. O básico</h1>
+<p>Toda ação incerta é um <strong>teste</strong>: role 3d6 e compare com o nível efetivo do atributo ou perícia. <strong>Igual ou menor é sucesso.</strong> A margem importa.</p>
+<p><strong>Crítico:</strong> 3 e 4 sempre. O 5 também, se o nível for 15+. O 6 também, se for 16+.</p>
+<p><strong>Falha crítica:</strong> 18 sempre. O 17 também, se o nível for 15 ou menos. E qualquer rolagem que exceda o nível em 10 ou mais.</p>
+<h1>2. Atributos</h1>
+<p>Quatro, base 10. <strong>ST</strong> força · <strong>DX</strong> destreza · <strong>IQ</strong> inteligência · <strong>HT</strong> saúde</p>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custo</td>
+<td>−15</td>
+<td>−10</td>
+<td>0</td>
+<td>+10</td>
+<td>+20</td>
+<td>+30</td>
+<td>+45</td>
+<td>+60</td>
+<td>+80</td>
+<td>+100</td>
+<td>+125</td>
+</tr>
+</tbody>
+</table>
+<h2>Derivados (era clássica — difere da 4ª edição)</h2>
+<ul>
+<li><strong>PV = HT</strong></li>
+<li><strong>Fadiga = ST</strong></li>
+<li><strong>Velocidade Básica = (DX + HT) ÷ 4</strong>, sem arredondar</li>
+<li><strong>Deslocamento = Velocidade Básica</strong> arredondada para baixo</li>
+<li><strong>Esquiva = Deslocamento</strong></li>
+<li><strong>Aparar = perícia da arma ÷ 2</strong>, para baixo</li>
+<li><strong>Aparar a ⅔ da perícia</strong>, para baixo — é o que a <strong>Esgrima</strong> dá, com arma de esgrima, nada maior que escudo pequeno e carga no máximo leve. E o <strong>Bastão</strong> apara a ⅔ também: não é privilégio de esgrimista.</li>
+<li><strong>Bloquear = perícia de Escudo ÷ 2</strong>, para baixo</li>
+<li><strong>Recuar é de todo mundo.</strong> Um hexágono de afastamento somado a qualquer defesa ativa, <strong>+3</strong> em esquivar, aparar ou bloquear, uma vez por rodada, e não vale contra ataque à distância. O que a Esgrima dá de verdade é o aparar a ⅔ e <strong>duas aparadas por rodada</strong> — quantas quiser em Defesa Total. É por isso que se investe nela.</li>
+</ul>
+<h1>3. Vantagens, desvantagens e peculiaridades</h1>
+<p><strong>Desvantagens:</strong> limite de <strong>−40</strong>. <strong>Peculiaridades:</strong> até 5, a −1 cada. Orçamento efetivo máximo: <strong>195 pontos</strong>.</p>
+<p>Desvantagens que rendem bom jogo aqui: Senso de Dever, Código de Honra, Juramento, Inimigo, Dependentes, Reputação Ruim, Dívida, Curiosidade, Impulsividade, Teimosia, Honestidade. Todas se conectam à política das sete cidades.</p>
+<h1>4. Perícias</h1>
+<p>Duas tabelas, porque o livro traz duas. A coluna da esquerda é o nível final que você quer alcançar em relação ao atributo de controle — <strong>DX</strong> nas físicas, <strong>IQ</strong> nas mentais. As demais colunas dão o custo em pontos.</p>
+<h2>Perícias físicas</h2>
+<p>Baseadas em DX — ou em ST ou HT, em algumas poucas, e a leitura é a mesma. <strong>Não existe perícia física Muito Difícil.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nível final</th>
+<th>Fácil</th>
+<th>Média</th>
+<th>Difícil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DX−3</td>
+<td>—</td>
+<td>—</td>
+<td>½</td>
+</tr>
+<tr>
+<td>DX−2</td>
+<td>—</td>
+<td>½</td>
+<td>1</td>
+</tr>
+<tr>
+<td>DX−1</td>
+<td>½</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>DX+0</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>DX+1</td>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>DX+2</td>
+<td>4</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>DX+3</td>
+<td>8</td>
+<td>16</td>
+<td>24</td>
+</tr>
+<tr>
+<td>DX+4</td>
+<td>16</td>
+<td>24</td>
+<td>32</td>
+</tr>
+<tr>
+<td>DX+5</td>
+<td>24</td>
+<td>32</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+<h2>Perícias mentais</h2>
+<p>Baseadas em IQ.</p>
+<table>
+<thead>
+<tr>
+<th>Nível final</th>
+<th>Fácil</th>
+<th>Média</th>
+<th>Difícil</th>
+<th>Muito Difícil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IQ−4</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>½</td>
+</tr>
+<tr>
+<td>IQ−3</td>
+<td>—</td>
+<td>—</td>
+<td>½</td>
+<td>1</td>
+</tr>
+<tr>
+<td>IQ−2</td>
+<td>—</td>
+<td>½</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>IQ−1</td>
+<td>½</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>IQ+0</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>IQ+1</td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+<td>12</td>
+</tr>
+<tr>
+<td>IQ+2</td>
+<td>4</td>
+<td>6</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>IQ+3</td>
+<td>6</td>
+<td>8</td>
+<td>10</td>
+<td>20</td>
+</tr>
+<tr>
+<td>IQ+4</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>24</td>
+</tr>
+<tr>
+<td>IQ+5</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+<td>28</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Acima de +5:</strong> cada nível adicional custa <strong>8 pontos</strong> numa perícia física, <strong>4</strong> numa mental Muito Difícil e <strong>2</strong> nas demais mentais. Não há teto, mas acima de 20 a 30 quase nada no mundo exige a diferença.</p>
+<p><strong>As duas tabelas não são a mesma curva.</strong> A física é barata no começo e trava depressa: o patamar chega entre DX+3 e DX+5, e passar dele é sinal de dedicação enorme. A mental sobe em ritmo parelho e não trava. É por isso que o hoplita compra uma arma até DX+3 e para, e a escriba de Ámenti continua subindo IQ+4 em meia dúzia de coisas.</p>
+<p><strong>Perícia não se usa sozinha.</strong> O Mestre de Cena narra o mundo como ele é: o comerciante diz um preço, o carregador diz um boato, a porta está trancada. Ele <strong>não vai perguntar</strong> se você quer rolar nada, e não vai lembrar você do que está na sua ficha. Quem sabe usar o que comprou colhe o que ela dá; quem não usa recebe o preço de balcão e o mundo segue. Isso está dito aqui, de uma vez, para que ninguém descubra tarde demais — e vale especialmente para Comércio e Avaliação, que mexem em dinheiro de verdade (Economia, seção 9).</p>
+<p><strong>Destaques:</strong> Armas Brancas, Esgrima, Escudo, Arco, Furtividade, Rastreamento, Sobrevivência, Primeiros Socorros, Diplomacia, Bajulação, Detecção de Mentiras, Política, Liderança, Teologia, Ocultismo, Herança Antiga, Comércio, Avaliação, Idiomas.</p>
+<h2>Idiomas</h2>
+<p>Sete línguas mais o <strong>falar do Limiar</strong>. Sua língua natal é gratuita no nível do IQ. O falar do Limiar custa como perícia normal, e <strong>sem ele você não negocia fora da sua embaixada.</strong></p>
+<p>Cada língua estrangeira adicional é investimento político real. Quem lê a escrita antiga de Ámenti tem acesso a arquivos que valem mais que espólio.</p>
+<h2>Tabela de perícias — a dificuldade de cada uma</h2>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Acrescentada em 10/09/2026, depois de o Árbitro errar uma homologação por calcular de cabeça o que está tabelado.</strong> A dificuldade decide a coluna nas tabelas de custo acima. <strong>Ninguém — jogador, Mestre de Cena ou Árbitro — calcula custo de perícia sem abrir esta tabela e a de custo.</strong> Perícia que não está aqui usa o Módulo Básico; se o livro divergir desta tabela, o livro vence e a linha é corrigida por Pendência.</p>
+<p>A coluna <strong>Fonte</strong> diz de onde veio a dificuldade: <strong>ficha</strong> quer dizer que uma ficha homologada ou um modelo do <code>08</code> já a usou e a conta fechou; <strong>livro</strong> quer dizer Módulo Básico, ainda sem ficha na campanha.</p>
+</blockquote>
+<h3>Físicas — base DX, salvo indicação</h3>
+<table>
+<thead>
+<tr>
+<th>Perícia</th>
+<th>Dificuldade</th>
+<th>Fonte</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Faca</td>
+<td>Fácil</td>
+<td>ficha</td>
+<td>Cobre adaga e facão. "Adaga" não é perícia.</td>
+</tr>
+<tr>
+<td>Arremesso de Faca</td>
+<td>Fácil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Arremesso de Lança</td>
+<td>Fácil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Besta</td>
+<td>Fácil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Escudo</td>
+<td>Fácil</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Briga</td>
+<td>Fácil</td>
+<td>ficha</td>
+<td>Apara a ⅔, duas por turno, uma por mão, com as duas mãos limpas; não apara arma empunhada de alcance 1 ou mais. Decisão de homologação, ainda sem página do livro citada (ver a correção de 11/09, no fim)</td>
+</tr>
+<tr>
+<td>Natação</td>
+<td>Fácil</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Esgrima</td>
+<td>Média</td>
+<td>ficha</td>
+<td>Rapieira, sabre, terçado. O aparar a ⅔ exige carga no máximo leve (§2 acima)</td>
+</tr>
+<tr>
+<td>Espada Curta</td>
+<td>Média</td>
+<td>ficha</td>
+<td>Gládio</td>
+</tr>
+<tr>
+<td>Lâmina Larga</td>
+<td>Média</td>
+<td>livro</td>
+<td>Cimitarra, montante de uma mão</td>
+</tr>
+<tr>
+<td>Espadas de Duas Mãos</td>
+<td>Média</td>
+<td>livro</td>
+<td>Espadão</td>
+</tr>
+<tr>
+<td>Lança</td>
+<td>Média</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Machado/Maça</td>
+<td>Média</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Bastão</td>
+<td>Média</td>
+<td>ficha</td>
+<td>Modelo do <code>08</code></td>
+</tr>
+<tr>
+<td>Capa</td>
+<td>Média</td>
+<td>ficha</td>
+<td>Segunda aparada</td>
+</tr>
+<tr>
+<td>Furtividade</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Escalada</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Cavalgar</td>
+<td>Média</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Arremesso</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td>Sem perícia, objeto se arremessa a DX−3</td>
+</tr>
+<tr>
+<td>Arco</td>
+<td>Difícil</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Acrobacia</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Luta Livre</td>
+<td><strong>Difícil</strong></td>
+<td>ficha</td>
+<td><strong>Decisão de campanha</strong> (Pendência da Semana 1); o livro a traz como Média</td>
+</tr>
+<tr>
+<td>Judô</td>
+<td>Difícil</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Corrida</td>
+<td>Difícil</td>
+<td>livro</td>
+<td>Base <strong>HT</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Mentais — base IQ, salvo indicação</h3>
+<table>
+<thead>
+<tr>
+<th>Perícia</th>
+<th>Dificuldade</th>
+<th>Fonte</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trato Social</td>
+<td>Fácil</td>
+<td>ficha</td>
+<td>"Etiqueta" é o mesmo; não são duas perícias</td>
+</tr>
+<tr>
+<td>Primeiros Socorros</td>
+<td>Fácil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Conhecimento de Área</td>
+<td>Fácil</td>
+<td>ficha</td>
+<td>Uma por região</td>
+</tr>
+<tr>
+<td>Camuflagem</td>
+<td>Fácil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Diplomacia</td>
+<td><strong>Difícil</strong></td>
+<td>ficha</td>
+<td>Fixada por dois modelos do <code>08</code></td>
+</tr>
+<tr>
+<td>Lábia</td>
+<td>Média</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Bajulação</td>
+<td>Média</td>
+<td>ficha</td>
+<td>Fechada em 10/09/2026 pelas fichas de Anastásia e Karthoz</td>
+</tr>
+<tr>
+<td>Trovador</td>
+<td>Média</td>
+<td>ficha</td>
+<td>"Oratória" não é perícia de livro — lê-se Trovador</td>
+</tr>
+<tr>
+<td>Atuação</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Disfarce</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Política</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Manha</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Comércio</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Avaliação</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Observação</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Sobrevivência</td>
+<td>Média</td>
+<td>ficha</td>
+<td>Por terreno: (Garganta), (subterrâneo)</td>
+</tr>
+<tr>
+<td>Rastreamento</td>
+<td>Média</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Cartografia</td>
+<td>Média</td>
+<td>ficha</td>
+<td>Modelo do <code>08</code></td>
+</tr>
+<tr>
+<td>Armeiro</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Arrombamento</td>
+<td>Média</td>
+<td>livro</td>
+<td>A perícia do baú (<code>06b</code> §10.3)</td>
+</tr>
+<tr>
+<td>Armadilhas</td>
+<td>Média</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Ocultação</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Sombra</td>
+<td>Média</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Liderança</td>
+<td>Média</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Ocultismo</td>
+<td>Média</td>
+<td>ficha</td>
+<td>Modelo do <code>08</code></td>
+</tr>
+<tr>
+<td>Idiomas</td>
+<td>Média</td>
+<td>ficha</td>
+<td>Natal grátis no IQ. Falar do Limiar é idioma</td>
+</tr>
+<tr>
+<td>Detecção de Mentiras</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Psicologia</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Táticas</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Astronomia</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Teologia</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Toxicologia</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Direito</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td>Por cidade: Direito de Gapheim, Direito Comparado</td>
+</tr>
+<tr>
+<td>História</td>
+<td>Difícil</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Pesquisa</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td>Modelo do <code>08</code></td>
+</tr>
+<tr>
+<td>Literatura</td>
+<td>Difícil</td>
+<td>ficha</td>
+<td></td>
+</tr>
+<tr>
+<td>Hipnotismo</td>
+<td>Difícil</td>
+<td>livro</td>
+<td></td>
+</tr>
+<tr>
+<td>Herança Antiga</td>
+<td><strong>Muito Difícil</strong></td>
+<td>ficha</td>
+<td>Modelo do <code>08</code></td>
+</tr>
+<tr>
+<td>Escrita Antiga</td>
+<td><strong>Muito Difícil</strong></td>
+<td>ficha</td>
+<td>Modelo do <code>08</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Feitiço é perícia mental Difícil</strong>, sempre, com nível base IQ + Aptidão (<code>17</code> §6.3). Muito Difícil só para os que o Grimório marcar assim.</p>
+<p><strong>Como conferir uma ficha em trinta segundos.</strong> Para cada perícia: acha a dificuldade aqui, acha o atributo do personagem, acha o custo pago, e lê o nível na tabela de custo. Se o nível da ficha for outro, a ficha está errada — não a tabela.</p>
+<h1>5. A Marca</h1>
+<p>Todo aventureiro registrado carrega a Marca de uma divindade. É a premissa do mundo: <strong>custa 0 pontos.</strong></p>
+<p><strong>O que faz:</strong></p>
+<ol>
+<li><strong>Permite crescer.</strong> Sem Marca, um humano treina até o limite natural e para. É o que justifica ganhar pontos rápido.</li>
+<li><strong>É visível.</strong> Aparece nas costas. Quem sabe ler identifica deus, cidade e progresso.</li>
+<li><strong>É registrável.</strong> A Guilda a usa para identificação.</li>
+</ol>
+<p><strong>O que cobra:</strong> toda Marca traz um <strong>Dever obrigatório</strong> com a Casa divina, tomado como desvantagem (−5 a −15 conforme frequência), dentro do limite de −40. O deus te chama. Você vai.</p>
+<p><strong>Trocar de patrono</strong> é possível, e é um dos atos políticos mais graves que existem.</p>
+<h2>Dádivas</h2>
+<p>Vantagens sobrenaturais compradas com pontos, <strong>apenas do domínio da sua divindade</strong>. Exemplos: Atena dá Reflexos em Combate e Talento Tático; Thoth dá Memória Eidética e Talento para Idiomas; Ogum dá Talento com Armas e Vigor; Hermes dá Velocidade Superior e Talento Social; Oxum dá Empatia e Cura; Sekhmet dá Fúria e Recuperação Rápida.</p>
+<p>Comprar Dádiva fora do domínio é impossível.</p>
+<h1>6. Magia</h1>
+<p>O sistema de magia do GURPS é usado por inteiro, com três amarras de mundo.</p>
+<p><strong>1. Magery vem da Casa divina.</strong> Não existe mago sem deus. A Aptidão Mágica é comprada normalmente com pontos, mas só é concedida por uma Casa, e ela pode ser retirada. Um mago excomungado perde o acesso.</p>
+<p><strong>2. Os colégios acessíveis são os domínios do seu deus.</strong> Mago de Fogo é marcado por Agni, Hefesto ou Xangô. Mago de Movimento, por Hermes ou Vayu. Necromancia é praticamente monopólio de Ámenti e Fengdu, e regulada nas duas. Feitiço de colégio fora do seu domínio: você não aprende.</p>
+<p><strong>3. Mana varia com a profundidade.</strong> Andares 1–8 normal; 9–20 alta; 21+ muito alta. Magos ficam mais fortes descendo, e menos previsíveis. <strong>O modificador em número está na seção 6.5 do </strong><strong><code>17</code></strong> — consulte lá, não estime aqui. A faixa de cada andar está no campo <code>Mana</code> da base <code>Andares</code>.</p>
+<p><strong>Bolsões de mana nula</strong> são armadilha para quem depende de magia, e refúgio para quem não depende. Mapear um vale dinheiro.</p>
+<h1>7. Povos não-humanos</h1>
+<p>As sete cidades são humanas. Não-humanos existem e <strong>vieram do poço</strong>.</p>
+<h2>Desbloqueio</h2>
+<p>Um jogador que perde um personagem de <strong>rank B ou superior</strong> desbloqueia a opção de criar um personagem não-humano. É bonificação por perda, não recompensa por conquista.</p>
+<ul>
+<li>A raça é comprada com pontos, pelas regras normais — e o orçamento é o de personagem de substituição da seção 9, não os 150 de partida. Quem perdeu um rank B entra com cerca de 210: se a raça custa 40, sobram cerca de 170 para o resto.</li>
+<li><strong>Exige background escrito.</strong> Como chegou à superfície, quem o registrou, qual Casa aceitou marcá-lo, e por quê.</li>
+<li>Aprovado pelo Árbitro antes da primeira sessão.</li>
+</ul>
+<h2>Consequência de mundo</h2>
+<p>Um não-humano só pode ter vindo da Garganta. Isso faz de cada um deles um <strong>problema político ambulante</strong>: qual cidade o registra, qual Casa o marca, e o que os outros seis sacerdócios acham disso. Não é discriminação genérica de fantasia — é uma pergunta teológica sem resposta, feita a sete tradições que discordam de tudo.</p>
+<h1>8. Combate</h1>
+<p>Turnos de <strong>1 segundo</strong>, uma manobra por turno.</p>
+<p>Atacante testa a perícia da arma. Se acerta, o defensor escolhe <strong>uma</strong> defesa ativa — Esquiva, Aparar ou Bloquear — e testa. Se falha, rola-se o dano.</p>
+<p><strong>Dano</strong> por Impulso ou Balanço conforme ST e arma. A RD da armadura subtrai. O que passa é multiplicado: Contundente ×1 · Cortante ×1,5 · Perfurante ×2</p>
+<p>A 0 PV você testa HT para não desmaiar. Abaixo disso, testes de HT para não morrer, com penalidades crescentes.</p>
+<p>GURPS é letal. Combate é para ser evitado, planejado, ou vencido antes de começar. Vale para os monstros também.</p>
+<h1>9. Morte</h1>
+<p><strong>A morte é permanente.</strong></p>
+<p>Ámenti vende <strong>intercessão junto a Anúbis</strong>. Fengdu vende <strong>petição de reencarnação favorável</strong>. Ambas custam fortuna, exigem patrocínio de uma Casa, e <strong>quase nunca funcionam</strong>. Elas vendem esperança, que é a única mercadoria que ninguém consegue auditar — e é assim que sustentam metade do seu poder político.</p>
+<p>Mecanicamente: o Árbitro decide, e o resultado padrão é não.</p>
+<p><strong>Personagem novo</strong> entra com pontos iguais aos do grupo menos 10%, em andar Ancorado, com rota conhecida e contrato de contenção disponível. Recomeçar é rápido e digno.</p>
+<p><strong>"Do grupo" quer dizer a mesa inteira</strong>, não a cidade nem a esquadra: a média de pontos de todos os personagens vivos na base <code>Personagens</code>, arredondada para baixo, menos 10%, com <strong>piso de 150</strong>. É a mesa toda de propósito. Cidade grande não dá volta melhor que cidade pequena, e ninguém perde por jogar sozinho — Carta, artigos 1 e 2. O Árbitro calcula na homologação da morte e registra o número na Cronologia, para que dê para auditar depois.</p>
+<p>Morte a partir do rank B desbloqueia a opção não-humana.</p>
+<p><strong>Quem morre quando.</strong> A escada de morte do livro vale para personagem de jogador. Bicho de bestiário morre a 0 PV, NPC nomeado e chefe morrem a −HT, sem teste. A regra completa, com a definição de chefe e de nomeado, está no <code>20</code> §5.4.1.</p>
+<h1>10. Conflito entre jogadores</h1>
+<h2>Duelo consentido</h2>
+<p>Os dois jogadores combinam antes. <strong>A anuência para lutar e a anuência para morrer são separadas:</strong> antes da primeira rolagem, cada um declara se aceita risco letal. Se qualquer um recusar, a luta é não-letal. Sem negociação no meio da luta.</p>
+<p><strong>Derrota não-letal</strong> custa de verdade: espólio, equipamento nomeado, reputação registrada pela Guilda, um contrato perdido, uma dívida assumida em público. Em Gapheim, derrota com testemunhas é fato jurídico. Em Ônfalos, é vergonha pública e os deuses comentam. Em Ámenti, entra no arquivo e fica lá para sempre.</p>
+<h2>Nunca sem consentimento</h2>
+<p><strong>Não existe emboscada, roubo ou assassinato entre personagens de jogadores sem consentimento explícito dos dois.</strong> Nenhum Mestre de Cena resolve isso.</p>
+<h2>Conflito por procuração — o caminho preferido</h2>
+<p>Você não ataca o rival. Você compra o contrato dele antes, denuncia à Guilda, atravessa uma aliança, cria uma dívida, tira o apoio da Casa divina dele, vaza informação para a cidade certa.</p>
+<p>É o que sete cidades rivais, sete embaixadas e uma Guilda movida a reputação foram feitas para permitir. E é <strong>assíncrono</strong>: você joga na terça, o alvo responde no sábado.</p>
+<p>Toda jogada por procuração entra como Pendência. O alvo responde na mesa dele. O Árbitro decide.</p>
+<h1>11. Ritmo</h1>
+<p><strong>Ações de mundo — três por semana de mundo.</strong> Mexem no estado compartilhado: descida, jogada política, contrato cumprido, negociação de peso. Uma descida profunda pode custar duas. <strong>Não acumulam:</strong> as três valem por semana de mundo, e quem não usa, perde.</p>
+<p><strong>Cenas livres — ilimitadas.</strong> Taverna, treino, pesquisa, conversa com NPC, flashback, escrever a crônica. <strong>Não mexem no banco e não dão pontos.</strong></p>
+<p>Quem quer jogar todo dia joga todo dia: gasta as três ações e passa o resto vivendo o personagem. Sai com o melhor livro do grupo e o mesmo rank dos outros.</p>
+<h2>O relógio</h2>
+<p><strong>Uma semana de mundo é uma semana real.</strong> O relógio corre sozinho: passada uma semana no calendário de verdade, passou uma semana na Garganta, e sai o Boletim novo. Ninguém entra na Semana N+1 antes do Boletim.</p>
+<p>A semana só avança antes disso por <strong>comando expresso do Árbitro</strong>, e só quando todos os jogadores já fizeram os movimentos daquela semana e concordam em acelerar. <strong>Nenhum Mestre de Cena avança a semana por conta própria</strong> — quem avança é o Árbitro, no Projeto dele.</p>
+<p>O prazo fecha tenha todo mundo jogado ou não: quem não jogou simplesmente não agiu, e ninguém trava ninguém.</p>
+<h2>Varredura e exploração</h2>
+<p>Toda descida é declarada de um de dois jeitos, <strong>antes do cesto</strong>. <strong>Fixado em 10/09/2026.</strong></p>
+<p><strong>Exploração</strong> é a descida jogada inteira: Muda, encontro, rota, achado, gente. É tudo o que este cânone já descreve, e nada muda.</p>
+<p><strong>Varredura</strong> é a descida de rotina: o aventureiro desce por rota conhecida, em andar Ancorado, para limpar o que a contenção limpa toda semana. <strong>Nenhum andar se limpa sozinho</strong>: o que ninguém varre nem explora fica, e a Pressão sobe (<code>03</code> §7). Resolve-se em <strong>uma rolagem</strong>, feita pelo Mestre de Cena à vista do jogador. Passou, a descida não se joga — registra-se.</p>
+<h3>Onde se varre</h3>
+<table>
+<thead>
+<tr>
+<th>Andares</th>
+<th>Rank nativo</th>
+<th>Varredura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–3</td>
+<td>F</td>
+<td>sim</td>
+</tr>
+<tr>
+<td>4–7</td>
+<td>E</td>
+<td>sim</td>
+</tr>
+<tr>
+<td>8–10</td>
+<td>D</td>
+<td>sim; no 10, só com o acampamento sazonal montado</td>
+</tr>
+<tr>
+<td>11 em diante</td>
+<td>—</td>
+<td><strong>não existe.</strong> Sem rota, sem guarnição, sem rotina. Só exploração.</td>
+</tr>
+</tbody>
+</table>
+<h3>A rolagem</h3>
+<p><strong>3d6 contra o Nível de Varredura.</strong> Igual ou menor, passou.</p>
+<p>A base vem da diferença entre o rank do aventureiro e o rank nativo do andar:</p>
+<table>
+<thead>
+<tr>
+<th>Rank do aventureiro</th>
+<th>Base</th>
+<th>Chance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dois ou mais acima do nativo</td>
+<td>14</td>
+<td>91%</td>
+</tr>
+<tr>
+<td>um acima</td>
+<td>12</td>
+<td>74%</td>
+</tr>
+<tr>
+<td>igual</td>
+<td>10</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>um abaixo</td>
+<td>8</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>dois ou mais abaixo</td>
+<td>—</td>
+<td><strong>não pode varrer.</strong> Só exploração.</td>
+</tr>
+</tbody>
+</table>
+<p>Modificadores, <strong>todos declarados antes do dado</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Mod.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pressão do andar Baixa, pelo Boletim</td>
+<td>+2</td>
+</tr>
+<tr>
+<td>Pressão Alta</td>
+<td>−2</td>
+</tr>
+<tr>
+<td>Pressão Crítica, ou Bolsão registrado no andar esta semana</td>
+<td>varredura impossível</td>
+</tr>
+<tr>
+<td>Esquadra de três ou mais, NPC contratado ou outro jogador</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Sozinho</td>
+<td>−2</td>
+</tr>
+<tr>
+<td>Segunda varredura no mesmo andar na mesma semana</td>
+<td>−2</td>
+</tr>
+</tbody>
+</table>
+<p>Esquadra com mais de um jogador rola <strong>uma vez só, pelo rank do mais baixo presente</strong>. O elo fraco é o que a varredura não cobre — quem leva um rank F ao andar 8 não varre o andar 8.</p>
+<p><strong>Exemplo.</strong> Rank F, andar 3 (rank F), com esquadra de quatro, Pressão normal: base 10, +1 de esquadra, alvo <strong>11</strong>. Sozinho no mesmo andar: base 10, −2, alvo <strong>8</strong>. Rank F no andar 5 (rank E), sozinho: base 8, −2, alvo <strong>6</strong>. Rank F no andar 8 (rank D): dois abaixo, não varre.</p>
+<h3>Passou</h3>
+<ul>
+<li>Gasta <strong>1 ação de mundo</strong>, como qualquer descida.</li>
+<li>Espólio: o <strong>piso da faixa</strong> do andar (<code>03</code> §3), por aventureiro. Sem Muda.</li>
+<li>Custos normais: passagem, cesto, consumo, manutenção.</li>
+<li>Sem ferimento, sem fadiga residual, sem semana parada.</li>
+<li><strong>2 pontos, não 3.</strong> Sem risco relevante não há 3 (<code>03</code> §1).</li>
+<li><strong>Sem achado, sem NPC novo, sem Fio Solto, sem rumor.</strong> Varredura não descobre nada — é o preço de não jogar.</li>
+<li>Relatório em cinco linhas, no modelo do <code>04</code>.</li>
+</ul>
+<h3>Falhou</h3>
+<p>Não é castigo: a rotina encontrou o que a rotina não cobre. A descida <strong>se joga inteira</strong>, do momento em que deixou de ser rotina, com todas as regras de exploração — Muda cheia, faixa cheia, 3 pontos, risco inteiro. <strong>O jogador não recua para "então não desço": o cesto já desceu.</strong></p>
+<h3>O que a varredura não faz</h3>
+<p>Não cumpre objetivo declarado. Não rende feito excepcional. Não avança Fio Solto. Quem quer mais do que o piso, joga.</p>
+<h1>12. Criação de personagem</h1>
+<ol>
+<li><strong>Conceito</strong> — quem é, de onde vem, por que desce</li>
+<li><strong>Cidade e divindade patrona</strong></li>
+<li><strong>Atributos</strong></li>
+<li><strong>Derivados</strong></li>
+<li><strong>Vantagens</strong> (incluindo Dádivas e Aptidão Mágica, se houver)</li>
+<li><strong>Desvantagens</strong> até −40, incluindo o Dever da Marca</li>
+<li><strong>Peculiaridades</strong> até 5</li>
+<li><strong>Perícias</strong>, com atenção a Idiomas</li>
+<li><strong>Equipamento</strong> pelo nível de Riqueza</li>
+<li><strong>Amarras</strong> — dois NPCs que te conhecem, uma dívida, um segredo</li>
+</ol>
+<p>O passo 10 não é regra de GURPS. É da casa, e não é opcional: é o que faz o personagem existir na política do mundo desde a primeira cena.</p>
+<p><strong>Correção de 08/09/2026.</strong> A tabela de perícias da seção 4 estava um degrau acima do Módulo Básico e foi refeita nos números do livro, em duas tabelas; e a seção 2 dizia que a Esgrima permite recuo ao aparar, quando recuar é opção de qualquer um. As sete fichas do <code>08</code> já usavam os números certos e continuam fechando em 150.</p>
+<p><strong>Correção de 11/09/2026.</strong> Duas notas da tabela de perícias da seção 4 remetiam ao <code>20</code> regras que o <code>20</code> não traz. A da Esgrima passou a remeter à seção 2 deste documento, que já trazia a regra da carga. A da Briga ainda não tem para onde remeter: o aparar a ⅔ da Briga é decisão de homologação, sem página do livro citada, e o <code>20</code> e o <code>24</code> só dão o ⅔ a Esgrima e Bastão — fica para a próxima conferência contra o livro. As duas notas deixaram de citar ficha de jogador: este documento vai para o Projeto de todo jogador, e o que está na ficha de alguém não sai de lá (<code>18</code> §2). Nenhum número mudou.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/02-regras-da-mesa.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

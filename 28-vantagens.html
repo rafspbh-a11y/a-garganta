@@ -1,0 +1,733 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tabela de Vantagens — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html" class="atual">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Tabela de Vantagens</h1><div class="meta">versão 3 · atualizado em 2026-09-11 · Tabelas de referência</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Custo e efeito em números, do GURPS Módulo Básico.</strong> Sem descrição literária: o que está aqui é o que muda rolagem. <strong>Quando a vantagem dá bônus em perícia, as perícias estão nomeadas</strong> — é isso que a coluna <em>Bônus</em> da ficha (<code>24</code>) precisa para ser auditável.
+<strong>Vantagem fora desta lista pode ser comprada pelo livro.</strong> Se o custo divergir, <strong>vale o livro</strong>, e o Árbitro corrige por linha nova.
+<strong>Versão 3, de 10/09/2026.</strong> Corrigidos: Abascanto (dobra contra área), Empatia com Animais (a lista de perícias é aberta), Força de Vontade (resiste a qualquer mágica resistível, e também a Diplomacia, Lábia e Sex-Appeal), Longevidade (bloqueia os pontos de Idade), Talento para Matemática (a exceção e o +2 de Engenharia), Talento Musical (é bônus de aprendizado) e a manutenção de Status, que é <strong>mensal</strong>, não semanal.</p>
+</blockquote>
+<h1>1. A lista</h1>
+<table>
+<thead>
+<tr>
+<th>Vantagem</th>
+<th>Custo</th>
+<th>Efeito em números</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abascanto (Resistência à Magia)</td>
+<td>2/nível</td>
+<td>Nível subtraído do NH de quem lança magia contra você; soma à resistência contra magia bloqueável. <strong>Contra mágica de ÁREA o nível conta em dobro</strong> (<em>GURPS Magia</em>, pág. 13): Abascanto 3 vale 6 na resistência a um Sono Coletivo. <strong>Incompatível com Aptidão Mágica</strong> — o portador não lança magia nenhuma, e não pode desligar. <strong>Não ajuda contra mágica não-resistível, nem contra projétil mágico</strong>, arma mágica ou ataque psíquico</td>
+</tr>
+<tr>
+<td><strong>Alfabetização</strong></td>
+<td><strong>0 na Garganta</strong></td>
+<td>O livro cobra 10 em cultura NT≤4, mas <strong>as sete cidades são cultura letrada</strong> por decisão registrada (<code>23</code>). Analfabetismo existe como desvantagem de −10</td>
+</tr>
+<tr>
+<td>Aliado</td>
+<td>5+</td>
+<td>Ver §2</td>
+</tr>
+<tr>
+<td>Ambidestria</td>
+<td>10</td>
+<td>Elimina o −4 de DX da mão inábil; luta com qualquer mão, ou com as duas em Ataque Total</td>
+</tr>
+<tr>
+<td>Antecedentes Incomuns</td>
+<td>10+</td>
+<td>Benefício especial vindo da história do personagem</td>
+</tr>
+<tr>
+<td><strong>Aptidão Mágica</strong></td>
+<td><strong>15 / 25 / 35</strong></td>
+<td>15 no primeiro nível, +10 por nível, <strong>máximo 3</strong>. Aprende magia como se IQ = (IQ + Aptidão) — é o <strong>IQ efetivo</strong> que a ficha declara. Teste contra (IQ+Aptidão) ao ver e ao tocar objeto encantado; 3 ou 4 revela se é salutar ou perigoso. <strong>Sem Aptidão não há teste, e na Garganta não há feitiço</strong></td>
+</tr>
+<tr>
+<td>Atratividade</td>
+<td>−20 a 25</td>
+<td>Hediondo −4 de reação (−20) · Feio −2 (−10) · Desagradável −1 só com a própria raça (−5) · Comum 0 · Atraente +1 (5) · Elegante +2/+4 conforme o sexo (15) · Muito Elegante +2/+6 (25)</td>
+</tr>
+<tr>
+<td>Bom Senso</td>
+<td>10</td>
+<td>Teste de IQ quando for fazer bobagem; sucesso obriga o Árbitro a avisar antes</td>
+</tr>
+<tr>
+<td>Cálculos Instantâneos</td>
+<td>5</td>
+<td>Conta de cabeça, instantânea</td>
+</tr>
+<tr>
+<td><strong>Carisma</strong></td>
+<td><strong>5/nível</strong></td>
+<td><strong>+1 por nível em todo teste de reação</strong> de criatura inteligente. Soma também em <strong>Trovador</strong> e <strong>Liderança</strong></td>
+</tr>
+<tr>
+<td>Clericato</td>
+<td>5+</td>
+<td>+1 de reação com correligionários e com quem respeita a fé. 10+ se clérigos invocam ajuda do Além</td>
+</tr>
+<tr>
+<td><strong>Empatia</strong></td>
+<td><strong>15</strong></td>
+<td>Teste de IQ ao conhecer alguém: o Árbitro diz o que você <strong>sente</strong>. Serve para sinceridade, não para verdade. <strong>Numa falha, o Árbitro pode mentir.</strong> <em>Não é mágica</em></td>
+</tr>
+<tr>
+<td>Empatia com Animais</td>
+<td>5</td>
+<td>+2 de reação de animal selvagem; <strong>+4 em qualquer perícia com animais</strong> — o livro diz "Adestramento de Animais, Cavalgar, Veterinária, etc.", e o <strong>etc. é literal</strong>: entram também <strong>Falcoaria</strong> e <strong>Carregamento</strong>, e qualquer outra que a lista de perícias (<code>26</code>) traga como perícia com animal; +3 para achar caça. Não mata animal sem motivo forte</td>
+</tr>
+<tr>
+<td><strong>Facilidade para Línguas</strong></td>
+<td><strong>2/nível</strong></td>
+<td><strong>+1 no IQ por nível, só para aprender língua</strong> e para Lingüística. Acumula com Memória Eidética</td>
+</tr>
+<tr>
+<td><strong>Força de Vontade</strong></td>
+<td><strong>4/nível</strong></td>
+<td><strong>+1 por nível em todo teste de Vontade</strong>: medo, dor, <strong>Interrogatório (com ou sem tortura)</strong>, Hipnotismo, e também quando alguém tenta influenciá-lo por <strong>Diplomacia, Lábia ou Sex-Appeal</strong>. E soma à resistência <strong>de qualquer mágica que se possa resistir</strong> — não só as de dominação da mente (MB pág. 20). Não ajuda contra choque de combate</td>
+</tr>
+<tr>
+<td>Hierarquia Militar</td>
+<td>5/nível (máx. 8)</td>
+<td>1 nível de Status a cada 3 de Hierarquia. Nível 5–6 exige Liderança 12+; 7+ exige 13+</td>
+</tr>
+<tr>
+<td><strong>Hipoalgia</strong> (alto limiar de dor)</td>
+<td><strong>10</strong></td>
+<td><strong>Não fica atordoado nem perde DX no turno seguinte ao ferimento</strong> (exceto golpe na cabeça ou fulminante); +3 para resistir a tortura; +3 em Vontade para ignorar dor</td>
+</tr>
+<tr>
+<td>Imunidade a doenças</td>
+<td>10</td>
+<td>Nunca contrai doença ou infecção naturalmente. Exige HT inicial 12+</td>
+</tr>
+<tr>
+<td>Intuição</td>
+<td>15</td>
+<td>Uma pergunta por problema: o Árbitro rola contra IQ + acertos − erros. 3 ou 4 aponta a melhor opção; falha crítica aponta uma ruim</td>
+</tr>
+<tr>
+<td>Longevidade</td>
+<td>5</td>
+<td>Só falha teste de envelhecimento em 17 ou 18. <strong>Quem a tem não recebe ponto nenhum pela desvantagem Idade</strong> — as duas não se somam</td>
+</tr>
+<tr>
+<td><strong>Memória Eidética</strong></td>
+<td><strong>30 / 60</strong></td>
+<td>30: <strong>todo ponto em perícia mental conta em dobro</strong> (magia e psiquismo <strong>não</strong>), e teste de IQ para lembrar detalhe. 60: contam em quádruplo</td>
+</tr>
+<tr>
+<td><strong>Noção do Perigo</strong></td>
+<td><strong>15</strong></td>
+<td>Teste secreto de IQ diante de emboscada ou desastre iminente; sucesso avisa que algo está errado; 3 ou 4 dá detalhes</td>
+</tr>
+<tr>
+<td>Noção Exata do Tempo</td>
+<td>5</td>
+<td>Sabe a hora exata e mede qualquer intervalo; acorda na hora marcada</td>
+</tr>
+<tr>
+<td>Olfato/Paladar Apurado</td>
+<td>2/nível</td>
+<td>+1 por nível em Olfato e Paladar — veneno na comida antes do segundo gole</td>
+</tr>
+<tr>
+<td>Ouvido Aguçado</td>
+<td>2/nível</td>
+<td>+1 por nível em Audição e nos testes de IQ para notar ruído</td>
+</tr>
+<tr>
+<td>Patrono</td>
+<td>10+</td>
+<td>Ver §2</td>
+</tr>
+<tr>
+<td>Poderes Legais</td>
+<td>5 / 10 / 15</td>
+<td>Conforme jurisdição e alçada</td>
+</tr>
+<tr>
+<td><strong>Prontidão</strong></td>
+<td><strong>5/nível</strong></td>
+<td><strong>+1 por nível em teste de QUALQUER sentido</strong> e nos testes de IQ para perceber algo. Acumula com Visão Aguçada e as demais</td>
+</tr>
+<tr>
+<td>Recuperação Alígera</td>
+<td>5</td>
+<td><strong>+5 na HT efetiva</strong> para recuperar PV e curar aleijão. Exige HT 10+. Não ajuda contra atordoamento</td>
+</tr>
+<tr>
+<td><strong>Reflexos em Combate</strong></td>
+<td><strong>15</strong></td>
+<td><strong>+1 em toda defesa ativa</strong>; +1 em Sacar Rápido; +2 em Verificação de Pânico; +1 na iniciativa do seu lado contra surpresa (+2 se for o líder); <strong>+6</strong> para despertar ou se recuperar de surpresa e atordoamento; <strong>nunca fica paralisado</strong></td>
+</tr>
+<tr>
+<td>Reputação</td>
+<td>variável</td>
+<td>Ver §2</td>
+</tr>
+<tr>
+<td>Resistência Psíquica</td>
+<td>2/nível</td>
+<td>Nível subtraído do NH de qualquer tentativa psíquica sobre você — <strong>e do seu próprio</strong> poder psíquico. Não desliga</td>
+</tr>
+<tr>
+<td>Rijeza</td>
+<td>10 / 25</td>
+<td><strong>RD 1</strong> por 10 pontos, <strong>RD 2</strong> por 25. RD sai <strong>antes</strong> do multiplicador de cortante e perfurante. Máximo RD 2 para humano. Não protege os olhos</td>
+</tr>
+<tr>
+<td>Riqueza</td>
+<td>variável</td>
+<td>Ver §2</td>
+</tr>
+<tr>
+<td><strong>Senso de Direção</strong></td>
+<td><strong>5</strong></td>
+<td>Sempre sabe o Norte; refaz qualquer trajeto dos últimos 30 dias; <strong>+3 em Navegação</strong>. <strong>Funciona no subsolo</strong> — dentro de um poço sem fundo, é a vantagem de 5 pontos mais subestimada da lista</td>
+</tr>
+<tr>
+<td>Sorte</td>
+<td>15 / 30</td>
+<td>15: uma vez por hora de jogo faz <strong>até 3 testes e fica com o melhor</strong>. 30: o mesmo a cada 30 minutos. Ao ser atacado, <strong>o atacante rola 3 vezes e fica com a pior</strong></td>
+</tr>
+<tr>
+<td>Status</td>
+<td>5/nível</td>
+<td>Ver §2</td>
+</tr>
+<tr>
+<td>Talento Musical</td>
+<td>1/nível</td>
+<td>+1 por nível <strong>no IQ, ao estudar</strong> Canto e Instrumento Musical — barateia a compra, <strong>não soma ao NH pronto</strong></td>
+</tr>
+<tr>
+<td>Talento para Matemática</td>
+<td>10</td>
+<td><strong>+3</strong> em perícia matemática ou de computação — <strong>exceto Operação de Computadores</strong>, que fica de fora. Mais <strong>+2</strong> nas de Engenharia a partir do NT6, o que <strong>não se aplica na Garganta</strong></td>
+</tr>
+<tr>
+<td>Ultra-flexibilidade das Juntas</td>
+<td>5</td>
+<td><strong>+3 em Escalada</strong>, para se livrar de cordas e algemas, e em Mecânica</td>
+</tr>
+<tr>
+<td><strong>Visão Aguçada</strong></td>
+<td><strong>2/nível</strong></td>
+<td>+1 por nível em Visão ao procurar algo e nos testes de IQ para perceber. <strong>Barata, e é o que substitui a antiga "Observação"</strong></td>
+</tr>
+<tr>
+<td>Visão Noturna</td>
+<td>10</td>
+<td>Ignora qualquer penalidade de escuridão, <strong>exceto escuridão total</strong></td>
+</tr>
+<tr>
+<td>Visão Periférica</td>
+<td>15</td>
+<td>Teste de IQ para ver às costas; ataca os hexes laterais; <strong>defende-se sem penalidade</strong> pelos lados; <strong>−2</strong> contra ataque pelas costas</td>
+</tr>
+<tr>
+<td><strong>Voz Melodiosa</strong></td>
+<td><strong>10</strong></td>
+<td><strong>+2 permanente em Trovador, Diplomacia, Atuação, Política, Trato Social, Sex-Appeal e Canto</strong> — sete perícias, e <strong>só elas</strong>. Mais <strong>+2 em qualquer teste de reação</strong> de quem possa ouvir a voz. <strong>Não dá em Lábia, Comércio, Detecção de Mentiras, Disfarce nem Liderança</strong></td>
+</tr>
+</tbody>
+</table>
+<h1>2. As vantagens com tabela própria</h1>
+<h2>Aliado</h2>
+<table>
+<thead>
+<tr>
+<th>Poder do Aliado</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>menos de 75 pontos</td>
+<td><strong>é Dependente</strong>, e é desvantagem</td>
+</tr>
+<tr>
+<td>76 a 100 pontos</td>
+<td>5</td>
+</tr>
+<tr>
+<td>101 a 150 pontos</td>
+<td>10</td>
+</tr>
+<tr>
+<td>151 a 200 pontos</td>
+<td>15</td>
+</tr>
+<tr>
+<td>50 pontos acima de você</td>
+<td><strong>é Patrono</strong></td>
+</tr>
+<tr>
+<td>habilidades especiais (magia onde não há magia, equipamento acima do NT)</td>
+<td>+5 a +10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Frequência</th>
+<th>Jogada</th>
+<th>Multiplicador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quase todo o tempo</td>
+<td>≤15</td>
+<td>×3</td>
+</tr>
+<tr>
+<td>com bastante frequência</td>
+<td>≤12</td>
+<td>×2</td>
+</tr>
+<tr>
+<td>frequentemente</td>
+<td>≤9</td>
+<td>×1</td>
+</tr>
+<tr>
+<td>esporadicamente</td>
+<td>≤6</td>
+<td>metade, arredondando para cima</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Autômato é Aliado</strong> (<code>25</code>, decisão 10): fabricado só por Encantamentos, aparece <strong>quase todo o tempo (×3)</strong>, <strong>não pensa</strong>, e <strong>para em bolsão de mana nula</strong>.</p>
+<h2>Patrono</h2>
+<table>
+<thead>
+<tr>
+<th>Poder</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indivíduo de 150+ pontos, ou grupo com bens 1.000× os recursos iniciais</td>
+<td>10</td>
+</tr>
+<tr>
+<td>indivíduo de 200+ pontos, ou organização razoavelmente poderosa</td>
+<td>15</td>
+</tr>
+<tr>
+<td>organização muito poderosa</td>
+<td>25</td>
+</tr>
+<tr>
+<td>governo nacional ou organização gigantesca</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<p>Modificadores: <strong>+5</strong> se fornece equipamento útil; <strong>+10</strong> se o equipamento vale mais que os recursos iniciais da campanha; <strong>+5 ou +10</strong> por qualidades especiais. Frequência: a mesma tabela do Aliado. <strong>Contato uma vez por aventura</strong>, e o custo <strong>não</strong> se divide entre quem compartilha o mesmo Patrono.</p>
+<h2>Reputação</h2>
+<p><strong>Três fatores que se multiplicam.</strong> Arredonde para baixo em cada corte.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+1 a +4 de reação</td>
+<td><strong>5 pontos por ponto</strong>, máximo +4</td>
+</tr>
+<tr>
+<td>−1 a −4 de reação</td>
+<td>−5 por ponto, máximo −4</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Quem te conhece</th>
+<th>Fator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>todos que você encontrar</td>
+<td>valor cheio</td>
+</tr>
+<tr>
+<td><strong>grupo grande</strong> — uma cidade inteira, todos os mercenários, todos os mercadores</td>
+<td><strong>metade</strong></td>
+</tr>
+<tr>
+<td><strong>grupo pequeno</strong> — os sacerdotes de uma Casa, quem leu seus escritos</td>
+<td><strong>um terço</strong></td>
+</tr>
+<tr>
+<td>classe pequena demais para aparecer em jogo</td>
+<td><strong>não vale nada</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Com que frequência te reconhecem</th>
+<th>Jogada</th>
+<th>Fator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>o tempo todo</td>
+<td>—</td>
+<td>sem modificador</td>
+</tr>
+<tr>
+<td>de vez em quando</td>
+<td>≤10</td>
+<td>metade</td>
+</tr>
+<tr>
+<td>ocasionalmente</td>
+<td>≤7</td>
+<td>um terço</td>
+</tr>
+</tbody>
+</table>
+<h2>Riqueza</h2>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Recursos iniciais</th>
+<th>Horas/semana</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Falido</td>
+<td>nada além da roupa do corpo</td>
+<td>—</td>
+<td>−25</td>
+</tr>
+<tr>
+<td>Pobre</td>
+<td>⅕ da média</td>
+<td>50</td>
+<td>−15</td>
+</tr>
+<tr>
+<td>Batalhador</td>
+<td>metade da média</td>
+<td>40</td>
+<td>−10</td>
+</tr>
+<tr>
+<td><strong>Médio</strong></td>
+<td>a média — <strong>1.000 g na Garganta</strong></td>
+<td>40</td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td><strong>Confortável</strong></td>
+<td><strong>o dobro — 2.000 g</strong></td>
+<td>40</td>
+<td><strong>10</strong></td>
+</tr>
+<tr>
+<td>Rico</td>
+<td>5× a média</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Muito Rico</td>
+<td>20× a média</td>
+<td>10</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Podre de Rico</td>
+<td>100× a média</td>
+<td>10</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<p>Um mês de trabalho em dinheiro extra custa <strong>1 ponto</strong> — e o livro avisa que não vale a pena gastar mais que uns poucos pontos assim.</p>
+<h2>Status</h2>
+<p><strong>5 pontos por nível</strong>, de −4 (escória) a 8 (considerado divino).</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modificador de reação</td>
+<td><strong>a diferença entre o seu Status e o do NPC</strong></td>
+</tr>
+<tr>
+<td>Status negativo</td>
+<td>a mesma diferença como redutor, com piso de −4</td>
+</tr>
+<tr>
+<td>Trato Social pré-definido, com Status alto</td>
+<td>IQ+2 na própria cultura, IQ nas demais</td>
+</tr>
+<tr>
+<td>Desconto</td>
+<td>Riqueza <strong>Rico</strong> ou acima paga 5 a menos por Status elevado</td>
+</tr>
+<tr>
+<td>Manutenção</td>
+<td><strong>custa dinheiro todo mês</strong> — é o Custo de Vida Mensal do MB pág. 191, subtraído da renda. <strong>Não é semanal</strong>; a versão 1 desta tabela dizia semanal e cobrava quatro vezes o devido</td>
+</tr>
+</tbody>
+</table>
+<h1>3. As Dádivas — vantagem que só a Casa concede</h1>
+<p><strong>Dádiva é vantagem sobrenatural comprada com pontos normais, mas só dentro do domínio da sua divindade.</strong> Fora do domínio, não existe compra possível.</p>
+<table>
+<thead>
+<tr>
+<th>Casa</th>
+<th>Concede</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atena</td>
+<td>Reflexos em Combate · Bom Senso</td>
+</tr>
+<tr>
+<td>Thoth</td>
+<td>Memória Eidética · Facilidade para Línguas</td>
+</tr>
+<tr>
+<td>Tyr</td>
+<td>Hipoalgia</td>
+</tr>
+<tr>
+<td>Ixchel</td>
+<td>Intuição</td>
+</tr>
+<tr>
+<td>Zhong Kui</td>
+<td>Força de Vontade</td>
+</tr>
+<tr>
+<td>Agni</td>
+<td>Aptidão Mágica</td>
+</tr>
+<tr>
+<td>Hefesto</td>
+<td>Aptidão Mágica</td>
+</tr>
+<tr>
+<td>Hermes</td>
+<td>Carisma · Voz Melodiosa</td>
+</tr>
+<tr>
+<td>Afrodite</td>
+<td>Voz Melodiosa · Carisma</td>
+</tr>
+<tr>
+<td>Loki</td>
+<td>Voz Melodiosa · Noção do Perigo</td>
+</tr>
+<tr>
+<td>Oxóssi</td>
+<td>Senso de Direção · Olfato/Paladar Apurado</td>
+</tr>
+<tr>
+<td>Ogum</td>
+<td>Reflexos em Combate · Hipoalgia</td>
+</tr>
+<tr>
+<td>Oxum</td>
+<td>Empatia</td>
+</tr>
+<tr>
+<td>Sekhmet</td>
+<td>Recuperação Alígera</td>
+</tr>
+<tr>
+<td>Huitzilopochtli</td>
+<td>Recuperação Alígera</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Duas Casas dividirem Dádiva é o padrão, não a exceção.</strong></p>
+<p><strong>Reflexos em Combate não é Dádiva de ninguém</strong>: é vantagem comum, comprável por qualquer personagem sem argumento teológico. Atena e Ogum a <strong>concedem</strong>; ninguém a monopoliza.</p>
+<p><strong>Quer uma Dádiva que não está listada?</strong> Escreva <strong>por que ela pertence ao domínio daquele deus</strong>. Argumento teológico bom é aprovado — foi assim que Hefesto ganhou Aptidão Mágica, Afrodite entrou na tabela e Huitzilopochtli ganhou Recuperação Alígera. É assim que o mundo cresce.</p>
+<h1>4. Vantagens que NÃO existem no Módulo Básico</h1>
+<p>Estiveram em uso no cânone e foram substituídas. <strong>Não entram em ficha nova.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Estava</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contato</td>
+<td><strong>Aliado</strong></td>
+</tr>
+<tr>
+<td>Cura</td>
+<td>não é vantagem — é <strong>colégio</strong></td>
+</tr>
+<tr>
+<td>Fúria</td>
+<td>existe, mas é <strong>desvantagem de −15</strong></td>
+</tr>
+<tr>
+<td>Imunidade a Medo</td>
+<td><strong>Força de Vontade</strong>, 4/nível</td>
+</tr>
+<tr>
+<td>Sentido de Direção</td>
+<td><strong>Senso de Direção</strong></td>
+</tr>
+<tr>
+<td>Sentido de Perigo</td>
+<td><strong>Noção do Perigo</strong></td>
+</tr>
+<tr>
+<td>Talento com Armas · Talento Social · Talento Tático</td>
+<td>não existem</td>
+</tr>
+<tr>
+<td>Talento para Idiomas</td>
+<td><strong>Facilidade para Línguas</strong>, 2/nível</td>
+</tr>
+<tr>
+<td>Velocidade Superior · Recuperação Rápida</td>
+<td>não existem</td>
+</tr>
+<tr>
+<td>Vigor</td>
+<td><strong>Hipoalgia</strong>, 10</td>
+</tr>
+<tr>
+<td>Voz</td>
+<td><strong>Voz Melodiosa</strong>, 10</td>
+</tr>
+</tbody>
+</table>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/28-vantagens.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

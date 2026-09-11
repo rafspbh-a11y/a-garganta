@@ -1,0 +1,520 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Loot, Balcão e Registro — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html" class="atual">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Loot, Balcão e Registro</h1><div class="meta">versão 3 · atualizado em 2026-09-11 · Economia</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Um documento só sobre o que se ganha, o que se compra, o que se troca e o que se registra.</strong> Os números de espólio por profundidade continuam no <code>03</code> §3 e não se repetem aqui. As tabelas de item encantado moram <strong>aqui</strong>, e o <code>03</code> §4 aponta para cá. Se algo divergir, este documento vence no item, e o <code>03</code> vence no espólio.</p>
+</blockquote>
+<h1>1. Quatro coisas entram na bolsa</h1>
+<table>
+<thead>
+<tr>
+<th>Fonte</th>
+<th>O que é</th>
+<th>Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Espólio</strong></td>
+<td>O que a descida rende: carcaça, minério, peça recuperada</td>
+<td>Faixa do <code>03</code> §3, posicionada pela Muda (<code>06b</code>). Taxa da Guilda de 15% já descontada</td>
+</tr>
+<tr>
+<td><strong>Contrato</strong></td>
+<td>O que a Guilda ou uma embaixada paga por serviço</td>
+<td><code>03</code> §6. Contenção paga <strong>120 g por cabeça</strong> por semana descida nos andares 1–10</td>
+</tr>
+<tr>
+<td><strong>Baú da Garganta</strong></td>
+<td>Item ou grãos que a Garganta deixou</td>
+<td><code>06b</code> §10. <strong>Fora da faixa.</strong> Não conta no espólio</td>
+</tr>
+<tr>
+<td><strong>Troca e venda</strong></td>
+<td>O que outro jogador ou o balcão paga</td>
+<td>Seções 5 e 6 abaixo</td>
+</tr>
+</tbody>
+</table>
+<h1>2. O que se compra — item encantado comum</h1>
+<p><strong>Se o item muda um número, é comum. Se muda o que o personagem é, é obra-prima</strong> — e obra-prima não se compra (<code>03</code> §4).</p>
+<p>Compra-se no balcão do Limiar, a preço de tabela. <strong>Pode ser comprado na criação de personagem</strong>, dentro do que a Riqueza dá (<code>03</code> §9.3): Riqueza Confortável sai com um +1 na mão; Rica sai com um item de atributo.</p>
+<h2>2.1 Armas e proteção — preço sobre a peça base da 9.4</h2>
+<table>
+<thead>
+<tr>
+<th>Peça</th>
+<th>Nível 1 — <strong>2×</strong> a peça</th>
+<th>Nível 2 — <strong>5×</strong> a peça</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arma de mão</td>
+<td>+1 dano <strong>ou</strong> +1 NH</td>
+<td>+1 dano <strong>e</strong> +1 NH · ou +2 dano · ou +2 NH</td>
+</tr>
+<tr>
+<td>Arma de arremesso, flecha, virote</td>
+<td>idem, por peça</td>
+<td>idem, por peça</td>
+</tr>
+<tr>
+<td>Armadura, capacete</td>
+<td>+1 RD ou +1 PD</td>
+<td>+1 RD <strong>e</strong> +1 PD · ou +2 em um</td>
+</tr>
+<tr>
+<td>Escudo</td>
+<td>+1 PD ou +1 NH em Escudo</td>
+<td>+1 <strong>e</strong> +1 · ou +2 em um</td>
+</tr>
+</tbody>
+</table>
+<p>Rapieira 500 → nível 1 por 1.000, nível 2 por 2.500. Loriga de couro 525 → nível 1 por 1.050. Gládio 400 → nível 1 por 800. O ágio de armadura para estrangeiro (<code>03</code> §9.2) se aplica sobre o preço base, antes de multiplicar.</p>
+<h2>2.2 Joias — anel, brinco, bracelete, amuleto, tiara</h2>
+<p>Mesma lista e mesmo preço; muda só a vaga em que se usa.</p>
+<table>
+<thead>
+<tr>
+<th>Efeito</th>
+<th>+1</th>
+<th>+2</th>
+<th>+3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uma perícia</td>
+<td>600</td>
+<td>1.200</td>
+<td>—</td>
+</tr>
+<tr>
+<td>PV</td>
+<td>500</td>
+<td>1.000</td>
+<td>1.500</td>
+</tr>
+<tr>
+<td>Fadiga</td>
+<td>500</td>
+<td>1.000</td>
+<td>1.500</td>
+</tr>
+<tr>
+<td>Vontade</td>
+<td>500</td>
+<td>1.000</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2>2.3 Atributo</h2>
+<p><strong>+1 em ST, DX, IQ ou HT: 5.000 g.</strong> Joia ou não, é categoria própria, e é o único item comum acima de 4.000.</p>
+<h2>2.4 Vestes</h2>
+<table>
+<thead>
+<tr>
+<th>Peça</th>
+<th>+1</th>
+<th>+2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Botas de Deslocamento</td>
+<td>800</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Capa de Esquiva</td>
+<td>800</td>
+<td>2.000</td>
+</tr>
+</tbody>
+</table>
+<h2>2.5 Regeneração — de PV ou de Fadiga</h2>
+<table>
+<thead>
+<tr>
+<th>Ritmo</th>
+<th>Preço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 a cada 12 horas</td>
+<td>1.500</td>
+</tr>
+<tr>
+<td>1 a cada 6 horas</td>
+<td>4.000</td>
+</tr>
+</tbody>
+</table>
+<h2>2.6 Gemas de energia — reserva de mana para lançar</h2>
+<table>
+<thead>
+<tr>
+<th>Tamanho</th>
+<th>Reserva</th>
+<th>Recarga</th>
+<th>Preço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pequena</td>
+<td>2</td>
+<td>1 por dia</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Média</td>
+<td>5</td>
+<td>2 por dia</td>
+<td>800</td>
+</tr>
+<tr>
+<td>Grande</td>
+<td>15</td>
+<td>3 por dia</td>
+<td>3.000</td>
+</tr>
+</tbody>
+</table>
+<h2>2.7 Gema de magia — um feitiço, reserva própria, encaixada em cajado ou arma</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Comum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Feitiço</td>
+<td>qualquer um <strong>sem pré-requisito</strong></td>
+</tr>
+<tr>
+<td>Nível do feitiço</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Reserva</td>
+<td>5, recarrega 1 por dia</td>
+</tr>
+<tr>
+<td>Preço</td>
+<td>800</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cajado simples: 400 g, dois encaixes</strong>, e o mago lança feitiço de toque pela ponta — é o encantamento <em>Cajado</em> do livro. <strong>Encaixe em arma: 300 g cada, no máximo dois.</strong></p>
+<h2>2.8 Utilidade e consumíveis</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Efeito</th>
+<th>Preço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lanterna encantada</td>
+<td>Luz Contínua, não apaga, funciona para qualquer um</td>
+<td>250</td>
+</tr>
+<tr>
+<td>Poção de cura menor · média · forte</td>
+<td>1d−2 (mínimo 1) · 1d+1 · 2d+3</td>
+<td>50 · 200 · 500</td>
+</tr>
+<tr>
+<td>Poção de fadiga menor · média · forte</td>
+<td>1d (mínimo 2) · 2d (mínimo 4) · 2d+3 (mínimo 8)</td>
+<td>50 · 200 · 500</td>
+</tr>
+<tr>
+<td>Antídoto</td>
+<td>anula um veneno comum</td>
+<td>60</td>
+</tr>
+</tbody>
+</table>
+<h2>2.9 As quatro regras</h2>
+<ol>
+<li><strong>Efeito contínuo funciona para qualquer um; efeito disparado exige Aptidão Mágica.</strong> Lanterna, anel, capa, espada: qualquer um usa. Gema de magia, gema de energia, cajado: só quem tem Aptidão. É a regra do <code>17</code> §6.5 valendo também para o que está dentro do item.</li>
+<li><strong>O mesmo efeito não se acumula — vale o maior.</strong> Dois anéis de Esgrima +2 são Esgrima +2. Dois anéis de PV +3 são PV +3. <strong>O teto é por personagem, não por item.</strong> Efeitos <strong>diferentes</strong> acumulam livremente: dez dedos, dez efeitos.</li>
+<li><strong>Um item por vaga.</strong> Cabeça, pescoço, duas orelhas, dois pulsos, dez dedos, tronco, costas, pés, duas mãos.</li>
+<li><strong>Item comum se identifica sozinho.</strong> Obra-prima não: exige Analisar Magia ou uma Casa, e às vezes nem isso basta.</li>
+</ol>
+<h1>3. As listas do baú — <code>06b</code> §10</h1>
+<p>Cada lista tem seis itens, todos comuns. O andar escolhe a lista; 1d escolhe o item. <strong>O que saiu, saiu</strong> — o anel é de Esgrima mesmo que quem abriu use machado.</p>
+<p><strong>SIMPLES — andares 1 a 3</strong></p>
+<table>
+<thead>
+<tr>
+<th>1d</th>
+<th>Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Lanterna encantada</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Gema de energia pequena</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Arma nível 1, +1 dano — role 1d: 1 adaga · 2 faca · 3 lança · 4 machadinha · 5 gládio · 6 rapieira</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Armadura nível 1, +1 RD — role 1d: 1–2 coura · 3–4 loriga de couro · 5–6 capacete de couro</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Anel +1 — role 1d: 1 Furtividade · 2 Observação · 3 Primeiros Socorros · 4 Sobrevivência (Garganta) · 5 Escalada · 6 Faca</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Amuleto +1 — role 1d: 1–3 PV · 4–6 Fadiga</td>
+</tr>
+</tbody>
+</table>
+<p><strong>BOM — andares 4 a 7</strong></p>
+<table>
+<thead>
+<tr>
+<th>1d</th>
+<th>Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Gema de energia média</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Arma nível 2 — role 1d: 1 gládio +2 dano · 2 rapieira +1/+1 · 3 lança +2 NH · 4 arco longo +1/+1 · 5 machado +2 dano · 6 besta +2 NH</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Armadura nível 2 — role 1d: 1–2 loriga de couro +1/+1 · 3–4 cota de malha +1 RD · 5–6 celada +1/+1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Anel +2 — role 1d: 1 Esgrima · 2 Espada Curta · 3 Briga · 4 Diplomacia · 5 Furtividade · 6 Arco</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Amuleto +2 — role 1d: 1–3 PV · 4–6 Fadiga</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Vestes +1 — role 1d: 1–3 capa de Esquiva · 4–6 botas de Deslocamento</td>
+</tr>
+</tbody>
+</table>
+<p><strong>RARO — andares 8 a 12</strong></p>
+<table>
+<thead>
+<tr>
+<th>1d</th>
+<th>Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Regeneração, 1 a cada 12 horas — role 1d: 1–3 PV · 4–6 Fadiga</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Gema de energia grande</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Cajado simples com uma gema de magia — feitiço, role 1d: 1 Luz · 2 Som · 3 Atear Fogo · 4 Escudo · 5 Armadura · 6 Detectar Magia</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Vestes +2 — role 1d: 1–3 capa de Esquiva · 4–6 botas de Deslocamento</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Item de atributo +1 — role 1d: 1–2 ST · 3–4 DX · 5 IQ · 6 HT</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Joia +3 — role 1d: 1–3 PV · 4–6 Fadiga</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PROFUNDO — andares 13 a 20</strong></p>
+<p>A faixa das portas. Tudo aqui ainda é comum — muda um número — mas é o teto do comum, e vem em par. O que muda o que o personagem <em>é</em> só sai no 3 natural, e é obra-prima.</p>
+<table>
+<thead>
+<tr>
+<th>1d</th>
+<th>Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Regeneração, 1 a cada 6 horas — role 1d: 1–3 PV · 4–6 Fadiga</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Item de atributo +1 — role 1d: 1–2 ST · 3–4 DX · 5 IQ · 6 HT</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Arma nível 2 de material de porta — não enferruja, +1 dano <strong>e</strong> +1 NH — role 1d: 1 gládio · 2 rapieira · 3 lança · 4 machado · 5 arco longo · 6 espada larga</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Cajado com <strong>duas</strong> gemas de magia, feitiços sem pré-requisito — role 1d duas vezes: 1 Luz · 2 Som · 3 Atear Fogo · 4 Escudo · 5 Armadura · 6 Detectar Magia (repetiu: a segunda vira gema de energia grande)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Joia +3 de PV <strong>e</strong> joia +2 de perícia — role 1d: 1 Esgrima · 2 Espada Curta · 3 Briga · 4 Arco · 5 Furtividade · 6 Observação</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Gema de energia grande <strong>e</strong> vestes +2 — role 1d: 1–3 capa de Esquiva · 4–6 botas de Deslocamento</td>
+</tr>
+</tbody>
+</table>
+<p>Do 21 em diante não há lista: baú abaixo do 20 é Pendência inteira, item e tranca.</p>
+<h1>4. O que se registra na Guilda, e o que acontece se não</h1>
+<p><strong>Registra-se no balcão, na volta, antes de vender:</strong></p>
+<ul>
+<li><strong>Todo espólio</strong> — é o registro que aplica a taxa de 15% e que torna o lote vendável. Lote não registrado é <strong>contrabando</strong> (<code>03</code> §10.5): descoberto, cassa o registro do aventureiro, e não existe multa que compre a volta.</li>
+<li><strong>Todo item saído de baú</strong>, mágico ou não. O registro é gratuito e não cobra taxa enquanto o item não for vendido — mas item de baú sem registro é contrabando como qualquer outro, e a Guilda sabe quantos baús abriram na semana, porque o Mestre de Cena gravou.</li>
+<li><strong>Toda obra-prima</strong>, sempre, com procedência. Ámenti registra também, por conta própria, e as duas listas não batem — isso é política, não erro.</li>
+<li><strong>Contratado</strong> — quem contrata registra o nome, para que ele conte na esquadra e para que a morte dele conste (<code>03</code> §10.7).</li>
+</ul>
+<p><strong>Não se registra:</strong> item comum comprado no balcão (já saiu registrado), consumível, e o que se trocou entre jogadores — a troca se registra no relatório, não na Guilda.</p>
+<p><strong>Renovação anual do registro: 50 g</strong> (<code>03</code> §10.5). Barato de propósito.</p>
+<h1>5. Troca entre jogadores</h1>
+<p><strong>Livre, a preço combinado, e vale quando consta no relatório dos dois.</strong> O Árbitro confere os dois relatórios na homologação; se só um menciona a troca, ela não aconteceu. Item trocado sai de uma ficha e entra na outra na mesma rodada.</p>
+<p>Não há imposto sobre troca. Há testemunha: o que se troca no Limiar alguém viu, e o <code>18</code> diz o que isso vira.</p>
+<h1>6. Revenda ao balcão</h1>
+<p>O balcão compra item comum por <strong>metade</strong> do preço de tabela, menos a taxa da Guilda de 15% sobre o valor pago. Item mundano, por um quarto. Consumível, não compra.</p>
+<p><strong>Obra-prima o balcão não compra.</strong> Quem quer se desfazer de uma negocia com uma Casa, com uma embaixada, ou com quem a quer de volta — e as três cobram em coisa que não é grão.</p>
+<h1>7. O que o Mestre de Cena nunca faz aqui</h1>
+<ul>
+<li>Não inventa item, preço ou efeito fora destas tabelas. O que não está aqui é Pendência.</li>
+<li>Não concede item, nem por feito excepcional. Feito excepcional dá ponto (<code>03</code> §1), não coisa.</li>
+<li>Não narra baú antes de gravá-lo (<code>06b</code> §10.4).</li>
+<li>Não deixa o jogador vender o que não registrou.</li>
+</ul>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/21-loot-balcao-e-registro.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

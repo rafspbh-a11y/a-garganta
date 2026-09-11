@@ -1,0 +1,323 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bestiário, andares 1 a 12 — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html" class="atual">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Bestiário, andares 1 a 12</h1><div class="meta">versão 2 · atualizado em 2026-09-11 · A Garganta</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+Estatísticas em GURPS clássico. PD = defesa passiva, RD = resistência a dano. Nenhum Mestre inventa criatura para andar coberto por este documento — use o que está aqui, ou abra Pendência.</p>
+<p><strong>O espólio da ficha é por carcaça.</strong> A faixa de profundidade da seção 3 do <code>03 — Economia e Tabelas</code> é outra unidade: é o que <strong>cada aventureiro</strong> leva de <strong>uma descida bem-sucedida</strong>, já líquida da taxa da Guilda, somando carcaças, recuperação e o que se trouxe de volta. Uma criatura sozinha normalmente não fecha a faixa, e não precisa fechar — quem fecha é a descida. Se o total ficar abaixo do piso, vale o piso; se passar do teto sem justificativa, o excedente vira Pendência.</p>
+<p><strong>Nota.</strong>
+<strong>A composição de cada descida vem da Muda</strong> — ver <code>06b — Muda dos Andares</code>. A Muda escolhe quais destas criaturas aparecem, em que número, e com qual traço da lista fechada de seis. <strong>Ela não cria criatura nova e não cria traço novo.</strong> O roster de um andar é toda criatura deste documento cuja faixa inclui aquele andar; o resultado Anômalo puxa de um andar de distância, nunca mais.</p>
+<p><strong>Três coisas ficam fora de todo roster.</strong> <em>O que vive no lago</em> é ambientação e não tem ficha — nunca sai na Muda. <em>O fundido</em> não tem andar e só aparece por decisão do Árbitro. E a <strong>casca-de-osso ocupa o 7 e o 10, não o 8 nem o 9</strong> — "7 e 10" é lista, não intervalo.</p>
+</blockquote>
+<h1>Parte I — Nativos do poço (andares 1 a 11)</h1>
+<p><strong>Nenhuma destas criaturas pertence a qualquer mitologia.</strong> Os nomes são de catalogação da Guilda, dados por naturalistas, não por teólogos — e essa distinção é politicamente carregada.</p>
+<p>Duas destas vivem no andar 11. <strong>Nem tudo que se encontra na Névoa é vazamento</strong> — e é exatamente por isso que o vazamento demora a ser identificado.</p>
+<h2>MURADOR</h2>
+<p><em>Andar 1. O primeiro encontro de quase todo aventureiro, e não é uma caçada.</em></p>
+<p>Do tamanho de um javali baixo, dorso encoberto de cascalho colado. Vive nas galerias laterais da Descida. Não caça pessoa, não defende território: <strong>veda passagem.</strong> Mastiga rocha e a assenta com saliva calcária até fechar a galeria de ponta a ponta.</p>
+<p>Trabalha em grupo de 3 a 6, sem pressa, e recomeça de onde parou.</p>
+<p><strong>ST</strong> 9 · <strong>DX</strong> 11 · <strong>IQ</strong> 3 · <strong>HT</strong> 12 · <strong>PV</strong> 9 · <strong>Desloc.</strong> 5 · <strong>Esquiva</strong> 6 · <strong>PD</strong> 2 · <strong>RD</strong> 3</p>
+<p><strong>Ataque:</strong> investida, 1d−1 contundente. Não persegue.</p>
+<p><strong>Especial:</strong> fecha um trecho estreito em 1d×10 minutos. A parede tem RD 4 e 20 PV por metro quadrado, e derrubá-la faz barulho que se ouve três galerias adiante.</p>
+<p><strong>Perícias:</strong> nenhuma relevante. É metódico e desatento.</p>
+<p><em>Como se luta:</em> não se luta. Eles abandonam qualquer galeria com ar em movimento — corrente de ar significa outra saída, e outra saída não vale o trabalho. Um fole, um pano aberto ou uma passagem destampada dispersa o grupo inteiro sem sacar arma. <strong>Este é o encontro que ensina que na Garganta pensar rende mais que bater.</strong></p>
+<p><em>Espólio:</em> saliva calcária, 10–30 g — argamassa de presa rápida, e a Guilda compra toda. Galeria reaberta paga prêmio na faixa de contrato F–E.</p>
+<p><em>Consequência:</em> manter galeria aberta é metade do trabalho remunerado do andar 1, e é o emprego que sustenta carregador novato. E quando aparece uma esquadra emparedada, ninguém sabe dizer se foi murador ou se alguém pagou para parecer murador.</p>
+<h2>CAVADOR-CINZENTO</h2>
+<p><em>Andares 2 a 4. A primeira morte de quase todo aventureiro.</em></p>
+<p>Do tamanho de um cão grande, corpo baixo e segmentado, seis membros escavadores. Cego. Caça por vibração. Ataca em bando de três a oito.</p>
+<p><strong>ST</strong> 11 · <strong>DX</strong> 12 · <strong>IQ</strong> 4 · <strong>HT</strong> 12 · <strong>PV</strong> 12 · <strong>Desloc.</strong> 7 · <strong>Esquiva</strong> 7 · <strong>PD</strong> 2 · <strong>RD</strong> 2</p>
+<p><strong>Ataque:</strong> garra escavadora, 1d cortante</p>
+<p><strong>Perícias:</strong> Rastreamento por vibração 14, Furtividade 11</p>
+<p><em>Como se luta:</em> fique parado. Eles perdem você. O erro clássico é correr.</p>
+<p><em>Espólio:</em> quitina, 15–40 g por carcaça.</p>
+<h2>LAMPEJO</h2>
+<p><em>Andares 3 a 6. Mata quem não conhece.</em></p>
+<p>Massa gelatinosa de meio metro, translúcida, flutua a um palmo do chão. Emite clarão intenso quando ameaçada. Não é veneno: é luz.</p>
+<p><strong>ST</strong> 6 · <strong>DX</strong> 9 · <strong>IQ</strong> 2 · <strong>HT</strong> 10 · <strong>PV</strong> 10 · <strong>Desloc.</strong> 3 · <strong>Esquiva</strong> 5 · <strong>PD</strong> 0 · <strong>RD</strong> 0</p>
+<p><strong>Ataque:</strong> clarão. Todos a 5m testam HT ou ficam <strong>cegos por 2d minutos</strong>. Contato causa 1d−2 de queimadura.</p>
+<p><em>Como se luta:</em> de longe, ou de olhos fechados. Cego no andar 5, sozinho, é sentença.</p>
+<p><em>Espólio:</em> vesícula intacta, 60–150 g. Extraí-la exige Primeiros Socorros ou Naturalismo a −3.</p>
+<h2>O PRUMO</h2>
+<p><em>Andares 4 a 7. Emboscador. Cai.</em></p>
+<p>Corpo em gota, pesado, um metro e meio, crista endurecida na ponta. Ancora-se nas fendas altas das agulhas e espera — às vezes por dias. Quando algo passa embaixo, solta-se e despenca de ponta.</p>
+<p><strong>ST</strong> 13 · <strong>DX</strong> 14 · <strong>IQ</strong> 5 · <strong>HT</strong> 11 · <strong>PV</strong> 11 · <strong>Desloc.</strong> 4 no chão · <strong>Esquiva</strong> 8 · <strong>PD</strong> 1 · <strong>RD</strong> 2</p>
+<p><strong>Ataque:</strong> queda de ponta, 2d contundente. Se acerta, o alvo testa HT ou fica <strong>atordoado</strong> por 1d turnos.</p>
+<p><strong>Depois da queda:</strong> mordida de fenda, 1d+1 perfurante, e agarra (ST 13).</p>
+<p><strong>Perícias:</strong> Camuflagem 16, Emboscada 15</p>
+<p><em>Como se luta:</em> olhando para cima. Observação a −2 para notar a silhueta contra a rocha antes de passar embaixo. Depois de cair, ele é lento e desajeitado — a briga só é perigosa nos dois primeiros turnos.</p>
+<p><em>Espólio:</em> crista endurecida, 80–200 g. Vira ponta de lança ou reforço de escudo.</p>
+<h2>ANDARILHO-PÁLIDO</h2>
+<p><em>Andar 6. O motivo de a Mata Pálida ser temida.</em></p>
+<p>Três metros, ereto, membros longos e finos, superfície branca e lisa. Imóvel, é indistinguível das estruturas da Mata. Move-se apenas quando você passa.</p>
+<p><strong>ST</strong> 16 · <strong>DX</strong> 11 · <strong>IQ</strong> 6 · <strong>HT</strong> 13 · <strong>PV</strong> 13 · <strong>Desloc.</strong> 6 · <strong>Esquiva</strong> 6 · <strong>PD</strong> 2 · <strong>RD</strong> 3</p>
+<p><strong>Ataque:</strong> dois golpes por turno, 1d+2 contundente cada</p>
+<p><strong>Perícias:</strong> Camuflagem 18, Furtividade 13</p>
+<p><em>Como se luta:</em> não se luta com um sozinho. Recuar para terreno aberto é a tática padrão, e o Corte existe por isso.</p>
+<p><em>Espólio:</em> 100–250 g em material.</p>
+<h2>CASCA-DE-OSSO</h2>
+<p><em>Andares 7 e 10, e não os do meio. Paciente.</em></p>
+<p>Corpo achatado de um metro e meio, superfície idêntica a rocha ou osso. Aloja-se e não se move por dias. Ataca quando algo pisa em cima.</p>
+<p><strong>ST</strong> 14 · <strong>DX</strong> 10 · <strong>IQ</strong> 3 · <strong>HT</strong> 14 · <strong>PV</strong> 14 · <strong>Desloc.</strong> 4 · <strong>Esquiva</strong> 5 · <strong>PD</strong> 4 · <strong>RD</strong> 6</p>
+<p><strong>Ataque:</strong> mandíbula, 2d cortante. Contra alvo sobre ele, ataque a +4.</p>
+<p><strong>Perícias:</strong> Camuflagem 17</p>
+<p><em>Como se luta:</em> a RD é alta. Cortante e contundente rendem pouco; perfurante rende. Uma lança e paciência valem mais que uma espada.</p>
+<p><em>Espólio:</em> carapaça, 120–300 g. Vira armadura leve de RD 3.</p>
+<h2>ABAFADOR</h2>
+<p><em>Andar 8. Cresce em cima do que se veio buscar.</em></p>
+<p>Lâmina de tecido vivo, dois metros por dois, alojada no teto baixo das câmaras. Indistinguível da rocha. Absorve som — onde há colônia, o silêncio do andar 8 vira total.</p>
+<p>Alimenta-se do veio: <strong>onde há metal profundo, há abafador.</strong> Não existe sítio de extração limpo.</p>
+<p><strong>ST</strong> 12 · <strong>DX</strong> 9 · <strong>IQ</strong> 3 · <strong>HT</strong> 13 · <strong>PV</strong> 12 · <strong>Desloc.</strong> 3 · <strong>Esquiva</strong> 5 · <strong>PD</strong> 2 · <strong>RD</strong> 3</p>
+<p><strong>Ataque:</strong> solta-se e envolve. Se acerta, agarra (ST 12) e sufoca — regras de asfixia.</p>
+<p><strong>Especial:</strong> nenhum som escapa de dentro dele, e nesse andar já não escapava muito. O resto do grupo não percebe.</p>
+<p><strong>Perícias:</strong> Camuflagem 15</p>
+<p><em>Como se luta:</em> amarrado. Grupo em corda sente o puxão do que não ouve, e essa é a única detecção confiável. Perfurante e fogo funcionam; contundente quase não.</p>
+<p><em>Espólio:</em> lâmina seca, 150–350 g — isola oficina de alquimia melhor que qualquer coisa da superfície.</p>
+<p><em>Consequência:</em> Gapheim paga muito por metal profundo e não paga nada pela limpeza. Quem contrata extração no andar 8 está comprando o metal e terceirizando o abafador, e as esquadras sabem disso.</p>
+<h2>BOCA-DE-POÇO</h2>
+<p><em>Andar 9. Caça o suprimento, não a pessoa.</em></p>
+<p>Predador de emboscada, quatro metros, enterra-se e emerge. <strong>Localiza água</strong> — e como todo grupo no andar 9 carrega água, todo grupo é alvo.</p>
+<p><strong>ST</strong> 19 · <strong>DX</strong> 12 · <strong>IQ</strong> 4 · <strong>HT</strong> 14 · <strong>PV</strong> 14 · <strong>Desloc.</strong> 8 · <strong>Esquiva</strong> 7 · <strong>PD</strong> 3 · <strong>RD</strong> 4</p>
+<p><strong>Ataque:</strong> bote, 2d+2 perfurante. Se acerta, agarra: ST 19 para escapar.</p>
+<p><strong>Perícias:</strong> Furtividade 14, Emboscada 16</p>
+<p><em>Como se luta:</em> separando a água do grupo. Grupos experientes deixam os odres a cinquenta metros e revezam.</p>
+<p><em>Espólio:</em> 200–500 g.</p>
+<h2>JUNTADOR</h2>
+<p><em>Andares 10 e 11. Recolhe. Não come.</em></p>
+<p>Dois metros e meio, membros longos, tronco de carga. Percorre o Campo de Ossos apanhando osso solto e levando para o monte. Não caça, não devora, não defende território. Coleta.</p>
+<p>Apanha cadáver. E apanha quem estiver imóvel o bastante para parecer parte da pilha.</p>
+<p><strong>ST</strong> 17 · <strong>DX</strong> 10 · <strong>IQ</strong> 5 · <strong>HT</strong> 13 · <strong>PV</strong> 15 · <strong>Desloc.</strong> 5 · <strong>Esquiva</strong> 5 · <strong>PD</strong> 3 · <strong>RD</strong> 4</p>
+<p><strong>Ataque:</strong> braço de recolha, 1d+2 contundente. Se acerta, agarra e arrasta (ST 17).</p>
+<p><strong>Especial:</strong> larga o que carrega para pegar coisa maior. Um cadáver, uma armadura pesada ou um escudo jogado no chão trocam o alvo dele. Não persegue além de trinta metros do monte.</p>
+<p><em>Como se luta:</em> dando-lhe outra coisa para carregar. Matá-lo custa caro e rende pouco.</p>
+<p><em>Espólio:</em> carcaça, 80–200 g. <strong>O que ele carrega vale mais</strong> — role uma vez na faixa do andar: é o que os mortos deixaram.</p>
+<p><em>Consequência:</em> a Guilda apresenta o juntador como a explicação do Campo de Ossos, e o assunto se encerra. A conta não fecha: são poucos, são pequenos, e a camada tem metros. Quem fizer essa conta em voz alta está segurando informação política de valor real.</p>
+<h2>FALSA-CORDA</h2>
+<p><em>Andar 11. Não ataca. Mata sendo seguida.</em></p>
+<p>Organismo filamentar séssil, corpo central alojado em fenda, filamentos estendidos por dezenas de metros entre as rochas. Ao tato — e na Névoa o tato é o que se tem — é indistinguível de corda de cânhamo.</p>
+<p>Grupos marcam a própria rota com corda. A falsa-corda existe porque isso funciona.</p>
+<p><strong>ST</strong> 14 · <strong>DX</strong> 8 · <strong>IQ</strong> 2 · <strong>HT</strong> 12 · <strong>PV</strong> 12 · <strong>Desloc.</strong> 0 · <strong>Esquiva</strong> 3 · <strong>PD</strong> 2 · <strong>RD</strong> 3</p>
+<p><strong>Ataque:</strong> filamentos do corpo central, 1d−1 corrosivo por turno de contato, e agarra (ST 14).</p>
+<p><strong>Especial:</strong> Naturalismo ou Sobrevivência a −3 para distinguir do cânhamo pelo tato. Corda verdadeira com nó a cada braça denuncia a falsa de imediato — <strong>e é por isso que grupo experiente noda a linha.</strong></p>
+<p><strong>Como se narra:</strong> raiz, cipó, filamento, linha, tendão. Nunca teia, nunca rede, nunca malha. A falsa-corda é um vegetal que imita cordão, e não um armadilheiro que fia — a diferença importa para a mesa e importa para o texto.</p>
+<p><em>Como se luta:</em> não se luta. Corta-se e volta-se. O perigo é chegar ao fim da linha exausto, sem rota, e encontrar o que já chegou antes.</p>
+<p><em>Espólio:</em> filamento seco, 200–450 g. É a melhor corda leve conhecida. Gapheim e Ônfalos compram tudo, e a ironia não passa despercebida.</p>
+<h2>O QUE VIVE NO LAGO</h2>
+<p><em>Andar 5. Sem estatísticas.</em></p>
+<p>A Guilda proíbe nadar na Bacia. A proibição é obedecida sem discussão, o que é notável num lugar cheio de gente que desce em buracos por dinheiro.</p>
+<p>Não há descrição oficial. Há seis relatos registrados por Ámenti, e eles não concordam entre si.</p>
+<p><em>Nota ao Mestre:</em> isto é ambientação, não encontro. Se um jogador insistir em entrar no lago, abra Pendência.</p>
+<h1>Parte II — O que vazou (andares 11 e 12)</h1>
+<p><strong>Estas criaturas pertencem a mitologias.</strong> A porta mais próxima daqui é a de Diyu, no andar 14. Que alguma coisa suba de lá é esperado, e é assim há gerações: vazamento de porta é fato antigo, catalogado e entediante.</p>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Leia isto antes de narrar qualquer uma das três.</strong> O que vaza de uma porta vaza <em>daquela</em> porta. Perto do 14, o esperado é coisa de Diyu — e o jiangshi é coisa de Diyu. Ele não é a anomalia: ele é a linha de base contra a qual a anomalia se mede.</p>
+<p>O que não se explica é o resto. Um draugr nórdico não tem porta próxima nenhuma. Um rakshasa, muito menos. Narre o jiangshi como rotina desagradável e os outros dois como coisa que não fecha — porque é do contraste entre eles que sai a descoberta, e um Mestre que trate tudo como igualmente errado apaga a descoberta inteira sem perceber.</p>
+</blockquote>
+<p>O Mestre deve tratar draugr e rakshasa como <strong>evento</strong>, não como combate comum — e o jogador que perceber o padrão está segurando informação política de valor real.</p>
+<h2>DRAUGR</h2>
+<p><em>Andar 11. Nórdico. Não deveria estar aqui, e essa é a frase inteira: não há porta nórdica próxima, nem acima nem abaixo.</em></p>
+<p>Morto que não aceitou estar morto. Guarda algo, mesmo que o algo tenha se perdido há séculos. Cheira a terra molhada.</p>
+<p><strong>ST</strong> 18 · <strong>DX</strong> 11 · <strong>IQ</strong> 9 · <strong>HT</strong> 15 · <strong>PV</strong> 15 · <strong>Desloc.</strong> 5 · <strong>Esquiva</strong> 5 · <strong>PD</strong> 3 · <strong>RD</strong> 4</p>
+<p><strong>Ataque:</strong> arma antiga, 2d+1 cortante. Aperto: ST 18.</p>
+<p><strong>Especial:</strong> imune a medo e dor. Só para quando desmembrado ou queimado.</p>
+<p><strong>Perícias:</strong> Armas Brancas 14, Intimidação 15</p>
+<p><em>Fala.</em> Em nórdico antigo. Diz o próprio nome, e o nome está nos arquivos de Gapheim como alguém enterrado a mil quilômetros dali.</p>
+<p><em>Espólio:</em> o que ele guarda. <strong>Obra-prima</strong> — pequena, de um efeito só, a que o <code>03</code> §4 abre a partir do 8; é Pendência, como toda obra-prima. A procedência não vem do item: vem dele, que diz o próprio nome. Garantida, e explosiva.</p>
+<h2>JIANGSHI</h2>
+<p><em>Andar 12. Chinês. E é o único dos três que está mais ou menos onde deveria — sobe da porta de Diyu, e o registro de Fengdu tem séculos de aparição assim.</em></p>
+<p>Corpo enrijecido que se move aos saltos. Braços estendidos. Não vê: sente a respiração.</p>
+<p><strong>ST</strong> 16 · <strong>DX</strong> 10 · <strong>IQ</strong> 6 · <strong>HT</strong> 16 · <strong>PV</strong> 16 · <strong>Desloc.</strong> 4 (salta 3m) · <strong>Esquiva</strong> 5 · <strong>PD</strong> 2 · <strong>RD</strong> 3</p>
+<p><strong>Ataque:</strong> garra, 1d+3 cortante</p>
+<p><strong>Especial:</strong> localiza por respiração. Prender o fôlego (teste de HT) o cega por completo. Um talismã de Fengdu corretamente escrito o imobiliza.</p>
+<p><em>Como se luta:</em> sabendo. Quem conhece a tradição chinesa resolve o combate sem sacar arma. Quem não conhece, morre. <strong>Este é o encontro que ensina por que Idiomas e Teologia valem pontos.</strong></p>
+<p><em>Espólio:</em> talismãs antigos, 150–400 g.</p>
+<h2>RAKSHASA MENOR</h2>
+<p><em>Andar 12. Hindu. Raro.</em></p>
+<p>Não é besta. É pessoa, e negocia. Muda de forma, mente com talento, e respeita acordo formal com uma literalidade cruel.</p>
+<p><strong>ST</strong> 15 · <strong>DX</strong> 14 · <strong>IQ</strong> 13 · <strong>HT</strong> 13 · <strong>PV</strong> 13 · <strong>Desloc.</strong> 7 · <strong>Esquiva</strong> 8 · <strong>PD</strong> 2 · <strong>RD</strong> 2</p>
+<p><strong>Ataque:</strong> garra 1d+2 cortante, ou magia</p>
+<p><strong>Especial:</strong> troca de forma, ilusão. Aptidão Mágica 2.</p>
+<p><strong>Perícias:</strong> Atuação 16, Detecção de Mentiras 15, Diplomacia 14</p>
+<p><em>Como se lida:</em> falando. Combate direto é escolha ruim. Ele quer alguma coisa, e vai propor um acordo — que cumprirá ao pé da letra e não um dedo além.</p>
+<p><em>Nota:</em> Amaravati fica <strong>muito</strong> interessada em saber que há um no andar 12.</p>
+<h2>O FUNDIDO</h2>
+<p><em>Sem andar fixo. Sem estatística.</em></p>
+<p>Criatura que é duas tradições ao mesmo tempo. Um draugr com marcas de tribunal de Diyu. Algo com feições de Duat e comportamento de Xibalbá.</p>
+<p>Apareceram há três anos. São raros e sobem sem padrão.</p>
+<p><strong>Não têm ficha porque cada um é único.</strong> Aparição de fundido é <strong>sempre Pendência</strong> e sempre evento de campanha.</p>
+<p>Aceitar o que eles são significa aceitar que algo fundamental está errado. É por isso que as sete cidades preferem chamá-los de fraude.</p>
+<h1>Escalonamento rápido</h1>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Faixa segura</th>
+<th>Encontro típico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F</td>
+<td>Andares 1–3</td>
+<td>Murador; 2 a 4 cavadores</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Andares 3–5</td>
+<td>Bando de cavadores, ou 1 lampejo + terreno</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Andares 5–7</td>
+<td>1 prumo emboscando, ou 1 andarilho</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Andares 8–10</td>
+<td>Abafador, casca-de-osso, boca-de-poço, juntador, exaustão</td>
+</tr>
+<tr>
+<td>C — topo</td>
+<td>Andares 11–12</td>
+<td>Falsa-corda, juntador — e o que vazou, com a descoberta que vem junto. <strong>O 12 é o teto do rank C.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>A faixa F–C cobre os andares 1 a 12, e para aí.</strong> O rank B começa no 13, e o 13 não tem roster publicado — ver abaixo.</p>
+<p><strong>Um encontro acima da faixa deve ser sinalizado.</strong> Rastro, cheiro, aviso de outro grupo, silêncio errado. O jogador tem que ter tido a chance de recuar.</p>
+<p>GURPS é letal, e a letalidade só é justa quando foi anunciada.</p>
+<h1>Abaixo do 12</h1>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Faixa</th>
+<th>Roster publicado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B</td>
+<td>Andares 13–16</td>
+<td>Não existe</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Andares 17–24</td>
+<td>Não existe</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Andares 25–30</td>
+<td>Não existe</td>
+</tr>
+<tr>
+<td>SS</td>
+<td>Andares 31+</td>
+<td>Não existe</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A Guilda não publica catálogo abaixo do 12 porque não tem um.</strong> Não é sigilo: é que ninguém sobreviveu a descidas suficientes para catalogar coisa alguma com método. O que existe são depoimentos avulsos, contraditórios e caros, e Ámenti compra todos.</p>
+<p><strong>Consequência para o Mestre de Cena:</strong> abaixo do 12 <strong>não há Muda e não há roster.</strong> Toda descida abaixo do 12 é <strong>Pendência antes de começar</strong> — o Árbitro monta o que há e devolve. Não improvise a fundura: o pouco que a mesa sabe sobre ela é exatamente o que está nesta página, e essa escassez é o assunto, não a falta dele.</p>
+<p>A faixa acima serve para uma coisa só: dizer ao jogador de rank C que o 13 não é para ele ainda, e por quê. <strong>O rank B começa no 13</strong>, e é por isso que esta página para no 12 — um rank C que desce ao 13 está um degrau inteiro fora da faixa dele, e a Guilda cobra essa diferença em gente. Do 31 para baixo não há nem faixa de espólio: a Economia manda tudo para Pendência, sempre, e <strong>SS</strong> é o nome que se dá a quem desce lá.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/06-bestiario.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

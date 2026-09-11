@@ -1,0 +1,621 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Improviso, Círculo e Lavra — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html" class="atual">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Improviso, Círculo e Lavra</h1><div class="meta">versão 1 · atualizado em 2026-09-11 · Seu personagem</div></div>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Decisão do Árbitro, 10/09/2026.</strong> A Garganta adota o <strong>Capítulo 8 do <em>GURPS Magia</em> — Magia de Improviso</strong>, que por determinação do próprio livro <strong>substitui integralmente</strong> o parágrafo <em>A Criação de Mágicas Novas</em> (Magia, pág. 15). Não existe pesquisa de gabinete, não existe pedido formal à Casa, não existem semanas de estudo pagas em ingredientes. <strong>Magia nova se faz na hora, com mana, e se prova em público.</strong></p>
+<p>Onde este documento divergir do <code>17</code>, do <code>22</code> ou do <code>25</code>, <strong>vale este documento</strong>. A lista de mágicas do mundo deixa de ser fechada.</p>
+</blockquote>
+<h1>1. O que muda, em uma frase</h1>
+<p>Até aqui, a lista de mágicas era um livro pronto e o mago escolhia dentro dele. A partir daqui, <strong>a lista é o que os magos vivos conseguiram fazer e conseguiram provar</strong> — e ela cresce toda vez que alguém sustenta uma mágica nova por um mês.</p>
+<p>Três coisas continuam exatamente como estavam, e são a espinha:</p>
+<ul>
+<li><strong>Sem Aptidão Mágica não existe feitiço</strong>, em nenhum andar (<code>17</code> §6.5).</li>
+<li><strong>Sem Casa não existe Aptidão</strong>, e a Casa pode retirar o que concedeu (<code>22</code> §1).</li>
+<li><strong>Só se improvisa dentro dos colégios do próprio deus.</strong> O alcance criativo de um mago é, literalmente, o desenho da Casa que o marcou.</li>
+</ul>
+<h1>2. Verbo e substantivo</h1>
+<p>Uma mágica improvisada é <strong>uma ação sobre uma coisa</strong>. O jogador descreve o que quer que aconteça; a mesa traduz em duas palavras. <em>Enfraquecer Água. Deslocar Planta. Fortalecer Terra. Perceber Necromancia.</em></p>
+<p><strong>As 21 escolas do <code>23</code> §2.3 se dividem exatamente em verbo e substantivo</strong> — seis verbais, catorze substantivas, e uma fora do sistema. A divisão não foi inventada aqui: é a do livro, e ela fecha sozinha.</p>
+<h2>2.1 Os verbos — seis colégios, onze verbos</h2>
+<table>
+<thead>
+<tr>
+<th>Verbo</th>
+<th>Colégio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comunicar</td>
+<td>Comunicação e Empatia</td>
+</tr>
+<tr>
+<td>Curar</td>
+<td>Cura</td>
+</tr>
+<tr>
+<td>Perceber / Pressentir</td>
+<td>Reconhecimento</td>
+</tr>
+<tr>
+<td>Enfraquecer</td>
+<td>Quebrar &amp; Consertar</td>
+</tr>
+<tr>
+<td>Fortalecer / Restaurar</td>
+<td>Quebrar &amp; Consertar</td>
+</tr>
+<tr>
+<td>Deslocar</td>
+<td>Movimentação</td>
+</tr>
+<tr>
+<td>Proteger</td>
+<td>Proteção e Advertência</td>
+</tr>
+<tr>
+<td>Alertar</td>
+<td>Proteção e Advertência</td>
+</tr>
+<tr>
+<td><strong>Criar</strong></td>
+<td>especial — v. §2.4</td>
+</tr>
+<tr>
+<td><strong>Controlar</strong></td>
+<td>especial — v. §2.4</td>
+</tr>
+<tr>
+<td><strong>Transformar</strong></td>
+<td>especial — v. §2.4</td>
+</tr>
+</tbody>
+</table>
+<h2>2.2 Os substantivos — catorze colégios</h2>
+<table>
+<thead>
+<tr>
+<th>Substantivo</th>
+<th>Ressalva</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ar · Fogo · Som</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Água</td>
+<td>líquidos não aquosos a <strong>−2 ou pior</strong></td>
+</tr>
+<tr>
+<td>Terra</td>
+<td>metal e pedra preciosa a <strong>−3</strong></td>
+</tr>
+<tr>
+<td>Plantas</td>
+<td>madeira morta e fibra vegetal a <strong>−2</strong></td>
+</tr>
+<tr>
+<td>Animais</td>
+<td>criatura irracional</td>
+</tr>
+<tr>
+<td>Controle do Corpo</td>
+<td>ser racional: homem, corpo</td>
+</tr>
+<tr>
+<td>Controle da Mente</td>
+<td>ser racional</td>
+</tr>
+<tr>
+<td>Alimentos</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Luz e Trevas</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Ilusão e Criação</td>
+<td>para imagens</td>
+</tr>
+<tr>
+<td>Necromancia</td>
+<td>cadáver, morto-que-anda, entidade — <strong>e continua licenciada</strong></td>
+</tr>
+<tr>
+<td>Meta-mágicas</td>
+<td>o próprio mana, encantamento, entidade mágica, e a mágica em si</td>
+</tr>
+<tr>
+<td><strong>Clima</strong></td>
+<td>divergência declarada da Garganta (<code>23</code> §2.3) — entra como substantivo, no recorte de Ar e Água que a concessão de Clima dá, com a sub-escola de Eletricidade do <code>25</code> §1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mágica feita sobre o próprio operador é Controle do Corpo ou Controle da Mente.</strong> Ataque direto ao corpo de alguém exige <strong>Controle do Corpo</strong> — <em>Enfraquecer Ossos</em> exige; <em>Enfraquecer Rocha</em> para derrubar uma galeria em cima do inimigo, não.</p>
+<h2>2.3 O que fica fora</h2>
+<p><strong>Encantamentos não é verbo nem substantivo.</strong> Improviso não faz item, não faz obra-prima e não faz gema. Item mágico continua inteiramente na trilha do <code>03</code> §4, do <code>21</code> e do <code>22</code> — santuário, Casa, oficina de mana e a escola de Encantamentos.</p>
+<p><strong>Acesso continua fechada</strong> (<code>23</code> §2.3). Não se improvisa porta.</p>
+<h2>2.4 Os três verbos especiais</h2>
+<p><strong>Criar</strong> não pode ser usado em colégio que já tenha mágica de criação própria — Ar, Fogo, Água, Terra, Alimentos, Ilusão e Criação. Nesses, criar coisa diferente é <strong>variação da mágica Criar que ele já conhece</strong>: teste contra o NH <strong>daquela mágica</strong>, com redutor de <strong>−3 no mínimo</strong>, crescendo com a distância entre o que ele sabe e o que ele quer.</p>
+<p><strong>Controlar</strong> e <strong>Transformar</strong> custam <strong>+3 de fadiga</strong> em vez de +2, e falham em <strong>15</strong>, não em 16. São os verbos caros, e é de propósito: são eles que fazem uma coisa deixar de ser o que era.</p>
+<h1>3. O nível de habilidade é da escola, não da mágica</h1>
+<p>Não se compra NH de escola. Ele é <strong>consequência</strong> do que o mago já sabe naquele colégio:</p>
+<table>
+<thead>
+<tr>
+<th>Mágica conhecida em NH</th>
+<th>Vale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>abaixo de 12</td>
+<td>0</td>
+</tr>
+<tr>
+<td>12 a 15</td>
+<td>1</td>
+</tr>
+<tr>
+<td>16 a 19</td>
+<td>1½</td>
+</tr>
+<tr>
+<td>20 ou mais</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>Soma-se e <strong>arredonda-se para baixo</strong>. <strong>Teto: o menor entre 20 e IQ + Aptidão Mágica.</strong> Mágica que pertence a duas escolas conta nas duas.</p>
+<p>O NH de escola de cada mago <strong>fica escrito na ficha</strong> e se atualiza toda vez que ele aprende ou lavra mágica daquele colégio.</p>
+<p><strong>Leia o que essa tabela diz sobre o jogo:</strong> improviso não é para quem coleciona mágicas em nível baixo. Dez mágicas em NH 11 dão <strong>zero</strong>. Quatro em NH 16 dão <strong>seis</strong>. É a mesma lição da armadilha 1 do <code>17</code> Parte 7, agora com consequência mecânica direta.</p>
+<h1>4. Como se faz um improviso</h1>
+<p><strong>Dois testes</strong> — um para o verbo, um para o substantivo, cada um contra o NH do operador naquela escola. Modificadores normais de alcance, toque e concentração.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tempo</strong></td>
+<td><strong>o dobro</strong> do tempo da mágica equivalente</td>
+</tr>
+<tr>
+<td><strong>Custo</strong></td>
+<td><strong>+2 de fadiga</strong> sobre o custo da mágica equivalente (<strong>+3</strong> em Controlar e Transformar). <strong>Não é reduzido por NH alto.</strong> Em mágica de área, o acréscimo entra no <strong>custo básico</strong>, antes de multiplicar pelo raio. A manutenção também paga o acréscimo</td>
+</tr>
+<tr>
+<td><strong>Falha</strong></td>
+<td><strong>16 sempre falha</strong>; <strong>17 ou 18 é falha crítica</strong>. Em Controlar e Transformar: <strong>15 falha, 16 é crítica</strong></td>
+</tr>
+<tr>
+<td><strong>Sem os pré-requisitos</strong></td>
+<td>se o que ele está improvisando é uma mágica que existe em livro e ele não tem a cadeia dela, <strong>−5 adicional</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Os resultados são graduados, e é isso que dá cena:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Verbo</th>
+<th>Substantivo</th>
+<th>O que acontece</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sucesso</td>
+<td>sucesso</td>
+<td>funciona, paga a energia</td>
+</tr>
+<tr>
+<td>decisivo</td>
+<td>sucesso</td>
+<td>funciona, <strong>metade</strong> da energia</td>
+</tr>
+<tr>
+<td>decisivo</td>
+<td>decisivo</td>
+<td>funciona, <strong>energia zero</strong></td>
+</tr>
+<tr>
+<td>sucesso</td>
+<td>falha</td>
+<td><strong>sai torto</strong> — outra coisa acontece, e ele paga a energia <strong>do que saiu de fato</strong></td>
+</tr>
+<tr>
+<td>falha</td>
+<td>falha</td>
+<td><strong>nada acontece, nada se paga</strong> — ele não chegou perto o bastante da mágica verdadeira</td>
+</tr>
+<tr>
+<td>crítica</td>
+<td>qualquer</td>
+<td>desastre. Duas críticas: calamidade</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Resistência:</strong> usa-se o <strong>pior</strong> dos dois resultados do operador.</p>
+<p><strong>O mago sempre sabe se deu certo.</strong> Se não deu, pode não saber o que fez — mas sabe que não foi aquilo.</p>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Como o Mestre de Cena arbitra sem inventar cânone.</strong> Ele mede o improviso pela <strong>mágica existente mais próxima</strong> — é o método do próprio livro — e anuncia custo, tempo, duração e se é resistível. Isso é <strong>provisório e daquela cena</strong>. Nada disso vira regra, e nada disso entra em documento. O que vira permanente é a Lavra, e a Lavra é do Árbitro (§7).</p>
+</blockquote>
+<h1>5. O improviso cerimonial — onde entra a mana de fora</h1>
+<p>Improviso comum é o que o mago faz sozinho, em cena, com a própria fadiga. <strong>Improviso cerimonial é como se faz mágica grande</strong>: mais lento, mais caro, e alimentado por todo mundo que estiver junto.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tempo</strong></td>
+<td>×10 sobre o improviso — ou seja, <strong>×20</strong> sobre a mágica equivalente</td>
+</tr>
+<tr>
+<td><strong>Energia</strong></td>
+<td>gasta <strong>no fim</strong>, na hora do teste, <strong>funcione ou não</strong></td>
+</tr>
+<tr>
+<td><strong>Falha</strong></td>
+<td><strong>16 falha automaticamente</strong>; 17 ou 18 é <strong>choque de retorno</strong>, mesmo com NH efetivo alto</td>
+</tr>
+<tr>
+<td><strong>Não valem</strong></td>
+<td>a vantagem <strong>Sorte</strong> e as mágicas <strong>Benção</strong> e <strong>Desejo</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>5.1 De onde vem a energia</h2>
+<table>
+<thead>
+<tr>
+<th>Fonte</th>
+<th>Quanto</th>
+<th>O preço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fadiga do operador</td>
+<td>ST, e depois HT</td>
+<td>fadiga zerada é personagem inconsciente no meio do andar</td>
+</tr>
+<tr>
+<td><strong>Círculo de magos</strong></td>
+<td>dividem o custo <strong>como quiserem</strong></td>
+<td>precisam estar <strong>unidos fisicamente</strong>. Quebrou o contato, recomeça. Ferir um é como ferir o operador. Nocautear ou matar um: <strong>todos atordoados</strong>, teste de IQ para voltar</td>
+</tr>
+<tr>
+<td><strong>Magos fracos e não-magos no círculo</strong></td>
+<td><strong>até 3 pontos cada</strong></td>
+<td>é o assento do guerreiro, do carregador e do escriba na cena grande</td>
+</tr>
+<tr>
+<td><strong>Espectadores</strong></td>
+<td><strong>1 ponto cada, até 100</strong></td>
+<td>exige <strong>fé sincera e vontade de ajudar</strong>. <strong>Não se contrata gente para isso</strong></td>
+</tr>
+<tr>
+<td><strong>Opositor presente</strong></td>
+<td><strong>−5 pontos</strong> cada, do total dos espectadores</td>
+<td>meia dúzia de infiltrados mata a cerimônia</td>
+</tr>
+<tr>
+<td><strong>Gemas de energia</strong></td>
+<td>pelo <code>21</code> §2</td>
+<td>Tulán é a melhor forja de gema das sete, e cobra por sê-lo</td>
+</tr>
+<tr>
+<td><strong>Objetos auto-energizados</strong></td>
+<td>contínuo</td>
+<td>são item de forja: passam por Hefesto, Thoth ou Ogum (<code>25</code> §5)</td>
+</tr>
+</tbody>
+</table>
+<h2>5.2 Troca: energia por habilidade</h2>
+<p><strong>Só em cerimônia.</strong> Energia excedente vira bônus no teste:</p>
+<table>
+<thead>
+<tr>
+<th>Energia extra</th>
+<th>Bônus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+20%</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>+40%</td>
+<td>+2</td>
+</tr>
+<tr>
+<td>+60%</td>
+<td>+3</td>
+</tr>
+<tr>
+<td>+100%</td>
+<td>+4</td>
+</tr>
+<tr>
+<td>a cada +100% além disso</td>
+<td>+1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>É esta linha que faz da mana o preço da criatividade.</strong> Quem junta mana suficiente força a mágica a existir — e é por isso que o mago que quer inventar grande precisa de gemas, de objetos, de outros magos e de povo.</p>
+<h2>5.3 O que isso faz com o mundo</h2>
+<p><strong>A magia grande da Garganta é feita em praça, com gente.</strong> Cem pessoas de fé sincera valem cem pontos de energia e <strong>não se compram</strong> — então convocar povo é ato político, e cada cidade convoca do jeito que governa: Ônfalos por Assembleia, Gapheim por edital do Thing, Fengdu por licença, Tulán pela data, Amaravati pelo dharma, Ilê Ifé pelo búzio, Ámenti registrando tudo e não subindo em palanque nenhum.</p>
+<p><strong>Fraqueza estrutural:</strong> a cerimônia que falha <strong>queima toda a energia mesmo assim</strong> — as gemas, o círculo e a fé de cem pessoas, perdidos. Uma cidade que paga e não recebe é uma cidade que cobra de alguém.</p>
+<p><strong>Consequência política:</strong> sabotar cerimônia é barato, negável e devastador. Cinco opositores infiltrados custam menos que uma gema.</p>
+<h1>6. Mana e profundidade</h1>
+<p>Vale o <code>17</code> §6.5 sem alteração — <strong>+2 no nível efetivo e metade da fadiga nos andares 9 a 20; sem fadiga do 21 para baixo, com toda falha comum tratada como crítica</strong>.</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Decisão do Árbitro, 10/09/2026, e é divergência declarada.</strong> O <strong>acréscimo de improviso (+2, ou +3) é sempre pago</strong>, em qualquer faixa de mana, inclusive do andar 21 para baixo. A mana paga a <strong>mágica</strong>; ela nunca paga a <strong>invenção</strong>. Sem esta linha, do 21 para baixo o improviso sairia de graça e a economia inteira do círculo, das gemas e da troca de energia por habilidade deixaria de existir exatamente onde ela mais importa.</p>
+</blockquote>
+<p><strong>Leia o que isso significa lá embaixo.</strong> No 21 o mago improvisa pagando quase nada, com +2 no nível — <strong>e toda falha comum vira crítica, num sistema em que 16 já falha sempre.</strong> É o lugar mais produtivo e mais suicida do mundo para inventar magia. Alguém vai tentar.</p>
+<p><strong>Bolsão de mana nula:</strong> não se improvisa. E quem tem Aptidão sente a ausência ao entrar.</p>
+<h1>7. Da mágica improvisada à Lavra</h1>
+<p>Improviso é efeito de uma vez. Para virar mágica de verdade:</p>
+<ol>
+<li><strong>Um mês de uso</strong>, com a mágica feita <strong>pelo menos cinco vezes por semana</strong>.</li>
+<li><strong>1 ponto de personagem.</strong> Ela passa a ser mágica conhecida em <strong>IQ + Aptidão Mágica − 2</strong>, e sobe dali pelas regras normais.</li>
+<li><strong>Jogador e Árbitro escrevem a descrição junto</strong>: efeito exato, custo, tempo de operação, duração, classe, se é resistível e contra o quê, e a cadeia de pré-requisitos.</li>
+<li><strong>O criador pode ensiná-la.</strong></li>
+</ol>
+<p>Chamamos isso de <strong>lavrar</strong> a mágica, e a mágica pronta de <strong>Lavra</strong> — a palavra serve para as duas coisas que aconteceram: ela foi trabalhada, e ela foi registrada.</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Para tornar a mágica sua, você tem que usá-la vinte vezes em público.</strong> Não existe inventar em segredo e dominar em segredo: as duas coisas se excluem. <strong>Quem vê a mágica ser feita ganha +2</strong> para tentar improvisá-la por conta própria.</p>
+</blockquote>
+<h1>8. A corrida</h1>
+<p>Entre o primeiro improviso e a Lavra há <strong>um mês de exposição</strong>, e é nesse mês que a campanha acontece.</p>
+<ul>
+<li><strong>Quem lavra primeiro fica com o nome, o registro e o direito de ensinar.</strong> Quem chega segundo paga a Ámenti para ler o que o primeiro escreveu — e leva o <strong>+2</strong>.</li>
+<li><strong>Ámenti não inventa nada e é dona do placar.</strong> O Tribunal de Maat registra Lavra como registra tudo, e o que está no arquivo não sai. É a forja que não forja mandando na corrida sem entrar nela.</li>
+<li><strong>A Casa então absorve ou recusa.</strong> Absorvida, a Lavra entra no colégio e passa a ser <strong>concedida a todos os marcados daquela Casa, para sempre</strong> — e a tabela do <code>17</code> §6.6 ganha uma linha, por Boletim. Recusada, ela fica <strong>pessoal</strong>, transmissível só de mão em mão, pela exceção da 6.6: com dono do outro lado e com dívida.</li>
+<li><strong>A Casa deixa de vender formação e passa a comprar invenção.</strong> O ativo escasso do mundo deixa de ser a árvore de pré-requisitos e passa a ser <strong>o mago que improvisa</strong>. O que a Casa tem para oferecer é o mês: santuário, gemas, povo para a cerimônia e privacidade para completar as vinte conjurações longe de plateia rival.</li>
+</ul>
+<p><strong>E é a primeira coisa que as sete cidades disputam que não é espólio.</strong></p>
+<h2>8.1 Como cada cidade trata o improviso</h2>
+<table>
+<thead>
+<tr>
+<th>Cidade</th>
+<th>Posição</th>
+<th>O que ela cobra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ônfalos</strong></td>
+<td>orgulho e briga</td>
+<td>qual Casa leva o crédito. <strong>Mágica de Ônfalos tem partido</strong>, como o item</td>
+</tr>
+<tr>
+<td><strong>Ámenti</strong></td>
+<td>registro</td>
+<td>a leitura do arquivo, e a prioridade de quem lavrou primeiro</td>
+</tr>
+<tr>
+<td><strong>Gapheim</strong></td>
+<td>a letra</td>
+<td>sob qual cláusula a mágica foi feita, e o que exatamente ela jurou fazer</td>
+</tr>
+<tr>
+<td><strong>Tulán</strong></td>
+<td>a data</td>
+<td>a Lavra feita em data certa, e a data em que ela não vale</td>
+</tr>
+<tr>
+<td><strong>Fengdu</strong></td>
+<td>o selo</td>
+<td>exame e licença para improvisar; Lavra sem selo é contrabando</td>
+</tr>
+<tr>
+<td><strong>Amaravati</strong></td>
+<td>o dharma</td>
+<td>se aquele mago devia ter feito aquilo</td>
+</tr>
+<tr>
+<td><strong>Ilê Ifé</strong></td>
+<td>a consulta</td>
+<td>o búzio antes, e a obrigação antes do pedido</td>
+</tr>
+</tbody>
+</table>
+<h1>9. Travas</h1>
+<ol>
+<li><strong>Improviso não faz item, obra-prima, gema, grão nem bônus permanente.</strong> Nada que produza espólio ou fure a escada de profundidade do <code>03</code> §4.</li>
+<li><strong>Fora do domínio do próprio deus, sozinho, é impossível</strong> — como sempre foi (<code>17</code> §6.6).</li>
+<li><strong>Necromancia improvisada sem licença de Ámenti ou de Fengdu é crime</strong>, não exceção.</li>
+<li><strong>Acesso e Radiação continuam fechadas.</strong> Não se improvisa nelas, em nenhuma faixa de mana.</li>
+<li><strong>Substantivo Meta-mágicas é sempre arbitrado pelo Árbitro</strong>, nunca pelo Mestre de Cena. Mexer no próprio mana, com a Garganta acordando, não é assunto de cena.</li>
+<li><strong>A tabela decide o número.</strong> Toda Lavra passa pelo Árbitro antes de virar permanente, e o custo sai da comparação com a mágica de livro mais próxima.</li>
+<li><strong>O personagem do Árbitro não recebe favor.</strong> Carta, artigo 4 — e num sistema em que o Árbitro arbitra cada improviso, isto precisa estar escrito aqui também.</li>
+</ol>
+<h1>10. Quem decide o quê</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Mestre de Cena</th>
+<th>Árbitro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arbitrar um improviso em cena</td>
+<td><strong>sim</strong>, medindo pela mágica de livro mais próxima</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Efeito torto de sucesso parcial</td>
+<td><strong>sim</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Falha crítica de improviso comum</td>
+<td><strong>sim</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Falha crítica de cerimônia com povo</td>
+<td>—</td>
+<td><strong>sim</strong>: é fato de cidade</td>
+</tr>
+<tr>
+<td>Improviso com substantivo Meta-mágicas</td>
+<td>—</td>
+<td><strong>sim</strong></td>
+</tr>
+<tr>
+<td>Escrever a Lavra</td>
+<td>—</td>
+<td><strong>sim</strong>, com o jogador</td>
+</tr>
+<tr>
+<td>Absorver ou recusar a Lavra na Casa</td>
+<td>—</td>
+<td><strong>sim</strong>, por Boletim</td>
+</tr>
+<tr>
+<td>Registro, prioridade e disputa de nome</td>
+<td>—</td>
+<td><strong>sim</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Decisão do Árbitro, 10/09/2026, e sem ela o sistema não anda.</strong> O Mestre de Cena <strong>pode</strong> arbitrar improviso, porque um jogador não pode esperar uma semana pelo preço de uma mágica que ele quis fazer numa cena. Isso <strong>não</strong> viola a trava de que Mestre de Cena não inventa cânone: o improviso é transitório, é medido contra mágica que já existe, e <strong>não vira documento</strong>. Cânone é a Lavra, e a Lavra é do Árbitro.</p>
+</blockquote>
+<h1>11. O círculo misto — a mágica que precisa de duas Casas</h1>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Decisão do Árbitro, 10/09/2026.</strong> Num improviso cerimonial, <strong>cada um dos dois testes pode ser rolado por um mago diferente do círculo</strong> — um rola o verbo contra o NH dele naquela escola, o outro rola o substantivo contra a dele.</p>
+</blockquote>
+<p>Dois magos de Casas diferentes fazem juntos uma mágica que <strong>nenhum dos dois faz sozinho</strong>. É o motor de invenção do mundo e é o motivo de a corrida ser também diplomacia.</p>
+<p><strong>Fraqueza estrutural:</strong> são dois testes e dois pontos de falha; o sucesso parcial agora tem <strong>duas Casas</strong> para explicar o que saiu torto. E cada um sai da sala sabendo a fórmula do outro — e nada impede que corra a lavrar primeiro.</p>
+<p><strong>Consequência política:</strong> <strong>magia nova nasce de gente de cidades rivais na mesma sala.</strong> Toda Lavra importante vai ter, no registro de Ámenti, dois nomes de duas cidades — e uma discussão sobre a ordem em que aparecem.</p>
+<h1>12. Pendências abertas nesta decisão</h1>
+<ol>
+<li><strong>O NH de escola precisa entrar na ficha</strong> — as cinco fichas existentes ainda não o têm calculado. É passe de conta, não de pontos.</li>
+<li><strong>Fengdu vai querer licenciar o improviso.</strong> Se licenciar, vira regra de cidade e entra no <code>22</code>. Ainda não decidido.</li>
+<li><strong>A primeira Lavra da campanha</strong> — quem, de quê, e para qual Casa. É Boletim e é Pendência quando acontecer, como a primeira obra-prima.</li>
+<li><strong>Presságio e Taumatologia</strong> entraram como perícias no <code>25</code> §4 sem uso amarrado. Taumatologia é, pelo Grimório, o saber teórico da magia e a perícia da pesquisa mágica; falta decidir se ela modifica o teste de improviso ou se fica só como leitura de artefato e de matéria (<code>25</code> §8).</li>
+<li><strong>O <code>23</code> e o <code>25</code> existem só no Notion</strong> e não subiram para a pasta nem para o site. Enquanto não subirem, o site está atrasado em relação ao cânone — e este documento depende dos dois.</li>
+</ol>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/30-improviso-circulo-e-lavra.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

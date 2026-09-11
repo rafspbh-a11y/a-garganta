@@ -1,0 +1,4196 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tabela de Mágicas — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html" class="atual">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Tabela de Mágicas</h1><div class="meta">versão 3 · atualizado em 2026-09-11 · Tabelas de referência</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>429 mágicas, todas as escolas, com pré-requisito, energia e tempo.</strong> Transcrita da Relação das Mágicas do <strong>GURPS Magia</strong>, com as escolas renomeadas pelo livro e as Casas concedentes pela tabela viva do <code>17</code> §6.6, refeita em 10/09/2026 (<code>25</code>). <strong>Acrescentadas em 11/09/2026 (<code>31</code>):</strong> o colégio <strong>Clima</strong> com a sub-escola de <strong>Eletricidade</strong> do <em>Grimório</em>, e as quatro mágicas de Grimório que a decisão 1 do <code>25</code> nomeou.
+<strong>Toda mágica é Mental/Difícil</strong>, salvo as marcadas com <strong>*</strong> — essas são Mental/Muito Difícil.</p>
+</blockquote>
+<h1>Como se compra uma mágica</h1>
+<p>A Aptidão Mágica <strong>levanta o IQ efetivo</strong> com que você compra: IQ 14 + Aptidão 2 = <strong>IQ efetivo 16</strong>. A partir daí vale a tabela mental de Difícil:</p>
+<table>
+<thead>
+<tr>
+<th>Nível da mágica</th>
+<th>Relativo ao IQ efetivo</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IQ_ef −2</td>
+<td><strong>mínimo comprável</strong></td>
+<td><strong>1 ponto</strong></td>
+</tr>
+<tr>
+<td>IQ_ef −1</td>
+<td></td>
+<td>2 pontos</td>
+</tr>
+<tr>
+<td>IQ_ef +0</td>
+<td></td>
+<td>4 pontos</td>
+</tr>
+<tr>
+<td>IQ_ef +1</td>
+<td></td>
+<td>6 pontos</td>
+</tr>
+<tr>
+<td>IQ_ef +2</td>
+<td></td>
+<td>8 pontos</td>
+</tr>
+<tr>
+<td>IQ_ef +3</td>
+<td></td>
+<td>10 pontos</td>
+</tr>
+<tr>
+<td>IQ_ef +4</td>
+<td></td>
+<td>12 pontos</td>
+</tr>
+<tr>
+<td>IQ_ef +5</td>
+<td></td>
+<td>14 pontos</td>
+</tr>
+</tbody>
+</table>
+<p>Acima de +5, <strong>2 pontos</strong> por nível — e <strong>4 pontos</strong> por nível nas marcadas com <strong>*</strong>, que são Muito Difícil (nelas o mínimo de 1 ponto compra IQ_ef −3).</p>
+<blockquote>
+<p><strong>O mínimo é 1 ponto por mágica, e o livro é literal nisso.</strong>
+<em>GURPS Magia</em>, pág. 4: "Para aprender uma mágica, é necessário gastar no mínimo um ponto com ela, mesmo que você seja brilhante e abençoado com a Aptidão Mágica. Qualquer estudo de menos e a mágica simplesmente não 'funcionará'."
+Logo <strong>não existe mágica de ½ ponto</strong>. Numa mágica Difícil, 1 ponto compra <strong>IQ efetivo −2</strong> — esse é o chão. Ficha que traga meia mágica está errada e volta para conserto.</p>
+</blockquote>
+<p><strong>Memória Eidética também levanta o IQ de aprendizado:</strong> +1 no primeiro nível, +2 no segundo, e para por aí. <strong>Aptidão Mágica não passa de 3 níveis</strong> — é teto de livro, não de mesa.</p>
+<h1>Redução de energia por nível</h1>
+<table>
+<thead>
+<tr>
+<th>NH efetivo</th>
+<th>Energia</th>
+<th>Ritual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≤ 11</td>
+<td>—</td>
+<td>mãos e pés livres; <strong>dobro do tempo</strong></td>
+</tr>
+<tr>
+<td>12–14</td>
+<td>—</td>
+<td>poucas palavras e um gesto; tempo normal</td>
+</tr>
+<tr>
+<td>15–17</td>
+<td><strong>−1</strong></td>
+<td>uma ou duas palavras e dois dedos; move 1 hex por turno</td>
+</tr>
+<tr>
+<td>18–19</td>
+<td>−1</td>
+<td>palavra <strong>ou</strong> gesto, não os dois</td>
+</tr>
+<tr>
+<td><strong>20</strong></td>
+<td><strong>−2</strong></td>
+<td>palavra <strong>ou</strong> gesto, não os dois</td>
+</tr>
+<tr>
+<td>21–24</td>
+<td>−2</td>
+<td>sem ritual; <strong>tempo pela metade</strong></td>
+</tr>
+<tr>
+<td>≥ 25</td>
+<td><strong>−3</strong>, e −1 a cada +5</td>
+<td>tempo em ¼, e metade a cada +5</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>O degrau de −2 abre no 20, não no 18.</strong> <em>GURPS Magia</em>, pág. 7: "A partir do nível 15, o custo em energia da mágica diminui 1 ponto… A partir do nível 20, o custo em energia da mágica é reduzido em 2 pontos." A faixa 18–20 muda o <strong>ritual</strong> já no 18, mas a <strong>energia</strong> só no 20. Retificação de 10/09/2026 — a versão anterior desta tabela dava −2 a partir do 18 e barateava mágica que não devia baratear.</p>
+</blockquote>
+<p><strong>O NH é o modificado pela intensidade de mana.</strong> Logo o <strong>+2 da mana alta dos andares 9 a 20 conta para chegar ao 15</strong> — e aí a redução do livro <strong>soma</strong> com a metade de fadiga da faixa alta. Do 9 para baixo o mago é mais barato do que parece.</p>
+<p>Com NH 15+, uma mágica de manutenção 1 <strong>se sustenta indefinidamente sem custo</strong>.</p>
+<h1>Como se lê a tabela</h1>
+<p><strong>Classe: são oito</strong> — Comum · Área · Projétil · Bloqueio · Informação · <strong>Resistível</strong> · Encantamento · Especial. <strong>Toda mágica Resistível pertence também a outra classe</strong>, e é por isso que a coluna traz coisas como <code>Com/R-IQ</code> ou <code>Área/R-HT</code>: a primeira parte é a classe de operação, o <strong>R−</strong> diz contra o que o objetivo resiste.
+<strong>Energia:</strong> dois números separados por barra são <em>fazer/manter</em>. <strong>/m</strong> = manter custa metade. <strong>/i</strong> = manter custa o mesmo. <strong>#</strong> = varia, ver o livro.
+<strong>Área:</strong> o custo é o <strong>custo básico multiplicado pelo raio em hexágonos</strong> — é por isso que Silêncio de raio 3 custa 6 e não 2.
+<strong>Pré-requisito: AM</strong> = Aptidão Mágica. <strong>Toda cadeia tem que estar comprada</strong>, até a raiz. Mágica sem pré-requisito na ficha é mágica que não se lança.
+<strong>Fora do domínio da sua Casa:</strong> impossível de comprar, <strong>não impossível de ter</strong> — mas exige acordo, e acordo tem dono e tem dívida (<code>17</code> §6.6).</p>
+<h1>Comunicação e Empatia</h1>
+<p><strong>Casas que concedem:</strong> Hermes · Thoth · Oxum · Exu · Loki</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compartilhar Idioma</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>3/1</td>
+<td>Emprestar Idioma</td>
+</tr>
+<tr>
+<td>Compartilhar Perícia</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>4/3</td>
+<td>Emprestar Perícia</td>
+</tr>
+<tr>
+<td>Compulsão p/ Verdade</td>
+<td>Inform/R-IQ</td>
+<td>1 seg</td>
+<td>5 min</td>
+<td>4/2</td>
+<td>AM 2, Percepção Veracidade</td>
+</tr>
+<tr>
+<td>Controle de Pessoas</td>
+<td>Com/R-IQ</td>
+<td>10 seg</td>
+<td>1 min</td>
+<td>6/3</td>
+<td>Passageiro da Alma ou Telepatia</td>
+</tr>
+<tr>
+<td>Dom das Letras*</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Compartilhar Idioma, 3 línguas c/ NH 10+</td>
+</tr>
+<tr>
+<td>Dom das Línguas*</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Compartilhar Idioma, 3 línguas c/ NH 10+</td>
+</tr>
+<tr>
+<td>Emprestar Idioma</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>3/1</td>
+<td>Transmissão de Pensamento</td>
+</tr>
+<tr>
+<td>Emprestar Perícia</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Transmissão de Pensamento, IQ 12+</td>
+</tr>
+<tr>
+<td>Esconder Pensamentos</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>10 min</td>
+<td>3/1</td>
+<td>Percepção da Veracidade</td>
+</tr>
+<tr>
+<td>Exorcismo</td>
+<td>Com/R-mágica</td>
+<td>10 seg</td>
+<td>Inst.</td>
+<td>10</td>
+<td>Passageiro da Alma ou Possessão#</td>
+</tr>
+<tr>
+<td>Leitura da Mente</td>
+<td>Com/R-IQ</td>
+<td>10 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Percepção da Veracidade</td>
+</tr>
+<tr>
+<td>Passageiro da Alma</td>
+<td>Com/R-IQ</td>
+<td>3seg</td>
+<td>1 min</td>
+<td>5/2</td>
+<td>Leitura da Mente</td>
+</tr>
+<tr>
+<td>Percepção da Veracidade</td>
+<td>Inform/R-IQ</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>2</td>
+<td>Percepção de Emoções</td>
+</tr>
+<tr>
+<td>Percepção de Emoções</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>2</td>
+<td>Percepção de Inimigos</td>
+</tr>
+<tr>
+<td>Percepção de Inimigos</td>
+<td>Inform/Área</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1 (mín. 2)#</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Percepção de Vida</td>
+<td>Inform/Área</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>0,5 (mín. 1)#</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Persuasão</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2x bônus#</td>
+<td>Percepção de Emoções</td>
+</tr>
+<tr>
+<td>Possessão Permanente*</td>
+<td>Com/R-IQ</td>
+<td>5 min</td>
+<td>Indef.</td>
+<td>30</td>
+<td>AM 3, Possessão</td>
+</tr>
+<tr>
+<td>Possessão*</td>
+<td>Com/R-IQ</td>
+<td>1 min</td>
+<td>1 min</td>
+<td>10/4</td>
+<td>AM + Controle de Pessoas ou Possessão de Animais</td>
+</tr>
+<tr>
+<td>Sonda Mental*</td>
+<td>Com/R-IQ</td>
+<td>1 min</td>
+<td>1 min</td>
+<td>6/3</td>
+<td>Leitura da Mente</td>
+</tr>
+<tr>
+<td>Telepatia*</td>
+<td>Comum</td>
+<td>4 seg</td>
+<td>1 min</td>
+<td>4/4#</td>
+<td>Transmissão de Pensamentos</td>
+</tr>
+<tr>
+<td>Transmissão de Pensamento</td>
+<td>Comum</td>
+<td>4 seg</td>
+<td>1 min</td>
+<td>4/4</td>
+<td>Leitura da Mente</td>
+</tr>
+<tr>
+<td>Trocar de Corpo*</td>
+<td>Com/R-IQ</td>
+<td>1 h.</td>
+<td>Perm</td>
+<td>120</td>
+<td>Possessão Permanente, Aprisionar Alma</td>
+</tr>
+</tbody>
+</table>
+<h1>Movimentação</h1>
+<p><strong>Casas que concedem:</strong> Hermes · Vayu · Kukulkán · Exu</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acelerar*</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>10 seg</td>
+<td>5#</td>
+<td>AM, Apressar, IQ 12+</td>
+</tr>
+<tr>
+<td>Andar nas Paredes</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1 por 25 kg/h#</td>
+<td>Aporte</td>
+</tr>
+<tr>
+<td>Aporte</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>varia#</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Apressar</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>2/1#</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Chave-mestra</td>
+<td>C/R-Trava Magica</td>
+<td>10 seg</td>
+<td>Perm.</td>
+<td>3#</td>
+<td>Serralheiro ou Aporte + AM 2</td>
+</tr>
+<tr>
+<td>Cola</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>10 min</td>
+<td>3/3</td>
+<td>Apressar</td>
+</tr>
+<tr>
+<td>Corpo Etéreo*</td>
+<td>Comum</td>
+<td>30 seg</td>
+<td>10 seg</td>
+<td>8/4</td>
+<td>6 mág. Moviment. ou AM 3+ Corpo de Ar</td>
+</tr>
+<tr>
+<td>Desatar</td>
+<td>Com/R-Esp.</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>3 ou 6#</td>
+<td>Serralheiro</td>
+</tr>
+<tr>
+<td>Deslizar</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/2</td>
+<td>Aporte, Ensebar — <em>Grimório</em></td>
+</tr>
+<tr>
+<td>Ensebar</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>10 min</td>
+<td>3/i</td>
+<td>Apressar — <em>Grimório</em></td>
+</tr>
+<tr>
+<td>Faca Alada</td>
+<td>Projétil</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1 por 0,5 kg#</td>
+<td>Poltergeist</td>
+</tr>
+<tr>
+<td>Golem de Ar</td>
+<td>Comum</td>
+<td>10 seg</td>
+<td>1h</td>
+<td>4/2</td>
+<td>AM 2, Aporte</td>
+</tr>
+<tr>
+<td>Levitação</td>
+<td>Com/R-IQ</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>1 por 40 kg/h#</td>
+<td>Aporte</td>
+</tr>
+<tr>
+<td>Manipular</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>4/3#</td>
+<td>Serralheiro</td>
+</tr>
+<tr>
+<td>Marcha Forçada</td>
+<td>Comum</td>
+<td>1 min</td>
+<td>1 dia marcha</td>
+<td>4#</td>
+<td>AM, Apressar</td>
+</tr>
+<tr>
+<td>Poltergeist</td>
+<td>Projétil</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1 ou 2#</td>
+<td>Aporte</td>
+</tr>
+<tr>
+<td>Queda Lenta</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1 por 25 kg/h</td>
+<td>Aporte</td>
+</tr>
+<tr>
+<td>Reduzir Carga</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>10 min</td>
+<td>3 ou 5/h#</td>
+<td>Aporte</td>
+</tr>
+<tr>
+<td>Serralheiro</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min #</td>
+<td>2/2</td>
+<td>Aporte</td>
+</tr>
+<tr>
+<td>Teleportar Outros*</td>
+<td>Com/R-IQ+1</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>varia#</td>
+<td>AM 3, Teleporte</td>
+</tr>
+<tr>
+<td>Teleporte</td>
+<td>Especial</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>varia#</td>
+<td>Voo do Falcão ou IQ 15+</td>
+</tr>
+<tr>
+<td>Translocação</td>
+<td>Bloqueio</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>2</td>
+<td>Teleporte</td>
+</tr>
+<tr>
+<td>Voo</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>5/3</td>
+<td>AM 2, Levitação</td>
+</tr>
+<tr>
+<td>Voo do Falcão*</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>8/4</td>
+<td>Voo</td>
+</tr>
+</tbody>
+</table>
+<h1>Som</h1>
+<p><strong>Casas que concedem:</strong> Sarasvati · Leigong</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Audição Remota</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>AM, não surdo, 4 outras mág. Som</td>
+</tr>
+<tr>
+<td>Escrever</td>
+<td>Comum</td>
+<td>1 Seg</td>
+<td>1 min</td>
+<td>3/1</td>
+<td>Voge», Alfabetização, Golem de Ar</td>
+</tr>
+<tr>
+<td>Estrondo</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>2</td>
+<td>Som</td>
+</tr>
+<tr>
+<td>Furtividade Mágica</td>
+<td>Comum</td>
+<td>3 Seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Quietude</td>
+</tr>
+<tr>
+<td>Jato de Som</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 seg</td>
+<td>1 a 4#/s</td>
+<td>Voz Amplificada</td>
+</tr>
+<tr>
+<td>Mensagem Retida</td>
+<td>Área</td>
+<td>4 seg</td>
+<td>indef. #</td>
+<td>3#</td>
+<td>AM, Vozes, Detecção de Vida</td>
+</tr>
+<tr>
+<td>Muro de Silêncio</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Silêncio</td>
+</tr>
+<tr>
+<td>Ouvido Mágico</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>4/3</td>
+<td>Aporte, Audição Remota, Visão Sonora</td>
+</tr>
+<tr>
+<td>Ouvido Mágico Invisível</td>
+<td>Comum</td>
+<td>4 seg</td>
+<td>1 min</td>
+<td>5/3</td>
+<td>Ouvido Mágico, Invisibilidade</td>
+</tr>
+<tr>
+<td>Quietude</td>
+<td>Com/R-IQ</td>
+<td>2 seg</td>
+<td>10 seg #</td>
+<td>2/1</td>
+<td>Silêncio</td>
+</tr>
+<tr>
+<td>Ruído</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>5 seg</td>
+<td>4/2</td>
+<td>Muro de Silêncio</td>
+</tr>
+<tr>
+<td>Silêncio</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Som</td>
+</tr>
+<tr>
+<td>Som</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>varia#</td>
+<td>varia#</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Visão Sonora</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>5/2</td>
+<td>Audição Aguçada</td>
+</tr>
+<tr>
+<td>Voz Possante</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>3/1</td>
+<td>Vozes, Estrondo</td>
+</tr>
+<tr>
+<td>Vozes</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Som</td>
+</tr>
+</tbody>
+</table>
+<h1>Luz e Trevas</h1>
+<p><strong>Casas que concedem:</strong> Apolo · Rá · Ixchel · Ártemis · Hades · Set · Néftis · Tezcatlipoca</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cores</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1#</td>
+<td>Luz</td>
+</tr>
+<tr>
+<td>Esconder</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>1h</td>
+<td>1 a5/s</td>
+<td>Penumbra ou Amnésia</td>
+</tr>
+<tr>
+<td>Infravisão</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/1</td>
+<td>Visão Aguçada ou 5 mág. de Luz</td>
+</tr>
+<tr>
+<td>Invisibilidade</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>5/3</td>
+<td>6 mág. Luz incl. Penumbra</td>
+</tr>
+<tr>
+<td>Jato de Luz</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Luz Constante</td>
+</tr>
+<tr>
+<td>Lampejo</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>Inst</td>
+<td>4</td>
+<td>Luz Constante</td>
+</tr>
+<tr>
+<td>Luz</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1/1</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Luz Constante</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>varia#</td>
+<td>varia</td>
+<td>Luz</td>
+</tr>
+<tr>
+<td>Moldar Trevas</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/2#</td>
+<td>Trevas</td>
+</tr>
+<tr>
+<td>Olhos de Falcão</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Visão Aguçada ou 5 mágicas de Luz#</td>
+</tr>
+<tr>
+<td>Penumbra</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>1 a 5/s</td>
+<td>Trevas</td>
+</tr>
+<tr>
+<td>Trevas</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Luz Constante</td>
+</tr>
+<tr>
+<td>Ver o Invisível</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Invisibilidade ou Visão nas Trevas + Infravisão</td>
+</tr>
+<tr>
+<td>Visão Noturna</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/1</td>
+<td>Visão Aguçada ou 5 mágicas de Luz</td>
+</tr>
+<tr>
+<td>Visão nas Trevas</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>5/2</td>
+<td>Visão Noturna ou Infravisão</td>
+</tr>
+</tbody>
+</table>
+<h1>Reconhecimento</h1>
+<p><strong>Casas que concedem:</strong> Thoth · Atena · Sarasvati · Odin</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adivinhação</td>
+<td>Informação</td>
+<td>1 h.</td>
+<td>Inst.</td>
+<td>10</td>
+<td>História, mágicas c/ elementais</td>
+</tr>
+<tr>
+<td>Analisar Mágica</td>
+<td>Inform/R-mág.</td>
+<td>1 h.</td>
+<td>Inst.</td>
+<td>8</td>
+<td>Identificação de Mágica</td>
+</tr>
+<tr>
+<td>Aura</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>3</td>
+<td>Detecção de Magia</td>
+</tr>
+<tr>
+<td>Despertador</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 semana</td>
+<td>1#</td>
+<td>Hora Certa</td>
+</tr>
+<tr>
+<td>Detecção de Magia</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>Inst.</td>
+<td>2</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Guia</td>
+<td>Informação</td>
+<td>10 seg</td>
+<td>Inst.</td>
+<td>4#</td>
+<td>AM, IQ 12+, 2 mág. Localizar</td>
+</tr>
+<tr>
+<td>História</td>
+<td>Informação</td>
+<td>seg=custo</td>
+<td>Inst.</td>
+<td>varia#</td>
+<td>Rastrear</td>
+</tr>
+<tr>
+<td>História Antiga</td>
+<td>Informação</td>
+<td>min=custo</td>
+<td>Inst</td>
+<td>varia#</td>
+<td>História</td>
+</tr>
+<tr>
+<td>Hora Certa</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>1</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Identificação de Mágica</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>2</td>
+<td>Detecção de Magia</td>
+</tr>
+<tr>
+<td>Localizadora</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>3#</td>
+<td>AM, IQ 12+, 2 Mág. Localizar</td>
+</tr>
+<tr>
+<td>Medidas</td>
+<td>Área/Inform.</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1#</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Olho Mágico</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>AM, Aporte, Visão Aguçada</td>
+</tr>
+<tr>
+<td>Olho Mágico Invisível</td>
+<td>Comum</td>
+<td>4 seg</td>
+<td>1 min</td>
+<td>5/3</td>
+<td>Olho Mágico, Invisibilidade</td>
+</tr>
+<tr>
+<td>Orientação</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>2</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Parede de Vidro</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>5 mágicas de Reconhec. ou Geovisão</td>
+</tr>
+<tr>
+<td>Percepção de Magia</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Detecção de Magia</td>
+</tr>
+<tr>
+<td>Rastrear</td>
+<td>Comum</td>
+<td>1 min</td>
+<td>1 h#</td>
+<td>3/1</td>
+<td>Localizadora</td>
+</tr>
+<tr>
+<td>Ver Segredos</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>1 min</td>
+<td>5/2</td>
+<td>Localizadora, Aura</td>
+</tr>
+<tr>
+<td>Visão de Magia</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Detecção de Magia</td>
+</tr>
+</tbody>
+</table>
+<h1>Fogo</h1>
+<p><strong>Casas que concedem:</strong> Agni · Hefesto · Xangô · Rá</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arma Flamejante</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>4/1</td>
+<td>AM 2, Calor</td>
+</tr>
+<tr>
+<td>Atear Fogo</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 seg</td>
+<td>1a4</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Bola de Fogo</td>
+<td>Projétil</td>
+<td>1 até 3 seg</td>
+<td>Inst.</td>
+<td>1 a 3#</td>
+<td>AM, Criar Fogo, Moldar Fogo</td>
+</tr>
+<tr>
+<td>Bola de Fogo Explosiva</td>
+<td>Projétil</td>
+<td>1 até 3 seg</td>
+<td>Inst.</td>
+<td>2 a 6#</td>
+<td>Bola de Fogo</td>
+</tr>
+<tr>
+<td>Calor</td>
+<td>Comum</td>
+<td>1 min</td>
+<td>1 min</td>
+<td>3/hex#</td>
+<td>Criar Fogo, Moldar Fogo</td>
+</tr>
+<tr>
+<td>Chama Essencial</td>
+<td>Área</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>3/2#</td>
+<td>6 mágicas do Fogo</td>
+</tr>
+<tr>
+<td>Criar Fogo</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Atear Fogo</td>
+</tr>
+<tr>
+<td>Extinguir Fogo</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>3/hex</td>
+<td>Atear Fogo</td>
+</tr>
+<tr>
+<td>Fogo Fantasmagórico</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1/1</td>
+<td>Moldar Fogo ou Busão Simples</td>
+</tr>
+<tr>
+<td>Frio</td>
+<td>Comum</td>
+<td>1 min</td>
+<td>1 min</td>
+<td>3/hex#</td>
+<td>Calor</td>
+</tr>
+<tr>
+<td>Imunidade ao Fogo</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/hex#</td>
+<td>Extinguir Fogo, Frio</td>
+</tr>
+<tr>
+<td>Imunidade ao Frio</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/hex#</td>
+<td>Criar Fogo, Calor</td>
+</tr>
+<tr>
+<td>Jato de Chamas</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 seg</td>
+<td>1-3/s#</td>
+<td>Criar Fogo, Moldar Fogo</td>
+</tr>
+<tr>
+<td>Moldar Fogo</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Atear Fogo</td>
+</tr>
+<tr>
+<td>Projéteis Flamejantes</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>4/2#</td>
+<td>Arma Flamejante</td>
+</tr>
+<tr>
+<td>Resistência ao Fogo</td>
+<td>Área</td>
+<td>5 min</td>
+<td>1 dia</td>
+<td>3#</td>
+<td>Extinguir Fogo</td>
+</tr>
+<tr>
+<td>Sopro de Fogo*</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 seg</td>
+<td>1a4</td>
+<td>AM, Jato de Chama, Imunidade ao Fogo</td>
+</tr>
+</tbody>
+</table>
+<h1>Ar</h1>
+<p><strong>Casas que concedem:</strong> Vayu · Kukulkán · Skadi · <strong>Hefesto</strong> (só o recorte da forja: sopro, corrente, vapor)</p>
+<blockquote>
+<p><strong>Nota.</strong> As mágicas de tempo desta tabela — Previsão do Tempo, Nuvens, Chuva, Tufão, Furacão e Relâmpago — são <strong>também</strong> do colégio <strong>Clima</strong>, e quem tem Clima as compra sem ter Ar. V. a seção <strong>Clima</strong>.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caminhar no Ar</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Moldar Ar</td>
+</tr>
+<tr>
+<td>Chuva</td>
+<td>Área</td>
+<td>1 min</td>
+<td>1h</td>
+<td>1/10/s</td>
+<td>Nuvens</td>
+</tr>
+<tr>
+<td>Corpo de Ar</td>
+<td>Com/R-HT</td>
+<td>5 seg</td>
+<td>1 min</td>
+<td>4/1</td>
+<td>Moldar Ar</td>
+</tr>
+<tr>
+<td>Criar Ar</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>5 seg #</td>
+<td>1</td>
+<td>Purificação de Ar</td>
+</tr>
+<tr>
+<td>Destruir Ar</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>2</td>
+<td>Criar Ar</td>
+</tr>
+<tr>
+<td>Eliminar Odor</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1h</td>
+<td>2#</td>
+<td>Purificação de Ar</td>
+</tr>
+<tr>
+<td>Furacão</td>
+<td>Área</td>
+<td>instante</td>
+<td>1 min#</td>
+<td>4/2</td>
+<td>Tufão</td>
+</tr>
+<tr>
+<td>Jato de Ar</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 seg</td>
+<td>1 a 3#</td>
+<td>Semear Ventos</td>
+</tr>
+<tr>
+<td>Mau Cheiro</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>5 min</td>
+<td>1#</td>
+<td>Purificação de Ar</td>
+</tr>
+<tr>
+<td>Moldar Ar</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1 a 10#</td>
+<td>Criar Ar</td>
+</tr>
+<tr>
+<td>Nuvens</td>
+<td>Área</td>
+<td>10 seg</td>
+<td>10 min</td>
+<td>1/20/s</td>
+<td>4 mág. Ar, 4 mág. Água</td>
+</tr>
+<tr>
+<td>Odor</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1h#</td>
+<td>1</td>
+<td>Eliminar Odor</td>
+</tr>
+<tr>
+<td>Previsão do Tempo</td>
+<td>Informação</td>
+<td>5 seg</td>
+<td>Inst.</td>
+<td>varia#</td>
+<td>4 mágicas de Ar</td>
+</tr>
+<tr>
+<td>Purificação de Ar</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Relâmpago</td>
+<td>Projétil</td>
+<td>1 até 3 seg</td>
+<td>Inst.</td>
+<td>1 a 3#</td>
+<td>6 mágicas de Ar</td>
+</tr>
+<tr>
+<td>Respirar Água</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Criar Ar, Dissipar Água</td>
+</tr>
+<tr>
+<td>Tufão</td>
+<td>Área</td>
+<td>instante</td>
+<td>1 min#</td>
+<td>2/1</td>
+<td>Moldar Ar</td>
+</tr>
+</tbody>
+</table>
+<h1>Água</h1>
+<p><strong>Casas que concedem:</strong> Poseidon · Varuna · Tláloc · Oxum · <strong>Hefesto</strong> (só o recorte da forja: têmpera, resfriamento, gelo)</p>
+<blockquote>
+<p><strong>Nota.</strong> Nevoeiro, Geada, Neve e Granizo são <strong>também</strong> do colégio <strong>Clima</strong> — o próprio <em>Grimório</em> as nomeia como a metade de Água da sub-escola. V. a seção <strong>Clima</strong>.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adaga de Gelo</td>
+<td>Projétil</td>
+<td>1 até 3 seg</td>
+<td>Inst.</td>
+<td>1 a 3#</td>
+<td>Esfera de Gelo ou Jato D’Água</td>
+</tr>
+<tr>
+<td>Aquavisão</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>30 seg</td>
+<td>1/1#</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>Arma Congelante</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>3/1</td>
+<td>Criar Água</td>
+</tr>
+<tr>
+<td>Camada de Gelo</td>
+<td>Área</td>
+<td>2 seg</td>
+<td>Varia#</td>
+<td>3</td>
+<td>Geada</td>
+</tr>
+<tr>
+<td>Caminhar na Água</td>
+<td>Comum</td>
+<td>4 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>Congelar</td>
+<td>Comum</td>
+<td>10 seg</td>
+<td>varia #</td>
+<td>6/hex#</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>Corpo de Água</td>
+<td>Com/R-HT</td>
+<td>5 seg</td>
+<td>1 min</td>
+<td>5/hex#</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>Criar Água</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>2/4 l</td>
+<td>Purificação de Água</td>
+</tr>
+<tr>
+<td>Descongelar</td>
+<td>Área</td>
+<td>10 seg</td>
+<td>Perm. #</td>
+<td>1#</td>
+<td>Calor ou Congelar</td>
+</tr>
+<tr>
+<td>Desidratar</td>
+<td>Com/R-HT</td>
+<td>2 seg</td>
+<td>Perm,</td>
+<td>1 a 3#</td>
+<td>5 mág. Água incl. Dissipar Água</td>
+</tr>
+<tr>
+<td>Dissipar Água</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>3</td>
+<td>Criar Água</td>
+</tr>
+<tr>
+<td>Enregelar</td>
+<td>Com/R-HT</td>
+<td>3 seg</td>
+<td>Perm.</td>
+<td>1 a 3#</td>
+<td>5 outras mág. Água, incl. Congelar e Geada</td>
+</tr>
+<tr>
+<td>Esfera de Gelo</td>
+<td>Projétil</td>
+<td>1 até 3 seg</td>
+<td>Inst.</td>
+<td>1 a 3#</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>Geada</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>varia#</td>
+<td>l</td>
+<td>Criar Á^ua, ou Frio</td>
+</tr>
+<tr>
+<td>Gelo visão</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>30 seg</td>
+<td>2/10m#</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>Granizo</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1/5/s#</td>
+<td>Neve</td>
+</tr>
+<tr>
+<td>Guarda-chuva</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>10 min</td>
+<td>1/1</td>
+<td>Moldar Água ou Escudo</td>
+</tr>
+<tr>
+<td>Gêiser*</td>
+<td>Área</td>
+<td>5 seg</td>
+<td>1 seg</td>
+<td>5/2</td>
+<td>6 mág. Água + 4 de Fogo ou 4 de Terra</td>
+</tr>
+<tr>
+<td>Localizar Água</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>2</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Moldar Água</td>
+<td>Comum</td>
+<td>2 sçg</td>
+<td>1 min</td>
+<td>1/1#</td>
+<td>Criar Água</td>
+</tr>
+<tr>
+<td>Nadar</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>6/3</td>
+<td>Moldar Água, Levitação</td>
+</tr>
+<tr>
+<td>Neve</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1h</td>
+<td>1/15#</td>
+<td>Nuvens, Geada</td>
+</tr>
+<tr>
+<td>Nevoeiro</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>Purificação de Água</td>
+<td>Especial</td>
+<td>5-10 seg\gI</td>
+<td>Perm.</td>
+<td>1/41</td>
+<td>Localizar Água</td>
+</tr>
+<tr>
+<td>Respirar Ar</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Criar Água, Destruir Ar</td>
+</tr>
+<tr>
+<td>Sapatos de Neve</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>lato de Água</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 seg</td>
+<td>1 a 3#</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>Água Essencial</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>mar/4l</td>
+<td>6 mágicas da Água</td>
+</tr>
+</tbody>
+</table>
+<h1>Clima</h1>
+<p><strong>Casas que concedem:</strong> Zeus · Thor · Indra · Tláloc · Xangô</p>
+<blockquote>
+<p><strong>Nota.</strong> Clima <strong>não é escola no livro</strong> — as mágicas de tempo estão dentro de Ar e de Água, e separá-las é decisão de Mestre que o próprio <em>Grimório</em> prevê. <strong>Na Garganta, Clima é colégio próprio</strong>, divergencia declarada (<code>23</code> §2.3).
+<strong>A concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima — e nada além</strong> (<code>31</code> §2). A fronteira é a <strong>árvore</strong>, não a lista.</p>
+</blockquote>
+<p><strong>Abre por pré-requisito, e só por isso.</strong> Em <strong>Ar</strong>: Purificação de Ar, Criar Ar, Semear Ventos, Moldar Ar, Destruir Ar. Em <strong>Água</strong>: Localizar Água, Purificação de Água, Criar Água, Moldar Água, Geada.</p>
+<p><strong>Não abre, e nenhum Mestre de Cena inventa:</strong> Jato de Ar, Corpo de Ar, Caminhar no Ar, Eliminar Odor, Odor, Mau Cheiro, Respirar Água, Respirar Ar, e os Elementais do Ar e da Água. Quem quiser uma dessas precisa de <strong>acordo</strong> — e acordo tem dono e tem dívida (<code>17</code> §6.6).</p>
+<p><strong>A corrente canônica até o raio</strong>, sete compras de 1 ponto: Purificação de Ar → Criar Ar → Semear Ventos → Moldar Ar → Previsão do Tempo → Tufão → <strong>Relâmpago</strong>. Destruir Ar serve como sexta no lugar de Previsão do Tempo.</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuva</td>
+<td>Área</td>
+<td>1 min</td>
+<td>1h</td>
+<td>1/10/s</td>
+<td>Nuvens</td>
+</tr>
+<tr>
+<td>Furacão</td>
+<td>Área</td>
+<td>instante</td>
+<td>1 min#</td>
+<td>4/2</td>
+<td>Tufão</td>
+</tr>
+<tr>
+<td>Geada</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>varia#</td>
+<td>1</td>
+<td>Criar Água ou Frio</td>
+</tr>
+<tr>
+<td>Granizo</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1/5/s#</td>
+<td>Neve</td>
+</tr>
+<tr>
+<td>Neve</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1h</td>
+<td>1/15#</td>
+<td>Nuvens, Geada</td>
+</tr>
+<tr>
+<td>Nevoeiro</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Moldar Água</td>
+</tr>
+<tr>
+<td>Nuvens</td>
+<td>Área</td>
+<td>10 seg</td>
+<td>10 min</td>
+<td>1/20/s</td>
+<td>4 mág. Ar, 4 mág. Água</td>
+</tr>
+<tr>
+<td>Previsão do Tempo</td>
+<td>Informação</td>
+<td>5 seg</td>
+<td>Inst.</td>
+<td>varia#</td>
+<td>4 mágicas de Ar</td>
+</tr>
+<tr>
+<td>Relâmpago</td>
+<td>Projétil</td>
+<td>1 até 3 seg</td>
+<td>Inst.</td>
+<td>1 a 3#</td>
+<td>6 mágicas de Ar</td>
+</tr>
+<tr>
+<td>Tufão</td>
+<td>Área</td>
+<td>instante</td>
+<td>1 min#</td>
+<td>2/1</td>
+<td>Moldar Ar</td>
+</tr>
+</tbody>
+</table>
+<h2>Sub-escola da Eletricidade</h2>
+<p>Do <em>GURPS Grimório</em>, por força da decisão 1 do <code>25</code>. <strong>Pertence a Clima, e quem concede Clima concede a sub-escola inteira.</strong> Doze mágicas, e <strong>todas penduradas em Relâmpago</strong> — o próprio livro abre a seção dizendo que <em>a Eletricidade, começando pela mágica Relâmpago, é parte da Escola do Ar</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arma Elétrica</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>4/1</td>
+<td><strong>AM 2</strong>, Relâmpago</td>
+</tr>
+<tr>
+<td>Armadura Elétrica</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>7/4</td>
+<td>AM, Relâmpago, Imunidade a Relâmpagos</td>
+</tr>
+<tr>
+<td>Bola de Relâmpagos</td>
+<td>Comum</td>
+<td>1 a 3 seg</td>
+<td>1 min</td>
+<td>2 a 6/m</td>
+<td>Aporte, Relâmpago</td>
+</tr>
+<tr>
+<td>Chicote de Relâmpago</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>10 seg</td>
+<td>1 por 2 hexes/i#</td>
+<td>AM, Relâmpago</td>
+</tr>
+<tr>
+<td>Corpo de Relâmpago*</td>
+<td>Com/R-HT</td>
+<td>5 seg</td>
+<td>1 min</td>
+<td>12/4</td>
+<td><strong>AM 2</strong>, Relâmpago</td>
+</tr>
+<tr>
+<td>Imunidade a Relâmpagos</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>6 mágicas de Ar — <strong>fronteira com Proteção e Advertência</strong></td>
+</tr>
+<tr>
+<td>Muralha de Relâmpagos</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2 a 6/i#</td>
+<td>AM, Relâmpago</td>
+</tr>
+<tr>
+<td>Nuvem de Faíscas</td>
+<td>Área</td>
+<td>1 a 5 seg</td>
+<td>10 seg</td>
+<td>1 a 5/i#</td>
+<td><strong>Moldar Ar</strong>, Relâmpago</td>
+</tr>
+<tr>
+<td>Olhar de Relâmpago*</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>1 seg</td>
+<td>1 a 4#</td>
+<td>AM, Relâmpago, Imunidade a Relâmpagos</td>
+</tr>
+<tr>
+<td>Projéteis Elétricos</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>4/2#</td>
+<td>Arma Elétrica</td>
+</tr>
+<tr>
+<td>Tempestade de Faíscas</td>
+<td>Área</td>
+<td>como Tufão</td>
+<td>1 min</td>
+<td>2, 4 ou 6/m</td>
+<td><strong>Tufão</strong>, Relâmpago</td>
+</tr>
+<tr>
+<td>Toque Chocante</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1 a 3#</td>
+<td>Relâmpago</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Duas regras que vêm com a sub-escola</strong> (<code>31</code> §5):</p>
+<p><strong>Dano elétrico atordoa.</strong> Quem sofre dano elétrico faz teste de <strong>HT+2</strong> para não ficar fisicamente atordoado (MB pág. 127). <strong>Hipoalgia dá +3</strong> ao teste, <strong>Hiperalgia dá −4</strong> à HT. Hipoalgia é Dádiva de <strong>Tyr</strong> e de <strong>Ogum</strong>.</p>
+<p><strong>Armadura metálica não protege contra dano elétrico</strong> — conta como RD 0 e DP 1. As demais armaduras protegem normalmente.</p>
+<h1>Terra</h1>
+<p><strong>Casas que concedem:</strong> <strong>Hefesto</strong> · Ogum · Geb</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carne p/ Pedra</td>
+<td>Com/R-HT</td>
+<td>2 seg</td>
+<td>Perm</td>
+<td>10/hex#</td>
+<td>Terra p/Pedra</td>
+</tr>
+<tr>
+<td>Corpo de Pedra*</td>
+<td>Com/R-HT</td>
+<td>5 seg</td>
+<td>1 min</td>
+<td>10/hex#</td>
+<td>Pedra p/Carne</td>
+</tr>
+<tr>
+<td>Criar Terra</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>4/hex#</td>
+<td>Terra p/ Pedra</td>
+</tr>
+<tr>
+<td>Geovisão</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>30 seg</td>
+<td>2/10m</td>
+<td>Moldar Terra</td>
+</tr>
+<tr>
+<td>Geolocomoção</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 seg</td>
+<td>4/3#</td>
+<td>Moldar Pedra</td>
+</tr>
+<tr>
+<td>Jato de Areia</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 seg</td>
+<td>1 a 3/s</td>
+<td>Criar Terra. Moldar Terra</td>
+</tr>
+<tr>
+<td>Identificar Metal</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1</td>
+<td>Localizar Metal — <em>Grimório</em></td>
+</tr>
+<tr>
+<td>Localizar Metal</td>
+<td>Informação</td>
+<td>10 seg</td>
+<td>Inst.</td>
+<td>3</td>
+<td>nenhum — <em>Grimório</em>, idêntica a Localizar Terra</td>
+</tr>
+<tr>
+<td>Localizar Terra</td>
+<td>Informação</td>
+<td>10 seg</td>
+<td>Inst.</td>
+<td>3</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Moldar Pedra</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/hex/2/hex#</td>
+<td>Moldar Terra + 3 outras mágicas de Terra</td>
+</tr>
+<tr>
+<td>Moldar Terra</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/hex; 1/hex p/ manter</td>
+<td>Localizar Terra</td>
+</tr>
+<tr>
+<td>Pedra p/Carne</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>Perm.</td>
+<td>10/hex#</td>
+<td>AM 2, Pedra p/Terra, Carne p/Pedra</td>
+</tr>
+<tr>
+<td>Pedra p/Terra</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>10/tiex#</td>
+<td>Terra p/ Pedra ou 4 mág. Terra</td>
+</tr>
+<tr>
+<td>Projétil de Pedra</td>
+<td>Projétil</td>
+<td>1 energia</td>
+<td>Inst.</td>
+<td>1 a 3#</td>
+<td>Criar Terra</td>
+</tr>
+<tr>
+<td>Soterramento</td>
+<td>Com/R-HT</td>
+<td>3 seg</td>
+<td>Perm.</td>
+<td>10#</td>
+<td>AM 2, 5 mágicas de Terra</td>
+</tr>
+<tr>
+<td>Terra p/ Ar</td>
+<td>Comum</td>
+<td>2 seg</td>
+<td>Perm.</td>
+<td>8/hex#</td>
+<td>Criar Ar, Moldar Ar</td>
+</tr>
+<tr>
+<td>Terra p/ Pedra</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>5/hex#</td>
+<td>AM, Moldar Terra</td>
+</tr>
+<tr>
+<td>Terremoto</td>
+<td>Área</td>
+<td>30 seg</td>
+<td>1 min</td>
+<td>212</td>
+<td>AM 2, 6 mág Terra incl. Geovisão</td>
+</tr>
+<tr>
+<td>Vulcão</td>
+<td>Comum</td>
+<td>1 h.</td>
+<td>1 dia</td>
+<td>15/10</td>
+<td>Terremoto, 6 mágicas de Fogo</td>
+</tr>
+</tbody>
+</table>
+<h1>Elementais (sub-seção de Ar, Água, Fogo e Terra)</h1>
+<p><strong>Casas que concedem:</strong> quem concede o elemento correspondente</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Controlar Elemental</td>
+<td>Especial</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>Especial</td>
+<td>Convocar Elemental</td>
+</tr>
+<tr>
+<td>Convocar Elemental</td>
+<td>Especial</td>
+<td>30 seg</td>
+<td>1h#</td>
+<td>4</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Criar Elemental</td>
+<td>Especial</td>
+<td>Especial</td>
+<td>Perm.</td>
+<td>Especial</td>
+<td>AM 2, Controlar Elemental</td>
+</tr>
+</tbody>
+</table>
+<h1>Cura</h1>
+<p><strong>Casas que concedem:</strong> Apolo · Ísis · Ixchel · Oxum</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Animação Suspensa</td>
+<td>Com/R-HT</td>
+<td>30 seg</td>
+<td>Indef. #</td>
+<td>6</td>
+<td>Sono, 4 mágicas de Cura</td>
+</tr>
+<tr>
+<td>Compartilhar Força</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Especial</td>
+<td>varia#</td>
+<td>Dar ST</td>
+</tr>
+<tr>
+<td>Cura Profunda*</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>1 a 4#</td>
+<td>AM, Cura Superficial</td>
+</tr>
+<tr>
+<td>Cura Superficial</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>1 a 3#</td>
+<td>Dar Vitalidade</td>
+</tr>
+<tr>
+<td>Curar Doenças</td>
+<td>Comum</td>
+<td>10 min</td>
+<td>Inst</td>
+<td>4#</td>
+<td>Esterilizar, Cura Profunda</td>
+</tr>
+<tr>
+<td>Dar Força</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>varia#</td>
+<td>AM ou vant. Empatia</td>
+</tr>
+<tr>
+<td>Dar Vitalidade</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 h</td>
+<td>1 por HT cedida</td>
+<td>Dar Força</td>
+</tr>
+<tr>
+<td>Despertar</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1</td>
+<td>Dar HT</td>
+</tr>
+<tr>
+<td>Esterilizar</td>
+<td>Área</td>
+<td>variável</td>
+<td>Inst</td>
+<td>3/hex#</td>
+<td>Deteriorar ou Controle de Insetos</td>
+</tr>
+<tr>
+<td>Interromper Envelhecimento*</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>5 dias</td>
+<td>20#</td>
+<td>AM 2, 6 mágicas de Cura</td>
+</tr>
+<tr>
+<td>Juventude*</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Especial</td>
+<td>100#</td>
+<td>AM 3, Interromper Envelhecimento</td>
+</tr>
+<tr>
+<td>Neutralizar Veneno</td>
+<td>Comum</td>
+<td>30 seg</td>
+<td>Perm.</td>
+<td>5#</td>
+<td>Curar Doenças ou AM 3 + Testar Alimentos</td>
+</tr>
+<tr>
+<td>Recuperação de Força</td>
+<td>Especial</td>
+<td>Especial</td>
+<td>Especial</td>
+<td>nenhum</td>
+<td>AM, Dar Força</td>
+</tr>
+<tr>
+<td>Regeneração Instantânea*</td>
+<td>Comum</td>
+<td>Especial</td>
+<td>Perm</td>
+<td>80#</td>
+<td>AM 3, Regeneração</td>
+</tr>
+<tr>
+<td>Regeneração*</td>
+<td>Comum</td>
+<td>Especial</td>
+<td>Perm.</td>
+<td>20#</td>
+<td>AM 2, Restauração</td>
+</tr>
+<tr>
+<td>Ressurreição*</td>
+<td>Comum</td>
+<td>2 hs.</td>
+<td>Perm.</td>
+<td>300#</td>
+<td>Regeneração Instantânea, Convocação de Espíritos</td>
+</tr>
+<tr>
+<td>Restauração Instantânea*</td>
+<td>Comum</td>
+<td>Especial</td>
+<td>Perm</td>
+<td>50#</td>
+<td>AM 2, Restauração</td>
+</tr>
+<tr>
+<td>Restauração*</td>
+<td>Comum</td>
+<td>1 min</td>
+<td>Perm</td>
+<td>15#</td>
+<td>Cura Profunda</td>
+</tr>
+</tbody>
+</table>
+<h1>Proteção e Advertência</h1>
+<p><strong>Casas que concedem:</strong> Atena · Ísis · Zhong Kui · Tyr</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Armadura</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>varia#</td>
+<td>Consertar</td>
+</tr>
+<tr>
+<td>Braço de Ferro</td>
+<td>Bloqueio</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1</td>
+<td>Imunidade a Dor, DX 12+</td>
+</tr>
+<tr>
+<td>Domo Absoluto</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>6/4</td>
+<td>AM 2, Domo de Força, Escudo Antimágicas</td>
+</tr>
+<tr>
+<td>Domo Climático</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>10 h</td>
+<td>3/2</td>
+<td>2 mág. de cd 1 dos 4 elementos</td>
+</tr>
+<tr>
+<td>Domo de Força</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>10 min</td>
+<td>3/2</td>
+<td>AM, Domo Climático, Aporte</td>
+</tr>
+<tr>
+<td>Escudo</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>varia#</td>
+<td>AM 2</td>
+</tr>
+<tr>
+<td>Escudo Anti-projéteis</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>5/2</td>
+<td>Aporte ou Escudo</td>
+</tr>
+<tr>
+<td>Escudo Anti-teleporte</td>
+<td>Área</td>
+<td>10 seg</td>
+<td>1 h</td>
+<td>1/3#/s</td>
+<td>Sentinela + escudo Anti-magia ou Teleporte</td>
+</tr>
+<tr>
+<td>Neblina Mística</td>
+<td>Área</td>
+<td>5 min</td>
+<td>10 h</td>
+<td>1/1</td>
+<td>AM e Sentinela ou Escudo</td>
+</tr>
+<tr>
+<td>Percepção do Perigo</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>3</td>
+<td>Percepção de Inimigos ou vant. Noção do Perigo</td>
+</tr>
+<tr>
+<td>Reverter Projéteis</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>7/3</td>
+<td>Escudo Anti-projéteis ou Domo de Força</td>
+</tr>
+<tr>
+<td>Rouxinol</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>10 h</td>
+<td>1/2/s#</td>
+<td>Percepção do Perigo</td>
+</tr>
+<tr>
+<td>Sentinela</td>
+<td>Área</td>
+<td>10 seg</td>
+<td>10 h</td>
+<td>1/1</td>
+<td>Percepção do Perigo</td>
+</tr>
+<tr>
+<td>Trava Mágica</td>
+<td>Comum</td>
+<td>4 seg</td>
+<td>6h</td>
+<td>3/2</td>
+<td>AM</td>
+</tr>
+</tbody>
+</table>
+<h1>Controle da Mente</h1>
+<p><strong>Casas que concedem:</strong> Odin · Freyja · Yanluo</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amnésia</td>
+<td>Com/R-IQ ou</td>
+<td>10 seg</td>
+<td>1h</td>
+<td>3/3</td>
+<td>AM, Inépcia, IQ 12+</td>
+</tr>
+<tr>
+<td>Amnésia Permanente*</td>
+<td>Com/R-IQ ou</td>
+<td>1 h.</td>
+<td>Perm.</td>
+<td>15</td>
+<td>AM 2, Amnésia, IQ 13+</td>
+</tr>
+<tr>
+<td>Atordoamento Mental</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>2</td>
+<td>Torpor ou Atordoar</td>
+</tr>
+<tr>
+<td>Bravura</td>
+<td>Área/R-IQ-1</td>
+<td>1 seg</td>
+<td>1h#</td>
+<td>2#</td>
+<td>Medo</td>
+</tr>
+<tr>
+<td>Cond. Permanente*</td>
+<td>Com/R-IQ</td>
+<td>1 min</td>
+<td>Perm.</td>
+<td>30</td>
+<td>AM3, 15 mág. Controle Mente incl. Condicionamento</td>
+</tr>
+<tr>
+<td>Condicionamento</td>
+<td>Com/R-IQ</td>
+<td>30 seg</td>
+<td>Perm</td>
+<td>12</td>
+<td>AM 2, 10 mág. Controle da Mente</td>
+</tr>
+<tr>
+<td>Controle de Emoções</td>
+<td>Área/R-IQ</td>
+<td>1 seg</td>
+<td>1 h</td>
+<td>2#</td>
+<td>Lealdade</td>
+</tr>
+<tr>
+<td>Embriaguez</td>
+<td>Com/R-IQ</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>varia#</td>
+<td>Inépcia, Inabilidade</td>
+</tr>
+<tr>
+<td>Enjoo</td>
+<td>Com/R-HT</td>
+<td>4 seg</td>
+<td>1 min</td>
+<td>3/3</td>
+<td>Embriaguez ou Pestilência</td>
+</tr>
+<tr>
+<td>Escravizar*</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>30</td>
+<td>Subjugar,Telepatia</td>
+</tr>
+<tr>
+<td>Estupidez*</td>
+<td>Com/R-IQ</td>
+<td>5 seg</td>
+<td>1 mtn</td>
+<td>8/4</td>
+<td>AM 2, Amnésia</td>
+</tr>
+<tr>
+<td>Falsas Recordações</td>
+<td>Com/R-IQ</td>
+<td>5 seg</td>
+<td>varia#</td>
+<td>varia#</td>
+<td>Amnésia, 6 outras mág. Controle da Mente</td>
+</tr>
+<tr>
+<td>Fúria</td>
+<td>Com/R-I</td>
+<td>4 seg</td>
+<td>10 min#</td>
+<td>3/2</td>
+<td>Bravura</td>
+</tr>
+<tr>
+<td>Inépcia</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1 por IQ-/h</td>
+<td>IQ 12+</td>
+</tr>
+<tr>
+<td>Lealdade</td>
+<td>Com/R-SQ</td>
+<td>2seg</td>
+<td>1h</td>
+<td>2/2#</td>
+<td>Bravura. 4 outras mág. Controle da Mente</td>
+</tr>
+<tr>
+<td>Loucura</td>
+<td>Com/R-IQ-2</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Amnésia ou Embriaguez</td>
+</tr>
+<tr>
+<td>Loucura Permanente*</td>
+<td>Com/R-IQ-2</td>
+<td>10 min</td>
+<td>Perm.</td>
+<td>20</td>
+<td>AM 2, Loucura, IQ 13+</td>
+</tr>
+<tr>
+<td>Medo</td>
+<td>Área/R-IQ</td>
+<td>1 seg</td>
+<td>10 min #</td>
+<td>1#</td>
+<td>Percepção de Emoções</td>
+</tr>
+<tr>
+<td>Olfato Aguçado</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>30 min</td>
+<td>1 por +/h#</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Ouvido Aguçado</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>30 min</td>
+<td>1 por +/h#</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Pesadelo</td>
+<td>Com/R-IQ</td>
+<td>I min</td>
+<td>1h</td>
+<td>6</td>
+<td>AM 2, Visão da Morte, Medo, Sono</td>
+</tr>
+<tr>
+<td>Prontidão*</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>10 min</td>
+<td>varia#</td>
+<td>Quaisquer 2 mágicas Olhos/Ouvidos/Olfato Aguçado</td>
+</tr>
+<tr>
+<td>Pânico</td>
+<td>Área/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Medo</td>
+</tr>
+<tr>
+<td>Repelir</td>
+<td>Área</td>
+<td>1 min</td>
+<td>1 h</td>
+<td>3/3</td>
+<td>Esconder, Medo, Amnésia</td>
+</tr>
+<tr>
+<td>Retrovisão</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/1</td>
+<td>Prontidão</td>
+</tr>
+<tr>
+<td>Sabedoria</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>varia#</td>
+<td>6 outras mág. Controle da Mente</td>
+</tr>
+<tr>
+<td>Sono</td>
+<td>Com/R-HT</td>
+<td>3 seg</td>
+<td>Inst.</td>
+<td>4</td>
+<td>Torpor</td>
+</tr>
+<tr>
+<td>Sono Coletivo</td>
+<td>Área/R-HT</td>
+<td>seg=custo</td>
+<td>Inst.</td>
+<td>3#</td>
+<td>Sono, IQ 13+</td>
+</tr>
+<tr>
+<td>Sono Tranquilo</td>
+<td>Com/R-Esp.</td>
+<td>30 seg</td>
+<td>8h</td>
+<td>4</td>
+<td>Sono, Silêncio</td>
+</tr>
+<tr>
+<td>Subjugar</td>
+<td>Com/R-IQ</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>6/3</td>
+<td>AM Lealdade, 7 mág. Controle Mente</td>
+</tr>
+<tr>
+<td>Sugestão</td>
+<td>Com/R-IQ</td>
+<td>10 seg</td>
+<td>10 min</td>
+<td>4/3</td>
+<td>Controle de Emoções, Amnésia</td>
+</tr>
+<tr>
+<td>Sugestão Coletiva</td>
+<td>Área/R-IQ</td>
+<td>seg=custo</td>
+<td>10 min</td>
+<td>4/2#</td>
+<td>Sugestão</td>
+</tr>
+<tr>
+<td>Terror</td>
+<td>Área/R-IQ</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>4</td>
+<td>Medo</td>
+</tr>
+<tr>
+<td>Torpor</td>
+<td>Com/R-HT</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Inépcia</td>
+</tr>
+<tr>
+<td>Torpor Coletivo</td>
+<td>Área/R-HT</td>
+<td>seg=custo</td>
+<td>Inst.</td>
+<td>2/1#</td>
+<td>Torpor, IQ 13+</td>
+</tr>
+<tr>
+<td>Visão Aguçada</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>30 min</td>
+<td>1 por +/h#</td>
+<td>nenhum</td>
+</tr>
+</tbody>
+</table>
+<h1>Ilusão e Criação</h1>
+<p><strong>Casas que concedem:</strong> Hermes · Ixchel · Loki</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anular Criação</td>
+<td>Com/R-mágica</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1 por hex #</td>
+<td>Controle de Criação</td>
+</tr>
+<tr>
+<td>Anular Ilusão</td>
+<td>Com/R-mágica</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1/hex</td>
+<td>Controle de Ilusão</td>
+</tr>
+<tr>
+<td>Autossuficiência</td>
+<td>Área</td>
+<td>variável.</td>
+<td>varia#</td>
+<td>2</td>
+<td>Ilusão Simples</td>
+</tr>
+<tr>
+<td>Carapaça Ilusória</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/hex#</td>
+<td>Ilusão Simples</td>
+</tr>
+<tr>
+<td>Controle de Criação</td>
+<td>Com/R-Mágica</td>
+<td>2 seg</td>
+<td>Inst.</td>
+<td>1 por hex#</td>
+<td>Criar Animal ou Criar Servo</td>
+</tr>
+<tr>
+<td>Controle de Ilusão</td>
+<td>Com/R-mágica</td>
+<td>2 seg</td>
+<td>Perm.</td>
+<td>1/hex#</td>
+<td>Ilusão Perfeita</td>
+</tr>
+<tr>
+<td>Criar Animal</td>
+<td>Comum</td>
+<td>Seg=custo</td>
+<td>1 min</td>
+<td>varia#</td>
+<td>Criar Água, Criar Objeto, IQ 13+</td>
+</tr>
+<tr>
+<td>Criar Guerreiro</td>
+<td>Comum</td>
+<td>4 seg</td>
+<td>1 min</td>
+<td>4/4#</td>
+<td>Criar Servo</td>
+</tr>
+<tr>
+<td>Criar Objeto*</td>
+<td>Comum</td>
+<td>seg=custo</td>
+<td>Indef. #</td>
+<td>2/2,5 kg</td>
+<td>AM 2, Criar Terra, Ilusão Perfeita</td>
+</tr>
+<tr>
+<td>Criar Servo</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>3/1#</td>
+<td>AM 3, IQ 13+, Criar Objeto</td>
+</tr>
+<tr>
+<td>Detectar Ilusão</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>2</td>
+<td>Ilusão Simples</td>
+</tr>
+<tr>
+<td>Disfarce Ilusório</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>varia#</td>
+<td>3</td>
+<td>Ilusão Simples</td>
+</tr>
+<tr>
+<td>Ilusão Complexa</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Som,Ilusão Simples</td>
+</tr>
+<tr>
+<td>Ilusão Perfeita</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/h#</td>
+<td>AM, Ilusão Complexa</td>
+</tr>
+<tr>
+<td>Ilusão Simples</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1/h</td>
+<td>não cego, IQ 11+</td>
+</tr>
+</tbody>
+</table>
+<h1>Quebrar &amp; Consertar</h1>
+<p><strong>Casas que concedem:</strong> <strong>Hefesto · Ogum</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Afiar</td>
+<td>Comum</td>
+<td>4 seg</td>
+<td>1 min</td>
+<td>1 por 15 cm de fio#/m</td>
+<td>Consertar</td>
+</tr>
+<tr>
+<td>Consertar</td>
+<td>Comum</td>
+<td>1 seg/0,5 kg</td>
+<td>Perm.</td>
+<td>3/5 kg</td>
+<td>AM 2, Remendar</td>
+</tr>
+<tr>
+<td>Consertar Flecha</td>
+<td>Comum</td>
+<td>4 seg/flecha</td>
+<td>Perm.</td>
+<td>2 por flecha</td>
+<td>Remendar</td>
+</tr>
+<tr>
+<td>Copiar</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>Perm.</td>
+<td>2 mais 1/cópia</td>
+<td>Alfabetização, Tingir</td>
+</tr>
+<tr>
+<td>Desintegrar*</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>1 a 4#</td>
+<td>AM 2, Fragmentar, Estragar</td>
+</tr>
+<tr>
+<td>Endurecer</td>
+<td>Com/R-Esp.</td>
+<td>2 seg/0,5 kg</td>
+<td>10 min</td>
+<td>1 por 0,5 kg (mín. 2)/m</td>
+<td>Remendar</td>
+</tr>
+<tr>
+<td>Enfraquecer</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>Perm.</td>
+<td>2</td>
+<td>Detectar Pontos Fracos</td>
+</tr>
+<tr>
+<td>Estragar</td>
+<td>Comum</td>
+<td>5 seg/0,5 kg</td>
+<td>1 min#</td>
+<td>2 por 0,5 kg/i</td>
+<td>AM, Enfraquecer, Deteriorar</td>
+</tr>
+<tr>
+<td>Fragmentar*</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1 a 3#</td>
+<td>AM, Enfraquecer</td>
+</tr>
+<tr>
+<td>Identificar Pontos Fracos</td>
+<td>Informação</td>
+<td>2 seg</td>
+<td>Inst</td>
+<td>1#</td>
+<td>1 mág.de cd. dos 4 elementos</td>
+</tr>
+<tr>
+<td>Limpar</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>2/3</td>
+<td>Restaurar</td>
+</tr>
+<tr>
+<td>Nós</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>Indef. #</td>
+<td>2#</td>
+<td>Endurecer</td>
+</tr>
+<tr>
+<td>Remendar</td>
+<td>Comum</td>
+<td>4 seg\10 lbs</td>
+<td>10 min</td>
+<td>1 por 5 kg/h</td>
+<td>Enfraquecer, Restaurar</td>
+</tr>
+<tr>
+<td>Remodelar</td>
+<td>Comum</td>
+<td>10 seg</td>
+<td>1 min</td>
+<td>6/3</td>
+<td>AM, Enfraquecer, Moldar Terra ou Moldar Plantas</td>
+</tr>
+<tr>
+<td>Resistência a Choques</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1h</td>
+<td>3/3</td>
+<td>Consertar, Fragmentar</td>
+</tr>
+<tr>
+<td>Restaurar</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>10 min</td>
+<td>2 por hex/h</td>
+<td>Enfraquecer ou Ilusão Simples</td>
+</tr>
+<tr>
+<td>Tingir</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>2D dias</td>
+<td>varia#</td>
+<td>Restaurar, Cores</td>
+</tr>
+</tbody>
+</table>
+<h1>Controle do Corpo</h1>
+<p><strong>Casas que concedem:</strong> <strong>Sekhmet · Tezcatlipoca · Ixchel</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alterar a Face</td>
+<td>Com./R-HT</td>
+<td>1 min</td>
+<td>1 h#</td>
+<td>4/3#</td>
+<td>Metamorfose ou Ilusão Perfeita#</td>
+</tr>
+<tr>
+<td>Alterar o Corpo</td>
+<td>Comum/R-HT</td>
+<td>2 min</td>
+<td>1 h#</td>
+<td>8/6#</td>
+<td>Alterar a Face</td>
+</tr>
+<tr>
+<td>Atordoar (Atordoamento)</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>2</td>
+<td>Dor</td>
+</tr>
+<tr>
+<td>Atrofiar Membro</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>5</td>
+<td>AM 2, Paralisar Membros</td>
+</tr>
+<tr>
+<td>Cansaço</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1 por ST-/h</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Cegar</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>10 seg</td>
+<td>4/2</td>
+<td>1 mágica de Controle #</td>
+</tr>
+<tr>
+<td>Coceira</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>Até passar#</td>
+<td>2</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Destreza</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2 por DX+/s</td>
+<td>Inabilidade</td>
+</tr>
+<tr>
+<td>Desviar Curso</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>3</td>
+<td>Trança-pés</td>
+</tr>
+<tr>
+<td>Dor</td>
+<td>Com/R-HT</td>
+<td>2 seg</td>
+<td>1 seg</td>
+<td>2</td>
+<td>Espasmo</td>
+</tr>
+<tr>
+<td>Emudecer</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>10 seg</td>
+<td>3/1</td>
+<td>Espasmo</td>
+</tr>
+<tr>
+<td>Ensurdecer</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>10 seg</td>
+<td>3/1</td>
+<td>2 Mágicas Som, Espasmo</td>
+</tr>
+<tr>
+<td>Escalada</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1 a3/s</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Espasmo</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>Um momento</td>
+<td>2</td>
+<td>Coceira</td>
+</tr>
+<tr>
+<td>Estorvar</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>1 a 4/s</td>
+<td>Apressar ou Inabilidade</td>
+</tr>
+<tr>
+<td>Força</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2 por ST+/s</td>
+<td>Dar Força</td>
+</tr>
+<tr>
+<td>Imunidade à Dor</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4a</td>
+<td>AM 2, Dor</td>
+</tr>
+<tr>
+<td>Inabilidade</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>varia#</td>
+<td>Espasmo</td>
+</tr>
+<tr>
+<td>Paralisar Membro</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3#</td>
+<td>AM, 5 mág. Controle do Corpo incl. Dor</td>
+</tr>
+<tr>
+<td>Paralisia Total</td>
+<td>Com/R-HT</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>5#</td>
+<td>Paralisar Membros</td>
+</tr>
+<tr>
+<td>Projétil de Maldição</td>
+<td>Projétil</td>
+<td>1 seg+o.mg.</td>
+<td>Varia#</td>
+<td>2</td>
+<td>AM 2 + outra mágica</td>
+</tr>
+<tr>
+<td>Pés Plantados</td>
+<td>Com/R-ST</td>
+<td>1 seg</td>
+<td>1 mín#</td>
+<td>3</td>
+<td>Estorvar</td>
+</tr>
+<tr>
+<td>Toque Mortal</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1a3</td>
+<td>Atrofiar Membro</td>
+</tr>
+<tr>
+<td>Trança-pés</td>
+<td>Com/R-DX</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>2</td>
+<td>Inabilidade</td>
+</tr>
+<tr>
+<td>Vigor</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2 por HT+/s#</td>
+<td>Dar Vitalidade</td>
+</tr>
+</tbody>
+</table>
+<h1>Animais</h1>
+<p><strong>Casas que concedem:</strong> Oxóssi · Ártemis</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acalmar Animais</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.#</td>
+<td>1a3</td>
+<td>Persuasão ou Vant. Empatia c/Animais</td>
+</tr>
+<tr>
+<td>Cavalgar (mágica)</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>5 min</td>
+<td>2/1</td>
+<td>2 mágicas Luz, Espasmo</td>
+</tr>
+<tr>
+<td>Conexão c/Animais</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>Especial</td>
+<td>3</td>
+<td>Convocação de Animais</td>
+</tr>
+<tr>
+<td>Controle de Insetos</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Acalmar Animais</td>
+</tr>
+<tr>
+<td>Controle de Mamíferos</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>5/3</td>
+<td>Acalmar Animais ou Subjugar</td>
+</tr>
+<tr>
+<td>Controle de Moluscos</td>
+<td>Com/R-IQ</td>
+<td>1 aeg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Acalmar Amimais</td>
+</tr>
+<tr>
+<td>Controle de Peixes</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Acalmar Amimais</td>
+</tr>
+<tr>
+<td>Controle de Pássaros</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Acalmar Amimais</td>
+</tr>
+<tr>
+<td>Controle de Répteis</td>
+<td>Com/R-IQ</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Acalmar Animais</td>
+</tr>
+<tr>
+<td>Convocação de Animais</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/2#</td>
+<td>Acalmar Animais</td>
+</tr>
+<tr>
+<td>Dominar Animais</td>
+<td>Com/Bl/R-IQ</td>
+<td>1 seg</td>
+<td>Indef.</td>
+<td>2</td>
+<td>Acalmar Animais</td>
+</tr>
+<tr>
+<td>Falar c/ Animais</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>4/2</td>
+<td>Convocação de Animais</td>
+</tr>
+<tr>
+<td>Localizar Animais</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>3#</td>
+<td>Conv. Animais, Localizadora ou 2 Mág. Localizar</td>
+</tr>
+<tr>
+<td>Metamorfose*</td>
+<td>Especial</td>
+<td>3 seg</td>
+<td>1h</td>
+<td>6/2</td>
+<td>AM + 6 outras mágicas</td>
+</tr>
+<tr>
+<td>Metamorfosear Outros*</td>
+<td>Especial/R-IQ</td>
+<td>30 seg</td>
+<td>1h</td>
+<td>6/2</td>
+<td>AM 2, Metamorfose p/ aquela forma</td>
+</tr>
+<tr>
+<td>Passageiro Interno</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>4/1</td>
+<td>2 mág, Controle de Animais</td>
+</tr>
+<tr>
+<td>Possessão de Animais</td>
+<td>Com/R-IQ</td>
+<td>5 seg</td>
+<td>1 min</td>
+<td>6/2</td>
+<td>Passageiro Interno ou Possessão</td>
+</tr>
+</tbody>
+</table>
+<h1>Plantas</h1>
+<p><strong>Casas que concedem:</strong> Deméter · Oxóssi · Ixchel</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abençoar Plantas</td>
+<td>Área</td>
+<td>5 min</td>
+<td>1 colheita/estação</td>
+<td>1#</td>
+<td>Curar Plantas</td>
+</tr>
+<tr>
+<td>Alarme Florestal</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>10 h</td>
+<td>0,5#/s</td>
+<td>4 mágicas de Plantas</td>
+</tr>
+<tr>
+<td>Animação de Plantas</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>1 min</td>
+<td>varia#</td>
+<td>7 mágicas de Plantas</td>
+</tr>
+<tr>
+<td>Crescimento de Plantas</td>
+<td>Área</td>
+<td>10 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Curar Plantas</td>
+</tr>
+<tr>
+<td>Criar Planta</td>
+<td>Área</td>
+<td>seg=custo</td>
+<td>Perm.</td>
+<td>varia#</td>
+<td>AM, Crescimento de Plantas</td>
+</tr>
+<tr>
+<td>Curar Plantas</td>
+<td>Área</td>
+<td>1 min</td>
+<td>Perm.</td>
+<td>3#</td>
+<td>Identificação de Plantas</td>
+</tr>
+<tr>
+<td>Entrelaçamento</td>
+<td>Área</td>
+<td>2 seg</td>
+<td>1 min</td>
+<td>1 ou 2#/h</td>
+<td>Crescimento de Plantas</td>
+</tr>
+<tr>
+<td>Esconder Trilha</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>2/1</td>
+<td>Curar Planta*</td>
+</tr>
+<tr>
+<td>Forma de Planta</td>
+<td>Especial</td>
+<td>1 seg</td>
+<td>1h</td>
+<td>5/2</td>
+<td>AM, 6 mág. Plantas</td>
+</tr>
+<tr>
+<td>Identificação de Plantas</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>2</td>
+<td>Localizar Plantas</td>
+</tr>
+<tr>
+<td>Localizar Planta</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>2</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Moldar Plantas</td>
+<td>Comum</td>
+<td>10 seg</td>
+<td>1 min</td>
+<td>3/1#</td>
+<td>Identificação de Planta</td>
+</tr>
+<tr>
+<td>Murchar Planta</td>
+<td>Área/R-HT</td>
+<td>10 seg</td>
+<td>Perm.</td>
+<td>2</td>
+<td>Crescimento de Plantas</td>
+</tr>
+<tr>
+<td>Percepção de Plantas</td>
+<td>C/R-Esc. Trilha</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>Alarme Florestal, Esconder Rastros</td>
+</tr>
+</tbody>
+</table>
+<h1>Alimentos</h1>
+<p><strong>Casas que concedem:</strong> <strong>Deméter · Oxum · Ixchel</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Banquete</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 dia</td>
+<td>2 por refeição</td>
+<td>AM, Cozinhar, Inépcia</td>
+</tr>
+<tr>
+<td>Banquete de Monge</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>24 h</td>
+<td>6</td>
+<td>Banquete, Imunidade a Dor</td>
+</tr>
+<tr>
+<td>Cozinhar</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>Inst.</td>
+<td>1 por refeição</td>
+<td>Testar Alimento, Criar Fogo</td>
+</tr>
+<tr>
+<td>Criar Alimento</td>
+<td>Comum</td>
+<td>30 seg</td>
+<td>Perm.</td>
+<td>3/refeição</td>
+<td>Cozinhar, Localizar Alimento</td>
+</tr>
+<tr>
+<td>Destilar</td>
+<td>Comum</td>
+<td>10 seg</td>
+<td>Perm.</td>
+<td>1/250 ml</td>
+<td>Fermentar, Dissipar Água</td>
+</tr>
+<tr>
+<td>Deteriorar</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>1/refeição</td>
+<td>Testar Alimento</td>
+</tr>
+<tr>
+<td>Envenenar Alimentos</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>3 por refeição</td>
+<td>Purificação de Alimentos, Deteriorar</td>
+</tr>
+<tr>
+<td>Fermentar</td>
+<td>Comum</td>
+<td>10 seg</td>
+<td>1 h</td>
+<td>1 por litro, ou por pão</td>
+<td>Deteriorar</td>
+</tr>
+<tr>
+<td>Localizar Alimento</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst</td>
+<td>2</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Preservar Alimentos</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>1 semana</td>
+<td>especial#</td>
+<td>Esterilizar, Testar Alimentos</td>
+</tr>
+<tr>
+<td>Purificação de Alimento</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>1 por 0,5 kg</td>
+<td>Preservar Alimentos ou Deteriorar</td>
+</tr>
+<tr>
+<td>Testar Alimento</td>
+<td>Informação</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>1 a 3#</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Água p/Vinho</td>
+<td>Comum</td>
+<td>10 seg</td>
+<td>Perm.</td>
+<td>4 por 4l#</td>
+<td>Purificação de Água, Fermentar</td>
+</tr>
+</tbody>
+</table>
+<h1>Meta-mágicas</h1>
+<p><strong>Casas que concedem:</strong> Thoth · Odin — sempre com pré-requisito pesado</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anular Mágica</td>
+<td>Área/R-mágica</td>
+<td>seg=custo</td>
+<td>Perm.</td>
+<td>3</td>
+<td>Contramágica + 12 outras mág.</td>
+</tr>
+<tr>
+<td>Ativação de Runas*</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>nenhuma</td>
+<td>AM, Ciência das Runas 12+</td>
+</tr>
+<tr>
+<td>Bênção</td>
+<td>Comum</td>
+<td>min=custo</td>
+<td>especial</td>
+<td>especial</td>
+<td>AM 2, 2 mág. 10 esc. dif.</td>
+</tr>
+<tr>
+<td>Conexão</td>
+<td>Área</td>
+<td>4 h.</td>
+<td>Indef.#</td>
+<td>8</td>
+<td>Retardo</td>
+</tr>
+<tr>
+<td>Contramágica</td>
+<td>Com/R-Mágica</td>
+<td>5 seg</td>
+<td>Inst.</td>
+<td>varia#</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Drenar Mana*</td>
+<td>Área</td>
+<td>1 h.</td>
+<td>Perm.</td>
+<td>10</td>
+<td>Anular Mágica, 1 mág. 10 esc. dif.</td>
+</tr>
+<tr>
+<td>Escamotear Magia</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>10 h</td>
+<td>1 a 5#/s</td>
+<td>Detecção de Magia</td>
+</tr>
+<tr>
+<td>Escudo Antimágicas</td>
+<td>Área</td>
+<td>1 seg</td>
+<td>1 min</td>
+<td>3/2</td>
+<td>AM 2, Resguardar, Resistência a Magia</td>
+</tr>
+<tr>
+<td>Maldição</td>
+<td>Comum</td>
+<td>variável</td>
+<td>Especial</td>
+<td>varia#</td>
+<td>AM 2, 2 mág. 10 esc. dif.</td>
+</tr>
+<tr>
+<td>Pentagrama</td>
+<td>Especial</td>
+<td>5 seg/hex</td>
+<td>Perm.</td>
+<td>10/hex#</td>
+<td>Escudo Anti-mágicas</td>
+</tr>
+<tr>
+<td>Proteção</td>
+<td>Bl/R-mágica</td>
+<td>nenhum</td>
+<td>Inst.</td>
+<td>2 ou 3#</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Proteção Total</td>
+<td>Bloq/R-mágica</td>
+<td>nenhum</td>
+<td>Inst.</td>
+<td>1 por objetivo#</td>
+<td>AM 2, Proteção</td>
+</tr>
+<tr>
+<td>Refletir</td>
+<td>Bl/R-mágica</td>
+<td>nenhum</td>
+<td>Inst.</td>
+<td>4 ou 6#</td>
+<td>Proteção</td>
+</tr>
+<tr>
+<td>Reflexo</td>
+<td>Especial</td>
+<td>10 seg</td>
+<td>1 h</td>
+<td>varia#</td>
+<td>Proteção, Retardo</td>
+</tr>
+<tr>
+<td>Remoção de Maldição</td>
+<td>Com/R-mágica</td>
+<td>1 h.</td>
+<td>Inst.</td>
+<td>20</td>
+<td>AM 2, 1 mág. 15 esc. dif.</td>
+</tr>
+<tr>
+<td>Resguardar</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>10 h</td>
+<td>3/1#</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Resguardar Área</td>
+<td>Área</td>
+<td>seg=custo</td>
+<td>10 h</td>
+<td>3/2</td>
+<td>Resguardar</td>
+</tr>
+<tr>
+<td>Resistência a Magia</td>
+<td>Com/R-IQ+AM</td>
+<td>3 seg</td>
+<td>1 min</td>
+<td>1 a 5/s</td>
+<td>AM, 1 mág. 7 esc. dif.</td>
+</tr>
+<tr>
+<td>Restaurar Mana*</td>
+<td>Área</td>
+<td>1 h.</td>
+<td>Perm.</td>
+<td>10</td>
+<td>Anular Mágica, 1 mág. 10 esc. dif.</td>
+</tr>
+<tr>
+<td>Retardo</td>
+<td>Comum</td>
+<td>10 seg</td>
+<td>2h</td>
+<td>3/3</td>
+<td>AM 3+10 mág.</td>
+</tr>
+</tbody>
+</table>
+<h1>Necromancia</h1>
+<p><strong>Casas que concedem:</strong> <strong>REGULADA.</strong> Ámenti e Fengdu, e só com licença</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Animação*</td>
+<td>Comum</td>
+<td>5 seg</td>
+<td>1 min</td>
+<td>varia#</td>
+<td>Convocar Espíritos</td>
+</tr>
+<tr>
+<td>Aprisionar Alma*</td>
+<td>Comum</td>
+<td>1 min</td>
+<td>Perm.</td>
+<td>8</td>
+<td>AM, 6 mág. Necro. incl. Roubar ST</td>
+</tr>
+<tr>
+<td>Controle de Zumbi</td>
+<td>Com/R-mágica</td>
+<td>1 seg</td>
+<td>Perm.</td>
+<td>3</td>
+<td>Zumbi</td>
+</tr>
+<tr>
+<td>Convocar Demônio</td>
+<td>Especial</td>
+<td>5 min</td>
+<td>1h#</td>
+<td>20</td>
+<td>AM, 1 mág. 10 esc. dif.</td>
+</tr>
+<tr>
+<td>Convocar Sombra*</td>
+<td>Inform/R-IQ</td>
+<td>10 min</td>
+<td>1 min</td>
+<td>50/20</td>
+<td>Convocação de Espíritos</td>
+</tr>
+<tr>
+<td>Convocar de Espírito</td>
+<td>Inform/R-IQ</td>
+<td>5 min</td>
+<td>1 min</td>
+<td>20/10#</td>
+<td>Visão da Morte AM 2</td>
+</tr>
+<tr>
+<td>Convocação Extradimensional</td>
+<td>Especial</td>
+<td>5 min</td>
+<td>varia#</td>
+<td>20#</td>
+<td>AM, 1 mág. 10 esc. dif.</td>
+</tr>
+<tr>
+<td>Envelhecer*</td>
+<td>Com/R-HT</td>
+<td>1 min</td>
+<td>Perm.</td>
+<td>5 a 50</td>
+<td>Juventude ou 6 outras mágicas Necromânticas</td>
+</tr>
+<tr>
+<td>Espantar Zumbi</td>
+<td>Área</td>
+<td>2 seg</td>
+<td>1 dia</td>
+<td>2#</td>
+<td>Zumbi#</td>
+</tr>
+<tr>
+<td>Espírito de Caveira</td>
+<td>Comum</td>
+<td>1 seg</td>
+<td>24 h</td>
+<td>20</td>
+<td>4 outras mágicas Necrominticas</td>
+</tr>
+<tr>
+<td>Expulsar</td>
+<td>Esp/R-ST+IQ</td>
+<td>5 seg</td>
+<td>Inst.</td>
+<td>Especial</td>
+<td>AM, 1 mágica de 10 esc. dif.</td>
+</tr>
+<tr>
+<td>Percepção de Espíritos</td>
+<td>Inform/Área</td>
+<td>1 seg</td>
+<td>Inst.</td>
+<td>0,5</td>
+<td>Visão da Morte ou Percepção de Vida + AM</td>
+</tr>
+<tr>
+<td>Pestilência</td>
+<td>Comum</td>
+<td>30 seg</td>
+<td>Perm.</td>
+<td>6</td>
+<td>AM, Roubar HT, Deteriorar</td>
+</tr>
+<tr>
+<td>Roubar Força</td>
+<td>Comum</td>
+<td>1 min\3 ST</td>
+<td>Perm.</td>
+<td>nenhum#</td>
+<td>Cura Superficial</td>
+</tr>
+<tr>
+<td>Roubar Juventude*</td>
+<td>Com/R-HT</td>
+<td>1 h.</td>
+<td>Perm.</td>
+<td>10 a 30</td>
+<td>Juventude, Envelhecimento, Roubar HT</td>
+</tr>
+<tr>
+<td>Roubar Vitalidade</td>
+<td>Comum</td>
+<td>1 min\3 HT</td>
+<td>Perm</td>
+<td>nenhum#</td>
+<td>Roubar ST</td>
+</tr>
+<tr>
+<td>Visão da Morte</td>
+<td>Comum</td>
+<td>3 seg</td>
+<td>1 seg</td>
+<td>2</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Zumbi</td>
+<td>Comum</td>
+<td>1 mim.</td>
+<td>Perm.</td>
+<td>8#</td>
+<td>Convocação de Espíritos, Dar HT</td>
+</tr>
+</tbody>
+</table>
+<h1>Encantamentos</h1>
+<p><strong>Casas que concedem:</strong> <strong>Hefesto · Thoth · Ogum</strong> — é o que fabrica item mágico</p>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Classe</th>
+<th>Tempo</th>
+<th>Duração</th>
+<th>Energia</th>
+<th>Pré-requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arma Dançante</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>1.000/0,5 kg#</td>
+<td>Golem de Ar</td>
+</tr>
+<tr>
+<td>Bola de Cristal</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>1.000</td>
+<td>Adivinhação (Cristalomancia)</td>
+</tr>
+<tr>
+<td>Cajado</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>30</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Cornucópia</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>50× valor $#</td>
+<td>AM 2, 2 Encantamentos de Armas</td>
+</tr>
+<tr>
+<td>Denominar</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>200 ou 400#</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Desejo*</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>—</td>
+<td>250</td>
+<td>AM 2 Pequeno Desejo, 1 mág. 15 esc. dif.</td>
+</tr>
+<tr>
+<td>Desviar</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>varia#</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Eliminar</td>
+<td>Encantamento</td>
+<td>-</td>
+<td>Perm.</td>
+<td>100#</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Encantar*</td>
+<td>Encantamento</td>
+<td>variável</td>
+<td>Perm.</td>
+<td>varia#</td>
+<td>AM 2, mág. 10 esc. dif.</td>
+</tr>
+<tr>
+<td>Encobrir</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>50#</td>
+<td>Criar Objeto, Reduzir o Peso</td>
+</tr>
+<tr>
+<td>Energização</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>varia#</td>
+<td>Recuperação de Força</td>
+</tr>
+<tr>
+<td>Enrijecer</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>Varia#</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Espada Fiel</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>750 por 0,5 kg#</td>
+<td>Aporte</td>
+</tr>
+<tr>
+<td>Feitiço</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>200</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Gema de Energia</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>20 por operação</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Golem*</td>
+<td>Encantamento</td>
+<td>variavel</td>
+<td>Perm.</td>
+<td>varia#</td>
+<td>Moldar Terra, Animação#</td>
+</tr>
+<tr>
+<td>Grande Desejo*</td>
+<td>Enacantamento</td>
+<td>—</td>
+<td>—</td>
+<td>2.000</td>
+<td>AM 3, Desejo, (DX+IQ)=30+</td>
+</tr>
+<tr>
+<td>Limite</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>200</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Pequeno Desejo*</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>—</td>
+<td>180</td>
+<td>AM, 1 mág. 10 esc. dif.</td>
+</tr>
+<tr>
+<td>Pergaminho Mágico</td>
+<td>Encantamento</td>
+<td>dias=custo</td>
+<td>varia#</td>
+<td>especial</td>
+<td>AM, vant. Alfabetização</td>
+</tr>
+<tr>
+<td>Precisão</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm</td>
+<td>varia#</td>
+<td>Destreza</td>
+</tr>
+<tr>
+<td>Pujança</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>varia#</td>
+<td>5 mágicas de Terra</td>
+</tr>
+<tr>
+<td>Reduzir o Peso</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>varia#</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Remoção de Encantamento</td>
+<td>Encantamento</td>
+<td>variável</td>
+<td>Perm.</td>
+<td>100#</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Sacar Rápido</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>300/0,5 kg #</td>
+<td>Aporte</td>
+</tr>
+<tr>
+<td>Senha</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm.</td>
+<td>400#</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Suspensão de Encantamento</td>
+<td>Encantamento</td>
+<td>1 seg</td>
+<td>1 h.</td>
+<td>25#</td>
+<td>Encantar</td>
+</tr>
+<tr>
+<td>Velocidade</td>
+<td>Encantamento</td>
+<td>—</td>
+<td>Perm</td>
+<td>500#</td>
+<td>Apressar</td>
+</tr>
+</tbody>
+</table>
+<h1>Mágicas de fronteira</h1>
+<p><strong>Onze</strong> mágicas que o livro registra em <strong>duas escolas ao mesmo tempo</strong>. Elas estão listadas acima na primeira escola, e <strong>quem tiver qualquer uma das duas Casas pode comprá-las</strong>.</p>
+<blockquote>
+<p><strong>A fronteira abre a escola, não dispensa o pré-requisito</strong> (<code>31</code> §7). <strong>Imunidade a Relâmpagos</strong> é o caso que ensina: ela é de Eletricidade <strong>e</strong> de Proteção e Advertência, mas exige <strong>6 mágicas de Ar</strong> — que nenhum marcado de Atena, Ísis, Zhong Kui ou Tyr consegue ter.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Escolas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Audição Remota</td>
+<td>Som/Reconhec.</td>
+</tr>
+<tr>
+<td>Chuva</td>
+<td>Ar/Água</td>
+</tr>
+<tr>
+<td>Conexão</td>
+<td>Conex/Meta</td>
+</tr>
+<tr>
+<td>Enjoo</td>
+<td>Mente/Corpo</td>
+</tr>
+<tr>
+<td>Geovisão</td>
+<td>Terra/Reconhec.</td>
+</tr>
+<tr>
+<td>Nadar</td>
+<td>Água/Movimt.</td>
+</tr>
+<tr>
+<td>Ouvido Aguçado</td>
+<td>Mente/Som</td>
+</tr>
+<tr>
+<td>Respirar Água</td>
+<td>Ar/Água</td>
+</tr>
+<tr>
+<td>Ressurreição*</td>
+<td>Cura/Necro.</td>
+</tr>
+<tr>
+<td>Imunidade a Relâmpagos</td>
+<td>Eletricidade/Proteção</td>
+</tr>
+<tr>
+<td>Terra p/ Ar</td>
+<td>Terra/Ar</td>
+</tr>
+</tbody>
+</table>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/27-magias.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

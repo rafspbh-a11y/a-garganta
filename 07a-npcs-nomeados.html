@@ -1,0 +1,219 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NPCs Nomeados — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html" class="atual">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>NPCs Nomeados</h1><div class="meta">versão 1 · atualizado em 2026-09-11 · O mundo</div></div>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Regra de ouro:</strong> nenhum deles resolve o problema dos jogadores. Quando um jogador recorrer a um nome grande, a resposta padrão é que ele está ocupado, comprometido politicamente, ou impedido por acordo entre cidades. É por isso que a Guilda contrata gente como o jogador.</p>
+</blockquote>
+<p>Nenhum Mestre de Cena mata, promove, corrompe ou casa um destes sem Pendência. Podem aparecer livremente em cena.</p>
+<h1>A GUILDA</h1>
+<h2>KORVAS DE ANÉIS — Mestre do Registro</h2>
+<p><em>Rank aposentado (foi A). 60 anos. Sem cidade declarada.</em></p>
+<p>Homem pequeno, meticuloso, usa um anel por erro que o Registro cometeu sob a mão dele — sete, em toda uma vida de cargo. Sabe o nome ligado a cada um dos sete, e diz o nome a quem perguntar com respeito, porque erro escondido é como um registro apodrece. Nasceu em Ônfalos, renunciou à cidadania para assumir o cargo, e essa renúncia é o que torna a Guilda crível.</p>
+<p><strong>Agenda:</strong> manter o registro funcionando. Só isso, e com fanatismo.</p>
+<p><strong>Rival:</strong> a embaixadora de Ámenti, que quer os arquivos da Guilda.</p>
+<p><em>Como usar:</em> é ele quem promove, e é ele quem segura promoção por motivo político. Justo, inflexível, e não gosta de ninguém.</p>
+<h2>MIRA SEIS-DEDOS — Corretora de Informação</h2>
+<p><em>Rank C, e escolheu parar aí. 34 anos. Limiar.</em></p>
+<p>Perdeu quatro dedos no andar 9 e ganhou uma profissão. Sabe onde ficam os bolsões de mana nula, quais rotas estão instáveis, e quem deve a quem.</p>
+<p><strong>Agenda:</strong> vender informação a todos e a ninguém em exclusividade.</p>
+<p><strong>Rival:</strong> o serviço de arquivo de Ámenti, que faz de graça o que ela cobra.</p>
+<p><em>Como usar:</em> é o balcão de informação da campanha. Cobra, e o preço às vezes é um favor.</p>
+<h1>ÔNFALOS</h1>
+<h2>TERSANDRO DE ÔNFALOS — Rank S</h2>
+<p><em>41 anos. Marcado por Atena.</em></p>
+<p>Chegou ao andar 27. Segundo aventureiro vivo mais fundo. Fala pouco, planeja demais, e nunca perdeu um subordinado — fato que ele repete e que os arquivos confirmam.</p>
+<p><strong>Agenda:</strong> chegar à porta do andar 29 antes de qualquer outra cidade.</p>
+<p><strong>Rival:</strong> Halvard de Gapheim, e o desprezo é mútuo e público.</p>
+<p><em>Por que não ajuda:</em> prepara a expedição há dois anos e não desvia por nada.</p>
+<h2>KALLISTHE — Embaixadora no Limiar</h2>
+<p><em>38 anos. Marcada por Hermes.</em></p>
+<p>Brilhante, encantadora, e a melhor negociadora das sete embaixadas. Ônfalos a mandou para cá porque em casa ela era perigosa demais.</p>
+<p><strong>Agenda:</strong> construir a coalizão que Ônfalos nunca consegue formar sozinha.</p>
+<p><strong>Rival:</strong> o adido de Fengdu, que a supera em paciência.</p>
+<h1>ÁMENTI</h1>
+<h2>NEBET-KA — Embaixadora e Escriba-Mor</h2>
+<p><em>52 anos. Marcada por Thoth.</em></p>
+<p>Registra tudo. Lembra tudo. Nunca ameaça — apenas menciona um arquivo, e a outra parte entende.</p>
+<p><strong>Agenda:</strong> obter os registros da Guilda e centralizar em Ámenti a memória da Garganta.</p>
+<p><strong>Rival:</strong> Korvas, que não cede.</p>
+<p><em>Como usar:</em> fonte de informação incomparável, e nada é gratuito. Cobra em favores futuros indeterminados, e cobra.</p>
+<h2>HOR-SETI — Sacerdote de Anúbis</h2>
+<p><em>47 anos. Trata das petições de intercessão.</em></p>
+<p>Recebe famílias em luto e famílias ricas, e diz não a quase todas. É honesto sobre a taxa de sucesso, o que o torna impopular dentro do próprio sacerdócio.</p>
+<p><strong>Agenda:</strong> manter a intercessão honesta num sistema que lucra com esperança.</p>
+<p><strong>Rival:</strong> o próprio Tribunal.</p>
+<p><em>Como usar:</em> é quem os jogadores procuram quando alguém morre. Ele vai dizer não, com respeito, e explicar por quê.</p>
+<h1>GAPHEIM</h1>
+<h2>HALVARD OLHO-QUEBRADO — Rank S</h2>
+<p><em>49 anos. Marcado por Odin.</em></p>
+<p>O mais fundo que já voltou: andar 30, há dezenove anos, sozinho, de sete que desceram. Nunca disse o que viu. Bebe, ri alto, e é muito mais inteligente do que aparenta.</p>
+<p><strong>Agenda:</strong> desconhecida. Odin não conta a ninguém o que planeja, e Halvard sabe que é peça.</p>
+<p><strong>Rival:</strong> Tersandro, publicamente.</p>
+<p><em>Por que não ajuda:</em> ele diria que sim, iria junto, e trairia o grupo se Odin quisesse. Está em toda cena como tentação perigosa.</p>
+<h2>SIGRUN A LEI-DITA — Juíza do Thing no Limiar</h2>
+<p><em>44 anos. Marcada por Tyr.</em></p>
+<p>Resolve disputas entre aventureiros de Gapheim, e cada vez mais entre cidades, porque as pessoas confiam nela. Nunca quebrou palavra dada, e isso é verificável.</p>
+<p><strong>Agenda:</strong> que juramento signifique alguma coisa onde sete leis se contradizem.</p>
+<p><strong>Rival:</strong> ninguém. É o problema dela — intocável, e por isso sem aliados.</p>
+<h1>TULÁN</h1>
+<h2>IXKAB TREZE-VENTO — Sacerdotisa-Calendarista</h2>
+<p><em>36 anos. Marcada por Ixchel.</em></p>
+<p>Determina quando Tulán pode agir. As outras seis cidades a consideram obstáculo burocrático e não entendem que ela está lendo algo real.</p>
+<p><strong>Agenda:</strong> as datas apontam para uma convergência daqui a onze meses.</p>
+<p><strong>Rival:</strong> o sacerdócio de Tezcatlipoca, que quer o cargo.</p>
+<p><em>Como usar:</em> dá prazos ao mundo. Quando ela diz que Tulán não pode agir antes de tal data, isso é obstáculo real e alavanca política.</p>
+<h2>YAX BALAM — Rank A, Comandante de Contenção</h2>
+<p><em>33 anos. Marcado por Huitzilopochtli.</em></p>
+<p>Comanda a maior operação de contenção rasa do Limiar. Trezentos aventureiros sob coordenação dele. Competente, exausto, e ninguém agradece.</p>
+<p><strong>Agenda:</strong> manter a Pressão baixa nos andares 1 a 10 com recursos que minguam.</p>
+<p><strong>Rival:</strong> todas as cidades que retiram esquadras da contenção para caçar glória no fundo.</p>
+<p><em>Como usar:</em> <strong>é ele quem contrata os jogadores de rank baixo.</strong> Direto, justo, sem tempo para conversa. Ganhar o respeito dele vale mais que ouro.</p>
+<h1>FENGDU</h1>
+<h2>O ADIDO WEN — Embaixador</h2>
+<p><em>Idade não declarada. Passou nos exames em primeiro lugar, há muito tempo.</em></p>
+<p>Cortês, ilegível, e ainda estará ali quando todos os outros embaixadores tiverem sido substituídos. Fengdu pensa em séculos e mandou o homem certo.</p>
+<p><strong>Agenda:</strong> que Fengdu esteja bem posicionada quando o que quer que esteja acontecendo terminar.</p>
+<p><strong>Rival:</strong> Kallisthe, que ele supera em paciência e perde em charme.</p>
+<h2>ZHOU LI — Caçadora, Rank B</h2>
+<p><em>29 anos. Marcada por Zhong Kui.</em></p>
+<p>Especialista no que atravessou uma porta. É quem a Guilda chama quando aparece algo que não deveria estar ali.</p>
+<p><strong>Agenda:</strong> catalogar cada aparição fora de lugar e provar o padrão.</p>
+<p><strong>Rival:</strong> a burocracia da própria cidade, que engaveta seus relatórios.</p>
+<p><em>Como usar:</em> aliada natural de jogadores que percebam o padrão. E é uma das poucas dispostas a ajudar de fato — porque precisa de testemunhas.</p>
+<h1>AMARAVATI</h1>
+<h2>RAJ INDRAVARMAN — Embaixador</h2>
+<p><em>58 anos. Marcado por Varuna.</em></p>
+<p>Representa a única cidade que reconhece a reivindicação dos Nagas sobre trechos profundos do poço. Isso o deixa isolado e ele não parece se importar.</p>
+<p><strong>Agenda:</strong> impedir que as sete cidades tratem o poço como propriedade.</p>
+<p><strong>Rival:</strong> todas as outras seis embaixadas, cordialmente.</p>
+<h2>DEVAKI — Maga, Rank A</h2>
+<p><em>44 anos. Marcada por Agni. Aptidão Mágica alta.</em></p>
+<p>A maior autoridade viva sobre mana profunda. Mapeou quatro bolsões de mana nula e vendeu a localização de dois.</p>
+<p><strong>Agenda:</strong> entender por que a mana aumenta com a profundidade. Ninguém mais está fazendo essa pergunta.</p>
+<p><strong>Rival:</strong> Mira Seis-Dedos, que revende o que ela descobre.</p>
+<h1>ILÊ IFÉ</h1>
+<h2>BABALORIXÁ ADEBAYO — Chefe do Conselho no Limiar</h2>
+<p><em>61 anos.</em></p>
+<p>Faz as leituras que orientam as descidas de Ilê Ifé. As outras cidades zombaram por trezentos anos, e pararam de zombar nos últimos três, porque as leituras dele têm acertado com frequência desconfortável.</p>
+<p><strong>Agenda:</strong> fazer as outras seis entenderem que a Garganta é caminho, não destino — antes que a insistência delas custe caro.</p>
+<p><strong>Rival:</strong> ninguém declarado. Ele não compete.</p>
+<p><em>Como usar:</em> é a voz que diz a coisa certa cedo demais para alguém acreditar.</p>
+<h2>FUNMILAYO — Rank B, Batedora</h2>
+<p><em>31 anos. Marcada por Oxóssi.</em></p>
+<p>Mapeou mais rotas dos andares 11 a 14 que qualquer pessoa viva. Trabalha sozinha por escolha, e vende mapas a quem paga.</p>
+<p><strong>Agenda:</strong> encontrar o que ela chama de <strong>oitava porta</strong>. Está convencida de que existe.</p>
+<p><strong>Rival:</strong> as embaixadas que querem exclusividade sobre os mapas dela. E Vantê, que foi da esquadra dela e rompeu.</p>
+<p><em>Sobre a conta dela.</em> Todo mundo diz sete portas. Funmilayo diz que seis estão localizadas, que a sétima é a de Ilê Ifé e nunca foi achada, e que a que Ônfalos reivindica foi atribuída por eliminação e não por medição — logo há uma porta a mais do que a conta oficial admite. A própria Ilê Ifé acha que ela está confundindo doutrina com cartografia: se a passagem da cidade é encruzilhada e não lugar, não há o que numerar. As outras seis nem discutem.</p>
+<p>Ela é a única pessoa viva que refez a soma em voz alta. <strong>Não narre se ela está certa.</strong> Ela mesma não sabe.</p>
+<p><em>Como usar:</em> contratável, competente, e a melhor porta de entrada para quem queira descer abaixo do 10. Se pagarem bem, leva. Se perguntarem por que ela escolheu aquelas duas rotas e não outras, muda de assunto.</p>
+<h2>VANTÊ — Rank A, Batedor</h2>
+<p><em>38 anos. Marcado por Ogum. Chefia os Doze de Baixo.</em></p>
+<p>Foi da esquadra de Funmilayo por quatro anos e rompeu com ela em praça, na frente de duas embaixadas. Comanda doze batedores e <strong>não vende mapa</strong>: vende condução. Leva o cliente, cobra pela ida, e a folha volta com ele. Diz a quem quiser ouvir que mapa vendido envelhece na mão de quem comprou, e que a Garganta muda mais rápido que o preço da tinta.</p>
+<p><strong>Agenda:</strong> que nada do que ele faz vire cargo, concessão ou selo de cidade nenhuma. Recusa exclusividade às sete embaixadas, uma por uma, e faz questão de que a recusa seja pública.</p>
+<p><strong>Rival:</strong> Funmilayo, declaradamente, e sobre método. Ela diz que ele vende dependência; ele diz que ela vende gente morta com dois anos de atraso.</p>
+<p><em>A conta que ele não fecha.</em> Jurou a Funmilayo, com testemunhas, que ela nunca paga nada a ele — nunca, por nada. Foi o preço de sair sem feud, ele odeia ter jurado, e nunca falhou.</p>
+<p><em>Como usar:</em> <strong>contrate um contra o outro, e os dois aceitam.</strong> Ele paga bem a quem refizer uma rota vendida por ela e provar que já mudou; ela paga a quem leve cliente por conta própria onde ele cobra condução. O que ele tem de melhor é rota atual e cliente vivo — e nada disso é perna dele: são doze bocas por semana, e é por isso que aceita contrato que preferia recusar.</p>
+<h1>Uso em mesa</h1>
+<p><strong>Rank alto é teto, rota e obstáculo.</strong> Você quer chegar onde eles estão, e eles não querem sair de lá.</p>
+<p><strong>Cada um tem um motivo estrutural para não ajudar:</strong> compromisso, exaustão, acordo entre cidades, agenda divina, ou falta de tempo. O Mestre escolhe o motivo que couber na cena — mas escolhe um.</p>
+<p><strong>Três exceções úteis:</strong> Yax Balam contrata rank baixo de verdade. Zhou Li quer testemunhas. Funmilayo vende serviço a quem paga. Use esses três quando o jogador precisar de tração.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/07a-npcs-nomeados.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

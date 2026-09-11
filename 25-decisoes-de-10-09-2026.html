@@ -1,0 +1,570 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>As decisões de 10/09/2026 — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html" class="atual">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>As decisões de 10/09/2026</h1><div class="meta">versão 1 · atualizado em 2026-09-11 · Decisões e retificações</div></div>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Treze Pendências decididas de uma vez pelo Árbitro, em 10/09/2026.</strong> Duas já tinham fechado antes com o livro na mão (Voz Melodiosa e valor do Inimigo). As treze abaixo mudam cânone aberto. <strong>Onde este documento divergir do <code>17</code>, do <code>02</code> ou do <code>03</code>, vale este documento</strong>, e as páginas afetadas receberam remissão.</p>
+</blockquote>
+<h1>1 · O Grimório entra na Garganta — SIM</h1>
+<p>O <strong>GURPS Grimório</strong> passa a ser livro de mesa, ao lado do Módulo Básico e do Magia. Ordem de precedência: Módulo Básico → Magia → Grimório. Onde o Grimório contradisser um dos dois anteriores, vale o anterior; onde ele <strong>acrescentar</strong>, o acréscimo vale.</p>
+<p><strong>O que entra imediatamente:</strong> <strong>Ensebar</strong>, <strong>Deslizar</strong>, <strong>Localizar Metal</strong> e <strong>Identificar Metal</strong> — e com elas o ramo de Movimentação que estava suspenso na ficha de Runirsson Ákmon.</p>
+<p><strong>E entram escolas novas.</strong> O Grimório acrescenta seções que o <em>Magia</em> não tem. Elas entram <strong>como sub-escolas</strong>, não como escolas próprias, e cada uma pertence à escola-mãe para efeito de concessão:</p>
+<table>
+<thead>
+<tr>
+<th>Sub-escola do Grimório</th>
+<th>Pertence a</th>
+<th>Quem concede</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metal e Plástico</td>
+<td><strong>Terra</strong></td>
+<td>quem concede Terra</td>
+</tr>
+<tr>
+<td>Gelo</td>
+<td><strong>Água</strong></td>
+<td>quem concede Água</td>
+</tr>
+<tr>
+<td>Ácido</td>
+<td><strong>Água</strong></td>
+<td>quem concede Água</td>
+</tr>
+<tr>
+<td>Eletricidade</td>
+<td><strong>Clima</strong></td>
+<td>quem concede Clima</td>
+</tr>
+<tr>
+<td>Clima–Ar e Clima–Água</td>
+<td><strong>Clima</strong></td>
+<td>quem concede Clima</td>
+</tr>
+<tr>
+<td>Radiação</td>
+<td><strong>fechada</strong></td>
+<td>ninguém — não existe na Garganta</td>
+</tr>
+<tr>
+<td>Acesso</td>
+<td><strong>fechada na criação</strong></td>
+<td>Pendência, como já estava</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Consequência política, e ela é grande.</strong> Quem concede <strong>Clima</strong> passa a conceder <strong>raio</strong> de verdade — a sub-escola da Eletricidade. Zeus, Thor, Indra, Tláloc e Xangô ganham a arma que o mito sempre lhes deu e a tabela não dava. Isso muda a matemática de combate das sete cidades, e as Casas de tempestade sabem disso antes de qualquer aventureiro.</p>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Remissão, 11/09/2026.</strong> O conteúdo da sub-escola de <strong>Eletricidade</strong> e o recorte exato do colégio <strong>Clima</strong> foram fixados no <strong><code>31</code></strong>, e a tabela entrou no <code>27</code>. Das mágicas deste parágrafo, as quatro nomeadas acima já estão no <code>27</code>; <strong>Metal e Plástico, Gelo, Ácido e as Clima–Água novas do Grimório continuam sem transcrição</strong> e são Pendência (<code>31</code> §7).</p>
+</blockquote>
+<h1>2 · Hefesto ganha as Casas que faltavam — a forja inteira</h1>
+<p>A raiz de <strong>Quebrar &amp; Consertar</strong> é <em>Detectar Pontos Fracos</em>, que exige <strong>uma mágica de cada um dos quatro elementos</strong>. Hefesto dava Fogo e Terra. Faltavam Ar e Água, e por isso o ferreiro não alcançava a própria escola.</p>
+<blockquote>
+<p><strong>DECISÃO: Hefesto concede Fogo, Terra, Ar, Água e Quebrar &amp; Consertar</strong>, no recorte da forja.</p>
+</blockquote>
+<p>O argumento teológico é o próprio ofício, e não precisa de esforço: <strong>a forja é os quatro elementos ao mesmo tempo.</strong> O fogo do carvão, a terra do minério, <strong>o ar do fole</strong> e <strong>a água da têmpera</strong>. Tirar o ar e a água de Hefesto é tirar dele o fole e o balde — as duas coisas sem as quais nenhum ferreiro do mundo faz uma lâmina.</p>
+<p><strong>O recorte, e ele é estreito de propósito.</strong> O Ar e a Água de Hefesto são <strong>os da oficina</strong>: sopro, corrente, vapor, resfriamento, gelo de têmpera. <strong>Não abrem</strong> tempestade, respiração subaquática, navegação nem afogamento — isso continua sendo de Vayu, Skadi, Posêidon, Varuna, Tláloc e Oxum. Um marcado por Hefesto que quiser as mágicas de mar ou de céu precisa de acordo, como qualquer um.</p>
+<p><strong>Vale igual para Ogum</strong>, pela mesma razão e no mesmo recorte. As duas Casas de ferreiro da mesa ficam simétricas.</p>
+<p><strong>Consequência política:</strong> Hefesto passa a ser a Casa com mais colégios concedidos das sete cidades — cinco. Isso <strong>não</strong> o torna a mais poderosa: torna-o o mais <strong>cobiçado</strong>, porque quem quer entrar em Ar ou Água pela porta barata vai bater na oficina dele, e ele cobra. Posêidon e Vayu têm o que reclamar, e vão reclamar.</p>
+<p><strong>Efeito na ficha de Runirsson Ákmon:</strong> o ramo inteiro reabre. Ele pode comprar Localizar Terra (que já tem), Atear Fogo (que já tem), mais uma de Ar e uma de Água, e aí <strong>Detectar Pontos Fracos → Enfraquecer → Restaurar → Remendar → Consertar → Afiar</strong>. Com 22 pontos livres, cabe.</p>
+<h1>3 · Restaurar — vale a tabela</h1>
+<p>O corpo do verbete diz <em>"Pré-requisito: Restaurar ou Ilusão Simples"</em>, que é auto-referência e não pode estar certo. A tabela da Relação das Mágicas diz <em>"Enfraquecer ou Ilusão Simples"</em>.</p>
+<blockquote>
+<p><strong>DECISÃO: vale a tabela.</strong> <code>Restaurar ← Enfraquecer **ou** Ilusão Simples</code>.</p>
+</blockquote>
+<p>É a única leitura que fecha, e a auto-referência tem cara de erro de tradução. <strong>E a rota por Ilusão Simples fica valendo</strong>, o que é boa política: dá a <strong>Loki e a Ixchel</strong> um atalho para consertar coisas que Hefesto não tem — o ilusionista remenda o que o ferreiro só alcança pela via longa. Gapheim vai achar isso engraçado e Ônfalos não.</p>
+<h1>4 · As quatro perícias que não existem em livro nenhum</h1>
+<p>Procuradas nos três livros. <strong>Cartografia e Intimidação não existem em nenhum.</strong> <strong>Exorcismo e Talismã</strong> aparecem no Magia e no Grimório, mas como mágica e como objeto, <strong>nunca como perícia</strong>.</p>
+<blockquote>
+<p><strong>DECISÃO: as quatro entram como perícias da casa</strong>, com a dificuldade que faz as fichas existentes fecharem <strong>sem mexer em um ponto sequer</strong>.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Perícia da casa</th>
+<th>Dificuldade</th>
+<th>Por quê, e o que ela faz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cartografia</strong></td>
+<td>Mental/Média</td>
+<td>A economia da campanha já vende mapa — o <code>17</code> diz que <em>"mapa vendido é renda passiva"</em> e o <code>03</code> precifica. Não dá para ter mercado de mapa sem a perícia que faz mapa. Levanta planta de andar, lê mapa alheio e detecta mapa falso</td>
+</tr>
+<tr>
+<td><strong>Intimidação</strong></td>
+<td>Mental/Média</td>
+<td>Fecha exatamente a ficha do Jurado do <code>08</code> (IQ 11, 6 pontos, IQ+2 = 13). Forçar reação por ameaça crível. Disputa contra Vontade do alvo</td>
+</tr>
+<tr>
+<td><strong>Exorcismo</strong></td>
+<td>Mental/Difícil</td>
+<td>Fecha a Caçadora de Fengdu (IQ 12, 8 pontos, IQ+2 = 14). <strong>Não é magia e não precisa de Aptidão</strong> — é o ofício litúrgico de pôr o morto-que-anda de volta no lugar. Fengdu e Ámenti licenciam</td>
+</tr>
+<tr>
+<td><strong>Talismã</strong></td>
+<td>Mental/Média</td>
+<td>Fecha a Caçadora (IQ 12, 6 pontos, IQ+2 = 14). Fazer, ler e reconhecer selo e talismã — inclusive falso. <strong>Não conjura</strong>: quem conjura é mago</td>
+</tr>
+</tbody>
+</table>
+<p><strong>As quatro são divergência declarada</strong>, como a decisão de Clima e a de "sem Aptidão não há feitiço". Não são erro a corrigir. <strong>Exorcismo e Talismã mudaram de nome na decisão 15.</strong></p>
+<h2>E dez perícias novas, que existem e não estavam na lista</h2>
+<p>Varridos o <em>Magia</em> e o <em>Grimório</em>, apareceram dez perícias que o Módulo Básico não tem. <strong>Entram todas</strong>, e vão para a lista do site:</p>
+<table>
+<thead>
+<tr>
+<th>Perícia</th>
+<th>Dificuldade</th>
+<th>Livro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arremesso de Mágica</td>
+<td>Física/Fácil</td>
+<td>Magia e Grimório</td>
+</tr>
+<tr>
+<td>Jato Mágico</td>
+<td>Física/Fácil</td>
+<td>Magia</td>
+</tr>
+<tr>
+<td>Sopro Mágico</td>
+<td>Física/Fácil</td>
+<td>Magia</td>
+</tr>
+<tr>
+<td>Percepção do Corpo</td>
+<td>Física/Difícil</td>
+<td>Magia</td>
+</tr>
+<tr>
+<td>Aparar Projéteis</td>
+<td>Física/Difícil</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Vôo</td>
+<td>Física/Média</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Criptologia</td>
+<td>Mental/Difícil</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Tatuagem</td>
+<td>Mental/Média</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Presságio</td>
+<td>Mental/Muito Difícil</td>
+<td>Grimório</td>
+</tr>
+<tr>
+<td>Taumatologia</td>
+<td>Mental/Muito Difícil</td>
+<td>Grimório</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Três delas mudam mesa de verdade.</strong> <strong>Arremesso de Mágica, Jato Mágico e Sopro Mágico</strong> são as perícias físicas de <em>acertar</em> com magia de projétil — sem elas, um mago de Bola de Fogo joga contra a mágica e ignora a pontaria. <strong>Taumatologia</strong> é o saber teórico sobre magia, e é o que um mago de Ámenti usa para dizer o que um artefato é sem conjurar nada. <strong>Presságio</strong> é leitura de destino: cruza direto com o Colégio Calendarista de Tulán, e o Árbitro reserva a decisão sobre quem pode comprá-la.</p>
+<h1>5 · As três escolas sem Casa ganham Casa</h1>
+<table>
+<thead>
+<tr>
+<th>Escola</th>
+<th>Casas que concedem</th>
+<th>O argumento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Controle do Corpo</strong></td>
+<td><strong>Sekhmet</strong> · <strong>Tezcatlipoca</strong> · <strong>Ixchel</strong></td>
+<td>Sekhmet é a leoa: o corpo que muda para matar e o mesmo que cura. Tezcatlipoca é o espelho fumegante, o que troca de forma — e já constava de uma lista de Luz e Trevas em uso. Ixchel governa o corpo que gesta e adoece. <strong>Loki fica de fora</strong>, e por decisão já registrada: a metamorfose dele chega como ilusão, não como transformação</td>
+</tr>
+<tr>
+<td><strong>Encantamentos</strong></td>
+<td><strong>Hefesto</strong> · <strong>Thoth</strong> · <strong>Ogum</strong></td>
+<td>Hefesto e Ogum fazem o objeto; <strong>Thoth fixa a magia nele</strong>, porque encantar é escrever, e o livro exige <strong>Alfabetização</strong> para o próprio ato de encantar. Sem escriba não há item permanente, e é por isso que Ámenti cobra caro sem levantar da cadeira</td>
+</tr>
+<tr>
+<td><strong>Alimentos</strong></td>
+<td><strong>Deméter</strong> · <strong>Oxum</strong> · <strong>Ixchel</strong></td>
+<td>Deméter é o grão, Oxum é a água doce que se bebe, Ixchel é a colheita de Tulán. As três já concediam Vegetal, Água ou Cura — Alimentos é a fronteira entre as três</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Encantamentos é a decisão econômica desta leva</strong>, não a teológica: ela diz <strong>quem fabrica item mágico na Garganta</strong>, e a resposta é "as duas forjas, com um escriba de Ámenti na sala". Isso amarra o <code>21</code> e o <code>22</code>, e é a razão pela qual item permanente é caro em política antes de ser caro em grão.</p>
+<p><strong>Alimentos tem consequência de logística:</strong> quem alimenta uma esquadra no andar 12 sem carregar comida muda o custo de expedição profunda. Isso entra no <code>03</code> na próxima revisão de preço.</p>
+<h1>6 · As três passagens — uma já estava corrigida, a outra não</h1>
+<p><strong>Resposta à pergunta do Árbitro: uma foi corrigida, a outra continuava errada.</strong></p>
+<ul>
+<li><strong>A lista de Dádivas do <code>02</code> §5 já está certa.</strong> Foi corrigida em 09/09 e hoje traz Atena, Thoth, Ogum, Hermes, Afrodite, Oxum e Sekhmet com os nomes de livro. <strong>Nada a fazer.</strong></li>
+<li><strong>O cabeçalho de derivados do <code>08</code> continuava errado.</strong> Dizia <em>"exceto Esgrima, que apara a ⅔ e permite recuo"</em>. <strong>Recuar é opção de qualquer um</strong>, e o <strong>Bastão também apara a ⅔</strong> — correção de 08/09 no <code>02</code> §2. <strong>Corrigido agora.</strong></li>
+</ul>
+<h1>7 · Luz e Trevas — a tabela aberta ganha a lista inteira</h1>
+<p>A 6.6 listava três Casas; havia uma lista mais longa em uso, com seis outras. <strong>Nenhuma das duas estava completa, e a divisão era artificial.</strong></p>
+<blockquote>
+<p><strong>DECISÃO: Luz e Trevas é concedida por Apolo · Rá · Ixchel · Ártemis · Hades · Set · Néftis · Tezcatlipoca.</strong> Oito Casas, na tabela aberta, onde qualquer jogador lê.</p>
+</blockquote>
+<p>A lógica: <strong>o colégio é um só e tem dois lados.</strong> Apolo, Rá e Ártemis governam a luz — sol, sol, lua. Hades, Set, Néftis e Tezcatlipoca governam o escuro. Ixchel governa os dois, porque a lua faz as duas coisas. Separar "Luz" de "Trevas" em tabelas diferentes era o erro.</p>
+<p><strong>Loki sai da lista.</strong> A lista mais longa o incluía, mas a decisão de 09/09 já tinha fixado que a Casa dele <strong>faz ver e faz falar, e não faz mais nada</strong>. Fica como estava.</p>
+<p><strong>Consequência que importa e que é de mesa:</strong> com oito Casas concedendo, <strong>um sacerdote que reconhece magia de Luz ou de Trevas não sabe de qual Casa ela veio.</strong> Ele sabe o colégio, não a fonte. Isso torna o colégio muito mais jogável para todo mundo — e cada Mestre de Cena deve tratá-lo assim: <strong>reconhecer o colégio é um fato; atribuir a Casa é uma acusação, e acusação precisa de prova.</strong></p>
+<h1>8 · Matéria não catalogada — classificação nova</h1>
+<p>O <code>03</code> §4 classifica <strong>item</strong> por profundidade. Não havia nada para <strong>matéria</strong>: uma coisa que não é arma, não é ferramenta e não faz nada — só é. A barra do barracão de Aristeu caiu nesse buraco e sumiu por causa dele.</p>
+<blockquote>
+<p><strong>DECISÃO: existe a classificação de MATÉRIA, em quatro graus, paralela à de item e independente dela.</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Grau</th>
+<th>O que é</th>
+<th>Registro na Guilda</th>
+<th>Quem compra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Comum</strong></td>
+<td>pedra, minério, osso, casca — tem nome e tem preço de balcão</td>
+<td>não exige</td>
+<td>qualquer forja</td>
+</tr>
+<tr>
+<td><strong>Estranha</strong></td>
+<td>propriedade fora da faixa: peso, temperatura, dureza, cor que não corresponde ao material</td>
+<td><strong>declaração obrigatória</strong> no ato do registro do espólio</td>
+<td>forjas e colégios pagam ágio</td>
+</tr>
+<tr>
+<td><strong>Anômala</strong></td>
+<td>propriedade que <strong>nenhum material conhecido tem</strong> — frio que não é gelo, borda quebrada sem fratura, ausência de mana localizada</td>
+<td><strong>declaração obrigatória + lacre da Guilda</strong>; consignação proibida sem lacre</td>
+<td>as sete cidades compram sem discutir preço</td>
+</tr>
+<tr>
+<td><strong>Interdita</strong></td>
+<td>matéria que <strong>altera o mundo em volta</strong> de modo mensurável e não reversível</td>
+<td><strong>apreensão imediata</strong>, e o Árbitro decide o destino</td>
+<td>ninguém compra; sete embaixadas disputam</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Três regras que vêm junto:</strong></p>
+<ol>
+<li><strong>Quem acha matéria Estranha ou acima e não declara comete crime de registro</strong> — o mesmo crime de espólio não declarado do <code>03</code>. Aristeu guardou uma Anômala 14 dias em consignação sem lacre.</li>
+<li><strong>Identificar o grau é rolagem, não narrativa.</strong> <strong>Comércio</strong> ou <strong>Armeiro</strong> pega Comum e Estranha; <strong>Taumatologia</strong>, <strong>Naturalista</strong> ou <strong>Detecção de Magia</strong> é o que separa Estranha de Anômala; <strong>Interdita se reconhece pelo efeito</strong>, e a essa altura já é tarde.</li>
+<li><strong>Matéria não é item e não obedece à escada de profundidade.</strong> Uma Anômala pode sair do andar 2, e a barra saiu. <strong>Isso é de propósito</strong>: item se fabrica fundo, matéria se acha onde ela estiver.</li>
+</ol>
+<p><strong>A barra é Anômala</strong>, e a leitura do rumor de Xantipa — <em>bolsão de mana nula tem origem física</em> — continua sendo do Árbitro.</p>
+<h1>9 · Canhão de palma — aprovado como Menor</h1>
+<p><em>Para quem não acompanhou:</em> é o pedido do jogador de Runirsson. Um tubo curto embutido na palma da manopla, com um espinho descartável preso a olhal e corda; <strong>uma deflagração, sem recolher e sem repetir</strong>. O próprio jogador propôs o preço: dano ou fadiga nele a cada tiro, e a mão de soco fora de serviço até esfriar.</p>
+<blockquote>
+<p><strong>DECISÃO: aprovado como item MENOR</strong>, exatamente como pedido.</p>
+</blockquote>
+<p>O <code>03</code> §4 define Menor como <strong>utilidade estreita, com material dos andares 1 a 8</strong> — e isto é a definição andando. <strong>Um tiro, alcance curto, sem recarga em combate.</strong> Roda por <strong>Arremesso de Lança</strong>, que ele já tem, como ele pediu.</p>
+<p><strong>O preço fica como o jogador escreveu, e vira regra:</strong> <strong>1d−3 de dano nele a cada disparo</strong>, ignorando a RD da própria manopla, e <strong>a mão daquele braço sai de serviço por 3 turnos</strong> — sem soco, sem aparar com ela, sem segurar nada. Ele não tem Hipoalgia, então <strong>o choque do próprio tiro derruba a DX dele no turno seguinte</strong>, pela regra normal de dor.</p>
+<p>Quando um jogador propõe o próprio preço e o preço é duro, o Árbitro homologa o preço dele. Isso vira precedente.</p>
+<h1>10 · Autômatos — Aliado, e só por magia</h1>
+<blockquote>
+<p><strong>DECISÃO: autômato é Aliado, comprado com pontos pela tabela do livro — e só existe por Encantamento.</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Regra</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custo</td>
+<td>tabela normal de Aliado: 76–100 pontos = 5 · 101–150 = 10 · 151–200 = 15, e a frequência multiplica</td>
+</tr>
+<tr>
+<td>Como se fabrica</td>
+<td><strong>só pela escola de Encantamentos</strong> — logo, só em santuário de <strong>Hefesto, Thoth ou Ogum</strong> (decisão 5)</td>
+</tr>
+<tr>
+<td>Quem pode ter</td>
+<td>qualquer um que <strong>pague os pontos e pague a fabricação</strong>; não precisa ser mago para <strong>possuir</strong>, precisa para <strong>fazer</strong></td>
+</tr>
+<tr>
+<td>Frequência</td>
+<td>autômato não falta ao trabalho: <strong>aparece quase todo o tempo, custo triplo</strong>, salvo quando quebrado</td>
+</tr>
+<tr>
+<td>Limite duro</td>
+<td><strong>não pensa.</strong> Executa ordem dita, sem julgamento, sem improviso, sem iniciativa. Ordem mal dada é ordem cumprida ao pé da letra</td>
+</tr>
+<tr>
+<td>Em bolsão de mana nula</td>
+<td><strong>para.</strong> Vira peso morto até sair de lá</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Os dois pedidos de Runirsson estão aprovados</strong> — carregador agora, minerador depois — desde que pagos em pontos e fabricados em santuário.</p>
+<p><strong>A fraqueza estrutural, e ela é a graça da coisa:</strong> o autômato é o único membro de esquadra que <strong>não pode ser convencido, subornado nem assustado — e também não pode ser avisado</strong>. Ele desce no bolsão e para. Quem confia nele para carregar a corda descobre isso no pior lugar possível.</p>
+<p><strong>Consequência política:</strong> autômato é trabalhador que não come, não cobra e não se organiza. As sete cidades têm carregadores de verdade — gente como o Dracão e o Timon. <strong>A primeira esquadra que descer com autômato em vez de carregador vai ouvir sobre isso no Limiar</strong>, e não dos deuses.</p>
+<h1>11 · Fabricação com fadiga adiantada — aprovada</h1>
+<blockquote>
+<p><strong>DECISÃO: pode.</strong> Gravar o selo na oficina, pagar a energia ali, acionar depois.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Regra</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Onde</td>
+<td><strong>santuário da Casa que concede a escola da mágica gravada</strong>, nunca em campo</td>
+</tr>
+<tr>
+<td>Custo em energia</td>
+<td><strong>o custo normal da mágica × 3</strong>, pago no ato da gravação, em fadiga do gravador</td>
+</tr>
+<tr>
+<td>Tempo</td>
+<td><strong>1 hora por ponto de energia</strong> gasto</td>
+</tr>
+<tr>
+<td>Cargas</td>
+<td><strong>uma.</strong> Selo gasto é selo morto</td>
+</tr>
+<tr>
+<td>Quem grava</td>
+<td>precisa da <strong>Aptidão Mágica</strong>, da mágica em NH 15 ou mais, e de <strong>Alfabetização</strong> — gravar é escrever</td>
+</tr>
+<tr>
+<td>Teto</td>
+<td><strong>nunca acima de Notável</strong> (<code>03</code> §4). Selo não vira artefato</td>
+</tr>
+<tr>
+<td>Em mana nula</td>
+<td><strong>não dispara</strong>, e a carga <strong>não se perde</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>O ×3 é o preço de descolar o esforço do momento.</strong> Adiantar fadiga custa fadiga e meia a mais, e essa é a razão de ninguém encher a mochila de selos: cada um custa três vezes o que custaria conjurar na hora, e só serve uma vez.</p>
+<h1>12 · Talismã acionado por condição — aprovado, com uma trava</h1>
+<blockquote>
+<p><strong>DECISÃO: pode.</strong> Selo que dispara por condição — peso, calor, passagem — e não pela vontade de quem gravou.</p>
+</blockquote>
+<p>Tudo da decisão 11 vale, <strong>mais</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Regra</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custo</td>
+<td><strong>×4</strong> em vez de ×3 — a condição custa um ponto a mais de trabalho</td>
+</tr>
+<tr>
+<td>A condição</td>
+<td><strong>declarada por escrito na hora de gravar</strong>, em uma frase, e <strong>nunca alterada depois</strong></td>
+</tr>
+<tr>
+<td>Precisão</td>
+<td>condição física simples: peso sobre a placa, calor acima de tal ponto, corpo atravessando o vão. <strong>Não distingue amigo de inimigo</strong></td>
+</tr>
+<tr>
+<td>Trava</td>
+<td><strong>o selo dispara no primeiro que satisfizer a condição</strong>, e o primeiro é muitas vezes o próprio grupo</td>
+</tr>
+<tr>
+<td>Registro</td>
+<td>armadilha gravada em área de passagem é <strong>declarável à Guilda</strong> como qualquer risco deixado em andar</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A trava é a fraqueza estrutural e não se afrouxa:</strong> uma armadilha que não distingue é uma armadilha que pega quem voltar pelo mesmo caminho. Quem grava, anota onde gravou — ou aprende.</p>
+<h1>13 · Rito de retificação de folha de contrato — homologado como foi inventado</h1>
+<p>O Mestre de Cena da mesa conjunta da Semana 1 inventou o rito em cena. <strong>Está homologado como está, sem uma vírgula mudada</strong>, e vira regra da Guilda:</p>
+<blockquote>
+<p><strong>Linha assinada não se apaga.</strong> Alteração é <strong>retificação numerada</strong>, com firma do escrivão e do contratante, dizendo <strong>de quê para quê</strong>. A retificação é copiada para o Registro junto com a folha, e <strong>Korvas de Anéis lê as duas</strong>.</p>
+</blockquote>
+<p>Homologo sem mexer por três motivos. É <strong>a mesma regra que o próprio cânone usa</strong> — a Cronologia nunca é editada, correção é linha nova apontando para a anterior; um mundo cuja Guilda funciona igual ao seu próprio arquivo é um mundo coerente. É <strong>fraqueza estrutural boa</strong>: a folha guarda o histórico do que se tentou mudar, e por isso <strong>rasura vira prova</strong>. E é <strong>conteúdo de jogador</strong>: o gancho político contra a Nix nasceu disso, e mudar a regra agora mataria o gancho depois de ele já estar em campo.</p>
+<p><strong>O gancho contra a Nix descongela.</strong> O Mestre de Cena dela pode retomá-lo a partir da Semana 2. <strong>O que o Registro fez com a folha rasurada continua sendo do Árbitro</strong> — nenhum Mestre de Cena responde essa pergunta.</p>
+<p><strong>Nota de mesa que vem junto:</strong> onde há retificação há <strong>retificação falsa</strong>. Forjar uma retificação é crime de registro em Gapheim, escândalo em Ônfalos e matéria de arquivo em Ámenti — e roda por <strong>Falsificação</strong> contra <strong>Cartografia ou Comércio</strong> de quem confere. Em Ônfalos, contra a memória de Korvas.</p>
+<h1>14 · Maioridade nas sete cidades — 16 anos</h1>
+<blockquote>
+<p><strong>DECISÃO: a maioridade nas sete cidades é 16 anos.</strong> Um número só, igual nas sete, porque idade de contrato precisa ser a mesma nos dois lados de qualquer folha assinada no Limiar.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Idade</th>
+<th>O que se aplica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>16 ou mais</strong></td>
+<td><strong>adulto.</strong> Não entra na tabela de Juventude e <strong>não paga nem recebe nada</strong> por idade</td>
+</tr>
+<tr>
+<td><strong>15 ou menos</strong></td>
+<td><strong>tabela de Juventude: −2 por ano abaixo de 16, teto −6.</strong> 15 é −2, 14 é −4, 13 é −6, e abaixo de 13 continua −6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A Juventude é desvantagem com recompra obrigatória.</strong> A cada aniversário do personagem em jogo o valor sobe um degrau, e o jogador <strong>recompra a diferença</strong> com pontos ganhos. Quem entrou com 14 (−4) chega aos 15 devendo 2 pontos, e aos 16 devendo mais 2 — e aos 16 a linha some da ficha. Não é escolha: é conta que vence sozinha, e o Árbitro cobra na homologação da semana do aniversário.</p>
+<p><strong>Isto resolve o caso de Anastásia, e resolve para baixo: ela tem 17.</strong> É adulta pelas sete cidades, não entra na tabela de Juventude e <strong>não paga nem recebe ponto nenhum por idade</strong>. A ficha dela não muda em nada.</p>
+<p><strong>Consequência política, e ela vem antes da mecânica:</strong> com a maioridade em 16, um marcado de 16 anos <strong>assina contrato, presta juramento e responde por crime de registro</strong> — em Gapheim, em Ônfalos e nas outras cinco. Quem tem 15 e desce, desce sob a responsabilidade de alguém, e esse alguém tem nome na ficha. É a idade que decide de quem é a culpa quando a folha dá errado.</p>
+<h1>15 · Duas perícias da casa mudam de nome</h1>
+<p>A decisão 4 criou quatro perícias da casa. <strong>Duas delas têm nome de mágica</strong>, e a colisão só apareceu na segunda rodada de conferência: numa ficha, <code>Exorcismo · Mental/Difícil · 8 pts</code> e a mágica <code>Exorcismo · Comunicação e Empatia</code> são duas coisas diferentes com a mesma grafia, e a homologação não tem como separá-las sem perguntar.</p>
+<blockquote>
+<p><strong>DECISÃO: Exorcismo passa a se chamar Rito Funerário. Talismã passa a se chamar Selos e Sigilos.</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Nome antigo</th>
+<th>Nome novo</th>
+<th>Com o que colidia</th>
+<th>Dificuldade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Exorcismo</strong></td>
+<td><strong>Rito Funerário</strong></td>
+<td>a mágica <strong>Exorcismo</strong>, de Comunicação e Empatia</td>
+<td>Mental/Difícil, como estava</td>
+</tr>
+<tr>
+<td><strong>Talismã</strong></td>
+<td><strong>Selos e Sigilos</strong></td>
+<td>o encantamento <strong>Talismã</strong>, do <em>GURPS Grimório</em></td>
+<td>Mental/Média, como estava</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mesma dificuldade, mesmos pontos, mesmo NH. Nenhuma ficha muda de conta</strong> — a Caçadora de Fengdu do <code>08</code> continua com IQ 12, 8 pontos em <strong>Rito Funerário</strong> (IQ+2 = 14) e 6 pontos em <strong>Selos e Sigilos</strong> (IQ+2 = 14). Muda a grafia da linha e mais nada.</p>
+<p><strong>Cartografia e Intimidação ficam como estavam.</strong> Conferidos os três livros — Módulo Básico, <em>Magia</em> e <em>Grimório</em> — <strong>nenhum dos dois nomes existe neles</strong>, nem como mágica nem como qualquer outra coisa. Não há colisão a resolver, e renomear por simetria seria mexer em ficha sem motivo.</p>
+<p><strong>O que os nomes novos preservam.</strong> <em>Rito Funerário</em> diz o que a perícia é — o ofício litúrgico de pôr o morto-que-anda de volta no lugar, que Fengdu e Ámenti licenciam — e diz sem prometer magia, que é justamente o ponto da decisão 4: <strong>não é magia e não precisa de Aptidão</strong>. <em>Selos e Sigilos</em> mantém as duas mãos do ofício, fazer e ler, inclusive ler o falso — e não conjura, porque quem conjura é mago.</p>
+<h1>RETIFICAÇÃO — 10/09/2026, segunda rodada de conferência</h1>
+<p><strong>Duas decisões novas entraram nesta página, a 14 e a 15</strong>, na segunda rodada de conferência do mesmo dia.</p>
+<p>A <strong>14</strong> fixa a maioridade das sete cidades em <strong>16 anos</strong>, com tabela de Juventude de −2 por ano abaixo de 16, teto −6, e recompra obrigatória a cada aniversário. Resolve o caso de <strong>Anastásia, que tem 17</strong> e é adulta: não paga nem recebe nada por idade.</p>
+<p>A <strong>15</strong> renomeia duas das quatro perícias da casa criadas na decisão 4, porque os nomes já eram de mágica: <strong>Exorcismo → Rito Funerário</strong> (colide com a mágica Exorcismo, de Comunicação e Empatia) e <strong>Talismã → Selos e Sigilos</strong> (colide com o encantamento Talismã, do <em>GURPS Grimório</em>). Mesma dificuldade, mesmos pontos, mesmo NH, nenhuma conta alterada. <strong>Cartografia e Intimidação ficam como estavam.</strong></p>
+<p><strong>O título da página continua dizendo treze, e as decisões agora são quinze.</strong> Fica assim de propósito: a numeração das treze primeiras não se mexe, e quem citar "decisão 9" continua achando a mesma decisão. <strong>A linha anterior não é apagada; esta aponta para ela.</strong></p>
+<h1>RETIFICAÇÃO — 11/09/2026, publicação</h1>
+<p><strong>Esta página existia só no Notion até 11/09/2026.</strong> Ela não estava no site nem no <code>estado.md</code>, e foi por isso que um Mestre de Cena abriu Pendência dizendo que <em>"o documento 25 não está no estado.md"</em> — a observação estava certa. <strong>Publicada agora</strong>, junto com o <code>23</code>, pela mesma correção. <strong>Nenhuma decisão desta página mudou de conteúdo na publicação.</strong></p>
+<p><strong>Fica fechado aqui o que a retificação anterior deixou aberto:</strong> os nomes antigos <strong>Exorcismo</strong> e <strong>Talismã</strong> ainda apareciam no <code>23</code> §3 e §5 e no <code>24</code> seção 5 como Pendência. A decisão 4 desta página já os tinha fechado, e o <code>23</code> recebeu a remissão na publicação.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/25-decisoes-de-10-09-2026.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

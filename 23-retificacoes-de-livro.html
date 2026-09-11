@@ -1,0 +1,806 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Retificações de livro — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html" class="atual">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Retificações de livro</h1><div class="meta">versão 1 · atualizado em 2026-09-11 · Decisões e retificações</div></div>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Leva de 10/09/2026.</strong> Todo o cânone de regras foi conferido linha a linha contra o <strong>GURPS Módulo Básico</strong>, o <strong>GURPS Magia</strong> e o <strong>GURPS Grimório</strong>, edição clássica. Onde o cânone divergia, o livro venceu (<code>17</code> cabeçalho, <code>02</code> Regra zero). Esta página é a lista completa do que mudou. <strong>Onde este documento divergir do <code>17</code> ou do <code>02</code>, este documento vence</strong> — os dois foram corrigidos a partir daqui.</p>
+</blockquote>
+<h1>1. O que estava certo e não se mexe</h1>
+<p>Tabelas de custo de perícia física e mental do <code>02</code> §4: <strong>idênticas ao livro</strong>, inclusive os acréscimos acima de +5 (8 / 4 / 2). Tabela de atributos do <code>02</code> §2: confere. Aptidão Mágica 15 / 25 / 35, máximo 3 níveis: confere. Riqueza Confortável 10, Status 5 por nível, Voz Melodiosa 10, Facilidade para Línguas 2 por nível: conferem. <strong>Memória Eidética 30 sai desta seção</strong> — o custo está certo, mas a ressalva de que não valeria para mágica estava errada; v. a Retificação no fim desta página. Esgrima apara a ⅔: confere.</p>
+<p>E <strong>Silêncio de raio 3 custa 6</strong>: mágica de área é custo básico × raio, e em NH 14 não há redução. A decisão do Árbitro na Semana 1 estava certa pelo livro.</p>
+<h1>2. Magia</h1>
+<h2>2.1 Como a Aptidão Mágica entra — corrige o <code>17</code> §6.2</h2>
+<p>O livro: <em>"seu nível de Aptidão Mágica é somado ao seu atributo IQ para o aprendizado de mágicas".</em> A Aptidão <strong>levanta o IQ efetivo com que você compra a mágica</strong> — não é um +2 somado depois ao nível pronto. O resultado numérico é o mesmo; o modo de comprar não.</p>
+<p><strong>Toda mágica é Mental/Difícil</strong>, salvo as marcadas com asterisco na Relação das Mágicas, que são Mental/Muito Difícil.</p>
+<p>Tabela de custo para <strong>IQ 14 + Aptidão 2 = IQ efetivo 16</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Nível da mágica</th>
+<th>Relativo</th>
+<th>Custo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14</td>
+<td>IQ−2</td>
+<td>1 ponto</td>
+</tr>
+<tr>
+<td>15</td>
+<td>IQ−1</td>
+<td>2 pontos</td>
+</tr>
+<tr>
+<td>16</td>
+<td>IQ+0</td>
+<td>4 pontos</td>
+</tr>
+<tr>
+<td>17</td>
+<td>IQ+1</td>
+<td>6 pontos</td>
+</tr>
+<tr>
+<td>18</td>
+<td>IQ+2</td>
+<td>8 pontos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>O mínimo comprável é IQ efetivo −2, e custa 1 ponto.</strong> O livro é literal (<em>GURPS Magia</em>, pág. 4): <em>"Para aprender uma mágica, é necessário gastar no mínimo um ponto com ela, mesmo que você seja brilhante e abençoado com a Aptidão Mágica. Qualquer estudo de menos e a mágica simplesmente não 'funcionará'."</em> <strong>Não existe mágica de meio ponto.</strong> Para quem tem IQ efetivo 16, <strong>não existe mágica em nível 13 nem em 12</strong> — o chão é NH 14.</p>
+<h2>2.2 Redução de energia por nível — regra que faltava</h2>
+<table>
+<thead>
+<tr>
+<th>NH efetivo</th>
+<th>Energia</th>
+<th>Ritual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≤ 11</td>
+<td>—</td>
+<td>mãos e pés livres; <strong>dobro do tempo</strong></td>
+</tr>
+<tr>
+<td>12–14</td>
+<td>—</td>
+<td>poucas palavras e um gesto; tempo normal</td>
+</tr>
+<tr>
+<td>15–17</td>
+<td><strong>−1</strong></td>
+<td>uma ou duas palavras e dois dedos; move 1 hex por turno</td>
+</tr>
+<tr>
+<td>18–20</td>
+<td><strong>−1</strong>; <strong>−2 só a partir do 20</strong></td>
+<td>palavra <strong>ou</strong> gesto, não os dois</td>
+</tr>
+<tr>
+<td>21–24</td>
+<td>−2</td>
+<td>sem ritual; <strong>tempo pela metade</strong></td>
+</tr>
+<tr>
+<td>≥ 25</td>
+<td><strong>−3</strong>, e −1 a cada +5</td>
+<td>tempo em ¼, e metade a cada +5</td>
+</tr>
+</tbody>
+</table>
+<p>A manutenção cai junto: com NH 15+, uma mágica de manutenção 1 <strong>se sustenta de graça, indefinidamente</strong>.</p>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>E isto muda a leitura da profundidade.</strong> O livro diz "nível de habilidade básico <strong>(modificado pelo nível de intensidade de mana)</strong>". Logo o <strong>+2 de mana alta do <code>17</code> §6.5 conta para chegar ao 15</strong>. Do andar 9 para baixo, uma mágica de nível 13 vira 15 efetivo, <strong>já paga um a menos de energia — e só então se aplica a metade da faixa alta</strong>. As duas reduções se somam. O mago do 9 para baixo é mais barato do que o <code>17</code> estava dizendo.</p>
+</blockquote>
+<h2>2.3 As escolas — refaz a tabela 6.6</h2>
+<p>O livro tem <strong>21 escolas</strong>. A tabela do <code>17</code> tinha 20, com sete nomes errados, três escolas faltando e duas inventadas.</p>
+<table>
+<thead>
+<tr>
+<th>Nome de livro</th>
+<th>Nome antigo no <code>17</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Animais</td>
+<td>Animal</td>
+</tr>
+<tr>
+<td><strong>Controle do Corpo</strong></td>
+<td><em>faltava</em></td>
+</tr>
+<tr>
+<td>Comunicação e Empatia</td>
+<td>igual</td>
+</tr>
+<tr>
+<td>Terra · Ar · Fogo · Água · Cura · Necromancia · Som</td>
+<td>iguais</td>
+</tr>
+<tr>
+<td><strong>Encantamentos</strong></td>
+<td><em>faltava</em></td>
+</tr>
+<tr>
+<td><strong>Alimentos</strong></td>
+<td><em>faltava</em></td>
+</tr>
+<tr>
+<td>Ilusão e Criação</td>
+<td>igual</td>
+</tr>
+<tr>
+<td><strong>Reconhecimento</strong></td>
+<td>"Conhecimento"</td>
+</tr>
+<tr>
+<td>Luz e Trevas</td>
+<td>igual</td>
+</tr>
+<tr>
+<td><strong>Quebrar &amp; Consertar</strong></td>
+<td>"Fazer e Quebrar"</td>
+</tr>
+<tr>
+<td><strong>Meta-mágicas</strong></td>
+<td>"Meta-Feitiços"</td>
+</tr>
+<tr>
+<td><strong>Controle da Mente</strong></td>
+<td>"Mente"</td>
+</tr>
+<tr>
+<td><strong>Movimentação</strong></td>
+<td>"Movimento"</td>
+</tr>
+<tr>
+<td><strong>Plantas</strong></td>
+<td>"Vegetal"</td>
+</tr>
+<tr>
+<td><strong>Proteção e Advertência</strong></td>
+<td>"Proteção e Aviso"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Detectar Magia e Analisar Mágica são de Reconhecimento, não de Meta-mágicas.</strong> Meta-mágica é magia sobre magia: anular, roubar, sustentar.</p>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Decisão do Árbitro, 10/09/2026 — Clima.</strong> Clima <strong>não é escola no livro</strong>: as mágicas de clima estão dentro de Ar e de Água, e o Grimório registra que separá-las é decisão de Mestre. <em>Clima permanece escola própria na Garganta</em>, agora como divergência declarada. Consequência: quem concede Clima concede <strong>um recorte</strong> de Ar e de Água, e a concessão de Clima <strong>não abre</strong> o resto de nenhuma das duas. Zeus, Thor, Indra, Tláloc e Xangô passam a dividir fronteira com Vayu, Posêidon, Varuna e Skadi.</p>
+<p><strong>Remissão, 11/09/2026 — e ela é obrigatória para ler o parágrafo acima.</strong> Lido ao pé da letra, "não abre o resto de nenhuma das duas" deixava o colégio <strong>vazio</strong>: nenhuma mágica de clima existe sem mágica de Ar de raiz por baixo — Relâmpago exige 6 mágicas de Ar, Nuvens exige 4 de Ar e 4 de Água, Tufão exige Moldar Ar. O <strong><code>31</code></strong> corrige: <strong>a concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima, e nada além.</strong> A fronteira é a <strong>árvore</strong>, não a lista. <strong>Onde este parágrafo divergir do <code>31</code>, vale o <code>31</code>.</strong></p>
+<p><strong>Nota.</strong>
+<strong>Decisão do Árbitro, 10/09/2026 — Portais.</strong> "Portais" não existe. O livro tem <strong>Mágicas de Acesso</strong>. A linha passa a se chamar <strong>Acesso</strong> e <strong>continua fechada na criação</strong>.</p>
+</blockquote>
+<p><strong>Controle do Corpo, Encantamentos e Alimentos entram fechadas</strong>, sem Casa concedente, até haver decisão. Encantamentos é a escola que fabrica item mágico — é decisão econômica antes de teológica, e vai para Pendências junto com o <code>21</code>. <strong>DECIDIDO na decisão 5 do <code>25</code>:</strong> Controle do Corpo vai para Sekhmet, Tezcatlipoca e Ixchel; Encantamentos para Hefesto, Thoth e Ogum; Alimentos para Deméter, Oxum e Ixchel.</p>
+<h2>2.4 As cadeias de pré-requisito, conferidas</h2>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Escola</th>
+<th>Cadeia</th>
+<th>Termina em</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Percepção de Inimigos</td>
+<td>Comunicação</td>
+<td>raiz</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Percepção de Emoções</td>
+<td>Comunicação</td>
+<td>← Percepção de Inimigos</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Percepção da Veracidade</td>
+<td>Comunicação</td>
+<td>← Percepção de Emoções</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Leitura da Mente</td>
+<td>Comunicação</td>
+<td>← Percepção da Veracidade</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Transmissão de Pensamentos</td>
+<td>Comunicação</td>
+<td>← Leitura da Mente</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Emprestar Idioma</td>
+<td>Comunicação</td>
+<td>← Transmissão de Pensamentos (<strong>5 elos</strong>)</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Som</td>
+<td>Som</td>
+<td>raiz</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Vozes · Estrondo · Silêncio</td>
+<td>Som</td>
+<td>← Som</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Voz Amplificada</td>
+<td>Som</td>
+<td>← <strong>Vozes + Estrondo</strong></td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Luz</td>
+<td>Luz e Trevas</td>
+<td>raiz</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Luz Constante</td>
+<td>Luz e Trevas</td>
+<td>← Luz</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Trevas</td>
+<td>Luz e Trevas</td>
+<td>← Luz Constante</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Penumbra</td>
+<td>Luz e Trevas</td>
+<td>← Trevas</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Esconder</td>
+<td>Luz e Trevas</td>
+<td>← <strong>Penumbra ou Amnésia</strong></td>
+<td>nenhum / AM</td>
+</tr>
+<tr>
+<td>Apressar</td>
+<td>Movimentação</td>
+<td>raiz</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Aporte</td>
+<td>Movimentação</td>
+<td>← <strong>Aptidão Mágica</strong></td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Levitação</td>
+<td>Movimentação</td>
+<td>← Aporte</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Ensebar</td>
+<td>Movimentação (<strong>só Grimório</strong>)</td>
+<td>← Apressar</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Deslizar</td>
+<td>Movimentação (<strong>só Grimório</strong>)</td>
+<td>← <strong>Aporte + Ensebar</strong></td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Detecção de Magia</td>
+<td>Reconhecimento</td>
+<td>← <strong>Aptidão Mágica</strong></td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Identificação de Mágica</td>
+<td>Reconhecimento</td>
+<td>← Detecção de Magia</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Analisar Mágica</td>
+<td>Reconhecimento</td>
+<td>← Identificação de Mágica</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Inépcia</td>
+<td>Controle da Mente</td>
+<td>← IQ 12+, sem mágica</td>
+<td>atributo</td>
+</tr>
+<tr>
+<td>Amnésia</td>
+<td>Controle da Mente</td>
+<td>← Inépcia + <strong>AM</strong> · IQ 12+</td>
+<td>AM</td>
+</tr>
+<tr>
+<td>Medo</td>
+<td>Controle da Mente</td>
+<td>← Percepção de Emoções</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Bravura</td>
+<td>Controle da Mente</td>
+<td>← Medo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Lealdade</td>
+<td>Controle da Mente</td>
+<td>← Bravura + <strong>4 outras de Controle da Mente</strong></td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Controle de Emoções</td>
+<td>Controle da Mente</td>
+<td>← Lealdade</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td>Sugestão</td>
+<td>Controle da Mente</td>
+<td>← <strong>Controle de Emoções + Amnésia</strong></td>
+<td>AM</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Só Detecção de Magia e Amnésia são portão de mago.</strong> Comunicação, Som e Luz e Trevas sobem inteiras sem Aptidão Mágica. Isso <strong>não</strong> afeta a Garganta — o <code>17</code> §6.5 já decidiu, acima do livro, que sem Aptidão não existe feitiço — mas é o motivo mecânico de essas três escolas serem as que vazam por acordo, e de a Casa vender <strong>formação</strong> e não poder.</p>
+<p><strong>Ensebar e Deslizar estão valendo</strong>, por força da decisão 1 do <code>25</code>: o Grimório entrou.</p>
+<h2>2.5 Nomes de mágica que não existem</h2>
+<table>
+<thead>
+<tr>
+<th>Nome em uso</th>
+<th>Nome de livro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sentir Emoções</td>
+<td><strong>Percepção de Emoções</strong></td>
+</tr>
+<tr>
+<td>Detectar Mentiras (mágica)</td>
+<td><strong>Percepção da Veracidade</strong></td>
+</tr>
+<tr>
+<td>Idioma Emprestado</td>
+<td><strong>Emprestar Idioma</strong></td>
+</tr>
+<tr>
+<td>Pressa</td>
+<td><strong>Apressar</strong></td>
+</tr>
+<tr>
+<td>Sons</td>
+<td><strong>Som</strong></td>
+</tr>
+<tr>
+<td>Voz Ampliada</td>
+<td><strong>Voz Amplificada</strong> (a Relação grafa "Voz Possante" — é a mesma)</td>
+</tr>
+<tr>
+<td>Continuar Luz</td>
+<td><strong>Luz Constante</strong></td>
+</tr>
+<tr>
+<td>Detectar Magia</td>
+<td><strong>Detecção de Magia</strong></td>
+</tr>
+<tr>
+<td>Analisar Magia</td>
+<td><strong>Analisar Mágica</strong></td>
+</tr>
+<tr>
+<td>Escuridão</td>
+<td><strong>Trevas</strong> ("Escuridão" existe no Grimório e é outra mágica)</td>
+</tr>
+<tr>
+<td>Ocultar-se</td>
+<td><strong>Esconder</strong></td>
+</tr>
+<tr>
+<td><strong>Empatia</strong></td>
+<td><strong>não é mágica — é vantagem de 15 pontos</strong></td>
+</tr>
+<tr>
+<td><strong>Agarrar à Distância</strong></td>
+<td><strong>não existe em livro nenhum</strong></td>
+</tr>
+</tbody>
+</table>
+<h1>3. Perícias — os nomes que não existem</h1>
+<table>
+<thead>
+<tr>
+<th>Nome em uso</th>
+<th>Nome de livro</th>
+<th>Dificuldade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Esgrima</td>
+<td>Esgrima</td>
+<td><strong>Física/Média</strong></td>
+</tr>
+<tr>
+<td>Adaga</td>
+<td><strong>Faca</strong></td>
+<td>Física/Fácil</td>
+</tr>
+<tr>
+<td>Furtividade</td>
+<td>Furtividade</td>
+<td>Física/Média</td>
+</tr>
+<tr>
+<td><strong>Capa</strong></td>
+<td><strong>não existe</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Oratória</td>
+<td><strong>Trovador</strong></td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td><strong>Bajulação</strong></td>
+<td><strong>Lábia</strong></td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td>Diplomacia</td>
+<td>Diplomacia</td>
+<td><strong>Mental/Difícil</strong></td>
+</tr>
+<tr>
+<td>Política</td>
+<td>Política</td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td>Detecção de Mentiras</td>
+<td>Detecção de Mentiras</td>
+<td>Mental/Difícil</td>
+</tr>
+<tr>
+<td>Comércio</td>
+<td>Comércio</td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td><strong>Herança Antiga</strong></td>
+<td><strong>Arqueologia</strong></td>
+<td>Mental/Difícil</td>
+</tr>
+<tr>
+<td>Pesquisa</td>
+<td>Pesquisa</td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td><strong>Direito Comparado</strong> / Direito (Thing)</td>
+<td><strong>Jurisprudência</strong></td>
+<td>Mental/Difícil</td>
+</tr>
+<tr>
+<td>História</td>
+<td>História</td>
+<td>Mental/Difícil</td>
+</tr>
+<tr>
+<td>Teologia</td>
+<td>Teologia</td>
+<td>Mental/Difícil</td>
+</tr>
+<tr>
+<td><strong>Escrita Antiga</strong></td>
+<td><strong>não existe</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Observação</strong></td>
+<td><strong>não existe</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Ocultismo</td>
+<td>Ocultismo</td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td>Rastreamento</td>
+<td>Rastreamento</td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td>Escalada</td>
+<td>Escalada</td>
+<td>Física/Média</td>
+</tr>
+<tr>
+<td>Arremesso</td>
+<td>Arremesso</td>
+<td>Física/Difícil</td>
+</tr>
+<tr>
+<td>Sobrevivência (área)</td>
+<td>Sobrevivência</td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td>Primeiros Socorros</td>
+<td>Primeiros Socorros</td>
+<td><strong>Mental/Fácil</strong></td>
+</tr>
+<tr>
+<td><strong>Táticas</strong></td>
+<td><strong>Tática</strong></td>
+<td>Mental/Difícil</td>
+</tr>
+<tr>
+<td><strong>Naturalismo</strong></td>
+<td><strong>Naturalista</strong></td>
+<td>Mental/Difícil</td>
+</tr>
+<tr>
+<td><strong>Avaliação</strong></td>
+<td><strong>Comércio</strong></td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td><strong>Burocracia</strong></td>
+<td><strong>Administração</strong></td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td><strong>Cartografia · Intimidação</strong></td>
+<td><strong>não existem em livro nenhum</strong> — entram como <strong>perícias da casa</strong>, com o nome que tinham (<code>25</code>, decisões 4 e 15)</td>
+<td>Mental/Média</td>
+</tr>
+<tr>
+<td><strong>Rito Funerário</strong> (antes "Exorcismo")</td>
+<td><strong>não existe como perícia</strong> — <em>Exorcismo</em> é mágica de Comunicação e Empatia. Entra como perícia da casa, renomeada pela decisão 15 do <code>25</code></td>
+<td>Mental/Difícil</td>
+</tr>
+<tr>
+<td><strong>Selos e Sigilos</strong> (antes "Talismã")</td>
+<td><strong>não existe como perícia</strong> — <em>Talismã</em> é encantamento do <em>Grimório</em>. Entra como perícia da casa, renomeada pela decisão 15 do <code>25</code></td>
+<td>Mental/Média</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Herança Antiga → Arqueologia mantém a dificuldade Difícil: nenhuma ficha do <code>08</code> muda de custo, só de nome.</strong></p>
+<p><strong>Capa sai de todas as fichas sem perda mecânica.</strong> O <code>02</code> §2 já dá <strong>duas aparadas por rodada</strong> a quem tem Esgrima — a segunda aparada que a Capa comprava já vinha de graça.</p>
+<p><strong>Observação vira teste de IQ ou de Visão.</strong> Quem quiser ser bom nisso compra <strong>Prontidão (5/nível)</strong> ou <strong>Visão Aguçada (2/nível)</strong>. Os pontos das linhas "Observação" voltam para as fichas.</p>
+<p><strong>Escrita Antiga sai.</strong> Ler escrita antiga é <strong>a língua + Alfabetização</strong>.</p>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Decisão do Árbitro, 10/09/2026 — Alfabetização.</strong> O livro cobra <strong>10 pontos</strong> por Alfabetização em cultura de NT ≤ 4, e a Garganta é cenário medieval pela própria tabela de preços do <code>03</code>. Nenhuma das sete fichas do <code>08</code> paga — nem a Escriba de Ámenti, que é arquivista. <em>As sete cidades são cultura letrada para efeito de Alfabetização: ela custa 0 pontos para quem carrega Marca.</em> O mundo já estava escrito assim — Ámenti é um arquivo, o direito de Gapheim é escrito, e o <code>02</code> §5 diz que a Marca é <strong>registrável</strong>, e não há registro sem escrita. Em troca, <strong>Analfabetismo passa a existir como desvantagem de −10</strong>. Nenhuma ficha existente muda; o que muda é que agora está escrito por quê.</p>
+</blockquote>
+<h1>4. Vantagens — três correções</h1>
+<h2>4.1 Reputação</h2>
+<p>O <code>17</code> dizia só "fama restrita a uma cidade sai pela metade". São <strong>dois cortes independentes</strong>, e eles se multiplicam:</p>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo</td>
+<td>5 pontos por +1 de reação, máximo +4</td>
+</tr>
+<tr>
+<td>Todos que você encontra</td>
+<td>valor cheio</td>
+</tr>
+<tr>
+<td>Grupo grande (todos os mercenários, todos os mercadores, <strong>uma cidade</strong>)</td>
+<td><strong>metade</strong></td>
+</tr>
+<tr>
+<td>Grupo pequeno (todos os sacerdotes de uma Casa, todos os letrados)</td>
+<td><strong>um terço</strong></td>
+</tr>
+<tr>
+<td>Reconhecido o tempo todo</td>
+<td>sem modificador</td>
+</tr>
+<tr>
+<td>De vez em quando (≤10)</td>
+<td><strong>metade</strong></td>
+</tr>
+<tr>
+<td>Ocasionalmente (≤7)</td>
+<td><strong>um terço</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Arredonda-se <strong>para baixo</strong> em cada corte.</p>
+<h2>4.2 Contato não existe</h2>
+<p>O Módulo Básico tem <strong>Aliado</strong> e <strong>Patrono</strong>. Toda linha "Contato" vira <strong>Aliado</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Poder do Aliado</th>
+<th>Custo</th>
+<th>Frequência</th>
+<th>Multiplicador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>76 a 100 pontos</td>
+<td>5</td>
+<td>quase sempre (≤15)</td>
+<td>×3</td>
+</tr>
+<tr>
+<td>101 a 150 pontos</td>
+<td>10</td>
+<td>com frequência (≤12)</td>
+<td>×2</td>
+</tr>
+<tr>
+<td>151 a 200 pontos</td>
+<td>15</td>
+<td>frequentemente (≤9)</td>
+<td>×1</td>
+</tr>
+<tr>
+<td>abaixo de 75</td>
+<td><em>é Dependente</em></td>
+<td>esporadicamente (≤6)</td>
+<td>metade</td>
+</tr>
+</tbody>
+</table>
+<p>Aliado com 50 pontos a mais que o PC <strong>é Patrono</strong>, não Aliado.</p>
+<h2>4.3 Voz Melodiosa dá +2 em perícia nomeada</h2>
+<p><strong>Trovador, Diplomacia, Atuação, Política, Trato Social, Sex Appeal e Canto</strong> — mais +2 em qualquer teste de reação de quem ouve a voz. <strong>Não dá em Comércio, nem em Detecção de Mentiras, nem em Liderança, nem em Lábia.</strong></p>
+<p>Isto muda a conta de toda ficha com Voz Melodiosa: <strong>níveis que estavam sendo comprados com pontos já vinham de graça pela vantagem.</strong></p>
+<h1>5. O que ficou pendente</h1>
+<ol>
+<li><strong>DECIDIDO — <code>25</code>, decisão 1. O Grimório entra.</strong> Ensebar e Deslizar valem, e com eles Localizar Metal e Identificar Metal.</li>
+<li><strong>DECIDIDO — <code>25</code>, decisões 4 e 15.</strong> As quatro perícias sem equivalente no Básico entraram como <strong>perícias da casa</strong>, divergência declarada, com a dificuldade que faz os modelos 2, 3, 5 e 7 do <code>08</code> fecharem <strong>sem mexer em um ponto sequer</strong>. <strong>Cartografia</strong> e <strong>Intimidação</strong> (Mental/Média as duas) ficam com o nome que tinham. <strong>Exorcismo → Rito Funerário</strong> (Mental/Difícil) e <strong>Talismã → Selos e Sigilos</strong> (Mental/Média) mudaram de nome pela decisão 15, porque os nomes antigos <strong>já eram de mágica</strong>. <strong>Mesma dificuldade, mesmos pontos, mesmo NH: nenhuma ficha muda de conta.</strong></li>
+<li><strong>As sete fichas do <code>08</code> precisam de um passe de nome</strong>: Capa, Observação, Avaliação, Herança Antiga, Táticas, Naturalismo, Burocracia, Direito (Thing) e Adaga. A maioria é renomeação sem mudança de custo; <strong>Capa e Observação devolvem pontos</strong>.</li>
+<li><strong>DECIDIDO — <code>25</code>, decisão 5.</strong> Casas concedentes de Controle do Corpo, Encantamentos e Alimentos.</li>
+<li><strong>DECIDIDO — <code>25</code>, decisão 7.</strong> A lista de Casas de Luz e Trevas: oito Casas, na tabela aberta.</li>
+</ol>
+<h1>RETIFICAÇÃO — 10/09/2026, segunda rodada de conferência</h1>
+<p>Quatro correções nesta página, todas contra o livro. <strong>A linha anterior não é apagada; esta aponta para ela.</strong></p>
+<p><strong>1. O mínimo comprável de mágica é 1 ponto, não ½.</strong> <em>GURPS Magia</em>, pág. 4. Numa mágica Mental/Difícil, 1 ponto compra <strong>IQ efetivo −2</strong> — esse é o chão, e <strong>não existe mágica de meio ponto</strong>. A tabela da §2.1 vendia o nível 13 por ½ ponto; a linha do 13 caiu, e o texto abaixo dela foi corrigido junto. Para IQ efetivo 16, a mágica mais barata é <strong>NH 14 por 1 ponto</strong>.</p>
+<p><strong>2. A redução de −2 de energia abre no NH 20, não no 18.</strong> <em>GURPS Magia</em>, pág. 7. A faixa 18–20 da tabela da §2.2 muda o <strong>ritual</strong> já no 18 — palavra <strong>ou</strong> gesto, não os dois — mas a <strong>energia</strong> só no 20. Nos NH 18 e 19 a redução continua sendo <strong>−1</strong>. Do 25 em diante são <strong>−3</strong>, e mais −1 a cada +5.</p>
+<p><strong>3. As classes de mágica são oito, e faltava uma.</strong> <em>GURPS Magia</em>, pág. 10: Comum, de Área, de Projétil, de Bloqueio, de Informação, <strong>Resistível</strong>, Encantamento e Especial. A que faltava é <strong>Resistível</strong> — e <strong>toda mágica Resistível pertence também a outra classe</strong>. É por isso que a Relação grafa <code>Com/R-IQ</code>, <code>Área/R-HT</code> e afins.</p>
+<p><strong>4. Memória Eidética levanta o IQ de aprendizado de mágica.</strong> O custo de 30 está certo; a ressalva não. O ponto gasto em mágica <strong>não dobra</strong>, mas a vantagem <strong>soma ao IQ com que se aprende mágica: +1 no primeiro nível, +2 no segundo, e para aí.</strong> Corrigido também no <code>17</code>.</p>
+<p><strong>E uma confirmação, não uma correção:</strong> <strong>Aptidão Mágica não passa de 3 níveis.</strong> Não existe Aptidão 4, e o preço para em 35.</p>
+<h1>RETIFICAÇÃO — 11/09/2026, publicação e passe de nomes</h1>
+<p><strong>Esta página existia só no Notion até 11/09/2026</strong>, e foi publicada agora junto com o <code>25</code>. <strong>A linha anterior não é apagada; esta aponta para ela.</strong></p>
+<p><strong>O passe de nomes que o <code>25</code> deixou aberto foi feito.</strong> A §3 e a §5 ainda tratavam <strong>Exorcismo</strong> e <strong>Talismã</strong> como Pendência, o que a decisão 4 do <code>25</code> já tinha fechado e a decisão 15 já tinha renomeado. As duas seções agora trazem <strong>Rito Funerário</strong> e <strong>Selos e Sigilos</strong>, com os nomes antigos entre parênteses. <strong>Nenhuma ficha muda de conta.</strong></p>
+<p><strong>Bajulação foi corrigida para Lábia</strong> na tabela da §3: a perícia "Bajulação" não tem verbete, e o equivalente exato é <strong>Lábia, Mental/Média</strong>. A consequência já estava registrada na ficha do Karthoz e agora está aqui: <strong>a Voz Melodiosa não dá +2 em Lábia</strong> — a lista do livro é fechada em sete perícias.</p>
+<p><strong>As cinco Pendências da §5 foram todas decididas no <code>25</code></strong>, e cada linha agora aponta para a decisão que a fechou.</p>
+<p><strong>O parágrafo de Clima da §2.3 recebeu remissão para o <code>31</code></strong>, que fixou o recorte. Lido sozinho, ele deixava o colégio vazio.</p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/23-retificacoes-de-livro.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

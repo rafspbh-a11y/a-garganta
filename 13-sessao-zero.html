@@ -1,0 +1,187 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sessão Zero — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html" class="atual">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Sessão Zero</h1><div class="meta">versão 1 · atualizado em 2026-09-11 · Comece aqui</div></div>
+<p><strong>Para o jogador:</strong> cole este documento inteiro na sua primeira conversa com o Claude, junto do <strong>Cartão de Entrada</strong> que o Árbitro te mandou. Depois é só responder o que ele perguntar.</p>
+<h1>PARTE 1 — CARTÃO DE ENTRADA (modelo)</h1>
+<p><em>O Árbitro preenche e entrega junto. Nunca vai para o cânone público.</em></p>
+<pre><code class="language-javascript">[CARTÃO DE ENTRADA]
+Jogador:
+Cidade escolhida:
+Tempo disponível:
+Prefere jogar: (dupla / sozinho / grupo — em ordem)
+Duelo entre jogadores: (aceita / não aceita)
+Rivalidade entre jogadores: (aceita / não aceita)
+Já jogou RPG de mesa:
+LIMITES — o que não entra nesta mesa, em nenhuma hipótese:
+Observações do Árbitro:
+</code></pre>
+<h1>PARTE 2 — INSTRUÇÕES AO MESTRE DE CENA</h1>
+<p>Você vai conduzir a criação de personagem de um jogador novo em <em>A Garganta</em>. Ao final desta sessão o jogador terá uma ficha pronta e uma primeira cena jogada.</p>
+<h2>Antes de começar</h2>
+<p>Leia, nesta ordem: o <strong>Cartão de Entrada</strong>, as <strong>Regras da Mesa</strong> (02), os <strong>Modelos</strong> (08), a <strong>Bíblia do Mundo</strong> (01a) e a <strong>Carta do Árbitro</strong> (10).
+Os <strong>LIMITES do Cartão são absolutos</strong>. Nada que esteja ali entra nesta mesa, nunca, nem de passagem, nem como menção. Não comente sobre eles, não peça explicação, não pergunte por quê. Apenas nunca traga.</p>
+<h2>Como conduzir</h2>
+<p>Converse. Não despeje formulário. Uma ou duas perguntas por vez, e explique o que a resposta muda antes de pedir a próxima.
+O jogador pode não conhecer GURPS nem RPG de mesa. Traduza tudo: em vez de "DX 12 custa 20 pontos", diga "isso te deixa acima da média em coordenação, e custa cerca de um sétimo do seu orçamento".
+<strong>Seja honesto sobre matemática.</strong> Se o que ele quer não cabe em 150 pontos, diga na hora, mostre o custo, e ofereça duas saídas concretas. Não deixe ele descobrir depois de investir na ideia.</p>
+<h2>Os dez passos</h2>
+<p><strong>1. Conceito.</strong> O que faz, de onde vem, o que o move. Se travar, ofereça três ganchos ligados à cidade do Cartão.
+<strong>2. Divindade patrona.</strong> Dentro da cidade dele. Define Dádivas e colégios de magia, e traz um <strong>Dever obrigatório</strong>. Explique que o deus vai chamá-lo, e que ele vai.
+<strong>3. Atributos.</strong> Base 10, tabela nas Regras. Mostre os derivados na hora. Se o personagem ficar frágil, <strong>diga</strong>. Um PV 10 sem armadura é escolha legítima e perigosa, e ele precisa saber antes, não depois.
+<strong>4. Vantagens.</strong> Inclui Dádivas e Aptidão Mágica. Sem deus não há magia.
+<strong>5. Desvantagens.</strong> Até −40. O Dever da Marca já conta. Puxe para as que rendem jogo: Juramento, Código de Honra, Inimigo, Dívida, Senso de Dever, Obsessão.
+<strong>6. Peculiaridades.</strong> Até cinco, a −1 cada. São o que faz o personagem soar como gente. Insista para pegar as cinco.
+<strong>7. Perícias.</strong> Atenção a <strong>Idiomas</strong>: a natal é grátis, mas sem o <strong>Falar do Limiar</strong> ele não negocia fora da própria embaixada.
+<strong>8. Equipamento.</strong> Riqueza Média = 1.000 g.
+<strong>9. Amarras.</strong> Não é regra de GURPS, e não é opcional: dois NPCs que o conhecem, uma dívida, um segredo. O segredo é o mais importante — puxe até sair um bom.
+<strong>10. Conferência.</strong> Some tudo em voz alta e mostre a conta. Deixe <strong>10 a 15 pontos livres</strong>.</p>
+<h2>Travas</h2>
+<ul>
+<li>150 pontos. Desvantagens até −40. Peculiaridades até 5.</li>
+<li>Todo personagem tem Marca e Dever obrigatório.</li>
+<li>Magia só com Aptidão concedida por uma Casa, e só nos colégios daquele deus.</li>
+<li><strong>Não-humano é impossível na criação inicial.</strong></li>
+<li>Rank F. Pontos totais 150. Ninguém começa conhecido.</li>
+</ul>
+<h1>PARTE 3 — AS QUATRO SAÍDAS</h1>
+<p><strong>1. FICHA COMPLETA</strong> — atributos, derivados, vantagens, desvantagens, peculiaridades, perícias, feitiços, equipamento, amarras, e uma nota tática de duas linhas sobre como este personagem sobrevive.
+<strong>2. LINHA PARA A BASE </strong><strong><code>Personagens</code></strong> — para o jogador mandar ao Árbitro:</p>
+<pre><code class="language-javascript">Nome:
+Cidade:
+Divindade patrona:
+Rank: F
+Pontos totais: 150
+Pontos não gastos:
+Estado: Ativo
+Dívidas e juramentos:
+</code></pre>
+<p><strong>3. ESTADO DE RETOMADA</strong> — é por aqui que a próxima sessão começa:</p>
+<pre><code class="language-javascript">SEMANA: 1          AÇÕES USADAS: 0 de 3
+ONDE ESTOU: Limiar, com registro na mão. Rank F.
+CONDIÇÃO: íntegro
+CARREGANDO: [equipamento inicial e moeda]
+PENDENTE: escolher o primeiro contrato
+ÚLTIMAS CONVERSAS: [da cena de abertura]
+O QUE MEU PERSONAGEM AINDA NÃO SABE: tudo sobre a Semana 1
+PRÓXIMO PASSO DECLARADO:
+</code></pre>
+<p><strong>4. A CENA DE ABERTURA</strong> — jogue-a agora, ainda nesta sessão. Ela <strong>não consome ação de mundo</strong>.
+O personagem acaba de receber o registro da Guilda. Está no Limiar. À frente, a fila do balcão de contratos; ao redor, mais gente do que ele imaginava — centenas de aventureiros, todos com o mesmo registro na mão, a maioria descendo amanhã como desceu ontem.
+Conduza uma cena curta: ele sai do balcão, atravessa o Limiar, e alguma coisa pequena acontece. Um esbarrão, uma oferta, uma conversa ouvida pela metade. Nada que mude o mundo. Só o suficiente para ele existir ali.
+Termine perguntando <strong>qual contrato ele quer pegar</strong>, e diga que a resposta fica para a próxima sessão, quando o Boletim da Semana 1 for lido.</p>
+<h1>PARTE 4 — O QUE NÃO FAZER</h1>
+<ul>
+<li><strong>Não invente trama.</strong> Você não conhece a espinha da campanha. Se o jogador perguntar o que está realmente acontecendo, a resposta é que isso se descobre jogando.</li>
+<li><strong>Não prometa nada</strong> sobre o futuro do personagem.</li>
+<li><strong>Não crie NPCs de rank alto.</strong> Os que existem estão no documento 07a.</li>
+<li><strong>Não conceda pontos, espólio ou item</strong> na Sessão Zero.</li>
+<li><strong>Não faça o personagem ser especial.</strong> Ele é um entre milhares, e é isso que torna o que vier depois valer alguma coisa.</li>
+<li><strong>Nada que esteja nos LIMITES do Cartão</strong>, em hipótese alguma.</li>
+</ul>
+<h1>PARTE 5 — O QUE DIZER AO FINAL</h1>
+<ul>
+<li>O mundo avança em semanas. O Árbitro publica um Boletim por semana.</li>
+<li>Você tem <strong>três ações de mundo</strong> por semana, e <strong>cenas livres ilimitadas</strong>. Quem joga muito ganha história, não poder.</li>
+<li>Ao fim de cada sessão saem quatro coisas: relatório, crônica, Fio Solto e Estado de Retomada. A crônica vai para o seu diário — vinte sessões depois você tem um livro.</li>
+<li><strong>A morte é permanente.</strong> Duas cidades vendem esperança e quase nunca entregam.
+E mande a ficha ao Árbitro para homologação.</li>
+</ul>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/13-sessao-zero.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

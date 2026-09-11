@@ -1,0 +1,214 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Magia no Mundo e as Sete Forjas — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html" class="atual">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>A Magia no Mundo e as Sete Forjas</h1><div class="meta">versão 3 · atualizado em 2026-09-11 · O mundo</div></div>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Remissão, 10/09/2026.</strong> Como a magia <strong>nova</strong> entra no mundo está no <strong><code>30</code> — Improviso, Círculo e Lavra</strong>: improviso, círculo cerimonial, energia de gemas, de povo e de outros magos, e a corrida das sete cidades pelo registro da Lavra. Este documento continua sendo sobre <strong>item</strong> e sobre as sete forjas.</p>
+<p><strong>Nota.</strong>
+<strong>Este documento é sobre o mundo, não sobre a ficha.</strong> As regras de lançar feitiço, colégios, Aptidão e mana estão no <code>17</code>. As tabelas de item estão no <code>21</code>. O que está aqui é <strong>como a magia vive nas sete cidades, o que está mudando, e como cada cidade forja item mágico</strong> — e o que ela cobra por isso.</p>
+</blockquote>
+<h1>1. O que a magia é aqui</h1>
+<p><strong>Não existe feitiço sem Aptidão, e não existe Aptidão sem Casa.</strong> É a regra que o <code>17</code> §6.5 fixa acima do livro, e é a espinha de tudo o que vem abaixo. A magia não é uma força neutra que qualquer um aprende: é uma <strong>concessão</strong>, e quem concede pode cobrar — e, no caso de uma Casa, pode retirar.</p>
+<p>Isso faz da magia um fato <strong>político</strong> antes de ser um fato técnico. O mago não é um estudioso que descobriu algo. É alguém que uma Casa escolheu, formou e marcou, e que deve a ela a própria capacidade. Cada feitiço lançado é uma lembrança pública de quem o concedeu.</p>
+<p><strong>A mana marca a faixa, não o andar.</strong> Normal até o 8, alta do 9 ao 20, muito alta do 21 para baixo (<code>17</code> §6.5). É lá embaixo que o mago sem escola alcança o formado, e é por isso que o andar 9 é político: não quebra o monopólio da magia, quebra o monopólio dos magos.</p>
+<h1>2. A Garganta está acordando</h1>
+<blockquote>
+<p>Fato de mundo desde a Semana 2, registrado no <code>03</code> §4.</p>
+</blockquote>
+<p>Os itens funerários que dormiam começam a <em>responder</em>. Encantamentos que levavam estações passam a fechar em dias no santuário certo. Os magos de Casa sentem; os arquivistas de Ámenti registram; <strong>ninguém sabe por quê</strong>, e quem diz que sabe está mentindo ou vendendo.</p>
+<p><strong>A linha da mana sobe.</strong> Cada subida é anunciada pelo Boletim, nunca antes, e muda o mapa: a câmara de mana alta que valia uma fortuna no 9 passa a existir no 8, e sete cidades que já disputavam o 9 passam a disputar o 8.</p>
+<p>O que o personagem vê é o efeito: mais lâminas com brilho, mais gente com pressa, mais gema no balcão, e as sete cidades olhando para o mesmo lugar. <strong>A causa é do Árbitro.</strong> Nenhum Mestre de Cena a insinua, nomeia ou explica. Quem, na mesa, diz saber a causa, está errado — ou é um Fio Solto.</p>
+<h1>3. Como se forja — as três maneiras</h1>
+<p><strong>Pela Casa, no santuário.</strong> Item comum: +1 em uma semana, nível 2 em um mês (<code>03</code> §4, Fabricação; preços no <code>21</code> §2). Paga-se o preço de tabela em grão, mais o que a Casa pedir — e a Casa às vezes pede em Dever. Obra-prima: <strong>só a Casa, só no santuário, só como arco</strong>. A Casa que te forja a lâmina te chama para a guerra dela.</p>
+<p><strong>Pelo mago, na oficina de mana.</strong> Quem tem Aptidão encanta pelo livro, mas cada dia de trabalho vale pela mana do lugar: <strong>1 em normal, 5 em alta, 25 em muito alta.</strong> Encantar exige oficina do 9 para baixo. Quem segura uma câmara de mana alta segura uma forja — e as sete cidades sabem.</p>
+<p><strong>Pelo achado.</strong> O Baú da Garganta (<code>06b</code> §10) e a recuperação funerária. Não se forja: encontra-se, e o que se encontra tem dono anterior.</p>
+<h1>4. As Sete Forjas</h1>
+<p>Cada cidade forja do jeito que governa. Cada uma tem uma força, uma fraqueza estrutural e uma consequência política — e o item carrega as três.</p>
+<h2>4.1 Ônfalos — a forja que tem partido</h2>
+<p><strong>A Casa de Hefesto</strong> é a única forja divina de arma e armadura entre as sete, e é a mais rápida em item comum de lâmina. Mas nada em Ônfalos se decide sem dois deuses brigando em público: <strong>toda Casa quer a própria marca no item</strong>, e a Assembleia disputa quem encanta o quê.</p>
+<p><strong>Força:</strong> arma e armadura comum, rápido, com a melhor oficina de superfície.
+<strong>Fraqueza:</strong> a briga. Um item pedido a Hefesto pode sair com a marca de Ares, se Ares venceu a sessão.
+<strong>Consequência:</strong> <strong>item de Ônfalos tem partido.</strong> A Casa que o marcou tem inimigos, e o item os herda. Quem carrega lâmina de Hefesto é visto como gente de Hefesto — em Ônfalos e fora.</p>
+<h2>4.2 Ámenti — a forja que não forja</h2>
+<p>O Tribunal de Maat registra tudo e <strong>considera fabricação profanação</strong>. Ámenti não faz item: <strong>identifica, registra e julga</strong>. Toda obra-prima que aparece no Limiar passa, cedo ou tarde, pelos arquivos de Ámenti — e o que está lá não sai.</p>
+<p><strong>Força:</strong> a única cidade onde uma obra-prima é identificada com certeza. Analisar Magia de Thoth não erra.
+<strong>Fraqueza:</strong> lentidão. Nada em menos de um mês. E o que Ámenti registra, Ámenti reclama: metade das obras-primas funerárias do mundo estão, no arquivo, como propriedade de um morto que Ámenti representa.
+<strong>Consequência:</strong> <strong>quem quer saber o que tem, vai a Ámenti — e fica registrado.</strong> A partir daí a cidade sabe o que você carrega, e pode vir cobrar em nome do dono anterior.</p>
+<h2>4.3 Gapheim — a forja que cumpre a letra</h2>
+<p>Gapheim controla a placa e a malha (<code>03</code> §9.2), e a Casa de Tyr encanta como o Thing julga: <strong>pela letra</strong>. Um encantamento gapheimita é um juramento gravado no aço, e o aço cumpre exatamente o que foi jurado — nem mais, nem menos.</p>
+<p><strong>Força:</strong> armadura. RD e PD comuns saem de Gapheim melhores e mais baratos, para gapheimita ou para quem carrega contrato da cidade.
+<strong>Fraqueza:</strong> a literalidade. Item de Gapheim com cláusula — <em>"protege quem não fugir"</em>, <em>"corta quem quebrou juramento"</em> — cumpre a cláusula como um advogado do Thing a leria. Quem não leu o que jurou, descobre na hora errada.
+<strong>Consequência:</strong> <strong>item de Gapheim tem cláusula.</strong> E cláusula em Gapheim é fato jurídico: quebrá-la é caso de Thing, e o item é testemunha.</p>
+<h2>4.4 Tulán — a forja que tem hora</h2>
+<p>O Colégio Calendarista forja como faz tudo: <strong>pela data</strong>. Um item de Tulán é encantado num dia do calendário e carrega esse dia — mais forte na data certa, mudo na data proibida. A cidade tem o único observatório de precisão do mundo conhecido, e é o que faz a diferença entre item de Tulán e item de qualquer outro lugar.</p>
+<p><strong>Força:</strong> precisão. Tulán é a única forja que produz efeito <strong>condicionado a tempo</strong> sem virar obra-prima — e é a melhor em gema de energia, porque sabe quando a mana sobe.
+<strong>Fraqueza:</strong> as datas. Não se forja fora do calendário, e o calendário não negocia. Quem pede item em data proibida espera.
+<strong>Consequência:</strong> <strong>item de Tulán tem hora.</strong> Quem o carrega precisa saber o calendário — e quem sabe o calendário do inimigo sabe quando o item dele não funciona.</p>
+<h2>4.5 Fengdu — a forja que tem selo</h2>
+<p>A administração imperial licencia encantadores por exame, e todo item saído de Fengdu leva <strong>selo</strong>: registro, procedência, e a assinatura do encantador que responde por ele diante do Céu. Fengdu, junto com Ámenti, licencia Necromancia (<code>17</code> §6.6) — e é a única cidade que encanta com ela.</p>
+<p><strong>Força:</strong> confiabilidade. Item selado de Fengdu é o que ele diz ser, sempre, e é aceito em qualquer balcão das sete cidades sem pergunta.
+<strong>Fraqueza:</strong> o Mandato. Selo se cassa. Se Fengdu perde o Mandato — e as outras seis vigiam os sinais — todo selo dela vira papel, e o item, contrabando.
+<strong>Consequência:</strong> <strong>item de Fengdu tem selo, e selo tem dono.</strong> O encantador que assinou pode ser chamado a responder pelo que o item fez. Alguns respondem cobrando de quem o usou.</p>
+<h2>4.6 Amaravati — a forja que tem dharma</h2>
+<p>A Casa de Agni concede Aptidão como Hefesto, e Amaravati é a mais antiga das sete e a que menos tem pressa. Encanta pelo <strong>dharma</strong>: o item certo para a pessoa certa, e não é o mesmo para todos. Um item de Amaravati é feito para quem é, não para quem paga.</p>
+<p><strong>Força:</strong> o mago. Amaravati forma mais magos de Aptidão alta do que qualquer outra cidade, e é onde se aprende a oficina de mana — o encantamento do 9 para baixo é, na origem, técnica de Amaravati.
+<strong>Fraqueza:</strong> o dharma amarra. Amaravati <strong>não forja para quem o dharma diz que não deve</strong>, mesmo pagando, mesmo sendo obviamente vantajoso. E os Nagas reclamam as gemas de energia como coisa deles.
+<strong>Consequência:</strong> <strong>item de Amaravati tem dono certo.</strong> Nas mãos erradas ele não obedece, e o brâmane que o fez sabe quem são as mãos certas.</p>
+<h2>4.7 Ilê Ifé — a forja que assenta</h2>
+<p>Ilê Ifé não encanta: <strong>assenta</strong>. O item é consagrado a um orixá — a lâmina a Ogum, a água a Oxum, o caminho a Exu — e o que ele faz vem da relação, não do metal. Poder aqui circula, não se acumula: o item de Ilê Ifé <strong>pede</strong> antes de dar, e a obrigação vem antes do pedido.</p>
+<p><strong>Força:</strong> Fazer e Quebrar. Ogum é a Casa de Terra e de Fazer e Quebrar (<code>17</code> §6.6), e ninguém conserta, afia ou enfraquece como Ilê Ifé. Item quebrado de qualquer cidade se assenta de novo lá.
+<strong>Fraqueza:</strong> Ilê Ifé se recusa a competir nos termos das outras cidades. Não vende item no balcão do Limiar, não aceita encomenda de estrangeiro sem consulta, e a consulta é oracular — o búzio pode dizer não.
+<strong>Consequência:</strong> <strong>item de Ilê Ifé pede.</strong> Quem o carrega tem obrigação com um orixá, e a obrigação não se compra. Quando esta tradição precisa de antagonista, o antagonista é humano — nunca a Casa, nunca o orixá.</p>
+<h1>5. O que cada forja significa na mesa</h1>
+<table>
+<thead>
+<tr>
+<th>Cidade</th>
+<th>Faz melhor</th>
+<th>O item carrega</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ônfalos</td>
+<td>arma e armadura comum, rápido</td>
+<td>partido</td>
+</tr>
+<tr>
+<td>Ámenti</td>
+<td>identificação e registro; não forja</td>
+<td>registro, e reivindicação</td>
+</tr>
+<tr>
+<td>Gapheim</td>
+<td>armadura; RD e PD</td>
+<td>cláusula literal</td>
+</tr>
+<tr>
+<td>Tulán</td>
+<td>gema de energia; efeito por data</td>
+<td>hora</td>
+</tr>
+<tr>
+<td>Fengdu</td>
+<td>item selado, aceito em toda parte; Necromancia</td>
+<td>selo, e quem assinou</td>
+</tr>
+<tr>
+<td>Amaravati</td>
+<td>magos; a oficina de mana</td>
+<td>dono certo</td>
+</tr>
+<tr>
+<td>Ilê Ifé</td>
+<td>consertar, afiar, quebrar; assentamento</td>
+<td>obrigação</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Para o Mestre de Cena:</strong> a cidade de origem de um item comum é <strong>sabor</strong>, não regra — uma rapieira +1 de Ônfalos e uma de Gapheim funcionam igual na tabela. A cidade de origem de uma <strong>obra-prima</strong> é <strong>regra</strong>: o Árbitro escreve a obra-prima com a forja dela, e o item carrega a coluna da direita. Nenhum Mestre de Cena inventa obra-prima, e nenhum inventa o que uma forja cobra.</p>
+<h1>6. O que ainda não está decidido</h1>
+<ul>
+<li><strong>Quem forja a primeira obra-prima da campanha</strong>, e para quem. Isso é Boletim e é Pendência quando acontecer.</li>
+<li><strong>A causa de a Garganta acordar.</strong> É do Árbitro, e mora na Camada Reservada.</li>
+<li><strong>O que acontece quando a linha da mana chegar ao 8.</strong> Sete cidades e uma câmara nova.</li>
+</ul>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/22-magia-no-mundo.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>
