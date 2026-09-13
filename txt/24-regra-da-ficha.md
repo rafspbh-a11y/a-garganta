@@ -1,11 +1,12 @@
 titulo: Regra de Escrita da Ficha
-versao: 5
+versao: 6
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha
 
 > **Nota.**
+> **Versão 6, de 13/09/2026** — quarta passada. Entrou o item 12: **quem tem mágica tem o NH de escola calculado**, que o `30` exigia desde que foi escrito e que nenhuma das sete fichas tinha.
 > **Versão 5, de 13/09/2026** — terceira passada do dia. O item 10 ganhou a **ordem de cálculo**: Carga primeiro, Corrida depois.
 > **Versão 4, de 13/09/2026** — mesmo dia, segunda passada. O item 10 passou a exigir **dois Deslocamentos** na ficha, em cena e em marcha, porque a Carga entrou na conta e ninguém desce a Garganta com o que veste para brigar. A tabela de pesos está no `21` §8.
 > **Versão 3, de 13/09/2026.** Item 9 do checklist: **o Dever da Marca saiu do limite de −40**. Item 10: o Deslocamento passa a descontar a Carga, e a Briga entra na lista de quem apara a ⅔. E entrou o item 11, o **tipo obrigatório** nos dez nomes que existem em duas tabelas.
@@ -123,6 +124,12 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
     **A ordem importa: desconta-se a Carga primeiro, soma-se a Corrida depois.** Quem tem a perícia soma **⅛ do NH de Corrida** ao Deslocamento já reduzido (`26` §12), e isso é bônus com fonte nomeada — escreve-se `+1 Corrida 16` na coluna Bônus, nunca dentro do número comprado.
     **Desde 13/09/2026 são duas linhas, não uma** (`21` §8): **em cena** — armadura, elmo, roupa e as armas empunhadas ou no cinto —, e **em marcha**, com a mochila de descida. A ficha traz o peso somado das duas, item por item, contra a tabela de pesos do `21` §8.3. **Ficha com um Deslocamento só volta**, porque obriga o Mestre de Cena a escolher qual dos dois usar e ele vai escolher errado metade das vezes.
 11. **Nos nomes que existem em duas tabelas, o tipo está declarado na linha?** São dez, e a lista está no `26` §11 — **Escalada · Escudo · Exorcismo · História · Vôo · Prontidão · Visão Aguçada · Ouvido Aguçado · Visão Noturna · Fúria**. Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`. **Linha sem o tipo volta.**
-12. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
+12. **Quem tem mágica tem o NH de escola calculado?** Um número por colégio, na ficha, pela
+    tabela do `30` §3: cada mágica entre NH 12 e 15 vale 1, entre 16 e 19 vale 1½, de 20 em diante
+    2, e abaixo de 12 nada; soma-se por colégio e arredonda-se para baixo, com **teto no menor
+    entre 20 e IQ + Aptidão Mágica**. **Não se compra — é consequência**, e se atualiza toda vez
+    que o mago aprende ou lavra mágica daquele colégio. **Sem ele o personagem não improvisa**,
+    porque o Mestre de Cena não tem contra o que rolar.
+13. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
 
-**Doze itens. Se um falhar, a ficha volta.** Vale para a ficha do Árbitro também — Carta, artigo 4.
+**Treze itens. Se um falhar, a ficha volta.** Vale para a ficha do Árbitro também — Carta, artigo 4.

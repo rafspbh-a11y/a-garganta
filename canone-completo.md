@@ -3157,7 +3157,7 @@ estavam.
 ---
 
 titulo: Improviso, Círculo e Lavra
-versao: 2
+versao: 4
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -3248,6 +3248,32 @@ Soma-se e **arredonda-se para baixo**. **Teto: o menor entre 20 e IQ + Aptidão 
 O NH de escola de cada mago **fica escrito na ficha** e se atualiza toda vez que ele aprende ou lavra mágica daquele colégio.
 
 **Leia o que essa tabela diz sobre o jogo:** improviso não é para quem coleciona mágicas em nível baixo. Dez mágicas em NH 11 dão **zero**. Quatro em NH 16 dão **seis**. É a mesma lição da armadilha 1 do `17` Parte 7, agora com consequência mecânica direta.
+
+# 3b. Sem Taumatologia não se improvisa
+
+**Fixado em 13/09/2026, e é a porta do improviso inteiro.**
+
+**Improviso exige teoria, não só prática.** Por mais alto que seja o NH de escola, **o mago que não
+tem Taumatologia não improvisa** — nem uma vez, nem com margem, nem em mana alta. É o saber de
+*como a magia funciona*, e improvisar é justamente operar fora do que já está formulado.
+
+**A perícia é Mental/Muito Difícil** (`26`, *Grimório* p.7). O degrau de entrada é barato e é de
+propósito: **IQ−3 por 1 ponto** abre a porta. O que se compra com 1 ponto **não é competência, é
+licença** — a rolagem de improviso continua sendo contra o **NH de escola**, e Taumatologia não
+entra nela, não dá bônus e não substitui nada.
+
+> **Por que uma porta barata em vez de um bônus.** Bônus somado ao NH de escola faria o improviso
+> virar uma soma de modificadores, e o `30` §3 existe para que ele seja **uma consequência do que o
+> mago sabe**, medida num número só. Uma porta de 1 ponto custa a **declaração** — o personagem
+> estudou magia, e isso está escrito na ficha —, e não mexe em nenhuma conta.
+
+**O que isso faz com a mesa hoje, dito na cara: nenhum dos três magos improvisa.** Lísias, Eilif e
+Runirsson têm NH de escola calculado e **nenhum dos três tem Taumatologia.** Os três podem abrir a
+porta por **1 ponto**, e a decisão é de quem joga cada um — **não se lança a perícia em ficha
+alheia por conveniência de regra**.
+
+**E isso não é perda retroativa:** ninguém improvisou até hoje, porque o NH de escola só passou a
+existir nas fichas em 13/09. **Nenhuma cena precisa ser refeita.**
 
 # 4. Como se faz um improviso
 
@@ -3408,13 +3434,31 @@ Dois magos de Casas diferentes fazem juntos uma mágica que **nenhum dos dois fa
 
 **Consequência política:** **magia nova nasce de gente de cidades rivais na mesma sala.** Toda Lavra importante vai ter, no registro de Ámenti, dois nomes de duas cidades — e uma discussão sobre a ordem em que aparecem.
 
-# 12. Pendências abertas nesta decisão
+# 12. O que esta decisão deixou pendente — e o que sobrou
 
-1. **O NH de escola precisa entrar na ficha** — as cinco fichas existentes ainda não o têm calculado. É passe de conta, não de pontos.
-2. **Fengdu vai querer licenciar o improviso.** Se licenciar, vira regra de cidade e entra no `22`. Ainda não decidido.
-3. **A primeira Lavra da campanha** — quem, de quê, e para qual Casa. É Boletim e é Pendência quando acontecer, como a primeira obra-prima.
-4. **Presságio e Taumatologia** entraram como perícias no `25` §4 sem uso amarrado. Taumatologia é, pelo Grimório, o saber teórico da magia e a perícia da pesquisa mágica; falta decidir se ela modifica o teste de improviso ou se fica só como leitura de artefato e de matéria (`25` §8).
-5. ~~**O `23` e o `25` existem só no Notion** e não subiram para a pasta nem para o site.~~ **Resolvido.** Os dois estão na pasta e no ar desde 11/09/2026, e o `23` foi à versão 4 em 13/09. *(A pendência nasceu numa arquitetura que não existe mais: o Notion saiu, a pasta é a fonte e o site é o espelho.)*
+**Nenhuma pendência aberta.** Três das cinco fecharam em 13/09/2026 e as duas restantes **não são
+decisão a tomar: são gatilhos**, que disparam quando a mesa chegar neles.
+
+**Fechadas em 13/09/2026:**
+
+1. ~~**O NH de escola precisa entrar na ficha.**~~ As três fichas com mágica ganharam o bloco,
+   calculado pela tabela da §3 — Lísias (Som 5, Luz e Trevas 4, Comunicação 3, Reconhecimento 3,
+   Movimentação 2), Eilif (Comunicação 4, Ilusão e Criação 2) e Runirsson (Fogo 3, Terra 1). As
+   outras quatro não têm mágica. E o `24` §5 passou a exigi-lo no item 12: **ficha de mago sem NH
+   de escola volta.**
+2. ~~**Presságio e Taumatologia sem uso amarrado.**~~ **Taumatologia é obrigatória para
+   improvisar** — §3b. *(Presságio segue sem uso amarrado e não é pendência: é perícia de
+   adivinhação, e o uso aparece quando um jogador a comprar.)*
+3. ~~**O `23` e o `25` existem só no Notion.**~~ Os dois estão na pasta e no ar desde 11/09/2026.
+   *(A pendência nasceu numa arquitetura que não existe mais: o Notion saiu, a pasta é a fonte e o
+   GitHub é o espelho.)*
+
+**Os dois gatilhos, que ficam armados e não pedem nada de ninguém agora:**
+
+- **Se Fengdu licenciar o improviso**, vira regra de cidade e entra no `22`. Não há o que decidir
+  antes: a cidade age, e aí se decide.
+- **A primeira Lavra da campanha** — quem, de quê e para qual Casa — é **Boletim e Pendência no
+  dia em que acontecer**, como a primeira obra-prima. Até lá não existe.
 
 
 ---
@@ -4090,13 +4134,14 @@ O registro é da Guilda, e a Guilda não apaga. Quem quiser suprimir uma linha �
 ---
 
 titulo: Regra de Escrita da Ficha
-versao: 5
+versao: 6
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha
 
 > **Nota.**
+> **Versão 6, de 13/09/2026** — quarta passada. Entrou o item 12: **quem tem mágica tem o NH de escola calculado**, que o `30` exigia desde que foi escrito e que nenhuma das sete fichas tinha.
 > **Versão 5, de 13/09/2026** — terceira passada do dia. O item 10 ganhou a **ordem de cálculo**: Carga primeiro, Corrida depois.
 > **Versão 4, de 13/09/2026** — mesmo dia, segunda passada. O item 10 passou a exigir **dois Deslocamentos** na ficha, em cena e em marcha, porque a Carga entrou na conta e ninguém desce a Garganta com o que veste para brigar. A tabela de pesos está no `21` §8.
 > **Versão 3, de 13/09/2026.** Item 9 do checklist: **o Dever da Marca saiu do limite de −40**. Item 10: o Deslocamento passa a descontar a Carga, e a Briga entra na lista de quem apara a ⅔. E entrou o item 11, o **tipo obrigatório** nos dez nomes que existem em duas tabelas.
@@ -4214,9 +4259,15 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
     **A ordem importa: desconta-se a Carga primeiro, soma-se a Corrida depois.** Quem tem a perícia soma **⅛ do NH de Corrida** ao Deslocamento já reduzido (`26` §12), e isso é bônus com fonte nomeada — escreve-se `+1 Corrida 16` na coluna Bônus, nunca dentro do número comprado.
     **Desde 13/09/2026 são duas linhas, não uma** (`21` §8): **em cena** — armadura, elmo, roupa e as armas empunhadas ou no cinto —, e **em marcha**, com a mochila de descida. A ficha traz o peso somado das duas, item por item, contra a tabela de pesos do `21` §8.3. **Ficha com um Deslocamento só volta**, porque obriga o Mestre de Cena a escolher qual dos dois usar e ele vai escolher errado metade das vezes.
 11. **Nos nomes que existem em duas tabelas, o tipo está declarado na linha?** São dez, e a lista está no `26` §11 — **Escalada · Escudo · Exorcismo · História · Vôo · Prontidão · Visão Aguçada · Ouvido Aguçado · Visão Noturna · Fúria**. Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`. **Linha sem o tipo volta.**
-12. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
+12. **Quem tem mágica tem o NH de escola calculado?** Um número por colégio, na ficha, pela
+    tabela do `30` §3: cada mágica entre NH 12 e 15 vale 1, entre 16 e 19 vale 1½, de 20 em diante
+    2, e abaixo de 12 nada; soma-se por colégio e arredonda-se para baixo, com **teto no menor
+    entre 20 e IQ + Aptidão Mágica**. **Não se compra — é consequência**, e se atualiza toda vez
+    que o mago aprende ou lavra mágica daquele colégio. **Sem ele o personagem não improvisa**,
+    porque o Mestre de Cena não tem contra o que rolar.
+13. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
 
-**Doze itens. Se um falhar, a ficha volta.** Vale para a ficha do Árbitro também — Carta, artigo 4.
+**Treze itens. Se um falhar, a ficha volta.** Vale para a ficha do Árbitro também — Carta, artigo 4.
 
 
 ---
@@ -7673,7 +7724,7 @@ nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 n
 ---
 
 titulo: Retificações de livro
-versao: 4
+versao: 5
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -8362,9 +8413,57 @@ Conferindo versão de arquivo contra o `versoes.tsv`, apareceu que
 `14` publicado sai de `_fontes-site/14-indice.md`, na **versão 7**. **O arquivo duplicado não é
 lido pelo gerador e ninguém percebeu porque ele nunca aparece no site.**
 
-**O risco é editar o arquivo errado** e achar que publicou. Ele foi **marcado com aviso no topo**,
-não apagado — nenhuma linha some em silêncio nesta pasta. **O que fazer com ele é decisão do
-Árbitro**, e é a única coisa desta retificação que fica em aberto.
+**O risco é editar o arquivo errado** e achar que publicou. Havia dois nessa situação: este e o
+`00-Indice-Camada-Aberta.md`, exportação do Notion que ainda mandava ativar o conector e anexar a
+seção inteira ao Projeto.
+
+**Decisão do Árbitro, 13/09/2026: os dois foram apagados.** Nenhum era lido por nada, os dois
+descreviam uma arquitetura que não existe mais, e **o histórico deles fica no git** — a trava de
+que nenhuma linha some em silêncio está cumprida pelo repositório, que é onde ela sempre esteve
+cumprida. A pasta volta a ter **uma fonte por documento**, que é a regra.
+
+## 13. Taumatologia virou a porta do improviso
+
+Ela entrou como perícia numa leva de 10/09 e ficou **sem uso amarrado** — existia na Tabela de
+Perícias e não fazia nada. **Fixado em 13/09/2026: sem Taumatologia não se improvisa**, por mais
+alto que seja o NH de escola. Improviso passa a exigir **teoria, não só prática**.
+
+**A porta é barata de propósito:** Mental/Muito Difícil, **IQ−3 por 1 ponto**. O que se compra com
+esse ponto **não é competência, é licença** — a rolagem continua sendo contra o NH de escola, e
+Taumatologia não entra nela nem dá bônus. **Bônus somado ao NH de escola faria o improviso virar
+uma soma de modificadores**, e ele existe para ser uma consequência do que o mago sabe, medida num
+número só.
+
+**Consequência imediata, e está escrita nas três fichas: nenhum mago da mesa improvisa hoje.**
+Lísias, Eilif e Runirsson ganharam o NH de escola em 13/09 e **nenhum dos três tem a perícia**. A
+porta abre por 1 ponto e **a escolha é de quem joga cada um** — licença não se lança em ficha
+alheia por conveniência de regra. **Nada precisa ser refeito:** ninguém improvisou antes, porque o
+NH de escola só passou a existir nas fichas hoje.
+
+## 14. O NH de escola não estava em ficha nenhuma
+
+O documento de Improviso exige, desde que foi escrito, que **cada mago tenha o NH de escola na
+ficha** — um número por colégio, do qual sai toda rolagem de improviso. **Nenhuma das sete fichas o
+tinha**, e a própria lista de pendências daquele documento registrava isso como "passe de conta,
+não de pontos".
+
+**Calculado e escrito nas três fichas com mágica**, pela tabela do `30` §3 — cada mágica entre NH
+12 e 15 vale 1, entre 16 e 19 vale 1½, soma-se por colégio e arredonda-se para baixo:
+
+| | Escolas | Teto |
+| --- | --- | --- |
+| **Lísias** | Som **5** · Luz e Trevas **4** · Comunicação **3** · Reconhecimento **3** · Movimentação **2** | 16 |
+| **Eilif** | Comunicação **4** · Ilusão e Criação **2** | 14 |
+| **Runirsson** | Fogo **3** · Terra **1** | 16 |
+
+**Runirsson é o único cujas mágicas caem na faixa de 1½**, porque a Aptidão Mágica 2 lhe dá IQ
+efetivo 16 e as três foram compradas a IQ+0: **três mágicas lhe dão o mesmo que três do Lísias,
+com um terço do investimento.** É a tabela do `30` §3 funcionando como foi desenhada — **improviso
+premia nível alto, não coleção**. E a escola de Terra dele **perde meio ponto no arredondamento**:
+uma segunda mágica de Terra a NH 16 a levaria de 1 para 3, que é o salto mais barato disponível em
+qualquer ficha da mesa.
+
+**E o `24` passou a exigi-lo**, no item 12 do checklist: **ficha de mago sem NH de escola volta.**
 
 
 ---

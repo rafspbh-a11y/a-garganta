@@ -92,7 +92,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 </ul>
 <h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
 </nav>
-<main><div class="cabeca"><h1>Retificações de livro</h1><div class="meta">versão 4 · atualizado em 2026-09-13 · Decisões e retificações</div></div>
+<main><div class="cabeca"><h1>Retificações de livro</h1><div class="meta">versão 5 · atualizado em 2026-09-13 · Decisões e retificações</div></div>
 <blockquote>
 <p><strong>Atenção.</strong>
 <strong>Leva de 10/09/2026.</strong> Todo o cânone de regras foi conferido linha a linha contra o <strong>GURPS Módulo Básico</strong>, o <strong>GURPS Magia</strong> e o <strong>GURPS Grimório</strong>, edição clássica. Onde o cânone divergia, o livro venceu (<code>17</code> cabeçalho, <code>02</code> Regra zero). Esta página é a lista completa do que mudou. <strong>Onde este documento divergir do <code>17</code> ou do <code>02</code>, este documento vence</strong> — os dois foram corrigidos a partir daqui.</p>
@@ -1258,9 +1258,67 @@ preço que a próxima mesa inventa diferente.</strong> Entraram no <code>03</cod
 <code>Canone/Camada-Aberta/14-Indice-e-Regra-de-Escrita.md</code> está na <strong>versão 3, de 07/09</strong>, enquanto o
 <code>14</code> publicado sai de <code>_fontes-site/14-indice.md</code>, na <strong>versão 7</strong>. <strong>O arquivo duplicado não é
 lido pelo gerador e ninguém percebeu porque ele nunca aparece no site.</strong></p>
-<p><strong>O risco é editar o arquivo errado</strong> e achar que publicou. Ele foi <strong>marcado com aviso no topo</strong>,
-não apagado — nenhuma linha some em silêncio nesta pasta. <strong>O que fazer com ele é decisão do
-Árbitro</strong>, e é a única coisa desta retificação que fica em aberto.</p>
+<p><strong>O risco é editar o arquivo errado</strong> e achar que publicou. Havia dois nessa situação: este e o
+<code>00-Indice-Camada-Aberta.md</code>, exportação do Notion que ainda mandava ativar o conector e anexar a
+seção inteira ao Projeto.</p>
+<p><strong>Decisão do Árbitro, 13/09/2026: os dois foram apagados.</strong> Nenhum era lido por nada, os dois
+descreviam uma arquitetura que não existe mais, e <strong>o histórico deles fica no git</strong> — a trava de
+que nenhuma linha some em silêncio está cumprida pelo repositório, que é onde ela sempre esteve
+cumprida. A pasta volta a ter <strong>uma fonte por documento</strong>, que é a regra.</p>
+<h2>13. Taumatologia virou a porta do improviso</h2>
+<p>Ela entrou como perícia numa leva de 10/09 e ficou <strong>sem uso amarrado</strong> — existia na Tabela de
+Perícias e não fazia nada. <strong>Fixado em 13/09/2026: sem Taumatologia não se improvisa</strong>, por mais
+alto que seja o NH de escola. Improviso passa a exigir <strong>teoria, não só prática</strong>.</p>
+<p><strong>A porta é barata de propósito:</strong> Mental/Muito Difícil, <strong>IQ−3 por 1 ponto</strong>. O que se compra com
+esse ponto <strong>não é competência, é licença</strong> — a rolagem continua sendo contra o NH de escola, e
+Taumatologia não entra nela nem dá bônus. <strong>Bônus somado ao NH de escola faria o improviso virar
+uma soma de modificadores</strong>, e ele existe para ser uma consequência do que o mago sabe, medida num
+número só.</p>
+<p><strong>Consequência imediata, e está escrita nas três fichas: nenhum mago da mesa improvisa hoje.</strong>
+Lísias, Eilif e Runirsson ganharam o NH de escola em 13/09 e <strong>nenhum dos três tem a perícia</strong>. A
+porta abre por 1 ponto e <strong>a escolha é de quem joga cada um</strong> — licença não se lança em ficha
+alheia por conveniência de regra. <strong>Nada precisa ser refeito:</strong> ninguém improvisou antes, porque o
+NH de escola só passou a existir nas fichas hoje.</p>
+<h2>14. O NH de escola não estava em ficha nenhuma</h2>
+<p>O documento de Improviso exige, desde que foi escrito, que <strong>cada mago tenha o NH de escola na
+ficha</strong> — um número por colégio, do qual sai toda rolagem de improviso. <strong>Nenhuma das sete fichas o
+tinha</strong>, e a própria lista de pendências daquele documento registrava isso como "passe de conta,
+não de pontos".</p>
+<p><strong>Calculado e escrito nas três fichas com mágica</strong>, pela tabela do <code>30</code> §3 — cada mágica entre NH
+12 e 15 vale 1, entre 16 e 19 vale 1½, soma-se por colégio e arredonda-se para baixo:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Escolas</th>
+<th>Teto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lísias</strong></td>
+<td>Som <strong>5</strong> · Luz e Trevas <strong>4</strong> · Comunicação <strong>3</strong> · Reconhecimento <strong>3</strong> · Movimentação <strong>2</strong></td>
+<td>16</td>
+</tr>
+<tr>
+<td><strong>Eilif</strong></td>
+<td>Comunicação <strong>4</strong> · Ilusão e Criação <strong>2</strong></td>
+<td>14</td>
+</tr>
+<tr>
+<td><strong>Runirsson</strong></td>
+<td>Fogo <strong>3</strong> · Terra <strong>1</strong></td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Runirsson é o único cujas mágicas caem na faixa de 1½</strong>, porque a Aptidão Mágica 2 lhe dá IQ
+efetivo 16 e as três foram compradas a IQ+0: <strong>três mágicas lhe dão o mesmo que três do Lísias,
+com um terço do investimento.</strong> É a tabela do <code>30</code> §3 funcionando como foi desenhada — <strong>improviso
+premia nível alto, não coleção</strong>. E a escola de Terra dele <strong>perde meio ponto no arredondamento</strong>:
+uma segunda mágica de Terra a NH 16 a levaria de 1 para 3, que é o salto mais barato disponível em
+qualquer ficha da mesa.</p>
+<p><strong>E o <code>24</code> passou a exigi-lo</strong>, no item 12 do checklist: <strong>ficha de mago sem NH de escola volta.</strong></p>
 <div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-13 · <a href="txt/23-retificacoes-de-livro.md">ver em texto puro</a></div>
 </main></div><script>
 (function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;

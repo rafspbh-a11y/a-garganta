@@ -1,5 +1,5 @@
 titulo: Retificações de livro
-versao: 4
+versao: 5
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -688,6 +688,54 @@ Conferindo versão de arquivo contra o `versoes.tsv`, apareceu que
 `14` publicado sai de `_fontes-site/14-indice.md`, na **versão 7**. **O arquivo duplicado não é
 lido pelo gerador e ninguém percebeu porque ele nunca aparece no site.**
 
-**O risco é editar o arquivo errado** e achar que publicou. Ele foi **marcado com aviso no topo**,
-não apagado — nenhuma linha some em silêncio nesta pasta. **O que fazer com ele é decisão do
-Árbitro**, e é a única coisa desta retificação que fica em aberto.
+**O risco é editar o arquivo errado** e achar que publicou. Havia dois nessa situação: este e o
+`00-Indice-Camada-Aberta.md`, exportação do Notion que ainda mandava ativar o conector e anexar a
+seção inteira ao Projeto.
+
+**Decisão do Árbitro, 13/09/2026: os dois foram apagados.** Nenhum era lido por nada, os dois
+descreviam uma arquitetura que não existe mais, e **o histórico deles fica no git** — a trava de
+que nenhuma linha some em silêncio está cumprida pelo repositório, que é onde ela sempre esteve
+cumprida. A pasta volta a ter **uma fonte por documento**, que é a regra.
+
+## 13. Taumatologia virou a porta do improviso
+
+Ela entrou como perícia numa leva de 10/09 e ficou **sem uso amarrado** — existia na Tabela de
+Perícias e não fazia nada. **Fixado em 13/09/2026: sem Taumatologia não se improvisa**, por mais
+alto que seja o NH de escola. Improviso passa a exigir **teoria, não só prática**.
+
+**A porta é barata de propósito:** Mental/Muito Difícil, **IQ−3 por 1 ponto**. O que se compra com
+esse ponto **não é competência, é licença** — a rolagem continua sendo contra o NH de escola, e
+Taumatologia não entra nela nem dá bônus. **Bônus somado ao NH de escola faria o improviso virar
+uma soma de modificadores**, e ele existe para ser uma consequência do que o mago sabe, medida num
+número só.
+
+**Consequência imediata, e está escrita nas três fichas: nenhum mago da mesa improvisa hoje.**
+Lísias, Eilif e Runirsson ganharam o NH de escola em 13/09 e **nenhum dos três tem a perícia**. A
+porta abre por 1 ponto e **a escolha é de quem joga cada um** — licença não se lança em ficha
+alheia por conveniência de regra. **Nada precisa ser refeito:** ninguém improvisou antes, porque o
+NH de escola só passou a existir nas fichas hoje.
+
+## 14. O NH de escola não estava em ficha nenhuma
+
+O documento de Improviso exige, desde que foi escrito, que **cada mago tenha o NH de escola na
+ficha** — um número por colégio, do qual sai toda rolagem de improviso. **Nenhuma das sete fichas o
+tinha**, e a própria lista de pendências daquele documento registrava isso como "passe de conta,
+não de pontos".
+
+**Calculado e escrito nas três fichas com mágica**, pela tabela do `30` §3 — cada mágica entre NH
+12 e 15 vale 1, entre 16 e 19 vale 1½, soma-se por colégio e arredonda-se para baixo:
+
+| | Escolas | Teto |
+| --- | --- | --- |
+| **Lísias** | Som **5** · Luz e Trevas **4** · Comunicação **3** · Reconhecimento **3** · Movimentação **2** | 16 |
+| **Eilif** | Comunicação **4** · Ilusão e Criação **2** | 14 |
+| **Runirsson** | Fogo **3** · Terra **1** | 16 |
+
+**Runirsson é o único cujas mágicas caem na faixa de 1½**, porque a Aptidão Mágica 2 lhe dá IQ
+efetivo 16 e as três foram compradas a IQ+0: **três mágicas lhe dão o mesmo que três do Lísias,
+com um terço do investimento.** É a tabela do `30` §3 funcionando como foi desenhada — **improviso
+premia nível alto, não coleção**. E a escola de Terra dele **perde meio ponto no arredondamento**:
+uma segunda mágica de Terra a NH 16 a levaria de 1 para 3, que é o salto mais barato disponível em
+qualquer ficha da mesa.
+
+**E o `24` passou a exigi-lo**, no item 12 do checklist: **ficha de mago sem NH de escola volta.**
