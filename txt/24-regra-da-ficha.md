@@ -1,11 +1,12 @@
 titulo: Regra de Escrita da Ficha
-versao: 4
+versao: 5
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha
 
 > **Nota.**
+> **Versão 5, de 13/09/2026** — terceira passada do dia. O item 10 ganhou a **ordem de cálculo**: Carga primeiro, Corrida depois.
 > **Versão 4, de 13/09/2026** — mesmo dia, segunda passada. O item 10 passou a exigir **dois Deslocamentos** na ficha, em cena e em marcha, porque a Carga entrou na conta e ninguém desce a Garganta com o que veste para brigar. A tabela de pesos está no `21` §8.
 > **Versão 3, de 13/09/2026.** Item 9 do checklist: **o Dever da Marca saiu do limite de −40**. Item 10: o Deslocamento passa a descontar a Carga, e a Briga entra na lista de quem apara a ⅔. E entrou o item 11, o **tipo obrigatório** nos dez nomes que existem em duas tabelas.
 > **Versão 2, de 10/09/2026** — segunda rodada de conferência. Entraram três travas que estavam implícitas e não escritas: bônus condicional fica fora do Efetivo; bônus por item exige o item no equipamento; especialização exige a especialidade declarada.
@@ -119,6 +120,7 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
 8. **A conta fecha no orçamento?** 150 na criação.
 9. **Desvantagens dentro de −40, com o Dever da Marca FORA do limite?** O Dever é obrigatório e continua valendo de −5 a −15, mas desde 13/09/2026 **não ocupa espaço no −40** (`29` §1). Peculiaridades até 5, também fora.
 10. **Os derivados batem, e vêm em duas linhas?** PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · **Deslocamento = Vel. truncada − nível de Carga** · Esquiva=Deslocamento · Aparar=perícia÷2, ou **⅔ em Esgrima, Bastão e Briga** · Bloquear=Escudo÷2.
+    **A ordem importa: desconta-se a Carga primeiro, soma-se a Corrida depois.** Quem tem a perícia soma **⅛ do NH de Corrida** ao Deslocamento já reduzido (`26` §12), e isso é bônus com fonte nomeada — escreve-se `+1 Corrida 16` na coluna Bônus, nunca dentro do número comprado.
     **Desde 13/09/2026 são duas linhas, não uma** (`21` §8): **em cena** — armadura, elmo, roupa e as armas empunhadas ou no cinto —, e **em marcha**, com a mochila de descida. A ficha traz o peso somado das duas, item por item, contra a tabela de pesos do `21` §8.3. **Ficha com um Deslocamento só volta**, porque obriga o Mestre de Cena a escolher qual dos dois usar e ele vai escolher errado metade das vezes.
 11. **Nos nomes que existem em duas tabelas, o tipo está declarado na linha?** São dez, e a lista está no `26` §11 — **Escalada · Escudo · Exorcismo · História · Vôo · Prontidão · Visão Aguçada · Ouvido Aguçado · Visão Noturna · Fúria**. Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`. **Linha sem o tipo volta.**
 12. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.

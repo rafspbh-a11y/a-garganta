@@ -1,0 +1,505 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cartão de Combate — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="19-cartao-de-combate.html" class="atual">Cartão de Combate</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="32-os-povos-que-subiram.html">Os Povos que Subiram</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Cartão de Combate</h1><div class="meta">versão 1 · atualizado em 2026-09-13 · Comece aqui</div></div>
+<blockquote>
+<p><strong>Este é o documento de combate que você anexa ao Projeto.</strong> O <code>20 — Como se joga</code> continua
+existindo inteiro e <strong>não é para anexar</strong>: é para abrir quando a resposta não estiver aqui.
+Tudo abaixo está no <code>20</code>, e o <code>20</code> tem muito mais. <strong>Quando os dois divergirem, vale o <code>20</code>.</strong></p>
+<p><strong>Por que ele existe.</strong> Você tem janela de contexto finita, e o <code>20</code> é longo. Cinco documentos
+anexados rodam uma sessão inteira; trinta sufocam a cena. Este cartão troca trinta páginas de
+combate por uma.</p>
+</blockquote>
+<h1>1 · O turno</h1>
+<p><strong>1 turno = 1 segundo.</strong> Uma manobra por turno, escolhida no início dele, e <strong>é ela que decide
+quais defesas você tem</strong> até o seu turno seguinte.</p>
+<p><strong>Ordem:</strong> do maior <strong>Deslocamento</strong> para o menor. Empate → <strong>Velocidade Básica</strong> cheia, com a
+fração. Empate ainda → <strong>DX maior</strong>. Persistindo → <strong>ordem de declaração</strong>.</p>
+<h1>2 · Todo golpe são três rolagens</h1>
+<ol>
+<li><strong>Ataque</strong> — 3d contra o NH da arma, com modificadores.</li>
+<li><strong>Defesa</strong> — se passou, o defensor rola 3d contra a defesa dele.</li>
+<li><strong>Dano</strong> — se a defesa falhou, rola-se o dano.</li>
+</ol>
+<p><strong>Falhou qualquer uma, o golpe não passa.</strong></p>
+<table>
+<thead>
+<tr>
+<th>No ataque</th>
+<th>Sempre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3 ou 4</strong></td>
+<td><strong>Golpe fulminante.</strong> Sem defesa ativa. Rola-se na tabela abaixo.</td>
+</tr>
+<tr>
+<td><strong>5 ou 6</strong></td>
+<td>Fulminante se o NH efetivo for 15+ (no 5) ou 16+ (no 6).</td>
+</tr>
+<tr>
+<td><strong>17 ou 18</strong></td>
+<td><strong>Erra sempre.</strong> Tabela de Erros Críticos (<code>20</code>).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Golpe fulminante rola 3d na tabela</strong> — dobro e triplo são sobre o <strong>dano básico dos dados</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>3d</th>
+<th>Corpo</th>
+<th>Cabeça (só se mirou a cabeça)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3</strong></td>
+<td>Tronco: dano normal e <strong>nocaute</strong>. Fora: <strong>triplo</strong></td>
+<td><strong>MORTE INSTANTÂNEA</strong></td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Ultrapassa a armadura</strong>, dano normal</td>
+<td><strong>Nocaute</strong></td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Triplo do dano</strong></td>
+<td><strong>Nocaute</strong></td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Dobro do dano</strong></td>
+<td><strong>Cego dos dois olhos</strong>, DX −10 no resto da luta</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>Dano normal e <strong>atordoado</strong> até passar em HT</td>
+<td><strong>Cego de um olho</strong>, DX −2 no resto da luta</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td>Membro atingido <strong>fica incapacitado</strong> (se o dano não bastaria, cura em 6 turnos)</td>
+<td><strong>Desequilibrado</strong>: só se defende no turno seguinte</td>
+</tr>
+<tr>
+<td><strong>9-11</strong></td>
+<td><strong>Dano normal, e só</strong></td>
+<td><strong>Dano normal, e só</strong></td>
+</tr>
+<tr>
+<td><strong>12</strong></td>
+<td>Como o 8</td>
+<td>Contundente: <strong>surdo 24 h</strong>. Lâmina: 1 PV e cicatriz</td>
+</tr>
+<tr>
+<td><strong>13</strong></td>
+<td><strong>Ultrapassa a armadura</strong></td>
+<td>Contundente: <strong>surdez possivelmente permanente</strong>. Lâmina: 2 PV e cicatriz</td>
+</tr>
+<tr>
+<td><strong>14</strong></td>
+<td>Como o 8</td>
+<td><strong>Derruba a arma</strong></td>
+</tr>
+<tr>
+<td><strong>15</strong></td>
+<td><strong>O oponente derruba a arma</strong>, e leva dano normal</td>
+<td>Dano normal, <strong>atordoado</strong></td>
+</tr>
+<tr>
+<td><strong>16</strong></td>
+<td><strong>Dobro do dano</strong></td>
+<td>Dano normal, <strong>atordoado</strong></td>
+</tr>
+<tr>
+<td><strong>17</strong></td>
+<td><strong>Triplo do dano</strong></td>
+<td>Dano normal, <strong>atordoado</strong></td>
+</tr>
+<tr>
+<td><strong>18</strong></td>
+<td>Tronco: dano normal e <strong>nocaute</strong>. Fora: <strong>triplo</strong></td>
+<td>Dano normal, <strong>atordoado</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nocaute:</strong> teste de HT a cada 30 minutos para acordar.</p>
+<h1>3 · As manobras que a mesa usa</h1>
+<table>
+<thead>
+<tr>
+<th>Manobra</th>
+<th>Anda</th>
+<th>O que faz</th>
+<th>Defesa que sobra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Deslocamento</strong></td>
+<td>tudo</td>
+<td>Só anda</td>
+<td>Qualquer uma</td>
+</tr>
+<tr>
+<td><strong>Avançar e Atacar</strong></td>
+<td>1 m</td>
+<td>Um ataque</td>
+<td>Qualquer uma</td>
+</tr>
+<tr>
+<td><strong>Ataque Total</strong></td>
+<td>2 m ou ½ Desloc.</td>
+<td><strong>Uma</strong> das quatro: dois ataques · finta e ataque · <strong>+4 no NH</strong> · <strong>+2 de dano</strong></td>
+<td><strong>NENHUMA</strong></td>
+</tr>
+<tr>
+<td><strong>Defesa Total</strong></td>
+<td>1 m</td>
+<td>Só se defende</td>
+<td><strong>Duas defesas diferentes</strong> contra o mesmo ataque</td>
+</tr>
+<tr>
+<td><strong>Apontar</strong></td>
+<td>½ Desloc.</td>
+<td>Mira: Precisão da arma, +1 por turno extra, até +3</td>
+<td>Qualquer uma — <strong>defender apaga a mira inteira</strong></td>
+</tr>
+<tr>
+<td><strong>Preparar</strong></td>
+<td>1 m</td>
+<td>Saca, recarrega, pega o escudo</td>
+<td>Qualquer uma</td>
+</tr>
+<tr>
+<td><strong>Concentrar</strong></td>
+<td>1 m</td>
+<td>Feitiço</td>
+<td>Qualquer uma, <strong>mas defender exige Vontade −3</strong></td>
+</tr>
+<tr>
+<td><strong>Aguardar</strong></td>
+<td>1 m</td>
+<td>Ataca quando o inimigo entra no alcance</td>
+<td>Qualquer uma</td>
+</tr>
+<tr>
+<td><strong>Finta</strong></td>
+<td>1 m</td>
+<td>Disputa Rápida; a sua margem sai da defesa dele no seu próximo ataque</td>
+<td>Qualquer uma</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Três notas que sempre aparecem:</strong> espada e faca nunca ficam despreparadas, <strong>machado, maça e
+arma de haste ficam</strong> (um turno preparando depois de golpear) · recarregando, <strong>a única defesa é
+Esquiva</strong>, e esquivar cancela a recarga · <strong>sem Apontar, arma de longo alcance ataca a −4</strong>.</p>
+<h1>4 · As três defesas ativas</h1>
+<table>
+<thead>
+<tr>
+<th>Defesa</th>
+<th>Fórmula</th>
+<th>Contra o quê</th>
+<th>Por rodada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Esquiva</strong></td>
+<td><strong>= Deslocamento</strong></td>
+<td>quase tudo que você <strong>sabe</strong> que vem</td>
+<td><strong>Ilimitadas</strong></td>
+</tr>
+<tr>
+<td><strong>Bloquear</strong></td>
+<td>½ NH de Escudo</td>
+<td>lâmina, clava, machado, lança, arremesso, flecha</td>
+<td>1 — 2 em Defesa Total</td>
+</tr>
+<tr>
+<td><strong>Aparar</strong></td>
+<td>½ NH da arma · <strong>⅔ com Esgrima, Bastão ou Briga</strong></td>
+<td>só <strong>arma de mão</strong></td>
+<td>1 — 2 com duas armas ou em Defesa Total; <strong>esgrimista apara 2, e ilimitadas em Defesa Total</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Faca apara a −1</strong> · arma arremessada, −1 · faca arremessada, −2 · mangual, −4.
+<strong>Defesa Passiva do escudo e da armadura soma sempre</strong>, e vale mesmo sem defesa ativa.</p>
+<h1>5 · Deslocamento, Carga e Esquiva — os dois números da ficha</h1>
+<p><strong>Deslocamento = Velocidade Básica truncada − nível de Carga.</strong> E <strong>Esquiva = Deslocamento</strong>.</p>
+<p><strong>Toda ficha traz dois</strong>, e você usa o certo:</p>
+<ul>
+<li><strong>Em cena</strong> — armadura, elmo, roupa e as armas empunhadas ou no cinto.</li>
+<li><strong>Em marcha</strong> — tudo aquilo <strong>mais a mochila de descida</strong>. Vale quando a briga começa <strong>sem
+  tempo de largar a mochila</strong>.</li>
+</ul>
+<p><strong>Largar a mochila é manobra livre</strong>, na fase de movimento: quem larga passa a <em>em cena</em> no turno
+seguinte, e a mochila fica no chão, onde pode ser levada, queimada ou usada como isca.</p>
+<p><strong>Quem tem Corrida</strong> soma <strong>⅛ do NH</strong> ao Deslocamento — <strong>depois</strong> de descontar a Carga.</p>
+<table>
+<thead>
+<tr>
+<th>Peso carregado</th>
+<th>Carga</th>
+<th>Deslocamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>até 1 × ST</td>
+<td>Nenhuma</td>
+<td>—</td>
+</tr>
+<tr>
+<td>até 2 × ST</td>
+<td>Leve</td>
+<td><strong>−1</strong></td>
+</tr>
+<tr>
+<td>até 3 × ST</td>
+<td>Média</td>
+<td><strong>−2</strong></td>
+</tr>
+<tr>
+<td>até 6 × ST</td>
+<td>Pesada</td>
+<td><strong>−3</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Carga acima de Leve tira a Esgrima e o Judô.</strong> <em>(O Anão tem escala própria: Nenhuma 2,5 × ST,
+Leve 5 × ST, Média 10 × ST.)</em></p>
+<h1>6 · Dano</h1>
+<p><strong>Cortante e perfurante nunca fazem menos de 1</strong>; contundente pode fazer 0.</p>
+<table>
+<thead>
+<tr>
+<th>ST</th>
+<th>Golpe de Ponta</th>
+<th>Balanço</th>
+<th></th>
+<th>ST</th>
+<th>Golpe de Ponta</th>
+<th>Balanço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>1d−2</td>
+<td>1d−1</td>
+<td></td>
+<td>13</td>
+<td>1d</td>
+<td>2d−1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1d−2</td>
+<td>1d</td>
+<td></td>
+<td>14</td>
+<td>1d</td>
+<td>2d</td>
+</tr>
+<tr>
+<td>11</td>
+<td>1d−1</td>
+<td>1d+1</td>
+<td></td>
+<td>15</td>
+<td>1d+1</td>
+<td>2d+1</td>
+</tr>
+<tr>
+<td>12</td>
+<td>1d−1</td>
+<td>1d+2</td>
+<td></td>
+<td>16</td>
+<td>1d+1</td>
+<td>2d+2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Magia de projétil:</strong> duas rolagens — a mágica (sem redutor de distância) e <strong>Arremesso de
+Mágica</strong> (pré-definido DX−3). Energia 1 a 3, <strong>1d por ponto</strong>, um segundo de concentração por
+ponto. <strong>Exceção: Bola de Fogo Explosiva, energia 2 a 6, 1d a cada 2 pontos</strong>, máximo 3d, e pode
+ser jogada no chão com <strong>+4</strong> para pegar quem está em volta. Bloquear e Esquivar valem; <strong>Aparar,
+não.</strong> A armadura protege.</p>
+<h1>7 · Quem cai, e quando</h1>
+<table>
+<thead>
+<tr>
+<th>PV</th>
+<th>O que acontece</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3, 2 ou 1</strong></td>
+<td><strong>Deslocamento e Esquiva à metade</strong>, para baixo. Vale para bicho também.</td>
+</tr>
+<tr>
+<td><strong>0 ou menos</strong></td>
+<td>Teste de HT no início de cada turno. Falhou: desmaia.</td>
+</tr>
+<tr>
+<td><strong>−HT</strong></td>
+<td>Teste de HT <strong>ou morre</strong>. Novo teste a cada 5 PV perdidos depois disso.</td>
+</tr>
+<tr>
+<td><strong>−5 × HT</strong></td>
+<td><strong>Morte automática.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>E quem morre quando, que é regra desta casa:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Quem</th>
+<th>Morre em</th>
+<th>Testes de morte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bicho de bestiário</strong> sem nome</td>
+<td><strong>0 PV</strong></td>
+<td>Nenhum</td>
+</tr>
+<tr>
+<td><strong>NPC nomeado ou chefe de encontro</strong></td>
+<td><strong>−HT</strong></td>
+<td>Nenhum</td>
+</tr>
+<tr>
+<td><strong>Personagem de jogador</strong>, sempre</td>
+<td>escada completa acima</td>
+<td>Todos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Chefe de encontro se declara antes do primeiro dado.</strong> Declarado depois, não vale.</p>
+<p><strong>Misericórdia exige alvo indefeso ou inconsciente</strong> — <strong>atordoado não basta</strong>, porque atordoado
+ainda tem defesa ativa, só que a −4. Alvo parado que não te vê: <strong>+4</strong>, sem defesa ativa, e órgão
+vital a −3.</p>
+<h1>8 · Fadiga, em três linhas</h1>
+<p><strong>Fadiga = ST.</strong> Cada ponto de energia de magia é 1 de Fadiga. <strong>A Fadiga não afeta o
+Deslocamento até cair abaixo de ⅓</strong>; daí em diante, Deslocamento e Esquiva caem junto.
+<strong>Do andar 9 para baixo</strong>, mana alta dá <strong>+2 no NH</strong> de magia e <strong>metade da fadiga</strong>.</p>
+<h1>9 · O que você nunca faz aqui</h1>
+<ul>
+<li><strong>Não rola escondido sem gravar antes.</strong> Grava-se o resultado, revela-se na homologação.</li>
+<li><strong>Não declara chefe no meio da luta</strong> para o bicho sobreviver.</li>
+<li><strong>Não inventa item, preço ou efeito.</strong> O que não está em tabela é Pendência.</li>
+<li><strong>Não narra matéria dura em detalhe</strong> quando falta Cartão de Entrada — elipse, sempre.</li>
+</ul>
+<p><strong>Tudo o mais está no <code>20 — Como se joga</code>.</strong> Quedas, fogo, veneno, frio, terreno, combate de
+perto, surpresa e as tabelas críticas completas moram lá. <strong>Abra, não decore.</strong></p>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-13 · <a href="txt/19-cartao-de-combate.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

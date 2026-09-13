@@ -11,10 +11,10 @@ O cânone tem mais de trinta documentos e **nenhuma sessão precisa de todos**.
 Anexar tudo ao Projeto do jogador sufoca a janela de contexto e piora a cena.
 
 ### Anexe ao Projeto, e só isto
-Cinco documentos. São o bastante para rodar qualquer sessão do começo ao fim, e cabem folgados na janela de contexto do Mestre de Cena.
+Cinco documentos. São o bastante para rodar qualquer sessão do começo ao fim, e cabem folgados na janela de contexto do Mestre de Cena. O combate entra aqui pelo Cartão, de uma página; o Como se joga inteiro ficou na trilha de consulta, onde se abre sem ocupar a sessão.
 
 - **Protocolo do Mestre de Cena** → https://rafspbh-a11y.github.io/a-garganta/txt/04-protocolo-do-mestre.md
-- **Como se joga** → https://rafspbh-a11y.github.io/a-garganta/txt/20-como-se-joga.md
+- **Cartão de Combate** → https://rafspbh-a11y.github.io/a-garganta/txt/19-cartao-de-combate.md
 - **Regras da Mesa** → https://rafspbh-a11y.github.io/a-garganta/txt/02-regras-da-mesa.md
 - **Carta do Árbitro** → https://rafspbh-a11y.github.io/a-garganta/txt/10-carta-do-arbitro.md
 - **Entrega do Relatório pelo Google Drive** → https://rafspbh-a11y.github.io/a-garganta/txt/04b-entrega-do-relatorio.md
@@ -22,6 +22,7 @@ Cinco documentos. São o bastante para rodar qualquer sessão do começo ao fim,
 ### Consulte na hora, sem anexar
 Abra a página, leia a linha que precisa, feche. São tabelas e catálogos: ninguém os lê inteiros, e carregá-los no Projeto gasta contexto que a cena vai precisar.
 
+- **Como se joga** → https://rafspbh-a11y.github.io/a-garganta/txt/20-como-se-joga.md
 - **Tabela de Perícias** → https://rafspbh-a11y.github.io/a-garganta/txt/26-pericias.md
 - **Tabela de Mágicas** → https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 - **Tabela de Vantagens** → https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md
@@ -59,7 +60,8 @@ Histórico e método: o que o cânone decidiu, quando, e por quê. Nenhuma sess�
 
 ### Comece aqui
 - **Sessão Zero** — Como criar seu personagem e entrar na mesa. → https://rafspbh-a11y.github.io/a-garganta/txt/13-sessao-zero.md
-- **Como se joga** — As regras básicas: rolagem, combate, ferimento, fadiga. → https://rafspbh-a11y.github.io/a-garganta/txt/20-como-se-joga.md
+- **Cartão de Combate** — Uma página: turno, manobras, defesas, dano, quem cai. É o documento de combate que se anexa ao Projeto. → https://rafspbh-a11y.github.io/a-garganta/txt/19-cartao-de-combate.md
+- **Como se joga** — As regras básicas: rolagem, combate, ferimento, fadiga. Longo de propósito — consulte, não anexe. → https://rafspbh-a11y.github.io/a-garganta/txt/20-como-se-joga.md
 - **Regras da Mesa** — O que vale nesta campanha: ações, relógio, morte, ranks. → https://rafspbh-a11y.github.io/a-garganta/txt/02-regras-da-mesa.md
 
 ### O mundo

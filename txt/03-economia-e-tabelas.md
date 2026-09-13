@@ -1,5 +1,5 @@
 titulo: Economia e Tabelas
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -308,6 +308,27 @@ Preços em grãos, à vista, no Limiar. **Conferidos contra o livro em 07/09/202
 **Escudo não paga ágio.** Qualquer carpinteiro faz um, e Gapheim não monopoliza madeira. O ágio da seção 9.2 vale para o que sai da forja: armadura de metal e elmo.
 
 O elmo fechado dá −1 em perícia de combate e −3 em Visão e Audição. A celada, não.
+
+### Serviços e miudezas ditos em mesa
+
+**Entraram em 13/09/2026.** São preços que um Mestre de Cena disse em cena na Semana 1 e que
+ficaram valendo por precedente sem estar em tabela nenhuma. **Preço dito em mesa que não entra na
+tabela é preço que a próxima mesa vai inventar diferente** — então entram aqui, com a origem
+escrita.
+
+| Serviço ou peça | g | Origem |
+| --- | --- | --- |
+| **Uso de forja alheia, por noite** | **5** | dito em mesa, Semana 1 |
+| **Lata, recipiente de metal comum** | **3** | dito em mesa, Semana 1 |
+
+**Uso de forja é por noite e não inclui material.** Quem tem forja de Patrono não paga isto — paga
+o que o Patrono cobra, que é outra coisa e está na ficha dele.
+
+### Peso — está no `21` §8.3
+
+**Preço mora aqui; peso mora no `21`.** Desde 13/09/2026 o Deslocamento desconta a Carga, e a
+Carga sai do peso, não do preço. Nenhuma peça tem o peso listado nesta seção **de propósito**:
+duas tabelas com a mesma informação divergem, e a única dúvida é quando.
 
 ## 9.5 Armaduras sobrepostas
 

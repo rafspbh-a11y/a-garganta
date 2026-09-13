@@ -99,8 +99,179 @@ E mande a ficha ao Árbitro para homologação.
 
 ---
 
+titulo: Cartão de Combate
+versao: 1
+atualizado: 2026-09-13
+fonte: cânone aberto de A Garganta
+
+# Cartão de Combate
+
+> **Este é o documento de combate que você anexa ao Projeto.** O `20 — Como se joga` continua
+> existindo inteiro e **não é para anexar**: é para abrir quando a resposta não estiver aqui.
+> Tudo abaixo está no `20`, e o `20` tem muito mais. **Quando os dois divergirem, vale o `20`.**
+>
+> **Por que ele existe.** Você tem janela de contexto finita, e o `20` é longo. Cinco documentos
+> anexados rodam uma sessão inteira; trinta sufocam a cena. Este cartão troca trinta páginas de
+> combate por uma.
+
+# 1 · O turno
+
+**1 turno = 1 segundo.** Uma manobra por turno, escolhida no início dele, e **é ela que decide
+quais defesas você tem** até o seu turno seguinte.
+
+**Ordem:** do maior **Deslocamento** para o menor. Empate → **Velocidade Básica** cheia, com a
+fração. Empate ainda → **DX maior**. Persistindo → **ordem de declaração**.
+
+# 2 · Todo golpe são três rolagens
+
+1. **Ataque** — 3d contra o NH da arma, com modificadores.
+2. **Defesa** — se passou, o defensor rola 3d contra a defesa dele.
+3. **Dano** — se a defesa falhou, rola-se o dano.
+
+**Falhou qualquer uma, o golpe não passa.**
+
+| No ataque | Sempre |
+| --- | --- |
+| **3 ou 4** | **Golpe fulminante.** Sem defesa ativa. Rola-se na tabela abaixo. |
+| **5 ou 6** | Fulminante se o NH efetivo for 15+ (no 5) ou 16+ (no 6). |
+| **17 ou 18** | **Erra sempre.** Tabela de Erros Críticos (`20`). |
+
+**Golpe fulminante rola 3d na tabela** — dobro e triplo são sobre o **dano básico dos dados**:
+
+| 3d | Corpo | Cabeça (só se mirou a cabeça) |
+| --- | --- | --- |
+| **3** | Tronco: dano normal e **nocaute**. Fora: **triplo** | **MORTE INSTANTÂNEA** |
+| **4** | **Ultrapassa a armadura**, dano normal | **Nocaute** |
+| **5** | **Triplo do dano** | **Nocaute** |
+| **6** | **Dobro do dano** | **Cego dos dois olhos**, DX −10 no resto da luta |
+| **7** | Dano normal e **atordoado** até passar em HT | **Cego de um olho**, DX −2 no resto da luta |
+| **8** | Membro atingido **fica incapacitado** (se o dano não bastaria, cura em 6 turnos) | **Desequilibrado**: só se defende no turno seguinte |
+| **9-11** | **Dano normal, e só** | **Dano normal, e só** |
+| **12** | Como o 8 | Contundente: **surdo 24 h**. Lâmina: 1 PV e cicatriz |
+| **13** | **Ultrapassa a armadura** | Contundente: **surdez possivelmente permanente**. Lâmina: 2 PV e cicatriz |
+| **14** | Como o 8 | **Derruba a arma** |
+| **15** | **O oponente derruba a arma**, e leva dano normal | Dano normal, **atordoado** |
+| **16** | **Dobro do dano** | Dano normal, **atordoado** |
+| **17** | **Triplo do dano** | Dano normal, **atordoado** |
+| **18** | Tronco: dano normal e **nocaute**. Fora: **triplo** | Dano normal, **atordoado** |
+
+**Nocaute:** teste de HT a cada 30 minutos para acordar.
+
+# 3 · As manobras que a mesa usa
+
+| Manobra | Anda | O que faz | Defesa que sobra |
+| --- | --- | --- | --- |
+| **Deslocamento** | tudo | Só anda | Qualquer uma |
+| **Avançar e Atacar** | 1 m | Um ataque | Qualquer uma |
+| **Ataque Total** | 2 m ou ½ Desloc. | **Uma** das quatro: dois ataques · finta e ataque · **+4 no NH** · **+2 de dano** | **NENHUMA** |
+| **Defesa Total** | 1 m | Só se defende | **Duas defesas diferentes** contra o mesmo ataque |
+| **Apontar** | ½ Desloc. | Mira: Precisão da arma, +1 por turno extra, até +3 | Qualquer uma — **defender apaga a mira inteira** |
+| **Preparar** | 1 m | Saca, recarrega, pega o escudo | Qualquer uma |
+| **Concentrar** | 1 m | Feitiço | Qualquer uma, **mas defender exige Vontade −3** |
+| **Aguardar** | 1 m | Ataca quando o inimigo entra no alcance | Qualquer uma |
+| **Finta** | 1 m | Disputa Rápida; a sua margem sai da defesa dele no seu próximo ataque | Qualquer uma |
+
+**Três notas que sempre aparecem:** espada e faca nunca ficam despreparadas, **machado, maça e
+arma de haste ficam** (um turno preparando depois de golpear) · recarregando, **a única defesa é
+Esquiva**, e esquivar cancela a recarga · **sem Apontar, arma de longo alcance ataca a −4**.
+
+# 4 · As três defesas ativas
+
+| Defesa | Fórmula | Contra o quê | Por rodada |
+| --- | --- | --- | --- |
+| **Esquiva** | **= Deslocamento** | quase tudo que você **sabe** que vem | **Ilimitadas** |
+| **Bloquear** | ½ NH de Escudo | lâmina, clava, machado, lança, arremesso, flecha | 1 — 2 em Defesa Total |
+| **Aparar** | ½ NH da arma · **⅔ com Esgrima, Bastão ou Briga** | só **arma de mão** | 1 — 2 com duas armas ou em Defesa Total; **esgrimista apara 2, e ilimitadas em Defesa Total** |
+
+**Faca apara a −1** · arma arremessada, −1 · faca arremessada, −2 · mangual, −4.
+**Defesa Passiva do escudo e da armadura soma sempre**, e vale mesmo sem defesa ativa.
+
+# 5 · Deslocamento, Carga e Esquiva — os dois números da ficha
+
+**Deslocamento = Velocidade Básica truncada − nível de Carga.** E **Esquiva = Deslocamento**.
+
+**Toda ficha traz dois**, e você usa o certo:
+
+- **Em cena** — armadura, elmo, roupa e as armas empunhadas ou no cinto.
+- **Em marcha** — tudo aquilo **mais a mochila de descida**. Vale quando a briga começa **sem
+  tempo de largar a mochila**.
+
+**Largar a mochila é manobra livre**, na fase de movimento: quem larga passa a *em cena* no turno
+seguinte, e a mochila fica no chão, onde pode ser levada, queimada ou usada como isca.
+
+**Quem tem Corrida** soma **⅛ do NH** ao Deslocamento — **depois** de descontar a Carga.
+
+| Peso carregado | Carga | Deslocamento |
+| --- | --- | --- |
+| até 1 × ST | Nenhuma | — |
+| até 2 × ST | Leve | **−1** |
+| até 3 × ST | Média | **−2** |
+| até 6 × ST | Pesada | **−3** |
+
+**Carga acima de Leve tira a Esgrima e o Judô.** *(O Anão tem escala própria: Nenhuma 2,5 × ST,
+Leve 5 × ST, Média 10 × ST.)*
+
+# 6 · Dano
+
+**Cortante e perfurante nunca fazem menos de 1**; contundente pode fazer 0.
+
+| ST | Golpe de Ponta | Balanço | | ST | Golpe de Ponta | Balanço |
+| --- | --- | --- | --- | --- | --- | --- |
+| 9 | 1d−2 | 1d−1 | | 13 | 1d | 2d−1 |
+| 10 | 1d−2 | 1d | | 14 | 1d | 2d |
+| 11 | 1d−1 | 1d+1 | | 15 | 1d+1 | 2d+1 |
+| 12 | 1d−1 | 1d+2 | | 16 | 1d+1 | 2d+2 |
+
+**Magia de projétil:** duas rolagens — a mágica (sem redutor de distância) e **Arremesso de
+Mágica** (pré-definido DX−3). Energia 1 a 3, **1d por ponto**, um segundo de concentração por
+ponto. **Exceção: Bola de Fogo Explosiva, energia 2 a 6, 1d a cada 2 pontos**, máximo 3d, e pode
+ser jogada no chão com **+4** para pegar quem está em volta. Bloquear e Esquivar valem; **Aparar,
+não.** A armadura protege.
+
+# 7 · Quem cai, e quando
+
+| PV | O que acontece |
+| --- | --- |
+| **3, 2 ou 1** | **Deslocamento e Esquiva à metade**, para baixo. Vale para bicho também. |
+| **0 ou menos** | Teste de HT no início de cada turno. Falhou: desmaia. |
+| **−HT** | Teste de HT **ou morre**. Novo teste a cada 5 PV perdidos depois disso. |
+| **−5 × HT** | **Morte automática.** |
+
+**E quem morre quando, que é regra desta casa:**
+
+| Quem | Morre em | Testes de morte |
+| --- | --- | --- |
+| **Bicho de bestiário** sem nome | **0 PV** | Nenhum |
+| **NPC nomeado ou chefe de encontro** | **−HT** | Nenhum |
+| **Personagem de jogador**, sempre | escada completa acima | Todos |
+
+**Chefe de encontro se declara antes do primeiro dado.** Declarado depois, não vale.
+
+**Misericórdia exige alvo indefeso ou inconsciente** — **atordoado não basta**, porque atordoado
+ainda tem defesa ativa, só que a −4. Alvo parado que não te vê: **+4**, sem defesa ativa, e órgão
+vital a −3.
+
+# 8 · Fadiga, em três linhas
+
+**Fadiga = ST.** Cada ponto de energia de magia é 1 de Fadiga. **A Fadiga não afeta o
+Deslocamento até cair abaixo de ⅓**; daí em diante, Deslocamento e Esquiva caem junto.
+**Do andar 9 para baixo**, mana alta dá **+2 no NH** de magia e **metade da fadiga**.
+
+# 9 · O que você nunca faz aqui
+
+- **Não rola escondido sem gravar antes.** Grava-se o resultado, revela-se na homologação.
+- **Não declara chefe no meio da luta** para o bicho sobreviver.
+- **Não inventa item, preço ou efeito.** O que não está em tabela é Pendência.
+- **Não narra matéria dura em detalhe** quando falta Cartão de Entrada — elipse, sempre.
+
+**Tudo o mais está no `20 — Como se joga`.** Quedas, fogo, veneno, frio, terreno, combate de
+perto, surpresa e as tabelas críticas completas moram lá. **Abra, não decore.**
+
+
+---
+
 titulo: Como se joga
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -304,7 +475,7 @@ Estas são as manobras que a mesa vai usar de verdade. Nomes e efeitos do livro 
 | **Defesa Total** | 1 metro | Nada além de se defender. **Duas jogadas de defesa diferentes** contra o mesmo ataque. Máximo de dois Aparar e dois Bloquear no turno. | Duas, diferentes |
 | **Apontar** | metade do Deslocamento, máx. 2 m depois do primeiro turno | Mira arma de longo alcance já preparada. Primeiro turno: soma a **Precisão** da arma. Cada turno a mais: **+1**, até **+3**. | Qualquer uma — **mas defender estraga a mira e some com tudo o que foi acumulado** |
 | **Preparar** | 1 metro | Saca, engatilha, recarrega, apanha o escudo. | Qualquer uma, com a ressalva abaixo |
-| **Concentrar** | 1 metro | Feitiço ou tarefa mental. | Qualquer uma, **mas defender exige teste de IQ−3 para não perder a concentração** |
+| **Concentrar** | 1 metro | Feitiço ou tarefa mental. | Qualquer uma, **mas defender exige teste de Vontade −3 para não perder a concentração** |
 | **Mudança de Posição** | nenhum | De pé, ajoelhado, deitado. Deitado para em pé leva dois turnos. | Qualquer uma |
 | **Aguardar** | 1 metro | Não faz nada até o inimigo entrar no alcance; então ataca (ataque normal, não total). | Qualquer uma |
 | **Finta** | 1 metro | Disputa Rápida da sua arma contra a arma ou escudo do inimigo (ou a DX dele). Se você vence, **a sua margem é subtraída da defesa ativa dele** no seu próximo ataque. | Qualquer uma |
@@ -394,8 +565,47 @@ Aparar golpe de mão limpa com arma pode **ferir o atacante**: role de novo cont
 
 Não importa o NH: **3 e 4 sempre acertam, 17 e 18 sempre erram.** (pág. 97)
 
-> [!WARNING]
-> **Decisão pendente do Árbitro.** O livro oferece dois tratamentos para o golpe fulminante e diz explicitamente para **não usar os dois juntos**: a regra do dano máximo acima, e a **Tabela de Golpes Fulminantes** da pág. 202, que sorteia efeitos por resultado (nocaute, dano triplo, membro incapacitado). Este documento roda a regra do dano máximo, que é mais rápida e cabe em mesa assíncrona. Trocar pela tabela é escolha do Árbitro, não do Mestre de Cena. A **Tabela de Erros Críticos** (pág. 202) vale nos dois casos.
+**Fixado em 13/09/2026: esta mesa usa a Tabela de Golpes Fulminantes.** O livro oferece os dois tratamentos e manda não usar os dois juntos; o Árbitro escolheu a tabela, e a regra do dano máximo **deixa de valer**. O motivo é de mesa: um acerto crítico passa a ser um acontecimento com consequência, e não um número grande. **Vale nos dois sentidos** — contra bicho e contra personagem de jogador.
+
+### Tabela de Golpes Fulminantes (MB pág. 202)
+
+Rola-se **3d**, e todo dobro e triplo se refere ao **dano básico dos dados**.
+
+| 3d | O que acontece |
+| --- | --- |
+| **3** | Tronco: dano normal e **nocaute** — teste de HT a cada 30 min para acordar. Qualquer outra parte: **triplo do dano**. |
+| **4** | **Ultrapassa a armadura** e provoca dano normal. |
+| **5** | **Triplo do dano.** |
+| **6** | **Dobro do dano.** |
+| **7** | Dano normal, e a vítima fica **atordoada** até passar num teste de HT. |
+| **8** | Braço, perna, mão ou pé: dano normal e **o membro fica incapacitado**, qualquer que seja o dano. Se o dano não bastaria para inutilizá-lo, é choque nevrálgico e **se cura em seis turnos**. Outra parte: dano normal. |
+| **9, 10, 11** | **Dano normal, e só.** |
+| **12** | Como o 8. |
+| **13** | **Ultrapassa a armadura** e provoca dano normal. |
+| **14** | Como o 8. |
+| **15** | **A arma do oponente cai**, e ele leva dano normal. |
+| **16** | **Dobro do dano.** |
+| **17** | **Triplo do dano.** |
+| **18** | Tronco: dano normal e **nocaute**. Outra parte: **triplo do dano**. |
+
+### Tabela de Golpes Fulminantes na Cabeça (MB pág. 202)
+
+**Só quando o golpe fulminante veio de um ataque dirigido à cabeça.**
+
+| 3d | O que acontece |
+| --- | --- |
+| **3** | **Morte instantânea.** |
+| **4, 5** | **Nocaute** — teste de HT a cada 30 min. |
+| **6** | **Cego dos dois olhos.** Regras de incapacitação, um teste por olho. Atordoado, e luta a **DX −10** pelo resto da batalha. |
+| **7** | **Cego de um olho.** Regras de incapacitação. Atordoado, e luta a **DX −2** pelo resto da batalha. |
+| **8** | **Desequilibrado:** defende-se normalmente no turno seguinte e não faz mais nada. Dano normal. |
+| **9, 10, 11** | **Dano normal na cabeça, e só.** |
+| **12** | Contundente: dano normal e **surdo por 24 h**. Cortante ou perfurante: **1 PV** e a face fica marcada. |
+| **13** | Contundente: dano normal e **surdez possivelmente permanente** (incapacitação). Cortante ou perfurante: **2 PV** e a face fica muito marcada. |
+| **14** | Dano normal na cabeça, e **a vítima deixa cair a arma** (com duas, sorteia-se qual). |
+| **15 a 18** | Dano normal na cabeça, e **atordoada**. |
+
+> **E o critério de quando é fulminante não mudou:** 3 e 4 sempre; 5 com NH efetivo 15+; 6 com 16+. **A vítima não tem defesa ativa em nenhum deles.** A **Tabela de Erros Críticos** (pág. 202) continua valendo como sempre valeu.
 
 ## 4.9 Dano
 
@@ -545,7 +755,14 @@ As distâncias em "ST" são **metros**, calculados com a ST de quem atira — e,
 **Como funciona, em mesa** (MAGIA pág. 11):
 
 1. **Duas rolagens.** A primeira é a da mágica, **sem nenhum redutor de distância**, e diz se o projétil se formou. A segunda é **Arremesso de Mágica** daquela mágica — pré-definido: NH em Arremesso, ou **DX−3** — e diz se acertou, com tamanho, velocidade e distância pela tabela da seção 4.11.
-2. **A energia é a força.** 1 a 3 pontos, **1d de dano por ponto**, e **um segundo de concentração por ponto**: projétil de 1 ponto por turno, ou de 3 pontos a cada três turnos.
+2. **A energia é a força — e o quanto ela rende sai do verbete de cada mágica, não de uma regra geral.** Um segundo de concentração por ponto, sempre: projétil de 1 ponto por turno, ou de 3 pontos a cada três turnos. O dano é este:
+
+| Mágica | Energia | Dano |
+| --- | --- | --- |
+| Bola de Fogo · Adaga de Gelo · Esfera de Gelo · Relâmpago | 1 a 3 | **1d por ponto** |
+| **Bola de Fogo Explosiva** | **2 a 6** | **1d a cada 2 pontos** — máximo 3d |
+
+   > **Corrigido em 13/09/2026.** A decisão de 12/09 pôs a Bola de Fogo Explosiva na mesma linha da simples, a 1d por ponto. **O verbete dela diz outra coisa** — *"provoca 1D pontos de dano para cada 2 pontos de energia aplicados"* — e nesta campanha, onde a Relação das Mágicas e o verbete divergem, **vence o verbete**. Na prática: a explosiva custa o dobro por dado, e **o dado que ela não faz é o preço de pegar todo mundo em volta**. Quem quer dano num alvo só usa a Bola de Fogo simples, e isso é de propósito.
 3. **Pode-se segurar o projétil na mão** e então andar ou **Apontar**. É a única mágica que se retém pronta. Enquanto retém, só se pode fazer mágica de **Bloqueio**, a −2 — e falha crítica nela **solta o projétil em quem o fez**.
 4. **Ferido enquanto segura: teste de Vontade** ou perde o controle.
 5. **Bloquear e Esquivar valem; Aparar, não.** A **armadura protege** contra o dano — exceto no Projétil de Maldição, contra o qual nem PD nem RD servem.
@@ -3203,7 +3420,7 @@ Dois magos de Casas diferentes fazem juntos uma mágica que **nenhum dos dois fa
 ---
 
 titulo: Os Povos que Subiram
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -3213,8 +3430,10 @@ fonte: cânone aberto de A Garganta
 > **Decidido pelo Árbitro em 12 e 13/09/2026.** Este documento **fecha** a promessa do `02` §7 e
 > passa a ser a fonte das seis raças jogáveis e do psí. Onde divergir do `02` §7, **vale este
 > documento**.
-> **Os números são do *GURPS Magia* p.97-100 e do *GURPS Psiquismo*.** Onde o livro cala, a linha
-> vai marcada **⟨proposta⟩** e **não vale até o Árbitro confirmar** — a lista está no fim.
+> **Os números são do *GURPS Fantasy*, do *GURPS Magia* p.97-100 e do *GURPS Psiquismo*.** Onde o
+> livro calava, a linha ia marcada como proposta. **Em 13/09/2026 as doze propostas foram
+> decididas e nenhuma continua aberta** — o registro de cada uma está no fim do documento. Daqui
+> em diante, **todo número deste documento vale.**
 
 # 0 · As três regras que valem para as seis
 
@@ -3226,8 +3445,10 @@ raça. O −40 do `29` §1 continua inteiro para o que o jogador escolher, e o D
 continua fora dele. **Recompra de desvantagem racial na criação é possível, com aprovação** —
 há Minotauro sem Sanguinolência, e custa pontos.
 
-**3. Peculiaridade racial é grátis e não gasta as cinco.** ⟨proposta⟩ As raciais já estão pagas
-dentro do preço da raça; senão o Anão, que tem quatro, nasceria com uma só de graça.
+**3. Peculiaridade racial é grátis e não gasta as cinco.** As raciais já estão pagas dentro do
+preço da raça; senão o Anão, que tem quatro, nasceria com uma só de graça. **É a mesma regra da
+linha 2, aplicada ao mesmo problema:** o que a raça já cobrou não se cobra de novo, e não rende
+ponto. O Anão carrega as quatro do livro **e escolhe cinco suas.**
 
 # 1 · Anões — 30 pontos
 
@@ -3238,7 +3459,7 @@ dentro do preço da raça; senão o Anão, que tem quatro, nasceria com uma só 
 | **Desvantagens raciais** | **Cobiça** (−15) e **Avareza** (−10), *como raça — indivíduo pode não as ter, e aí é recompra* · **Deslocamento −1** · **−2 no NH** com toda arma de projétil |
 | **Peculiaridades raciais** | Não Confiam em Elfos · Preferem Lugares Fechados · Nunca Fazem a Barba · **Intolerantes com os Hobgoblins** |
 | **Reações** | **−2** diante de Elfos · **−3** diante de Hobgoblins · **nunca melhor que Fraca** diante de Dragões · **neutra** diante de humanos · **+1 ou mais** diante de artesão, ou de proposta que desafie o ofício dele |
-| **Carga** | Escala própria: **Leve 5×ST · Média 10×ST · Pesada 20×ST · Muito Pesada 30×ST** |
+| **Carga** | Escala própria: **Nenhuma 2,5×ST · Leve 5×ST · Média 10×ST · Pesada 20×ST · Muito Pesada 30×ST** |
 | **Limites** | **Nenhum Anão é introvertido:** Timidez, em qualquer grau, é proibida |
 
 **E isto importa desde que o Deslocamento passou a descontar a Carga.** Um Anão de ST 12 só sai
@@ -3267,9 +3488,9 @@ aceita é tratado como quem vendeu o juramento.
 | | |
 | --- | --- |
 | **Atributos** | IQ **+1** · DX **+1** · ST **−1** |
-| **Vantagens raciais** | **Carisma 1** · **Atraente +1** · **Reflexos em Combate** · **Aptidão Mágica 1** — *ver a trava* · **Talento Musical 2** (bônus **de aprendizado**) · **+1 no NH** de Trovador e Trato Social, se as estudar · **Longevidade** ⟨proposta⟩ |
+| **Vantagens raciais** | **Carisma 1** · **Atraente +1** · **Reflexos em Combate** · **Aptidão Mágica 1** — *ver a trava* · **Talento Musical 2** (bônus **de aprendizado**) · **+1 no NH** de Trovador e Trato Social, se as estudar · **Longevidade** — e **não aparentar idade nenhuma é fato narrativo, sem custo** |
 | **Desvantagens raciais** | **Senso de Dever (toda a natureza) −15** · **Código de Honra (cavalheiros) −10** |
-| **Reações** | **−1** diante de Anões · **−2 diante de Elfos Negros** ⟨proposta⟩ · nos demais casos **pesa o comportamento, não a raça** |
+| **Reações** | **−1** diante de Anões · **−2 diante de Elfos Negros** · nos demais casos **pesa o comportamento, não a raça** |
 | **Limites** | Nenhum Elfo permite de bom grado dano desnecessário a árvore, animal ou pessoa |
 
 > ## A trava do colégio — e é o que faz o Elfo caber no mundo
@@ -3304,13 +3525,14 @@ política, e não lei da natureza** — e o papel dele fica a doze dias de dist�
 | | |
 | --- | --- |
 | **Atributos** | IQ **+1** |
-| **Vantagens raciais** | **Aptidão Mágica 1** ⟨proposta⟩ · **Longevidade** |
+| **Vantagens raciais** | **Aptidão Mágica 1** · **Longevidade** — e, como no Elfo, **não aparentar idade não custa ponto** |
 | **Reações** | **Nenhum modificador.** É o traço definidor: **passa por humano** |
 | **Limites** | A trava do colégio do §2 vale igual. **A declaração de origem é obrigatória** no registro da Guilda e nas sete cidades |
 
 **A conta que sustenta o nível 1.** O livro diz "Aptidão Mágica" e **não diz o nível**. A
-aritmética fecha exata: IQ+1 = 10 · Aptidão 1 = 15 · Longevidade = 5 → **30**. Mesmo assim fica
-⟨proposta⟩, porque o livro avisa que custo racial ≠ custo individual.
+aritmética fecha exata: IQ+1 = 10 · Aptidão 1 = 15 · Longevidade = 5 → **30**, que é o número
+que o próprio *Fantasy* cobra. **Fixado em 13/09/2026:** não há outra combinação que feche nos 30,
+e o aviso do livro de que custo racial ≠ custo individual não chega a derrubar uma soma exata.
 
 **Origem.** **Não subiu: nasceu aqui.** É a segunda geração — filho de um dos Elfos que chegaram
 ao balcão com a linha de origem em branco, e de alguém das sete cidades. É o único dos seis com
@@ -3325,7 +3547,7 @@ jogador escolhe, e os dois caminhos custam:
 | Caminho | Como entra na ficha |
 | --- | --- |
 | **Declarou** | **Estigma Social (Minoria) −10**: −2 de reação fora, +2 dentro |
-| **Escondeu** | **Segredo −20** ⟨proposta⟩: o vazamento custa registro e banimento |
+| **Escondeu** | **Segredo −10**: o vazamento custa **o registro e a posição**, que é o degrau de perda de emprego ou Status do `29` — não o de morte ou banimento |
 
 **Registra a cidade onde nasceu — e a que importa é Fengdu**, que mantém o único cadastro
 cruzado de **pessoas vivas** das sete e vende consulta. Um Meio-Elfo escondido em Ônfalos está
@@ -3339,8 +3561,8 @@ o Dever da Marca.**
 | | |
 | --- | --- |
 | **Atributos** | ST **+3** · DX **+1** · HT **+3** · IQ **−2** |
-| **Vantagens raciais** | **RD 3** natural, **mais 2 na cabeça** · **Abascanto 2** · **Visão Periférica** · **Senso de Direção** · **Briga** com NH igual à DX, sem pagar ponto · **Chifres:** cada um causa dano por **perfuração** compatível com a ST; a cabeçada roda como **encontrão**, e quem falha o teste de Escudo **sofre o dano dos dois** |
-| **Desvantagens raciais** | **Hediondo −20** · **Fúria −15** · **Sanguinolência −10** · **Intolerância −10** · **Hábito Detestável racial −15**, *reescrito* |
+| **Vantagens raciais** | **RD 3** natural, **mais 2 na cabeça — e as duas somam com a RD 2 do crânio: RD 7** · **Abascanto 2** · **Visão Periférica** · **Senso de Direção** · **Briga** com NH igual à DX, sem pagar ponto · **Chifres:** cada um causa dano por **perfuração** compatível com a ST; a cabeçada roda como **encontrão**, e quem falha o teste de Escudo **sofre o dano dos dois** |
+| **Desvantagens raciais** | **Hediondo −20** · **Fúria −15** · **Sanguinolência −10** · **Intolerância −10** · **Compulsão −15**, *o tabu — ver abaixo* |
 | **Reações** | **−3** das outras raças diante dele · **−3** dele diante das outras |
 | **Limites** | **Abascanto é incompatível com Aptidão Mágica: nenhum Minotauro lança feitiço, nunca.** E a Casa que o marca não concede colégio nenhum — as duas coisas dizem o mesmo por caminhos diferentes |
 
@@ -3351,10 +3573,32 @@ o Dever da Marca.**
 > **NÃO RECUA DE UM CAMINHO COMEÇADO.** Ele não volta atrás num corredor que começou a percorrer
 > — **nem para fugir, nem para esperar, nem quando o grupo manda.** Mesmo valor, **−15**.
 >
+> **E mudou de verbete em 13/09/2026: é Compulsão, não Hábito Detestável.** O motivo é
+> aritmético e é justo. Hábito Detestável carrega um **−3 de reação embutido**, e o Minotauro já
+> paga **−3** pela aparência, mais Hediondo: somados, ele chegaria a toda mesa de negociação a
+> **−6 ou pior, duas vezes cobrado pelo mesmo corpo**. Compulsão vale os mesmos −15 e **não tem
+> penalidade de reação** — e descreve melhor o que é: ninguém sente nojo dele por não recuar.
+> **Sentem medo de descer com ele**, que é outra coisa, e essa já está no −3 que ele tem.
+>
 > **Na mesa:** entrou no corredor, o caminho se resolve — ele sai pela outra ponta, ou não sai.
 > Dar meia-volta é **teste de Vontade**, e o `29` §1 vale: **14 ou mais falha sempre**. "Caminho
 > começado" é o corredor, a galeria, a escada, o vão — **não** é a descida inteira, e não é um
 > contrato. **O Mestre de Cena declara qual é o caminho antes do primeiro passo.**
+
+> ## A cabeça — RD 7, e o que isso faz com o combate
+>
+> **A RD racial da cabeça soma com a RD 2 do crânio, e o total é 7.** Fixado em 13/09/2026. A RD
+> do crânio é osso, e o couro racial vem por cima dele como viria uma armadura.
+>
+> **Consequência, e ela não é defeito:** contra um Minotauro, **o golpe na cabeça deixa de valer a
+> pena**. Uma rapieira que faz 1D nunca o fere ali; um machado que faz 2D+2 passa 1 ou 2 pontos,
+> e o ×4 do crânio aplicado a 1 ponto não paga o −5 de mira. **Mata-se um Minotauro pelo corpo.**
+> Quem mirar na cabeça está jogando fora a manobra, e o Mestre de Cena **diz isso ao jogador antes
+> de ele rolar** — não é armadilha, é anatomia visível: o bicho tem cabeça de touro.
+>
+> **E vale nos dois sentidos.** Um Minotauro de jogador tem a mesma RD 7, e quem o enfrenta
+> descobre o mesmo. É a vantagem mais cara de contornar das seis raças, e é por ela que ele
+> custa 75.
 
 **Origem.** A origem e o tabu são **o mesmo fato**. Não subiram em grupo, não foram trazidos e
 não negociaram passagem: cada um entrou num corredor que subia e **andou até o corredor acabar**.
@@ -3434,6 +3678,16 @@ foi até o fim.
 > **O gatilho é o céu aberto, não a data.** Lua cheia que passa com ele sob a rocha **não dispara
 > nada**. O Mestre de Cena nunca rola transformação de lua abaixo do andar 1.
 >
+> **E lua perdida é lua perdida** (13/09/2026). Ela **não fica devendo** e **não dispara** quando
+> ele volta ao céu aberto: passou sob a rocha, não aconteceu, e o mês seguinte recomeça do zero.
+> Uma regra, sem escada de adiamento e sem acúmulo — o Mestre de Cena não precisa lembrar de nada
+> entre uma descida e outra.
+>
+> **O preço disso, dito na cara:** quem desce na lua cheia escapa da desvantagem racial de graça,
+> e descer é o que a campanha inteira faz. **Então o que paga a raça não é a lua: são os 5 pontos
+> de quem quer se transformar lá embaixo**, mais a prata, mais a regeneração que a prata desliga.
+> Quem não pagou os 5 é, abaixo da rampa, um humano com Regeneração e alergia a metal.
+>
 > **⟨proposta — a lua cobrada⟩** A lua perdida **fica devendo**: na **primeira noite de céu
 > aberto** depois da descida, a mudança acontece **fora de hora e sem escolha**, com **−2 na
 > Vontade**. Consequência: **ele se transforma na volta, no anel interno do Limiar, com a Guilda
@@ -3503,7 +3757,16 @@ existem na mesa**.
 Ancorados** e voltou outro. Não é "tem um dom desde criança": é um **período datável**, e o
 Árbitro aprova ou recusa o texto antes da ficha.
 
-**Um Poder só por personagem, teto de Potência 10.** ⟨proposta⟩
+**Sem limite de Poderes e sem teto de Potência — o custo é o limite.** Fixado em 13/09/2026.
+Quem quiser três Poderes paga por três Poderes, e quem quiser Potência alta paga por ela. O
+racionamento desta campanha não está na tabela: está na porta do §7 e nos **50 pontos de
+Antecedentes Incomuns**, que juntos já são a coisa mais cara que se compra numa ficha.
+
+> **Uma exceção, e uma só: o Psicoteleporte tem teto de Potência 10.** Ele é o único Poder que
+> não opera dentro da estrutura do jogo — **opera contra ela**. Passa por porta trancada e por vão
+> de andar, e descer andar por andar é a campanha inteira. Sem teto, um personagem deixaria de
+> precisar da descida que sete outros estão jogando. **O teto existe onde o custo não trava, e em
+> nenhum outro lugar.**
 
 ## 8.2 Como se compra
 
@@ -3526,9 +3789,16 @@ turno seguinte. Teste 3D contra o NH. **Em PES, quem rola é sempre o Mestre de 
 falha por margem maior que 5 **ele mente** — o que casa com a trava de rolagem escondida do `20`
 §1.6: grava-se antes, revela-se na homologação.
 
-**Antecedentes Incomuns, 10 pontos, obrigatórios.** ⟨proposta⟩ O *Psiquismo* calibra essa
-vantagem pela raridade e pediria 150. **Cobrar 150 aqui seria cobrar duas vezes:** a porta do
-rank B já é o racionamento, e é muito mais cara.
+**Antecedentes Incomuns, 50 pontos, obrigatórios.** Fixado em 13/09/2026. O *Psiquismo* calibra
+essa vantagem pela raridade e, num mundo onde nenhuma Casa marcou um psi, pediria 150 — o que, num
+orçamento de 150, seria decidir que psi não se joga. E cobrar pouco seria fingir que a coisa é
+comum quando ela não é.
+
+**Cinquenta é um terço do orçamento, e é para doer.** Ser psi passa a ser a coisa mais cara que o
+personagem é, antes de qualquer Poder ou perícia — e é assim que deve parecer numa mesa onde ele é
+o único. Com 100 pontos restantes ele ainda é um personagem inteiro, e é aí que entra a outra
+metade da regra: **não há teto de Poder nem de Potência**, porque quem pagou 50 na porta já foi
+racionado. **O que raciona é a entrada, não a tabela.**
 
 ## 8.3 A trava que não pode faltar: Empatia e Noção do Perigo continuam Dádivas
 
@@ -3593,8 +3863,11 @@ reação conta, ou esconder é um problema jogado, e o preço do plano é o temp
 **3. Registro é o que faz o pagamento existir.** Se o registro é contestado, **o dinheiro trava
 antes da briga** — e essa é a cena política, não a pancadaria.
 
-**4. Equipamento não serve, e o balcão é humano.** ⟨proposta⟩ **+50% no preço e uma semana de
-espera** para peça de tamanho não-humano; o que se acha no baú **não serve**, e serve para vender.
+**4. Equipamento não serve, e o balcão é humano.** **+50% no preço**, sem espera — o balcão das
+sete cidades já conhece esses corpos e trabalha fora do molde, e cobra por isso. **Não há prazo:
+ninguém fica de fora de uma semana de jogo por causa de uma loriga.** O que se acha no baú **não
+serve**, e serve para vender: peça de humano morto não veste Minotauro, não veste Anão e não
+acompanha Transmutante que muda de tamanho.
 
 **5. O tabu do Minotauro se declara antes do primeiro passo**, em voz alta, para a mesa toda
 ouvir. Anunciar depois é armadilha, e a Carta, artigo 6, diz que ninguém morre sem chance de
@@ -3614,32 +3887,34 @@ hoje.**
 **10. Reação de personagem de outro jogador é do jogador, sempre.** Os modificadores raciais valem
 para NPC. Entre personagens de jogadores, **quem decide é quem joga**.
 
-# O que espera confirmação do Árbitro
+# O que o Árbitro confirmou — 13/09/2026
 
-Onze itens. Nenhum inventa número que o livro tenha; todos são pontos em que o livro cala ou em
-que uma decisão anterior abriu buraco.
+**As doze estão fechadas.** Onze estavam listadas aqui; a décima segunda — o preço de equipamento
+não-humano, na §9 — tinha ficado de fora desta lista e foi achada varrendo as marcas do documento
+uma a uma. **Nenhuma proposta segue aberta.**
 
-| # | Onde | O que |
+| # | Onde | Decidido |
 | --- | --- | --- |
-| 1 | §0 | Peculiaridade racial é grátis e **não** gasta as cinco do `29` §4 |
-| 2 | §1 | Anão, Carga "Nenhuma" = 2,5 × ST — o livro dá só os quatro degraus |
-| 3 | §2 | Elfo: o −2 de reação dos Orcs passa aos **Elfos Negros** |
-| 4 | §2 | "Unaging" vira **Longevidade** + fato narrativo sem custo, porque falta o *Fantasy Folk* |
-| 5 | §3 | Meio-Elfo: **Aptidão Mágica nível 1** — a soma fecha em 30, mas o livro avisa que custo racial ≠ individual |
-| 6 | §3 | **Segredo −20** para quem esconde, contra **Estigma Social −10** para quem declara |
-| 7 | §4 | O tabu fica como **Hábito Detestável −15** com o −3 reancorado, ou vira **Compulsão −15** e o −3 cai |
-| 8 | §4 | **A RD racial da cabeça soma com a RD 2 do crânio?** Somando dá RD 7, e o golpe na cabeça deixa de existir contra Minotauro |
-| 9 | §6 | **A lua cobrada** — a transformação perdida dispara na primeira noite de céu aberto |
-| 10 | §8 | **Um Poder por personagem, teto 10; Eletrocinese fora; Psicoteleporte dentro** |
-| 11 | §8 | **Antecedentes Incomuns = 10**, e não os 150 da calibração do *Psiquismo* |
+| 1 | §0 | Peculiaridade racial é **grátis e não gasta as cinco** — mesma regra da desvantagem racial |
+| 2 | §1 | Anão: **Carga Nenhuma até 2,5 × ST**, metade do degrau Leve, como no humano |
+| 3 | §2 | Elfo: o −2 dos Orcs **passa aos Elfos Negros**, que são povo de livro (*Fantasy*) |
+| 4 | §2 | **Longevidade** paga os 5 pontos; **não aparentar idade é fato narrativo, sem custo** |
+| 5 | §3 | Meio-Elfo: **Aptidão Mágica nível 1** — é a única combinação que fecha nos 30 do livro |
+| 6 | §3 | Quem esconde leva **Segredo −10**, o degrau de perda de Status, não o de banimento |
+| 7 | §4 | O tabu vira **Compulsão −15**, e o −3 do Hábito Detestável **cai** — não se cobra o mesmo corpo duas vezes |
+| 8 | §4 | A RD racial da cabeça **soma** com a RD 2 do crânio: **RD 7**, e o golpe na cabeça deixa de valer |
+| 9 | §6 | **Lua perdida é lua perdida** — não fica devendo e não dispara ao voltar ao céu aberto |
+| 10 | §8 | **Sem limite de Poder nem teto de Potência** — exceto **Psicoteleporte, teto 10** |
+| 11 | §8 | **Antecedentes Incomuns = 50**, um terço do orçamento |
+| 12 | §9 | Equipamento não-humano: **+50% no preço, sem prazo de espera** |
 
-**E dois itens que não são confirmação, são consequência a executar:**
+**Duas consequências foram executadas junto:**
 
-- **O `02` §7 promete *"entra com cerca de 210"***, e com as sete fichas vivas o orçamento é
-  **150**. Precisa trocar o número pela fórmula e por um exemplo datado.
-- **A §8.3 é a mais urgente desta entrega.** Enquanto não estiver no ar, o *Psiquismo* lido ao pé
-  da letra transforma a Dádiva de Oxum e a de Zeus em poder psíquico — e **Karthoz é marcado por
-  Zeus**. É exatamente o erro de 09/09: decisão que não foi publicada é decisão que não existe.
+- **O orçamento de personagem novo** deixou de ser um número solto e passou a ser a fórmula, com
+  exemplo datado, nas Regras da Mesa.
+- **A §8.3** — a trava que impede o *Psiquismo* de transformar retroativamente Empatia e Noção do
+  Perigo em poder psíquico — **está no ar**. Era a mais urgente da entrega, porque sem ela um
+  jogador marcado por Zeus viraria psi sem ter escolhido.
 
 
 ---
@@ -3815,13 +4090,14 @@ O registro é da Guilda, e a Guilda não apaga. Quem quiser suprimir uma linha �
 ---
 
 titulo: Regra de Escrita da Ficha
-versao: 4
+versao: 5
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha
 
 > **Nota.**
+> **Versão 5, de 13/09/2026** — terceira passada do dia. O item 10 ganhou a **ordem de cálculo**: Carga primeiro, Corrida depois.
 > **Versão 4, de 13/09/2026** — mesmo dia, segunda passada. O item 10 passou a exigir **dois Deslocamentos** na ficha, em cena e em marcha, porque a Carga entrou na conta e ninguém desce a Garganta com o que veste para brigar. A tabela de pesos está no `21` §8.
 > **Versão 3, de 13/09/2026.** Item 9 do checklist: **o Dever da Marca saiu do limite de −40**. Item 10: o Deslocamento passa a descontar a Carga, e a Briga entra na lista de quem apara a ⅔. E entrou o item 11, o **tipo obrigatório** nos dez nomes que existem em duas tabelas.
 > **Versão 2, de 10/09/2026** — segunda rodada de conferência. Entraram três travas que estavam implícitas e não escritas: bônus condicional fica fora do Efetivo; bônus por item exige o item no equipamento; especialização exige a especialidade declarada.
@@ -3935,6 +4211,7 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
 8. **A conta fecha no orçamento?** 150 na criação.
 9. **Desvantagens dentro de −40, com o Dever da Marca FORA do limite?** O Dever é obrigatório e continua valendo de −5 a −15, mas desde 13/09/2026 **não ocupa espaço no −40** (`29` §1). Peculiaridades até 5, também fora.
 10. **Os derivados batem, e vêm em duas linhas?** PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · **Deslocamento = Vel. truncada − nível de Carga** · Esquiva=Deslocamento · Aparar=perícia÷2, ou **⅔ em Esgrima, Bastão e Briga** · Bloquear=Escudo÷2.
+    **A ordem importa: desconta-se a Carga primeiro, soma-se a Corrida depois.** Quem tem a perícia soma **⅛ do NH de Corrida** ao Deslocamento já reduzido (`26` §12), e isso é bônus com fonte nomeada — escreve-se `+1 Corrida 16` na coluna Bônus, nunca dentro do número comprado.
     **Desde 13/09/2026 são duas linhas, não uma** (`21` §8): **em cena** — armadura, elmo, roupa e as armas empunhadas ou no cinto —, e **em marcha**, com a mochila de descida. A ficha traz o peso somado das duas, item por item, contra a tabela de pesos do `21` §8.3. **Ficha com um Deslocamento só volta**, porque obriga o Mestre de Cena a escolher qual dos dois usar e ele vai escolher errado metade das vezes.
 11. **Nos nomes que existem em duas tabelas, o tipo está declarado na linha?** São dez, e a lista está no `26` §11 — **Escalada · Escudo · Exorcismo · História · Vôo · Prontidão · Visão Aguçada · Ouvido Aguçado · Visão Noturna · Fúria**. Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`. **Linha sem o tipo volta.**
 12. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
@@ -4067,7 +4344,7 @@ Ilê Ifé não encanta: **assenta**. O item é consagrado a um orixá — a lâm
 ---
 
 titulo: Economia e Tabelas
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -4376,6 +4653,27 @@ Preços em grãos, à vista, no Limiar. **Conferidos contra o livro em 07/09/202
 **Escudo não paga ágio.** Qualquer carpinteiro faz um, e Gapheim não monopoliza madeira. O ágio da seção 9.2 vale para o que sai da forja: armadura de metal e elmo.
 
 O elmo fechado dá −1 em perícia de combate e −3 em Visão e Audição. A celada, não.
+
+### Serviços e miudezas ditos em mesa
+
+**Entraram em 13/09/2026.** São preços que um Mestre de Cena disse em cena na Semana 1 e que
+ficaram valendo por precedente sem estar em tabela nenhuma. **Preço dito em mesa que não entra na
+tabela é preço que a próxima mesa vai inventar diferente** — então entram aqui, com a origem
+escrita.
+
+| Serviço ou peça | g | Origem |
+| --- | --- | --- |
+| **Uso de forja alheia, por noite** | **5** | dito em mesa, Semana 1 |
+| **Lata, recipiente de metal comum** | **3** | dito em mesa, Semana 1 |
+
+**Uso de forja é por noite e não inclui material.** Quem tem forja de Patrono não paga isto — paga
+o que o Patrono cobra, que é outra coisa e está na ficha dele.
+
+### Peso — está no `21` §8.3
+
+**Preço mora aqui; peso mora no `21`.** Desde 13/09/2026 o Deslocamento desconta a Carga, e a
+Carga sai do peso, não do preço. Nenhuma peça tem o peso listado nesta seção **de propósito**:
+duas tabelas com a mesma informação divergem, e a única dúvida é quando.
 
 ## 9.5 Armaduras sobrepostas
 
@@ -4829,7 +5127,7 @@ Quando esta Carta e o cânone entrarem em conflito, prevalece esta Carta, e o co
 ---
 
 titulo: Protocolo do Mestre de Cena
-versao: 11
+versao: 12
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -4894,6 +5192,47 @@ Narrar cenas, NPCs menores, ambiente, clima e diálogo. Improvisar o que não co
 - Avançar o Relógio do Mundo
 
 Se a narrativa exigir qualquer uma dessas coisas: **abra Pendência e pare ali.**
+
+# Mesa conjunta — um Mestre de Cena narra a todos
+
+**Fixado em 13/09/2026.** Quando dois ou mais personagens de jogadores estão na mesma cena,
+**um único Mestre de Cena conduz a sessão inteira** — o do jogador que convocou o encontro, ou o
+do Árbitro — e recebe as fichas de todos os presentes. **Uma voz, uma versão dos fatos, uma
+homologação.**
+
+**O motivo é estrutural e não é de estilo.** Cada jogador tem o próprio Mestre de Cena, que é uma
+instância separada, com o próprio contexto e a própria ficha. Numa cena conjunta, duas ou mais
+delas narrariam o mesmo momento sem nenhuma forma de saber o que a outra disse — e **nenhuma tem
+como garantir que não se contradizem.** Contradição entre duas narrações do mesmo fato não é
+divergência de ponto de vista: é o mundo deixando de existir do mesmo jeito para todo mundo.
+
+**Na prática:**
+
+1. **Quem convoca, narra** — e se o encontro foi marcado pelo Árbitro, narra o do Árbitro.
+2. **Os outros jogadores jogam os próprios personagens**, normalmente. O que muda é a voz que
+   descreve o mundo, não quem decide o que o personagem faz. **Ninguém interpreta o personagem de
+   outro, nunca.**
+3. **Sai uma homologação só**, com **uma seção por personagem**, copiada para a pasta de cada um.
+4. **O bloco de jogo sai um por personagem presente**, como manda a §1b.
+5. **Limite de mesa é o mais restritivo da sala.** Se um dos presentes declarou um limite, ele vale
+   para a cena inteira, e não só para as falas dirigidas a ele. Carta, artigo 16.
+
+> **Ao Mestre de Cena que conduz:** você narra o mundo para todos e **não decide nada sobre a
+> ficha alheia**. Rolagem de personagem que não é o seu jogador habitual usa o número da ficha
+> dele, como está escrita, sem ajuste e sem interpretação. Em dúvida, **pergunte ao jogador**.
+
+# Quando um jogador não tem Cartão de Entrada
+
+**Silêncio nesse campo não é resposta** — e enquanto não houver resposta **em voz do jogador**, o
+Mestre de Cena roda com estas duas travas, sem exceção:
+
+1. **Matéria dura se narra por elipse.** Violência, sacrifício, corpo alterado, gente tratada como
+   mercadoria: pesa na política da cena e **não se descreve em detalhe**.
+2. **O personagem não entra em conflito direto com personagem de outro jogador.**
+
+**Isto não é cautela, é o artigo 16.** Recusa de jogador é limite absoluto, e limite que ninguém
+perguntou é limite que ninguém sabe. **O Mestre de Cena não é quem falhou** — quem falhou em
+perguntar foi o Árbitro —, mas é quem carrega a trava até a resposta chegar.
 
 # Contagem de ações
 
@@ -5563,7 +5902,7 @@ entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O `04`
 ---
 
 titulo: Tabela de Perícias
-versao: 3
+versao: 4
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -5644,7 +5983,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Caratê | Difícil | Básico |
 | **Cavalgar** (por tipo de montaria) | Média | Básico |
 | Chicote | Média | Básico |
-| Corrida | Difícil | Básico |
+| Corrida | Difícil | Básico — **soma ⅛ do NH ao Deslocamento, e portanto à Esquiva** (`26` §12) |
 | Dança | Média | Básico |
 | Escalada | Média | Básico |
 | Escudo | Fácil | Básico |
@@ -5971,6 +6310,35 @@ A lista sai do cruzamento das quatro tabelas fechadas e é conferida a cada vers
 **Escalada · Escudo · Exorcismo · História · Vôo** (perícia × mágica) · **Prontidão · Visão
 Aguçada · Ouvido Aguçado · Visão Noturna** (vantagem × mágica) · **Fúria** (desvantagem ×
 mágica).
+
+
+# 12. A Corrida soma Deslocamento — e Deslocamento é Esquiva
+
+**Fixado em 13/09/2026.** O *Módulo Básico* p.77 manda somar **um oitavo do NH de Corrida** ao
+Deslocamento, arredondado para baixo. E nesta campanha **Deslocamento é Esquiva** (`24` §5, item
+10). Logo, **Corrida compra defesa ativa**, e isso vale como o livro escreve: nível 8 dá +1,
+nível 16 daria +2.
+
+**Por que isto fica escrito aqui em vez de virar exceção.** A alternativa era separar as duas
+coisas — Corrida daria fôlego e não defesa — e ela foi recusada. **O livro vence**, que é a trava
+que governou a leva inteira de 13/09/2026, e abrir exceção para esta perícia obrigaria a abrir
+para a próxima.
+
+**E o número não é um atalho.** Corrida é **Física/Difícil sobre HT**: chegar a HT+2 custa 16
+pontos, e é aí que o primeiro +1 aparece para quem tem HT 12 ou mais.
+
+| Caminho | Custo | O que dá |
+| --- | --- | --- |
+| **Reflexos em Combate** | 15 | **+1 de Esquiva, +1 em toda defesa ativa**, e nunca ser surpreendido |
+| **Corrida a NH 16** | 16 ou mais | **+1 de Esquiva**, e correr mais |
+
+**Reflexos em Combate continua sendo a compra melhor**, por menos ponto e com três efeitos em vez
+de um. **Corrida é o segundo caminho, mais caro e mais estreito** — e existe, o que é o certo num
+mundo onde se foge de coisa.
+
+> **Na ficha, isto é bônus com fonte nomeada** e entra na coluna Bônus, não dentro do NH
+> comprado — `24` §1. Escreve-se `+1 Corrida 16` na linha do Deslocamento. **E entra depois da
+> Carga:** desconta-se o nível de Carga primeiro, soma-se o oitavo da Corrida depois.
 
 
 ---
@@ -7305,7 +7673,7 @@ nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 n
 ---
 
 titulo: Retificações de livro
-versao: 3
+versao: 4
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -7818,6 +8186,185 @@ ele paga 5 pontos e um Dever. Até 13/09/2026 a ficha não dizia onde ele batia 
 **Runirsson ficou com 10 pontos de folga dentro do limite de −40**, porque o Dever da Marca saiu do
 limite na parte 5 desta mesma retificação. **A folga é dele** (decisão 54): desvantagem nova é
 escolha de quem joga o personagem, não do Árbitro.
+
+---
+
+# RETIFICAÇÃO — 13/09/2026, tarde: as vinte e seis pendências
+
+**Nenhuma ficou aberta.** O Árbitro pediu a varredura completa do que estava pendente — não só o
+que a leva do Compêndio tinha levantado — e a varredura achou **vinte e seis**: as quatro do
+Compêndio, doze marcadas como proposta em *Os Povos que Subiram*, quatro abertas na base de
+Pendências, cinco vindas de trabalho anterior que nunca fecharam, e uma escrita como pendente
+dentro do próprio *Como se joga* que ninguém tinha visto.
+
+**Duas delas não estavam em lista nenhuma** e só apareceram porque as marcas foram varridas uma a
+uma: **o preço de equipamento não-humano**, que o documento das raças esqueceu da própria tabela
+de confirmação, e **o golpe fulminante**, que estava marcado com um aviso no meio do texto de
+combate desde 10/09.
+
+## 1. A Bola de Fogo Explosiva faz metade do que a decisão dizia
+
+A decisão de 12/09 pôs Bola de Fogo, Bola de Fogo Explosiva e Esfera de Gelo na mesma linha, a
+**1d por ponto de energia**. O verbete da explosiva diz outra coisa: *"provoca 1D pontos de dano
+para cada **2 pontos** de energia aplicados"*, com custo de 2 a 6 — **máximo 3d**, não 6d.
+
+**Vence o verbete**, que é a regra que governou a leva inteira. Na prática, **a explosiva custa o
+dobro por dado, e o dado que ela não faz é o preço de pegar todo mundo em volta**. Quem quer dano
+num alvo só usa a simples. *(`20` §4.11 e `19` §6.)*
+
+## 2. A Corrida compra Esquiva, e isso vale como o livro escreve
+
+O *Módulo Básico* p.77 soma **⅛ do NH de Corrida** ao Deslocamento, e nesta campanha
+**Deslocamento é Esquiva**. Logo, Corrida compra defesa ativa.
+
+**A alternativa — separar as duas coisas — foi recusada.** O livro vence, e abrir exceção para
+esta perícia obrigaria a abrir para a próxima. **E o número não é atalho:** Corrida é
+Física/Difícil sobre HT, e o primeiro +1 aparece em NH 16, que custa 16 pontos ou mais. **Reflexos
+em Combate custa 15 e dá +1 de Esquiva, +1 em toda defesa ativa e nunca ser surpreendido** —
+continua sendo a compra melhor. Corrida é o segundo caminho, mais caro e mais estreito.
+
+**A ordem de cálculo entrou na Regra de Escrita da Ficha:** desconta-se a Carga primeiro, soma-se
+o oitavo da Corrida depois. *(`26` §12 e `24` §5, item 10.)*
+
+## 3. A concentração interrompida testava o atributo errado no ar
+
+A decisão 2 de 12/09 fixou **Vontade −3**. O `20` publicava **IQ−3** na tabela de manobras, e
+publicou assim por um dia. **Corrigido.**
+
+## 4. O golpe fulminante passou a usar a tabela
+
+O *Módulo Básico* oferece dois tratamentos e **manda não usar os dois juntos**: a regra do dano
+máximo, e a **Tabela de Golpes Fulminantes**. O `20` rodava a primeira e trazia, desde 10/09, um
+aviso dizendo que a escolha era do Árbitro e não do Mestre de Cena. **A escolha foi feita: vale a
+tabela**, com a **Tabela de Golpes Fulminantes na Cabeça** para ataque dirigido à cabeça.
+
+**O que muda na mesa:** um acerto crítico deixa de ser um número grande e passa a ser um
+acontecimento — nocaute, membro incapacitado, arma derrubada, olho perdido. **Vale nos dois
+sentidos**, contra bicho e contra personagem de jogador. As duas tabelas estão transcritas no `20`
+§4.8 e resumidas no `19`.
+
+## 5. As doze propostas de *Os Povos que Subiram* estão fechadas
+
+O documento subiu para a **versão 2** e **não tem mais uma única linha marcada como proposta**. O
+registro item por item está no fim dele; aqui ficam as seis que mudam mecânica:
+
+- **Minotauro, a cabeça:** a RD racial **soma** com a RD 2 do crânio — **RD 7**. Contra ele, **o
+  golpe na cabeça deixa de valer a pena**, e o Mestre de Cena diz isso ao jogador antes de ele
+  rolar. Não é armadilha: o bicho tem cabeça de touro, e isso se vê.
+- **Minotauro, o tabu:** vira **Compulsão −15**, e o **−3 do Hábito Detestável cai**. Ele já paga
+  −3 pela aparência: somar outro seria **cobrar o mesmo corpo duas vezes**.
+- **Meio-Elfo:** **Aptidão Mágica nível 1** — é a única combinação que fecha nos 30 do livro. E
+  quem esconde a ascendência leva **Segredo −10**, o degrau de perda de Status, **não** o de
+  banimento.
+- **Elfo:** o −2 dos Orcs **passa aos Elfos Negros**, que são povo de livro. **Longevidade** paga
+  os 5 pontos, e **não aparentar idade é fato narrativo sem custo** — é disso que vem a
+  consequência política de o testemunho dele ser indatável.
+- **Transmutante:** **lua perdida é lua perdida.** Não fica devendo e não dispara ao voltar ao céu
+  aberto. Quem desce na lua cheia escapa da desvantagem — e o que paga a raça são os 5 pontos de
+  quem quer se transformar lá embaixo, mais a prata.
+- **Psí: não há teto de Poder nem de Potência — o custo é o limite**, e **Antecedentes Incomuns
+  custa 50**, um terço do orçamento. **Uma exceção só: Psicoteleporte tem teto de Potência 10**,
+  porque é o único Poder que não opera dentro da estrutura do jogo e sim contra ela: passa por
+  porta trancada e por vão de andar, e descer andar por andar é a campanha inteira.
+
+**E duas de contabilidade:** peculiaridade racial é **grátis e não gasta as cinco**, pela mesma
+regra da desvantagem racial; o Anão ganhou o degrau que faltava na escala de Carga —
+**Nenhuma até 2,5 × ST**, metade do degrau Leve, como no humano. Equipamento não-humano custa
+**+50%, sem prazo de espera**: ninguém fica de fora de uma semana de jogo por causa de uma loriga.
+
+## 6. O combate saiu do Projeto e virou cartão
+
+**Documento novo: o `19 — Cartão de Combate`, uma página.** Ele passa a ser **o documento de
+combate que se anexa ao Projeto**, e o `20 — Como se joga` inteiro **foi para a trilha de
+consulta**.
+
+**O motivo é a janela de contexto**, e é o mesmo que criou as trilhas de leitura pela manhã: o
+Mestre de Cena de cada jogador é uma IA com contexto finito, o `20` é longo, e a reescrita de
+combate que ainda vai entrar tem dezesseis blocos novos. **Trocar trinta páginas de combate por
+uma é a diferença entre a cena ter contexto sobrando e não ter.**
+
+**Quando os dois divergirem, vale o `20`** — e isso está escrito no alto do cartão.
+
+## 7. Duas fichas fecharam pendência sem mover um ponto
+
+- **Eilif Kverk:** o valor do Inimigo estava marcado como pendente desde a homologação.
+  **Fecha em −10**, que é o que já estava lá: grupo de 6 a 20 pessoas vale −20, aparece em 6 ou
+  menos, metade. A alternativa — tratar a casa de Hrafnkel como grupo grande, −15 — foi recusada:
+  **o que o persegue são os homens da casa, não a cidade**, e subir o valor entregaria 5 pontos
+  por uma ameaça que não apareceu em cena nenhuma.
+- **Karthoz:** a ficha ainda trazia uma seção dizendo que a dificuldade de Bajulação estava em
+  aberto, quando ela fechou em 10/09. **Era resíduo.** Conferida de novo contra a tabela de custo
+  do `02` §4 — que bate linha por linha com o *Módulo Básico* p.44 —, **as duas fichas envolvidas
+  sempre estiveram certas**: Mental/Média custa 4 em IQ+1 e 6 em IQ+2. O que faltava era abrir a
+  tabela.
+
+## 8. Runirsson paga o Patrono inteiro — e a correção é contra o que eu tinha escrito
+
+A ficha dele propunha que o Dever cortasse o custo do Patrono **pela metade**, deixando a Casa de
+Hefesto a 5 pontos. **O Árbitro recusou, e recusou pelo motivo certo.**
+
+O *Módulo Básico* p.24 diz que *"um dever relativamente grande pode diminuir bastante o custo de um
+Patrono e transformá-lo de um benefício em uma responsabilidade considerável"*. **Lido com cuidado,
+o que diminui o custo já é o Dever**: 10 de vantagem contra 10 de desvantagem, líquido zero — que é
+exatamente "deixar de ser benefício e virar responsabilidade". **Descontar de novo pagaria a mesma
+relação duas vezes.**
+
+**Patrono custa 10. A conta dele é 141 de criação, 9 livres; 153 totais, 12 não gastos.**
+
+## 9. O que o artigo 4 produziu nesta leva — dois precedentes
+
+**A Carta, artigo 4, diz que o personagem do Árbitro não recebe favor.** Nesta leva ele foi
+acionado, e o que sai dele para cá são **dois precedentes que valem para os sete jogadores**. O
+caso que os gerou fica na ficha, que é onde caso mora.
+
+**1. Reserva de gema de energia não multiplica em mana alta.** Do andar 9 para baixo, a mana alta
+multiplica por cinco **o que um encantamento faz** — não o tamanho do depósito que ele guarda. Uma
+gema média desce com reserva 5 e recarga 2 por dia, iguais às da superfície. A leitura literal
+daria reserva 25 e recarga 10, e isso seria **o maior ganho de faixa da mesa**.
+
+**2. Saldo relatado sem lançamento vira o saldo real — para cima ou para baixo.** Quando o saldo
+que o Mestre de Cena relata não fecha com o homologado e **não há lançamento que explique a
+diferença**, homologa-se o relatado e encerra. Não se devolve, não se persegue e não se inventa a
+compra que faltou. **Quem quiser o contrário manda o lançamento junto com o relatório** — a regra
+da Cronologia continua valendo, e correção é linha nova.
+
+> **O segundo precedente nasceu custando caro a quem o decidiu**, e é por isso que ele é
+> defensável. As alternativas todas devolviam dinheiro; esta tirou. **Quando a regra que você
+> escreve te prejudica primeiro, ninguém precisa confiar na sua boa-fé para aceitá-la.**
+
+## 10. Mesa conjunta, e o jogador cujos limites ninguém perguntou
+
+**Mesa conjunta: um Mestre de Cena narra a todos.** Quando dois ou mais personagens de jogadores
+estão na mesma cena, **uma única instância conduz** e recebe as fichas de todos. O motivo é
+estrutural: cada jogador tem o próprio Mestre de Cena, com o próprio contexto, e **nenhum tem como
+saber o que o outro narrou.** Contradição entre duas narrações do mesmo fato não é ponto de vista:
+é o mundo deixando de existir do mesmo jeito para todos. Os outros jogadores seguem jogando os
+próprios personagens — **ninguém interpreta o personagem de outro, nunca**.
+
+**E entrou a regra do que fazer quando os limites de um jogador não foram declarados.** Enquanto
+não houver resposta **em voz do jogador**, o Mestre de Cena roda com duas travas: **matéria dura
+por elipse**, e **nenhum conflito direto com personagem de outro jogador**. Isso ficou mais urgente
+hoje, porque a leva acrescentou Minotauro, Transmutante e a prata ao que pode aparecer numa cena.
+
+**Silêncio nesse campo não é resposta, e a falha nunca é do jogador** — é de quem não perguntou. As
+travas ficam até a resposta chegar, e o texto que o Mestre de Cena lê está no `04` v12.
+
+## 11. Preço dito em mesa entrou na tabela
+
+**Uso de forja alheia, 5 g por noite. Lata, 3 g.** Foram ditos em cena na Semana 1 e ficaram
+valendo por precedente, fora de tabela nenhuma. **Preço dito em mesa que não entra na tabela é
+preço que a próxima mesa inventa diferente.** Entraram no `03` §9.4, com a origem escrita ao lado.
+
+## 12. Um índice duplicado e desatualizado, que ninguém publica
+
+Conferindo versão de arquivo contra o `versoes.tsv`, apareceu que
+`Canone/Camada-Aberta/14-Indice-e-Regra-de-Escrita.md` está na **versão 3, de 07/09**, enquanto o
+`14` publicado sai de `_fontes-site/14-indice.md`, na **versão 7**. **O arquivo duplicado não é
+lido pelo gerador e ninguém percebeu porque ele nunca aparece no site.**
+
+**O risco é editar o arquivo errado** e achar que publicou. Ele foi **marcado com aviso no topo**,
+não apagado — nenhuma linha some em silêncio nesta pasta. **O que fazer com ele é decisão do
+Árbitro**, e é a única coisa desta retificação que fica em aberto.
 
 
 ---

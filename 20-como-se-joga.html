@@ -46,6 +46,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <div id="resultados"></div>
 <h4>Comece aqui</h4><ul>
 <li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="19-cartao-de-combate.html">Cartão de Combate</a></li>
 <li><a href="20-como-se-joga.html" class="atual">Como se joga</a></li>
 <li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
 </ul>
@@ -91,7 +92,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 </ul>
 <h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
 </nav>
-<main><div class="cabeca"><h1>Como se joga</h1><div class="meta">versão 7 · atualizado em 2026-09-13 · Comece aqui</div></div>
+<main><div class="cabeca"><h1>Como se joga</h1><div class="meta">versão 8 · atualizado em 2026-09-13 · Comece aqui</div></div>
 <blockquote>
 <p>[!NOTE]
 <strong>Este documento é sobre jogar.</strong> O <code>17 — Guia de Criação e Manual de Magia</code> ensina a <strong>montar</strong> um personagem; este ensina a <strong>usar</strong> o que ficou na ficha. O <code>02 — Regras da Mesa</code> é a folha curta de referência; este é o manual de operação, e serve tanto ao jogador que nunca tocou em GURPS quanto ao Mestre de Cena, que resolve a cena com ele aberto.</p>
@@ -425,7 +426,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <td><strong>Concentrar</strong></td>
 <td>1 metro</td>
 <td>Feitiço ou tarefa mental.</td>
-<td>Qualquer uma, <strong>mas defender exige teste de IQ−3 para não perder a concentração</strong></td>
+<td>Qualquer uma, <strong>mas defender exige teste de Vontade −3 para não perder a concentração</strong></td>
 </tr>
 <tr>
 <td><strong>Mudança de Posição</strong></td>
@@ -605,9 +606,129 @@ Rola-se 3d6 contra esse total. Igual ou menor: o golpe não passou.</p>
 </tbody>
 </table>
 <p>Não importa o NH: <strong>3 e 4 sempre acertam, 17 e 18 sempre erram.</strong> (pág. 97)</p>
+<p><strong>Fixado em 13/09/2026: esta mesa usa a Tabela de Golpes Fulminantes.</strong> O livro oferece os dois tratamentos e manda não usar os dois juntos; o Árbitro escolheu a tabela, e a regra do dano máximo <strong>deixa de valer</strong>. O motivo é de mesa: um acerto crítico passa a ser um acontecimento com consequência, e não um número grande. <strong>Vale nos dois sentidos</strong> — contra bicho e contra personagem de jogador.</p>
+<h3>Tabela de Golpes Fulminantes (MB pág. 202)</h3>
+<p>Rola-se <strong>3d</strong>, e todo dobro e triplo se refere ao <strong>dano básico dos dados</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>3d</th>
+<th>O que acontece</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3</strong></td>
+<td>Tronco: dano normal e <strong>nocaute</strong> — teste de HT a cada 30 min para acordar. Qualquer outra parte: <strong>triplo do dano</strong>.</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Ultrapassa a armadura</strong> e provoca dano normal.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Triplo do dano.</strong></td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Dobro do dano.</strong></td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>Dano normal, e a vítima fica <strong>atordoada</strong> até passar num teste de HT.</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td>Braço, perna, mão ou pé: dano normal e <strong>o membro fica incapacitado</strong>, qualquer que seja o dano. Se o dano não bastaria para inutilizá-lo, é choque nevrálgico e <strong>se cura em seis turnos</strong>. Outra parte: dano normal.</td>
+</tr>
+<tr>
+<td><strong>9, 10, 11</strong></td>
+<td><strong>Dano normal, e só.</strong></td>
+</tr>
+<tr>
+<td><strong>12</strong></td>
+<td>Como o 8.</td>
+</tr>
+<tr>
+<td><strong>13</strong></td>
+<td><strong>Ultrapassa a armadura</strong> e provoca dano normal.</td>
+</tr>
+<tr>
+<td><strong>14</strong></td>
+<td>Como o 8.</td>
+</tr>
+<tr>
+<td><strong>15</strong></td>
+<td><strong>A arma do oponente cai</strong>, e ele leva dano normal.</td>
+</tr>
+<tr>
+<td><strong>16</strong></td>
+<td><strong>Dobro do dano.</strong></td>
+</tr>
+<tr>
+<td><strong>17</strong></td>
+<td><strong>Triplo do dano.</strong></td>
+</tr>
+<tr>
+<td><strong>18</strong></td>
+<td>Tronco: dano normal e <strong>nocaute</strong>. Outra parte: <strong>triplo do dano</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3>Tabela de Golpes Fulminantes na Cabeça (MB pág. 202)</h3>
+<p><strong>Só quando o golpe fulminante veio de um ataque dirigido à cabeça.</strong></p>
+<table>
+<thead>
+<tr>
+<th>3d</th>
+<th>O que acontece</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Morte instantânea.</strong></td>
+</tr>
+<tr>
+<td><strong>4, 5</strong></td>
+<td><strong>Nocaute</strong> — teste de HT a cada 30 min.</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Cego dos dois olhos.</strong> Regras de incapacitação, um teste por olho. Atordoado, e luta a <strong>DX −10</strong> pelo resto da batalha.</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Cego de um olho.</strong> Regras de incapacitação. Atordoado, e luta a <strong>DX −2</strong> pelo resto da batalha.</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Desequilibrado:</strong> defende-se normalmente no turno seguinte e não faz mais nada. Dano normal.</td>
+</tr>
+<tr>
+<td><strong>9, 10, 11</strong></td>
+<td><strong>Dano normal na cabeça, e só.</strong></td>
+</tr>
+<tr>
+<td><strong>12</strong></td>
+<td>Contundente: dano normal e <strong>surdo por 24 h</strong>. Cortante ou perfurante: <strong>1 PV</strong> e a face fica marcada.</td>
+</tr>
+<tr>
+<td><strong>13</strong></td>
+<td>Contundente: dano normal e <strong>surdez possivelmente permanente</strong> (incapacitação). Cortante ou perfurante: <strong>2 PV</strong> e a face fica muito marcada.</td>
+</tr>
+<tr>
+<td><strong>14</strong></td>
+<td>Dano normal na cabeça, e <strong>a vítima deixa cair a arma</strong> (com duas, sorteia-se qual).</td>
+</tr>
+<tr>
+<td><strong>15 a 18</strong></td>
+<td>Dano normal na cabeça, e <strong>atordoada</strong>.</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-<p>[!WARNING]
-<strong>Decisão pendente do Árbitro.</strong> O livro oferece dois tratamentos para o golpe fulminante e diz explicitamente para <strong>não usar os dois juntos</strong>: a regra do dano máximo acima, e a <strong>Tabela de Golpes Fulminantes</strong> da pág. 202, que sorteia efeitos por resultado (nocaute, dano triplo, membro incapacitado). Este documento roda a regra do dano máximo, que é mais rápida e cabe em mesa assíncrona. Trocar pela tabela é escolha do Árbitro, não do Mestre de Cena. A <strong>Tabela de Erros Críticos</strong> (pág. 202) vale nos dois casos.</p>
+<p><strong>E o critério de quando é fulminante não mudou:</strong> 3 e 4 sempre; 5 com NH efetivo 15+; 6 com 16+. <strong>A vítima não tem defesa ativa em nenhum deles.</strong> A <strong>Tabela de Erros Críticos</strong> (pág. 202) continua valendo como sempre valeu.</p>
 </blockquote>
 <h2>4.9 Dano</h2>
 <h3>Dano básico por ST</h3>
@@ -1058,13 +1179,37 @@ Rola-se 3d6 contra esse total. Igual ou menor: o golpe não passou.</p>
 <p><strong>Como funciona, em mesa</strong> (MAGIA pág. 11):</p>
 <ol>
 <li><strong>Duas rolagens.</strong> A primeira é a da mágica, <strong>sem nenhum redutor de distância</strong>, e diz se o projétil se formou. A segunda é <strong>Arremesso de Mágica</strong> daquela mágica — pré-definido: NH em Arremesso, ou <strong>DX−3</strong> — e diz se acertou, com tamanho, velocidade e distância pela tabela da seção 4.11.</li>
-<li><strong>A energia é a força.</strong> 1 a 3 pontos, <strong>1d de dano por ponto</strong>, e <strong>um segundo de concentração por ponto</strong>: projétil de 1 ponto por turno, ou de 3 pontos a cada três turnos.</li>
-<li><strong>Pode-se segurar o projétil na mão</strong> e então andar ou <strong>Apontar</strong>. É a única mágica que se retém pronta. Enquanto retém, só se pode fazer mágica de <strong>Bloqueio</strong>, a −2 — e falha crítica nela <strong>solta o projétil em quem o fez</strong>.</li>
-<li><strong>Ferido enquanto segura: teste de Vontade</strong> ou perde o controle.</li>
-<li><strong>Bloquear e Esquivar valem; Aparar, não.</strong> A <strong>armadura protege</strong> contra o dano — exceto no Projétil de Maldição, contra o qual nem PD nem RD servem.</li>
-<li><strong>Viaja em linha reta</strong> e atravessa barreira que consiga vencer, seguindo com a energia que sobrou.</li>
-<li>A <strong>Bola de Fogo Explosiva</strong> pode ser jogada no chão ou na parede, <strong>com +4 para acertar</strong>, para pegar quem está em volta.</li>
+<li><strong>A energia é a força — e o quanto ela rende sai do verbete de cada mágica, não de uma regra geral.</strong> Um segundo de concentração por ponto, sempre: projétil de 1 ponto por turno, ou de 3 pontos a cada três turnos. O dano é este:</li>
 </ol>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>Energia</th>
+<th>Dano</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bola de Fogo · Adaga de Gelo · Esfera de Gelo · Relâmpago</td>
+<td>1 a 3</td>
+<td><strong>1d por ponto</strong></td>
+</tr>
+<tr>
+<td><strong>Bola de Fogo Explosiva</strong></td>
+<td><strong>2 a 6</strong></td>
+<td><strong>1d a cada 2 pontos</strong> — máximo 3d</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Corrigido em 13/09/2026.</strong> A decisão de 12/09 pôs a Bola de Fogo Explosiva na mesma linha da simples, a 1d por ponto. <strong>O verbete dela diz outra coisa</strong> — <em>"provoca 1D pontos de dano para cada 2 pontos de energia aplicados"</em> — e nesta campanha, onde a Relação das Mágicas e o verbete divergem, <strong>vence o verbete</strong>. Na prática: a explosiva custa o dobro por dado, e <strong>o dado que ela não faz é o preço de pegar todo mundo em volta</strong>. Quem quer dano num alvo só usa a Bola de Fogo simples, e isso é de propósito.
+3. <strong>Pode-se segurar o projétil na mão</strong> e então andar ou <strong>Apontar</strong>. É a única mágica que se retém pronta. Enquanto retém, só se pode fazer mágica de <strong>Bloqueio</strong>, a −2 — e falha crítica nela <strong>solta o projétil em quem o fez</strong>.
+4. <strong>Ferido enquanto segura: teste de Vontade</strong> ou perde o controle.
+5. <strong>Bloquear e Esquivar valem; Aparar, não.</strong> A <strong>armadura protege</strong> contra o dano — exceto no Projétil de Maldição, contra o qual nem PD nem RD servem.
+6. <strong>Viaja em linha reta</strong> e atravessa barreira que consiga vencer, seguindo com a energia que sobrou.
+7. A <strong>Bola de Fogo Explosiva</strong> pode ser jogada no chão ou na parede, <strong>com +4 para acertar</strong>, para pegar quem está em volta.</p>
+</blockquote>
 <h3>Magia: os outros alcances</h3>
 <ul>
 <li><strong>Mágica comum que não se pode tocar:</strong> redutor <strong>igual à distância em hexágonos</strong> entre operador e objetivo. Encostado, ele toca: sem redutor. (MAGIA pág. 10)</li>

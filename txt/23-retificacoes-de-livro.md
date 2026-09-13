@@ -1,5 +1,5 @@
 titulo: Retificações de livro
-versao: 3
+versao: 4
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -512,3 +512,182 @@ ele paga 5 pontos e um Dever. Até 13/09/2026 a ficha não dizia onde ele batia 
 **Runirsson ficou com 10 pontos de folga dentro do limite de −40**, porque o Dever da Marca saiu do
 limite na parte 5 desta mesma retificação. **A folga é dele** (decisão 54): desvantagem nova é
 escolha de quem joga o personagem, não do Árbitro.
+
+---
+
+# RETIFICAÇÃO — 13/09/2026, tarde: as vinte e seis pendências
+
+**Nenhuma ficou aberta.** O Árbitro pediu a varredura completa do que estava pendente — não só o
+que a leva do Compêndio tinha levantado — e a varredura achou **vinte e seis**: as quatro do
+Compêndio, doze marcadas como proposta em *Os Povos que Subiram*, quatro abertas na base de
+Pendências, cinco vindas de trabalho anterior que nunca fecharam, e uma escrita como pendente
+dentro do próprio *Como se joga* que ninguém tinha visto.
+
+**Duas delas não estavam em lista nenhuma** e só apareceram porque as marcas foram varridas uma a
+uma: **o preço de equipamento não-humano**, que o documento das raças esqueceu da própria tabela
+de confirmação, e **o golpe fulminante**, que estava marcado com um aviso no meio do texto de
+combate desde 10/09.
+
+## 1. A Bola de Fogo Explosiva faz metade do que a decisão dizia
+
+A decisão de 12/09 pôs Bola de Fogo, Bola de Fogo Explosiva e Esfera de Gelo na mesma linha, a
+**1d por ponto de energia**. O verbete da explosiva diz outra coisa: *"provoca 1D pontos de dano
+para cada **2 pontos** de energia aplicados"*, com custo de 2 a 6 — **máximo 3d**, não 6d.
+
+**Vence o verbete**, que é a regra que governou a leva inteira. Na prática, **a explosiva custa o
+dobro por dado, e o dado que ela não faz é o preço de pegar todo mundo em volta**. Quem quer dano
+num alvo só usa a simples. *(`20` §4.11 e `19` §6.)*
+
+## 2. A Corrida compra Esquiva, e isso vale como o livro escreve
+
+O *Módulo Básico* p.77 soma **⅛ do NH de Corrida** ao Deslocamento, e nesta campanha
+**Deslocamento é Esquiva**. Logo, Corrida compra defesa ativa.
+
+**A alternativa — separar as duas coisas — foi recusada.** O livro vence, e abrir exceção para
+esta perícia obrigaria a abrir para a próxima. **E o número não é atalho:** Corrida é
+Física/Difícil sobre HT, e o primeiro +1 aparece em NH 16, que custa 16 pontos ou mais. **Reflexos
+em Combate custa 15 e dá +1 de Esquiva, +1 em toda defesa ativa e nunca ser surpreendido** —
+continua sendo a compra melhor. Corrida é o segundo caminho, mais caro e mais estreito.
+
+**A ordem de cálculo entrou na Regra de Escrita da Ficha:** desconta-se a Carga primeiro, soma-se
+o oitavo da Corrida depois. *(`26` §12 e `24` §5, item 10.)*
+
+## 3. A concentração interrompida testava o atributo errado no ar
+
+A decisão 2 de 12/09 fixou **Vontade −3**. O `20` publicava **IQ−3** na tabela de manobras, e
+publicou assim por um dia. **Corrigido.**
+
+## 4. O golpe fulminante passou a usar a tabela
+
+O *Módulo Básico* oferece dois tratamentos e **manda não usar os dois juntos**: a regra do dano
+máximo, e a **Tabela de Golpes Fulminantes**. O `20` rodava a primeira e trazia, desde 10/09, um
+aviso dizendo que a escolha era do Árbitro e não do Mestre de Cena. **A escolha foi feita: vale a
+tabela**, com a **Tabela de Golpes Fulminantes na Cabeça** para ataque dirigido à cabeça.
+
+**O que muda na mesa:** um acerto crítico deixa de ser um número grande e passa a ser um
+acontecimento — nocaute, membro incapacitado, arma derrubada, olho perdido. **Vale nos dois
+sentidos**, contra bicho e contra personagem de jogador. As duas tabelas estão transcritas no `20`
+§4.8 e resumidas no `19`.
+
+## 5. As doze propostas de *Os Povos que Subiram* estão fechadas
+
+O documento subiu para a **versão 2** e **não tem mais uma única linha marcada como proposta**. O
+registro item por item está no fim dele; aqui ficam as seis que mudam mecânica:
+
+- **Minotauro, a cabeça:** a RD racial **soma** com a RD 2 do crânio — **RD 7**. Contra ele, **o
+  golpe na cabeça deixa de valer a pena**, e o Mestre de Cena diz isso ao jogador antes de ele
+  rolar. Não é armadilha: o bicho tem cabeça de touro, e isso se vê.
+- **Minotauro, o tabu:** vira **Compulsão −15**, e o **−3 do Hábito Detestável cai**. Ele já paga
+  −3 pela aparência: somar outro seria **cobrar o mesmo corpo duas vezes**.
+- **Meio-Elfo:** **Aptidão Mágica nível 1** — é a única combinação que fecha nos 30 do livro. E
+  quem esconde a ascendência leva **Segredo −10**, o degrau de perda de Status, **não** o de
+  banimento.
+- **Elfo:** o −2 dos Orcs **passa aos Elfos Negros**, que são povo de livro. **Longevidade** paga
+  os 5 pontos, e **não aparentar idade é fato narrativo sem custo** — é disso que vem a
+  consequência política de o testemunho dele ser indatável.
+- **Transmutante:** **lua perdida é lua perdida.** Não fica devendo e não dispara ao voltar ao céu
+  aberto. Quem desce na lua cheia escapa da desvantagem — e o que paga a raça são os 5 pontos de
+  quem quer se transformar lá embaixo, mais a prata.
+- **Psí: não há teto de Poder nem de Potência — o custo é o limite**, e **Antecedentes Incomuns
+  custa 50**, um terço do orçamento. **Uma exceção só: Psicoteleporte tem teto de Potência 10**,
+  porque é o único Poder que não opera dentro da estrutura do jogo e sim contra ela: passa por
+  porta trancada e por vão de andar, e descer andar por andar é a campanha inteira.
+
+**E duas de contabilidade:** peculiaridade racial é **grátis e não gasta as cinco**, pela mesma
+regra da desvantagem racial; o Anão ganhou o degrau que faltava na escala de Carga —
+**Nenhuma até 2,5 × ST**, metade do degrau Leve, como no humano. Equipamento não-humano custa
+**+50%, sem prazo de espera**: ninguém fica de fora de uma semana de jogo por causa de uma loriga.
+
+## 6. O combate saiu do Projeto e virou cartão
+
+**Documento novo: o `19 — Cartão de Combate`, uma página.** Ele passa a ser **o documento de
+combate que se anexa ao Projeto**, e o `20 — Como se joga` inteiro **foi para a trilha de
+consulta**.
+
+**O motivo é a janela de contexto**, e é o mesmo que criou as trilhas de leitura pela manhã: o
+Mestre de Cena de cada jogador é uma IA com contexto finito, o `20` é longo, e a reescrita de
+combate que ainda vai entrar tem dezesseis blocos novos. **Trocar trinta páginas de combate por
+uma é a diferença entre a cena ter contexto sobrando e não ter.**
+
+**Quando os dois divergirem, vale o `20`** — e isso está escrito no alto do cartão.
+
+## 7. Duas fichas fecharam pendência sem mover um ponto
+
+- **Eilif Kverk:** o valor do Inimigo estava marcado como pendente desde a homologação.
+  **Fecha em −10**, que é o que já estava lá: grupo de 6 a 20 pessoas vale −20, aparece em 6 ou
+  menos, metade. A alternativa — tratar a casa de Hrafnkel como grupo grande, −15 — foi recusada:
+  **o que o persegue são os homens da casa, não a cidade**, e subir o valor entregaria 5 pontos
+  por uma ameaça que não apareceu em cena nenhuma.
+- **Karthoz:** a ficha ainda trazia uma seção dizendo que a dificuldade de Bajulação estava em
+  aberto, quando ela fechou em 10/09. **Era resíduo.** Conferida de novo contra a tabela de custo
+  do `02` §4 — que bate linha por linha com o *Módulo Básico* p.44 —, **as duas fichas envolvidas
+  sempre estiveram certas**: Mental/Média custa 4 em IQ+1 e 6 em IQ+2. O que faltava era abrir a
+  tabela.
+
+## 8. Runirsson paga o Patrono inteiro — e a correção é contra o que eu tinha escrito
+
+A ficha dele propunha que o Dever cortasse o custo do Patrono **pela metade**, deixando a Casa de
+Hefesto a 5 pontos. **O Árbitro recusou, e recusou pelo motivo certo.**
+
+O *Módulo Básico* p.24 diz que *"um dever relativamente grande pode diminuir bastante o custo de um
+Patrono e transformá-lo de um benefício em uma responsabilidade considerável"*. **Lido com cuidado,
+o que diminui o custo já é o Dever**: 10 de vantagem contra 10 de desvantagem, líquido zero — que é
+exatamente "deixar de ser benefício e virar responsabilidade". **Descontar de novo pagaria a mesma
+relação duas vezes.**
+
+**Patrono custa 10. A conta dele é 141 de criação, 9 livres; 153 totais, 12 não gastos.**
+
+## 9. O que o artigo 4 produziu nesta leva — dois precedentes
+
+**A Carta, artigo 4, diz que o personagem do Árbitro não recebe favor.** Nesta leva ele foi
+acionado, e o que sai dele para cá são **dois precedentes que valem para os sete jogadores**. O
+caso que os gerou fica na ficha, que é onde caso mora.
+
+**1. Reserva de gema de energia não multiplica em mana alta.** Do andar 9 para baixo, a mana alta
+multiplica por cinco **o que um encantamento faz** — não o tamanho do depósito que ele guarda. Uma
+gema média desce com reserva 5 e recarga 2 por dia, iguais às da superfície. A leitura literal
+daria reserva 25 e recarga 10, e isso seria **o maior ganho de faixa da mesa**.
+
+**2. Saldo relatado sem lançamento vira o saldo real — para cima ou para baixo.** Quando o saldo
+que o Mestre de Cena relata não fecha com o homologado e **não há lançamento que explique a
+diferença**, homologa-se o relatado e encerra. Não se devolve, não se persegue e não se inventa a
+compra que faltou. **Quem quiser o contrário manda o lançamento junto com o relatório** — a regra
+da Cronologia continua valendo, e correção é linha nova.
+
+> **O segundo precedente nasceu custando caro a quem o decidiu**, e é por isso que ele é
+> defensável. As alternativas todas devolviam dinheiro; esta tirou. **Quando a regra que você
+> escreve te prejudica primeiro, ninguém precisa confiar na sua boa-fé para aceitá-la.**
+
+## 10. Mesa conjunta, e o jogador cujos limites ninguém perguntou
+
+**Mesa conjunta: um Mestre de Cena narra a todos.** Quando dois ou mais personagens de jogadores
+estão na mesma cena, **uma única instância conduz** e recebe as fichas de todos. O motivo é
+estrutural: cada jogador tem o próprio Mestre de Cena, com o próprio contexto, e **nenhum tem como
+saber o que o outro narrou.** Contradição entre duas narrações do mesmo fato não é ponto de vista:
+é o mundo deixando de existir do mesmo jeito para todos. Os outros jogadores seguem jogando os
+próprios personagens — **ninguém interpreta o personagem de outro, nunca**.
+
+**E entrou a regra do que fazer quando os limites de um jogador não foram declarados.** Enquanto
+não houver resposta **em voz do jogador**, o Mestre de Cena roda com duas travas: **matéria dura
+por elipse**, e **nenhum conflito direto com personagem de outro jogador**. Isso ficou mais urgente
+hoje, porque a leva acrescentou Minotauro, Transmutante e a prata ao que pode aparecer numa cena.
+
+**Silêncio nesse campo não é resposta, e a falha nunca é do jogador** — é de quem não perguntou. As
+travas ficam até a resposta chegar, e o texto que o Mestre de Cena lê está no `04` v12.
+
+## 11. Preço dito em mesa entrou na tabela
+
+**Uso de forja alheia, 5 g por noite. Lata, 3 g.** Foram ditos em cena na Semana 1 e ficaram
+valendo por precedente, fora de tabela nenhuma. **Preço dito em mesa que não entra na tabela é
+preço que a próxima mesa inventa diferente.** Entraram no `03` §9.4, com a origem escrita ao lado.
+
+## 12. Um índice duplicado e desatualizado, que ninguém publica
+
+Conferindo versão de arquivo contra o `versoes.tsv`, apareceu que
+`Canone/Camada-Aberta/14-Indice-e-Regra-de-Escrita.md` está na **versão 3, de 07/09**, enquanto o
+`14` publicado sai de `_fontes-site/14-indice.md`, na **versão 7**. **O arquivo duplicado não é
+lido pelo gerador e ninguém percebeu porque ele nunca aparece no site.**
+
+**O risco é editar o arquivo errado** e achar que publicou. Ele foi **marcado com aviso no topo**,
+não apagado — nenhuma linha some em silêncio nesta pasta. **O que fazer com ele é decisão do
+Árbitro**, e é a única coisa desta retificação que fica em aberto.

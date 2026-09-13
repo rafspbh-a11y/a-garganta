@@ -1,5 +1,5 @@
 titulo: Os Povos que Subiram
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -9,8 +9,10 @@ fonte: cânone aberto de A Garganta
 > **Decidido pelo Árbitro em 12 e 13/09/2026.** Este documento **fecha** a promessa do `02` §7 e
 > passa a ser a fonte das seis raças jogáveis e do psí. Onde divergir do `02` §7, **vale este
 > documento**.
-> **Os números são do *GURPS Magia* p.97-100 e do *GURPS Psiquismo*.** Onde o livro cala, a linha
-> vai marcada **⟨proposta⟩** e **não vale até o Árbitro confirmar** — a lista está no fim.
+> **Os números são do *GURPS Fantasy*, do *GURPS Magia* p.97-100 e do *GURPS Psiquismo*.** Onde o
+> livro calava, a linha ia marcada como proposta. **Em 13/09/2026 as doze propostas foram
+> decididas e nenhuma continua aberta** — o registro de cada uma está no fim do documento. Daqui
+> em diante, **todo número deste documento vale.**
 
 # 0 · As três regras que valem para as seis
 
@@ -22,8 +24,10 @@ raça. O −40 do `29` §1 continua inteiro para o que o jogador escolher, e o D
 continua fora dele. **Recompra de desvantagem racial na criação é possível, com aprovação** —
 há Minotauro sem Sanguinolência, e custa pontos.
 
-**3. Peculiaridade racial é grátis e não gasta as cinco.** ⟨proposta⟩ As raciais já estão pagas
-dentro do preço da raça; senão o Anão, que tem quatro, nasceria com uma só de graça.
+**3. Peculiaridade racial é grátis e não gasta as cinco.** As raciais já estão pagas dentro do
+preço da raça; senão o Anão, que tem quatro, nasceria com uma só de graça. **É a mesma regra da
+linha 2, aplicada ao mesmo problema:** o que a raça já cobrou não se cobra de novo, e não rende
+ponto. O Anão carrega as quatro do livro **e escolhe cinco suas.**
 
 # 1 · Anões — 30 pontos
 
@@ -34,7 +38,7 @@ dentro do preço da raça; senão o Anão, que tem quatro, nasceria com uma só 
 | **Desvantagens raciais** | **Cobiça** (−15) e **Avareza** (−10), *como raça — indivíduo pode não as ter, e aí é recompra* · **Deslocamento −1** · **−2 no NH** com toda arma de projétil |
 | **Peculiaridades raciais** | Não Confiam em Elfos · Preferem Lugares Fechados · Nunca Fazem a Barba · **Intolerantes com os Hobgoblins** |
 | **Reações** | **−2** diante de Elfos · **−3** diante de Hobgoblins · **nunca melhor que Fraca** diante de Dragões · **neutra** diante de humanos · **+1 ou mais** diante de artesão, ou de proposta que desafie o ofício dele |
-| **Carga** | Escala própria: **Leve 5×ST · Média 10×ST · Pesada 20×ST · Muito Pesada 30×ST** |
+| **Carga** | Escala própria: **Nenhuma 2,5×ST · Leve 5×ST · Média 10×ST · Pesada 20×ST · Muito Pesada 30×ST** |
 | **Limites** | **Nenhum Anão é introvertido:** Timidez, em qualquer grau, é proibida |
 
 **E isto importa desde que o Deslocamento passou a descontar a Carga.** Um Anão de ST 12 só sai
@@ -63,9 +67,9 @@ aceita é tratado como quem vendeu o juramento.
 | | |
 | --- | --- |
 | **Atributos** | IQ **+1** · DX **+1** · ST **−1** |
-| **Vantagens raciais** | **Carisma 1** · **Atraente +1** · **Reflexos em Combate** · **Aptidão Mágica 1** — *ver a trava* · **Talento Musical 2** (bônus **de aprendizado**) · **+1 no NH** de Trovador e Trato Social, se as estudar · **Longevidade** ⟨proposta⟩ |
+| **Vantagens raciais** | **Carisma 1** · **Atraente +1** · **Reflexos em Combate** · **Aptidão Mágica 1** — *ver a trava* · **Talento Musical 2** (bônus **de aprendizado**) · **+1 no NH** de Trovador e Trato Social, se as estudar · **Longevidade** — e **não aparentar idade nenhuma é fato narrativo, sem custo** |
 | **Desvantagens raciais** | **Senso de Dever (toda a natureza) −15** · **Código de Honra (cavalheiros) −10** |
-| **Reações** | **−1** diante de Anões · **−2 diante de Elfos Negros** ⟨proposta⟩ · nos demais casos **pesa o comportamento, não a raça** |
+| **Reações** | **−1** diante de Anões · **−2 diante de Elfos Negros** · nos demais casos **pesa o comportamento, não a raça** |
 | **Limites** | Nenhum Elfo permite de bom grado dano desnecessário a árvore, animal ou pessoa |
 
 > ## A trava do colégio — e é o que faz o Elfo caber no mundo
@@ -100,13 +104,14 @@ política, e não lei da natureza** — e o papel dele fica a doze dias de dist�
 | | |
 | --- | --- |
 | **Atributos** | IQ **+1** |
-| **Vantagens raciais** | **Aptidão Mágica 1** ⟨proposta⟩ · **Longevidade** |
+| **Vantagens raciais** | **Aptidão Mágica 1** · **Longevidade** — e, como no Elfo, **não aparentar idade não custa ponto** |
 | **Reações** | **Nenhum modificador.** É o traço definidor: **passa por humano** |
 | **Limites** | A trava do colégio do §2 vale igual. **A declaração de origem é obrigatória** no registro da Guilda e nas sete cidades |
 
 **A conta que sustenta o nível 1.** O livro diz "Aptidão Mágica" e **não diz o nível**. A
-aritmética fecha exata: IQ+1 = 10 · Aptidão 1 = 15 · Longevidade = 5 → **30**. Mesmo assim fica
-⟨proposta⟩, porque o livro avisa que custo racial ≠ custo individual.
+aritmética fecha exata: IQ+1 = 10 · Aptidão 1 = 15 · Longevidade = 5 → **30**, que é o número
+que o próprio *Fantasy* cobra. **Fixado em 13/09/2026:** não há outra combinação que feche nos 30,
+e o aviso do livro de que custo racial ≠ custo individual não chega a derrubar uma soma exata.
 
 **Origem.** **Não subiu: nasceu aqui.** É a segunda geração — filho de um dos Elfos que chegaram
 ao balcão com a linha de origem em branco, e de alguém das sete cidades. É o único dos seis com
@@ -121,7 +126,7 @@ jogador escolhe, e os dois caminhos custam:
 | Caminho | Como entra na ficha |
 | --- | --- |
 | **Declarou** | **Estigma Social (Minoria) −10**: −2 de reação fora, +2 dentro |
-| **Escondeu** | **Segredo −20** ⟨proposta⟩: o vazamento custa registro e banimento |
+| **Escondeu** | **Segredo −10**: o vazamento custa **o registro e a posição**, que é o degrau de perda de emprego ou Status do `29` — não o de morte ou banimento |
 
 **Registra a cidade onde nasceu — e a que importa é Fengdu**, que mantém o único cadastro
 cruzado de **pessoas vivas** das sete e vende consulta. Um Meio-Elfo escondido em Ônfalos está
@@ -135,8 +140,8 @@ o Dever da Marca.**
 | | |
 | --- | --- |
 | **Atributos** | ST **+3** · DX **+1** · HT **+3** · IQ **−2** |
-| **Vantagens raciais** | **RD 3** natural, **mais 2 na cabeça** · **Abascanto 2** · **Visão Periférica** · **Senso de Direção** · **Briga** com NH igual à DX, sem pagar ponto · **Chifres:** cada um causa dano por **perfuração** compatível com a ST; a cabeçada roda como **encontrão**, e quem falha o teste de Escudo **sofre o dano dos dois** |
-| **Desvantagens raciais** | **Hediondo −20** · **Fúria −15** · **Sanguinolência −10** · **Intolerância −10** · **Hábito Detestável racial −15**, *reescrito* |
+| **Vantagens raciais** | **RD 3** natural, **mais 2 na cabeça — e as duas somam com a RD 2 do crânio: RD 7** · **Abascanto 2** · **Visão Periférica** · **Senso de Direção** · **Briga** com NH igual à DX, sem pagar ponto · **Chifres:** cada um causa dano por **perfuração** compatível com a ST; a cabeçada roda como **encontrão**, e quem falha o teste de Escudo **sofre o dano dos dois** |
+| **Desvantagens raciais** | **Hediondo −20** · **Fúria −15** · **Sanguinolência −10** · **Intolerância −10** · **Compulsão −15**, *o tabu — ver abaixo* |
 | **Reações** | **−3** das outras raças diante dele · **−3** dele diante das outras |
 | **Limites** | **Abascanto é incompatível com Aptidão Mágica: nenhum Minotauro lança feitiço, nunca.** E a Casa que o marca não concede colégio nenhum — as duas coisas dizem o mesmo por caminhos diferentes |
 
@@ -147,10 +152,32 @@ o Dever da Marca.**
 > **NÃO RECUA DE UM CAMINHO COMEÇADO.** Ele não volta atrás num corredor que começou a percorrer
 > — **nem para fugir, nem para esperar, nem quando o grupo manda.** Mesmo valor, **−15**.
 >
+> **E mudou de verbete em 13/09/2026: é Compulsão, não Hábito Detestável.** O motivo é
+> aritmético e é justo. Hábito Detestável carrega um **−3 de reação embutido**, e o Minotauro já
+> paga **−3** pela aparência, mais Hediondo: somados, ele chegaria a toda mesa de negociação a
+> **−6 ou pior, duas vezes cobrado pelo mesmo corpo**. Compulsão vale os mesmos −15 e **não tem
+> penalidade de reação** — e descreve melhor o que é: ninguém sente nojo dele por não recuar.
+> **Sentem medo de descer com ele**, que é outra coisa, e essa já está no −3 que ele tem.
+>
 > **Na mesa:** entrou no corredor, o caminho se resolve — ele sai pela outra ponta, ou não sai.
 > Dar meia-volta é **teste de Vontade**, e o `29` §1 vale: **14 ou mais falha sempre**. "Caminho
 > começado" é o corredor, a galeria, a escada, o vão — **não** é a descida inteira, e não é um
 > contrato. **O Mestre de Cena declara qual é o caminho antes do primeiro passo.**
+
+> ## A cabeça — RD 7, e o que isso faz com o combate
+>
+> **A RD racial da cabeça soma com a RD 2 do crânio, e o total é 7.** Fixado em 13/09/2026. A RD
+> do crânio é osso, e o couro racial vem por cima dele como viria uma armadura.
+>
+> **Consequência, e ela não é defeito:** contra um Minotauro, **o golpe na cabeça deixa de valer a
+> pena**. Uma rapieira que faz 1D nunca o fere ali; um machado que faz 2D+2 passa 1 ou 2 pontos,
+> e o ×4 do crânio aplicado a 1 ponto não paga o −5 de mira. **Mata-se um Minotauro pelo corpo.**
+> Quem mirar na cabeça está jogando fora a manobra, e o Mestre de Cena **diz isso ao jogador antes
+> de ele rolar** — não é armadilha, é anatomia visível: o bicho tem cabeça de touro.
+>
+> **E vale nos dois sentidos.** Um Minotauro de jogador tem a mesma RD 7, e quem o enfrenta
+> descobre o mesmo. É a vantagem mais cara de contornar das seis raças, e é por ela que ele
+> custa 75.
 
 **Origem.** A origem e o tabu são **o mesmo fato**. Não subiram em grupo, não foram trazidos e
 não negociaram passagem: cada um entrou num corredor que subia e **andou até o corredor acabar**.
@@ -230,6 +257,16 @@ foi até o fim.
 > **O gatilho é o céu aberto, não a data.** Lua cheia que passa com ele sob a rocha **não dispara
 > nada**. O Mestre de Cena nunca rola transformação de lua abaixo do andar 1.
 >
+> **E lua perdida é lua perdida** (13/09/2026). Ela **não fica devendo** e **não dispara** quando
+> ele volta ao céu aberto: passou sob a rocha, não aconteceu, e o mês seguinte recomeça do zero.
+> Uma regra, sem escada de adiamento e sem acúmulo — o Mestre de Cena não precisa lembrar de nada
+> entre uma descida e outra.
+>
+> **O preço disso, dito na cara:** quem desce na lua cheia escapa da desvantagem racial de graça,
+> e descer é o que a campanha inteira faz. **Então o que paga a raça não é a lua: são os 5 pontos
+> de quem quer se transformar lá embaixo**, mais a prata, mais a regeneração que a prata desliga.
+> Quem não pagou os 5 é, abaixo da rampa, um humano com Regeneração e alergia a metal.
+>
 > **⟨proposta — a lua cobrada⟩** A lua perdida **fica devendo**: na **primeira noite de céu
 > aberto** depois da descida, a mudança acontece **fora de hora e sem escolha**, com **−2 na
 > Vontade**. Consequência: **ele se transforma na volta, no anel interno do Limiar, com a Guilda
@@ -299,7 +336,16 @@ existem na mesa**.
 Ancorados** e voltou outro. Não é "tem um dom desde criança": é um **período datável**, e o
 Árbitro aprova ou recusa o texto antes da ficha.
 
-**Um Poder só por personagem, teto de Potência 10.** ⟨proposta⟩
+**Sem limite de Poderes e sem teto de Potência — o custo é o limite.** Fixado em 13/09/2026.
+Quem quiser três Poderes paga por três Poderes, e quem quiser Potência alta paga por ela. O
+racionamento desta campanha não está na tabela: está na porta do §7 e nos **50 pontos de
+Antecedentes Incomuns**, que juntos já são a coisa mais cara que se compra numa ficha.
+
+> **Uma exceção, e uma só: o Psicoteleporte tem teto de Potência 10.** Ele é o único Poder que
+> não opera dentro da estrutura do jogo — **opera contra ela**. Passa por porta trancada e por vão
+> de andar, e descer andar por andar é a campanha inteira. Sem teto, um personagem deixaria de
+> precisar da descida que sete outros estão jogando. **O teto existe onde o custo não trava, e em
+> nenhum outro lugar.**
 
 ## 8.2 Como se compra
 
@@ -322,9 +368,16 @@ turno seguinte. Teste 3D contra o NH. **Em PES, quem rola é sempre o Mestre de 
 falha por margem maior que 5 **ele mente** — o que casa com a trava de rolagem escondida do `20`
 §1.6: grava-se antes, revela-se na homologação.
 
-**Antecedentes Incomuns, 10 pontos, obrigatórios.** ⟨proposta⟩ O *Psiquismo* calibra essa
-vantagem pela raridade e pediria 150. **Cobrar 150 aqui seria cobrar duas vezes:** a porta do
-rank B já é o racionamento, e é muito mais cara.
+**Antecedentes Incomuns, 50 pontos, obrigatórios.** Fixado em 13/09/2026. O *Psiquismo* calibra
+essa vantagem pela raridade e, num mundo onde nenhuma Casa marcou um psi, pediria 150 — o que, num
+orçamento de 150, seria decidir que psi não se joga. E cobrar pouco seria fingir que a coisa é
+comum quando ela não é.
+
+**Cinquenta é um terço do orçamento, e é para doer.** Ser psi passa a ser a coisa mais cara que o
+personagem é, antes de qualquer Poder ou perícia — e é assim que deve parecer numa mesa onde ele é
+o único. Com 100 pontos restantes ele ainda é um personagem inteiro, e é aí que entra a outra
+metade da regra: **não há teto de Poder nem de Potência**, porque quem pagou 50 na porta já foi
+racionado. **O que raciona é a entrada, não a tabela.**
 
 ## 8.3 A trava que não pode faltar: Empatia e Noção do Perigo continuam Dádivas
 
@@ -389,8 +442,11 @@ reação conta, ou esconder é um problema jogado, e o preço do plano é o temp
 **3. Registro é o que faz o pagamento existir.** Se o registro é contestado, **o dinheiro trava
 antes da briga** — e essa é a cena política, não a pancadaria.
 
-**4. Equipamento não serve, e o balcão é humano.** ⟨proposta⟩ **+50% no preço e uma semana de
-espera** para peça de tamanho não-humano; o que se acha no baú **não serve**, e serve para vender.
+**4. Equipamento não serve, e o balcão é humano.** **+50% no preço**, sem espera — o balcão das
+sete cidades já conhece esses corpos e trabalha fora do molde, e cobra por isso. **Não há prazo:
+ninguém fica de fora de uma semana de jogo por causa de uma loriga.** O que se acha no baú **não
+serve**, e serve para vender: peça de humano morto não veste Minotauro, não veste Anão e não
+acompanha Transmutante que muda de tamanho.
 
 **5. O tabu do Minotauro se declara antes do primeiro passo**, em voz alta, para a mesa toda
 ouvir. Anunciar depois é armadilha, e a Carta, artigo 6, diz que ninguém morre sem chance de
@@ -410,29 +466,31 @@ hoje.**
 **10. Reação de personagem de outro jogador é do jogador, sempre.** Os modificadores raciais valem
 para NPC. Entre personagens de jogadores, **quem decide é quem joga**.
 
-# O que espera confirmação do Árbitro
+# O que o Árbitro confirmou — 13/09/2026
 
-Onze itens. Nenhum inventa número que o livro tenha; todos são pontos em que o livro cala ou em
-que uma decisão anterior abriu buraco.
+**As doze estão fechadas.** Onze estavam listadas aqui; a décima segunda — o preço de equipamento
+não-humano, na §9 — tinha ficado de fora desta lista e foi achada varrendo as marcas do documento
+uma a uma. **Nenhuma proposta segue aberta.**
 
-| # | Onde | O que |
+| # | Onde | Decidido |
 | --- | --- | --- |
-| 1 | §0 | Peculiaridade racial é grátis e **não** gasta as cinco do `29` §4 |
-| 2 | §1 | Anão, Carga "Nenhuma" = 2,5 × ST — o livro dá só os quatro degraus |
-| 3 | §2 | Elfo: o −2 de reação dos Orcs passa aos **Elfos Negros** |
-| 4 | §2 | "Unaging" vira **Longevidade** + fato narrativo sem custo, porque falta o *Fantasy Folk* |
-| 5 | §3 | Meio-Elfo: **Aptidão Mágica nível 1** — a soma fecha em 30, mas o livro avisa que custo racial ≠ individual |
-| 6 | §3 | **Segredo −20** para quem esconde, contra **Estigma Social −10** para quem declara |
-| 7 | §4 | O tabu fica como **Hábito Detestável −15** com o −3 reancorado, ou vira **Compulsão −15** e o −3 cai |
-| 8 | §4 | **A RD racial da cabeça soma com a RD 2 do crânio?** Somando dá RD 7, e o golpe na cabeça deixa de existir contra Minotauro |
-| 9 | §6 | **A lua cobrada** — a transformação perdida dispara na primeira noite de céu aberto |
-| 10 | §8 | **Um Poder por personagem, teto 10; Eletrocinese fora; Psicoteleporte dentro** |
-| 11 | §8 | **Antecedentes Incomuns = 10**, e não os 150 da calibração do *Psiquismo* |
+| 1 | §0 | Peculiaridade racial é **grátis e não gasta as cinco** — mesma regra da desvantagem racial |
+| 2 | §1 | Anão: **Carga Nenhuma até 2,5 × ST**, metade do degrau Leve, como no humano |
+| 3 | §2 | Elfo: o −2 dos Orcs **passa aos Elfos Negros**, que são povo de livro (*Fantasy*) |
+| 4 | §2 | **Longevidade** paga os 5 pontos; **não aparentar idade é fato narrativo, sem custo** |
+| 5 | §3 | Meio-Elfo: **Aptidão Mágica nível 1** — é a única combinação que fecha nos 30 do livro |
+| 6 | §3 | Quem esconde leva **Segredo −10**, o degrau de perda de Status, não o de banimento |
+| 7 | §4 | O tabu vira **Compulsão −15**, e o −3 do Hábito Detestável **cai** — não se cobra o mesmo corpo duas vezes |
+| 8 | §4 | A RD racial da cabeça **soma** com a RD 2 do crânio: **RD 7**, e o golpe na cabeça deixa de valer |
+| 9 | §6 | **Lua perdida é lua perdida** — não fica devendo e não dispara ao voltar ao céu aberto |
+| 10 | §8 | **Sem limite de Poder nem teto de Potência** — exceto **Psicoteleporte, teto 10** |
+| 11 | §8 | **Antecedentes Incomuns = 50**, um terço do orçamento |
+| 12 | §9 | Equipamento não-humano: **+50% no preço, sem prazo de espera** |
 
-**E dois itens que não são confirmação, são consequência a executar:**
+**Duas consequências foram executadas junto:**
 
-- **O `02` §7 promete *"entra com cerca de 210"***, e com as sete fichas vivas o orçamento é
-  **150**. Precisa trocar o número pela fórmula e por um exemplo datado.
-- **A §8.3 é a mais urgente desta entrega.** Enquanto não estiver no ar, o *Psiquismo* lido ao pé
-  da letra transforma a Dádiva de Oxum e a de Zeus em poder psíquico — e **Karthoz é marcado por
-  Zeus**. É exatamente o erro de 09/09: decisão que não foi publicada é decisão que não existe.
+- **O orçamento de personagem novo** deixou de ser um número solto e passou a ser a fórmula, com
+  exemplo datado, nas Regras da Mesa.
+- **A §8.3** — a trava que impede o *Psiquismo* de transformar retroativamente Empatia e Noção do
+  Perigo em poder psíquico — **está no ar**. Era a mais urgente da entrega, porque sem ela um
+  jogador marcado por Zeus viraria psi sem ter escolhido.

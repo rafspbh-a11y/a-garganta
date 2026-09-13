@@ -1,5 +1,5 @@
 titulo: Como se joga
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -203,7 +203,7 @@ Estas são as manobras que a mesa vai usar de verdade. Nomes e efeitos do livro 
 | **Defesa Total** | 1 metro | Nada além de se defender. **Duas jogadas de defesa diferentes** contra o mesmo ataque. Máximo de dois Aparar e dois Bloquear no turno. | Duas, diferentes |
 | **Apontar** | metade do Deslocamento, máx. 2 m depois do primeiro turno | Mira arma de longo alcance já preparada. Primeiro turno: soma a **Precisão** da arma. Cada turno a mais: **+1**, até **+3**. | Qualquer uma — **mas defender estraga a mira e some com tudo o que foi acumulado** |
 | **Preparar** | 1 metro | Saca, engatilha, recarrega, apanha o escudo. | Qualquer uma, com a ressalva abaixo |
-| **Concentrar** | 1 metro | Feitiço ou tarefa mental. | Qualquer uma, **mas defender exige teste de IQ−3 para não perder a concentração** |
+| **Concentrar** | 1 metro | Feitiço ou tarefa mental. | Qualquer uma, **mas defender exige teste de Vontade −3 para não perder a concentração** |
 | **Mudança de Posição** | nenhum | De pé, ajoelhado, deitado. Deitado para em pé leva dois turnos. | Qualquer uma |
 | **Aguardar** | 1 metro | Não faz nada até o inimigo entrar no alcance; então ataca (ataque normal, não total). | Qualquer uma |
 | **Finta** | 1 metro | Disputa Rápida da sua arma contra a arma ou escudo do inimigo (ou a DX dele). Se você vence, **a sua margem é subtraída da defesa ativa dele** no seu próximo ataque. | Qualquer uma |
@@ -293,8 +293,47 @@ Aparar golpe de mão limpa com arma pode **ferir o atacante**: role de novo cont
 
 Não importa o NH: **3 e 4 sempre acertam, 17 e 18 sempre erram.** (pág. 97)
 
-> [!WARNING]
-> **Decisão pendente do Árbitro.** O livro oferece dois tratamentos para o golpe fulminante e diz explicitamente para **não usar os dois juntos**: a regra do dano máximo acima, e a **Tabela de Golpes Fulminantes** da pág. 202, que sorteia efeitos por resultado (nocaute, dano triplo, membro incapacitado). Este documento roda a regra do dano máximo, que é mais rápida e cabe em mesa assíncrona. Trocar pela tabela é escolha do Árbitro, não do Mestre de Cena. A **Tabela de Erros Críticos** (pág. 202) vale nos dois casos.
+**Fixado em 13/09/2026: esta mesa usa a Tabela de Golpes Fulminantes.** O livro oferece os dois tratamentos e manda não usar os dois juntos; o Árbitro escolheu a tabela, e a regra do dano máximo **deixa de valer**. O motivo é de mesa: um acerto crítico passa a ser um acontecimento com consequência, e não um número grande. **Vale nos dois sentidos** — contra bicho e contra personagem de jogador.
+
+### Tabela de Golpes Fulminantes (MB pág. 202)
+
+Rola-se **3d**, e todo dobro e triplo se refere ao **dano básico dos dados**.
+
+| 3d | O que acontece |
+| --- | --- |
+| **3** | Tronco: dano normal e **nocaute** — teste de HT a cada 30 min para acordar. Qualquer outra parte: **triplo do dano**. |
+| **4** | **Ultrapassa a armadura** e provoca dano normal. |
+| **5** | **Triplo do dano.** |
+| **6** | **Dobro do dano.** |
+| **7** | Dano normal, e a vítima fica **atordoada** até passar num teste de HT. |
+| **8** | Braço, perna, mão ou pé: dano normal e **o membro fica incapacitado**, qualquer que seja o dano. Se o dano não bastaria para inutilizá-lo, é choque nevrálgico e **se cura em seis turnos**. Outra parte: dano normal. |
+| **9, 10, 11** | **Dano normal, e só.** |
+| **12** | Como o 8. |
+| **13** | **Ultrapassa a armadura** e provoca dano normal. |
+| **14** | Como o 8. |
+| **15** | **A arma do oponente cai**, e ele leva dano normal. |
+| **16** | **Dobro do dano.** |
+| **17** | **Triplo do dano.** |
+| **18** | Tronco: dano normal e **nocaute**. Outra parte: **triplo do dano**. |
+
+### Tabela de Golpes Fulminantes na Cabeça (MB pág. 202)
+
+**Só quando o golpe fulminante veio de um ataque dirigido à cabeça.**
+
+| 3d | O que acontece |
+| --- | --- |
+| **3** | **Morte instantânea.** |
+| **4, 5** | **Nocaute** — teste de HT a cada 30 min. |
+| **6** | **Cego dos dois olhos.** Regras de incapacitação, um teste por olho. Atordoado, e luta a **DX −10** pelo resto da batalha. |
+| **7** | **Cego de um olho.** Regras de incapacitação. Atordoado, e luta a **DX −2** pelo resto da batalha. |
+| **8** | **Desequilibrado:** defende-se normalmente no turno seguinte e não faz mais nada. Dano normal. |
+| **9, 10, 11** | **Dano normal na cabeça, e só.** |
+| **12** | Contundente: dano normal e **surdo por 24 h**. Cortante ou perfurante: **1 PV** e a face fica marcada. |
+| **13** | Contundente: dano normal e **surdez possivelmente permanente** (incapacitação). Cortante ou perfurante: **2 PV** e a face fica muito marcada. |
+| **14** | Dano normal na cabeça, e **a vítima deixa cair a arma** (com duas, sorteia-se qual). |
+| **15 a 18** | Dano normal na cabeça, e **atordoada**. |
+
+> **E o critério de quando é fulminante não mudou:** 3 e 4 sempre; 5 com NH efetivo 15+; 6 com 16+. **A vítima não tem defesa ativa em nenhum deles.** A **Tabela de Erros Críticos** (pág. 202) continua valendo como sempre valeu.
 
 ## 4.9 Dano
 
@@ -444,7 +483,14 @@ As distâncias em "ST" são **metros**, calculados com a ST de quem atira — e,
 **Como funciona, em mesa** (MAGIA pág. 11):
 
 1. **Duas rolagens.** A primeira é a da mágica, **sem nenhum redutor de distância**, e diz se o projétil se formou. A segunda é **Arremesso de Mágica** daquela mágica — pré-definido: NH em Arremesso, ou **DX−3** — e diz se acertou, com tamanho, velocidade e distância pela tabela da seção 4.11.
-2. **A energia é a força.** 1 a 3 pontos, **1d de dano por ponto**, e **um segundo de concentração por ponto**: projétil de 1 ponto por turno, ou de 3 pontos a cada três turnos.
+2. **A energia é a força — e o quanto ela rende sai do verbete de cada mágica, não de uma regra geral.** Um segundo de concentração por ponto, sempre: projétil de 1 ponto por turno, ou de 3 pontos a cada três turnos. O dano é este:
+
+| Mágica | Energia | Dano |
+| --- | --- | --- |
+| Bola de Fogo · Adaga de Gelo · Esfera de Gelo · Relâmpago | 1 a 3 | **1d por ponto** |
+| **Bola de Fogo Explosiva** | **2 a 6** | **1d a cada 2 pontos** — máximo 3d |
+
+   > **Corrigido em 13/09/2026.** A decisão de 12/09 pôs a Bola de Fogo Explosiva na mesma linha da simples, a 1d por ponto. **O verbete dela diz outra coisa** — *"provoca 1D pontos de dano para cada 2 pontos de energia aplicados"* — e nesta campanha, onde a Relação das Mágicas e o verbete divergem, **vence o verbete**. Na prática: a explosiva custa o dobro por dado, e **o dado que ela não faz é o preço de pegar todo mundo em volta**. Quem quer dano num alvo só usa a Bola de Fogo simples, e isso é de propósito.
 3. **Pode-se segurar o projétil na mão** e então andar ou **Apontar**. É a única mágica que se retém pronta. Enquanto retém, só se pode fazer mágica de **Bloqueio**, a −2 — e falha crítica nela **solta o projétil em quem o fez**.
 4. **Ferido enquanto segura: teste de Vontade** ou perde o controle.
 5. **Bloquear e Esquivar valem; Aparar, não.** A **armadura protege** contra o dano — exceto no Projétil de Maldição, contra o qual nem PD nem RD servem.

@@ -1,5 +1,5 @@
 titulo: Tabela de Perícias
-versao: 3
+versao: 4
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -80,7 +80,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Caratê | Difícil | Básico |
 | **Cavalgar** (por tipo de montaria) | Média | Básico |
 | Chicote | Média | Básico |
-| Corrida | Difícil | Básico |
+| Corrida | Difícil | Básico — **soma ⅛ do NH ao Deslocamento, e portanto à Esquiva** (`26` §12) |
 | Dança | Média | Básico |
 | Escalada | Média | Básico |
 | Escudo | Fácil | Básico |
@@ -407,3 +407,32 @@ A lista sai do cruzamento das quatro tabelas fechadas e é conferida a cada vers
 **Escalada · Escudo · Exorcismo · História · Vôo** (perícia × mágica) · **Prontidão · Visão
 Aguçada · Ouvido Aguçado · Visão Noturna** (vantagem × mágica) · **Fúria** (desvantagem ×
 mágica).
+
+
+# 12. A Corrida soma Deslocamento — e Deslocamento é Esquiva
+
+**Fixado em 13/09/2026.** O *Módulo Básico* p.77 manda somar **um oitavo do NH de Corrida** ao
+Deslocamento, arredondado para baixo. E nesta campanha **Deslocamento é Esquiva** (`24` §5, item
+10). Logo, **Corrida compra defesa ativa**, e isso vale como o livro escreve: nível 8 dá +1,
+nível 16 daria +2.
+
+**Por que isto fica escrito aqui em vez de virar exceção.** A alternativa era separar as duas
+coisas — Corrida daria fôlego e não defesa — e ela foi recusada. **O livro vence**, que é a trava
+que governou a leva inteira de 13/09/2026, e abrir exceção para esta perícia obrigaria a abrir
+para a próxima.
+
+**E o número não é um atalho.** Corrida é **Física/Difícil sobre HT**: chegar a HT+2 custa 16
+pontos, e é aí que o primeiro +1 aparece para quem tem HT 12 ou mais.
+
+| Caminho | Custo | O que dá |
+| --- | --- | --- |
+| **Reflexos em Combate** | 15 | **+1 de Esquiva, +1 em toda defesa ativa**, e nunca ser surpreendido |
+| **Corrida a NH 16** | 16 ou mais | **+1 de Esquiva**, e correr mais |
+
+**Reflexos em Combate continua sendo a compra melhor**, por menos ponto e com três efeitos em vez
+de um. **Corrida é o segundo caminho, mais caro e mais estreito** — e existe, o que é o certo num
+mundo onde se foge de coisa.
+
+> **Na ficha, isto é bônus com fonte nomeada** e entra na coluna Bônus, não dentro do NH
+> comprado — `24` §1. Escreve-se `+1 Corrida 16` na linha do Deslocamento. **E entra depois da
+> Carga:** desconta-se o nível de Carga primeiro, soma-se o oitavo da Corrida depois.
