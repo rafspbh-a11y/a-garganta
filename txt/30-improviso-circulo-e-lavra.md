@@ -1,5 +1,5 @@
 titulo: Improviso, Círculo e Lavra
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -256,4 +256,4 @@ Dois magos de Casas diferentes fazem juntos uma mágica que **nenhum dos dois fa
 2. **Fengdu vai querer licenciar o improviso.** Se licenciar, vira regra de cidade e entra no `22`. Ainda não decidido.
 3. **A primeira Lavra da campanha** — quem, de quê, e para qual Casa. É Boletim e é Pendência quando acontecer, como a primeira obra-prima.
 4. **Presságio e Taumatologia** entraram como perícias no `25` §4 sem uso amarrado. Taumatologia é, pelo Grimório, o saber teórico da magia e a perícia da pesquisa mágica; falta decidir se ela modifica o teste de improviso ou se fica só como leitura de artefato e de matéria (`25` §8).
-5. **O `23` e o `25` existem só no Notion** e não subiram para a pasta nem para o site. Enquanto não subirem, o site está atrasado em relação ao cânone — e este documento depende dos dois.
+5. ~~**O `23` e o `25` existem só no Notion** e não subiram para a pasta nem para o site.~~ **Resolvido.** Os dois estão na pasta e no ar desde 11/09/2026, e o `23` foi à versão 4 em 13/09. *(A pendência nasceu numa arquitetura que não existe mais: o Notion saiu, a pasta é a fonte e o site é o espelho.)*

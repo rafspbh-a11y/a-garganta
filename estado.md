@@ -21,10 +21,10 @@ e avise o jogador para trocar o anexo.
 06-bestiario                 v2    https://rafspbh-a11y.github.io/a-garganta/txt/06-bestiario.md
 06b-muda-dos-andares         v5    https://rafspbh-a11y.github.io/a-garganta/txt/06b-muda-dos-andares.md
 17-criacao-e-magia           v9    https://rafspbh-a11y.github.io/a-garganta/txt/17-criacao-e-magia.md
-30-improviso-circulo-e-lavra v1    https://rafspbh-a11y.github.io/a-garganta/txt/30-improviso-circulo-e-lavra.md
+30-improviso-circulo-e-lavra v2    https://rafspbh-a11y.github.io/a-garganta/txt/30-improviso-circulo-e-lavra.md
 32-os-povos-que-subiram      v2    https://rafspbh-a11y.github.io/a-garganta/txt/32-os-povos-que-subiram.md
 08-modelos-de-personagem     v1    https://rafspbh-a11y.github.io/a-garganta/txt/08-modelos-de-personagem.md
-18-ficha-publica             v1    https://rafspbh-a11y.github.io/a-garganta/txt/18-ficha-publica.md
+18-ficha-publica             v2    https://rafspbh-a11y.github.io/a-garganta/txt/18-ficha-publica.md
 24-regra-da-ficha            v5    https://rafspbh-a11y.github.io/a-garganta/txt/24-regra-da-ficha.md
 22-magia-no-mundo            v3    https://rafspbh-a11y.github.io/a-garganta/txt/22-magia-no-mundo.md
 03-economia-e-tabelas        v8    https://rafspbh-a11y.github.io/a-garganta/txt/03-economia-e-tabelas.md
@@ -32,7 +32,7 @@ e avise o jogador para trocar o anexo.
 10-carta-do-arbitro          v1    https://rafspbh-a11y.github.io/a-garganta/txt/10-carta-do-arbitro.md
 04-protocolo-do-mestre       v12   https://rafspbh-a11y.github.io/a-garganta/txt/04-protocolo-do-mestre.md
 04b-entrega-do-relatorio     v7    https://rafspbh-a11y.github.io/a-garganta/txt/04b-entrega-do-relatorio.md
-14-indice                    v7    https://rafspbh-a11y.github.io/a-garganta/txt/14-indice.md
+14-indice                    v8    https://rafspbh-a11y.github.io/a-garganta/txt/14-indice.md
 26-pericias                  v4    https://rafspbh-a11y.github.io/a-garganta/txt/26-pericias.md
 27-magias                    v4    https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 28-vantagens                 v4    https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md

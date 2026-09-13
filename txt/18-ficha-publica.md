@@ -1,5 +1,5 @@
 titulo: Ficha Pública e Notoriedade
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -13,7 +13,7 @@ Jogador não escreve a própria ficha pública, e Mestre de Cena também não. S
 Atualiza-se junto com o Boletim, na mesma virada de semana.
 # 2. O que nunca aparece
 Atributos, perícias, pontos, feitiços, equipamento, dinheiro, Estado de Retomada, amarras, segredo do personagem, dívidas ocultas, e o campo do que o personagem ainda não sabe.
-Tudo isso vive em `Personagens`, no Notion do Árbitro, e não sai de lá.
+Tudo isso vive na **ficha canônica, que é do Árbitro**, e não sai de lá.
 # 3. A escada da notoriedade
 Quanto mais alto o rank, mais o mundo sabe. Ninguém começa conhecido.
 

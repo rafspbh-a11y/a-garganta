@@ -3157,7 +3157,7 @@ estavam.
 ---
 
 titulo: Improviso, Círculo e Lavra
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -3414,7 +3414,7 @@ Dois magos de Casas diferentes fazem juntos uma mágica que **nenhum dos dois fa
 2. **Fengdu vai querer licenciar o improviso.** Se licenciar, vira regra de cidade e entra no `22`. Ainda não decidido.
 3. **A primeira Lavra da campanha** — quem, de quê, e para qual Casa. É Boletim e é Pendência quando acontecer, como a primeira obra-prima.
 4. **Presságio e Taumatologia** entraram como perícias no `25` §4 sem uso amarrado. Taumatologia é, pelo Grimório, o saber teórico da magia e a perícia da pesquisa mágica; falta decidir se ela modifica o teste de improviso ou se fica só como leitura de artefato e de matéria (`25` §8).
-5. **O `23` e o `25` existem só no Notion** e não subiram para a pasta nem para o site. Enquanto não subirem, o site está atrasado em relação ao cânone — e este documento depende dos dois.
+5. ~~**O `23` e o `25` existem só no Notion** e não subiram para a pasta nem para o site.~~ **Resolvido.** Os dois estão na pasta e no ar desde 11/09/2026, e o `23` foi à versão 4 em 13/09. *(A pendência nasceu numa arquitetura que não existe mais: o Notion saiu, a pasta é a fonte e o site é o espelho.)*
 
 
 ---
@@ -4041,7 +4041,7 @@ E lembre do **passo 11** da criação: dois NPCs que te conhecem, uma dívida, u
 ---
 
 titulo: Ficha Pública e Notoriedade
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -4055,7 +4055,7 @@ Jogador não escreve a própria ficha pública, e Mestre de Cena também não. S
 Atualiza-se junto com o Boletim, na mesma virada de semana.
 # 2. O que nunca aparece
 Atributos, perícias, pontos, feitiços, equipamento, dinheiro, Estado de Retomada, amarras, segredo do personagem, dívidas ocultas, e o campo do que o personagem ainda não sabe.
-Tudo isso vive em `Personagens`, no Notion do Árbitro, e não sai de lá.
+Tudo isso vive na **ficha canônica, que é do Árbitro**, e não sai de lá.
 # 3. A escada da notoriedade
 Quanto mais alto o rank, mais o mundo sabe. Ninguém começa conhecido.
 
@@ -5589,7 +5589,7 @@ Se o personagem morto era de **rank B ou superior**, a opção não-humana fica 
 ---
 
 titulo: Índice e Regra de Escrita
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -5721,7 +5721,7 @@ A Camada Reservada existe, nunca é anexada a Projeto de jogador e não se lê.
 </table>
 
 
-**A trava é a permissão do Notion.** As bases de Estado são somente leitura para jogadores. Isso roda fora do Claude, e é a única fronteira real do sistema.
+**A trava é o repositório, e ela roda fora do Claude.** A fonte do cânone é a pasta do Árbitro; o que você lê é o **espelho público no GitHub Pages**, que é **somente leitura** e carrega **apenas o cânone aberto**. Nada além disto chega lá, e não é o Mestre de Cena que decide o que chega. **É a única fronteira real do sistema**, e ela não depende de ninguém se lembrar dela.
 ## O que o Mestre de Cena nunca decide
 Se a narrativa exigir qualquer uma destas, **ele para e abre Pendência**:
 - Pontos acima de 5 por semana

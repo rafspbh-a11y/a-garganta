@@ -1,5 +1,5 @@
 titulo: Índice e Regra de Escrita
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -131,7 +131,7 @@ A Camada Reservada existe, nunca é anexada a Projeto de jogador e não se lê.
 </table>
 
 
-**A trava é a permissão do Notion.** As bases de Estado são somente leitura para jogadores. Isso roda fora do Claude, e é a única fronteira real do sistema.
+**A trava é o repositório, e ela roda fora do Claude.** A fonte do cânone é a pasta do Árbitro; o que você lê é o **espelho público no GitHub Pages**, que é **somente leitura** e carrega **apenas o cânone aberto**. Nada além disto chega lá, e não é o Mestre de Cena que decide o que chega. **É a única fronteira real do sistema**, e ela não depende de ninguém se lembrar dela.
 ## O que o Mestre de Cena nunca decide
 Se a narrativa exigir qualquer uma destas, **ele para e abre Pendência**:
 - Pontos acima de 5 por semana
