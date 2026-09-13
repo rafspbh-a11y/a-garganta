@@ -12,7 +12,7 @@ e avise o jogador para trocar o anexo.
 
 13-sessao-zero               v1    https://rafspbh-a11y.github.io/a-garganta/txt/13-sessao-zero.md
 19-cartao-de-combate         v1    https://rafspbh-a11y.github.io/a-garganta/txt/19-cartao-de-combate.md
-20-como-se-joga              v8    https://rafspbh-a11y.github.io/a-garganta/txt/20-como-se-joga.md
+20-como-se-joga              v9    https://rafspbh-a11y.github.io/a-garganta/txt/20-como-se-joga.md
 02-regras-da-mesa            v7    https://rafspbh-a11y.github.io/a-garganta/txt/02-regras-da-mesa.md
 01a-biblia-do-mundo          v2    https://rafspbh-a11y.github.io/a-garganta/txt/01a-biblia-do-mundo.md
 15-geografia                 v1    https://rafspbh-a11y.github.io/a-garganta/txt/15-geografia.md

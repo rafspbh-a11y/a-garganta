@@ -271,7 +271,7 @@ perto, surpresa e as tabelas críticas completas moram lá. **Abra, não decore.
 ---
 
 titulo: Como se joga
-versao: 8
+versao: 9
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -561,11 +561,33 @@ Aparar golpe de mão limpa com arma pode **ferir o atacante**: role de novo cont
 | **3** | Acerta e provoca o **dano máximo** dos dados. Um 1d+2 vira 8. |
 | **4** | Acerta e provoca **dano normal**. |
 | **5** ou **6** | Golpe fulminante se o nível efetivo for 15+ (para o 5) ou 16+ (para o 6); dano normal. |
-| **17** ou **18** | Erra sempre. Erro crítico: **Tabela de Erros Críticos**, pág. 202. |
+| **17** ou **18** | Erra sempre. Erro crítico: **rola-se na Tabela de Erros Críticos**, logo abaixo. |
 
 Não importa o NH: **3 e 4 sempre acertam, 17 e 18 sempre erram.** (pág. 97)
 
 **Fixado em 13/09/2026: esta mesa usa a Tabela de Golpes Fulminantes.** O livro oferece os dois tratamentos e manda não usar os dois juntos; o Árbitro escolheu a tabela, e a regra do dano máximo **deixa de valer**. O motivo é de mesa: um acerto crítico passa a ser um acontecimento com consequência, e não um número grande. **Vale nos dois sentidos** — contra bicho e contra personagem de jogador.
+
+### Tabela de Erros Críticos
+
+**Vale sempre**, qualquer que seja o tratamento do golpe fulminante. Rola-se **3d**.
+
+| 3d | O que acontece |
+| --- | --- |
+| **3, 4** | **A arma se quebra e fica inutilizada.** *Exceção:* maça, mangual, marreta, barra de metal e outras armas sólidas de dano contundente, **arma mágica** e **arma de qualidade fina** não quebram — rola-se de novo, e só quebram se sair "arma quebrada" outra vez. Saindo outro resultado, vale o novo. |
+| **5** | **Você atinge a si mesmo** num braço ou perna, 50% para cada, **dano inteiro**. *Exceção:* se o ataque era perfurante ou de longo alcance, rola-se de novo; só vale se sair "atingir a si mesmo" duas vezes. |
+| **6** | Como o 5, mas **metade do dano**. |
+| **7** | **Perde o equilíbrio.** Não faz nada até o próximo turno, e até lá **toda defesa ativa a −2**. |
+| **8** | **A arma gira na mão.** Um turno extra para prepará-la. |
+| **9, 10, 11** | **Derruba a arma.** *Exceção:* arma barata **se quebra**. |
+| **12** | **A arma gira na mão.** Um turno extra para prepará-la. |
+| **13** | **Perde o equilíbrio.** Não faz nada até o próximo turno, toda defesa ativa a −2. |
+| **14** | **A arma voa da mão** e cai a **1D metros** — 50% para a frente, 50% para trás. Quem estiver no ponto onde ela cai **testa DX ou sofre metade do dano da arma**. *Exceção:* ataque perfurante apenas derruba a arma, como o 9. |
+| **15** | **Ombro estirado.** O braço da arma fica **inutilizado por 30 minutos** — não larga a arma, mas não ataca nem apara com ela pelo resto do encontro. |
+| **16** | **Você cai.** *(Com arma de longo alcance, use o 7 no lugar.)* |
+| **17, 18** | **A arma se quebrou.** Como o 3. |
+
+> **Desarmado:** todo resultado de "arma quebrada", "arma derrubada" ou "arma gira na mão" é
+> ignorado — no lugar dele, **1D−3 de dano na mão ou no pé que golpeou**.
 
 ### Tabela de Golpes Fulminantes (MB pág. 202)
 
