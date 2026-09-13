@@ -15,7 +15,7 @@ e avise o jogador para trocar o anexo.
 02-regras-da-mesa            v7    https://rafspbh-a11y.github.io/a-garganta/txt/02-regras-da-mesa.md
 01a-biblia-do-mundo          v2    https://rafspbh-a11y.github.io/a-garganta/txt/01a-biblia-do-mundo.md
 15-geografia                 v1    https://rafspbh-a11y.github.io/a-garganta/txt/15-geografia.md
-07a-npcs-nomeados            v1    https://rafspbh-a11y.github.io/a-garganta/txt/07a-npcs-nomeados.md
+07a-npcs-nomeados            v2    https://rafspbh-a11y.github.io/a-garganta/txt/07a-npcs-nomeados.md
 05-andares-1-a-12            v2    https://rafspbh-a11y.github.io/a-garganta/txt/05-andares-1-a-12.md
 06-bestiario                 v2    https://rafspbh-a11y.github.io/a-garganta/txt/06-bestiario.md
 06b-muda-dos-andares         v5    https://rafspbh-a11y.github.io/a-garganta/txt/06b-muda-dos-andares.md
@@ -24,10 +24,10 @@ e avise o jogador para trocar o anexo.
 32-os-povos-que-subiram      v1    https://rafspbh-a11y.github.io/a-garganta/txt/32-os-povos-que-subiram.md
 08-modelos-de-personagem     v1    https://rafspbh-a11y.github.io/a-garganta/txt/08-modelos-de-personagem.md
 18-ficha-publica             v1    https://rafspbh-a11y.github.io/a-garganta/txt/18-ficha-publica.md
-24-regra-da-ficha            v3    https://rafspbh-a11y.github.io/a-garganta/txt/24-regra-da-ficha.md
+24-regra-da-ficha            v4    https://rafspbh-a11y.github.io/a-garganta/txt/24-regra-da-ficha.md
 22-magia-no-mundo            v3    https://rafspbh-a11y.github.io/a-garganta/txt/22-magia-no-mundo.md
 03-economia-e-tabelas        v7    https://rafspbh-a11y.github.io/a-garganta/txt/03-economia-e-tabelas.md
-21-loot-balcao-e-registro    v3    https://rafspbh-a11y.github.io/a-garganta/txt/21-loot-balcao-e-registro.md
+21-loot-balcao-e-registro    v4    https://rafspbh-a11y.github.io/a-garganta/txt/21-loot-balcao-e-registro.md
 10-carta-do-arbitro          v1    https://rafspbh-a11y.github.io/a-garganta/txt/10-carta-do-arbitro.md
 04-protocolo-do-mestre       v11   https://rafspbh-a11y.github.io/a-garganta/txt/04-protocolo-do-mestre.md
 04b-entrega-do-relatorio     v7    https://rafspbh-a11y.github.io/a-garganta/txt/04b-entrega-do-relatorio.md
@@ -36,7 +36,7 @@ e avise o jogador para trocar o anexo.
 27-magias                    v4    https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 28-vantagens                 v4    https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md
 29-desvantagens              v4    https://rafspbh-a11y.github.io/a-garganta/txt/29-desvantagens.md
-23-retificacoes-de-livro     v2    https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md
+23-retificacoes-de-livro     v3    https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md
 25-decisoes-de-10-09-2026    v1    https://rafspbh-a11y.github.io/a-garganta/txt/25-decisoes-de-10-09-2026.md
 31-dadiva-de-zeus-e-clima    v1    https://rafspbh-a11y.github.io/a-garganta/txt/31-dadiva-de-zeus-e-clima.md
 boletim-atual                v1    https://rafspbh-a11y.github.io/a-garganta/txt/boletim-atual.md

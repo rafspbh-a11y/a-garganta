@@ -1,5 +1,5 @@
 titulo: NPCs Nomeados
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -59,6 +59,22 @@ Brilhante, encantadora, e a melhor negociadora das sete embaixadas. Ônfalos a m
 **Agenda:** construir a coalizão que Ônfalos nunca consegue formar sozinha.
 
 **Rival:** o adido de Fengdu, que a supera em paciência.
+
+## KLEITOS, O QUE CONTA AS BRASAS — Cobrador da Casa de Hefesto
+
+*Sem rank. 47 anos. Ônfalos, e no Limiar toda semana.*
+
+Não é ferreiro e nunca foi: é o homem que a Casa de Hefesto manda quando o aluguel da forja atrasa. Chega pela manhã, antes de a fornalha pegar, e espera de pé — **nunca interrompe quem está com o metal quente na mão**, porque peça estragada não paga dívida nenhuma. Conta as brasas enquanto espera, e é daí que veio o nome, que ele não escolheu e não recusa.
+
+Cobra de trinta e um oficiais nas sete cidades. **Sabe de cor quanto cada um deve, há quanto tempo, e o que cada um empenhou.** Não ameaça, não grita e não quebra nada. Ele fecha a forja, que é a única coisa que precisa fazer.
+
+**Agenda:** que ninguém perca a forja. Cobrador que fecha oficina perde o pagador, e a Casa não o mantém por severidade — mantém por saldo. **Ele prefere renegociar a executar**, e propõe o prazo antes que o oficial peça.
+
+**Dívida:** a Casa o tirou do aro de remo por uma dívida do pai dele, e nunca lhe disse quanto ainda falta. Ele cobra há vinte anos uma conta que não sabe se já quitou.
+
+**Rival:** a Assembleia de Ônfalos, que toda estação tenta transferir as forjas do santuário para a arrecadação da cidade. Se conseguir, Kleitos vira funcionário público e perde o poder de renegociar.
+
+*Como usar:* é a cena política que a dívida de um jogador produz, e ela não é pancadaria. Ele aparece **quando o pagamento atrasa** e traz uma escolha, nunca um ultimato: pague, empenhe, ou trabalhe para a Casa nesta semana. Aceitar a terceira opção é o começo de um fio. **Nunca aparece armado, e não reage a ameaça** — reage fechando a forja no dia seguinte, sem discutir.
 
 # ÁMENTI
 

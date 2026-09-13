@@ -1,5 +1,5 @@
 titulo: Retificações de livro
-versao: 2
+versao: 3
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -432,3 +432,83 @@ estão no arquivo.** E o *GURPS Artes Marciais* remete cinco vezes para dentro d
 **Consequência de método, e ela vale daqui para a frente:** toda afirmação de *"não existe em
 livro"* feita por esta campanha carrega a ressalva de que há quatro seções de regra do livro
 principal que ela não consegue ler. **É pendência de aquisição, não de leitura.**
+
+## 10. As fichas registravam preço e nunca peso — e sem peso não existe Carga
+
+A decisão 25 mandou o Deslocamento descontar a Carga, como o *Módulo Básico* p.75 sempre mandou.
+Ao aplicá-la, apareceu o buraco que a tornava inaplicável: **nenhuma das sete fichas registra o
+peso de nada.** Todas registram o preço de cada peça, com a cadeia do ouro conferida até o saldo
+de hoje — e nenhuma diz quantos quilos o personagem está carregando. Sem isso não há nível de
+Carga, e sem nível de Carga a decisão 25 é uma frase.
+
+**O que entrou:** o `21` §8, com a escada da Carga do livro, **a tabela de pesos** das peças que
+esta campanha usa (MB p.208–212), e a regra dos **dois Deslocamentos** — um em cena, um em marcha.
+O `24` §5, item 10, passou a exigir os dois na ficha, e **ficha com um Deslocamento só volta**.
+
+**Três linhas da tabela de pesos não vêm do livro** e estão marcadas como decisão do Árbitro: o
+estojo de ofício (2 kg), o livro (1 kg) e a bugiganga de conforto (desprezível). O Módulo Básico
+pesa armadura, arma e mantimento, e não pesa estojo de escriba nem ferramenta de forja.
+
+**O que mudou nas sete fichas.** Quatro perdem 1 de Esquiva já em cena — **Eilif, Itzcoatl, Nix e
+Runirsson**, os quatro de loriga de couro, que sozinha são 10 kg. Três não perdem nada em cena —
+**Anastásia, Karthoz e Lísias**. Em marcha, todos perdem, menos um.
+
+| | ST | Em cena | Em marcha |
+| --- | --- | --- | --- |
+| Anastásia | 11 | 6,1 kg · Nenhuma · **Esquiva 6** | 14,2 kg · Leve · **5** |
+| Eilif | 10 | 12,85 kg · Leve · **4** | 25,7 kg · Média · **3** |
+| Itzcoatl | 11 | 11,5 kg · Leve · **6** (7 c/ Reflexos) | 28,1 kg · Média · **5** |
+| Karthoz | 11 | 11,0 kg · Nenhuma · **6** (7) | 17,1 kg · Leve · **5** |
+| Lísias | 10 | 8,5 kg · Nenhuma · **5** | 18,5 kg · Leve · **4** |
+| Nix | 11 | 12,75 kg · Leve · **5** (6) | 25,85 kg · Média · **4** |
+| Runirsson | 12 | 15,1 kg · Leve · **4** (5) | 20,1 kg · **Leve ainda** · **4** (5) |
+
+**Runirsson é o único cujos dois números são iguais**, e é a ST 12 que faz isso: o teto de Carga
+Leve dele é 24 kg, contra 22 de quem tem ST 11 e 20 de quem tem ST 10. **Foi a primeira vez em que
+a ST 12 dele pagou alguma coisa.**
+
+**E isso desmentiu uma nota tática publicada.** A ficha do Runirsson dizia que a mochila de descida
+lhe tirava o Judô, porque o Judô exige carga no máximo Leve. Com os pesos na mão, **não tira** — em
+marcha ele soma 20,1 kg contra um teto de 24. Quem tira o Judô dele é a outra condição da perícia,
+**as duas mãos livres**, e quem as ocupa é o arpão. A nota foi corrigida na ficha, com a data.
+
+**Três casos merecem nota de mesa.** **Karthoz está exatamente em cima da linha** — 11,00 kg com
+ST 11 —, e qualquer objeto que ele guarde no corpo o derruba para Leve. **Itzcoatl em marcha entra
+em Carga Média, que tira a Esgrima**: surpreendido com a mochila, ele apara a ½ e uma vez por
+rodada, não a ⅔ e duas. **Nix perdeu o número em que a nota tática dela se apoiava** — "sobrevive
+por não ser tocada, Esquiva 7" — e a saída está na ficha: a loriga são 10 dos 12,75 kg dela.
+
+**Largar a mochila é manobra livre**, na fase de movimento. Quem larga passa a *em cena* no turno
+seguinte, e deixa a mochila no chão, onde ela pode ser levada, queimada ou usada como isca.
+
+## 11. A Dívida não é verbete de livro nenhum — e a do Runirsson virou duas linhas
+
+A ficha do Runirsson trazia **"Dívida à Casa de Hefesto, −10"**. Não existe desvantagem chamada
+Dívida no *Módulo Básico*. O que existe, na mesma página 24, são as duas coisas que aquela linha
+estava tentando dizer ao mesmo tempo: **Patrono** — e, logo abaixo, no rodapé do verbete,
+*"um Patrono pode ter inimigos poderosos que são agora seus inimigos também"* — e **Inimigo**,
+p.39.
+
+**A relação virou o que ela sempre foi na mesa** (decisão 55):
+
+- **Patrono: a Casa de Hefesto — 5 pontos.** Organização razoavelmente poderosa (15), mais 5 pelo
+  acesso continuado à forja do santuário, que é equipamento que os outros teriam de comprar (MB
+  p.24) = 20; aparece esporadicamente, ≤6, metade = 10; menos o alívio do Dever da Marca.
+- **Inimigo: Kleitos, o que conta as brasas, cobrador da Casa — −10.** Indivíduo formidável,
+  aparece freqüentemente (≤9). Entrou no `07a`, com agenda, dívida e rival, como todo nome novo.
+- **A Dívida −10 saiu.** As desvantagens seguem somando −40.
+
+> **O alívio do Dever é o único número desta retificação que não sai do livro.** O *Módulo Básico*
+> p.24 diz que *"um dever relativamente grande pode diminuir bastante o custo de um Patrono"* e
+> **não dá cifra nenhuma**. A ficha propõe **metade** e marca a proposta como proposta; quem fecha
+> é a homologação. Ficaria desonesto escrever um número e não dizer que ele foi escolhido.
+
+**Custo:** 5 dos 19 pontos livres dele. **136 de criação, 14 livres; 153 totais, 17 não gastos.**
+
+**E o ferreiro passou a ter forja na ficha.** Bigorna, fole, têmpera e bancada do santuário de
+Hefesto — não compradas, não carregadas, **não dele**: é o que o Patrono fornece, e é por isso que
+ele paga 5 pontos e um Dever. Até 13/09/2026 a ficha não dizia onde ele batia o martelo.
+
+**Runirsson ficou com 10 pontos de folga dentro do limite de −40**, porque o Dever da Marca saiu do
+limite na parte 5 desta mesma retificação. **A folga é dele** (decisão 54): desvantagem nova é
+escolha de quem joga o personagem, não do Árbitro.

@@ -91,7 +91,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 </ul>
 <h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
 </nav>
-<main><div class="cabeca"><h1>Loot, Balcão e Registro</h1><div class="meta">versão 3 · atualizado em 2026-09-13 · Economia</div></div>
+<main><div class="cabeca"><h1>Loot, Balcão e Registro</h1><div class="meta">versão 4 · atualizado em 2026-09-13 · Economia</div></div>
 <blockquote>
 <p><strong>Nota.</strong>
 <strong>Um documento só sobre o que se ganha, o que se compra, o que se troca e o que se registra.</strong> Os números de espólio por profundidade continuam no <code>03</code> §3 e não se repetem aqui. As tabelas de item encantado moram <strong>aqui</strong>, e o <code>03</code> §4 aponta para cá. Se algo divergir, este documento vence no item, e o <code>03</code> vence no espólio.</p>
@@ -510,6 +510,250 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <li>Não narra baú antes de gravá-lo (<code>06b</code> §10.4).</li>
 <li>Não deixa o jogador vender o que não registrou.</li>
 </ul>
+<h1>8. O peso do que se carrega — e os dois Deslocamentos</h1>
+<p><strong>Entrou em 13/09/2026, com a decisão 25.</strong> O Deslocamento passou a descontar a Carga, como o
+Módulo Básico sempre mandou (p.75) — e aí apareceu o buraco: <strong>as fichas registram o preço de
+cada peça e nunca o peso dela</strong>, então não havia como saber o nível de Carga de ninguém. Esta
+seção fecha o buraco. Preço fica no <code>03</code> §9.4; <strong>peso fica aqui</strong>.</p>
+<h2>8.1 A escada da Carga</h2>
+<p>Compara-se o peso total carregado com a <strong>ST</strong> do personagem:</p>
+<table>
+<thead>
+<tr>
+<th>Peso carregado</th>
+<th>Nível de Carga</th>
+<th>Deslocamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>até <strong>1 × ST</strong></td>
+<td>Nenhuma</td>
+<td>sem desconto</td>
+</tr>
+<tr>
+<td>até <strong>2 × ST</strong></td>
+<td>Leve</td>
+<td><strong>−1</strong></td>
+</tr>
+<tr>
+<td>até <strong>3 × ST</strong></td>
+<td>Média</td>
+<td><strong>−2</strong></td>
+</tr>
+<tr>
+<td>até <strong>6 × ST</strong></td>
+<td>Pesada</td>
+<td><strong>−3</strong></td>
+</tr>
+<tr>
+<td>até <strong>10 × ST</strong></td>
+<td>Muito Pesada</td>
+<td><strong>−4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>E Esquiva = Deslocamento</strong> (<code>24</code> §5, item 10). Por isso a Carga não é contabilidade: ela é a
+diferença entre ser atingido e não ser. Carga acima de Leve também tira o <strong>Judô</strong> e a
+<strong>Esgrima</strong>, que exigem carga no máximo Leve.</p>
+<h2>8.2 Duas linhas na ficha, não uma</h2>
+<p>Ninguém desce a Garganta com o que veste na hora de brigar, e ninguém briga com a mochila de
+descida nas costas. Fingir que é um número só obriga o Mestre de Cena a escolher qual mentira
+usar. Então a ficha traz <strong>dois</strong>:</p>
+<ul>
+<li><strong>Em cena</strong> — armadura, elmo, roupa e as armas empunhadas ou no cinto. É o número que vale em
+  toda rolagem de combate, e é o que a coluna Esquiva mostra.</li>
+<li><strong>Em marcha</strong> — tudo aquilo mais a mochila de descida: corda, tochas, óleo, ração, cantil, kit,
+  material de ofício, o que se está carregando para cima. Vale em perseguição, fuga e travessia,
+  e é o que se usa quando a briga começa <strong>sem tempo de largar a mochila</strong>.</li>
+</ul>
+<p><strong>Largar a mochila é uma manobra livre</strong>, feita na fase de movimento de um turno. Quem larga
+passa a <strong>Em cena</strong> no turno seguinte — e deixa a mochila no chão, onde ela pode ser levada,
+queimada ou usada como isca. Quem foi surpreendido com ela nas costas luta <strong>Em marcha</strong> até
+largá-la.</p>
+<h2>8.3 Tabela de pesos</h2>
+<p>Do Módulo Básico, salvo onde a coluna Fonte disser outra coisa.</p>
+<table>
+<thead>
+<tr>
+<th>Peça</th>
+<th>Peso</th>
+<th>Fonte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roupa comum ou fina</td>
+<td>0,5 kg</td>
+<td>MB p.211</td>
+</tr>
+<tr>
+<td>Roupa de verão</td>
+<td>1 kg</td>
+<td>MB p.210</td>
+</tr>
+<tr>
+<td>Roupa de inverno</td>
+<td>2,5 kg</td>
+<td>MB p.210</td>
+</tr>
+<tr>
+<td>Laudel (PD 1 / RD 1)</td>
+<td>7 kg</td>
+<td>MB p.210</td>
+</tr>
+<tr>
+<td>Coura, couro leve (PD 1 / RD 1)</td>
+<td>5 kg</td>
+<td>MB p.210</td>
+</tr>
+<tr>
+<td>Loriga de couro (PD 2 / RD 2)</td>
+<td>10 kg</td>
+<td>MB p.210</td>
+</tr>
+<tr>
+<td>Cota de malha (PD 3 / RD 4)</td>
+<td>22,5 kg</td>
+<td>MB p.210</td>
+</tr>
+<tr>
+<td>Capacete de couro, diadema de perfil igual</td>
+<td>desprezível</td>
+<td>MB p.211</td>
+</tr>
+<tr>
+<td>Broquel · escudo pequeno · médio · grande</td>
+<td>1 · 4 · 7 · 12 kg</td>
+<td>MB p.126</td>
+</tr>
+<tr>
+<td>Rapieira, lâmina de duelo</td>
+<td>750 g</td>
+<td>MB p.208</td>
+</tr>
+<tr>
+<td>Gládio, espada curta</td>
+<td>1 kg</td>
+<td>MB p.208</td>
+</tr>
+<tr>
+<td>Machadinha — e a manopla-garra que a copia</td>
+<td>1 kg</td>
+<td>MB p.208</td>
+</tr>
+<tr>
+<td>Lança, arpão</td>
+<td>2 kg</td>
+<td>MB p.208</td>
+</tr>
+<tr>
+<td>Faca</td>
+<td>250 g</td>
+<td>MB p.208</td>
+</tr>
+<tr>
+<td>Faca de arremesso (faca pequena)</td>
+<td>250 g</td>
+<td>MB p.209</td>
+</tr>
+<tr>
+<td>Adaga</td>
+<td>100 g</td>
+<td>MB p.208</td>
+</tr>
+<tr>
+<td>Besta</td>
+<td>3 kg</td>
+<td>MB p.209</td>
+</tr>
+<tr>
+<td>Aljava com 10 virotes ou flechas</td>
+<td>250 g</td>
+<td>MB p.209</td>
+</tr>
+<tr>
+<td>Corda, por 10 m</td>
+<td>700 g</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td>Tocha (queima 1 hora)</td>
+<td>500 g</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td>Frasco de óleo</td>
+<td>500 g</td>
+<td>MB p.209</td>
+</tr>
+<tr>
+<td>Lampião, e o alquímico que o copia</td>
+<td>1 kg</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td>Combustível de lampião, 0,5 l</td>
+<td>500 g</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td>Kit de primeiros socorros</td>
+<td>1 kg</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td>Ração seca, por dia</td>
+<td>250 g</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td>Cantil cheio</td>
+<td>1,5 kg</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td>Mochila pequena (até 20 kg)</td>
+<td>1,5 kg</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td>Saco de dormir</td>
+<td>3,5 kg</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td>Pedra de amolar</td>
+<td>desprezível</td>
+<td>MB p.212</td>
+</tr>
+<tr>
+<td><strong>Material de ofício</strong> — estojo de escrita, tinturas e postiços, ferramenta de forja, efémerides e tábuas de cálculo</td>
+<td><strong>2 kg</strong>, cada estojo</td>
+<td><strong>Árbitro, 13/09/2026</strong></td>
+</tr>
+<tr>
+<td><strong>Livro</strong></td>
+<td><strong>1 kg</strong></td>
+<td><strong>Árbitro, 13/09/2026</strong></td>
+</tr>
+<tr>
+<td><strong>Comida de conforto, doces, bugigangas</strong></td>
+<td>desprezível</td>
+<td><strong>Árbitro, 13/09/2026</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>As três últimas linhas não vêm do livro</strong>, e estão marcadas para que se saiba disso: o Módulo
+Básico pesa armadura, arma e mantimento, e não pesa estojo de ofício. Quem quiser discutir o
+número discute — o que não se faz é deixá-lo em branco, porque em branco cada mesa inventa o seu
+e a Carga deixa de ser auditável.</p>
+<p><strong>A muda pessoal — mochila, capa e cantil — não custa grão</strong> (decisão de 09/09/2026) <strong>mas pesa.</strong>
+Não pagar por uma coisa não a torna sem peso.</p>
+<h2>8.4 O que o Mestre de Cena faz com isto</h2>
+<p>Nada, na maior parte do tempo: <strong>o número já está calculado na ficha</strong>, nas duas linhas. Ele só
+recalcula quando o personagem pega ou larga algo pesado no meio da cena — o baú, o corpo do
+companheiro, a mochila do morto. E aí é uma soma, contra esta tabela.</p>
 <div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-13 · <a href="txt/21-loot-balcao-e-registro.md">ver em texto puro</a></div>
 </main></div><script>
 (function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;

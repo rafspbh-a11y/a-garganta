@@ -1581,7 +1581,7 @@ Distrito circular na boca da Garganta, dentro da Coroa. Cerca de quatro quilôme
 ---
 
 titulo: NPCs Nomeados
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -1641,6 +1641,22 @@ Brilhante, encantadora, e a melhor negociadora das sete embaixadas. Ônfalos a m
 **Agenda:** construir a coalizão que Ônfalos nunca consegue formar sozinha.
 
 **Rival:** o adido de Fengdu, que a supera em paciência.
+
+## KLEITOS, O QUE CONTA AS BRASAS — Cobrador da Casa de Hefesto
+
+*Sem rank. 47 anos. Ônfalos, e no Limiar toda semana.*
+
+Não é ferreiro e nunca foi: é o homem que a Casa de Hefesto manda quando o aluguel da forja atrasa. Chega pela manhã, antes de a fornalha pegar, e espera de pé — **nunca interrompe quem está com o metal quente na mão**, porque peça estragada não paga dívida nenhuma. Conta as brasas enquanto espera, e é daí que veio o nome, que ele não escolheu e não recusa.
+
+Cobra de trinta e um oficiais nas sete cidades. **Sabe de cor quanto cada um deve, há quanto tempo, e o que cada um empenhou.** Não ameaça, não grita e não quebra nada. Ele fecha a forja, que é a única coisa que precisa fazer.
+
+**Agenda:** que ninguém perca a forja. Cobrador que fecha oficina perde o pagador, e a Casa não o mantém por severidade — mantém por saldo. **Ele prefere renegociar a executar**, e propõe o prazo antes que o oficial peça.
+
+**Dívida:** a Casa o tirou do aro de remo por uma dívida do pai dele, e nunca lhe disse quanto ainda falta. Ele cobra há vinte anos uma conta que não sabe se já quitou.
+
+**Rival:** a Assembleia de Ônfalos, que toda estação tenta transferir as forjas do santuário para a arrecadação da cidade. Se conseguir, Kleitos vira funcionário público e perde o poder de renegociar.
+
+*Como usar:* é a cena política que a dívida de um jogador produz, e ela não é pancadaria. Ele aparece **quando o pagamento atrasa** e traz uma escolha, nunca um ultimato: pague, empenhe, ou trabalhe para a Casa nesta semana. Aceitar a terceira opção é o começo de um fio. **Nunca aparece armado, e não reage a ameaça** — reage fechando a forja no dia seguinte, sem discutir.
 
 # ÁMENTI
 
@@ -3799,13 +3815,14 @@ O registro é da Guilda, e a Guilda não apaga. Quem quiser suprimir uma linha �
 ---
 
 titulo: Regra de Escrita da Ficha
-versao: 3
+versao: 4
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha
 
 > **Nota.**
+> **Versão 4, de 13/09/2026** — mesmo dia, segunda passada. O item 10 passou a exigir **dois Deslocamentos** na ficha, em cena e em marcha, porque a Carga entrou na conta e ninguém desce a Garganta com o que veste para brigar. A tabela de pesos está no `21` §8.
 > **Versão 3, de 13/09/2026.** Item 9 do checklist: **o Dever da Marca saiu do limite de −40**. Item 10: o Deslocamento passa a descontar a Carga, e a Briga entra na lista de quem apara a ⅔. E entrou o item 11, o **tipo obrigatório** nos dez nomes que existem em duas tabelas.
 > **Versão 2, de 10/09/2026** — segunda rodada de conferência. Entraram três travas que estavam implícitas e não escritas: bônus condicional fica fora do Efetivo; bônus por item exige o item no equipamento; especialização exige a especialidade declarada.
 > **Nenhuma ficha entra em mesa, e nenhuma alteração é homologada, fora deste formato.** Ele existe por um motivo concreto: uma ficha da campanha precisou ser reconstruída do zero para se descobrir que estava 22,5 pontos acima, porque não havia como saber quanto cada linha tinha custado. **Ficha que só mostra o nível não é auditável — é uma afirmação.**
@@ -3917,7 +3934,8 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
 7. **A soma das linhas bate com a linha da conta?**
 8. **A conta fecha no orçamento?** 150 na criação.
 9. **Desvantagens dentro de −40, com o Dever da Marca FORA do limite?** O Dever é obrigatório e continua valendo de −5 a −15, mas desde 13/09/2026 **não ocupa espaço no −40** (`29` §1). Peculiaridades até 5, também fora.
-10. **Os derivados batem?** PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · **Deslocamento = Vel. − nível de Carga**, para baixo · Esquiva=Deslocamento · Aparar=perícia÷2, ou **⅔ em Esgrima, Bastão e Briga** · Bloquear=Escudo÷2.
+10. **Os derivados batem, e vêm em duas linhas?** PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · **Deslocamento = Vel. truncada − nível de Carga** · Esquiva=Deslocamento · Aparar=perícia÷2, ou **⅔ em Esgrima, Bastão e Briga** · Bloquear=Escudo÷2.
+    **Desde 13/09/2026 são duas linhas, não uma** (`21` §8): **em cena** — armadura, elmo, roupa e as armas empunhadas ou no cinto —, e **em marcha**, com a mochila de descida. A ficha traz o peso somado das duas, item por item, contra a tabela de pesos do `21` §8.3. **Ficha com um Deslocamento só volta**, porque obriga o Mestre de Cena a escolher qual dos dois usar e ele vai escolher errado metade das vezes.
 11. **Nos nomes que existem em duas tabelas, o tipo está declarado na linha?** São dez, e a lista está no `26` §11 — **Escalada · Escudo · Exorcismo · História · Vôo · Prontidão · Visão Aguçada · Ouvido Aguçado · Visão Noturna · Fúria**. Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`. **Linha sem o tipo volta.**
 12. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
 
@@ -4484,7 +4502,7 @@ Contratado que consta em ficha homologada é NPC nomeado e **morre em −HT** (`
 ---
 
 titulo: Loot, Balcão e Registro
-versao: 3
+versao: 4
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -4666,6 +4684,99 @@ O balcão compra item comum por **metade** do preço de tabela, menos a taxa da 
 - Não concede item, nem por feito excepcional. Feito excepcional dá ponto (`03` §1), não coisa.
 - Não narra baú antes de gravá-lo (`06b` §10.4).
 - Não deixa o jogador vender o que não registrou.
+
+# 8. O peso do que se carrega — e os dois Deslocamentos
+
+**Entrou em 13/09/2026, com a decisão 25.** O Deslocamento passou a descontar a Carga, como o
+Módulo Básico sempre mandou (p.75) — e aí apareceu o buraco: **as fichas registram o preço de
+cada peça e nunca o peso dela**, então não havia como saber o nível de Carga de ninguém. Esta
+seção fecha o buraco. Preço fica no `03` §9.4; **peso fica aqui**.
+
+## 8.1 A escada da Carga
+
+Compara-se o peso total carregado com a **ST** do personagem:
+
+| Peso carregado | Nível de Carga | Deslocamento |
+| --- | --- | --- |
+| até **1 × ST** | Nenhuma | sem desconto |
+| até **2 × ST** | Leve | **−1** |
+| até **3 × ST** | Média | **−2** |
+| até **6 × ST** | Pesada | **−3** |
+| até **10 × ST** | Muito Pesada | **−4** |
+
+**E Esquiva = Deslocamento** (`24` §5, item 10). Por isso a Carga não é contabilidade: ela é a
+diferença entre ser atingido e não ser. Carga acima de Leve também tira o **Judô** e a
+**Esgrima**, que exigem carga no máximo Leve.
+
+## 8.2 Duas linhas na ficha, não uma
+
+Ninguém desce a Garganta com o que veste na hora de brigar, e ninguém briga com a mochila de
+descida nas costas. Fingir que é um número só obriga o Mestre de Cena a escolher qual mentira
+usar. Então a ficha traz **dois**:
+
+- **Em cena** — armadura, elmo, roupa e as armas empunhadas ou no cinto. É o número que vale em
+  toda rolagem de combate, e é o que a coluna Esquiva mostra.
+- **Em marcha** — tudo aquilo mais a mochila de descida: corda, tochas, óleo, ração, cantil, kit,
+  material de ofício, o que se está carregando para cima. Vale em perseguição, fuga e travessia,
+  e é o que se usa quando a briga começa **sem tempo de largar a mochila**.
+
+**Largar a mochila é uma manobra livre**, feita na fase de movimento de um turno. Quem larga
+passa a **Em cena** no turno seguinte — e deixa a mochila no chão, onde ela pode ser levada,
+queimada ou usada como isca. Quem foi surpreendido com ela nas costas luta **Em marcha** até
+largá-la.
+
+## 8.3 Tabela de pesos
+
+Do Módulo Básico, salvo onde a coluna Fonte disser outra coisa.
+
+| Peça | Peso | Fonte |
+| --- | --- | --- |
+| Roupa comum ou fina | 0,5 kg | MB p.211 |
+| Roupa de verão | 1 kg | MB p.210 |
+| Roupa de inverno | 2,5 kg | MB p.210 |
+| Laudel (PD 1 / RD 1) | 7 kg | MB p.210 |
+| Coura, couro leve (PD 1 / RD 1) | 5 kg | MB p.210 |
+| Loriga de couro (PD 2 / RD 2) | 10 kg | MB p.210 |
+| Cota de malha (PD 3 / RD 4) | 22,5 kg | MB p.210 |
+| Capacete de couro, diadema de perfil igual | desprezível | MB p.211 |
+| Broquel · escudo pequeno · médio · grande | 1 · 4 · 7 · 12 kg | MB p.126 |
+| Rapieira, lâmina de duelo | 750 g | MB p.208 |
+| Gládio, espada curta | 1 kg | MB p.208 |
+| Machadinha — e a manopla-garra que a copia | 1 kg | MB p.208 |
+| Lança, arpão | 2 kg | MB p.208 |
+| Faca | 250 g | MB p.208 |
+| Faca de arremesso (faca pequena) | 250 g | MB p.209 |
+| Adaga | 100 g | MB p.208 |
+| Besta | 3 kg | MB p.209 |
+| Aljava com 10 virotes ou flechas | 250 g | MB p.209 |
+| Corda, por 10 m | 700 g | MB p.212 |
+| Tocha (queima 1 hora) | 500 g | MB p.212 |
+| Frasco de óleo | 500 g | MB p.209 |
+| Lampião, e o alquímico que o copia | 1 kg | MB p.212 |
+| Combustível de lampião, 0,5 l | 500 g | MB p.212 |
+| Kit de primeiros socorros | 1 kg | MB p.212 |
+| Ração seca, por dia | 250 g | MB p.212 |
+| Cantil cheio | 1,5 kg | MB p.212 |
+| Mochila pequena (até 20 kg) | 1,5 kg | MB p.212 |
+| Saco de dormir | 3,5 kg | MB p.212 |
+| Pedra de amolar | desprezível | MB p.212 |
+| **Material de ofício** — estojo de escrita, tinturas e postiços, ferramenta de forja, efémerides e tábuas de cálculo | **2 kg**, cada estojo | **Árbitro, 13/09/2026** |
+| **Livro** | **1 kg** | **Árbitro, 13/09/2026** |
+| **Comida de conforto, doces, bugigangas** | desprezível | **Árbitro, 13/09/2026** |
+
+**As três últimas linhas não vêm do livro**, e estão marcadas para que se saiba disso: o Módulo
+Básico pesa armadura, arma e mantimento, e não pesa estojo de ofício. Quem quiser discutir o
+número discute — o que não se faz é deixá-lo em branco, porque em branco cada mesa inventa o seu
+e a Carga deixa de ser auditável.
+
+**A muda pessoal — mochila, capa e cantil — não custa grão** (decisão de 09/09/2026) **mas pesa.**
+Não pagar por uma coisa não a torna sem peso.
+
+## 8.4 O que o Mestre de Cena faz com isto
+
+Nada, na maior parte do tempo: **o número já está calculado na ficha**, nas duas linhas. Ele só
+recalcula quando o personagem pega ou larga algo pesado no meio da cena — o baú, o corpo do
+companheiro, a mochila do morto. E aí é uma soma, contra esta tabela.
 
 
 ---
@@ -7194,7 +7305,7 @@ nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 n
 ---
 
 titulo: Retificações de livro
-versao: 2
+versao: 3
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -7627,6 +7738,86 @@ estão no arquivo.** E o *GURPS Artes Marciais* remete cinco vezes para dentro d
 **Consequência de método, e ela vale daqui para a frente:** toda afirmação de *"não existe em
 livro"* feita por esta campanha carrega a ressalva de que há quatro seções de regra do livro
 principal que ela não consegue ler. **É pendência de aquisição, não de leitura.**
+
+## 10. As fichas registravam preço e nunca peso — e sem peso não existe Carga
+
+A decisão 25 mandou o Deslocamento descontar a Carga, como o *Módulo Básico* p.75 sempre mandou.
+Ao aplicá-la, apareceu o buraco que a tornava inaplicável: **nenhuma das sete fichas registra o
+peso de nada.** Todas registram o preço de cada peça, com a cadeia do ouro conferida até o saldo
+de hoje — e nenhuma diz quantos quilos o personagem está carregando. Sem isso não há nível de
+Carga, e sem nível de Carga a decisão 25 é uma frase.
+
+**O que entrou:** o `21` §8, com a escada da Carga do livro, **a tabela de pesos** das peças que
+esta campanha usa (MB p.208–212), e a regra dos **dois Deslocamentos** — um em cena, um em marcha.
+O `24` §5, item 10, passou a exigir os dois na ficha, e **ficha com um Deslocamento só volta**.
+
+**Três linhas da tabela de pesos não vêm do livro** e estão marcadas como decisão do Árbitro: o
+estojo de ofício (2 kg), o livro (1 kg) e a bugiganga de conforto (desprezível). O Módulo Básico
+pesa armadura, arma e mantimento, e não pesa estojo de escriba nem ferramenta de forja.
+
+**O que mudou nas sete fichas.** Quatro perdem 1 de Esquiva já em cena — **Eilif, Itzcoatl, Nix e
+Runirsson**, os quatro de loriga de couro, que sozinha são 10 kg. Três não perdem nada em cena —
+**Anastásia, Karthoz e Lísias**. Em marcha, todos perdem, menos um.
+
+| | ST | Em cena | Em marcha |
+| --- | --- | --- | --- |
+| Anastásia | 11 | 6,1 kg · Nenhuma · **Esquiva 6** | 14,2 kg · Leve · **5** |
+| Eilif | 10 | 12,85 kg · Leve · **4** | 25,7 kg · Média · **3** |
+| Itzcoatl | 11 | 11,5 kg · Leve · **6** (7 c/ Reflexos) | 28,1 kg · Média · **5** |
+| Karthoz | 11 | 11,0 kg · Nenhuma · **6** (7) | 17,1 kg · Leve · **5** |
+| Lísias | 10 | 8,5 kg · Nenhuma · **5** | 18,5 kg · Leve · **4** |
+| Nix | 11 | 12,75 kg · Leve · **5** (6) | 25,85 kg · Média · **4** |
+| Runirsson | 12 | 15,1 kg · Leve · **4** (5) | 20,1 kg · **Leve ainda** · **4** (5) |
+
+**Runirsson é o único cujos dois números são iguais**, e é a ST 12 que faz isso: o teto de Carga
+Leve dele é 24 kg, contra 22 de quem tem ST 11 e 20 de quem tem ST 10. **Foi a primeira vez em que
+a ST 12 dele pagou alguma coisa.**
+
+**E isso desmentiu uma nota tática publicada.** A ficha do Runirsson dizia que a mochila de descida
+lhe tirava o Judô, porque o Judô exige carga no máximo Leve. Com os pesos na mão, **não tira** — em
+marcha ele soma 20,1 kg contra um teto de 24. Quem tira o Judô dele é a outra condição da perícia,
+**as duas mãos livres**, e quem as ocupa é o arpão. A nota foi corrigida na ficha, com a data.
+
+**Três casos merecem nota de mesa.** **Karthoz está exatamente em cima da linha** — 11,00 kg com
+ST 11 —, e qualquer objeto que ele guarde no corpo o derruba para Leve. **Itzcoatl em marcha entra
+em Carga Média, que tira a Esgrima**: surpreendido com a mochila, ele apara a ½ e uma vez por
+rodada, não a ⅔ e duas. **Nix perdeu o número em que a nota tática dela se apoiava** — "sobrevive
+por não ser tocada, Esquiva 7" — e a saída está na ficha: a loriga são 10 dos 12,75 kg dela.
+
+**Largar a mochila é manobra livre**, na fase de movimento. Quem larga passa a *em cena* no turno
+seguinte, e deixa a mochila no chão, onde ela pode ser levada, queimada ou usada como isca.
+
+## 11. A Dívida não é verbete de livro nenhum — e a do Runirsson virou duas linhas
+
+A ficha do Runirsson trazia **"Dívida à Casa de Hefesto, −10"**. Não existe desvantagem chamada
+Dívida no *Módulo Básico*. O que existe, na mesma página 24, são as duas coisas que aquela linha
+estava tentando dizer ao mesmo tempo: **Patrono** — e, logo abaixo, no rodapé do verbete,
+*"um Patrono pode ter inimigos poderosos que são agora seus inimigos também"* — e **Inimigo**,
+p.39.
+
+**A relação virou o que ela sempre foi na mesa** (decisão 55):
+
+- **Patrono: a Casa de Hefesto — 5 pontos.** Organização razoavelmente poderosa (15), mais 5 pelo
+  acesso continuado à forja do santuário, que é equipamento que os outros teriam de comprar (MB
+  p.24) = 20; aparece esporadicamente, ≤6, metade = 10; menos o alívio do Dever da Marca.
+- **Inimigo: Kleitos, o que conta as brasas, cobrador da Casa — −10.** Indivíduo formidável,
+  aparece freqüentemente (≤9). Entrou no `07a`, com agenda, dívida e rival, como todo nome novo.
+- **A Dívida −10 saiu.** As desvantagens seguem somando −40.
+
+> **O alívio do Dever é o único número desta retificação que não sai do livro.** O *Módulo Básico*
+> p.24 diz que *"um dever relativamente grande pode diminuir bastante o custo de um Patrono"* e
+> **não dá cifra nenhuma**. A ficha propõe **metade** e marca a proposta como proposta; quem fecha
+> é a homologação. Ficaria desonesto escrever um número e não dizer que ele foi escolhido.
+
+**Custo:** 5 dos 19 pontos livres dele. **136 de criação, 14 livres; 153 totais, 17 não gastos.**
+
+**E o ferreiro passou a ter forja na ficha.** Bigorna, fole, têmpera e bancada do santuário de
+Hefesto — não compradas, não carregadas, **não dele**: é o que o Patrono fornece, e é por isso que
+ele paga 5 pontos e um Dever. Até 13/09/2026 a ficha não dizia onde ele batia o martelo.
+
+**Runirsson ficou com 10 pontos de folga dentro do limite de −40**, porque o Dever da Marca saiu do
+limite na parte 5 desta mesma retificação. **A folga é dele** (decisão 54): desvantagem nova é
+escolha de quem joga o personagem, não do Árbitro.
 
 
 ---
