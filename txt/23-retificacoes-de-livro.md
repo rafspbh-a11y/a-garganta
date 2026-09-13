@@ -1,5 +1,5 @@
 titulo: Retificações de livro
-versao: 5
+versao: 6
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -739,3 +739,78 @@ uma segunda mágica de Terra a NH 16 a levaria de 1 para 3, que é o salto mais 
 qualquer ficha da mesa.
 
 **E o `24` passou a exigi-lo**, no item 12 do checklist: **ficha de mago sem NH de escola volta.**
+
+---
+
+# RETIFICAÇÃO — 13/09/2026, noite: a Tabela de Mágicas cresce 64%
+
+**De 429 para 703 nomes**, e nenhuma linha manda mais abrir um livro.
+
+## 1. A fonte era o Compêndio, e eu fui ao livro
+
+Registro o erro primeiro porque ele custou a maior parte do trabalho. A leva começou com o
+briefing dizendo, em letras: *"atualizar o cânone a partir do Compêndio dos dez livros, que está
+pronto e conferido"*. **Eu fui ao PDF.** Extraí verbete do texto do *GURPS Magia*, descobri que só
+182 dos 429 saíam, que as colunas vinham intercaladas — *"Restauração Instantânea, custo 50. Uma
+tentativa Pré-requisito: Regeneração Instantânea"*, metade da frase vinda da coluna ao lado — e
+conclui que era impossível preencher a tabela.
+
+**O Compêndio estava ao lado, com 1.029 verbetes limpos**, cada um com escola, classe, energia,
+tempo, duração, pré-requisito, **página impressa** e **a cadeia de pré-requisito já calculada** —
+que era exatamente o trabalho mais caro. E passado **duas vezes**, com 246 verbetes marcados ⚠ onde
+os dois passes discordaram.
+
+## 2. As 58 linhas que não davam número
+
+Cinquenta e oito linhas diziam *"varia"*, *"Especial"* ou *"variável"*, e a legenda mandava **ver o
+livro** — um livro que o Mestre de Cena não tem, num jogo em que ele é uma IA com o cânone aberto e
+nada mais. **Todas preenchidas.**
+
+**Teleporte** deixou de dizer "varia" e traz a escada inteira: 3 até dez hexes, 4 até vinte, 5 até
+cem, 6 até quinhentos, 7 até 2,9 km, com mais 1 a cada dez vezes a distância. **Armadura e Escudo**
+custam duas vezes a proteção que dão, teto em 5. **Contramágica** custa metade da mágica que
+contrapõe, sem o bônus de NH do outro operador. **Maldição** tinha três "Especial" e agora tem os
+três números.
+
+**E dois defeitos de digitação apareceram dentro da tabela fechada:** Geada trazia **a letra ele**
+no lugar do número 1, e Purificação de Água trazia `1/41` e `5-10 seg\gI`. Resíduo de OCR que
+estava lá desde a transcrição original.
+
+## 3. As 274 mágicas novas
+
+Entraram do Compêndio, distribuídas pelos colégios que já existem — 31 em Controle do Corpo, 24 em
+Controle da Mente, 22 em Encantamentos, 21 em Cura, 18 em Meta-mágicas, e assim por diante. **Gelo
+e Ácido entraram dentro de Água; Metal, dentro de Terra**, pelo precedente que a própria tabela já
+usava com a Eletricidade, que vive dentro de Clima.
+
+**Cada seção foi reordenada em ordem alfabética inteira**, com as novas dentro — não empilhadas no
+fim.
+
+## 4. Três travas que a inserção obrigou a criar
+
+**Barra dentro de célula quebra a tabela.** O OCR lê o algarismo **1** como `|`, e um verbete
+trazia `Custo: |1.`. Se tivesse entrado, teria partido a tabela ao meio. Toda célula passa por uma
+limpeza que troca barra por barra invertida antes de ser escrita.
+
+**Linha sem energia não entra.** Vinte e quatro entraram e saíram no mesmo passe porque o Compêndio
+traz *não encontrado* no campo. **Linha oca quebra a promessa que a tabela acabou de assumir** — é
+pior que mágica ausente, porque parece resposta.
+
+**Comparar por nome exato não basta num cânone que renomeia.** Cinco duplicatas passaram pela
+primeira conferência: *Percepção de Emoção* contra a nossa **Percepção de Emoções**, e *Terra para
+Ar* contra **Terra em Ar** — o nome que nós mesmos aposentamos hoje de manhã. A conferência de
+duplicata passou a ignorar plural, preposição e acento.
+
+## 5. O que não entrou, e onde está escrito
+
+**Cento e onze mágicas**, em três grupos, listadas em `Trabalho/Relatorios/2026-09-13-magias-a-conferir.md`:
+
+- **62 precisam de olho humano.** O próprio Compêndio marca dúvida nelas — *"provável 1 min"*, *"o
+  divisor 60 pode ser leitura ruim"*. **Não preenchi por adivinhação.** Linha de tabela fechada com
+  número inventado é pior que mágica ausente.
+- **19 esperam decisão do Árbitro:** o colégio de **Acesso**. Não é sobre fechaduras — seis das
+  dezenove são **viagem no tempo** e quatro criam **portais**. Num jogo que é descer um poço por
+  portas conhecidas, um mago que cria portal torna a descida opcional. Se entrar, o molde pronto é
+  o da Necromancia: colégio **regulado**, com licença.
+- **30 saem pelo recorte tecnológico** — Máquinas, Energia, Radiação e Plástico. Decisão já tomada;
+  ficam listadas para que ninguém as procure achando que foram esquecidas.

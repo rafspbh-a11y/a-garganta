@@ -34,10 +34,10 @@ e avise o jogador para trocar o anexo.
 04b-entrega-do-relatorio     v7    https://rafspbh-a11y.github.io/a-garganta/txt/04b-entrega-do-relatorio.md
 14-indice                    v8    https://rafspbh-a11y.github.io/a-garganta/txt/14-indice.md
 26-pericias                  v4    https://rafspbh-a11y.github.io/a-garganta/txt/26-pericias.md
-27-magias                    v6    https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
+27-magias                    v7    https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 28-vantagens                 v4    https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md
 29-desvantagens              v4    https://rafspbh-a11y.github.io/a-garganta/txt/29-desvantagens.md
-23-retificacoes-de-livro     v5    https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md
+23-retificacoes-de-livro     v6    https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md
 25-decisoes-de-10-09-2026    v1    https://rafspbh-a11y.github.io/a-garganta/txt/25-decisoes-de-10-09-2026.md
 31-dadiva-de-zeus-e-clima    v1    https://rafspbh-a11y.github.io/a-garganta/txt/31-dadiva-de-zeus-e-clima.md
 boletim-atual                v1    https://rafspbh-a11y.github.io/a-garganta/txt/boletim-atual.md
