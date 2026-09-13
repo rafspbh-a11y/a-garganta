@@ -20,7 +20,7 @@ e avise o jogador para trocar o anexo.
 05-andares-1-a-12            v2    https://rafspbh-a11y.github.io/a-garganta/txt/05-andares-1-a-12.md
 06-bestiario                 v2    https://rafspbh-a11y.github.io/a-garganta/txt/06-bestiario.md
 06b-muda-dos-andares         v5    https://rafspbh-a11y.github.io/a-garganta/txt/06b-muda-dos-andares.md
-17-criacao-e-magia           v9    https://rafspbh-a11y.github.io/a-garganta/txt/17-criacao-e-magia.md
+17-criacao-e-magia           v10   https://rafspbh-a11y.github.io/a-garganta/txt/17-criacao-e-magia.md
 30-improviso-circulo-e-lavra v4    https://rafspbh-a11y.github.io/a-garganta/txt/30-improviso-circulo-e-lavra.md
 32-os-povos-que-subiram      v2    https://rafspbh-a11y.github.io/a-garganta/txt/32-os-povos-que-subiram.md
 08-modelos-de-personagem     v1    https://rafspbh-a11y.github.io/a-garganta/txt/08-modelos-de-personagem.md
@@ -34,7 +34,7 @@ e avise o jogador para trocar o anexo.
 04b-entrega-do-relatorio     v7    https://rafspbh-a11y.github.io/a-garganta/txt/04b-entrega-do-relatorio.md
 14-indice                    v8    https://rafspbh-a11y.github.io/a-garganta/txt/14-indice.md
 26-pericias                  v4    https://rafspbh-a11y.github.io/a-garganta/txt/26-pericias.md
-27-magias                    v4    https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
+27-magias                    v5    https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 28-vantagens                 v4    https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md
 29-desvantagens              v4    https://rafspbh-a11y.github.io/a-garganta/txt/29-desvantagens.md
 23-retificacoes-de-livro     v5    https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md

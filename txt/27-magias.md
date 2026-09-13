@@ -1,5 +1,5 @@
 titulo: Tabela de Mágicas
-versao: 4
+versao: 5
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -64,6 +64,18 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 **Área:** o custo é o **custo básico multiplicado pelo raio em hexágonos** — é por isso que Silêncio de raio 3 custa 6 e não 2.
 **Pré-requisito: AM** = Aptidão Mágica. **Toda cadeia tem que estar comprada**, até a raiz. Mágica sem pré-requisito na ficha é mágica que não se lança.
 **Fora do domínio da sua Casa:** impossível de comprar, **não impossível de ter** — mas exige acordo, e acordo tem dono e tem dívida (`17` §6.6).
+
+**Onde tirar dúvida, sem sair da cena.** Esta tabela é resumo: ela diz o que a mágica custa e o que exige, não o que ela faz em detalhe. Quando a linha não bastar:
+
+| A dúvida é sobre | Abra |
+| --- | --- |
+| **como a magia funciona** — quem pode ser mago, o que a Aptidão faz, mana e profundidade, quem concede o quê | [Guia de Criação e Manual de Magia](https://rafspbh-a11y.github.io/a-garganta/txt/17-criacao-e-magia.md) |
+| **um nome que não confere** com o que você tem na ficha, ou um pré-requisito que mudou | [Retificações de Livro](https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md) — e a remissiva no fim desta página |
+| **como se lança em mesa** — concentração, interrupção, projétil, dano | [Cartão de Combate](https://rafspbh-a11y.github.io/a-garganta/txt/19-cartao-de-combate.md) |
+| **o que a mágica faz com um item** — encantar, preço, classe | [Loot, Balcão e Registro](https://rafspbh-a11y.github.io/a-garganta/txt/21-loot-balcao-e-registro.md) |
+| **escrever a linha na ficha** — pontos, NH, energia, NH de escola | [Regra de Escrita da Ficha](https://rafspbh-a11y.github.io/a-garganta/txt/24-regra-da-ficha.md) |
+
+**Nada disso precisa estar anexado ao seu Projeto.** Abra, leia a linha, feche.
 
 # Comunicação e Empatia
 
@@ -288,6 +300,8 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 # Clima
 
 **Casas que concedem:** Zeus · Thor · Indra · Tláloc · Xangô
+
+**Colégio com recorte próprio da Garganta** — o que a concessão de Clima abre em Ar e em Água, e a corrente até o Relâmpago, estão em [Dádiva de Zeus e o Recorte de Clima](https://rafspbh-a11y.github.io/a-garganta/txt/31-dadiva-de-zeus-e-clima.md).
 
 > **Nota.** Clima **não é escola no livro** — as mágicas de tempo estão dentro de Ar e de Água, e separá-las é decisão de Mestre que o próprio *Grimório* prevê. **Na Garganta, Clima é colégio próprio**, divergencia declarada (`23` §2.3).
 > **A concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima — e nada além** (`31` §2). A fronteira é a **árvore**, não a lista.
@@ -664,6 +678,8 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 
 **Casas que concedem:** **REGULADA.** Ámenti e Fengdu, e só com licença
 
+**Colégio regulado:** licença, registro e o que acontece sem ela — [A Magia no Mundo e as Sete Forjas](https://rafspbh-a11y.github.io/a-garganta/txt/22-magia-no-mundo.md).
+
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Animação* | Comum | 5 seg | 1 min | varia# | Convocar Espíritos |
@@ -688,6 +704,8 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 # Encantamentos
 
 **Casas que concedem:** **Hefesto · Thoth · Ogum** — é o que fabrica item mágico
+
+**Preço, classe e prazo do item encantado** estão em [Loot, Balcão e Registro](https://rafspbh-a11y.github.io/a-garganta/txt/21-loot-balcao-e-registro.md) §2, e o tempo de forja por faixa de mana em [Economia e Tabelas](https://rafspbh-a11y.github.io/a-garganta/txt/03-economia-e-tabelas.md).
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
@@ -737,7 +755,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Respirar Água | Ar/Água |
 | Ressurreição* | Cura/Necro. |
 | Imunidade a Relâmpagos | Eletricidade/Proteção |
-| Terra p/ Ar | Terra/Ar |
+| Terra em Ar | Terra/Ar |
 
 
 # Nomes antigos — onde procurar

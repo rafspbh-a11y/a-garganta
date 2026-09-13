@@ -2719,7 +2719,7 @@ Só baú com item mágico tem tranca. O jogador escolhe como abrir **antes do da
 ---
 
 titulo: Guia de Criação e Manual de Magia
-versao: 9
+versao: 10
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -3109,17 +3109,23 @@ Você só aprende feitiços dos colégios que são **domínio do seu deus**. For
 > 13/09/2026 a partir das três mágicas que o livro imprime sob esse cabeçalho.
 
 ## 6.7 O que cada tipo de mago faz de útil aqui embaixo
+
+> **Os nomes de colégio desta seção foram corrigidos em 13/09/2026.** Ela usava quatro nomes
+> aposentados — *Proteção e Aviso, Movimento, Conhecimento* e *Vegetal* — **na seção logo abaixo
+> da nota da 6.6 que diz que esses nomes estavam errados.** A nota foi escrita e o texto sob ela
+> não foi tocado. É o mesmo modo de falhar que esta pasta já registrou: **nota de deriva não
+> substitui a frase que ela contradiz.** Os nomes vivos são os da Tabela de Mágicas, e só os dela.
 - **Mago de combate** (Fogo, Clima): resolve encontro, gasta fadiga rápido, e chama atenção de tudo no andar. Bom pico, péssima autonomia.
-- **Mago de apoio** (Proteção e Aviso, Cura, Movimento): não brilha na cena e é o motivo de o grupo voltar inteiro. **É o mago mais valioso numa campanha de morte permanente.**
-- **Mago de saber** (Conhecimento, Comunicação): Detectar Magia e Analisar transformam espólio duvidoso em espólio avaliado, toda descida. É o mago que paga o próprio salário.
-- **Mago de terreno** (Terra, Vegetal, Luz e Trevas): abre rota onde não há rota. Quem controla rota controla contrato.
+- **Mago de apoio** (Proteção e Advertência, Cura, Movimentação): não brilha na cena e é o motivo de o grupo voltar inteiro. **É o mago mais valioso numa campanha de morte permanente.**
+- **Mago de saber** (Reconhecimento, Comunicação e Empatia): Detectar Magia e Analisar transformam espólio duvidoso em espólio avaliado, toda descida. É o mago que paga o próprio salário.
+- **Mago de terreno** (Terra, Plantas, Luz e Trevas): abre rota onde não há rota. Quem controla rota controla contrato.
 **Três combos que funcionam com 150 pontos:**
 1. **Aptidão 2 + Luz + Detectar Magia + Criar Fogo + um feitiço de ataque.** Barato, útil desde o andar 1.
-2. **Aptidão 2 + Proteção + Cura + Movimento.** O grupo te contrata; você nunca fica sem trabalho.
+2. **Aptidão 2 + Proteção e Advertência + Cura + Movimentação.** O grupo te contrata; você nunca fica sem trabalho.
 3. **O mago sem Casa: Aptidão 1 + Detectar Magia + Luz + dois feitiços do seu colégio, e o resto em perícia de mundo** — Comércio, Avaliação, Sobrevivência, Furtividade. Acima do 9 você é um mago de segunda e vai ouvir isso de gente formada. Do 9 para baixo, com a fadiga pela metade, você faz o trabalho de um formado — e alguém vai reparar. É o combo mais barato da lista e o mais interessante de jogar. Não é o mais seguro.
 
 > **Nota.**
-> Nos combos 1 e 3, **Luz e Detectar Magia só entram direto se o seu deus cobrir Luz e Trevas ou Conhecimento** (v. 6.6). Se não cobrir, eles continuam ao seu alcance — pela exceção da 6.6, com dono e com dívida. Sai barato em pontos e caro em história, o que nesta campanha costuma ser bom negócio.
+> Nos combos 1 e 3, **Luz e Detectar Magia só entram direto se o seu deus cobrir Luz e Trevas ou Reconhecimento** (v. 6.6). Se não cobrir, eles continuam ao seu alcance — pela exceção da 6.6, com dono e com dívida. Sai barato em pontos e caro em história, o que nesta campanha costuma ser bom negócio.
 # PARTE 7 — ARMADILHAS DE QUEM ESTÁ COMEÇANDO
 1. **Espalhar pontos.** Dez perícias em nível 11 perdem para quatro em nível 15. GURPS é letal; medíocre morre.
 2. **Esquecer o Falar do Limiar.** Você fica preso na própria embaixada.
@@ -6395,7 +6401,7 @@ mundo onde se foge de coisa.
 ---
 
 titulo: Tabela de Mágicas
-versao: 4
+versao: 5
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -6460,6 +6466,18 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 **Área:** o custo é o **custo básico multiplicado pelo raio em hexágonos** — é por isso que Silêncio de raio 3 custa 6 e não 2.
 **Pré-requisito: AM** = Aptidão Mágica. **Toda cadeia tem que estar comprada**, até a raiz. Mágica sem pré-requisito na ficha é mágica que não se lança.
 **Fora do domínio da sua Casa:** impossível de comprar, **não impossível de ter** — mas exige acordo, e acordo tem dono e tem dívida (`17` §6.6).
+
+**Onde tirar dúvida, sem sair da cena.** Esta tabela é resumo: ela diz o que a mágica custa e o que exige, não o que ela faz em detalhe. Quando a linha não bastar:
+
+| A dúvida é sobre | Abra |
+| --- | --- |
+| **como a magia funciona** — quem pode ser mago, o que a Aptidão faz, mana e profundidade, quem concede o quê | [Guia de Criação e Manual de Magia](https://rafspbh-a11y.github.io/a-garganta/txt/17-criacao-e-magia.md) |
+| **um nome que não confere** com o que você tem na ficha, ou um pré-requisito que mudou | [Retificações de Livro](https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md) — e a remissiva no fim desta página |
+| **como se lança em mesa** — concentração, interrupção, projétil, dano | [Cartão de Combate](https://rafspbh-a11y.github.io/a-garganta/txt/19-cartao-de-combate.md) |
+| **o que a mágica faz com um item** — encantar, preço, classe | [Loot, Balcão e Registro](https://rafspbh-a11y.github.io/a-garganta/txt/21-loot-balcao-e-registro.md) |
+| **escrever a linha na ficha** — pontos, NH, energia, NH de escola | [Regra de Escrita da Ficha](https://rafspbh-a11y.github.io/a-garganta/txt/24-regra-da-ficha.md) |
+
+**Nada disso precisa estar anexado ao seu Projeto.** Abra, leia a linha, feche.
 
 # Comunicação e Empatia
 
@@ -6684,6 +6702,8 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 # Clima
 
 **Casas que concedem:** Zeus · Thor · Indra · Tláloc · Xangô
+
+**Colégio com recorte próprio da Garganta** — o que a concessão de Clima abre em Ar e em Água, e a corrente até o Relâmpago, estão em [Dádiva de Zeus e o Recorte de Clima](https://rafspbh-a11y.github.io/a-garganta/txt/31-dadiva-de-zeus-e-clima.md).
 
 > **Nota.** Clima **não é escola no livro** — as mágicas de tempo estão dentro de Ar e de Água, e separá-las é decisão de Mestre que o próprio *Grimório* prevê. **Na Garganta, Clima é colégio próprio**, divergencia declarada (`23` §2.3).
 > **A concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima — e nada além** (`31` §2). A fronteira é a **árvore**, não a lista.
@@ -7060,6 +7080,8 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 
 **Casas que concedem:** **REGULADA.** Ámenti e Fengdu, e só com licença
 
+**Colégio regulado:** licença, registro e o que acontece sem ela — [A Magia no Mundo e as Sete Forjas](https://rafspbh-a11y.github.io/a-garganta/txt/22-magia-no-mundo.md).
+
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Animação* | Comum | 5 seg | 1 min | varia# | Convocar Espíritos |
@@ -7084,6 +7106,8 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 # Encantamentos
 
 **Casas que concedem:** **Hefesto · Thoth · Ogum** — é o que fabrica item mágico
+
+**Preço, classe e prazo do item encantado** estão em [Loot, Balcão e Registro](https://rafspbh-a11y.github.io/a-garganta/txt/21-loot-balcao-e-registro.md) §2, e o tempo de forja por faixa de mana em [Economia e Tabelas](https://rafspbh-a11y.github.io/a-garganta/txt/03-economia-e-tabelas.md).
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
@@ -7133,7 +7157,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Respirar Água | Ar/Água |
 | Ressurreição* | Cura/Necro. |
 | Imunidade a Relâmpagos | Eletricidade/Proteção |
-| Terra p/ Ar | Terra/Ar |
+| Terra em Ar | Terra/Ar |
 
 
 # Nomes antigos — onde procurar
