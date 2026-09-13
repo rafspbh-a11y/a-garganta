@@ -1,11 +1,12 @@
 titulo: Regra de Escrita da Ficha
-versao: 2
-atualizado: 2026-09-11
+versao: 3
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha
 
 > **Nota.**
+> **Versão 3, de 13/09/2026.** Item 9 do checklist: **o Dever da Marca saiu do limite de −40**. Item 10: o Deslocamento passa a descontar a Carga, e a Briga entra na lista de quem apara a ⅔. E entrou o item 11, o **tipo obrigatório** nos dez nomes que existem em duas tabelas.
 > **Versão 2, de 10/09/2026** — segunda rodada de conferência. Entraram três travas que estavam implícitas e não escritas: bônus condicional fica fora do Efetivo; bônus por item exige o item no equipamento; especialização exige a especialidade declarada.
 > **Nenhuma ficha entra em mesa, e nenhuma alteração é homologada, fora deste formato.** Ele existe por um motivo concreto: uma ficha da campanha precisou ser reconstruída do zero para se descobrir que estava 22,5 pontos acima, porque não havia como saber quanto cada linha tinha custado. **Ficha que só mostra o nível não é auditável — é uma afirmação.**
 
@@ -115,8 +116,9 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
 6. **Toda mágica fora do domínio da Casa tem acordo registrado?** Com dono, mesmo que o dono só exista na camada do Árbitro.
 7. **A soma das linhas bate com a linha da conta?**
 8. **A conta fecha no orçamento?** 150 na criação.
-9. **Desvantagens dentro de −40, com o Dever da Marca lá dentro?** Peculiaridades até 5.
-10. **Os derivados batem?** PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · Deslocamento=Esquiva=Vel. arredondada · Aparar=perícia÷2, ou **⅔ em Esgrima e Bastão** · Bloquear=Escudo÷2.
-11. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
+9. **Desvantagens dentro de −40, com o Dever da Marca FORA do limite?** O Dever é obrigatório e continua valendo de −5 a −15, mas desde 13/09/2026 **não ocupa espaço no −40** (`29` §1). Peculiaridades até 5, também fora.
+10. **Os derivados batem?** PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · **Deslocamento = Vel. − nível de Carga**, para baixo · Esquiva=Deslocamento · Aparar=perícia÷2, ou **⅔ em Esgrima, Bastão e Briga** · Bloquear=Escudo÷2.
+11. **Nos nomes que existem em duas tabelas, o tipo está declarado na linha?** São dez, e a lista está no `26` §11 — **Escalada · Escudo · Exorcismo · História · Vôo · Prontidão · Visão Aguçada · Ouvido Aguçado · Visão Noturna · Fúria**. Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`. **Linha sem o tipo volta.**
+12. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
 
-**Onze itens. Se um falhar, a ficha volta.** Vale para a ficha do Árbitro também — Carta, artigo 4.
+**Doze itens. Se um falhar, a ficha volta.** Vale para a ficha do Árbitro também — Carta, artigo 4.

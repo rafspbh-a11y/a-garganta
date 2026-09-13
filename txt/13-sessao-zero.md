@@ -1,6 +1,6 @@
 titulo: Sessão Zero
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Sessão Zero

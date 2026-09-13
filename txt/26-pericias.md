@@ -1,13 +1,14 @@
 titulo: Tabela de Perícias
-versao: 2
-atualizado: 2026-09-11
+versao: 3
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Tabela de Perícias
 
 > **Nota.**
-> **Lista fechada.** O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha. Extraída verbete a verbete do **GURPS Módulo Básico**, do **GURPS Magia** e do **GURPS Grimório**, mais as quatro perícias da casa criadas por decisão do Árbitro (`25`, decisão 4).
-> **Versão 2, de 10/09/2026.** Vinte e nove perícias de livro que a versão 1 tinha deixado de fora entraram; **Caligrafia** passou de mental para **Física/Média**, como está no livro; **Boemia** saiu da nota das mentais, porque é física; e as duas perícias da casa cujo nome já estava ocupado por mágica foram renomeadas (§4).
+> **Lista fechada.** O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha.
+> **Versão 3, de 13/09/2026 — e as perícias da casa acabaram.** O Árbitro passou os dez livros de GURPS que a campanha possui a livros de mesa, e as quatro perícias inventadas em setembro se resolveram sozinhas: **Intimidação** tem verbete em quatro livros, e é Mental/Média, exatamente como estava; **Exorcismo** tem verbete no *Horror* (p.43), Mental/Difícil, e o livro diz na cara que *"não é uma mágica, é uma perícia religiosa"* — que era a decisão do Árbitro, palavra por palavra; **Selos e Sigilos** virou **Heráldica**, que já estava na lista, com a mesma dificuldade; e **Cartografia**, a única sem verbete em livro nenhum, saiu (v. §6).
+> **Versão 2, de 10/09/2026.** Vinte e nove perícias de livro que a versão 1 tinha deixado de fora entraram; **Caligrafia** passou de mental para **Física/Média**, como está no livro; e **Boemia** saiu da nota das mentais, porque é física.
 > **Como se lê uma linha de ficha está no `24`.** Toda perícia entra na ficha com sete campos: nome · tipo/dificuldade · relativo ao atributo · pontos · NH comprado · bônus com a fonte · NH efetivo.
 
 # 1. Custo em pontos
@@ -34,7 +35,7 @@ O custo depende de **duas coisas só**: quanto acima do atributo você quer cheg
 
 ## Mentais — baseadas em IQ (duas saem de HT)
 
-**Saem de HT, não de IQ:** Sex-Appeal (Média) e Controle da Respiração (Muito Difícil). **Boemia não está aqui** — é Física/Média, também de HT, e vive na tabela física. Erro corrigido em 10/09/2026: a versão anterior listava Boemia como mental.
+**Sai de HT, não de IQ:** apenas **Sex-Appeal** (Média). O livro diz, no verbete de cada uma das que mudam de atributo, que elas mudam — e o verbete de Controle da Respiração **não diz**, logo ela sai de IQ, como toda mental. Corrigido em 13/09/2026; a versão 2 a listava aqui. **Boemia não está aqui** — é Física/Média, também de HT, e vive na tabela física. Erro corrigido em 10/09/2026: a versão anterior listava Boemia como mental.
 
 | Nível final | Fácil | Média | Difícil | Muito Difícil |
 | --- | --- | --- | --- | --- |
@@ -97,7 +98,6 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Judô | Difícil | Básico |
 | Lança | Média | Básico |
 | Lança de Justa | Média | Básico |
-| Maça | Média | Básico |
 | Machado de Duas Mãos/Maça | Média | Básico |
 | Machado/Maça | Média | Básico |
 | Mangual | Difícil | Básico |
@@ -106,13 +106,12 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Percepção do Corpo | Difícil | Magia |
 | Prestidigitação | Difícil | Básico |
 | Punga | Difícil | Básico |
-| **Rapidez de Recarga** (por tipo de arma) | Fácil | Básico |
 | Rede | Difícil | Básico |
+| **Remo/Vela** | Média | Básico p.68 |
 | **Sacar Rápido** (por tipo de arma) | Fácil | Básico |
 | Salto | Fácil | Básico |
 | Sopro Mágico | Fácil | Magia |
-| **Vela** | Média | Básico |
-| Vôo | Média | Grimório |
+| Vôo | Média | Grimório p.6 |
 | Zarabatana | Difícil | Básico |
 
 # 3. Perícias mentais
@@ -139,14 +138,13 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Carpintaria | Fácil | Básico |
 | Carregamento | Difícil | Básico |
 | Carreiro | Média | Básico |
-| **Cartografia** | Média | **da casa** (`25`) |
 | Cerâmica | Média | Básico |
 | **Cirurgia** | **Muito Difícil** | Básico |
 | Comércio | Média | Básico |
 | Conhecimento do Terreno | Fácil | Básico |
 | **Construção de Naves** | Difícil | Básico |
 | **Contabilidade** | Difícil | Básico |
-| Controle da Respiração | Muito Difícil (sai de **HT**) | Básico |
+| Controle da Respiração | Muito Difícil | Básico p.48 |
 | **Criminologia** | Média | Básico |
 | Criptologia | Difícil | Grimório |
 | Culinária | Fácil | Básico |
@@ -164,18 +162,18 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Ferreiro | Média | Básico |
 | **Fisiologia** | Muito Difícil | Básico |
 | **Geologia** | Difícil | Básico |
-| Heráldica | Média | Básico |
+| Heráldica | Média | Básico p.58 |
 | Hipnotismo | Difícil | Básico |
 | História | Difícil | Básico |
 | Instrumento Musical | Difícil | Básico |
 | Interrogatório | Média | Básico |
-| **Intimidação** | Média | **da casa** (`25`) |
+| **Intimidação** | Média | Illuminati p.32 |
 | **Joalheiro** | Difícil | Básico |
 | Jogo | Média | Básico |
 | **Jurisprudência** | Difícil | Básico |
 | Lábia | Média | Básico |
 | Leitura Labial | Média | Básico |
-| Liderança | Média | Básico |
+| Liderança | Média | Básico p.63 — **pré-definido ST−5** |
 | **Linguagem de Sinais** | Média | Básico |
 | Lingüística | Muito Difícil | Básico |
 | Literatura | Difícil | Básico |
@@ -183,7 +181,6 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | **Marinhagem** | Fácil | Básico |
 | Matemática | Difícil | Básico |
 | **Medicina** | Difícil | Básico |
-| Mergulho | Média | Básico |
 | **Metalografia** | Difícil | Básico |
 | **Metereologia** | Média | Básico |
 | Mímica/Pantomima | Fácil | Básico |
@@ -202,15 +199,15 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Psicologia | Difícil | Básico |
 | **Química** | Difícil | Básico |
 | Rastreamento | Média | Básico |
-| **Rito Funerário** | Difícil | **da casa** (`25`) |
-| **Selos e Sigilos** | Média | **da casa** (`25`) |
+| **Exorcismo** *(perícia)* | Difícil | Horror p.43 |
 | **Serviço Secreto** | Difícil | Básico |
 | Sex-Appeal | Média (sai de **HT**) | Básico |
 | Sobrevivência (tipo de área) | Média | Básico |
 | Sombra | Média | Básico |
 | Tática | Difícil | Básico |
 | Tatuagem | Média | Grimório |
-| Taumatologia | Muito Difícil | Grimório |
+| **Sonho Lúcido** | Fácil (sai de **Vontade**) | Grimório p.6 |
+| Taumatologia | Muito Difícil | Grimório p.7 |
 | Técnicas Judiciais | Difícil | Básico |
 | Teologia | Difícil | Básico |
 | Trabalhos em Couro | Fácil | Básico |
@@ -221,27 +218,21 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | **Veterinária** | Difícil | Básico |
 | **Zoologia** | Difícil | Básico |
 
-# 4. As quatro perícias da casa
+# 4. As quatro perícias da casa — e o fim delas
 
-Não existem em livro nenhum. Entram por **decisão do Árbitro de 10/09/2026** (`25`, decisão 4), com a dificuldade que faz as fichas já homologadas fecharem sem mexer em um ponto. **São divergência declarada, não erro a corrigir.**
+Em 10/09/2026 o Árbitro criou quatro perícias que não tinham verbete nos três livros de mesa de
+então, com a dificuldade que fazia as fichas já homologadas fecharem sem mexer num ponto. Em
+13/09/2026, com os dez livros da estante passando a ser livros de mesa, **três das quatro
+apareceram — e com os números que ele tinha escolhido.**
 
-| Perícia | Tipo/Dif. | O que faz na mesa |
+| Perícia da casa | O que era | O que é agora |
 | --- | --- | --- |
-| **Cartografia** | Mental/Média | Levanta planta de andar, lê mapa alheio, detecta mapa falso. A economia da campanha já vende mapa — não há mercado de mapa sem a perícia que faz mapa |
-| **Intimidação** | Mental/Média | Força reação por ameaça crível. **Disputa contra a Vontade do alvo** |
-| **Rito Funerário** | Mental/Difícil | Põe o morto-que-anda de volta no lugar. **Não é magia e não exige Aptidão** — é ofício litúrgico. Fengdu e Ámenti licenciam |
-| **Selos e Sigilos** | Mental/Média | Faz, lê e reconhece selo, sinete e talismã, **inclusive falso**. Não encanta: quem encanta é mago |
+| **Intimidação** | Mental/Média, da casa | **Mental/Média, de livro** — *Illuminati* p.32, e também *Artes Marciais* p.31, *Império Romano* p.37 e *Viagem no Tempo* p.34. Mesma dificuldade. O verbete traz ainda a regra de **Intimidação de um Grupo** |
+| **Exorcismo** *(era Rito Funerário)* | Mental/Difícil, da casa, renomeada para não colidir com a mágica | **Mental/Difícil, de livro** — *Horror* p.43, pré-definido **IQ−6 ou Teologia−3**, e **−4 para quem não tem Clericato**. O livro escreve: *"o exorcismo não é uma mágica. É uma perícia religiosa que envolve rituais complexos."* Volta ao nome do livro; a colisão com a mágica resolve-se pela regra do tipo obrigatório (§11) |
+| **Selos e Sigilos** *(era Talismã)* | Mental/Média, da casa | **Vira Heráldica**, que já estava nesta lista — Mental/Média, *Básico* p.58, pré-definido IQ−5 ou Trato Social−3. O verbete cobre *"projetar e reconhecer escudos de armas, cores e divisas de um clã e outros emblemas"*, que é fazer e ler selo. **Mesma dificuldade, mesmo custo, mesmo NH: nenhuma ficha muda de conta.** Na Garganta a Heráldica cobre também selo de Guilda, sinete de contrato e lacre |
+| **Cartografia** | Mental/Média, da casa | **Sai.** É a única sem verbete em livro nenhum dos dez — a única ocorrência em todo o acervo é uma linha de créditos. Levantar planta de andar passa a exigir **Navegação** para medir e **Artística** para desenhar; detectar mapa falso roda por **Artística** |
 
-## Por que duas delas mudaram de nome em 10/09/2026
-
-Duas se chamavam **Exorcismo** e **Talismã**. Os dois nomes já estavam **ocupados por mágicas de livro**, e nome repetido na mesa custa caro: um jogador diz "faço Exorcismo" e ninguém sabe se é o teste de perícia ou o feitiço de 10 de energia.
-
-| Nome antigo | Colide com | Nome novo |
-| --- | --- | --- |
-| Exorcismo | **mágica Exorcismo**, escola de Comunicação e Empatia (*GURPS Magia*) — Com/R-mágica, 10 energia, ← Passageiro da Alma ou Possessão | **Rito Funerário** |
-| Talismã | **encantamento Talismã** (*GURPS Grimório*), que soma ao teste de resistência de quem o usa | **Selos e Sigilos** |
-
-**Nenhuma ficha muda de conta.** Mesma dificuldade, mesmos pontos, mesmo NH — só o nome na linha. Cartografia e Intimidação ficam como estavam: conferi os três livros e nenhum dos dois nomes existe neles.
+**Nenhuma perícia da casa sobrou.** A lista é inteiramente de livro.
 
 # 5. Idiomas
 
@@ -303,7 +294,14 @@ Todos estiveram em uso no cânone e foram corrigidos em 10/09/2026.
 | Teologia comparada | **Teologia** |
 | Toxicologia | **Venefício** |
 | Exorcismo *(como perícia)* | **Rito Funerário** — Exorcismo continua existindo, mas **como mágica** |
-| Talismã *(como perícia)* | **Selos e Sigilos** — Talismã continua existindo, mas **como encantamento do Grimório** |
+| Talismã *(como perícia)* | **Heráldica** — Talismã continua existindo, mas **como encantamento do Grimório** |
+| Rito Funerário | **Exorcismo** — voltou ao nome do livro em 13/09, com verbete no *Horror* p.43 |
+| Selos e Sigilos | **Heráldica** — mesma dificuldade e mesmo custo |
+| Cartografia | **não existe** — Navegação para medir, Artística para desenhar |
+| Vela | **Remo/Vela** — o verbete é um par, e cobre canoa e barco a remo |
+| Maça | **Machado/Maça** — não há verbete de "Maça" sozinha, só entrada de índice apontando para a p.49 |
+| Mergulho | **não existe na Garganta** — o verbete é de equipamento de respiração subaquática, tecnologia que as sete cidades não têm. Prender a respiração é **Controle da Respiração** mais **Natação** |
+| Rapidez de Recarga | **não existe na Garganta** — o verbete é de arma de fogo. Para sacar rápido um virote, **Sacar Rápido (Flecha)** |
 
 **Percepção não é perícia.** Quem quer ser bom nisso compra vantagem: **Prontidão, 5 por nível** (todos os sentidos) ou **Visão Aguçada, 2 por nível**. Em quase toda ficha, Visão Aguçada +2 por 4 pontos rende mais do que a perícia rendia.
 
@@ -319,6 +317,15 @@ Quase toda perícia tem um nível em que você a usa sem treino nenhum.
 | Média | atributo −5 |
 | Difícil | atributo −6 |
 | Muito Difícil | em geral **nenhum** |
+
+**Quatro fogem dessa regra e precisam ser ditas**, porque o livro as escreve à parte:
+
+| Perícia | Pré-definido impresso | Onde |
+| --- | --- | --- |
+| **Liderança** | **ST−5** — e não IQ−5 | Básico p.63. O livro explica: *"num grupo qualquer, se ninguém tiver treinamento em liderança, **o mais forte normalmente a exercerá**"*. É a única perícia mental do livro cujo pré-definido sai de ST, e é deliberado |
+| **Exorcismo** | **IQ−6 ou Teologia−3**, e **−4 a mais para quem não tem Clericato** | Horror p.43 |
+| **Sonho Lúcido** | **Vontade−4** | Grimório p.6 |
+| **Bastão** | **DX−5 ou Lança−2** — Difícil, e ainda assim −5 | Básico p.52 |
 
 Há exceções, e algumas perícias se pré-definem **umas nas outras** — Espadas de Lâmina Larga é DX−5 **ou** Espadas Curtas −2, o que for melhor. **Perícia sem pré-definido não se tenta**: Caratê, Judô, Alquimia e a maioria das Muito Difíceis.
 
@@ -355,14 +362,48 @@ Há exceções, e algumas perícias se pré-definem **umas nas outras** — Espa
 
 # 9. O que existe em livro e **não** existe na Garganta
 
-Não é lacuna: é recorte de mundo. Estas perícias têm verbete nos livros e **estão fora** porque exigem nível tecnológico que as sete cidades não têm.
+Não é lacuna: é recorte de mundo. Estas perícias têm verbete nos livros e **estão fora** porque exigem nível tecnológico que as sete cidades não têm — **salvo a Artilharia, que sai por outra razão, dita abaixo.**
 
-Armas de Fogo · Armas de Feixe · Armas de Pólvora · Artilharia · Astronavegação · Ciclismo · Demolição · Demolição Subaquática · Eletrônica · Escudo de Força · Espada de Luz · Física Nuclear · Fotografia · Genética · Gravidade Zero · Motociclismo · Operação de Aparelhos Eletrônicos · Operação de Computadores · Pára-quedismo · Programação de Computadores · Sistemas de Segurança · Telegrafia · Traje de Combate · Traje Pressurizado
+Armas de Fogo · Armas de Feixe · Armas de Pólvora · Astronavegação · Ciclismo · Demolição · Demolição Subaquática · Eletrônica · Escudo de Força · Espada de Luz · Física Nuclear · Fotografia · Genética · Gravidade Zero · Motociclismo · Operação de Aparelhos Eletrônicos · Operação de Computadores · Pára-quedismo · Programação de Computadores · Sistemas de Segurança · Telegrafia · Traje de Combate · Traje Pressurizado
+
+E mais duas, por nível tecnológico, acrescentadas em 13/09: **Mergulho**, que no livro é a
+habilidade de usar equipamento de respiração subaquática, e **Rapidez de Recarga**, que no
+livro é a habilidade de recarregar arma de fogo.
 
 **Se um andar fundo devolver algo dessa lista**, o Árbitro abre Pendência e decide caso a caso — não se compra na criação.
+
+## Artilharia sai por decisão de mundo, não por tecnologia
+
+O verbete de Artilharia (Básico p.50) abre a lista de especializações com **Balestra** e
+**Catapulta**, que são de nível 2 e 3 — o motivo tecnológico não se sustenta para ela. E há uma
+incoerência que fica registrada: a perícia **Armeiro**, que está na lista, tem *"armas para
+cerco"* entre as especialidades de nível baixo, de modo que o cânone deixa alguém **construir**
+a catapulta e não deixa ninguém **operá-la**.
+
+> **Decisão do Árbitro, 13/09/2026.** Artilharia fica fora, e o motivo é outro: **não há guerra
+> de cerco entre as sete cidades.** Elas disputam por contrato, por registro e por preço, e a
+> Coroa é neutra por construção. Máquina de cerco existe nas muralhas e ninguém a serviu em
+> memória viva. Se isso mudar no mundo, a perícia entra — e a mudança será notícia antes de
+> ser regra.
 
 # 10. Alcance desta tabela, dito na cara
 
 - **As perícias** vêm dos três livros, verbete a verbete, **completas** para o nível tecnológico da campanha.
-- **As mágicas** (`27`) vêm da Relação das Mágicas do **GURPS Magia**: 413 mágicas, todas as escolas. **As mágicas e encantamentos exclusivos do GURPS Grimório ainda não foram transcritos** — o Grimório não traz tabela consolidada, e a transcrição verbete a verbete é trabalho próprio, registrado como Pendência aberta. Enquanto isso, mágica de Grimório **entra só por autorização do Árbitro**, uma a uma.
-- **Talismã**, do Grimório, é um desses encantamentos: existe, mas ainda não está tabelado. É por isso que a perícia da casa com esse nome foi renomeada em vez de disputar o nome.
+- **As mágicas** (`27`) são **429**: **413** da Relação das Mágicas do *GURPS Magia*, mais **16** do *Grimório* — as quatro que a decisão 1 do `25` nomeou e as doze da sub-escola de Eletricidade que o `31` trouxe. **A transcrição do restante do Grimório está em curso desde 13/09/2026**, por decisão do Árbitro, com as três escolas Tecnológicas — Máquinas, Energia e Radiação — ficando de fora pelo mesmo recorte de nível tecnológico desta seção.
+- **Talismã**, do Grimório, é encantamento e não perícia. Foi por isso que a perícia da casa com esse nome primeiro se chamou Selos e Sigilos e depois virou **Heráldica**, que é de livro.
+
+# 11. Nomes que existem em duas tabelas ao mesmo tempo
+
+Alguns nomes são, ao mesmo tempo, perícia e mágica, ou vantagem e mágica. **As duas pontas são
+de livro, e nenhuma pode ceder o nome.**
+
+> **Regra, fixada em 13/09/2026: nesses nomes o tipo é obrigatório na linha da ficha, e a
+> homologação recusa a linha sem ele.** Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`,
+> `Exorcismo (perícia)` ou `Exorcismo (mágica)`. A trava já existia — a Regra de Escrita da
+> Ficha (`24`) manda declarar tipo em toda linha; o que muda é que agora é recusa, e não
+> cortesia.
+
+A lista sai do cruzamento das quatro tabelas fechadas e é conferida a cada versão. Hoje são:
+**Escalada · Escudo · Exorcismo · História · Vôo** (perícia × mágica) · **Prontidão · Visão
+Aguçada · Ouvido Aguçado · Visão Noturna** (vantagem × mágica) · **Fúria** (desvantagem ×
+mágica).

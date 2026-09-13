@@ -1,6 +1,6 @@
 titulo: Como se joga
-versao: 6
-atualizado: 2026-09-11
+versao: 7
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Como se joga
@@ -361,6 +361,103 @@ O mesmo hoplita, mesmo alvo, com o gládio em balanço: 1d+2, saem 6, passam 3, 
 | 8 | — | **Multiplica pelo tipo:** contusão ×1, corte +50%, perfuração ×2. | — | — |
 | 9 | Defensor | **Perde os PV.** | — | — |
 | 10 | Defensor | **Consequências**, na ordem: Choque · Prostração e Atordoamento se perdeu mais que HT/2 num golpe · Nocaute se foi golpe na cabeça ou órgão vital · limiares de PV da seção 5.4. | testes de HT | — |
+
+
+## 4.11 Distância: o que o alcance cobra
+
+Esta seção entrou na **v7**, por decisão do Árbitro de 12/09/2026, porque o modo tático precisa de um número por hexágono e o documento ainda não tinha nenhum. Tudo aqui é do livro: a tabela é a **Tabela de Parâmetro Velocidade/Distância e Tamanho** (MB pág. 201), e a parte de magia é do Módulo de Magia (pág. 10 e 11).
+
+### A conta
+
+**Distância em metros + velocidade do alvo em metros por segundo dão um número só.** Arredonda-se **para cima**, para a linha seguinte da tabela, e lê-se o modificador. Alvo parado a 9 m é 9; alvo a 5 m correndo a 7 m/s é 12, e vale a linha dos 13,5 m. Se quem atira também se move, vale a **velocidade relativa**. (pág. 201)
+
+| Distância + velocidade | Modificador |
+| --- | --- |
+| até 2 m | **0** |
+| até 3 m | −1 |
+| até 4,5 m | −2 |
+| até 7 m | −3 |
+| até 9 m | −4 |
+| até 13,5 m | −5 |
+| até 20 m | −6 |
+| até 30 m | −7 |
+| até 45 m | −8 |
+| até 70 m | −9 |
+| até 90 m | −10 |
+| até 135 m | −11 |
+| até 200 m | −12 |
+| até 300 m | −13 |
+| até 450 m | −14 |
+| até 700 m | −15 |
+| até 1.000 m | −16 |
+
+Depois dos 1.000 m a escada continua na tabela do livro, de −17 (1.350 m) a −25 (32 km), e cada multiplicação por dez tira mais 6. **Numa galeria da Garganta quase nada passa dos 30 m**, e é por isso que a faixa de −1 a −7 é a que a mesa usa.
+
+**Tamanho do alvo** entra pela mesma tabela, na coluna de tamanho, com o sinal trocado: maior que gente dá bônus, menor dá redutor. Gente é 2 m e vale 0. (pág. 201)
+
+### O que mais mexe no tiro
+
+- **Sem apontar, arma de longo alcance ataca a −4** (pág. 95), e a manobra **Apontar** (seção 4.3) soma a Precisão da arma no primeiro turno, +1 no segundo, +2 no terceiro, +3 do quarto em diante.
+- **Defender estraga a mira**: perde-se tudo o que foi acumulado apontando. (pág. 95)
+- **Apoio** (besta, parapeito) dá **+1**, se houve tempo de apontar. (pág. 201)
+- **Recarregando, a única defesa é Esquiva** — e esquivar cancela o turno de recarga. (pág. 95)
+- **Figura no caminho: −4 por cada uma.** Alvo agachado, deitado ou só com a cabeça de fora: de −2 a −7, conforme a posição. (pág. 201)
+
+### Os quatro números de cada arma de longo alcance
+
+Toda arma que atira tem quatro parâmetros (MB pág. 115). Eles são o que faltava para arco, dardo e lança arremessada entrarem em mesa:
+
+- **Tiro Rápido (TR).** Se a jogada de ataque **ajustada** sair igual ou menor que o NH e **o resultado alcançar o TR da arma**, atira-se sem apontar e **sem o −4 de tiro rápido** — desde que o alvo já estivesse à vista no começo do turno.
+- **Precisão (Prec).** O bônus de **um turno apontando**. Nunca maior que o seu próprio NH com a arma: NH 8 com arma de Prec +13 rende +8.
+- **Meio Dano (½D).** Distância em metros a partir da qual o dano **cai à metade**, arredondando para baixo. Além do ½D, **a Precisão da arma não vale mais nada**.
+- **Alcance Máximo (Max).** Adiante disso não se atira, e ponto.
+
+| Arma | TR | Prec | ½D | Max |
+| --- | --- | --- | --- | --- |
+| Faca pequena arremessada | 11 | 0 | ST−5 | ST |
+| Pedra | 12 | 0 | ST×2 | ST×3,5 |
+| Lança arremessada | 11 | +2 | ST | ST×1,5 |
+| Arco longo | 15 | +3 | ST×15 | ST×20 |
+| Besta | 12 | +4 | ST×20 | ST×25 |
+
+As distâncias em "ST" são **metros**, calculados com a ST de quem atira — e, **na besta, com a ST da arma**, que é o que permite a um ST 9 usar besta de ST 12. Engatilhar besta de ST igual ou menor que a sua leva **2 segundos**; 1 ou 2 pontos acima, **6 segundos**; 3 ou 4 acima exige pé-de-cabra, **20 segundos**; mais de 4 acima, não se engatilha. Some um turno para pegar o virote e um para encaixá-lo. (MB pág. 114)
+
+**Pedra de até meio quilo** vai a **3,5 × ST** metros e faz **um ponto menos** que o seu GDP. (MB pág. 114)
+
+**Ângulo de visão:** com arma de longo alcance, só se atira nos hexágonos da frente. Visão Periférica amplia o ângulo. (MB pág. 115)
+
+### Magia de projétil: os oito conjuntos do livro
+
+| Mágica | TR | Prec | ½D | Max |
+| --- | --- | --- | --- | --- |
+| Bola de Fogo | 13 | +1 | 25 m | 50 m |
+| Bola de Fogo Explosiva | 13 | +1 | 25 m | 50 m |
+| Adaga de Gelo | 13 | +3 | 30 m | 60 m |
+| Esfera de Gelo | 13 | +2 | 40 m | 80 m |
+| Relâmpago | 13 | +3 | 50 m | 100 m |
+| Poltergeist | 13 | +1 | 20 m | 60 m |
+| Projétil de Pedra | 13 | +2 | 40 m | 80 m |
+| Faca Alada | 13 | +1 | 20 m | 40 m |
+
+(MAGIA pág. 11 e as entradas de cada mágica.)
+
+**Como funciona, em mesa** (MAGIA pág. 11):
+
+1. **Duas rolagens.** A primeira é a da mágica, **sem nenhum redutor de distância**, e diz se o projétil se formou. A segunda é **Arremesso de Mágica** daquela mágica — pré-definido: NH em Arremesso, ou **DX−3** — e diz se acertou, com tamanho, velocidade e distância pela tabela da seção 4.11.
+2. **A energia é a força.** 1 a 3 pontos, **1d de dano por ponto**, e **um segundo de concentração por ponto**: projétil de 1 ponto por turno, ou de 3 pontos a cada três turnos.
+3. **Pode-se segurar o projétil na mão** e então andar ou **Apontar**. É a única mágica que se retém pronta. Enquanto retém, só se pode fazer mágica de **Bloqueio**, a −2 — e falha crítica nela **solta o projétil em quem o fez**.
+4. **Ferido enquanto segura: teste de Vontade** ou perde o controle.
+5. **Bloquear e Esquivar valem; Aparar, não.** A **armadura protege** contra o dano — exceto no Projétil de Maldição, contra o qual nem PD nem RD servem.
+6. **Viaja em linha reta** e atravessa barreira que consiga vencer, seguindo com a energia que sobrou.
+7. A **Bola de Fogo Explosiva** pode ser jogada no chão ou na parede, **com +4 para acertar**, para pegar quem está em volta.
+
+### Magia: os outros alcances
+
+- **Mágica comum que não se pode tocar:** redutor **igual à distância em hexágonos** entre operador e objetivo. Encostado, ele toca: sem redutor. (MAGIA pág. 10)
+- **Sem tocar e sem ver: −5 a mais.** Ver pela magia de outro, ou pelos olhos de outro, conta como ver. (MAGIA pág. 10)
+- **Mágica de área:** o redutor é a distância até o **hexágono mais próximo da área**, não até o centro. Área custa o básico multiplicado pelo raio em hexágonos, e a área não se desloca depois de feita. (MAGIA pág. 10–11)
+- **Mágica de projétil são duas rolagens:** primeiro o teste da mágica, **sem nenhum redutor de distância**; depois **Arremesso de Mágica** (pré-definido: NH em Arremesso, ou DX−3), com tamanho, velocidade e distância pela tabela acima. Bloquear e Esquivar valem; **Aparar, não**. (MAGIA pág. 11)
+- **Mágica de Localizar e parentes** usam a escada própria do Módulo de Magia, que é de quilômetro e não de hexágono: menos de 100 m, 0; até 800 m, −1; até 1,5 km, −2; até 5 km, −3; até 15 km, −4; até 80 km, −5; até 150 km, −6; até 500 km, −7; até 1.500 km, −8, e −1 por cada 1.500 km a mais. **E −1 por cada objeto conhecido que se mande ignorar na busca.** (MAGIA pág. 10)
 
 ---
 

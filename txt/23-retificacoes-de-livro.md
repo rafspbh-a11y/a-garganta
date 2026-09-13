@@ -1,6 +1,6 @@
 titulo: Retificações de livro
-versao: 1
-atualizado: 2026-09-11
+versao: 2
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Retificações de livro
@@ -256,3 +256,179 @@ Quatro correções nesta página, todas contra o livro. **A linha anterior não 
 **As cinco Pendências da §5 foram todas decididas no `25`**, e cada linha agora aponta para a decisão que a fechou.
 
 **O parágrafo de Clima da §2.3 recebeu remissão para o `31`**, que fixou o recorte. Lido sozinho, ele deixava o colégio vazio.
+
+# RETIFICAÇÃO — 13/09/2026, a leva do Compêndio dos dez livros
+
+**A maior leva de correção que este documento já registrou.** Ela nasceu de uma conferência
+mecânica de todo o cânone de regras contra os **dez livros de GURPS que a campanha possui**,
+extraídos verbete a verbete, em dois passes de leitura independentes. **A linha anterior não é
+apagada; esta aponta para ela.**
+
+## 1. Os livros de mesa passaram de três a dez
+
+> **DECISÃO DO ÁRBITRO, 13/09/2026.** Módulo Básico, Magia, Grimório, **Fantasy, Artes
+> Marciais, Psiquismo, Illuminati, Horror, Viagem no Tempo e Império Romano** são livros de
+> mesa. **O filtro:** entra o que funciona **sem o cenário do próprio livro** — regra genérica.
+> Fica fora o que só existe naquele mundo: cidadania romana, filiação a conspiração,
+> equipamento temporal.
+
+**A primeira consequência foi apagar três das quatro perícias da casa.** Elas tinham sido
+criadas em 10/09 porque não havia verbete nos três livros de então. Havia nos outros sete:
+
+| Perícia da casa | O que se descobriu |
+| --- | --- |
+| **Intimidação** | Tem verbete em **quatro** livros — Illuminati p.32, Artes Marciais p.31, Império Romano p.37, Viagem no Tempo p.34 — e é **Mental/Média**, exatamente a dificuldade que o Árbitro tinha escolhido |
+| **Rito Funerário** | É o **Exorcismo** do *Horror* p.43: **Mental/Difícil**, pré-definido IQ−6 ou Teologia−3, **−4 sem Clericato** — e o livro escreve *"o exorcismo **não é uma mágica**. É uma perícia religiosa"*, que é a decisão do Árbitro palavra por palavra. **Volta ao nome do livro** |
+| **Selos e Sigilos** | Vira **Heráldica**, que já estava na lista: Mental/Média, mesmo custo, e o verbete cobre *"projetar e reconhecer"* emblema e divisa. **Nenhuma ficha muda de conta** |
+| **Cartografia** | **A única sem verbete em livro nenhum** dos dez. **Sai.** Levantar mapa passa a exigir **Navegação** para medir e **Artística** para desenhar |
+
+**O mesmo aconteceu com duas desvantagens** que o `29` marcava com ⚠︎ como regra da casa:
+**Segredo** tem verbete em quatro livros, e **Obsessão** em dois — e o teto real da Obsessão é
+**−10**, não os −15 que a casa lhe dava.
+
+## 2. Onde a Relação das Mágicas e o verbete divergem, vence o verbete
+
+> **DECISÃO DO ÁRBITRO, 13/09/2026.** A Tabela de Mágicas foi transcrita da **Relação das
+> Mágicas** (*Magia* p.71-76), e a Relação diverge dos **verbetes** em dezenas de pontos, dentro
+> do mesmo livro. **Vence o verbete**, que é onde a regra está escrita.
+
+Isto **inverte a direção** do precedente de Restaurar (decisão 3 do `25`, *"vale a tabela"*) —
+que continua de pé no caso dele, porque lá o verbete era auto-referente e não podia estar certo.
+
+**Dezenove nomes mudaram**, e nenhum custa ponto a ninguém. A tabela de equivalência está no
+fim do `27`, em *Nomes antigos*. Os que aparecem em documento já publicado:
+
+- **Moldar Ar → Semear Ventos.** E as duas eram a mesma mágica, o que ninguém tinha visto: a
+  Relação a nomeia *Moldar Ar* e manda para a p.30, onde o verbete se chama *Semear Ventos*; o
+  índice do Módulo Básico diz *"Moldar Ar, Mágica, 157"* e a p.157 imprime *Semear Ventos*.
+  **O `31` §7.1 decidiu sobre a premissa de que eram duas** — e escreveu *"ele compra os dois de
+  qualquer maneira"*. Não compra.
+- **Voz Possante → Voz Amplificada**, que é o nome que o `23` §2.5 já mandava usar e que a ficha
+  do Lísias já trazia. **A ficha dele passa a estar certa**, e o elo quebrado de Jato de Som
+  fecha sozinho.
+- **Ruído → Barulho** · **Esconder Trilha → Esconder Rastros** · **Juventude → Rejuvenescer** ·
+  **Envelhecer → Envelhecimento** · **Identificar Pontos Fracos → Detectar Pontos Fracos**, e
+  mais doze.
+
+**Oito pré-requisitos mudaram**, e estes mexem em preço:
+
+| Mágica | A Relação dizia | O verbete diz |
+| --- | --- | --- |
+| **Convocar Elemental** | AM | **AM mais 8 mágicas do elemento** — ou 4 mais outra convocatória. De 1 ponto para 9 |
+| **Teleporte** | Voo do Falcão ou IQ 15+ | Voo do Falcão, **ou IQ 15+ e 1 mágica de 10 escolas diferentes** |
+| **Desintegrar** | AM 2, Fragmentar, Estragar | mais **Terra em Ar, Destruir Ar e Dissipar Água** |
+| **Alterar Feições** | Metamorfose ou Ilusão Perfeita | mais **8 mágicas de Controle do Corpo** |
+| **Pedra para Terra** | Terra para Pedra ou 4 de Terra | Terra para Pedra **ou qualquer outra de Terra** |
+| **Retardo** | AM 3 mais 10 mágicas | AM 3 mais **15** |
+| **Cegar** e **Cavalgar** | trocados entre si | **desfeita a troca** — o erro é do livro, e a Relação imprime as duas células invertidas |
+
+E **Purificar Alimento recuperou o asterisco** que a transcrição perdeu: é Mental/**Muito**
+Difícil. Era a única divergência de asterisco em 429 linhas.
+
+## 3. Trinta e seis elos de pré-requisito que não fechavam
+
+Conferência por programa de todas as 439 linhas do `27`: **todo pré-requisito nominal foi
+casado contra os próprios nomes da tabela.** Trinta e seis não fechavam — e **nenhum era mágica
+faltando**: eram todos erro de nome. OCR (`Voge»` por Vozes, `Busão Simples` por Ilusão
+Simples, `Acalmar Amimais`), singular e plural trocados, e — em três casos — **os dois nomes da
+mesma mágica usados dentro da mesma tabela**.
+
+**Sobraram três**, e os três são expressão de contagem que o programa lê como nome
+(*"5 outras mág. Água, incl. Congelar"*), não elo quebrado.
+
+**Zero pontos mudaram. Zero fichas mudaram. E a tabela fechada voltou a fechar.**
+
+## 4. Conexão é o vigésimo terceiro colégio
+
+O livro imprime **Conexão**, **Reflexo** e **Retardo** sob o cabeçalho *Mágicas de Conexão*
+(*Magia* p.55-56). O `27` as mantinha em Meta-mágicas, e declarava *Conexão* como mágica de
+fronteira **para uma escola que não existia na Garganta**.
+
+> **DECISÃO: Conexão vira colégio, concedido por Thoth e Odin** — as duas Casas que já
+> concediam Meta-mágicas. **Nenhum mago perde acesso e nenhuma ficha muda de conta.**
+
+## 5. O Dever da Marca saiu do limite de desvantagens
+
+*GURPS Magia* p.93, literal: *"Em alguns mundos, todos os magos têm uma Reputação ruim ou
+qualquer outra desvantagem **automática**. Estas desvantagens **não devem ser levadas em conta**
+no cálculo do limite de 40 pontos em desvantagens."*
+
+> **DECISÃO: o Dever da Marca é exatamente isso, e sai do −40.** Continua obrigatório e continua
+> valendo de −5 a −15 conforme a frequência. **Cada personagem da mesa passa a ter até dez
+> pontos a mais de desvantagem para assumir — e escolher qual é do jogador, não do Árbitro.**
+
+## 6. As correções de tabela que mexem em preço
+
+- **Dislexia passa a −15.** O livro dá −5 em cultura analfabeta e −15 em cultura letrada, e as
+  sete cidades são cultura letrada — é o mesmo fato de mundo que fez a Alfabetização custar 0.
+- **Imunidade a doenças volta a se chamar Imunidade**, que é o nome do livro.
+- **Dependente fecha em três degraus:** até 50 é Dependente; **de 51 a 75 é Aliado grátis**; de
+  76 em diante é Aliado pago. As duas tabelas do cânone diziam coisas opostas, e o valor 75
+  exato não pertencia a ninguém no livro.
+- **Bastão é Difícil** e **Pesquisa é Média** — o `02` §4 dizia o contrário nas duas, e cobrava
+  pontos errados. *(A ficha do Lísias já tinha comprado Pesquisa pela leitura certa.)*
+- **Controle da Respiração sai de IQ**, não de HT: o livro escreve a frase de atributo em todas
+  as perícias que mudam, e no verbete dela não escreve.
+- **Liderança tem pré-definido ST−5**, e o livro explica por quê: *"num grupo qualquer, se
+  ninguém tiver treinamento em liderança, o mais forte normalmente a exercerá"*.
+- **Vela vira Remo/Vela** — o verbete é um par, e sem isso ninguém podia comprar remo.
+- **Maça sai:** não há verbete, só entrada de índice apontando para Machado/Maça. Uma ficha
+  podia comprar as duas e pagar duas vezes pela mesma coisa.
+- **Mergulho** e **Rapidez de Recarga saem** por nível tecnológico: a primeira é equipamento de
+  respiração subaquática, a segunda é recarga de arma de fogo.
+- **Artilharia continua fora, por outro motivo.** O verbete abre a lista com **balestra e
+  catapulta**, de nível 2 e 3 — o argumento tecnológico não a sustentava. Fica fora **por
+  decisão de mundo: não há guerra de cerco entre as sete cidades.**
+
+## 7. Dez nomes existem em duas tabelas ao mesmo tempo
+
+**Escalada · Escudo · Exorcismo · História · Vôo** são perícia **e** mágica; **Prontidão · Visão
+Aguçada · Ouvido Aguçado · Visão Noturna** são vantagem **e** mágica; **Fúria** é desvantagem
+**e** mágica. É o problema que produziu a decisão 15 do `25`, **dez vezes maior** — e desta vez
+**as duas pontas são de livro, e nenhuma pode ceder o nome.**
+
+> **DECISÃO: nesses nomes o tipo é obrigatório na linha da ficha, e a homologação recusa a
+> linha sem ele.** `Escalada (perícia)` ou `Escalada (mágica)`. Nenhuma ficha muda de conta.
+> A lista está no `26` §11 e é reconferida a cada versão.
+
+*(A renomeação da §2 já resolveu uma: a mágica Juventude virou Rejuvenescer, e a colisão com a
+desvantagem de idade desapareceu.)*
+
+## 8. Três documentos publicados contradiziam as tabelas fechadas — e dois se diziam corrigidos
+
+Este é o achado que mais custava à mesa, porque **jogador novo lê o documento errado e faz a
+coisa certa**.
+
+- **O `02` §5** vendia nove Dádivas com nomes que o `28` §4 declara inexistentes — Talento
+  Tático, Talento com Armas, Talento Social, Velocidade Superior, Recuperação Rápida, Talento
+  para Idiomas, Vigor, Cura e Fúria. **E a decisão 6 do `25` afirma que essa lista *"já está
+  certa, nada a fazer"*.** A lista que estava certa era a do `17` Parte 3; quem verificou olhou
+  o documento certo e concluiu sobre o errado.
+- **O `17` §6.6** publicava os **vinte nomes de colégio** que o `23` §2.3 diz ter refeito — com
+  os sete nomes errados, faltando Controle do Corpo, Encantamentos e Alimentos, e sem Hefesto
+  no Ar. **A tabela refeita ficou dentro do `23`; o `17` nunca foi tocado.**
+- **O `02` §4** carregava doze nomes aposentados e vendia **Luta Livre**, que não tem verbete
+  em livro nenhum.
+- **O `28` e o `17`** não receberam a retificação de **Memória Eidética** que este documento
+  mandou aplicar em 10/09 — e este documento **afirmava que o `17` tinha recebido**. Quem
+  recebeu foi o `27`.
+
+> **DECISÃO, e ela é de método: uma fonte só.** As quatro tabelas fechadas são a fonte; os
+> outros documentos **apontam para elas em vez de repetir**. As cópias foram substituídas por
+> remissão no `02` §4, no `02` §5 e no `17` §6.6.
+>
+> **E a regra que impede a repetição:** retificação registrada aqui **só fecha quando o
+> documento de origem recebe o texto**. Registrar a correção neste documento não é corrigir o
+> outro — foi o que aconteceu três vezes nesta leva.
+
+## 9. O Apêndice do Módulo Básico não existe no exemplar da campanha
+
+O índice do próprio livro anuncia, **entre as páginas 200 e 201**, um Apêndice com **Novas
+Vantagens (A1), Novas Desvantagens (A7), Novas Perícias (A11) e Outras Regras (A16)**. O PDF da
+campanha tem 263 páginas e vai da 200 direto à 201. **Não é falha de extração: as páginas não
+estão no arquivo.** E o *GURPS Artes Marciais* remete cinco vezes para dentro delas, entre elas
+**`Segredo — v. MB pág. A-7`**, que é onde as Novas Desvantagens começam.
+
+**Consequência de método, e ela vale daqui para a frente:** toda afirmação de *"não existe em
+livro"* feita por esta campanha carrega a ressalva de que há quatro seções de regra do livro
+principal que ela não consegue ler. **É pendência de aquisição, não de leitura.**

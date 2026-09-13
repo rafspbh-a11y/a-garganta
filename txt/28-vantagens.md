@@ -1,6 +1,6 @@
 titulo: Tabela de Vantagens
-versao: 3
-atualizado: 2026-09-11
+versao: 4
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Tabela de Vantagens
@@ -8,6 +8,7 @@ fonte: cânone aberto de A Garganta
 > **Nota.**
 > **Custo e efeito em números, do GURPS Módulo Básico.** Sem descrição literária: o que está aqui é o que muda rolagem. **Quando a vantagem dá bônus em perícia, as perícias estão nomeadas** — é isso que a coluna *Bônus* da ficha (`24`) precisa para ser auditável.
 > **Vantagem fora desta lista pode ser comprada pelo livro.** Se o custo divergir, **vale o livro**, e o Árbitro corrige por linha nova.
+> **Versão 4, de 13/09/2026.** Entraram **Abençoado** e **Familiares**, do *GURPS Magia*. **Imunidade a doenças voltou ao nome do livro, Imunidade.** **Memória Eidética** recebeu, com três dias de atraso, a retificação que o `23` mandou aplicar em 10/09. E a seção 5 traz o **índice inverso de bônus** — dada a perícia, quais vantagens somam nela —, que é o que a Regra de Escrita da Ficha cobra e nunca teve onde consultar.
 > **Versão 3, de 10/09/2026.** Corrigidos: Abascanto (dobra contra área), Empatia com Animais (a lista de perícias é aberta), Força de Vontade (resiste a qualquer mágica resistível, e também a Diplomacia, Lábia e Sex-Appeal), Longevidade (bloqueia os pontos de Idade), Talento para Matemática (a exceção e o +2 de Engenharia), Talento Musical (é bônus de aprendizado) e a manutenção de Status, que é **mensal**, não semanal.
 
 # 1. A lista
@@ -15,11 +16,12 @@ fonte: cânone aberto de A Garganta
 | Vantagem | Custo | Efeito em números |
 | --- | --- | --- |
 | Abascanto (Resistência à Magia) | 2/nível | Nível subtraído do NH de quem lança magia contra você; soma à resistência contra magia bloqueável. **Contra mágica de ÁREA o nível conta em dobro** (*GURPS Magia*, pág. 13): Abascanto 3 vale 6 na resistência a um Sono Coletivo. **Incompatível com Aptidão Mágica** — o portador não lança magia nenhuma, e não pode desligar. **Não ajuda contra mágica não-resistível, nem contra projétil mágico**, arma mágica ou ataque psíquico |
+| **Abençoado** | **10 / 20** | *GURPS Magia* p.85-86. É o **degrau acima da Marca**: o marcado que a Casa distingue. Concede a mágica **Adivinhação** com NH igual ao IQ (IQ+5 no grau de 20) e **+1 de Reputação** entre os seguidores do mesmo Poder e os aliados dele — passando pelos dois cortes de Reputação do `23` §4.1, como toda Reputação. **Exige conduta compatível com o Poder, e perde-se ao desviar** — é a mesma alavanca da Dádiva. **Não exige Clericato.** *(Exceção declarada: a Adivinhação é mágica de Reconhecimento, e esta vantagem a concede a marcado de Casa que não conceda Reconhecimento. É furo ao recorte de colégio, aceito por decisão de 13/09/2026.)* |
 | **Alfabetização** | **0 na Garganta** | O livro cobra 10 em cultura NT≤4, mas **as sete cidades são cultura letrada** por decisão registrada (`23`). Analfabetismo existe como desvantagem de −10 |
 | Aliado | 5+ | Ver §2 |
 | Ambidestria | 10 | Elimina o −4 de DX da mão inábil; luta com qualquer mão, ou com as duas em Ataque Total |
 | Antecedentes Incomuns | 10+ | Benefício especial vindo da história do personagem |
-| **Aptidão Mágica** | **15 / 25 / 35** | 15 no primeiro nível, +10 por nível, **máximo 3**. Aprende magia como se IQ = (IQ + Aptidão) — é o **IQ efetivo** que a ficha declara. Teste contra (IQ+Aptidão) ao ver e ao tocar objeto encantado; 3 ou 4 revela se é salutar ou perigoso. **Sem Aptidão não há teste, e na Garganta não há feitiço** |
+| **Aptidão Mágica** | **15 / 25 / 35** | 15 no primeiro nível, +10 por nível, **máximo 3**. Aprende magia como se IQ = (IQ + Aptidão) — é o **IQ efetivo** que a ficha declara. Teste contra (IQ+Aptidão) ao ver e ao tocar objeto encantado; 3 ou 4 revela se é salutar ou perigoso. **Sem Aptidão não há teste, e na Garganta não há feitiço**. **Cinco limitações podem baixar este preço** — Seletiva ao Sol, à Lua ou às Estrelas, Uma Única Escola e Solitária; estão no `29`, no fim da seção 3, e não se escolhe mais de uma |
 | Atratividade | −20 a 25 | Hediondo −4 de reação (−20) · Feio −2 (−10) · Desagradável −1 só com a própria raça (−5) · Comum 0 · Atraente +1 (5) · Elegante +2/+4 conforme o sexo (15) · Muito Elegante +2/+6 (25) |
 | Bom Senso | 10 | Teste de IQ quando for fazer bobagem; sucesso obriga o Árbitro a avisar antes |
 | Cálculos Instantâneos | 5 | Conta de cabeça, instantânea |
@@ -28,13 +30,14 @@ fonte: cânone aberto de A Garganta
 | **Empatia** | **15** | Teste de IQ ao conhecer alguém: o Árbitro diz o que você **sente**. Serve para sinceridade, não para verdade. **Numa falha, o Árbitro pode mentir.** *Não é mágica* |
 | Empatia com Animais | 5 | +2 de reação de animal selvagem; **+4 em qualquer perícia com animais** — o livro diz "Adestramento de Animais, Cavalgar, Veterinária, etc.", e o **etc. é literal**: entram também **Falcoaria** e **Carregamento**, e qualquer outra que a lista de perícias (`26`) traga como perícia com animal; +3 para achar caça. Não mata animal sem motivo forte |
 | **Facilidade para Línguas** | **2/nível** | **+1 no IQ por nível, só para aprender língua** e para Lingüística. Acumula com Memória Eidética |
+| **Familiares** | **variável** | *GURPS Magia* p.105-106. **Só para quem tem Aptidão Mágica 2 ou 3** — na Garganta, portanto, só para quem tem Casa. Custo montado item a item: a **fonte de ST** custa ⅓ do que custaria elevar a ST do mago até a soma das duas; ver pelos olhos do bicho **+5**; torná-lo inteligente **5** no primeiro nível e **+10** por nível; fazê-lo falar **5 / 10 / 15**. **O mago sofre os ferimentos do familiar: −15.** Nenhum componente conta abaixo de zero. Convocar leva **uma semana de trabalho ininterrupto** e um teste secreto contra **IQ−6**; **falha crítica traz um demônio disfarçado**. **Um por vez.** *(E na Garganta o que atende à convocação **sobe do poço** — o que explica o demônio disfarçado sem inventar nada.)* |
 | **Força de Vontade** | **4/nível** | **+1 por nível em todo teste de Vontade**: medo, dor, **Interrogatório (com ou sem tortura)**, Hipnotismo, e também quando alguém tenta influenciá-lo por **Diplomacia, Lábia ou Sex-Appeal**. E soma à resistência **de qualquer mágica que se possa resistir** — não só as de dominação da mente (MB pág. 20). Não ajuda contra choque de combate |
 | Hierarquia Militar | 5/nível (máx. 8) | 1 nível de Status a cada 3 de Hierarquia. Nível 5–6 exige Liderança 12+; 7+ exige 13+ |
 | **Hipoalgia** (alto limiar de dor) | **10** | **Não fica atordoado nem perde DX no turno seguinte ao ferimento** (exceto golpe na cabeça ou fulminante); +3 para resistir a tortura; +3 em Vontade para ignorar dor |
-| Imunidade a doenças | 10 | Nunca contrai doença ou infecção naturalmente. Exige HT inicial 12+ |
+| **Imunidade** | 10 | Nunca contrai doença ou infecção naturalmente. Exige **HT inicial 12+** — e se a HT cair abaixo disso depois, a imunidade fica. Fungo e vírus contam como doença; parasita maior, como solitária, não. *(Chamava-se "Imunidade a doenças" até 12/09; o nome de livro é **Imunidade**, seco — Básico p.20. A colisão com as mágicas Imunidade ao Fogo, ao Frio, a Relâmpagos, à Dor e a Doenças resolve-se pelo tipo obrigatório na linha, `26` §11.)* |
 | Intuição | 15 | Uma pergunta por problema: o Árbitro rola contra IQ + acertos − erros. 3 ou 4 aponta a melhor opção; falha crítica aponta uma ruim |
 | Longevidade | 5 | Só falha teste de envelhecimento em 17 ou 18. **Quem a tem não recebe ponto nenhum pela desvantagem Idade** — as duas não se somam |
-| **Memória Eidética** | **30 / 60** | 30: **todo ponto em perícia mental conta em dobro** (magia e psiquismo **não**), e teste de IQ para lembrar detalhe. 60: contam em quádruplo |
+| **Memória Eidética** | **30 / 60** | 30: **todo ponto em perícia mental conta em dobro**, e teste de IQ para lembrar detalhe. 60: contam em quádruplo. **O ponto gasto em mágica não dobra — mas a vantagem soma ao IQ com que se aprende mágica: +1 no primeiro nível, +2 no segundo, e para aí.** *(Retificação do `23` de 10/09/2026, que o `27` recebeu na hora e esta tabela só recebeu em 13/09.)* |
 | **Noção do Perigo** | **15** | Teste secreto de IQ diante de emboscada ou desastre iminente; sucesso avisa que algo está errado; 3 ou 4 dá detalhes |
 | Noção Exata do Tempo | 5 | Sabe a hora exata e mede qualquer intervalo; acorda na hora marcada |
 | Olfato/Paladar Apurado | 2/nível | +1 por nível em Olfato e Paladar — veneno na comida antes do segundo gole |
@@ -186,3 +189,49 @@ Estiveram em uso no cânone e foram substituídas. **Não entram em ficha nova.*
 | Velocidade Superior · Recuperação Rápida | não existem |
 | Vigor | **Hipoalgia**, 10 |
 | Voz | **Voz Melodiosa**, 10 |
+
+# 5. Índice inverso de bônus — dada a perícia, quem soma nela
+
+A Regra de Escrita da Ficha (`24`) exige que todo bônus venha **com a fonte nomeada**, e que a
+homologação confira se o bônus existe. Até 13/09/2026 não havia onde conferir: era preciso ler
+as vantagens uma a uma e montar o índice de cabeça. Aqui está montado.
+
+**E há uma armadilha que este índice resolve:** *sete destes bônus estão impressos **só no
+verbete da perícia**, e não no da vantagem.* Quem lê o capítulo de vantagens do livro não os vê.
+Estão marcados com **▲**.
+
+| Perícia | Vantagem que soma | Bônus | Onde o livro imprime |
+| --- | --- | --- | --- |
+| Trovador | Voz Melodiosa | +2 | Básico p.23 e p.47 |
+| Trovador | **Carisma** ▲ | + o nível | Básico **p.47**, só no verbete da perícia |
+| Liderança | **Carisma** ▲ | + o nível | Básico **p.63**, só no verbete da perícia |
+| Diplomacia | Voz Melodiosa | +2 | Básico p.23 e p.63 |
+| Atuação · Trato Social | Voz Melodiosa | +2 | Básico p.23 |
+| Política | Voz Melodiosa | +2 | Básico p.23 e p.64 |
+| Sex-Appeal | Voz Melodiosa | +2 | Básico p.23 e p.64 |
+| Canto | Voz Melodiosa | +2 | Básico p.23 e p.48 |
+| **Detecção de Mentiras** | **Empatia** ▲ | **+4** | Básico **p.65**, só no verbete da perícia |
+| **Psicologia** | **Empatia** ▲ | +3, com o paciente presente | Básico **p.62**, só no verbete da perícia |
+| **Contabilidade** | **Talento para Matemática** ▲ | **+5** | Básico **p.58** — e o verbete da vantagem, na p.22, diz **+3**. **O livro se contradiz consigo mesmo**; até haver decisão, vale o +3 da vantagem, e a linha é Pendência |
+| Perícia matemática, exceto Operação de Computadores | Talento para Matemática | +3 | Básico p.22 |
+| Escalada | Ultra-flexibilidade das Juntas | +3 | Básico p.20 e p.57 |
+| **Fuga** | **Ultra-flexibilidade das Juntas** ▲ | **+3** | Básico **p.65**, só no verbete da perícia |
+| Navegação | Senso de Direção | +3 | Básico p.19 e p.57 |
+| Percepção do Corpo | Senso de Direção | +3 | Magia p.94 |
+| **Trato Social** | **Status relativo** ▲ | **+2** se o seu Status é maior que o do NPC, **−2** se é menor | Básico **p.64**, só no verbete da perícia |
+| Trato Social | Status alto | pré-definido IQ+2 na própria cultura | Básico p.18 |
+| Sacar Rápido | Reflexos em Combate | +1 | Básico p.20 e p.50 |
+| Adestramento de Animais · Cavalgar · Veterinária · Falcoaria · Carregamento | Empatia com Animais | +4 | Básico p.19, e a lista é aberta |
+| Lingüística, e toda língua aprendida | Facilidade para Línguas | + o nível no IQ | Básico p.20 |
+| Canto · Instrumento Musical | Talento Musical | + o nível **no IQ de aprendizado** | Básico p.22 |
+| Interrogatório · Hipnotismo | Força de Vontade | + o nível | Básico p.23 |
+| **Taumatologia** | **Aptidão Mágica** | **soma ao IQ no aprendizado da perícia**, como se faz para as mágicas | Grimório p.7 |
+| Lingüística | Memória Eidética | acumula com Facilidade para Línguas | Básico p.20 |
+
+**E três bônus que jogam contra você**, e que a ficha também precisa registrar:
+
+| Perícia | De quem vem | Efeito |
+| --- | --- | --- |
+| Prestidigitação | **Visão Aguçada do alvo** | **−3** contra quem a tenha, ou contra quem conheça Prestidigitação (Básico p.67) |
+| Punga | **Prontidão da vítima** | soma à IQ dela na disputa (Básico p.67) |
+| Venefício | Olfato/Paladar Apurado de quem prova | ajuda a detectar, sem número declarado (Básico p.67) |

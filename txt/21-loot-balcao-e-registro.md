@@ -1,6 +1,6 @@
 titulo: Loot, Balcão e Registro
 versao: 3
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Loot, Balcão e Registro

@@ -1,0 +1,810 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Os Povos que Subiram — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="32-os-povos-que-subiram.html" class="atual">Os Povos que Subiram</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>Os Povos que Subiram</h1><div class="meta">versão 1 · atualizado em 2026-09-13 · Seu personagem</div></div>
+<blockquote>
+<p><strong>Atenção.</strong>
+<strong>Decidido pelo Árbitro em 12 e 13/09/2026.</strong> Este documento <strong>fecha</strong> a promessa do <code>02</code> §7 e
+passa a ser a fonte das seis raças jogáveis e do psí. Onde divergir do <code>02</code> §7, <strong>vale este
+documento</strong>.
+<strong>Os números são do <em>GURPS Magia</em> p.97-100 e do <em>GURPS Psiquismo</em>.</strong> Onde o livro cala, a linha
+vai marcada <strong>⟨proposta⟩</strong> e <strong>não vale até o Árbitro confirmar</strong> — a lista está no fim.</p>
+</blockquote>
+<h1>0 · As três regras que valem para as seis</h1>
+<p><strong>1. Modificador racial de atributo muda o nível, não o preço.</strong> Um Anão que não gasta ponto em
+ST fica com 12 (10 da tabela + 2 do bônus). Se pagar 10 pontos, fica com 13.</p>
+<p><strong>2. Desvantagem racial não ocupa o −40, e não rende ponto.</strong> Já está paga dentro do preço da
+raça. O −40 do <code>29</code> §1 continua inteiro para o que o jogador escolher, e o Dever da Marca
+continua fora dele. <strong>Recompra de desvantagem racial na criação é possível, com aprovação</strong> —
+há Minotauro sem Sanguinolência, e custa pontos.</p>
+<p><strong>3. Peculiaridade racial é grátis e não gasta as cinco.</strong> ⟨proposta⟩ As raciais já estão pagas
+dentro do preço da raça; senão o Anão, que tem quatro, nasceria com uma só de graça.</p>
+<h1>1 · Anões — 30 pontos</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Atributos</strong></td>
+<td>ST <strong>+2</strong> · Fadiga <strong>+2</strong></td>
+</tr>
+<tr>
+<td><strong>Vantagens raciais</strong></td>
+<td><strong>RD 1</strong> natural · <strong>Longevidade</strong> — e os testes de idade só começam aos <strong>100 anos</strong>, com <strong>metade da frequência</strong> humana · <strong>+3</strong> em qualquer perícia artesanal que aprenda · <strong>Machado/Maça</strong> com NH igual à <strong>DX</strong>, sem pagar ponto</td>
+</tr>
+<tr>
+<td><strong>Desvantagens raciais</strong></td>
+<td><strong>Cobiça</strong> (−15) e <strong>Avareza</strong> (−10), <em>como raça — indivíduo pode não as ter, e aí é recompra</em> · <strong>Deslocamento −1</strong> · <strong>−2 no NH</strong> com toda arma de projétil</td>
+</tr>
+<tr>
+<td><strong>Peculiaridades raciais</strong></td>
+<td>Não Confiam em Elfos · Preferem Lugares Fechados · Nunca Fazem a Barba · <strong>Intolerantes com os Hobgoblins</strong></td>
+</tr>
+<tr>
+<td><strong>Reações</strong></td>
+<td><strong>−2</strong> diante de Elfos · <strong>−3</strong> diante de Hobgoblins · <strong>nunca melhor que Fraca</strong> diante de Dragões · <strong>neutra</strong> diante de humanos · <strong>+1 ou mais</strong> diante de artesão, ou de proposta que desafie o ofício dele</td>
+</tr>
+<tr>
+<td><strong>Carga</strong></td>
+<td>Escala própria: <strong>Leve 5×ST · Média 10×ST · Pesada 20×ST · Muito Pesada 30×ST</strong></td>
+</tr>
+<tr>
+<td><strong>Limites</strong></td>
+<td><strong>Nenhum Anão é introvertido:</strong> Timidez, em qualquer grau, é proibida</td>
+</tr>
+</tbody>
+</table>
+<p><strong>E isto importa desde que o Deslocamento passou a descontar a Carga.</strong> Um Anão de ST 12 só sai
+da Carga Leve acima de <strong>60 kg</strong>; um humano de ST 12 sai acima de 24. Na prática o <strong>−1 racial
+de Deslocamento é a única perda que ele sofre</strong>, e o companheiro humano perde −1, −2 ou −3 na
+mesma descida. <strong>O Anão é o carregador da esquadra, e é isso que o torna caro de substituir.</strong></p>
+<p><strong>Origem.</strong> Os Anões não subiram: <strong>já estavam na boca quando as sete chegaram</strong>. Foram eles que
+descobriram que a rocha abaixo do andar 3 aceita escoramento, e a Guilda comprou a técnica uma
+vez, há pouco mais de trezentos anos, num pagamento que nenhuma das partes publicou. As galerias
+que hoje fazem os andares 1 a 9 serem Ancorados são desenho anão executado por pedreiro humano,
+e os manuais da Guilda ensinam o método sem nome de autor. A data da subida é a única coisa que
+ninguém prova: eles dizem que é anterior ao tratado, Ámenti responde que arquivo que não existe
+não é prova de nada, e a discussão não anda porque <strong>as duas partes estão certas</strong>.</p>
+<p><strong>Fraqueza e consequência.</strong> Venderam a técnica <strong>uma vez</strong> — a riqueza do povo está num ofício
+que a Guilda hoje reproduz sem pagar nada, e a Cobiça racial garante que isso doa todo dia.
+<strong>Registra Gapheim</strong>, a única cidade cujo direito aceita <strong>juramento com testemunhas</strong> no lugar
+de registro de nascimento. <strong>Marca a Casa de Tyr</strong> — e aí está a armadilha: Tyr concede Hipoalgia
+e Proteção e Aviso. <strong>Terra</strong>, o colégio do ofício deles, é de Hefesto, Ogum e Geb — <strong>nunca de
+Gapheim</strong>. Hefesto oferece a Marca a qualquer Anão que atravesse a Coroa, e em Gapheim quem
+aceita é tratado como quem vendeu o juramento.</p>
+<h1>2 · Elfos — 40 pontos</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Atributos</strong></td>
+<td>IQ <strong>+1</strong> · DX <strong>+1</strong> · ST <strong>−1</strong></td>
+</tr>
+<tr>
+<td><strong>Vantagens raciais</strong></td>
+<td><strong>Carisma 1</strong> · <strong>Atraente +1</strong> · <strong>Reflexos em Combate</strong> · <strong>Aptidão Mágica 1</strong> — <em>ver a trava</em> · <strong>Talento Musical 2</strong> (bônus <strong>de aprendizado</strong>) · <strong>+1 no NH</strong> de Trovador e Trato Social, se as estudar · <strong>Longevidade</strong> ⟨proposta⟩</td>
+</tr>
+<tr>
+<td><strong>Desvantagens raciais</strong></td>
+<td><strong>Senso de Dever (toda a natureza) −15</strong> · <strong>Código de Honra (cavalheiros) −10</strong></td>
+</tr>
+<tr>
+<td><strong>Reações</strong></td>
+<td><strong>−1</strong> diante de Anões · <strong>−2 diante de Elfos Negros</strong> ⟨proposta⟩ · nos demais casos <strong>pesa o comportamento, não a raça</strong></td>
+</tr>
+<tr>
+<td><strong>Limites</strong></td>
+<td>Nenhum Elfo permite de bom grado dano desnecessário a árvore, animal ou pessoa</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h2>A trava do colégio — e é o que faz o Elfo caber no mundo</h2>
+<p><strong>A Aptidão Mágica racial poupa os 15 pontos. Ela não abre colégio nenhum.</strong></p>
+<p>O <code>17</code> §6.6 continua inteiro: <strong>você só aprende feitiço do colégio que é domínio do seu deus</strong>,
+e quem concede é a Casa. Um Elfo <strong>não marcado</strong> tem Aptidão 1, faz o teste ao ver e ao tocar
+objeto encantado, e <strong>não aprende um único feitiço</strong>. É um mago barato, não um mago livre.</p>
+<p><strong>A diferença com o humano é uma só, e é grande:</strong> o humano excomungado perde a Aptidão junto
+com o colégio. O Elfo excomungado <strong>perde o colégio e fica com a Aptidão</strong>. A alavanca da Casa
+não some — encurta.</p>
+</blockquote>
+<p><strong>Origem.</strong> Subiram <strong>dentro da memória viva da Guilda</strong>. O primeiro registro élfico do Limiar é
+mais novo que a maioria dos escrivães do anel interno, e tem data, hora e assinatura. O que não
+tem é a linha de como ele chegou à rampa: onde deveria estar a esquadra que o trouxe está a
+fórmula <em>"apresentado ao balcão"</em>, que a Guilda usa quando não vai perguntar. Chegam de um em
+um, em anos diferentes, e nenhum contradiz o outro sobre o que há lá embaixo — o que é, por si,
+a informação mais cara do Limiar e a menos aproveitável.</p>
+<p><strong>Fraqueza e consequência.</strong> <strong>Não envelhecem, e por isso não conseguem provar há quanto tempo
+estão aqui.</strong> Testemunho de Elfo sobre andar profundo é impossível de datar: Ámenti o recusa
+como inadmissível, Amaravati o compra pelo dobro, e as duas têm razão pelos próprios critérios.
+<strong>Registra Amaravati</strong>, a doze dias de estrada. <strong>Marca a Casa de Sarasvati</strong>; as outras seis
+recusam, e o motivo é sóbrio: marcar um Elfo é conceder colégio a alguém cuja Aptidão a Casa não
+deu e não pode retirar. <strong>Cada Elfo marcado é a prova ambulante de que o monopólio das Casas é
+política, e não lei da natureza</strong> — e o papel dele fica a doze dias de distância.</p>
+<h1>3 · Meio-Elfos — 30 pontos</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Atributos</strong></td>
+<td>IQ <strong>+1</strong></td>
+</tr>
+<tr>
+<td><strong>Vantagens raciais</strong></td>
+<td><strong>Aptidão Mágica 1</strong> ⟨proposta⟩ · <strong>Longevidade</strong></td>
+</tr>
+<tr>
+<td><strong>Reações</strong></td>
+<td><strong>Nenhum modificador.</strong> É o traço definidor: <strong>passa por humano</strong></td>
+</tr>
+<tr>
+<td><strong>Limites</strong></td>
+<td>A trava do colégio do §2 vale igual. <strong>A declaração de origem é obrigatória</strong> no registro da Guilda e nas sete cidades</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A conta que sustenta o nível 1.</strong> O livro diz "Aptidão Mágica" e <strong>não diz o nível</strong>. A
+aritmética fecha exata: IQ+1 = 10 · Aptidão 1 = 15 · Longevidade = 5 → <strong>30</strong>. Mesmo assim fica
+⟨proposta⟩, porque o livro avisa que custo racial ≠ custo individual.</p>
+<p><strong>Origem.</strong> <strong>Não subiu: nasceu aqui.</strong> É a segunda geração — filho de um dos Elfos que chegaram
+ao balcão com a linha de origem em branco, e de alguém das sete cidades. É o único dos seis com
+<strong>certidão de nascimento numa cidade humana</strong>, e o único cuja origem de poço está a <strong>uma
+geração</strong> de distância em vez de estar no próprio corpo. O mais velho ainda não chegou à
+meia-idade.</p>
+<p><strong>Fraqueza e consequência.</strong> <strong>É o único que pode esconder, e esconder é crime de registro.</strong> A
+declaração de ascendência é obrigatória, e omiti-la é o mesmo crime que registrar rank falso. O
+jogador escolhe, e os dois caminhos custam:</p>
+<table>
+<thead>
+<tr>
+<th>Caminho</th>
+<th>Como entra na ficha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Declarou</strong></td>
+<td><strong>Estigma Social (Minoria) −10</strong>: −2 de reação fora, +2 dentro</td>
+</tr>
+<tr>
+<td><strong>Escondeu</strong></td>
+<td><strong>Segredo −20</strong> ⟨proposta⟩: o vazamento custa registro e banimento</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Registra a cidade onde nasceu — e a que importa é Fengdu</strong>, que mantém o único cadastro
+cruzado de <strong>pessoas vivas</strong> das sete e vende consulta. Um Meio-Elfo escondido em Ônfalos está
+seguro até alguém pagar a Fengdu para olhar. Isso dá ao Segredo dele <strong>um inimigo com nome,
+endereço e tabela de preços</strong>. E a Casa que o marcou <strong>sabe</strong> — a Marca aparece nas costas e quem
+marca lê o que está marcando. <strong>A única instituição de quem ele não esconde é aquela a quem deve
+o Dever da Marca.</strong></p>
+<h1>4 · Minotauros — 75 pontos</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Atributos</strong></td>
+<td>ST <strong>+3</strong> · DX <strong>+1</strong> · HT <strong>+3</strong> · IQ <strong>−2</strong></td>
+</tr>
+<tr>
+<td><strong>Vantagens raciais</strong></td>
+<td><strong>RD 3</strong> natural, <strong>mais 2 na cabeça</strong> · <strong>Abascanto 2</strong> · <strong>Visão Periférica</strong> · <strong>Senso de Direção</strong> · <strong>Briga</strong> com NH igual à DX, sem pagar ponto · <strong>Chifres:</strong> cada um causa dano por <strong>perfuração</strong> compatível com a ST; a cabeçada roda como <strong>encontrão</strong>, e quem falha o teste de Escudo <strong>sofre o dano dos dois</strong></td>
+</tr>
+<tr>
+<td><strong>Desvantagens raciais</strong></td>
+<td><strong>Hediondo −20</strong> · <strong>Fúria −15</strong> · <strong>Sanguinolência −10</strong> · <strong>Intolerância −10</strong> · <strong>Hábito Detestável racial −15</strong>, <em>reescrito</em></td>
+</tr>
+<tr>
+<td><strong>Reações</strong></td>
+<td><strong>−3</strong> das outras raças diante dele · <strong>−3</strong> dele diante das outras</td>
+</tr>
+<tr>
+<td><strong>Limites</strong></td>
+<td><strong>Abascanto é incompatível com Aptidão Mágica: nenhum Minotauro lança feitiço, nunca.</strong> E a Casa que o marca não concede colégio nenhum — as duas coisas dizem o mesmo por caminhos diferentes</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h2>O tabu</h2>
+<p><strong>Sai</strong> <em>comer seres pensantes</em>. <strong>Entra:</strong></p>
+<p><strong>NÃO RECUA DE UM CAMINHO COMEÇADO.</strong> Ele não volta atrás num corredor que começou a percorrer
+— <strong>nem para fugir, nem para esperar, nem quando o grupo manda.</strong> Mesmo valor, <strong>−15</strong>.</p>
+<p><strong>Na mesa:</strong> entrou no corredor, o caminho se resolve — ele sai pela outra ponta, ou não sai.
+Dar meia-volta é <strong>teste de Vontade</strong>, e o <code>29</code> §1 vale: <strong>14 ou mais falha sempre</strong>. "Caminho
+começado" é o corredor, a galeria, a escada, o vão — <strong>não</strong> é a descida inteira, e não é um
+contrato. <strong>O Mestre de Cena declara qual é o caminho antes do primeiro passo.</strong></p>
+</blockquote>
+<p><strong>Origem.</strong> A origem e o tabu são <strong>o mesmo fato</strong>. Não subiram em grupo, não foram trazidos e
+não negociaram passagem: cada um entrou num corredor que subia e <strong>andou até o corredor acabar</strong>.
+Os que acertaram saíram na Coroa; os que erraram continuam andando. Não há como pedir a um deles
+que refaça o caminho de volta — <strong>e é exatamente por isso que nenhuma rota deles foi mapeada.</strong></p>
+<p><strong>Fraqueza e consequência.</strong> O <strong>Senso de Direção</strong> dele, num poço sem fundo, é a vantagem de 5
+pontos mais cara do mundo — e <strong>não se aluga</strong>, porque alugar um guia pressupõe que o guia volte.
+É o melhor batedor das sete cidades e <strong>não pode bater</strong>. <strong>Registra Tulán</strong>, que registra o que
+consegue <strong>datar</strong>, e a chegada de um Minotauro tem hora exata. <strong>Marca Huitzilopochtli</strong> — o sol
+que atravessa a noite lutando e nasce inteiro, que é a teologia do que não volta atrás. <strong>Ônfalos
+recusa o registro e recusa a entrada na própria embaixada</strong>, porque o mito fundador dela tem um
+minotauro num labirinto e um herói que o mata. Com três das cinco fichas ativas saindo de
+Ônfalos, <strong>isso não é cor local: é atrito de mesa.</strong></p>
+<h1>5 · Goblins — 5 pontos</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Atributos</strong></td>
+<td>ST <strong>−2</strong> · DX <strong>+1</strong> · IQ <strong>+1</strong></td>
+</tr>
+<tr>
+<td><strong>Vantagens raciais</strong></td>
+<td><strong>Visão Noturna</strong></td>
+</tr>
+<tr>
+<td><strong>Desvantagens raciais</strong></td>
+<td><strong>Impulsividade −10</strong></td>
+</tr>
+<tr>
+<td><strong>Reações</strong></td>
+<td><strong>+1</strong> diante de quem conheça magia — mais, diante de mago poderoso · <strong>−1</strong> diante de qualquer pessoa <strong>ou plano</strong> cauteloso</td>
+</tr>
+<tr>
+<td><strong>Limites</strong></td>
+<td><strong>Sem raças amigas ou inimigas.</strong> Nenhum modificador racial de reação, nos dois sentidos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A piada estrutural, e ela custa dinheiro.</strong> O Goblin é o melhor negociador da mesa por atributo
+e <strong>carrega Impulsividade</strong>. O corretor que não consegue esperar <strong>paga ágio em toda negociação
+que dependesse de esperar</strong>, e o −1 diante de plano cauteloso significa que ele desgosta, na cara
+do cliente, exatamente da proposta prudente que fecharia o negócio. <strong>Quem joga Goblin joga um
+negociador que perde dinheiro por temperamento</strong> — e é por isso que ele custa 5 e não 25.</p>
+<p><strong>Origem.</strong> É o único que subiu <strong>em número</strong>, e ao longo de tempo suficiente para que ninguém se
+lembre do primeiro. Não há data, não há assento fundador, não há esquadra que os tenha trazido.
+Há, no anel externo do Limiar, entre os currais e os armazéns, umas quantas ruas onde eles moram
+e onde moravam antes de qualquer escrivão vivo começar a trabalhar. <strong>São o povo do Limiar, e são
+o único povo que o Limiar tem.</strong> Fazem o que o lugar precisava e nenhuma das sete queria fazer:
+<strong>atravessar mercadoria, informação e contrato entre embaixadas que não se falam</strong> — mais o
+trecho do aqueduto que corre pela Coroa, que eles mantêm há gerações porque <strong>o Limiar não tem
+poço próprio</strong>.</p>
+<p><strong>Fraqueza e consequência.</strong> <strong>O Limiar não tem soberania</strong>, e um povo de lá não tem cidadania,
+tribunal, herança nem testemunho. <strong>Registra a Guilda, e só a Guilda</strong> — o Goblin tem <strong>rank e não
+tem cidade</strong>. <strong>Marcam as Casas de encruzilhada</strong> — Hermes, Thoth, Heimdall, Exu — e marcam <strong>na
+embaixada do Limiar</strong>, sendo este o único caso em que a Marca vem <strong>sem cidade junto</strong>. E aqui a
+coisa fica perigosa: <strong>as sete leem um povo registrado só pela Guilda e marcado só por deus de
+encruzilhada como a Guilda criando gente sua</strong>, e a Guilda não pode negar sem abrir mão do
+registro. A <strong>mão que eles têm no aqueduto</strong> é a razão pela qual nenhuma tentativa de reclamá-los
+foi até o fim.</p>
+<h1>6 · Transmutantes — 10 a 40 por forma</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Custo</strong></td>
+<td>Homem-Cobra <strong>10</strong> · Lobo <strong>15</strong> · Urso <strong>15</strong> · Águia <strong>15</strong> · Javali <strong>25</strong> · Tigre <strong>40</strong> · <strong>+5</strong> para se metamorfosear fora da lua cheia</td>
+</tr>
+<tr>
+<td><strong>Atributos</strong></td>
+<td>Na forma humana, normais. Na animal, a tabela abaixo. <strong>A IQ nunca muda.</strong> DX 14+ ganha +1 na forma animal; DX 9 ou menos perde 1</td>
+</tr>
+<tr>
+<td><strong>Vantagens raciais</strong></td>
+<td><strong>Regeneração:</strong> 1 PV a cada <strong>12 horas</strong>, em qualquer forma, além de cuidado médico. Membro incapacitado se regenera; <strong>membro perdido, não</strong></td>
+</tr>
+<tr>
+<td><strong>Desvantagens raciais</strong></td>
+<td><strong>Prata:</strong> manuseia sem dano, mas <strong>a presença de prata anula a Regeneração</strong> e ele sofre <strong>o dobro do dano</strong> de arma de prata · <strong>Mudança automática</strong> uma noite por mês, na lua cheia · <strong>Homem-Urso: Fúria (−15) automática, sem receber ponto por ela</strong></td>
+</tr>
+<tr>
+<td><strong>Limites</strong></td>
+<td>A mudança leva <strong>3 segundos</strong>, e neles <strong>não faz nada e não tem defesa ativa</strong> · Na forma animal a DX só serve para <strong>lutar e funções animais</strong> · Entende a língua humana, <strong>não fala</strong> · <strong>Ferimento sofrido na forma animal passa para a humana</strong> · Morto ou inconsciente, <strong>reverte</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Forma</th>
+<th>ST</th>
+<th>DX</th>
+<th>HT</th>
+<th>RD</th>
+<th>Vel.</th>
+<th>Ataque</th>
+<th>Tamanho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lobo</strong></td>
+<td>natural</td>
+<td>14</td>
+<td>+2</td>
+<td>3</td>
+<td>9</td>
+<td>mordida, corte</td>
+<td>1 hex</td>
+</tr>
+<tr>
+<td><strong>Urso</strong></td>
+<td>dobrada</td>
+<td>13</td>
+<td>+2</td>
+<td>4</td>
+<td>8</td>
+<td>mordida (corte) ou garra (contusão)</td>
+<td>2 hexes</td>
+</tr>
+<tr>
+<td><strong>Javali</strong></td>
+<td>dobrada</td>
+<td>14</td>
+<td>+2</td>
+<td>3</td>
+<td>8</td>
+<td>defesas (corte por ST) ou pisoteio (1D−1)</td>
+<td>2 hexes</td>
+</tr>
+<tr>
+<td><strong>Tigre</strong></td>
+<td>triplicada</td>
+<td>14</td>
+<td>+2</td>
+<td>3</td>
+<td>10</td>
+<td>mordida e garra (corte por ST), de perto</td>
+<td>2 hexes</td>
+</tr>
+<tr>
+<td><strong>Águia</strong></td>
+<td>normal</td>
+<td>13</td>
+<td>normal</td>
+<td>3</td>
+<td>20</td>
+<td>garras (perfuração por ST); envergadura 3,65 m</td>
+<td>1 hex</td>
+</tr>
+<tr>
+<td><strong>Cobra</strong></td>
+<td>dobrada</td>
+<td>13</td>
+<td>dobrada</td>
+<td>3</td>
+<td>4</td>
+<td>esmagamento; não venenosa</td>
+<td>4 hexes</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h2>A trava do poço — a lua</h2>
+<p><strong>No fundo do poço não há lua.</strong></p>
+<p><strong>Quem não pagou os 5 pontos extras não se transforma lá embaixo. Ponto.</strong> Abaixo da rampa, o
+Transmutante do pacote básico é <strong>um humano com Regeneração e alergia a prata</strong> — e é só isso
+que a esquadra leva.</p>
+<p><strong>O gatilho é o céu aberto, não a data.</strong> Lua cheia que passa com ele sob a rocha <strong>não dispara
+nada</strong>. O Mestre de Cena nunca rola transformação de lua abaixo do andar 1.</p>
+<p><strong>⟨proposta — a lua cobrada⟩</strong> A lua perdida <strong>fica devendo</strong>: na <strong>primeira noite de céu
+aberto</strong> depois da descida, a mudança acontece <strong>fora de hora e sem escolha</strong>, com <strong>−2 na
+Vontade</strong>. Consequência: <strong>ele se transforma na volta, no anel interno do Limiar, com a Guilda
+por perto.</strong> Sem isso, os 5 pontos extras deixam de ser escolha e viram compra obrigatória.</p>
+</blockquote>
+<p><strong>Origem.</strong> É o único dos seis que <strong>não é um povo</strong>, e por isso a origem dele é a única que
+ninguém fecha: <strong>não se sabe se nasceu assim lá embaixo ou se subiu como outra coisa.</strong> A lenda do
+contágio pela mordida circula no Limiar, e <strong>a campanha não responde se ela é verdade</strong>. O que
+existe de fato é uma coluna de assentos da Guilda em que o aventureiro desceu, voltou, e voltou
+outro; e uma segunda coluna, mais curta, de gente que desceu e não voltou, cujos parentes olham a
+primeira com atenção.</p>
+<p><strong>Fraqueza e consequência.</strong> Além da lua — que o torna, no lugar onde a campanha acontece, <strong>o
+mais caro dos seis pelo que menos entrega</strong> —, a prata é comprável: 5× o preço do aço. <strong>Registra
+Ilê Ifé</strong>, por doutrina escrita: <strong>uma pessoa, um assento, uma forma de direito</strong>. <strong>Marca a Casa
+de Oxóssi.</strong> As outras seis não aceitam a doutrina, e <strong>Ámenti é onde isso vira caso</strong>: um
+Tribunal que vende intercessão precisa saber <strong>por quem</strong> está intercedendo. Se o homem e o bicho
+são duas pessoas, o assento de óbito cobre uma só. <strong>Nenhuma das duas cidades vai ceder, porque
+ceder custa dinheiro às duas</strong> — e o Transmutante fica no meio, vivo, enquanto elas decidem
+quantos ele é.</p>
+<h1>7 · A regra de acesso</h1>
+<p><strong>A porta é uma só, e não se compra: perde-se.</strong> Um jogador que perde um personagem de <strong>rank B
+ou superior</strong> desbloqueia a opção não-humana <strong>para ele</strong>, permanentemente. Não há outro caminho.</p>
+<p><strong>O orçamento é o de substituição do <code>02</code> §9, e o custo da raça sai de dentro dele:</strong> média dos
+Pontos totais de todos os personagens com Estado diferente de Morto, arredondada para baixo,
+menos 10%, <strong>piso de 150</strong>. É a mesa inteira, e o morto <strong>não entra</strong> na média.</p>
+<p><strong>A conta, hoje, com as sete fichas vivas:</strong> a média dá <strong>152</strong>; menos 10% dá 136; <strong>o piso
+manda, e o orçamento é 150.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Média dos vivos</th>
+<th>Orçamento</th>
+<th>Goblin 5</th>
+<th>Transm. 10–40</th>
+<th>Anão / Meio-Elfo 30</th>
+<th>Elfo 40</th>
+<th>Minotauro 75</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>152 (hoje)</strong></td>
+<td><strong>150</strong></td>
+<td>145</td>
+<td>140–110</td>
+<td>120</td>
+<td><strong>110</strong></td>
+<td><strong>75</strong></td>
+</tr>
+<tr>
+<td>170</td>
+<td>153</td>
+<td>148</td>
+<td>143–113</td>
+<td>123</td>
+<td>113</td>
+<td>78</td>
+</tr>
+<tr>
+<td>190</td>
+<td>171</td>
+<td>166</td>
+<td>161–131</td>
+<td>141</td>
+<td>131</td>
+<td>96</td>
+</tr>
+<tr>
+<td>235</td>
+<td>211</td>
+<td>206</td>
+<td>201–171</td>
+<td>181</td>
+<td>171</td>
+<td>136</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A porta se abre sozinha, no ritmo certo.</strong> O orçamento só sai do piso quando a média dos vivos
+passa de <strong>166</strong>. Quer dizer: <strong>a raça cara não é liberada pelo rank de quem morreu — é liberada
+pelo crescimento da mesa inteira.</strong> É a Carta, artigo 1, funcionando sem regra nova.</p>
+<p><strong>Minotauro no piso é 75 pontos de resto, e o jogador precisa saber antes.</strong> Os 75 da raça já
+compram ST+3, DX+1, HT+3 e RD 3. O que sobra são <strong>75 pontos com IQ 8</strong> — dá para o corpo, não
+dá para a perícia. Enquanto a média da mesa estiver abaixo de ~190, a orientação honesta na
+Sessão Zero é: <strong>Goblin, Anão, Meio-Elfo e Transmutante barato cabem; Elfo aperta; Minotauro
+espera.</strong></p>
+<p><strong>O resto do procedimento não muda:</strong> background escrito, aprovação do Árbitro antes da primeira
+sessão, e entrada em andar Ancorado com rota conhecida e contrato de contenção.</p>
+<h1>8 · A regra do psí</h1>
+<blockquote>
+<p><strong>O psí não é racial. É marca de quem veio dos andares fundos, e entra por background aprovado
+pelo Árbitro.</strong> Nenhuma das seis raças dá psí, e nenhuma o proíbe.</p>
+</blockquote>
+<h2>8.1 Quem pode</h2>
+<p><strong>A porta é a mesma do §7, e é a única:</strong> só um jogador com a opção não-humana desbloqueada pode
+propor um psi. <strong>E o psi não precisa ser não-humano</strong> — humano das sete cidades, Anão, Goblin,
+qualquer um. O que se raciona não é a espécie: é <strong>quantos personagens com poder fora das Casas
+existem na mesa</strong>.</p>
+<p><strong>O background é a regra, não o enfeite.</strong> O personagem esteve <strong>abaixo da linha dos andares
+Ancorados</strong> e voltou outro. Não é "tem um dom desde criança": é um <strong>período datável</strong>, e o
+Árbitro aprova ou recusa o texto antes da ficha.</p>
+<p><strong>Um Poder só por personagem, teto de Potência 10.</strong> ⟨proposta⟩</p>
+<h2>8.2 Como se compra</h2>
+<p><strong>Duas compras, e só duas.</strong> <strong>(a) O Poder, por nível de Potência</strong> — a força bruta: alcance,
+dano, peso movido. <strong>(b) As perícias, uma a uma</strong> — toda perícia psíquica é <strong>Mental/Difícil,
+base IQ</strong>, e <strong>não se aprende perícia de um Poder sem ao menos 1 nível naquele Poder</strong>. Mínimo de
+meio ponto. <strong>Memória Eidética não dá bônus nenhum</strong> para aprendê-las.</p>
+<table>
+<thead>
+<tr>
+<th>Poder</th>
+<th>Custo por nível</th>
+<th>Na Garganta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PES</strong> (clarividência, precognição, psicometria)</td>
+<td>3</td>
+<td>sim</td>
+</tr>
+<tr>
+<td><strong>Cura Psíquica</strong> · <strong>Projeção Astral</strong> · <strong>Vampirismo Psíquico</strong></td>
+<td>3</td>
+<td>sim</td>
+</tr>
+<tr>
+<td><strong>Antipsi</strong></td>
+<td>3</td>
+<td>sim — <strong>exclusivo: quem o tem não pode ter outro poder psíquico</strong></td>
+</tr>
+<tr>
+<td><strong>Telepatia</strong> · <strong>Psicocinese</strong></td>
+<td>5</td>
+<td>sim</td>
+</tr>
+<tr>
+<td><strong>Psicoteleporte</strong></td>
+<td>5</td>
+<td>⟨proposta — sim, e é o que precisa de vigilância: passa por porta trancada e por vão de andar⟩</td>
+</tr>
+<tr>
+<td><strong>Eletrocinese</strong></td>
+<td>5</td>
+<td>⟨proposta — <strong>fora</strong>, pelo mesmo recorte de nível tecnológico que tirou Máquinas, Energia e Radiação⟩</td>
+</tr>
+</tbody>
+</table>
+<p><strong>No uso:</strong> manobra <strong>Concentrar</strong>, um turno parado, sem defesa ativa; o efeito sai no início do
+turno seguinte. Teste 3D contra o NH. <strong>Em PES, quem rola é sempre o Mestre de Cena</strong>, e numa
+falha por margem maior que 5 <strong>ele mente</strong> — o que casa com a trava de rolagem escondida do <code>20</code>
+§1.6: grava-se antes, revela-se na homologação.</p>
+<p><strong>Antecedentes Incomuns, 10 pontos, obrigatórios.</strong> ⟨proposta⟩ O <em>Psiquismo</em> calibra essa
+vantagem pela raridade e pediria 150. <strong>Cobrar 150 aqui seria cobrar duas vezes:</strong> a porta do
+rank B já é o racionamento, e é muito mais cara.</p>
+<h2>8.3 A trava que não pode faltar: Empatia e Noção do Perigo continuam Dádivas</h2>
+<p><strong>Esta seção é a razão de o documento existir.</strong> O <em>GURPS Psiquismo</em> reinterpreta duas vantagens
+do Módulo Básico: numa campanha com psí, <strong>Empatia "é" telepatia com Potência 3</strong> e <strong>Noção do
+Perigo "é" PES com Potência 5</strong>. Se isso valesse aqui, <strong>retroagiria sobre fichas já
+homologadas</strong> — a Tabela de Vantagens lista Empatia como Dádiva de <strong>Oxum</strong> e Noção do Perigo
+como Dádiva de <strong>Loki</strong> e de <strong>Zeus</strong>, e <strong>Karthoz é marcado por Zeus</strong>. O resultado seria
+transformar um personagem homologado em psi sem que o jogador tenha pedido, e disparar para trás
+uma porta que exige a morte de um rank B.</p>
+<blockquote>
+<p><strong>DECISÃO: a reinterpretação do <em>Psiquismo</em> não se aplica em A Garganta.</strong> <strong>Empatia e Noção do
+Perigo compradas como Dádiva continuam Dádivas</strong> — concedidas por Casa, retiráveis por
+excomunhão, e <strong>não são psí</strong>. Quem quiser o poder psíquico compra o Poder, pela porta do
+§8.1. <strong>Regra nova não retroage</strong>, que é a mesma regra que deixou a Semana 1 sem crônica.</p>
+</blockquote>
+<h2>8.4 Por que isso não fura a regra de que o sobrenatural humano passa por Casa</h2>
+<p><strong>Porque a regra nunca foi essa.</strong> A regra é <strong>sobre magia</strong>: não existe mago sem deus, a
+<strong>Aptidão Mágica</strong> é concedida por uma Casa, e <strong>o colégio é o domínio do deus</strong>. O que a Casa
+concede e retira é <strong>acesso a colégio</strong>.</p>
+<p><strong>O psí não tem nada disso.</strong> Não tem colégio, não tem ritual, não tem pré-requisito de mágica,
+não gasta energia de mana e <strong>não muda com a profundidade</strong>: o mago fica mais forte descendo e
+<strong>o psi no andar 20 é exatamente o que era no andar 1</strong>. Em bolsão de mana nula o mago para e <strong>o
+psi não</strong>.</p>
+<p><strong>A campanha agora tem duas exceções nomeadas ao "só pela Casa", e são a mesma exceção:</strong> a
+<strong>Aptidão racial do Elfo</strong> e o <strong>psí</strong>. As duas vêm de baixo, as duas passam pela porta do rank
+B, e nenhuma abre colégio. <strong>O que sobe do poço não presta contas às Casas</strong> — e é por isso que
+subir do poço custa o que custa.</p>
+<p><strong>Fraqueza estrutural.</strong> <strong>A Casa não pode retirar o que não deu — então faz a única coisa que
+lhe resta, que é não marcar.</strong> E sem Marca o personagem treina até o limite natural e para. O psi
+tem duas saídas e as duas custam: aceitar a Marca de uma Casa que <strong>não ganha alavanca nenhuma
+sobre ele</strong> e vai cobrar o Dever com juros, ou recusar e <strong>parar de crescer</strong> enquanto a mesa
+sobe.</p>
+<p><strong>Consequência política.</strong> A Guilda quer um: um operador que funciona em bolsão de mana nula vale
+mais que uma esquadra. <strong>E a primeira Casa que marcar um psi compra um precedente que não
+consegue devolver.</strong></p>
+<p><strong>A defesa é de todos.</strong> <strong>Resistência Psíquica</strong> já está na Tabela de Vantagens a 2 pontos por
+nível, é comprável por <strong>qualquer personagem, sem porta nenhuma</strong>, sai do NH de qualquer
+tentativa psíquica contra o portador — <strong>e do NH dele próprio</strong> — e <strong>não se desliga</strong>. Nenhum
+jogador fica indefeso porque outro perdeu um rank B.</p>
+<h1>9 · Nota de mesa — o que muda quando um não-humano entra na esquadra</h1>
+<p><strong>1. O limite da mesa se lê antes da primeira cena, não durante.</strong> Carta, artigo 16. Cada ficha
+traz um bloco <strong>LIMITE DE MESA</strong> no alto: é ele que manda, e ele vem antes de qualquer coisa
+escrita aqui. Minotauro, Transmutante e a prata entram em território de material duro — origem
+violenta, corpo alterado, gente tratada como mercadoria —, e <strong>material duro se narra por elipse,
+sempre</strong>: pesa na política da cena e não se descreve em detalhe. Se o bloco da ficha e esta nota
+discordarem, <strong>vale o bloco da ficha</strong>, e o Mestre de Cena não pergunta o motivo do limite: ele
+não é dado da mesa.</p>
+<p><strong>2. O redutor de reação é da esquadra, não do não-humano.</strong> Um Minotauro presente é <strong>−3 mais
+−4</strong> na mesma mesa de negociação, e não existe "ele fica quieto num canto": ou está visível e a
+reação conta, ou esconder é um problema jogado, e o preço do plano é o tempo dele.</p>
+<p><strong>3. Registro é o que faz o pagamento existir.</strong> Se o registro é contestado, <strong>o dinheiro trava
+antes da briga</strong> — e essa é a cena política, não a pancadaria.</p>
+<p><strong>4. Equipamento não serve, e o balcão é humano.</strong> ⟨proposta⟩ <strong>+50% no preço e uma semana de
+espera</strong> para peça de tamanho não-humano; o que se acha no baú <strong>não serve</strong>, e serve para vender.</p>
+<p><strong>5. O tabu do Minotauro se declara antes do primeiro passo</strong>, em voz alta, para a mesa toda
+ouvir. Anunciar depois é armadilha, e a Carta, artigo 6, diz que ninguém morre sem chance de
+recuar. <strong>Anunciado antes, o tabu é a melhor ferramenta de tensão que a campanha tem.</strong></p>
+<p><strong>6. O Elfo não lança nada sem Casa.</strong> A Aptidão racial <strong>não é autorização</strong>.</p>
+<p><strong>7. Abaixo do andar 1 não existe lua.</strong> O Mestre <strong>nunca</strong> rola transformação embaixo.</p>
+<p><strong>8. Desvantagem racial tem de aparecer.</strong> Cobiça de Anão, Impulsividade de Goblin, Sanguinolência
+de Minotauro — se não aparecem, o Árbitro penaliza por má atuação.</p>
+<p><strong>9. A raça não é o antagonista. O ofício é.</strong> Carta, artigo 19. Quem recusa o registro é um
+escrivão com nome. <strong>Nunca "o povo tal é odiado"; sempre: fulano, por este motivo, neste balcão,
+hoje.</strong></p>
+<p><strong>10. Reação de personagem de outro jogador é do jogador, sempre.</strong> Os modificadores raciais valem
+para NPC. Entre personagens de jogadores, <strong>quem decide é quem joga</strong>.</p>
+<h1>O que espera confirmação do Árbitro</h1>
+<p>Onze itens. Nenhum inventa número que o livro tenha; todos são pontos em que o livro cala ou em
+que uma decisão anterior abriu buraco.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Onde</th>
+<th>O que</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>§0</td>
+<td>Peculiaridade racial é grátis e <strong>não</strong> gasta as cinco do <code>29</code> §4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>§1</td>
+<td>Anão, Carga "Nenhuma" = 2,5 × ST — o livro dá só os quatro degraus</td>
+</tr>
+<tr>
+<td>3</td>
+<td>§2</td>
+<td>Elfo: o −2 de reação dos Orcs passa aos <strong>Elfos Negros</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>§2</td>
+<td>"Unaging" vira <strong>Longevidade</strong> + fato narrativo sem custo, porque falta o <em>Fantasy Folk</em></td>
+</tr>
+<tr>
+<td>5</td>
+<td>§3</td>
+<td>Meio-Elfo: <strong>Aptidão Mágica nível 1</strong> — a soma fecha em 30, mas o livro avisa que custo racial ≠ individual</td>
+</tr>
+<tr>
+<td>6</td>
+<td>§3</td>
+<td><strong>Segredo −20</strong> para quem esconde, contra <strong>Estigma Social −10</strong> para quem declara</td>
+</tr>
+<tr>
+<td>7</td>
+<td>§4</td>
+<td>O tabu fica como <strong>Hábito Detestável −15</strong> com o −3 reancorado, ou vira <strong>Compulsão −15</strong> e o −3 cai</td>
+</tr>
+<tr>
+<td>8</td>
+<td>§4</td>
+<td><strong>A RD racial da cabeça soma com a RD 2 do crânio?</strong> Somando dá RD 7, e o golpe na cabeça deixa de existir contra Minotauro</td>
+</tr>
+<tr>
+<td>9</td>
+<td>§6</td>
+<td><strong>A lua cobrada</strong> — a transformação perdida dispara na primeira noite de céu aberto</td>
+</tr>
+<tr>
+<td>10</td>
+<td>§8</td>
+<td><strong>Um Poder por personagem, teto 10; Eletrocinese fora; Psicoteleporte dentro</strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td>§8</td>
+<td><strong>Antecedentes Incomuns = 10</strong>, e não os 150 da calibração do <em>Psiquismo</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>E dois itens que não são confirmação, são consequência a executar:</strong></p>
+<ul>
+<li><strong>O <code>02</code> §7 promete <em>"entra com cerca de 210"</em></strong>, e com as sete fichas vivas o orçamento é
+  <strong>150</strong>. Precisa trocar o número pela fórmula e por um exemplo datado.</li>
+<li><strong>A §8.3 é a mais urgente desta entrega.</strong> Enquanto não estiver no ar, o <em>Psiquismo</em> lido ao pé
+  da letra transforma a Dádiva de Oxum e a de Zeus em poder psíquico — e <strong>Karthoz é marcado por
+  Zeus</strong>. É exatamente o erro de 09/09: decisão que não foi publicada é decisão que não existe.</li>
+</ul>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-13 · <a href="txt/32-os-povos-que-subiram.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

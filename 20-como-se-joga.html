@@ -63,6 +63,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <h4>Seu personagem</h4><ul>
 <li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
 <li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="32-os-povos-que-subiram.html">Os Povos que Subiram</a></li>
 <li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
 <li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
 <li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
@@ -90,7 +91,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 </ul>
 <h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
 </nav>
-<main><div class="cabeca"><h1>Como se joga</h1><div class="meta">versão 6 · atualizado em 2026-09-11 · Comece aqui</div></div>
+<main><div class="cabeca"><h1>Como se joga</h1><div class="meta">versão 7 · atualizado em 2026-09-13 · Comece aqui</div></div>
 <blockquote>
 <p>[!NOTE]
 <strong>Este documento é sobre jogar.</strong> O <code>17 — Guia de Criação e Manual de Magia</code> ensina a <strong>montar</strong> um personagem; este ensina a <strong>usar</strong> o que ficou na ficha. O <code>02 — Regras da Mesa</code> é a folha curta de referência; este é o manual de operação, e serve tanto ao jogador que nunca tocou em GURPS quanto ao Mestre de Cena, que resolve a cena com ele aberto.</p>
@@ -832,6 +833,246 @@ Rola-se 3d6 contra esse total. Igual ou menor: o golpe não passou.</p>
 </tr>
 </tbody>
 </table>
+<h2>4.11 Distância: o que o alcance cobra</h2>
+<p>Esta seção entrou na <strong>v7</strong>, por decisão do Árbitro de 12/09/2026, porque o modo tático precisa de um número por hexágono e o documento ainda não tinha nenhum. Tudo aqui é do livro: a tabela é a <strong>Tabela de Parâmetro Velocidade/Distância e Tamanho</strong> (MB pág. 201), e a parte de magia é do Módulo de Magia (pág. 10 e 11).</p>
+<h3>A conta</h3>
+<p><strong>Distância em metros + velocidade do alvo em metros por segundo dão um número só.</strong> Arredonda-se <strong>para cima</strong>, para a linha seguinte da tabela, e lê-se o modificador. Alvo parado a 9 m é 9; alvo a 5 m correndo a 7 m/s é 12, e vale a linha dos 13,5 m. Se quem atira também se move, vale a <strong>velocidade relativa</strong>. (pág. 201)</p>
+<table>
+<thead>
+<tr>
+<th>Distância + velocidade</th>
+<th>Modificador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>até 2 m</td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td>até 3 m</td>
+<td>−1</td>
+</tr>
+<tr>
+<td>até 4,5 m</td>
+<td>−2</td>
+</tr>
+<tr>
+<td>até 7 m</td>
+<td>−3</td>
+</tr>
+<tr>
+<td>até 9 m</td>
+<td>−4</td>
+</tr>
+<tr>
+<td>até 13,5 m</td>
+<td>−5</td>
+</tr>
+<tr>
+<td>até 20 m</td>
+<td>−6</td>
+</tr>
+<tr>
+<td>até 30 m</td>
+<td>−7</td>
+</tr>
+<tr>
+<td>até 45 m</td>
+<td>−8</td>
+</tr>
+<tr>
+<td>até 70 m</td>
+<td>−9</td>
+</tr>
+<tr>
+<td>até 90 m</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>até 135 m</td>
+<td>−11</td>
+</tr>
+<tr>
+<td>até 200 m</td>
+<td>−12</td>
+</tr>
+<tr>
+<td>até 300 m</td>
+<td>−13</td>
+</tr>
+<tr>
+<td>até 450 m</td>
+<td>−14</td>
+</tr>
+<tr>
+<td>até 700 m</td>
+<td>−15</td>
+</tr>
+<tr>
+<td>até 1.000 m</td>
+<td>−16</td>
+</tr>
+</tbody>
+</table>
+<p>Depois dos 1.000 m a escada continua na tabela do livro, de −17 (1.350 m) a −25 (32 km), e cada multiplicação por dez tira mais 6. <strong>Numa galeria da Garganta quase nada passa dos 30 m</strong>, e é por isso que a faixa de −1 a −7 é a que a mesa usa.</p>
+<p><strong>Tamanho do alvo</strong> entra pela mesma tabela, na coluna de tamanho, com o sinal trocado: maior que gente dá bônus, menor dá redutor. Gente é 2 m e vale 0. (pág. 201)</p>
+<h3>O que mais mexe no tiro</h3>
+<ul>
+<li><strong>Sem apontar, arma de longo alcance ataca a −4</strong> (pág. 95), e a manobra <strong>Apontar</strong> (seção 4.3) soma a Precisão da arma no primeiro turno, +1 no segundo, +2 no terceiro, +3 do quarto em diante.</li>
+<li><strong>Defender estraga a mira</strong>: perde-se tudo o que foi acumulado apontando. (pág. 95)</li>
+<li><strong>Apoio</strong> (besta, parapeito) dá <strong>+1</strong>, se houve tempo de apontar. (pág. 201)</li>
+<li><strong>Recarregando, a única defesa é Esquiva</strong> — e esquivar cancela o turno de recarga. (pág. 95)</li>
+<li><strong>Figura no caminho: −4 por cada uma.</strong> Alvo agachado, deitado ou só com a cabeça de fora: de −2 a −7, conforme a posição. (pág. 201)</li>
+</ul>
+<h3>Os quatro números de cada arma de longo alcance</h3>
+<p>Toda arma que atira tem quatro parâmetros (MB pág. 115). Eles são o que faltava para arco, dardo e lança arremessada entrarem em mesa:</p>
+<ul>
+<li><strong>Tiro Rápido (TR).</strong> Se a jogada de ataque <strong>ajustada</strong> sair igual ou menor que o NH e <strong>o resultado alcançar o TR da arma</strong>, atira-se sem apontar e <strong>sem o −4 de tiro rápido</strong> — desde que o alvo já estivesse à vista no começo do turno.</li>
+<li><strong>Precisão (Prec).</strong> O bônus de <strong>um turno apontando</strong>. Nunca maior que o seu próprio NH com a arma: NH 8 com arma de Prec +13 rende +8.</li>
+<li><strong>Meio Dano (½D).</strong> Distância em metros a partir da qual o dano <strong>cai à metade</strong>, arredondando para baixo. Além do ½D, <strong>a Precisão da arma não vale mais nada</strong>.</li>
+<li><strong>Alcance Máximo (Max).</strong> Adiante disso não se atira, e ponto.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Arma</th>
+<th>TR</th>
+<th>Prec</th>
+<th>½D</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Faca pequena arremessada</td>
+<td>11</td>
+<td>0</td>
+<td>ST−5</td>
+<td>ST</td>
+</tr>
+<tr>
+<td>Pedra</td>
+<td>12</td>
+<td>0</td>
+<td>ST×2</td>
+<td>ST×3,5</td>
+</tr>
+<tr>
+<td>Lança arremessada</td>
+<td>11</td>
+<td>+2</td>
+<td>ST</td>
+<td>ST×1,5</td>
+</tr>
+<tr>
+<td>Arco longo</td>
+<td>15</td>
+<td>+3</td>
+<td>ST×15</td>
+<td>ST×20</td>
+</tr>
+<tr>
+<td>Besta</td>
+<td>12</td>
+<td>+4</td>
+<td>ST×20</td>
+<td>ST×25</td>
+</tr>
+</tbody>
+</table>
+<p>As distâncias em "ST" são <strong>metros</strong>, calculados com a ST de quem atira — e, <strong>na besta, com a ST da arma</strong>, que é o que permite a um ST 9 usar besta de ST 12. Engatilhar besta de ST igual ou menor que a sua leva <strong>2 segundos</strong>; 1 ou 2 pontos acima, <strong>6 segundos</strong>; 3 ou 4 acima exige pé-de-cabra, <strong>20 segundos</strong>; mais de 4 acima, não se engatilha. Some um turno para pegar o virote e um para encaixá-lo. (MB pág. 114)</p>
+<p><strong>Pedra de até meio quilo</strong> vai a <strong>3,5 × ST</strong> metros e faz <strong>um ponto menos</strong> que o seu GDP. (MB pág. 114)</p>
+<p><strong>Ângulo de visão:</strong> com arma de longo alcance, só se atira nos hexágonos da frente. Visão Periférica amplia o ângulo. (MB pág. 115)</p>
+<h3>Magia de projétil: os oito conjuntos do livro</h3>
+<table>
+<thead>
+<tr>
+<th>Mágica</th>
+<th>TR</th>
+<th>Prec</th>
+<th>½D</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bola de Fogo</td>
+<td>13</td>
+<td>+1</td>
+<td>25 m</td>
+<td>50 m</td>
+</tr>
+<tr>
+<td>Bola de Fogo Explosiva</td>
+<td>13</td>
+<td>+1</td>
+<td>25 m</td>
+<td>50 m</td>
+</tr>
+<tr>
+<td>Adaga de Gelo</td>
+<td>13</td>
+<td>+3</td>
+<td>30 m</td>
+<td>60 m</td>
+</tr>
+<tr>
+<td>Esfera de Gelo</td>
+<td>13</td>
+<td>+2</td>
+<td>40 m</td>
+<td>80 m</td>
+</tr>
+<tr>
+<td>Relâmpago</td>
+<td>13</td>
+<td>+3</td>
+<td>50 m</td>
+<td>100 m</td>
+</tr>
+<tr>
+<td>Poltergeist</td>
+<td>13</td>
+<td>+1</td>
+<td>20 m</td>
+<td>60 m</td>
+</tr>
+<tr>
+<td>Projétil de Pedra</td>
+<td>13</td>
+<td>+2</td>
+<td>40 m</td>
+<td>80 m</td>
+</tr>
+<tr>
+<td>Faca Alada</td>
+<td>13</td>
+<td>+1</td>
+<td>20 m</td>
+<td>40 m</td>
+</tr>
+</tbody>
+</table>
+<p>(MAGIA pág. 11 e as entradas de cada mágica.)</p>
+<p><strong>Como funciona, em mesa</strong> (MAGIA pág. 11):</p>
+<ol>
+<li><strong>Duas rolagens.</strong> A primeira é a da mágica, <strong>sem nenhum redutor de distância</strong>, e diz se o projétil se formou. A segunda é <strong>Arremesso de Mágica</strong> daquela mágica — pré-definido: NH em Arremesso, ou <strong>DX−3</strong> — e diz se acertou, com tamanho, velocidade e distância pela tabela da seção 4.11.</li>
+<li><strong>A energia é a força.</strong> 1 a 3 pontos, <strong>1d de dano por ponto</strong>, e <strong>um segundo de concentração por ponto</strong>: projétil de 1 ponto por turno, ou de 3 pontos a cada três turnos.</li>
+<li><strong>Pode-se segurar o projétil na mão</strong> e então andar ou <strong>Apontar</strong>. É a única mágica que se retém pronta. Enquanto retém, só se pode fazer mágica de <strong>Bloqueio</strong>, a −2 — e falha crítica nela <strong>solta o projétil em quem o fez</strong>.</li>
+<li><strong>Ferido enquanto segura: teste de Vontade</strong> ou perde o controle.</li>
+<li><strong>Bloquear e Esquivar valem; Aparar, não.</strong> A <strong>armadura protege</strong> contra o dano — exceto no Projétil de Maldição, contra o qual nem PD nem RD servem.</li>
+<li><strong>Viaja em linha reta</strong> e atravessa barreira que consiga vencer, seguindo com a energia que sobrou.</li>
+<li>A <strong>Bola de Fogo Explosiva</strong> pode ser jogada no chão ou na parede, <strong>com +4 para acertar</strong>, para pegar quem está em volta.</li>
+</ol>
+<h3>Magia: os outros alcances</h3>
+<ul>
+<li><strong>Mágica comum que não se pode tocar:</strong> redutor <strong>igual à distância em hexágonos</strong> entre operador e objetivo. Encostado, ele toca: sem redutor. (MAGIA pág. 10)</li>
+<li><strong>Sem tocar e sem ver: −5 a mais.</strong> Ver pela magia de outro, ou pelos olhos de outro, conta como ver. (MAGIA pág. 10)</li>
+<li><strong>Mágica de área:</strong> o redutor é a distância até o <strong>hexágono mais próximo da área</strong>, não até o centro. Área custa o básico multiplicado pelo raio em hexágonos, e a área não se desloca depois de feita. (MAGIA pág. 10–11)</li>
+<li><strong>Mágica de projétil são duas rolagens:</strong> primeiro o teste da mágica, <strong>sem nenhum redutor de distância</strong>; depois <strong>Arremesso de Mágica</strong> (pré-definido: NH em Arremesso, ou DX−3), com tamanho, velocidade e distância pela tabela acima. Bloquear e Esquivar valem; <strong>Aparar, não</strong>. (MAGIA pág. 11)</li>
+<li><strong>Mágica de Localizar e parentes</strong> usam a escada própria do Módulo de Magia, que é de quilômetro e não de hexágono: menos de 100 m, 0; até 800 m, −1; até 1,5 km, −2; até 5 km, −3; até 15 km, −4; até 80 km, −5; até 150 km, −6; até 500 km, −7; até 1.500 km, −8, e −1 por cada 1.500 km a mais. <strong>E −1 por cada objeto conhecido que se mande ignorar na busca.</strong> (MAGIA pág. 10)</li>
+</ul>
 <hr />
 <h1>5. Ferimento, incapacitação e morte</h1>
 <h2>5.1 Choque</h2>
@@ -1237,7 +1478,7 @@ Rola-se 3d6 contra esse total. Igual ou menor: o golpe não passou.</p>
 <h1>10. Correções</h1>
 <p>Por registro, conforme o <code>14</code>: linha corrigida não some sem que fique dito o que ela dizia.</p>
 <p><strong>Correção de 11/09/2026.</strong> Três passagens contradiziam o resto do cânone. A seção 4.2 dizia "Empate ainda: dados", resíduo anterior à decisão de 10/09 que a tabela da seção 4.10 já trazia; passou a dizer a regra da casa — DX, depois ordem de declaração —, e a regra entrou na tabela da seção 8. A seção 1.1 e a tabela da seção 8 diziam que o resultado nunca se esconde, sem a exceção da rolagem escondida da seção 1.6; passaram a apontar para ela. E a seção 1.6 mandava gravar a rolagem escondida "no relatório da semana ou num arquivo <code>semana-NN-rolagens</code>": o relatório só se escreve no fim da sessão, depois da cena, e arquivo entregue não se edita, então passou a ser um arquivo por rolagem, <code>semana-NN-rolagem-NN</code>, descrito no <code>04b</code>, seção 3. Nenhum número mudou.</p>
-<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/20-como-se-joga.md">ver em texto puro</a></div>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-13 · <a href="txt/20-como-se-joga.md">ver em texto puro</a></div>
 </main></div><script>
 (function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
 fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});

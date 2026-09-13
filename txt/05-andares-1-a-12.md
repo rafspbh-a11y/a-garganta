@@ -1,6 +1,6 @@
 titulo: Andares 1 a 12
 versao: 2
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Andares 1 a 12

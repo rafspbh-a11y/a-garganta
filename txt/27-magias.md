@@ -1,6 +1,6 @@
 titulo: Tabela de Mágicas
-versao: 3
-atualizado: 2026-09-11
+versao: 4
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Tabela de Mágicas
@@ -8,6 +8,13 @@ fonte: cânone aberto de A Garganta
 > **Nota.**
 > **429 mágicas, todas as escolas, com pré-requisito, energia e tempo.** Transcrita da Relação das Mágicas do **GURPS Magia**, com as escolas renomeadas pelo livro e as Casas concedentes pela tabela viva do `17` §6.6, refeita em 10/09/2026 (`25`). **Acrescentadas em 11/09/2026 (`31`):** o colégio **Clima** com a sub-escola de **Eletricidade** do *Grimório*, e as quatro mágicas de Grimório que a decisão 1 do `25` nomeou.
 > **Toda mágica é Mental/Difícil**, salvo as marcadas com **\*** — essas são Mental/Muito Difícil.
+>
+> **Versão 4, de 13/09/2026 — a regra de leitura mudou, e ela governa a tabela inteira.**
+> O *GURPS Magia* traz cada mágica em dois lugares: o **verbete**, no capítulo da escola, e a
+> **Relação das Mágicas**, a tabela das páginas 71 a 76. Os dois divergem em dezenas de pontos.
+> Esta tabela foi transcrita da Relação — e, **por decisão do Árbitro de 13/09, onde os dois
+> divergirem vence o verbete**. Dezenove nomes mudaram e oito pré-requisitos foram corrigidos;
+> nenhum custa ponto a ninguém. A tabela de equivalência está no fim, em *Nomes antigos*.
 
 # Como se compra uma mágica
 
@@ -66,12 +73,12 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | --- | --- | --- | --- | --- | --- |
 | Compartilhar Idioma | Comum | 3 seg | 1 min | 3/1 | Emprestar Idioma |
 | Compartilhar Perícia | Comum | 3 seg | 1 min | 4/3 | Emprestar Perícia |
-| Compulsão p/ Verdade | Inform/R-IQ | 1 seg | 5 min | 4/2 | AM 2, Percepção Veracidade |
+| Compulsão para a Verdade | Inform/R-IQ | 1 seg | 5 min | 4/2 | AM 2, Percepção da Veracidade |
 | Controle de Pessoas | Com/R-IQ | 10 seg | 1 min | 6/3 | Passageiro da Alma ou Telepatia |
-| Dom das Letras* | Comum | 1 seg | 1 min | 4/2 | Compartilhar Idioma, 3 línguas c/ NH 10+ |
+| Dom da Escrita* | Comum | 1 seg | 1 min | 4/2 | Compartilhar Idioma, 3 línguas c/ NH 10+ |
 | Dom das Línguas* | Comum | 1 seg | 1 min | 4/2 | Compartilhar Idioma, 3 línguas c/ NH 10+ |
-| Emprestar Idioma | Comum | 3 seg | 1 min | 3/1 | Transmissão de Pensamento |
-| Emprestar Perícia | Comum | 3 seg | 1 min | 3/2 | Transmissão de Pensamento, IQ 12+ |
+| Emprestar Idioma | Comum | 3 seg | 1 min | 3/1 | Transmissão de Pensamentos |
+| Emprestar Perícia | Comum | 3 seg | 1 min | 3/2 | Transmissão de Pensamentos, IQ 12+ |
 | Esconder Pensamentos | Comum | 1 seg | 10 min | 3/1 | Percepção da Veracidade |
 | Exorcismo | Com/R-mágica | 10 seg | Inst. | 10 | Passageiro da Alma ou Possessão# |
 | Leitura da Mente | Com/R-IQ | 10 seg | 1 min | 4/2 | Percepção da Veracidade |
@@ -85,7 +92,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Possessão* | Com/R-IQ | 1 min | 1 min | 10/4 | AM + Controle de Pessoas ou Possessão de Animais |
 | Sonda Mental* | Com/R-IQ | 1 min | 1 min | 6/3 | Leitura da Mente |
 | Telepatia* | Comum | 4 seg | 1 min | 4/4# | Transmissão de Pensamentos |
-| Transmissão de Pensamento | Comum | 4 seg | 1 min | 4/4 | Leitura da Mente |
+| Transmissão de Pensamentos | Comum | 4 seg | 1 min | 4/4 | Leitura da Mente |
 | Trocar de Corpo* | Com/R-IQ | 1 h. | Perm | 120 | Possessão Permanente, Aprisionar Alma |
 
 # Movimentação
@@ -108,13 +115,13 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Golem de Ar | Comum | 10 seg | 1h | 4/2 | AM 2, Aporte |
 | Levitação | Com/R-IQ | 2 seg | 1 min | 1 por 40 kg/h# | Aporte |
 | Manipular | Comum | 3 seg | 1 min | 4/3# | Serralheiro |
-| Marcha Forçada | Comum | 1 min | 1 dia marcha | 4# | AM, Apressar |
+| Marcha Acelerada | Comum | 1 min | 1 dia marcha | 4# | AM, Apressar |
 | Poltergeist | Projétil | 1 seg | Inst. | 1 ou 2# | Aporte |
 | Queda Lenta | Comum | 1 seg | 1 min | 1 por 25 kg/h | Aporte |
 | Reduzir Carga | Comum | 3 seg | 10 min | 3 ou 5/h# | Aporte |
 | Serralheiro | Comum | 1 seg | 1 min # | 2/2 | Aporte |
 | Teleportar Outros* | Com/R-IQ+1 | 1 seg | Inst. | varia# | AM 3, Teleporte |
-| Teleporte | Especial | 1 seg | Inst. | varia# | Voo do Falcão ou IQ 15+ |
+| Teleporte | Especial | 1 seg | Inst. | varia# | Voo do Falcão, ou IQ 15+ e 1 mágica de 10 escolas dif. |
 | Translocação | Bloqueio | 1 seg | Inst. | 2 | Teleporte |
 | Voo | Comum | 2 seg | 1 min | 5/3 | AM 2, Levitação |
 | Voo do Falcão* | Comum | 3 seg | 1 min | 8/4 | Voo |
@@ -126,20 +133,20 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Audição Remota | Comum | 3 seg | 1 min | 4/2 | AM, não surdo, 4 outras mág. Som |
-| Escrever | Comum | 1 Seg | 1 min | 3/1 | Voge», Alfabetização, Golem de Ar |
+| Escrever | Comum | 1 Seg | 1 min | 3/1 | Vozes, Alfabetização, Golem de Ar |
 | Estrondo | Comum | 1 seg | Inst | 2 | Som |
 | Furtividade Mágica | Comum | 3 Seg | 1 min | 3/2 | Quietude |
 | Jato de Som | Comum | 1 seg | 1 seg | 1 a 4#/s | Voz Amplificada |
-| Mensagem Retida | Área | 4 seg | indef. # | 3# | AM, Vozes, Detecção de Vida |
+| Mensagem Retida | Área | 4 seg | indef. # | 3# | AM, Vozes, Percepção de Vida |
 | Muro de Silêncio | Área | 1 seg | 1 min | 2/1 | Silêncio |
 | Ouvido Mágico | Comum | 2 seg | 1 min | 4/3 | Aporte, Audição Remota, Visão Sonora |
 | Ouvido Mágico Invisível | Comum | 4 seg | 1 min | 5/3 | Ouvido Mágico, Invisibilidade |
 | Quietude | Com/R-IQ | 2 seg | 10 seg # | 2/1 | Silêncio |
-| Ruído | Área | 1 seg | 5 seg | 4/2 | Muro de Silêncio |
+| Barulho | Área | 1 seg | 5 seg | 4/2 | Muro de Silêncio |
 | Silêncio | Área | 1 seg | 1 min | 2/1 | Som |
 | Som | Comum | 1 seg | varia# | varia# | nenhum |
-| Visão Sonora | Comum | 1 seg | 1 min | 5/2 | Audição Aguçada |
-| Voz Possante | Comum | 2 seg | 1 min | 3/1 | Vozes, Estrondo |
+| Visão Sonora | Comum | 1 seg | 1 min | 5/2 | Ouvido Aguçado |
+| Voz Amplificada | Comum | 2 seg | 1 min | 3/1 | Vozes, Estrondo |
 | Vozes | Comum | 1 seg | 1 min | 3/2 | Som |
 
 # Luz e Trevas
@@ -205,7 +212,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Chama Essencial | Área | 3 seg | 1 min | 3/2# | 6 mágicas do Fogo |
 | Criar Fogo | Área | 1 seg | 1 min | 2/1 | Atear Fogo |
 | Extinguir Fogo | Comum | 1 seg | Perm. | 3/hex | Atear Fogo |
-| Fogo Fantasmagórico | Área | 1 seg | 1 min | 1/1 | Moldar Fogo ou Busão Simples |
+| Fogo Fantasmagórico | Área | 1 seg | 1 min | 1/1 | Moldar Fogo ou Ilusão Simples |
 | Frio | Comum | 1 min | 1 min | 3/hex# | Calor |
 | Imunidade ao Fogo | Comum | 1 seg | 1 min | 2/hex# | Extinguir Fogo, Frio |
 | Imunidade ao Frio | Comum | 1 seg | 1 min | 2/hex# | Criar Fogo, Calor |
@@ -213,7 +220,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Moldar Fogo | Área | 1 seg | 1 min | 2/1 | Atear Fogo |
 | Projéteis Flamejantes | Comum | 3 seg | 1 min | 4/2# | Arma Flamejante |
 | Resistência ao Fogo | Área | 5 min | 1 dia | 3# | Extinguir Fogo |
-| Sopro de Fogo* | Comum | 2 seg | 1 seg | 1a4 | AM, Jato de Chama, Imunidade ao Fogo |
+| Sopro de Fogo* | Comum | 2 seg | 1 seg | 1a4 | AM, Jato de Chamas, Imunidade ao Fogo |
 
 # Ar
 
@@ -223,23 +230,23 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
-| Caminhar no Ar | Comum | 1 seg | 1 min | 3/2 | Moldar Ar |
+| Caminhar no Ar | Comum | 1 seg | 1 min | 3/2 | Semear Ventos |
 | Chuva | Área | 1 min | 1h | 1/10/s | Nuvens |
-| Corpo de Ar | Com/R-HT | 5 seg | 1 min | 4/1 | Moldar Ar |
-| Criar Ar | Área | 1 seg | 5 seg # | 1 | Purificação de Ar |
+| Corpo de Ar | Com/R-HT | 5 seg | 1 min | 4/1 | Semear Ventos |
+| Criar Ar | Área | 1 seg | 5 seg # | 1 | Purificação do Ar |
 | Destruir Ar | Área | 1 seg | Inst | 2 | Criar Ar |
-| Eliminar Odor | Comum | 1 seg | 1h | 2# | Purificação de Ar |
+| Eliminar Odor | Comum | 1 seg | 1h | 2# | Purificação do Ar |
 | Furacão | Área | instante | 1 min# | 4/2 | Tufão |
 | Jato de Ar | Comum | 1 seg | 1 seg | 1 a 3# | Semear Ventos |
-| Mau Cheiro | Área | 1 seg | 5 min | 1# | Purificação de Ar |
-| Moldar Ar | Comum | 1 seg | 1 min | 1 a 10# | Criar Ar |
+| Mau Cheiro | Área | 1 seg | 5 min | 1# | Purificação do Ar |
+| Semear Ventos | Comum | 1 seg | 1 min | 1 a 10# | Criar Ar |
 | Nuvens | Área | 10 seg | 10 min | 1/20/s | 4 mág. Ar, 4 mág. Água |
-| Odor | Área | 1 seg | 1h# | 1 | Eliminar Odor |
+| Gerar Odor | Área | 1 seg | 1h# | 1 | Eliminar Odor |
 | Previsão do Tempo | Informação | 5 seg | Inst. | varia# | 4 mágicas de Ar |
-| Purificação de Ar | Área | 1 seg | Inst. | 1 | nenhum |
+| Purificação do Ar | Área | 1 seg | Inst. | 1 | nenhum |
 | Relâmpago | Projétil | 1 até 3 seg | Inst. | 1 a 3# | 6 mágicas de Ar |
 | Respirar Água | Comum | 1 seg | 1 min | 4/2 | Criar Ar, Dissipar Água |
-| Tufão | Área | instante | 1 min# | 2/1 | Moldar Ar |
+| Tufão | Área | instante | 1 min# | 2/1 | Semear Ventos |
 
 # Água
 
@@ -262,8 +269,8 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Dissipar Água | Área | 1 seg | Perm. | 3 | Criar Água |
 | Enregelar | Com/R-HT | 3 seg | Perm. | 1 a 3# | 5 outras mág. Água, incl. Congelar e Geada |
 | Esfera de Gelo | Projétil | 1 até 3 seg | Inst. | 1 a 3# | Moldar Água |
-| Geada | Área | 1 seg | varia# | l | Criar Á^ua, ou Frio |
-| Gelo visão | Comum | 1 seg | 30 seg | 2/10m# | Moldar Água |
+| Geada | Área | 1 seg | varia# | l | Criar Água, ou Frio |
+| Gelovisão | Comum | 1 seg | 30 seg | 2/10m# | Moldar Água |
 | Granizo | Área | 1 seg | 1 min | 1/5/s# | Neve |
 | Guarda-chuva | Comum | 2 seg | 10 min | 1/1 | Moldar Água ou Escudo |
 | Gêiser* | Área | 5 seg | 1 seg | 5/2 | 6 mág. Água + 4 de Fogo ou 4 de Terra |
@@ -275,7 +282,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Purificação de Água | Especial | 5-10 seg\gI | Perm. | 1/41 | Localizar Água |
 | Respirar Ar | Comum | 1 seg | 1 min | 4/2 | Criar Água, Destruir Ar |
 | Sapatos de Neve | Comum | 2 seg | 1 min | 2/1 | Moldar Água |
-| lato de Água | Comum | 1 seg | 1 seg | 1 a 3# | Moldar Água |
+| Jato d'Água | Comum | 1 seg | 1 seg | 1 a 3# | Moldar Água |
 | Água Essencial | Comum | 1 seg | Perm. | mar/4l | 6 mágicas da Água |
 
 # Clima
@@ -285,11 +292,22 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 > **Nota.** Clima **não é escola no livro** — as mágicas de tempo estão dentro de Ar e de Água, e separá-las é decisão de Mestre que o próprio *Grimório* prevê. **Na Garganta, Clima é colégio próprio**, divergencia declarada (`23` §2.3).
 > **A concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima — e nada além** (`31` §2). A fronteira é a **árvore**, não a lista.
 
-**Abre por pré-requisito, e só por isso.** Em **Ar**: Purificação de Ar, Criar Ar, Semear Ventos, Moldar Ar, Destruir Ar. Em **Água**: Localizar Água, Purificação de Água, Criar Água, Moldar Água, Geada.
+**Abre por pré-requisito, e só por isso.** Em **Ar**: Purificação do Ar, Criar Ar, Semear Ventos, Destruir Ar. **São quatro, não cinco** — até 12/09 esta lista contava *Moldar Ar* e *Semear Ventos* como duas mágicas, e elas são a mesma (v. *Nomes antigos*). Em **Água**: Localizar Água, Purificação de Água, Criar Água, Moldar Água, Geada.
 
 **Não abre, e nenhum Mestre de Cena inventa:** Jato de Ar, Corpo de Ar, Caminhar no Ar, Eliminar Odor, Odor, Mau Cheiro, Respirar Água, Respirar Ar, e os Elementais do Ar e da Água. Quem quiser uma dessas precisa de **acordo** — e acordo tem dono e tem dívida (`17` §6.6).
 
-**A corrente canônica até o raio**, sete compras de 1 ponto: Purificação de Ar → Criar Ar → Semear Ventos → Moldar Ar → Previsão do Tempo → Tufão → **Relâmpago**. Destruir Ar serve como sexta no lugar de Previsão do Tempo.
+**A corrente canônica até o raio**, sete compras de 1 ponto:
+
+> Purificação do Ar → Criar Ar → **Semear Ventos** → Destruir Ar → Tufão → Furacão → **Relâmpago**
+
+**Reescrita em 13/09/2026, e o preço não mudou.** A corrente publicada até aqui nomeava sete
+compras e tinha seis mágicas — contava *Moldar Ar* e *Semear Ventos* como duas, e são a mesma —
+e por isso **travava duas vezes**: ao chegar em Previsão do Tempo o mago tinha três mágicas de
+Ar e o verbete exige quatro; ao chegar em Relâmpago tinha cinco e o verbete exige seis. Com
+Destruir Ar e Furacão no lugar, são **seis mágicas de Ar distintas mais o Relâmpago**, a
+corrente fecha, e o total continua **22 pontos**: Aptidão Mágica 1 por 15, mais sete compras de
+1. **Previsão do Tempo serve no lugar de Furacão**, se o jogador preferir ler o céu a chamar o
+vento; as duas custam 1 ponto e as duas contam para o pré-requisito de seis.
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
@@ -302,7 +320,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Nuvens | Área | 10 seg | 10 min | 1/20/s | 4 mág. Ar, 4 mág. Água |
 | Previsão do Tempo | Informação | 5 seg | Inst. | varia# | 4 mágicas de Ar |
 | Relâmpago | Projétil | 1 até 3 seg | Inst. | 1 a 3# | 6 mágicas de Ar |
-| Tufão | Área | instante | 1 min# | 2/1 | Moldar Ar |
+| Tufão | Área | instante | 1 min# | 2/1 | Semear Ventos |
 
 ## Sub-escola da Eletricidade
 
@@ -317,7 +335,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Corpo de Relâmpago\* | Com/R-HT | 5 seg | 1 min | 12/4 | **AM 2**, Relâmpago |
 | Imunidade a Relâmpagos | Comum | 1 seg | 1 min | 2/1 | 6 mágicas de Ar — **fronteira com Proteção e Advertência** |
 | Muralha de Relâmpagos | Área | 1 seg | 1 min | 2 a 6/i# | AM, Relâmpago |
-| Nuvem de Faíscas | Área | 1 a 5 seg | 10 seg | 1 a 5/i# | **Moldar Ar**, Relâmpago |
+| Nuvem de Faíscas | Área | 1 a 5 seg | 10 seg | 1 a 5/i# | **Semear Ventos**, Relâmpago |
 | Olhar de Relâmpago\* | Comum | 2 seg | 1 seg | 1 a 4# | AM, Relâmpago, Imunidade a Relâmpagos |
 | Projéteis Elétricos | Comum | 3 seg | 1 min | 4/2# | Arma Elétrica |
 | Tempestade de Faíscas | Área | como Tufão | 1 min | 2, 4 ou 6/m | **Tufão**, Relâmpago |
@@ -335,23 +353,23 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
-| Carne p/ Pedra | Com/R-HT | 2 seg | Perm | 10/hex# | Terra p/Pedra |
-| Corpo de Pedra* | Com/R-HT | 5 seg | 1 min | 10/hex# | Pedra p/Carne |
-| Criar Terra | Comum | 1 seg | Perm. | 4/hex# | Terra p/ Pedra |
+| Carne para Pedra | Com/R-HT | 2 seg | Perm | 10/hex# | Terra para Pedra |
+| Corpo de Pedra* | Com/R-HT | 5 seg | 1 min | 10/hex# | Pedra para Carne |
+| Criar Terra | Comum | 1 seg | Perm. | 4/hex# | Terra para Pedra |
 | Geovisão | Comum | 1 seg | 30 seg | 2/10m | Moldar Terra |
 | Geolocomoção | Comum | 1 seg | 1 seg | 4/3# | Moldar Pedra |
-| Jato de Areia | Comum | 1 seg | 1 seg | 1 a 3/s | Criar Terra. Moldar Terra |
+| Jato de Areia | Comum | 1 seg | 1 seg | 1 a 3/s | Criar Terra, Moldar Terra |
 | Identificar Metal | Informação | 1 seg | Inst. | 1 | Localizar Metal — *Grimório* |
 | Localizar Metal | Informação | 10 seg | Inst. | 3 | nenhum — *Grimório*, idêntica a Localizar Terra |
 | Localizar Terra | Informação | 10 seg | Inst. | 3 | nenhum |
 | Moldar Pedra | Comum | 1 seg | 1 min | 4/hex/2/hex# | Moldar Terra + 3 outras mágicas de Terra |
 | Moldar Terra | Comum | 1 seg | 1 min | 2/hex; 1/hex p/ manter | Localizar Terra |
-| Pedra p/Carne | Comum | 5 seg | Perm. | 10/hex# | AM 2, Pedra p/Terra, Carne p/Pedra |
-| Pedra p/Terra | Comum | 1 seg | Perm. | 10/tiex# | Terra p/ Pedra ou 4 mág. Terra |
+| Pedra para Carne | Comum | 5 seg | Perm. | 10/hex# | AM 2, Pedra para Terra, Carne para Pedra |
+| Pedra para Terra | Comum | 1 seg | Perm. | 10/tiex# | Terra para Pedra ou qualquer outra mágica de Terra |
 | Projétil de Pedra | Projétil | 1 energia | Inst. | 1 a 3# | Criar Terra |
 | Soterramento | Com/R-HT | 3 seg | Perm. | 10# | AM 2, 5 mágicas de Terra |
-| Terra p/ Ar | Comum | 2 seg | Perm. | 8/hex# | Criar Ar, Moldar Ar |
-| Terra p/ Pedra | Comum | 1 seg | Perm. | 5/hex# | AM, Moldar Terra |
+| Terra em Ar | Comum | 2 seg | Perm. | 8/hex# | Criar Ar, Semear Ventos |
+| Terra para Pedra | Comum | 1 seg | Perm. | 5/hex# | AM, Moldar Terra |
 | Terremoto | Área | 30 seg | 1 min | 212 | AM 2, 6 mág Terra incl. Geovisão |
 | Vulcão | Comum | 1 h. | 1 dia | 15/10 | Terremoto, 6 mágicas de Fogo |
 
@@ -362,7 +380,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Controlar Elemental | Especial | 2 seg | 1 min | Especial | Convocar Elemental |
-| Convocar Elemental | Especial | 30 seg | 1h# | 4 | AM |
+| Convocar Elemental | Especial | 30 seg | 1h# | 4 | AM + 8 mág. do elemento — ou 4 do elemento + outra convocatória |
 | Criar Elemental | Especial | Especial | Perm. | Especial | AM 2, Controlar Elemental |
 
 # Cura
@@ -372,21 +390,21 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Animação Suspensa | Com/R-HT | 30 seg | Indef. # | 6 | Sono, 4 mágicas de Cura |
-| Compartilhar Força | Comum | 1 seg | Especial | varia# | Dar ST |
+| Compartilhar Força | Comum | 1 seg | Especial | varia# | Dar Força |
 | Cura Profunda* | Comum | 1 seg | Perm. | 1 a 4# | AM, Cura Superficial |
 | Cura Superficial | Comum | 1 seg | Perm. | 1 a 3# | Dar Vitalidade |
 | Curar Doenças | Comum | 10 min | Inst | 4# | Esterilizar, Cura Profunda |
 | Dar Força | Comum | 1 seg | Perm. | varia# | AM ou vant. Empatia |
 | Dar Vitalidade | Comum | 1 seg | 1 h | 1 por HT cedida | Dar Força |
-| Despertar | Área | 1 seg | Inst. | 1 | Dar HT |
+| Despertar | Área | 1 seg | Inst. | 1 | Dar Vitalidade |
 | Esterilizar | Área | variável | Inst | 3/hex# | Deteriorar ou Controle de Insetos |
 | Interromper Envelhecimento* | Comum | 1 seg | 5 dias | 20# | AM 2, 6 mágicas de Cura |
-| Juventude* | Comum | 1 seg | Especial | 100# | AM 3, Interromper Envelhecimento |
-| Neutralizar Veneno | Comum | 30 seg | Perm. | 5# | Curar Doenças ou AM 3 + Testar Alimentos |
+| Rejuvenescer* | Comum | 1 seg | Especial | 100# | AM 3, Interromper Envelhecimento |
+| Neutralizar Veneno | Comum | 30 seg | Perm. | 5# | Curar Doenças ou AM 3 + Testar Alimento |
 | Recuperação de Força | Especial | Especial | Especial | nenhum | AM, Dar Força |
 | Regeneração Instantânea* | Comum | Especial | Perm | 80# | AM 3, Regeneração |
 | Regeneração* | Comum | Especial | Perm. | 20# | AM 2, Restauração |
-| Ressurreição* | Comum | 2 hs. | Perm. | 300# | Regeneração Instantânea, Convocação de Espíritos |
+| Ressurreição* | Comum | 2 hs. | Perm. | 300# | Regeneração Instantânea, Convocar Espíritos |
 | Restauração Instantânea* | Comum | Especial | Perm | 50# | AM 2, Restauração |
 | Restauração* | Comum | 1 min | Perm | 15# | Cura Profunda |
 
@@ -419,16 +437,16 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | --- | --- | --- | --- | --- | --- |
 | Amnésia | Com/R-IQ ou | 10 seg | 1h | 3/3 | AM, Inépcia, IQ 12+ |
 | Amnésia Permanente* | Com/R-IQ ou | 1 h. | Perm. | 15 | AM 2, Amnésia, IQ 13+ |
-| Atordoamento Mental | Com/R-IQ | 1 seg | Inst. | 2 | Torpor ou Atordoar |
+| Atordoamento Mental | Com/R-IQ | 1 seg | Inst. | 2 | Torpor ou Atordoamento |
 | Bravura | Área/R-IQ-1 | 1 seg | 1h# | 2# | Medo |
-| Cond. Permanente* | Com/R-IQ | 1 min | Perm. | 30 | AM3, 15 mág. Controle Mente incl. Condicionamento |
+| Condicionamento Permanente* | Com/R-IQ | 1 min | Perm. | 30 | AM3, 15 mág. Controle Mente incl. Condicionamento |
 | Condicionamento | Com/R-IQ | 30 seg | Perm | 12 | AM 2, 10 mág. Controle da Mente |
 | Controle de Emoções | Área/R-IQ | 1 seg | 1 h | 2# | Lealdade |
 | Embriaguez | Com/R-IQ | 2 seg | 1 min | varia# | Inépcia, Inabilidade |
 | Enjoo | Com/R-HT | 4 seg | 1 min | 3/3 | Embriaguez ou Pestilência |
 | Escravizar* | Com/R-IQ | 1 seg | Perm. | 30 | Subjugar,Telepatia |
 | Estupidez* | Com/R-IQ | 5 seg | 1 mtn | 8/4 | AM 2, Amnésia |
-| Falsas Recordações | Com/R-IQ | 5 seg | varia# | varia# | Amnésia, 6 outras mág. Controle da Mente |
+| Falsas Lembranças | Com/R-IQ | 5 seg | varia# | varia# | Amnésia, 6 outras mág. Controle da Mente |
 | Fúria | Com/R-I | 4 seg | 10 min# | 3/2 | Bravura |
 | Inépcia | Com/R-IQ | 1 seg | 1 min | 1 por IQ-/h | IQ 12+ |
 | Lealdade | Com/R-SQ | 2seg | 1h | 2/2# | Bravura. 4 outras mág. Controle da Mente |
@@ -461,11 +479,11 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Anular Criação | Com/R-mágica | 1 seg | Inst. | 1 por hex # | Controle de Criação |
-| Anular Ilusão | Com/R-mágica | 1 seg | Inst. | 1/hex | Controle de Ilusão |
+| Anular Ilusão | Com/R-mágica | 1 seg | Inst. | 1/hex | Controlar Ilusão |
 | Autossuficiência | Área | variável. | varia# | 2 | Ilusão Simples |
 | Carapaça Ilusória | Comum | 1 seg | 1 min | 2/hex# | Ilusão Simples |
 | Controle de Criação | Com/R-Mágica | 2 seg | Inst. | 1 por hex# | Criar Animal ou Criar Servo |
-| Controle de Ilusão | Com/R-mágica | 2 seg | Perm. | 1/hex# | Ilusão Perfeita |
+| Controlar Ilusão | Com/R-mágica | 2 seg | Perm. | 1/hex# | Ilusão Perfeita |
 | Criar Animal | Comum | Seg=custo | 1 min | varia# | Criar Água, Criar Objeto, IQ 13+ |
 | Criar Guerreiro | Comum | 4 seg | 1 min | 4/4# | Criar Servo |
 | Criar Objeto* | Comum | seg=custo | Indef. # | 2/2,5 kg | AM 2, Criar Terra, Ilusão Perfeita |
@@ -484,14 +502,14 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | --- | --- | --- | --- | --- | --- |
 | Afiar | Comum | 4 seg | 1 min | 1 por 15 cm de fio#/m | Consertar |
 | Consertar | Comum | 1 seg/0,5 kg | Perm. | 3/5 kg | AM 2, Remendar |
-| Consertar Flecha | Comum | 4 seg/flecha | Perm. | 2 por flecha | Remendar |
+| Consertar Flechas | Comum | 4 seg/flecha | Perm. | 2 por flecha | Remendar |
 | Copiar | Comum | 5 seg | Perm. | 2 mais 1/cópia | Alfabetização, Tingir |
-| Desintegrar* | Comum | 1 seg | Perm. | 1 a 4# | AM 2, Fragmentar, Estragar |
+| Desintegrar* | Comum | 1 seg | Perm. | 1 a 4# | AM 2, Fragmentar, Estragar, Terra em Ar, Destruir Ar, Dissipar Água |
 | Endurecer | Com/R-Esp. | 2 seg/0,5 kg | 10 min | 1 por 0,5 kg (mín. 2)/m | Remendar |
 | Enfraquecer | Comum | 5 seg | Perm. | 2 | Detectar Pontos Fracos |
 | Estragar | Comum | 5 seg/0,5 kg | 1 min# | 2 por 0,5 kg/i | AM, Enfraquecer, Deteriorar |
 | Fragmentar* | Comum | 1 seg | Inst. | 1 a 3# | AM, Enfraquecer |
-| Identificar Pontos Fracos | Informação | 2 seg | Inst | 1# | 1 mág.de cd. dos 4 elementos |
+| Detectar Pontos Fracos | Informação | 2 seg | Inst | 1# | 1 mág.de cd. dos 4 elementos |
 | Limpar | Área | 1 seg | Perm. | 2/3 | Restaurar |
 | Nós | Comum | 3 seg | Indef. # | 2# | Endurecer |
 | Remendar | Comum | 4 seg\10 lbs | 10 min | 1 por 5 kg/h | Enfraquecer, Restaurar |
@@ -506,15 +524,15 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
-| Alterar a Face | Com./R-HT | 1 min | 1 h# | 4/3# | Metamorfose ou Ilusão Perfeita# |
-| Alterar o Corpo | Comum/R-HT | 2 min | 1 h# | 8/6# | Alterar a Face |
-| Atordoar (Atordoamento) | Com/R-HT | 1 seg | Inst. | 2 | Dor |
+| Alterar Feições | Com./R-HT | 1 min | 1 h# | 4/3# | 8 mág. Controle do Corpo, e Metamorfose ou Ilusão Perfeita |
+| Alterar o Corpo | Comum/R-HT | 2 min | 1 h# | 8/6# | Alterar Feições |
+| Atordoamento | Com/R-HT | 1 seg | Inst. | 2 | Dor |
 | Atrofiar Membro | Com/R-HT | 1 seg | Perm. | 5 | AM 2, Paralisar Membros |
-| Cansaço | Com/R-HT | 1 seg | 1 min | 1 por ST-/h | nenhum |
-| Cegar | Com/R-HT | 1 seg | 10 seg | 4/2 | 1 mágica de Controle # |
+| Fadiga | Com/R-HT | 1 seg | 1 min | 1 por ST-/h | nenhum |
+| Cegar | Com/R-HT | 1 seg | 10 seg | 4/2 | Espasmo, 2 mágicas de Luz |
 | Coceira | Com/R-HT | 1 seg | Até passar# | 2 | nenhum |
 | Destreza | Comum | 1 seg | 1 min | 2 por DX+/s | Inabilidade |
-| Desviar Curso | Com/R-HT | 1 seg | Inst. | 3 | Trança-pés |
+| Andar em Círculos | Com/R-HT | 1 seg | Inst. | 3 | Trança-pés |
 | Dor | Com/R-HT | 2 seg | 1 seg | 2 | Espasmo |
 | Emudecer | Com/R-HT | 1 seg | 10 seg | 3/1 | Espasmo |
 | Ensurdecer | Com/R-HT | 1 seg | 10 seg | 3/1 | 2 Mágicas Som, Espasmo |
@@ -524,7 +542,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Força | Comum | 1 seg | 1 min | 2 por ST+/s | Dar Força |
 | Imunidade à Dor | Comum | 1 seg | 1 min | 4a | AM 2, Dor |
 | Inabilidade | Com/R-IQ | 1 seg | 1 min | varia# | Espasmo |
-| Paralisar Membro | Com/R-HT | 1 seg | 1 min | 3# | AM, 5 mág. Controle do Corpo incl. Dor |
+| Paralisar Membros | Com/R-HT | 1 seg | 1 min | 3# | AM, 5 mág. Controle do Corpo incl. Dor |
 | Paralisia Total | Com/R-HT | 1 seg | 1 min | 5# | Paralisar Membros |
 | Projétil de Maldição | Projétil | 1 seg+o.mg. | Varia# | 2 | AM 2 + outra mágica |
 | Pés Plantados | Com/R-ST | 1 seg | 1 mín# | 3 | Estorvar |
@@ -539,20 +557,20 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Acalmar Animais | Comum | 1 seg | Perm.# | 1a3 | Persuasão ou Vant. Empatia c/Animais |
-| Cavalgar (mágica) | Comum | 1 seg | 5 min | 2/1 | 2 mágicas Luz, Espasmo |
-| Conexão c/Animais | Comum | 5 seg | Especial | 3 | Convocação de Animais |
+| Cavalgar | Comum | 1 seg | 5 min | 2/1 | 1 mág. de Controle do animal — lançada antes |
+| Conexão com Animais | Comum | 5 seg | Especial | 3 | Convocação de Animais |
 | Controle de Insetos | Com/R-IQ | 1 seg | 1 min | 3/2 | Acalmar Animais |
 | Controle de Mamíferos | Com/R-IQ | 1 seg | 1 min | 5/3 | Acalmar Animais ou Subjugar |
-| Controle de Moluscos | Com/R-IQ | 1 aeg | 1 min | 3/2 | Acalmar Amimais |
-| Controle de Peixes | Com/R-IQ | 1 seg | 1 min | 3/2 | Acalmar Amimais |
-| Controle de Pássaros | Com/R-IQ | 1 seg | 1 min | 4/2 | Acalmar Amimais |
+| Controle de Moluscos | Com/R-IQ | 1 aeg | 1 min | 3/2 | Acalmar Animais |
+| Controle de Peixes | Com/R-IQ | 1 seg | 1 min | 3/2 | Acalmar Animais |
+| Controle de Aves | Com/R-IQ | 1 seg | 1 min | 4/2 | Acalmar Animais |
 | Controle de Répteis | Com/R-IQ | 1 seg | 1 min | 4/2 | Acalmar Animais |
 | Convocação de Animais | Comum | 1 seg | 1 min | 3/2# | Acalmar Animais |
 | Dominar Animais | Com/Bl/R-IQ | 1 seg | Indef. | 2 | Acalmar Animais |
-| Falar c/ Animais | Comum | 1 seg | 1 min | 4/2 | Convocação de Animais |
-| Localizar Animais | Informação | 1 seg | Inst | 3# | Conv. Animais, Localizadora ou 2 Mág. Localizar |
+| Falar com Animais | Comum | 1 seg | 1 min | 4/2 | Convocação de Animais |
+| Localizar Animais | Informação | 1 seg | Inst | 3# | Convocação de Animais, Localizadora ou 2 Mág. Localizar |
 | Metamorfose* | Especial | 3 seg | 1h | 6/2 | AM + 6 outras mágicas |
-| Metamorfosear Outros* | Especial/R-IQ | 30 seg | 1h | 6/2 | AM 2, Metamorfose p/ aquela forma |
+| Metamorfosear a Outros* | Especial/R-IQ | 30 seg | 1h | 6/2 | AM 2, Metamorfose (para aquela forma) |
 | Passageiro Interno | Comum | 3 seg | 1 min | 4/1 | 2 mág, Controle de Animais |
 | Possessão de Animais | Com/R-IQ | 5 seg | 1 min | 6/2 | Passageiro Interno ou Possessão |
 
@@ -566,15 +584,15 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Alarme Florestal | Área | 1 seg | 10 h | 0,5#/s | 4 mágicas de Plantas |
 | Animação de Plantas | Comum | 5 seg | 1 min | varia# | 7 mágicas de Plantas |
 | Crescimento de Plantas | Área | 10 seg | 1 min | 3/2 | Curar Plantas |
-| Criar Planta | Área | seg=custo | Perm. | varia# | AM, Crescimento de Plantas |
-| Curar Plantas | Área | 1 min | Perm. | 3# | Identificação de Plantas |
+| Criar Plantas | Área | seg=custo | Perm. | varia# | AM, Crescimento de Plantas |
+| Curar Plantas | Área | 1 min | Perm. | 3# | Identificar Plantas |
 | Entrelaçamento | Área | 2 seg | 1 min | 1 ou 2#/h | Crescimento de Plantas |
-| Esconder Trilha | Comum | 1 seg | 1 min | 2/1 | Curar Planta* |
+| Esconder Rastros | Comum | 1 seg | 1 min | 2/1 | Curar Plantas |
 | Forma de Planta | Especial | 1 seg | 1h | 5/2 | AM, 6 mág. Plantas |
-| Identificação de Plantas | Informação | 1 seg | Inst | 2 | Localizar Plantas |
-| Localizar Planta | Informação | 1 seg | Inst. | 2 | nenhum |
-| Moldar Plantas | Comum | 10 seg | 1 min | 3/1# | Identificação de Planta |
-| Murchar Planta | Área/R-HT | 10 seg | Perm. | 2 | Crescimento de Plantas |
+| Identificar Plantas | Informação | 1 seg | Inst | 2 | Localizar Plantas |
+| Localizar Plantas | Informação | 1 seg | Inst. | 2 | nenhum |
+| Moldar Plantas | Comum | 10 seg | 1 min | 3/1# | Identificar Plantas |
+| Murchar Plantas | Área/R-HT | 10 seg | Perm. | 2 | Crescimento de Plantas |
 | Percepção de Plantas | C/R-Esc. Trilha | 1 seg | 1 min | 3/2 | Alarme Florestal, Esconder Rastros |
 
 # Alimentos
@@ -589,13 +607,13 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Criar Alimento | Comum | 30 seg | Perm. | 3/refeição | Cozinhar, Localizar Alimento |
 | Destilar | Comum | 10 seg | Perm. | 1/250 ml | Fermentar, Dissipar Água |
 | Deteriorar | Comum | 1 seg | Perm. | 1/refeição | Testar Alimento |
-| Envenenar Alimentos | Comum | 1 seg | Perm. | 3 por refeição | Purificação de Alimentos, Deteriorar |
+| Envenenar Alimento | Comum | 1 seg | Perm. | 3 por refeição | Purificar Alimento, Deteriorar |
 | Fermentar | Comum | 10 seg | 1 h | 1 por litro, ou por pão | Deteriorar |
 | Localizar Alimento | Informação | 1 seg | Inst | 2 | nenhum |
-| Preservar Alimentos | Comum | 1 seg | 1 semana | especial# | Esterilizar, Testar Alimentos |
-| Purificação de Alimento | Comum | 1 seg | Perm. | 1 por 0,5 kg | Preservar Alimentos ou Deteriorar |
+| Preservar Alimento | Comum | 1 seg | 1 semana | especial# | Esterilizar, Testar Alimento |
+| Purificar Alimento\* | Comum | 1 seg | Perm. | 1 por 0,5 kg | Preservar Alimento ou Deteriorar |
 | Testar Alimento | Informação | 1 seg | Inst. | 1 a 3# | nenhum |
-| Água p/Vinho | Comum | 10 seg | Perm. | 4 por 4l# | Purificação de Água, Fermentar |
+| Água para Vinho | Comum | 10 seg | Perm. | 4 por 4l# | Purificação de Água, Fermentar |
 
 # Meta-mágicas
 
@@ -603,26 +621,44 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
-| Anular Mágica | Área/R-mágica | seg=custo | Perm. | 3 | Contramágica + 12 outras mág. |
+| Anulação de Magia | Área/R-mágica | seg=custo | Perm. | 3 | Contramágica + 12 outras mág. |
 | Ativação de Runas* | Comum | 1 seg | Inst. | nenhuma | AM, Ciência das Runas 12+ |
 | Bênção | Comum | min=custo | especial | especial | AM 2, 2 mág. 10 esc. dif. |
-| Conexão | Área | 4 h. | Indef.# | 8 | Retardo |
 | Contramágica | Com/R-Mágica | 5 seg | Inst. | varia# | AM |
-| Drenar Mana* | Área | 1 h. | Perm. | 10 | Anular Mágica, 1 mág. 10 esc. dif. |
+| Drenar Mana* | Área | 1 h. | Perm. | 10 | Anulação de Magia, 1 mág. 10 esc. dif. |
 | Escamotear Magia | Comum | 3 seg | 10 h | 1 a 5#/s | Detecção de Magia |
 | Escudo Antimágicas | Área | 1 seg | 1 min | 3/2 | AM 2, Resguardar, Resistência a Magia |
 | Maldição | Comum | variável | Especial | varia# | AM 2, 2 mág. 10 esc. dif. |
-| Pentagrama | Especial | 5 seg/hex | Perm. | 10/hex# | Escudo Anti-mágicas |
+| Pentagrama | Especial | 5 seg/hex | Perm. | 10/hex# | Escudo Antimágicas |
 | Proteção | Bl/R-mágica | nenhum | Inst. | 2 ou 3# | AM |
 | Proteção Total | Bloq/R-mágica | nenhum | Inst. | 1 por objetivo# | AM 2, Proteção |
 | Refletir | Bl/R-mágica | nenhum | Inst. | 4 ou 6# | Proteção |
-| Reflexo | Especial | 10 seg | 1 h | varia# | Proteção, Retardo |
 | Remoção de Maldição | Com/R-mágica | 1 h. | Inst. | 20 | AM 2, 1 mág. 15 esc. dif. |
 | Resguardar | Comum | 5 seg | 10 h | 3/1# | AM |
 | Resguardar Área | Área | seg=custo | 10 h | 3/2 | Resguardar |
 | Resistência a Magia | Com/R-IQ+AM | 3 seg | 1 min | 1 a 5/s | AM, 1 mág. 7 esc. dif. |
-| Restaurar Mana* | Área | 1 h. | Perm. | 10 | Anular Mágica, 1 mág. 10 esc. dif. |
-| Retardo | Comum | 10 seg | 2h | 3/3 | AM 3+10 mág. |
+| Restaurar Mana* | Área | 1 h. | Perm. | 10 | Anulação de Magia, 1 mág. 10 esc. dif. |
+
+# Conexão
+
+**Casas que concedem:** Thoth · Odin
+
+> **Nota.** Colégio novo em 13/09/2026. O *GURPS Magia* imprime estas três sob o cabeçalho
+> **Mágicas de Conexão** (p.55-56); o `27` as mantinha em Meta-mágicas, e a mágica *Conexão*
+> figurava como fronteira para uma escola que não existia na Garganta. Agora existe.
+> **As duas Casas que já concediam Meta-mágicas concedem também esta** — nenhum mago perde
+> acesso, e nenhuma ficha muda de conta.
+>
+> **É colégio pequeno e fundo.** São três mágicas, e *Retardo* — que é a porta das outras duas —
+> exige Aptidão Mágica 3 mais quinze mágicas quaisquer. Quem chega aqui é mago de fim de carreira.
+> **O que ele faz:** ligar uma coisa a outra à distância. O que se faz aqui acontece lá; o que se
+> lança volta; o que se prepara dispara depois.
+
+| Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
+| --- | --- | --- | --- | --- | --- |
+| Conexão | Área | 4 h. | Indef.# | 8 | Retardo |
+| Reflexo | Especial | 10 seg | 1 h | varia# | Proteção, Retardo |
+| Retardo | Comum | 10 seg | 2h | 3/3 | AM 3 + 15 mágicas quaisquer |
 
 # Necromancia
 
@@ -634,20 +670,20 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Aprisionar Alma* | Comum | 1 min | Perm. | 8 | AM, 6 mág. Necro. incl. Roubar ST |
 | Controle de Zumbi | Com/R-mágica | 1 seg | Perm. | 3 | Zumbi |
 | Convocar Demônio | Especial | 5 min | 1h# | 20 | AM, 1 mág. 10 esc. dif. |
-| Convocar Sombra* | Inform/R-IQ | 10 min | 1 min | 50/20 | Convocação de Espíritos |
-| Convocar de Espírito | Inform/R-IQ | 5 min | 1 min | 20/10# | Visão da Morte AM 2 |
+| Convocar Sombra* | Inform/R-IQ | 10 min | 1 min | 50/20 | Convocar Espíritos |
+| Convocar Espíritos | Inform/R-IQ | 5 min | 1 min | 20/10# | Visão da Morte AM 2 |
 | Convocação Extradimensional | Especial | 5 min | varia# | 20# | AM, 1 mág. 10 esc. dif. |
-| Envelhecer* | Com/R-HT | 1 min | Perm. | 5 a 50 | Juventude ou 6 outras mágicas Necromânticas |
+| Envelhecimento* | Com/R-HT | 1 min | Perm. | 5 a 50 | Rejuvenescer ou 6 outras mágicas Necromânticas |
 | Espantar Zumbi | Área | 2 seg | 1 dia | 2# | Zumbi# |
 | Espírito de Caveira | Comum | 1 seg | 24 h | 20 | 4 outras mágicas Necrominticas |
 | Expulsar | Esp/R-ST+IQ | 5 seg | Inst. | Especial | AM, 1 mágica de 10 esc. dif. |
 | Percepção de Espíritos | Inform/Área | 1 seg | Inst. | 0,5 | Visão da Morte ou Percepção de Vida + AM |
-| Pestilência | Comum | 30 seg | Perm. | 6 | AM, Roubar HT, Deteriorar |
+| Pestilência | Comum | 30 seg | Perm. | 6 | AM, Roubar Vitalidade, Deteriorar |
 | Roubar Força | Comum | 1 min\3 ST | Perm. | nenhum# | Cura Superficial |
-| Roubar Juventude* | Com/R-HT | 1 h. | Perm. | 10 a 30 | Juventude, Envelhecimento, Roubar HT |
-| Roubar Vitalidade | Comum | 1 min\3 HT | Perm | nenhum# | Roubar ST |
+| Roubar Juventude* | Com/R-HT | 1 h. | Perm. | 10 a 30 | Rejuvenescer, Envelhecimento, Roubar Vitalidade |
+| Roubar Vitalidade | Comum | 1 min\3 HT | Perm | nenhum# | Roubar Força |
 | Visão da Morte | Comum | 3 seg | 1 seg | 2 | AM |
-| Zumbi | Comum | 1 mim. | Perm. | 8# | Convocação de Espíritos, Dar HT |
+| Zumbi | Comum | 1 mim. | Perm. | 8# | Convocar Espíritos, Dar Vitalidade |
 
 # Encantamentos
 
@@ -656,7 +692,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Arma Dançante | Encantamento | — | Perm. | 1.000/0,5 kg# | Golem de Ar |
-| Bola de Cristal | Encantamento | — | Perm. | 1.000 | Adivinhação (Cristalomancia) |
+| Bola de Cristal | Encantamento | — | Perm. | 1.000 | Adivinhação |
 | Cajado | Encantamento | — | Perm. | 30 | Encantar |
 | Cornucópia | Encantamento | — | Perm. | 50× valor $# | AM 2, 2 Encantamentos de Armas |
 | Denominar | Encantamento | — | Perm. | 200 ou 400# | Encantar |
@@ -694,7 +730,6 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | --- | --- |
 | Audição Remota | Som/Reconhec. |
 | Chuva | Ar/Água |
-| Conexão | Conex/Meta |
 | Enjoo | Mente/Corpo |
 | Geovisão | Terra/Reconhec. |
 | Nadar | Água/Movimt. |
@@ -703,3 +738,61 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Ressurreição* | Cura/Necro. |
 | Imunidade a Relâmpagos | Eletricidade/Proteção |
 | Terra p/ Ar | Terra/Ar |
+
+
+# Nomes antigos — onde procurar
+
+Até a versão 3 esta tabela usava o nome da **Relação das Mágicas**. Desde a versão 4 usa o do
+**verbete**, que é onde a regra está escrita. Quem procurar pelo nome antigo — em ficha, em
+retificação ou em documento já publicado — encontra aqui para onde ele foi.
+
+| Nome antigo | Nome agora | Onde o livro imprime |
+|---|---|---|
+| Alterar a Face | **Alterar Feições** | Magia p.25 |
+| Anular Mágica | **Anulação de Magia** | Magia p.53 |
+| Cansaço | **Fadiga** | Magia p.25 |
+| Controle de Ilusão | **Controlar Ilusão** | Magia p.46 |
+| Controle de Pássaros | **Controle de Aves** | MB p.155 · Magia p.22 |
+| Convocar de Espírito | **Convocar Espíritos** | Magia p.63 |
+| Desviar Curso | **Andar em Círculos** | Magia p.25 |
+| Dom das Letras | **Dom da Escrita** | Magia p.27 |
+| Envelhecer | **Envelhecimento** | Magia p.65 |
+| Esconder Trilha | **Esconder Rastros** | Magia p.67 |
+| Falsas Recordações | **Falsas Lembranças** | Magia p.58 |
+| Identificar Pontos Fracos | **Detectar Pontos Fracos** | MB p.164 · Magia p.51 |
+| Juventude | **Rejuvenescer** | Magia p.45 |
+| Marcha Forçada | **Marcha Acelerada** | Magia p.60 |
+| Moldar Ar | **Semear Ventos** | Magia p.30 |
+| Odor | **Gerar Odor** | Magia p.32 |
+| Ruído | **Barulho** | Magia p.69 |
+| Terra p/ Ar | **Terra em Ar** | MB p.156 · Magia p.29 |
+| Voz Possante | **Voz Amplificada** | Magia p.69 |
+
+E as correções de grafia — a Relação saiu do arquivo com erro de leitura, ou o `27` abreviou:
+
+| Estava | Está | Onde o livro imprime |
+|---|---|---|
+| Atordoar (Atordoamento) | **Atordoamento** | Magia p.23 |
+| Carne p/ Pedra | **Carne para Pedra** | Magia p.29 |
+| Cavalgar (mágica) | **Cavalgar** | Magia p.22 |
+| Compulsão p/ Verdade | **Compulsão para a Verdade** | Magia p.26 |
+| Cond. Permanente | **Condicionamento Permanente** | Magia p.59 |
+| Conexão c/Animais | **Conexão com Animais** | Magia p.21 |
+| Consertar Flecha | **Consertar Flechas** | Magia p.52 |
+| Criar Planta | **Criar Plantas** | Magia p.66 |
+| Envenenar Alimentos | **Envenenar Alimento** | Magia p.42 |
+| Falar c/ Animais | **Falar com Animais** | Magia p.22 |
+| Gelo visão | **Gelovisão** | Magia p.37 |
+| Identificação de Plantas | **Identificar Plantas** | Magia p.66 |
+| Localizar Planta | **Localizar Plantas** | Magia p.66 |
+| Metamorfosear Outros | **Metamorfosear a Outros** | Magia p.23 |
+| Murchar Planta | **Murchar Plantas** | Magia p.66 |
+| Paralisar Membro | **Paralisar Membros** | Magia p.24 |
+| Pedra p/Carne | **Pedra para Carne** | Magia p.29 |
+| Pedra p/Terra | **Pedra para Terra** | MB p.156 · Magia p.28 |
+| Preservar Alimentos | **Preservar Alimento** | Magia p.42 |
+| Purificação de Alimento | **Purificar Alimento** | Magia p.42 |
+| Purificação de Ar | **Purificação do Ar** | Magia p.30 · MB p.157 |
+| Terra p/ Pedra | **Terra para Pedra** | MB p.156 · Magia p.28 |
+| lato de Água | **Jato d'Água** | Magia p.36 |
+| Água p/Vinho | **Água para Vinho** | Magia p.43 |

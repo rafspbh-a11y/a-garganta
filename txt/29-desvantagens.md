@@ -1,6 +1,6 @@
 titulo: Tabela de Desvantagens
-versao: 3
-atualizado: 2026-09-11
+versao: 4
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Tabela de Desvantagens
@@ -8,6 +8,7 @@ fonte: cânone aberto de A Garganta
 > **Nota.**
 > **Custo e efeito em números, do GURPS Módulo Básico.** Desvantagem não é castigo: é financiamento. Você aceita um problema e recebe pontos por ele — e **o problema vai aparecer na mesa**, que é para isso que ele serve.
 > **Escolha desvantagem que faça alguém agir contra você.** Uma alergia a nozes não gera cena. Uma dívida com a Casa de Hefesto gera doze.
+> **Versão 4, de 13/09/2026.** O Árbitro passou os dez livros de GURPS que a campanha possui a livros de mesa, e três coisas mudaram de estatuto: **Segredo** e **Obsessão**, que a versão 3 marcava como regra da casa, **têm verbete** — Segredo em quatro livros, Obsessão em dois —, e a marca ⚠︎ sai das duas. Entraram **Suscetibilidade à Magia**, **Número 13**, **Repugnância** e as **cinco limitações de Aptidão Mágica** do livro de Magia. **Dislexia passou a −15** pelo mesmo raciocínio que fez o Analfabetismo valer −10. E **o Dever da Marca saiu do limite de −40** (§1).
 > **Versão 3, de 10/09/2026.** Entraram cinco desvantagens de livro que faltavam — **Disopia, Disosmia/Ageusia, Eunuco, Desdobramento de Personalidade** e o degrau **Pessoa-objeto** do Estigma Social. **Daltonismo** ganhou Química, que o livro lista e a versão 1 tinha perdido. E **Obsessão** e **Segredo** foram marcadas com ⚠︎: **não existem no Módulo Básico** e ficam declaradas como regra da casa, não como regra de livro.
 
 # 1. As regras que valem para todas
@@ -15,11 +16,20 @@ fonte: cânone aberto de A Garganta
 | Regra | Valor |
 | --- | --- |
 | **Limite** | **−40 pontos** em desvantagens |
-| **Dever da Marca** | **obrigatório**, e ocupa de −5 a −15 **dentro** do −40 |
+| **Dever da Marca** | **obrigatório**, e **fica FORA do −40** — v. a nota abaixo |
 | Teste de desvantagem mental | quando a desvantagem permite teste de IQ ou Vontade, **qualquer resultado 14 ou mais é falha**, por mais alto que seja o NH |
 | Desvantagem física adquirida em jogo | **não dá pontos** — o Árbitro subtrai do total |
 | Desvantagens contraditórias | **proibidas**: nada anulado por uma vantagem que você tenha |
 | Peculiaridades | até 5, a −1 cada, **fora** do limite de −40 |
+
+> **O Dever da Marca saiu do limite em 13/09/2026, e isso devolveu dez pontos a cada
+> personagem da mesa.** O *GURPS Magia*, p.93, é literal: *"Em alguns mundos, todos os magos têm
+> uma Reputação ruim ou qualquer outra desvantagem **automática**. Estas desvantagens **não devem
+> ser levadas em conta** no cálculo do limite de 40 pontos em desvantagens."* O Dever da Marca é
+> exatamente isso — imposto pelo mundo, obrigatório para todo marcado, sem escolha. Ele
+> continua obrigatório e continua valendo de −5 a −15 conforme a frequência; o que muda é que
+> **não ocupa mais espaço dentro do −40**. Cada ficha da mesa passa a ter até dez pontos a mais
+> de desvantagem para assumir, e **escolher qual é do jogador**, não do Árbitro.
 
 # 2. A lista
 
@@ -45,7 +55,7 @@ fonte: cânone aberto de A Garganta
 | **Dever** | **−2 a −15** | Ver §3. **É a desvantagem da Marca**, e é obrigatória |
 | **Disopia** (visão imperfeita) | **−10**, e **−25 na Garganta** | Míope ou hipermétrope, à escolha. **−2** em toda perícia com arma de mão; com arremesso ou projétil, **conta o dobro da distância real**. Hipermétrope: **triplo do tempo** para ler e **−3 de DX** em trabalho manual. **Óculos só existem a partir do NT5** — nas sete cidades não há correção, então o Árbitro paga o valor cheio de −25 em vez de −10 |
 | **Disosmia / Ageusia** | −5 | Não sente cheiro nem sabor de nada. **Não detecta veneno, fumaça, gás nem podridão pelo olfato**; em compensação, come qualquer coisa e não é afetado por fedor |
-| Dislexia | −5 / −15 | −5 em NT≤4, −15 acima. Estuda perícia mental sem professor a **¼ da velocidade**. **Não pode aprender magia** |
+| Dislexia | **−15** | O livro dá −5 em cultura analfabeta e −15 em cultura letrada, *"pós-imprensa"* — e **as sete cidades são cultura letrada**, pelo mesmo fato de mundo que fez a Alfabetização custar 0 e o Analfabetismo valer −10. Estuda perícia mental sem professor a **¼ da velocidade**; **não pode aprender magia**; e **é automaticamente analfabeto sem receber pontos por isso** — não se somam as duas |
 | Distração | −15 | **−5** em qualquer teste de IQ fora da tarefa em foco; teste de Vontade−5 a cada 5 min para se concentrar em tarefa maçante |
 | Duro de Ouvido | −10 | **−4** em todo teste de Audição e ao entender alguém falando |
 | Epilepsia | −30 | Teste de HT em situação de tensão; falha = crise de 1D minutos **e 1D de Fadiga** |
@@ -82,7 +92,7 @@ fonte: cânone aberto de A Garganta
 | Mudez | −25 | **+3** em Mímica e Linguagem de Sinais |
 | Nanismo | −15 | Altura 60%; Deslocamento −1; **−1** para quem o acerte com projétil |
 | Obesidade | −10 / −20 | −1 ou **−2** de reação; HT máxima 15 ou 13; **−3** em Disfarce e Sombra; **+5 em Natação**; **+2** em Encontrão |
-| **Obsessão** ⚠︎ | −5 a −15 | **Não tem verbete no Módulo Básico.** Fica como **regra da casa**, com a faixa de Compulsão: teste de Vontade para não perseguir o objeto da obsessão, e o valor sai do estrago que ela causa. **Quem quiser jogar seguro compra Compulsão, que é de livro** |
+| **Obsessão** | **−5 / −10** | *Artes Marciais* p.29 e *Illuminati* p.30. Menor (−5): raramente vem à tona. Grande (−10): aparece na maioria das conversas, e **−2 de reação** de quem note. Teste de Vontade só em situação cotidiana — **em emergência ou perigo não há teste**. Atingido o objetivo, substitui-se ou recompra-se. *(Era regra da casa até 12/09; o verbete apareceu quando os dez livros viraram livros de mesa, e o teto real é −10, não −15.)* |
 | Pacifismo | −15 / −30 | Não-violência total: −30. Só auto-defesa: −15. Incapaz de matar: −15, e depois de matar fica **3D dias inútil** |
 | Paralisia Frente ao Combate | −15 | **Teste de HT**, não de IQ, sempre que lesão pareça iminente; **qualquer resultado acima de 13 falha**; falha = atordoamento |
 | Paranóia | −10 | **−2** nas reações dos outros a você |
@@ -93,9 +103,10 @@ fonte: cânone aberto de A Garganta
 | **Má Reputação** | **variável** | Ver §3 |
 | Sadismo | −15 | **−3** de reação de quem o conheça como tal; teste de Vontade para se controlar |
 | Sanguinolência | −10 | Teste de Vontade para aceitar rendição ou fazer prisioneiro |
-| **Segredo** ⚠︎ | −5 a −30 | **Não tem verbete no Módulo Básico.** Fica como **regra da casa**: o valor sai do estrago que o vazamento causa — vergonha (−5), perda de emprego ou Status (−10), morte ou banimento (−20 a −30). O equivalente de livro é a **Má Reputação latente** somada a um **Inimigo**. É ótimo motor de trama, mas **entra declarado como divergência**, não como se fosse do livro |
+| **Segredo** | −5 a −30 | *Artes Marciais* p.29, *Illuminati* p.30, *Psiquismo* p.98, *Império Romano* p.36 — e o índice do próprio Módulo Básico o remete para o **Apêndice, p.A-7**, que não existe no exemplar da campanha. O valor sai do estrago que o vazamento causa: vergonha (−5), perda de emprego ou Status (−10), morte ou banimento (−20 a −30). **Frequência:** o segredo ameaça vir à tona numa sessão com 6 ou menos em 3 dados, rolado antes da aventura. **Vazado**, o personagem adquire desvantagens novas e permanentes valendo **o dobro** do Segredo, usadas primeiro para recomprá-lo. *(Era regra da casa até 12/09.)* |
 | **Senso de Dever** | **−5 a −20** | Ver §3. **+2** nas reações de quem o conheça por isso |
 | Status negativo | −5 por nível | De −1 a −4. O redutor de reação é a **diferença** de Status, com piso de −4 |
+| **Suscetibilidade à Magia** | **−3/nível** | *Grimório* p.5. O nível **é somado ao NH de quem lança magia contra você** — Suscetibilidade 4 contra um operador de NH 12 faz o NH efetivo dele virar **16** — e **é subtraído dos seus testes para resistir**. **Contra mágica de área funciona normalmente**, nem em dobro nem pela metade, ao contrário do Abascanto. **Combina com Aptidão Mágica; não combina com Abascanto.** E **qualquer mago que examine sua aura lê o nível exato** — num mundo onde as Casas leem a Marca, isso é um farol. O livro não dá teto de nível, e o Árbitro decidiu não criar um: **quem a compra alto está apostando que não desce abaixo do andar 8**, onde a mana alta dá +2 de NH a todo mago inimigo |
 | Surdez | −20 | **−3 em IQ** ao aprender língua; **+3** em Mímica, Sinais e Leitura Labial |
 | Teimosia | −5 | **−1** nas reações das outras pessoas |
 | Timidez | −5 / −10 / −15 | **−1**, **−2** ou impossível em Dissimulação, Trovador, Boemia, Diplomacia, Lábia, Liderança, Comércio, Política, Trato Social, Sex-Appeal e Pedagogia |
@@ -129,12 +140,21 @@ fonte: cânone aberto de A Garganta
 
 | Capacidade | Base | | Importância | Fator | | Frequência | Jogada | Fator |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 51+ pontos | 0 (é Aliado grátis) | | empregado ou conhecido | ×½ | | quase o tempo todo | ≤15 | ×3 |
+| **51 a 75 pontos** | **0** — é Aliado grátis | | empregado ou conhecido | ×½ | | quase o tempo todo | ≤15 | ×3 |
 | 26 a 50 | −6 | | amigo | ×1 | | muita frequência | ≤12 | ×2 |
 | 1 a 25 | −12 | | amado | ×2 | | pouca frequência | ≤9 | ×1 |
 | 0 ou menos | −16 | | | | | muito raramente | ≤6 | ×½ |
 
 **Máximo 2 dependentes.** Nenhum ponto de aventura em que o dependente morra ou seja gravemente ferido.
+
+> **A faixa fechada em 13/09/2026, porque as duas tabelas do cânone diziam coisas opostas.**
+> O livro tem um buraco: a página de Dependentes diz que de 51 a 75 pontos o NPC é *"em essência
+> um Aliado que não custa nenhum ponto"*, e a página de Aliados diz que *"menos do que 75"* é
+> Dependente e retoma o preço em 76 — o valor 75 exato não pertencia a ninguém. **Fica assim,
+> em três degraus:** até **50 pontos** é Dependente e rende pontos por esta tabela; de **51 a
+> 75** é Aliado grátis, que aparece e ajuda sem custar nem render; de **76 em diante** é Aliado
+> pago, pela tabela do `28`. Aparece toda vez que um jogador escreve uma Amarra, e a ficha
+> exige duas.
 
 ## Dever — a desvantagem da Marca
 
@@ -200,6 +220,8 @@ fonte: cânone aberto de A Garganta
 | Répteis | −10 / −20 | −2 muito grande ou venenoso; −4 em quantidade |
 | Ruídos altos | −10 / −20 | ruído súbito exige teste imediato |
 | Sujeira | −10 / −20 | Vontade−5 para comer comida desconhecida |
+| **Repugnância** (sem nome técnico) | −10 / −20 | Imundície, sangue, cadáveres, bichos rastejantes. O livro é expresso: **não é a soma** de insetos, répteis, sujeira e morte — inseto ou réptil grande não perturba, nem fantasma, nem "sujeira limpa". A versão moderada é **peculiaridade** |
+| **Número 13** (triscedecofobia) | −5 / −10 | Verificação de Pânico para fazer o que envolva o número treze; **−5** se houver uma sexta-feira treze no meio |
 | Maquinaria | −5 / −10 em NT baixo | −3 com engenho complexo |
 
 **As cinco primeiras são as que mais aparecem na Garganta.** Escolha com o poço em mente: escuridão e espaço fechado são o cenário, não um acidente.
@@ -219,6 +241,28 @@ fonte: cânone aberto de A Garganta
 | altamente viciadora (−5 na Regeneração) | −5 |
 | totalmente viciadora (−10 na Regeneração) | −10 |
 | droga legal no mundo de origem | **+5** |
+
+## As cinco limitações de Aptidão Mágica
+
+Não são linhas desta tabela: são **descontos na linha de Aptidão Mágica**, do *GURPS Magia*
+p.93. Entraram em 13/09/2026. **Nenhum mago pode escolher mais de uma**, e o livro fixa um piso:
+nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 nos seguintes.
+
+> **Elas ficam fora do teto de −40**, porque não são desvantagem: são preço menor numa vantagem.
+
+| Limitação | Aptidão passa a custar | O que ela tira |
+| --- | --- | --- |
+| **Seletiva ao Sol** | 8 no 1º nível, 5 por nível | Poderes só das **6h às 18h**. Perde-os em eclipse solar. Sabe, acordado, quando falta um minuto para o nascer e o pôr do sol. **O livro legislou o subterrâneo:** *"não é afetado pelo fato de estar no interior de um edifício, **sob o solo** e situações similares. O que importa é a posição do sol."* |
+| **Seletiva às Estrelas** | 8 e 5 | O período oposto — **18h às 6h** — e durante os eclipses |
+| **Seletiva à Lua** | 8 e 5 | Só com a lua no céu, cerca de metade do tempo; **+5 durante eclipse solar**. Regra opcional por fase: **+3** na lua cheia, +2 nos dois dias em volta, +1 nos dois seguintes, e **nenhum poder na lua nova e nos cinco dias antes e depois** |
+| **Uma Única Escola** | 10 no 1º nível, 6 por nível | A Aptidão só funciona com **um colégio** e com Recuperação de Força. As demais mágicas ele aprende como não-mago e só as executa em mana alto, podendo usá-las como pré-requisito. Não detecta objeto encantado que não contenha mágica da sua escola |
+| **Solitária** | 10 e 6 | **−3 no NH por cada pessoa ou ser inteligente num raio de 5 metros, e −6 por quem estiver tocando** o mago. Em troca, teste de IQ para perceber quem entra ou sai do raio, uma pessoa de cada vez |
+
+> **Duas ressalvas que o Árbitro conhece e assumiu.** *Uma Única Escola* devolve treze pontos a
+> um mago de nível 3 — e **quinze Casas da Garganta já concedem exatamente um colégio**, de modo
+> que para um marcado por Agni, Zeus, Tyr, Deméter e mais onze ela não tira nada. E *Solitária*,
+> numa esquadra de cinco, põe o mago entre −12 e −15 permanentes, que é três vezes o que a mana
+> alta dá. **As duas entram como o livro imprime, por decisão de 13/09/2026.**
 
 # 4. Peculiaridades
 

@@ -1,6 +1,6 @@
 titulo: Guia de Criação e Manual de Magia
-versao: 8
-atualizado: 2026-09-11
+versao: 9
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Guia de Criação e Manual de Magia
@@ -75,7 +75,7 @@ Vantagem é qualquer coisa boa e permanente: um talento, um sentido melhor, dinh
 <tr>
 <td>Memória Eidética</td>
 <td>30</td>
-<td>Você lembra de tudo que viu e ouviu — e **todo ponto gasto em perícia mental conta em dobro** (magia não). Cara, e transforma o personagem em arquivo ambulante.</td>
+<td>Você lembra de tudo que viu e ouviu — e **todo ponto gasto em perícia mental conta em dobro**. Em magia o ponto **não** dobra, mas a vantagem **soma ao IQ com que se aprende mágica: +1 no primeiro nível, +2 no segundo, e para aí** (`23`, retificação de 10/09/2026 — que esta página só recebeu em 13/09). Cara, e transforma o personagem em arquivo ambulante.</td>
 </tr>
 <tr>
 <td>Intuição</td>
@@ -292,6 +292,11 @@ A leitura curta: **1 ponto** te dá o básico, **4 pontos** te dão competência
 Sua língua natal é **grátis**, no nível do seu IQ. O **Falar do Limiar** custa como perícia normal e é praticamente obrigatório: **sem ele você não negocia fora da própria embaixada**.
 Cada idioma estrangeiro a mais é investimento político real, não enfeite. Quem lê a escrita antiga de Ámenti entra em arquivos que valem mais que espólio de andar 8.
 # PARTE 6 — MAGIA
+> **Cinco limitações podem baratear a Aptidão Mágica**, do livro de Magia p.93, e entraram em
+> 13/09/2026: **Seletiva ao Sol, à Lua ou às Estrelas** (8 pontos no primeiro nível, 5 por nível)
+> e **Uma Única Escola** ou **Solitária** (10 e 6). Não se escolhe mais de uma. Estão no `29`,
+> no fim da seção 3, com o que cada uma tira.
+
 ## 6.1 Quem pode ser mago
 **Não existe mago sem deus.** A Aptidão Mágica é comprada com os seus pontos, mas quem **concede** é uma Casa divina — e o que se concede, se retira. Mago excomungado perde o acesso. Isso não é ameaça de fundo: é uma alavanca que existe e que alguém vai puxar.
 **Custo da Aptidão Mágica** (como está em uso no cânone, no modelo de Agni):
@@ -301,7 +306,7 @@ Cada idioma estrangeiro a mais é investimento político real, não enfeite. Que
 ## 6.2 O que a Aptidão faz
 Três coisas:
 1. **Permite aprender feitiços.** Sem ela, nenhum.
-2. **Soma ao nível de todos os seus feitiços.** Aptidão 2 é +2 em cada um, para sempre. É por isso que ela é cara e por isso que quase sempre compensa comprar nível 2 em vez de nível 1 mais feitiços.
+2. **Levanta o IQ com que você compra feitiço.** O livro é literal: *"seu nível de Aptidão Mágica é somado ao seu atributo IQ para o aprendizado de mágicas"*. IQ 14 com Aptidão 2 compra como IQ 16 — é o **IQ efetivo**, e é ele que a ficha declara no cabeçalho do bloco de feitiços. O resultado numérico é o mesmo de somar +2 depois; o modo de comprar não, e a diferença aparece na conta de pontos (`23` §2.1). É por isso que ela é cara e por isso que quase sempre compensa comprar nível 2 em vez de nível 1 mais feitiços.
 3. **Faz você sentir mana.** Você percebe quando a magia vai falhar antes de tentar — o que na Garganta é informação de sobrevivência.
 ## 6.3 Feitiço é perícia
 Cada feitiço é comprado separadamente, como perícia mental. Seu nível é **IQ + Aptidão + o que você investiu**. Um IQ 14 com Aptidão 2 e 1 ponto num feitiço fica em torno de 15 — bom o bastante para usar sob pressão.
@@ -369,138 +374,20 @@ O mago fica mais forte descendo. Também fica mais perigoso para o próprio grup
 Você só aprende feitiços dos colégios que são **domínio do seu deus**. Fora disso, não é caro: é impossível.
 
 **Impossível de comprar — não impossível de ter.** Existem magos carregando feitiço fora do domínio do próprio deus. Não foi compra: foi acordo. Alguém ensinou o que não devia, alguém abriu exceção, alguém cobrou alguma coisa em troca — e essa pessoa existe, tem nome e continua viva na história do personagem. Quem tem um feitiço assim sabe de quem o recebeu, mesmo que não conte a ninguém, e às vezes não conta nem ao Mestre de Cena. Na Sessão Zero o Árbitro pergunta a origem uma vez; **"ainda não sei" é resposta válida**, e então a origem passa a ser do Árbitro para escrever — e ela volta. O que não existe é feitiço fora de domínio sem ninguém do outro lado.
-
-<table>
-<tr>
-<th>Colégio</th>
-<th>O que faz</th>
-<th>Casas que concedem</th>
-</tr>
-<tr>
-<td>**Fogo**</td>
-<td>Criar, moldar, arremessar e apagar fogo; calor e resistência ao frio</td>
-<td>Agni · Hefesto · Xangô · Rá</td>
-</tr>
-<tr>
-<td>**Ar**</td>
-<td>Vento, respirar onde não se respira, atenuar queda</td>
-<td>Vayu · Kukulkán · Skadi</td>
-</tr>
-<tr>
-<td>**Água**</td>
-<td>Criar e moldar água, respirar submerso, gelo</td>
-<td>Posêidon · Varuna · Tláloc · Oxum</td>
-</tr>
-<tr>
-<td>**Terra**</td>
-<td>Moldar pedra, abrir e fechar passagem, detectar metal e veio</td>
-<td>Hefesto · Ogum · Geb</td>
-</tr>
-<tr>
-<td>**Movimento**</td>
-<td>Deslocar, levitar, apressar, aliviar carga</td>
-<td>Hermes · Vayu · Kukulkán · Exu</td>
-</tr>
-<tr>
-<td>**Luz e Trevas**</td>
-<td>Iluminar, escurecer, cegar, enxergar no escuro</td>
-<td>Apolo · Rá · Ixchel</td>
-</tr>
-<tr>
-<td>**Proteção e Aviso**</td>
-<td>Escudos, alarmes, detectar o que vem</td>
-<td>Atena · Ísis · Zhong Kui · Tyr</td>
-</tr>
-<tr>
-<td>**Cura**</td>
-<td>Fechar ferida, deter veneno, tirar fadiga</td>
-<td>Apolo · Ísis · Ixchel · Oxum</td>
-</tr>
-<tr>
-<td>**Conhecimento**</td>
-<td>Detectar magia, ler o passado de um objeto, localizar</td>
-<td>Thoth · Atena · Sarasvati · Odin</td>
-</tr>
-<tr>
-<td>**Comunicação e Empatia**</td>
-<td>Falar à distância, ler intenção, emprestar sentido</td>
-<td>Hermes · Thoth · Oxum · Exu · Loki</td>
-</tr>
-<tr>
-<td>**Mente**</td>
-<td>Sugestão, sono, coragem, esquecimento</td>
-<td>Odin · Freyja · Yanluo</td>
-</tr>
-<tr>
-<td>**Ilusão e Criação**</td>
-<td>Fazer parecer o que não é</td>
-<td>Hermes · Ixchel · Loki</td>
-</tr>
-<tr>
-<td>**Fazer e Quebrar**</td>
-<td>Consertar, arruinar, afiar, enfraquecer</td>
-<td>Hefesto · Ogum</td>
-</tr>
-<tr>
-<td>**Vegetal**</td>
-<td>Plantas, veneno, alimento, caminho na mata</td>
-<td>Deméter · Oxóssi · Ixchel</td>
-</tr>
-<tr>
-<td>**Animal**</td>
-<td>Falar com bicho, acalmar, controlar</td>
-<td>Oxóssi · Ártemis</td>
-</tr>
-<tr>
-<td>**Som**</td>
-<td>Silêncio, voz que atravessa, ruído que engana</td>
-<td>Sarasvati · Leigong</td>
-</tr>
-<tr>
-<td>**Clima**</td>
-<td>Chuva, raio, névoa</td>
-<td>Zeus · Thor · Indra · Tláloc · Xangô</td>
-</tr>
-<tr>
-<td>**Necromancia**</td>
-<td>Falar com o morto, deter o morto-que-anda</td>
-<td>**Regulada.** Ámenti e Fengdu, e só com licença</td>
-</tr>
-<tr>
-<td>**Meta-Feitiços**</td>
-<td>Magia sobre magia: anular, roubar, sustentar</td>
-<td>Thoth · Odin — sempre com pré-requisito pesado</td>
-</tr>
-<tr>
-<td>**Portais**</td>
-<td>—</td>
-<td>**Não disponível na criação.** Qualquer pedido vira Pendência.</td>
-</tr>
-</table>
-
-**Necromancia** não é proibida: é **licenciada**. Praticar sem licença de Ámenti ou de Fengdu é crime nas duas cidades e escândalo nas outras cinco. É jogável, e é caro em política, não em pontos.
-**Portais** está fechado por decisão do Árbitro, e continua fechado até haver decisão em contrário.
-**Exu**, em Ilê Ifé, concede Movimento e Comunicação e Empatia — abrir e fechar caminho, e levar recado. É o domínio dele e sempre foi. Duas notas de mesa, e as duas importam: a obrigação **vem antes** do que se pede, nunca depois, e o que se abre é caminho, não vantagem. Exu não luta por ninguém e não resolve cena. Ele faz a porta existir; atravessar é com você.
-**Loki**, em Gapheim, concede Ilusão e Criação e Comunicação e Empatia — parecer o que não é, e ler quem está do outro lado. A Casa é **tolerada, jamais confiada** (`01a`, 3.3), e a Marca vai nas costas. Duas notas de mesa: a ilusão de Loki **não sobrevive ao toque**, porque a metamorfose do deus chega aqui como aparência e não como transformação; e a Aptidão Mágica concedida por essa Casa é **retirável por ela**, o que nenhuma outra Casa faz. Quem se marca por Loki compra defesa contra o olho, nunca contra a mão — e joga sabendo que o patrono pode cobrar de volta.
-
-**Zeus**, em Ônfalos, concede **Clima** — chuva, raio, névoa. Ele estava fora desta tabela por omissão, não por decisão: a linha de Clima recolhe os deuses de tempestade de todas as tradições da mesa, e faltava justamente aquele de quem o raio é a assinatura. Corrigido em 10/09/2026.
-
-**O recorte de Clima foi fixado em 11/09/2026, e vale para as cinco Casas de tempestade** — Zeus, Thor, Indra, Tláloc e Xangô. **A concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima, e nada além**: a fronteira é a **árvore**, não uma lista. A regra inteira, a corrente de sete compras até o Relâmpago e a **sub-escola de Eletricidade** estão no `31`; a tabela está no `27`, seção **Clima**. O que o `23` §2.3 dizia — que Clima não abre o resto de Ar nem de Água — continua valendo; o que muda é que a raiz de Ar que o pré-requisito exige **não é "o resto", é o próprio Clima subindo**.
-
-**E Zeus ganhou Dádiva: Noção do Perigo, 15.** Zeus Panomphaios (*Ilíada* 8.250) é o autor de todo presságio, e a vantagem é a função literal dele — o Árbitro avisa, sem explicar. **Uma Dádiva só; Visão Aguçada foi pedida e recusada**, e continua vantagem comum comprável por qualquer personagem. Os três motivos estão no `31` §1.
-
-> \[!IMPORTANT\]
-> **Ser marcado pela Casa de Zeus não é ser filho de Zeus, e a diferença tem consequência.**
+> **A tabela de colégios e Casas concedentes mora na Tabela de Mágicas, e só lá.**
+> Esta seção trazia uma cópia dela, e a cópia envelheceu mal: até 12/09/2026 ela ainda publicava
+> **vinte colégios com sete nomes errados** — Movimento, Proteção e Aviso, Conhecimento, Mente,
+> Fazer e Quebrar, Vegetal, Animal, Meta-Feitiços e Portais —, **faltavam Controle do Corpo,
+> Encantamentos e Alimentos**, que já tinham Casa concedente desde setembro, e o Ar não trazia
+> **Hefesto**, que ganhou o recorte da forja na mesma época. As Retificações de Livro dizem, em
+> §2.3, que essa tabela *"foi refeita"* — **e a tabela refeita ficou dentro das Retificações; esta
+> seção nunca foi tocada.** Corrigido em 13/09/2026 pela decisão de **uma fonte só**: a tabela
+> fechada manda, e os outros documentos apontam para ela.
 >
-> O `01a` 3.1 diz que *Zeus tem filhos entre os aventureiros e Hera sabe de todos — ser marcado por ele é honra e sentença*. **A sentença é dos filhos.** A Casa marca quem ela quer, como todas as outras Casas marcam, e o marcado comum não carrega Hera nas costas: carrega o Dever da Marca e mais nada.
->
-> **Filiação é fato de mundo e é do Árbitro**, nunca escolha de ficha e nunca invenção de Mestre de Cena. Nenhum jogador se declara filho de Zeus na Sessão Zero. Se um personagem for filho, ele saberá pelo Árbitro, e o dia em que Hera souber também é do Árbitro.
->
-> Na prática de mesa: **o mago de Zeus lança raio sem nenhum ônus extra**. O que ele carrega é o que qualquer marcado carrega.
+> **Hoje são vinte e três colégios.** Os vinte e um do livro de Magia, mais **Clima**, que é
+> divergência declarada da Garganta (`23` §2.3 e `31`), mais **Conexão**, promovido em
+> 13/09/2026 a partir das três mágicas que o livro imprime sob esse cabeçalho.
 
-Todos os patronos citados nesta tabela têm Casa no `01a`. Se alguém quiser um que não tenha, isso é Pendência antes de ser ficha — Casa nova é fato de mundo, e fato de mundo é da Bíblia.
-> **Nota.**
-> As tradições vivas — Ilê Ifé e Amaravati entre elas — entram na mesa com dignidade. Orixás e devas não são distribuidores de poder; o que se joga é a relação, a obrigação e o preço dela. Quando uma dessas tradições precisar de antagonista, o antagonista é humano.
 ## 6.7 O que cada tipo de mago faz de útil aqui embaixo
 - **Mago de combate** (Fogo, Clima): resolve encontro, gasta fadiga rápido, e chama atenção de tudo no andar. Bom pico, péssima autonomia.
 - **Mago de apoio** (Proteção e Aviso, Cura, Movimento): não brilha na cena e é o motivo de o grupo voltar inteiro. **É o mago mais valioso numa campanha de morte permanente.**

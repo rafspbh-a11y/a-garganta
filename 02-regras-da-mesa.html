@@ -63,6 +63,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <h4>Seu personagem</h4><ul>
 <li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
 <li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="32-os-povos-que-subiram.html">Os Povos que Subiram</a></li>
 <li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
 <li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
 <li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
@@ -90,7 +91,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 </ul>
 <h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
 </nav>
-<main><div class="cabeca"><h1>Regras da Mesa</h1><div class="meta">versão 6 · atualizado em 2026-09-11 · Comece aqui</div></div>
+<main><div class="cabeca"><h1>Regras da Mesa</h1><div class="meta">versão 7 · atualizado em 2026-09-13 · Comece aqui</div></div>
 <p><strong>Sistema:</strong> GURPS, edição clássica · <strong>Orçamento inicial:</strong> 150 pontos</p>
 <p><strong>Regra zero:</strong> onde o registro do Mestre de Cena divergir do livro do Árbitro, <strong>o livro vence.</strong> Registrar a divergência em Pendências.</p>
 <h1>1. O básico</h1>
@@ -138,7 +139,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <li><strong>PV = HT</strong></li>
 <li><strong>Fadiga = ST</strong></li>
 <li><strong>Velocidade Básica = (DX + HT) ÷ 4</strong>, sem arredondar</li>
-<li><strong>Deslocamento = Velocidade Básica</strong> arredondada para baixo</li>
+<li><strong>Deslocamento = Velocidade Básica − o nível de Carga</strong>, arredondado para baixo <em>(o termo da Carga faltava aqui até 13/09/2026; o <code>20</code> §2.1 sempre o trouxe certo, e é dele que sai a Esquiva)</em></li>
 <li><strong>Esquiva = Deslocamento</strong></li>
 <li><strong>Aparar = perícia da arma ÷ 2</strong>, para baixo</li>
 <li><strong>Aparar a ⅔ da perícia</strong>, para baixo — é o que a <strong>Esgrima</strong> dá, com arma de esgrima, nada maior que escudo pequeno e carga no máximo leve. E o <strong>Bastão</strong> apara a ⅔ também: não é privilégio de esgrimista.</li>
@@ -150,6 +151,16 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <p>Desvantagens que rendem bom jogo aqui: Senso de Dever, Código de Honra, Juramento, Inimigo, Dependentes, Reputação Ruim, Dívida, Curiosidade, Impulsividade, Teimosia, Honestidade. Todas se conectam à política das sete cidades.</p>
 <h1>4. Perícias</h1>
 <p>Duas tabelas, porque o livro traz duas. A coluna da esquerda é o nível final que você quer alcançar em relação ao atributo de controle — <strong>DX</strong> nas físicas, <strong>IQ</strong> nas mentais. As demais colunas dão o custo em pontos.</p>
+<blockquote>
+<p><strong>O custo está aqui; a dificuldade de cada perícia está na Tabela de Perícias, e só lá.</strong>
+Esta seção trazia também uma cópia da lista de dificuldades, e a cópia envelheceu: até
+12/09/2026 ela ainda vendia <strong>Luta Livre</strong>, que não tem verbete em livro nenhum, mais doze
+nomes já aposentados — e divergia em duas dificuldades que <strong>cobravam pontos errados</strong>:
+Bastão como Média onde o livro diz Difícil, e Pesquisa como Difícil onde o livro diz Média.
+A decisão de 13/09/2026 é que <strong>a tabela fechada é a única fonte</strong>. Para saber se uma perícia
+é Fácil, Média, Difícil ou Muito Difícil, abra a Tabela de Perícias; para saber quanto custa
+chegar a DX+2 ou IQ+1, use as duas tabelas abaixo.</p>
+</blockquote>
 <h2>Perícias físicas</h2>
 <p>Baseadas em DX — ou em ST ou HT, em algumas poucas, e a leitura é a mesma. <strong>Não existe perícia física Muito Difícil.</strong></p>
 <table>
@@ -733,8 +744,16 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <p><strong>O que cobra:</strong> toda Marca traz um <strong>Dever obrigatório</strong> com a Casa divina, tomado como desvantagem (−5 a −15 conforme frequência), dentro do limite de −40. O deus te chama. Você vai.</p>
 <p><strong>Trocar de patrono</strong> é possível, e é um dos atos políticos mais graves que existem.</p>
 <h2>Dádivas</h2>
-<p>Vantagens sobrenaturais compradas com pontos, <strong>apenas do domínio da sua divindade</strong>. Exemplos: Atena dá Reflexos em Combate e Talento Tático; Thoth dá Memória Eidética e Talento para Idiomas; Ogum dá Talento com Armas e Vigor; Hermes dá Velocidade Superior e Talento Social; Oxum dá Empatia e Cura; Sekhmet dá Fúria e Recuperação Rápida.</p>
-<p>Comprar Dádiva fora do domínio é impossível.</p>
+<p>Vantagens sobrenaturais compradas com pontos, <strong>apenas do domínio da sua divindade</strong>. Comprar Dádiva fora do domínio é impossível.</p>
+<blockquote>
+<p><strong>A lista de quem concede o quê mora na Tabela de Vantagens, e só lá.</strong> Esta seção trazia uma
+cópia dela, e a cópia envelheceu: até 12/09/2026 ela ainda nomeava Talento Tático, Talento com
+Armas, Talento Social, Velocidade Superior, Recuperação Rápida, Talento para Idiomas, Vigor,
+Cura e Fúria — <strong>nove nomes que a Tabela de Vantagens declara inexistentes ou renomeados</strong>, e
+um marcado que lesse esta página compraria vantagem que a homologação recusa. A decisão de
+13/09/2026 é que <strong>a tabela fechada é a única fonte</strong>, e os outros documentos apontam para
+ela em vez de repetir.</p>
+</blockquote>
 <h1>6. Magia</h1>
 <p>O sistema de magia do GURPS é usado por inteiro, com três amarras de mundo.</p>
 <p><strong>1. Magery vem da Casa divina.</strong> Não existe mago sem deus. A Aptidão Mágica é comprada normalmente com pontos, mas só é concedida por uma Casa, e ela pode ser retirada. Um mago excomungado perde o acesso.</p>
@@ -746,7 +765,9 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <h2>Desbloqueio</h2>
 <p>Um jogador que perde um personagem de <strong>rank B ou superior</strong> desbloqueia a opção de criar um personagem não-humano. É bonificação por perda, não recompensa por conquista.</p>
 <ul>
-<li>A raça é comprada com pontos, pelas regras normais — e o orçamento é o de personagem de substituição da seção 9, não os 150 de partida. Quem perdeu um rank B entra com cerca de 210: se a raça custa 40, sobram cerca de 170 para o resto.</li>
+<li>A raça é comprada com pontos, pelas regras normais, e <strong>o custo dela sai de dentro</strong> do orçamento de personagem de substituição da seção 9 — não dos 150 de partida.</li>
+<li><strong>O orçamento não é um número fixo: é a fórmula da seção 9</strong>, e ela se move com a mesa. Média dos Pontos totais de todos os personagens com Estado diferente de Morto, arredondada para baixo, menos 10%, <strong>piso de 150</strong>. <em>Exemplo datado, 13/09/2026: com as sete fichas vivas a média dá 152, menos 10% dá 136, e o piso manda — o orçamento hoje é </em><em>150</em><em>, e um Anão de 30 deixa 120 para o resto.</em> Um número solto envelhece; a fórmula não.</li>
+<li><strong>As seis raças jogáveis, o que cada uma dá e cobra, e a regra do psí estão no <code>32</code>.</strong></li>
 <li><strong>Exige background escrito.</strong> Como chegou à superfície, quem o registrou, qual Casa aceitou marcá-lo, e por quê.</li>
 <li>Aprovado pelo Árbitro antes da primeira sessão.</li>
 </ul>
@@ -926,7 +947,7 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 <p>O passo 10 não é regra de GURPS. É da casa, e não é opcional: é o que faz o personagem existir na política do mundo desde a primeira cena.</p>
 <p><strong>Correção de 08/09/2026.</strong> A tabela de perícias da seção 4 estava um degrau acima do Módulo Básico e foi refeita nos números do livro, em duas tabelas; e a seção 2 dizia que a Esgrima permite recuo ao aparar, quando recuar é opção de qualquer um. As sete fichas do <code>08</code> já usavam os números certos e continuam fechando em 150.</p>
 <p><strong>Correção de 11/09/2026.</strong> Duas notas da tabela de perícias da seção 4 remetiam ao <code>20</code> regras que o <code>20</code> não traz. A da Esgrima passou a remeter à seção 2 deste documento, que já trazia a regra da carga. A da Briga ainda não tem para onde remeter: o aparar a ⅔ da Briga é decisão de homologação, sem página do livro citada, e o <code>20</code> e o <code>24</code> só dão o ⅔ a Esgrima e Bastão — fica para a próxima conferência contra o livro. As duas notas deixaram de citar ficha de jogador: este documento vai para o Projeto de todo jogador, e o que está na ficha de alguém não sai de lá (<code>18</code> §2). Nenhum número mudou.</p>
-<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-11 · <a href="txt/02-regras-da-mesa.md">ver em texto puro</a></div>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-13 · <a href="txt/02-regras-da-mesa.md">ver em texto puro</a></div>
 </main></div><script>
 (function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
 fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});

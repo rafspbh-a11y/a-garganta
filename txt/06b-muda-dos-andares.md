@@ -1,6 +1,6 @@
 titulo: Muda dos Andares
 versao: 5
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Muda dos Andares

@@ -1,6 +1,6 @@
 titulo: Regras da Mesa
-versao: 6
-atualizado: 2026-09-11
+versao: 7
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Regras da Mesa
@@ -30,7 +30,7 @@ Quatro, base 10. **ST** força · **DX** destreza · **IQ** inteligência · **H
 - **PV = HT**
 - **Fadiga = ST**
 - **Velocidade Básica = (DX + HT) ÷ 4**, sem arredondar
-- **Deslocamento = Velocidade Básica** arredondada para baixo
+- **Deslocamento = Velocidade Básica − o nível de Carga**, arredondado para baixo *(o termo da Carga faltava aqui até 13/09/2026; o `20` §2.1 sempre o trouxe certo, e é dele que sai a Esquiva)*
 - **Esquiva = Deslocamento**
 - **Aparar = perícia da arma ÷ 2**, para baixo
 - **Aparar a ⅔ da perícia**, para baixo — é o que a **Esgrima** dá, com arma de esgrima, nada maior que escudo pequeno e carga no máximo leve. E o **Bastão** apara a ⅔ também: não é privilégio de esgrimista.
@@ -46,6 +46,15 @@ Desvantagens que rendem bom jogo aqui: Senso de Dever, Código de Honra, Juramen
 # 4. Perícias
 
 Duas tabelas, porque o livro traz duas. A coluna da esquerda é o nível final que você quer alcançar em relação ao atributo de controle — **DX** nas físicas, **IQ** nas mentais. As demais colunas dão o custo em pontos.
+
+> **O custo está aqui; a dificuldade de cada perícia está na Tabela de Perícias, e só lá.**
+> Esta seção trazia também uma cópia da lista de dificuldades, e a cópia envelheceu: até
+> 12/09/2026 ela ainda vendia **Luta Livre**, que não tem verbete em livro nenhum, mais doze
+> nomes já aposentados — e divergia em duas dificuldades que **cobravam pontos errados**:
+> Bastão como Média onde o livro diz Difícil, e Pesquisa como Difícil onde o livro diz Média.
+> A decisão de 13/09/2026 é que **a tabela fechada é a única fonte**. Para saber se uma perícia
+> é Fácil, Média, Difícil ou Muito Difícil, abra a Tabela de Perícias; para saber quanto custa
+> chegar a DX+2 ou IQ+1, use as duas tabelas abaixo.
 
 ## Perícias físicas
 
@@ -194,9 +203,15 @@ Todo aventureiro registrado carrega a Marca de uma divindade. É a premissa do m
 
 ## Dádivas
 
-Vantagens sobrenaturais compradas com pontos, **apenas do domínio da sua divindade**. Exemplos: Atena dá Reflexos em Combate e Talento Tático; Thoth dá Memória Eidética e Talento para Idiomas; Ogum dá Talento com Armas e Vigor; Hermes dá Velocidade Superior e Talento Social; Oxum dá Empatia e Cura; Sekhmet dá Fúria e Recuperação Rápida.
+Vantagens sobrenaturais compradas com pontos, **apenas do domínio da sua divindade**. Comprar Dádiva fora do domínio é impossível.
 
-Comprar Dádiva fora do domínio é impossível.
+> **A lista de quem concede o quê mora na Tabela de Vantagens, e só lá.** Esta seção trazia uma
+> cópia dela, e a cópia envelheceu: até 12/09/2026 ela ainda nomeava Talento Tático, Talento com
+> Armas, Talento Social, Velocidade Superior, Recuperação Rápida, Talento para Idiomas, Vigor,
+> Cura e Fúria — **nove nomes que a Tabela de Vantagens declara inexistentes ou renomeados**, e
+> um marcado que lesse esta página compraria vantagem que a homologação recusa. A decisão de
+> 13/09/2026 é que **a tabela fechada é a única fonte**, e os outros documentos apontam para
+> ela em vez de repetir.
 
 # 6. Magia
 
@@ -218,7 +233,9 @@ As sete cidades são humanas. Não-humanos existem e **vieram do poço**.
 
 Um jogador que perde um personagem de **rank B ou superior** desbloqueia a opção de criar um personagem não-humano. É bonificação por perda, não recompensa por conquista.
 
-- A raça é comprada com pontos, pelas regras normais — e o orçamento é o de personagem de substituição da seção 9, não os 150 de partida. Quem perdeu um rank B entra com cerca de 210: se a raça custa 40, sobram cerca de 170 para o resto.
+- A raça é comprada com pontos, pelas regras normais, e **o custo dela sai de dentro** do orçamento de personagem de substituição da seção 9 — não dos 150 de partida.
+- **O orçamento não é um número fixo: é a fórmula da seção 9**, e ela se move com a mesa. Média dos Pontos totais de todos os personagens com Estado diferente de Morto, arredondada para baixo, menos 10%, **piso de 150**. *Exemplo datado, 13/09/2026: com as sete fichas vivas a média dá 152, menos 10% dá 136, e o piso manda — o orçamento hoje é **150**, e um Anão de 30 deixa 120 para o resto.* Um número solto envelhece; a fórmula não.
+- **As seis raças jogáveis, o que cada uma dá e cobra, e a regra do psí estão no `32`.**
 - **Exige background escrito.** Como chegou à superfície, quem o registrou, qual Casa aceitou marcá-lo, e por quê.
 - Aprovado pelo Árbitro antes da primeira sessão.
 

@@ -2,13 +2,13 @@
 
 Este arquivo reúne todos os documentos da Camada Aberta, cada um com o seu
 cabeçalho e o seu número de versão. Anexe-o ao seu Projeto do Claude.
-Gerado em 2026-09-11. Confira a atualização em https://rafspbh-a11y.github.io/a-garganta/estado.md
+Gerado em 2026-09-13. Confira a atualização em https://rafspbh-a11y.github.io/a-garganta/estado.md
 
 ---
 
 titulo: Sessão Zero
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Sessão Zero
@@ -100,8 +100,8 @@ E mande a ficha ao Árbitro para homologação.
 ---
 
 titulo: Como se joga
-versao: 6
-atualizado: 2026-09-11
+versao: 7
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Como se joga
@@ -463,6 +463,103 @@ O mesmo hoplita, mesmo alvo, com o gládio em balanço: 1d+2, saem 6, passam 3, 
 | 9 | Defensor | **Perde os PV.** | — | — |
 | 10 | Defensor | **Consequências**, na ordem: Choque · Prostração e Atordoamento se perdeu mais que HT/2 num golpe · Nocaute se foi golpe na cabeça ou órgão vital · limiares de PV da seção 5.4. | testes de HT | — |
 
+
+## 4.11 Distância: o que o alcance cobra
+
+Esta seção entrou na **v7**, por decisão do Árbitro de 12/09/2026, porque o modo tático precisa de um número por hexágono e o documento ainda não tinha nenhum. Tudo aqui é do livro: a tabela é a **Tabela de Parâmetro Velocidade/Distância e Tamanho** (MB pág. 201), e a parte de magia é do Módulo de Magia (pág. 10 e 11).
+
+### A conta
+
+**Distância em metros + velocidade do alvo em metros por segundo dão um número só.** Arredonda-se **para cima**, para a linha seguinte da tabela, e lê-se o modificador. Alvo parado a 9 m é 9; alvo a 5 m correndo a 7 m/s é 12, e vale a linha dos 13,5 m. Se quem atira também se move, vale a **velocidade relativa**. (pág. 201)
+
+| Distância + velocidade | Modificador |
+| --- | --- |
+| até 2 m | **0** |
+| até 3 m | −1 |
+| até 4,5 m | −2 |
+| até 7 m | −3 |
+| até 9 m | −4 |
+| até 13,5 m | −5 |
+| até 20 m | −6 |
+| até 30 m | −7 |
+| até 45 m | −8 |
+| até 70 m | −9 |
+| até 90 m | −10 |
+| até 135 m | −11 |
+| até 200 m | −12 |
+| até 300 m | −13 |
+| até 450 m | −14 |
+| até 700 m | −15 |
+| até 1.000 m | −16 |
+
+Depois dos 1.000 m a escada continua na tabela do livro, de −17 (1.350 m) a −25 (32 km), e cada multiplicação por dez tira mais 6. **Numa galeria da Garganta quase nada passa dos 30 m**, e é por isso que a faixa de −1 a −7 é a que a mesa usa.
+
+**Tamanho do alvo** entra pela mesma tabela, na coluna de tamanho, com o sinal trocado: maior que gente dá bônus, menor dá redutor. Gente é 2 m e vale 0. (pág. 201)
+
+### O que mais mexe no tiro
+
+- **Sem apontar, arma de longo alcance ataca a −4** (pág. 95), e a manobra **Apontar** (seção 4.3) soma a Precisão da arma no primeiro turno, +1 no segundo, +2 no terceiro, +3 do quarto em diante.
+- **Defender estraga a mira**: perde-se tudo o que foi acumulado apontando. (pág. 95)
+- **Apoio** (besta, parapeito) dá **+1**, se houve tempo de apontar. (pág. 201)
+- **Recarregando, a única defesa é Esquiva** — e esquivar cancela o turno de recarga. (pág. 95)
+- **Figura no caminho: −4 por cada uma.** Alvo agachado, deitado ou só com a cabeça de fora: de −2 a −7, conforme a posição. (pág. 201)
+
+### Os quatro números de cada arma de longo alcance
+
+Toda arma que atira tem quatro parâmetros (MB pág. 115). Eles são o que faltava para arco, dardo e lança arremessada entrarem em mesa:
+
+- **Tiro Rápido (TR).** Se a jogada de ataque **ajustada** sair igual ou menor que o NH e **o resultado alcançar o TR da arma**, atira-se sem apontar e **sem o −4 de tiro rápido** — desde que o alvo já estivesse à vista no começo do turno.
+- **Precisão (Prec).** O bônus de **um turno apontando**. Nunca maior que o seu próprio NH com a arma: NH 8 com arma de Prec +13 rende +8.
+- **Meio Dano (½D).** Distância em metros a partir da qual o dano **cai à metade**, arredondando para baixo. Além do ½D, **a Precisão da arma não vale mais nada**.
+- **Alcance Máximo (Max).** Adiante disso não se atira, e ponto.
+
+| Arma | TR | Prec | ½D | Max |
+| --- | --- | --- | --- | --- |
+| Faca pequena arremessada | 11 | 0 | ST−5 | ST |
+| Pedra | 12 | 0 | ST×2 | ST×3,5 |
+| Lança arremessada | 11 | +2 | ST | ST×1,5 |
+| Arco longo | 15 | +3 | ST×15 | ST×20 |
+| Besta | 12 | +4 | ST×20 | ST×25 |
+
+As distâncias em "ST" são **metros**, calculados com a ST de quem atira — e, **na besta, com a ST da arma**, que é o que permite a um ST 9 usar besta de ST 12. Engatilhar besta de ST igual ou menor que a sua leva **2 segundos**; 1 ou 2 pontos acima, **6 segundos**; 3 ou 4 acima exige pé-de-cabra, **20 segundos**; mais de 4 acima, não se engatilha. Some um turno para pegar o virote e um para encaixá-lo. (MB pág. 114)
+
+**Pedra de até meio quilo** vai a **3,5 × ST** metros e faz **um ponto menos** que o seu GDP. (MB pág. 114)
+
+**Ângulo de visão:** com arma de longo alcance, só se atira nos hexágonos da frente. Visão Periférica amplia o ângulo. (MB pág. 115)
+
+### Magia de projétil: os oito conjuntos do livro
+
+| Mágica | TR | Prec | ½D | Max |
+| --- | --- | --- | --- | --- |
+| Bola de Fogo | 13 | +1 | 25 m | 50 m |
+| Bola de Fogo Explosiva | 13 | +1 | 25 m | 50 m |
+| Adaga de Gelo | 13 | +3 | 30 m | 60 m |
+| Esfera de Gelo | 13 | +2 | 40 m | 80 m |
+| Relâmpago | 13 | +3 | 50 m | 100 m |
+| Poltergeist | 13 | +1 | 20 m | 60 m |
+| Projétil de Pedra | 13 | +2 | 40 m | 80 m |
+| Faca Alada | 13 | +1 | 20 m | 40 m |
+
+(MAGIA pág. 11 e as entradas de cada mágica.)
+
+**Como funciona, em mesa** (MAGIA pág. 11):
+
+1. **Duas rolagens.** A primeira é a da mágica, **sem nenhum redutor de distância**, e diz se o projétil se formou. A segunda é **Arremesso de Mágica** daquela mágica — pré-definido: NH em Arremesso, ou **DX−3** — e diz se acertou, com tamanho, velocidade e distância pela tabela da seção 4.11.
+2. **A energia é a força.** 1 a 3 pontos, **1d de dano por ponto**, e **um segundo de concentração por ponto**: projétil de 1 ponto por turno, ou de 3 pontos a cada três turnos.
+3. **Pode-se segurar o projétil na mão** e então andar ou **Apontar**. É a única mágica que se retém pronta. Enquanto retém, só se pode fazer mágica de **Bloqueio**, a −2 — e falha crítica nela **solta o projétil em quem o fez**.
+4. **Ferido enquanto segura: teste de Vontade** ou perde o controle.
+5. **Bloquear e Esquivar valem; Aparar, não.** A **armadura protege** contra o dano — exceto no Projétil de Maldição, contra o qual nem PD nem RD servem.
+6. **Viaja em linha reta** e atravessa barreira que consiga vencer, seguindo com a energia que sobrou.
+7. A **Bola de Fogo Explosiva** pode ser jogada no chão ou na parede, **com +4 para acertar**, para pegar quem está em volta.
+
+### Magia: os outros alcances
+
+- **Mágica comum que não se pode tocar:** redutor **igual à distância em hexágonos** entre operador e objetivo. Encostado, ele toca: sem redutor. (MAGIA pág. 10)
+- **Sem tocar e sem ver: −5 a mais.** Ver pela magia de outro, ou pelos olhos de outro, conta como ver. (MAGIA pág. 10)
+- **Mágica de área:** o redutor é a distância até o **hexágono mais próximo da área**, não até o centro. Área custa o básico multiplicado pelo raio em hexágonos, e a área não se desloca depois de feita. (MAGIA pág. 10–11)
+- **Mágica de projétil são duas rolagens:** primeiro o teste da mágica, **sem nenhum redutor de distância**; depois **Arremesso de Mágica** (pré-definido: NH em Arremesso, ou DX−3), com tamanho, velocidade e distância pela tabela acima. Bloquear e Esquivar valem; **Aparar, não**. (MAGIA pág. 11)
+- **Mágica de Localizar e parentes** usam a escada própria do Módulo de Magia, que é de quilômetro e não de hexágono: menos de 100 m, 0; até 800 m, −1; até 1,5 km, −2; até 5 km, −3; até 15 km, −4; até 80 km, −5; até 150 km, −6; até 500 km, −7; até 1.500 km, −8, e −1 por cada 1.500 km a mais. **E −1 por cada objeto conhecido que se mande ignorar na busca.** (MAGIA pág. 10)
+
 ---
 
 # 5. Ferimento, incapacitação e morte
@@ -702,8 +799,8 @@ Por registro, conforme o `14`: linha corrigida não some sem que fique dito o qu
 ---
 
 titulo: Regras da Mesa
-versao: 6
-atualizado: 2026-09-11
+versao: 7
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Regras da Mesa
@@ -733,7 +830,7 @@ Quatro, base 10. **ST** força · **DX** destreza · **IQ** inteligência · **H
 - **PV = HT**
 - **Fadiga = ST**
 - **Velocidade Básica = (DX + HT) ÷ 4**, sem arredondar
-- **Deslocamento = Velocidade Básica** arredondada para baixo
+- **Deslocamento = Velocidade Básica − o nível de Carga**, arredondado para baixo *(o termo da Carga faltava aqui até 13/09/2026; o `20` §2.1 sempre o trouxe certo, e é dele que sai a Esquiva)*
 - **Esquiva = Deslocamento**
 - **Aparar = perícia da arma ÷ 2**, para baixo
 - **Aparar a ⅔ da perícia**, para baixo — é o que a **Esgrima** dá, com arma de esgrima, nada maior que escudo pequeno e carga no máximo leve. E o **Bastão** apara a ⅔ também: não é privilégio de esgrimista.
@@ -749,6 +846,15 @@ Desvantagens que rendem bom jogo aqui: Senso de Dever, Código de Honra, Juramen
 # 4. Perícias
 
 Duas tabelas, porque o livro traz duas. A coluna da esquerda é o nível final que você quer alcançar em relação ao atributo de controle — **DX** nas físicas, **IQ** nas mentais. As demais colunas dão o custo em pontos.
+
+> **O custo está aqui; a dificuldade de cada perícia está na Tabela de Perícias, e só lá.**
+> Esta seção trazia também uma cópia da lista de dificuldades, e a cópia envelheceu: até
+> 12/09/2026 ela ainda vendia **Luta Livre**, que não tem verbete em livro nenhum, mais doze
+> nomes já aposentados — e divergia em duas dificuldades que **cobravam pontos errados**:
+> Bastão como Média onde o livro diz Difícil, e Pesquisa como Difícil onde o livro diz Média.
+> A decisão de 13/09/2026 é que **a tabela fechada é a única fonte**. Para saber se uma perícia
+> é Fácil, Média, Difícil ou Muito Difícil, abra a Tabela de Perícias; para saber quanto custa
+> chegar a DX+2 ou IQ+1, use as duas tabelas abaixo.
 
 ## Perícias físicas
 
@@ -897,9 +1003,15 @@ Todo aventureiro registrado carrega a Marca de uma divindade. É a premissa do m
 
 ## Dádivas
 
-Vantagens sobrenaturais compradas com pontos, **apenas do domínio da sua divindade**. Exemplos: Atena dá Reflexos em Combate e Talento Tático; Thoth dá Memória Eidética e Talento para Idiomas; Ogum dá Talento com Armas e Vigor; Hermes dá Velocidade Superior e Talento Social; Oxum dá Empatia e Cura; Sekhmet dá Fúria e Recuperação Rápida.
+Vantagens sobrenaturais compradas com pontos, **apenas do domínio da sua divindade**. Comprar Dádiva fora do domínio é impossível.
 
-Comprar Dádiva fora do domínio é impossível.
+> **A lista de quem concede o quê mora na Tabela de Vantagens, e só lá.** Esta seção trazia uma
+> cópia dela, e a cópia envelheceu: até 12/09/2026 ela ainda nomeava Talento Tático, Talento com
+> Armas, Talento Social, Velocidade Superior, Recuperação Rápida, Talento para Idiomas, Vigor,
+> Cura e Fúria — **nove nomes que a Tabela de Vantagens declara inexistentes ou renomeados**, e
+> um marcado que lesse esta página compraria vantagem que a homologação recusa. A decisão de
+> 13/09/2026 é que **a tabela fechada é a única fonte**, e os outros documentos apontam para
+> ela em vez de repetir.
 
 # 6. Magia
 
@@ -921,7 +1033,9 @@ As sete cidades são humanas. Não-humanos existem e **vieram do poço**.
 
 Um jogador que perde um personagem de **rank B ou superior** desbloqueia a opção de criar um personagem não-humano. É bonificação por perda, não recompensa por conquista.
 
-- A raça é comprada com pontos, pelas regras normais — e o orçamento é o de personagem de substituição da seção 9, não os 150 de partida. Quem perdeu um rank B entra com cerca de 210: se a raça custa 40, sobram cerca de 170 para o resto.
+- A raça é comprada com pontos, pelas regras normais, e **o custo dela sai de dentro** do orçamento de personagem de substituição da seção 9 — não dos 150 de partida.
+- **O orçamento não é um número fixo: é a fórmula da seção 9**, e ela se move com a mesa. Média dos Pontos totais de todos os personagens com Estado diferente de Morto, arredondada para baixo, menos 10%, **piso de 150**. *Exemplo datado, 13/09/2026: com as sete fichas vivas a média dá 152, menos 10% dá 136, e o piso manda — o orçamento hoje é **150**, e um Anão de 30 deixa 120 para o resto.* Um número solto envelhece; a fórmula não.
+- **As seis raças jogáveis, o que cada uma dá e cobra, e a regra do psí estão no `32`.**
 - **Exige background escrito.** Como chegou à superfície, quem o registrou, qual Casa aceitou marcá-lo, e por quê.
 - Aprovado pelo Árbitro antes da primeira sessão.
 
@@ -1081,7 +1195,7 @@ O passo 10 não é regra de GURPS. É da casa, e não é opcional: é o que faz 
 
 titulo: Bíblia do Mundo
 versao: 2
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Bíblia do Mundo
@@ -1340,7 +1454,7 @@ Isso mantém os andares 1 a 10 permanentemente relevantes e dá trabalho digno e
 
 titulo: Geografia: a Coroa e as Sete Cidades
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Geografia: a Coroa e as Sete Cidades
@@ -1468,7 +1582,7 @@ Distrito circular na boca da Garganta, dentro da Coroa. Cerca de quatro quilôme
 
 titulo: NPCs Nomeados
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # NPCs Nomeados
@@ -1707,7 +1821,7 @@ Foi da esquadra de Funmilayo por quatro anos e rompeu com ela em praça, na fren
 
 titulo: Andares 1 a 12
 versao: 2
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Andares 1 a 12
@@ -1886,7 +2000,7 @@ Do 11 em diante, o tom muda. Menos trabalho, mais descoberta, e o primeiro sinal
 
 titulo: Bestiário, andares 1 a 12
 versao: 2
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Bestiário, andares 1 a 12
@@ -2208,7 +2322,7 @@ A faixa acima serve para uma coisa só: dizer ao jogador de rank C que o 13 não
 
 titulo: Muda dos Andares
 versao: 5
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Muda dos Andares
@@ -2372,8 +2486,8 @@ Só baú com item mágico tem tranca. O jogador escolhe como abrir **antes do da
 ---
 
 titulo: Guia de Criação e Manual de Magia
-versao: 8
-atualizado: 2026-09-11
+versao: 9
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Guia de Criação e Manual de Magia
@@ -2448,7 +2562,7 @@ Vantagem é qualquer coisa boa e permanente: um talento, um sentido melhor, dinh
 <tr>
 <td>Memória Eidética</td>
 <td>30</td>
-<td>Você lembra de tudo que viu e ouviu — e **todo ponto gasto em perícia mental conta em dobro** (magia não). Cara, e transforma o personagem em arquivo ambulante.</td>
+<td>Você lembra de tudo que viu e ouviu — e **todo ponto gasto em perícia mental conta em dobro**. Em magia o ponto **não** dobra, mas a vantagem **soma ao IQ com que se aprende mágica: +1 no primeiro nível, +2 no segundo, e para aí** (`23`, retificação de 10/09/2026 — que esta página só recebeu em 13/09). Cara, e transforma o personagem em arquivo ambulante.</td>
 </tr>
 <tr>
 <td>Intuição</td>
@@ -2665,6 +2779,11 @@ A leitura curta: **1 ponto** te dá o básico, **4 pontos** te dão competência
 Sua língua natal é **grátis**, no nível do seu IQ. O **Falar do Limiar** custa como perícia normal e é praticamente obrigatório: **sem ele você não negocia fora da própria embaixada**.
 Cada idioma estrangeiro a mais é investimento político real, não enfeite. Quem lê a escrita antiga de Ámenti entra em arquivos que valem mais que espólio de andar 8.
 # PARTE 6 — MAGIA
+> **Cinco limitações podem baratear a Aptidão Mágica**, do livro de Magia p.93, e entraram em
+> 13/09/2026: **Seletiva ao Sol, à Lua ou às Estrelas** (8 pontos no primeiro nível, 5 por nível)
+> e **Uma Única Escola** ou **Solitária** (10 e 6). Não se escolhe mais de uma. Estão no `29`,
+> no fim da seção 3, com o que cada uma tira.
+
 ## 6.1 Quem pode ser mago
 **Não existe mago sem deus.** A Aptidão Mágica é comprada com os seus pontos, mas quem **concede** é uma Casa divina — e o que se concede, se retira. Mago excomungado perde o acesso. Isso não é ameaça de fundo: é uma alavanca que existe e que alguém vai puxar.
 **Custo da Aptidão Mágica** (como está em uso no cânone, no modelo de Agni):
@@ -2674,7 +2793,7 @@ Cada idioma estrangeiro a mais é investimento político real, não enfeite. Que
 ## 6.2 O que a Aptidão faz
 Três coisas:
 1. **Permite aprender feitiços.** Sem ela, nenhum.
-2. **Soma ao nível de todos os seus feitiços.** Aptidão 2 é +2 em cada um, para sempre. É por isso que ela é cara e por isso que quase sempre compensa comprar nível 2 em vez de nível 1 mais feitiços.
+2. **Levanta o IQ com que você compra feitiço.** O livro é literal: *"seu nível de Aptidão Mágica é somado ao seu atributo IQ para o aprendizado de mágicas"*. IQ 14 com Aptidão 2 compra como IQ 16 — é o **IQ efetivo**, e é ele que a ficha declara no cabeçalho do bloco de feitiços. O resultado numérico é o mesmo de somar +2 depois; o modo de comprar não, e a diferença aparece na conta de pontos (`23` §2.1). É por isso que ela é cara e por isso que quase sempre compensa comprar nível 2 em vez de nível 1 mais feitiços.
 3. **Faz você sentir mana.** Você percebe quando a magia vai falhar antes de tentar — o que na Garganta é informação de sobrevivência.
 ## 6.3 Feitiço é perícia
 Cada feitiço é comprado separadamente, como perícia mental. Seu nível é **IQ + Aptidão + o que você investiu**. Um IQ 14 com Aptidão 2 e 1 ponto num feitiço fica em torno de 15 — bom o bastante para usar sob pressão.
@@ -2742,138 +2861,20 @@ O mago fica mais forte descendo. Também fica mais perigoso para o próprio grup
 Você só aprende feitiços dos colégios que são **domínio do seu deus**. Fora disso, não é caro: é impossível.
 
 **Impossível de comprar — não impossível de ter.** Existem magos carregando feitiço fora do domínio do próprio deus. Não foi compra: foi acordo. Alguém ensinou o que não devia, alguém abriu exceção, alguém cobrou alguma coisa em troca — e essa pessoa existe, tem nome e continua viva na história do personagem. Quem tem um feitiço assim sabe de quem o recebeu, mesmo que não conte a ninguém, e às vezes não conta nem ao Mestre de Cena. Na Sessão Zero o Árbitro pergunta a origem uma vez; **"ainda não sei" é resposta válida**, e então a origem passa a ser do Árbitro para escrever — e ela volta. O que não existe é feitiço fora de domínio sem ninguém do outro lado.
-
-<table>
-<tr>
-<th>Colégio</th>
-<th>O que faz</th>
-<th>Casas que concedem</th>
-</tr>
-<tr>
-<td>**Fogo**</td>
-<td>Criar, moldar, arremessar e apagar fogo; calor e resistência ao frio</td>
-<td>Agni · Hefesto · Xangô · Rá</td>
-</tr>
-<tr>
-<td>**Ar**</td>
-<td>Vento, respirar onde não se respira, atenuar queda</td>
-<td>Vayu · Kukulkán · Skadi</td>
-</tr>
-<tr>
-<td>**Água**</td>
-<td>Criar e moldar água, respirar submerso, gelo</td>
-<td>Posêidon · Varuna · Tláloc · Oxum</td>
-</tr>
-<tr>
-<td>**Terra**</td>
-<td>Moldar pedra, abrir e fechar passagem, detectar metal e veio</td>
-<td>Hefesto · Ogum · Geb</td>
-</tr>
-<tr>
-<td>**Movimento**</td>
-<td>Deslocar, levitar, apressar, aliviar carga</td>
-<td>Hermes · Vayu · Kukulkán · Exu</td>
-</tr>
-<tr>
-<td>**Luz e Trevas**</td>
-<td>Iluminar, escurecer, cegar, enxergar no escuro</td>
-<td>Apolo · Rá · Ixchel</td>
-</tr>
-<tr>
-<td>**Proteção e Aviso**</td>
-<td>Escudos, alarmes, detectar o que vem</td>
-<td>Atena · Ísis · Zhong Kui · Tyr</td>
-</tr>
-<tr>
-<td>**Cura**</td>
-<td>Fechar ferida, deter veneno, tirar fadiga</td>
-<td>Apolo · Ísis · Ixchel · Oxum</td>
-</tr>
-<tr>
-<td>**Conhecimento**</td>
-<td>Detectar magia, ler o passado de um objeto, localizar</td>
-<td>Thoth · Atena · Sarasvati · Odin</td>
-</tr>
-<tr>
-<td>**Comunicação e Empatia**</td>
-<td>Falar à distância, ler intenção, emprestar sentido</td>
-<td>Hermes · Thoth · Oxum · Exu · Loki</td>
-</tr>
-<tr>
-<td>**Mente**</td>
-<td>Sugestão, sono, coragem, esquecimento</td>
-<td>Odin · Freyja · Yanluo</td>
-</tr>
-<tr>
-<td>**Ilusão e Criação**</td>
-<td>Fazer parecer o que não é</td>
-<td>Hermes · Ixchel · Loki</td>
-</tr>
-<tr>
-<td>**Fazer e Quebrar**</td>
-<td>Consertar, arruinar, afiar, enfraquecer</td>
-<td>Hefesto · Ogum</td>
-</tr>
-<tr>
-<td>**Vegetal**</td>
-<td>Plantas, veneno, alimento, caminho na mata</td>
-<td>Deméter · Oxóssi · Ixchel</td>
-</tr>
-<tr>
-<td>**Animal**</td>
-<td>Falar com bicho, acalmar, controlar</td>
-<td>Oxóssi · Ártemis</td>
-</tr>
-<tr>
-<td>**Som**</td>
-<td>Silêncio, voz que atravessa, ruído que engana</td>
-<td>Sarasvati · Leigong</td>
-</tr>
-<tr>
-<td>**Clima**</td>
-<td>Chuva, raio, névoa</td>
-<td>Zeus · Thor · Indra · Tláloc · Xangô</td>
-</tr>
-<tr>
-<td>**Necromancia**</td>
-<td>Falar com o morto, deter o morto-que-anda</td>
-<td>**Regulada.** Ámenti e Fengdu, e só com licença</td>
-</tr>
-<tr>
-<td>**Meta-Feitiços**</td>
-<td>Magia sobre magia: anular, roubar, sustentar</td>
-<td>Thoth · Odin — sempre com pré-requisito pesado</td>
-</tr>
-<tr>
-<td>**Portais**</td>
-<td>—</td>
-<td>**Não disponível na criação.** Qualquer pedido vira Pendência.</td>
-</tr>
-</table>
-
-**Necromancia** não é proibida: é **licenciada**. Praticar sem licença de Ámenti ou de Fengdu é crime nas duas cidades e escândalo nas outras cinco. É jogável, e é caro em política, não em pontos.
-**Portais** está fechado por decisão do Árbitro, e continua fechado até haver decisão em contrário.
-**Exu**, em Ilê Ifé, concede Movimento e Comunicação e Empatia — abrir e fechar caminho, e levar recado. É o domínio dele e sempre foi. Duas notas de mesa, e as duas importam: a obrigação **vem antes** do que se pede, nunca depois, e o que se abre é caminho, não vantagem. Exu não luta por ninguém e não resolve cena. Ele faz a porta existir; atravessar é com você.
-**Loki**, em Gapheim, concede Ilusão e Criação e Comunicação e Empatia — parecer o que não é, e ler quem está do outro lado. A Casa é **tolerada, jamais confiada** (`01a`, 3.3), e a Marca vai nas costas. Duas notas de mesa: a ilusão de Loki **não sobrevive ao toque**, porque a metamorfose do deus chega aqui como aparência e não como transformação; e a Aptidão Mágica concedida por essa Casa é **retirável por ela**, o que nenhuma outra Casa faz. Quem se marca por Loki compra defesa contra o olho, nunca contra a mão — e joga sabendo que o patrono pode cobrar de volta.
-
-**Zeus**, em Ônfalos, concede **Clima** — chuva, raio, névoa. Ele estava fora desta tabela por omissão, não por decisão: a linha de Clima recolhe os deuses de tempestade de todas as tradições da mesa, e faltava justamente aquele de quem o raio é a assinatura. Corrigido em 10/09/2026.
-
-**O recorte de Clima foi fixado em 11/09/2026, e vale para as cinco Casas de tempestade** — Zeus, Thor, Indra, Tláloc e Xangô. **A concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima, e nada além**: a fronteira é a **árvore**, não uma lista. A regra inteira, a corrente de sete compras até o Relâmpago e a **sub-escola de Eletricidade** estão no `31`; a tabela está no `27`, seção **Clima**. O que o `23` §2.3 dizia — que Clima não abre o resto de Ar nem de Água — continua valendo; o que muda é que a raiz de Ar que o pré-requisito exige **não é "o resto", é o próprio Clima subindo**.
-
-**E Zeus ganhou Dádiva: Noção do Perigo, 15.** Zeus Panomphaios (*Ilíada* 8.250) é o autor de todo presságio, e a vantagem é a função literal dele — o Árbitro avisa, sem explicar. **Uma Dádiva só; Visão Aguçada foi pedida e recusada**, e continua vantagem comum comprável por qualquer personagem. Os três motivos estão no `31` §1.
-
-> \[!IMPORTANT\]
-> **Ser marcado pela Casa de Zeus não é ser filho de Zeus, e a diferença tem consequência.**
+> **A tabela de colégios e Casas concedentes mora na Tabela de Mágicas, e só lá.**
+> Esta seção trazia uma cópia dela, e a cópia envelheceu mal: até 12/09/2026 ela ainda publicava
+> **vinte colégios com sete nomes errados** — Movimento, Proteção e Aviso, Conhecimento, Mente,
+> Fazer e Quebrar, Vegetal, Animal, Meta-Feitiços e Portais —, **faltavam Controle do Corpo,
+> Encantamentos e Alimentos**, que já tinham Casa concedente desde setembro, e o Ar não trazia
+> **Hefesto**, que ganhou o recorte da forja na mesma época. As Retificações de Livro dizem, em
+> §2.3, que essa tabela *"foi refeita"* — **e a tabela refeita ficou dentro das Retificações; esta
+> seção nunca foi tocada.** Corrigido em 13/09/2026 pela decisão de **uma fonte só**: a tabela
+> fechada manda, e os outros documentos apontam para ela.
 >
-> O `01a` 3.1 diz que *Zeus tem filhos entre os aventureiros e Hera sabe de todos — ser marcado por ele é honra e sentença*. **A sentença é dos filhos.** A Casa marca quem ela quer, como todas as outras Casas marcam, e o marcado comum não carrega Hera nas costas: carrega o Dever da Marca e mais nada.
->
-> **Filiação é fato de mundo e é do Árbitro**, nunca escolha de ficha e nunca invenção de Mestre de Cena. Nenhum jogador se declara filho de Zeus na Sessão Zero. Se um personagem for filho, ele saberá pelo Árbitro, e o dia em que Hera souber também é do Árbitro.
->
-> Na prática de mesa: **o mago de Zeus lança raio sem nenhum ônus extra**. O que ele carrega é o que qualquer marcado carrega.
+> **Hoje são vinte e três colégios.** Os vinte e um do livro de Magia, mais **Clima**, que é
+> divergência declarada da Garganta (`23` §2.3 e `31`), mais **Conexão**, promovido em
+> 13/09/2026 a partir das três mágicas que o livro imprime sob esse cabeçalho.
 
-Todos os patronos citados nesta tabela têm Casa no `01a`. Se alguém quiser um que não tenha, isso é Pendência antes de ser ficha — Casa nova é fato de mundo, e fato de mundo é da Bíblia.
-> **Nota.**
-> As tradições vivas — Ilê Ifé e Amaravati entre elas — entram na mesa com dignidade. Orixás e devas não são distribuidores de poder; o que se joga é a relação, a obrigação e o preço dela. Quando uma dessas tradições precisar de antagonista, o antagonista é humano.
 ## 6.7 O que cada tipo de mago faz de útil aqui embaixo
 - **Mago de combate** (Fogo, Clima): resolve encontro, gasta fadiga rápido, e chama atenção de tudo no andar. Bom pico, péssima autonomia.
 - **Mago de apoio** (Proteção e Aviso, Cura, Movimento): não brilha na cena e é o motivo de o grupo voltar inteiro. **É o mago mais valioso numa campanha de morte permanente.**
@@ -2924,7 +2925,7 @@ estavam.
 
 titulo: Improviso, Círculo e Lavra
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Improviso, Círculo e Lavra
@@ -3185,9 +3186,451 @@ Dois magos de Casas diferentes fazem juntos uma mágica que **nenhum dos dois fa
 
 ---
 
+titulo: Os Povos que Subiram
+versao: 1
+atualizado: 2026-09-13
+fonte: cânone aberto de A Garganta
+
+# Os Povos que Subiram
+
+> **Atenção.**
+> **Decidido pelo Árbitro em 12 e 13/09/2026.** Este documento **fecha** a promessa do `02` §7 e
+> passa a ser a fonte das seis raças jogáveis e do psí. Onde divergir do `02` §7, **vale este
+> documento**.
+> **Os números são do *GURPS Magia* p.97-100 e do *GURPS Psiquismo*.** Onde o livro cala, a linha
+> vai marcada **⟨proposta⟩** e **não vale até o Árbitro confirmar** — a lista está no fim.
+
+# 0 · As três regras que valem para as seis
+
+**1. Modificador racial de atributo muda o nível, não o preço.** Um Anão que não gasta ponto em
+ST fica com 12 (10 da tabela + 2 do bônus). Se pagar 10 pontos, fica com 13.
+
+**2. Desvantagem racial não ocupa o −40, e não rende ponto.** Já está paga dentro do preço da
+raça. O −40 do `29` §1 continua inteiro para o que o jogador escolher, e o Dever da Marca
+continua fora dele. **Recompra de desvantagem racial na criação é possível, com aprovação** —
+há Minotauro sem Sanguinolência, e custa pontos.
+
+**3. Peculiaridade racial é grátis e não gasta as cinco.** ⟨proposta⟩ As raciais já estão pagas
+dentro do preço da raça; senão o Anão, que tem quatro, nasceria com uma só de graça.
+
+# 1 · Anões — 30 pontos
+
+| | |
+| --- | --- |
+| **Atributos** | ST **+2** · Fadiga **+2** |
+| **Vantagens raciais** | **RD 1** natural · **Longevidade** — e os testes de idade só começam aos **100 anos**, com **metade da frequência** humana · **+3** em qualquer perícia artesanal que aprenda · **Machado/Maça** com NH igual à **DX**, sem pagar ponto |
+| **Desvantagens raciais** | **Cobiça** (−15) e **Avareza** (−10), *como raça — indivíduo pode não as ter, e aí é recompra* · **Deslocamento −1** · **−2 no NH** com toda arma de projétil |
+| **Peculiaridades raciais** | Não Confiam em Elfos · Preferem Lugares Fechados · Nunca Fazem a Barba · **Intolerantes com os Hobgoblins** |
+| **Reações** | **−2** diante de Elfos · **−3** diante de Hobgoblins · **nunca melhor que Fraca** diante de Dragões · **neutra** diante de humanos · **+1 ou mais** diante de artesão, ou de proposta que desafie o ofício dele |
+| **Carga** | Escala própria: **Leve 5×ST · Média 10×ST · Pesada 20×ST · Muito Pesada 30×ST** |
+| **Limites** | **Nenhum Anão é introvertido:** Timidez, em qualquer grau, é proibida |
+
+**E isto importa desde que o Deslocamento passou a descontar a Carga.** Um Anão de ST 12 só sai
+da Carga Leve acima de **60 kg**; um humano de ST 12 sai acima de 24. Na prática o **−1 racial
+de Deslocamento é a única perda que ele sofre**, e o companheiro humano perde −1, −2 ou −3 na
+mesma descida. **O Anão é o carregador da esquadra, e é isso que o torna caro de substituir.**
+
+**Origem.** Os Anões não subiram: **já estavam na boca quando as sete chegaram**. Foram eles que
+descobriram que a rocha abaixo do andar 3 aceita escoramento, e a Guilda comprou a técnica uma
+vez, há pouco mais de trezentos anos, num pagamento que nenhuma das partes publicou. As galerias
+que hoje fazem os andares 1 a 9 serem Ancorados são desenho anão executado por pedreiro humano,
+e os manuais da Guilda ensinam o método sem nome de autor. A data da subida é a única coisa que
+ninguém prova: eles dizem que é anterior ao tratado, Ámenti responde que arquivo que não existe
+não é prova de nada, e a discussão não anda porque **as duas partes estão certas**.
+
+**Fraqueza e consequência.** Venderam a técnica **uma vez** — a riqueza do povo está num ofício
+que a Guilda hoje reproduz sem pagar nada, e a Cobiça racial garante que isso doa todo dia.
+**Registra Gapheim**, a única cidade cujo direito aceita **juramento com testemunhas** no lugar
+de registro de nascimento. **Marca a Casa de Tyr** — e aí está a armadilha: Tyr concede Hipoalgia
+e Proteção e Aviso. **Terra**, o colégio do ofício deles, é de Hefesto, Ogum e Geb — **nunca de
+Gapheim**. Hefesto oferece a Marca a qualquer Anão que atravesse a Coroa, e em Gapheim quem
+aceita é tratado como quem vendeu o juramento.
+
+# 2 · Elfos — 40 pontos
+
+| | |
+| --- | --- |
+| **Atributos** | IQ **+1** · DX **+1** · ST **−1** |
+| **Vantagens raciais** | **Carisma 1** · **Atraente +1** · **Reflexos em Combate** · **Aptidão Mágica 1** — *ver a trava* · **Talento Musical 2** (bônus **de aprendizado**) · **+1 no NH** de Trovador e Trato Social, se as estudar · **Longevidade** ⟨proposta⟩ |
+| **Desvantagens raciais** | **Senso de Dever (toda a natureza) −15** · **Código de Honra (cavalheiros) −10** |
+| **Reações** | **−1** diante de Anões · **−2 diante de Elfos Negros** ⟨proposta⟩ · nos demais casos **pesa o comportamento, não a raça** |
+| **Limites** | Nenhum Elfo permite de bom grado dano desnecessário a árvore, animal ou pessoa |
+
+> ## A trava do colégio — e é o que faz o Elfo caber no mundo
+>
+> **A Aptidão Mágica racial poupa os 15 pontos. Ela não abre colégio nenhum.**
+>
+> O `17` §6.6 continua inteiro: **você só aprende feitiço do colégio que é domínio do seu deus**,
+> e quem concede é a Casa. Um Elfo **não marcado** tem Aptidão 1, faz o teste ao ver e ao tocar
+> objeto encantado, e **não aprende um único feitiço**. É um mago barato, não um mago livre.
+>
+> **A diferença com o humano é uma só, e é grande:** o humano excomungado perde a Aptidão junto
+> com o colégio. O Elfo excomungado **perde o colégio e fica com a Aptidão**. A alavanca da Casa
+> não some — encurta.
+
+**Origem.** Subiram **dentro da memória viva da Guilda**. O primeiro registro élfico do Limiar é
+mais novo que a maioria dos escrivães do anel interno, e tem data, hora e assinatura. O que não
+tem é a linha de como ele chegou à rampa: onde deveria estar a esquadra que o trouxe está a
+fórmula *"apresentado ao balcão"*, que a Guilda usa quando não vai perguntar. Chegam de um em
+um, em anos diferentes, e nenhum contradiz o outro sobre o que há lá embaixo — o que é, por si,
+a informação mais cara do Limiar e a menos aproveitável.
+
+**Fraqueza e consequência.** **Não envelhecem, e por isso não conseguem provar há quanto tempo
+estão aqui.** Testemunho de Elfo sobre andar profundo é impossível de datar: Ámenti o recusa
+como inadmissível, Amaravati o compra pelo dobro, e as duas têm razão pelos próprios critérios.
+**Registra Amaravati**, a doze dias de estrada. **Marca a Casa de Sarasvati**; as outras seis
+recusam, e o motivo é sóbrio: marcar um Elfo é conceder colégio a alguém cuja Aptidão a Casa não
+deu e não pode retirar. **Cada Elfo marcado é a prova ambulante de que o monopólio das Casas é
+política, e não lei da natureza** — e o papel dele fica a doze dias de distância.
+
+# 3 · Meio-Elfos — 30 pontos
+
+| | |
+| --- | --- |
+| **Atributos** | IQ **+1** |
+| **Vantagens raciais** | **Aptidão Mágica 1** ⟨proposta⟩ · **Longevidade** |
+| **Reações** | **Nenhum modificador.** É o traço definidor: **passa por humano** |
+| **Limites** | A trava do colégio do §2 vale igual. **A declaração de origem é obrigatória** no registro da Guilda e nas sete cidades |
+
+**A conta que sustenta o nível 1.** O livro diz "Aptidão Mágica" e **não diz o nível**. A
+aritmética fecha exata: IQ+1 = 10 · Aptidão 1 = 15 · Longevidade = 5 → **30**. Mesmo assim fica
+⟨proposta⟩, porque o livro avisa que custo racial ≠ custo individual.
+
+**Origem.** **Não subiu: nasceu aqui.** É a segunda geração — filho de um dos Elfos que chegaram
+ao balcão com a linha de origem em branco, e de alguém das sete cidades. É o único dos seis com
+**certidão de nascimento numa cidade humana**, e o único cuja origem de poço está a **uma
+geração** de distância em vez de estar no próprio corpo. O mais velho ainda não chegou à
+meia-idade.
+
+**Fraqueza e consequência.** **É o único que pode esconder, e esconder é crime de registro.** A
+declaração de ascendência é obrigatória, e omiti-la é o mesmo crime que registrar rank falso. O
+jogador escolhe, e os dois caminhos custam:
+
+| Caminho | Como entra na ficha |
+| --- | --- |
+| **Declarou** | **Estigma Social (Minoria) −10**: −2 de reação fora, +2 dentro |
+| **Escondeu** | **Segredo −20** ⟨proposta⟩: o vazamento custa registro e banimento |
+
+**Registra a cidade onde nasceu — e a que importa é Fengdu**, que mantém o único cadastro
+cruzado de **pessoas vivas** das sete e vende consulta. Um Meio-Elfo escondido em Ônfalos está
+seguro até alguém pagar a Fengdu para olhar. Isso dá ao Segredo dele **um inimigo com nome,
+endereço e tabela de preços**. E a Casa que o marcou **sabe** — a Marca aparece nas costas e quem
+marca lê o que está marcando. **A única instituição de quem ele não esconde é aquela a quem deve
+o Dever da Marca.**
+
+# 4 · Minotauros — 75 pontos
+
+| | |
+| --- | --- |
+| **Atributos** | ST **+3** · DX **+1** · HT **+3** · IQ **−2** |
+| **Vantagens raciais** | **RD 3** natural, **mais 2 na cabeça** · **Abascanto 2** · **Visão Periférica** · **Senso de Direção** · **Briga** com NH igual à DX, sem pagar ponto · **Chifres:** cada um causa dano por **perfuração** compatível com a ST; a cabeçada roda como **encontrão**, e quem falha o teste de Escudo **sofre o dano dos dois** |
+| **Desvantagens raciais** | **Hediondo −20** · **Fúria −15** · **Sanguinolência −10** · **Intolerância −10** · **Hábito Detestável racial −15**, *reescrito* |
+| **Reações** | **−3** das outras raças diante dele · **−3** dele diante das outras |
+| **Limites** | **Abascanto é incompatível com Aptidão Mágica: nenhum Minotauro lança feitiço, nunca.** E a Casa que o marca não concede colégio nenhum — as duas coisas dizem o mesmo por caminhos diferentes |
+
+> ## O tabu
+>
+> **Sai** *comer seres pensantes*. **Entra:**
+>
+> **NÃO RECUA DE UM CAMINHO COMEÇADO.** Ele não volta atrás num corredor que começou a percorrer
+> — **nem para fugir, nem para esperar, nem quando o grupo manda.** Mesmo valor, **−15**.
+>
+> **Na mesa:** entrou no corredor, o caminho se resolve — ele sai pela outra ponta, ou não sai.
+> Dar meia-volta é **teste de Vontade**, e o `29` §1 vale: **14 ou mais falha sempre**. "Caminho
+> começado" é o corredor, a galeria, a escada, o vão — **não** é a descida inteira, e não é um
+> contrato. **O Mestre de Cena declara qual é o caminho antes do primeiro passo.**
+
+**Origem.** A origem e o tabu são **o mesmo fato**. Não subiram em grupo, não foram trazidos e
+não negociaram passagem: cada um entrou num corredor que subia e **andou até o corredor acabar**.
+Os que acertaram saíram na Coroa; os que erraram continuam andando. Não há como pedir a um deles
+que refaça o caminho de volta — **e é exatamente por isso que nenhuma rota deles foi mapeada.**
+
+**Fraqueza e consequência.** O **Senso de Direção** dele, num poço sem fundo, é a vantagem de 5
+pontos mais cara do mundo — e **não se aluga**, porque alugar um guia pressupõe que o guia volte.
+É o melhor batedor das sete cidades e **não pode bater**. **Registra Tulán**, que registra o que
+consegue **datar**, e a chegada de um Minotauro tem hora exata. **Marca Huitzilopochtli** — o sol
+que atravessa a noite lutando e nasce inteiro, que é a teologia do que não volta atrás. **Ônfalos
+recusa o registro e recusa a entrada na própria embaixada**, porque o mito fundador dela tem um
+minotauro num labirinto e um herói que o mata. Com três das cinco fichas ativas saindo de
+Ônfalos, **isso não é cor local: é atrito de mesa.**
+
+# 5 · Goblins — 5 pontos
+
+| | |
+| --- | --- |
+| **Atributos** | ST **−2** · DX **+1** · IQ **+1** |
+| **Vantagens raciais** | **Visão Noturna** |
+| **Desvantagens raciais** | **Impulsividade −10** |
+| **Reações** | **+1** diante de quem conheça magia — mais, diante de mago poderoso · **−1** diante de qualquer pessoa **ou plano** cauteloso |
+| **Limites** | **Sem raças amigas ou inimigas.** Nenhum modificador racial de reação, nos dois sentidos |
+
+**A piada estrutural, e ela custa dinheiro.** O Goblin é o melhor negociador da mesa por atributo
+e **carrega Impulsividade**. O corretor que não consegue esperar **paga ágio em toda negociação
+que dependesse de esperar**, e o −1 diante de plano cauteloso significa que ele desgosta, na cara
+do cliente, exatamente da proposta prudente que fecharia o negócio. **Quem joga Goblin joga um
+negociador que perde dinheiro por temperamento** — e é por isso que ele custa 5 e não 25.
+
+**Origem.** É o único que subiu **em número**, e ao longo de tempo suficiente para que ninguém se
+lembre do primeiro. Não há data, não há assento fundador, não há esquadra que os tenha trazido.
+Há, no anel externo do Limiar, entre os currais e os armazéns, umas quantas ruas onde eles moram
+e onde moravam antes de qualquer escrivão vivo começar a trabalhar. **São o povo do Limiar, e são
+o único povo que o Limiar tem.** Fazem o que o lugar precisava e nenhuma das sete queria fazer:
+**atravessar mercadoria, informação e contrato entre embaixadas que não se falam** — mais o
+trecho do aqueduto que corre pela Coroa, que eles mantêm há gerações porque **o Limiar não tem
+poço próprio**.
+
+**Fraqueza e consequência.** **O Limiar não tem soberania**, e um povo de lá não tem cidadania,
+tribunal, herança nem testemunho. **Registra a Guilda, e só a Guilda** — o Goblin tem **rank e não
+tem cidade**. **Marcam as Casas de encruzilhada** — Hermes, Thoth, Heimdall, Exu — e marcam **na
+embaixada do Limiar**, sendo este o único caso em que a Marca vem **sem cidade junto**. E aqui a
+coisa fica perigosa: **as sete leem um povo registrado só pela Guilda e marcado só por deus de
+encruzilhada como a Guilda criando gente sua**, e a Guilda não pode negar sem abrir mão do
+registro. A **mão que eles têm no aqueduto** é a razão pela qual nenhuma tentativa de reclamá-los
+foi até o fim.
+
+# 6 · Transmutantes — 10 a 40 por forma
+
+| | |
+| --- | --- |
+| **Custo** | Homem-Cobra **10** · Lobo **15** · Urso **15** · Águia **15** · Javali **25** · Tigre **40** · **+5** para se metamorfosear fora da lua cheia |
+| **Atributos** | Na forma humana, normais. Na animal, a tabela abaixo. **A IQ nunca muda.** DX 14+ ganha +1 na forma animal; DX 9 ou menos perde 1 |
+| **Vantagens raciais** | **Regeneração:** 1 PV a cada **12 horas**, em qualquer forma, além de cuidado médico. Membro incapacitado se regenera; **membro perdido, não** |
+| **Desvantagens raciais** | **Prata:** manuseia sem dano, mas **a presença de prata anula a Regeneração** e ele sofre **o dobro do dano** de arma de prata · **Mudança automática** uma noite por mês, na lua cheia · **Homem-Urso: Fúria (−15) automática, sem receber ponto por ela** |
+| **Limites** | A mudança leva **3 segundos**, e neles **não faz nada e não tem defesa ativa** · Na forma animal a DX só serve para **lutar e funções animais** · Entende a língua humana, **não fala** · **Ferimento sofrido na forma animal passa para a humana** · Morto ou inconsciente, **reverte** |
+
+| Forma | ST | DX | HT | RD | Vel. | Ataque | Tamanho |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Lobo** | natural | 14 | +2 | 3 | 9 | mordida, corte | 1 hex |
+| **Urso** | dobrada | 13 | +2 | 4 | 8 | mordida (corte) ou garra (contusão) | 2 hexes |
+| **Javali** | dobrada | 14 | +2 | 3 | 8 | defesas (corte por ST) ou pisoteio (1D−1) | 2 hexes |
+| **Tigre** | triplicada | 14 | +2 | 3 | 10 | mordida e garra (corte por ST), de perto | 2 hexes |
+| **Águia** | normal | 13 | normal | 3 | 20 | garras (perfuração por ST); envergadura 3,65 m | 1 hex |
+| **Cobra** | dobrada | 13 | dobrada | 3 | 4 | esmagamento; não venenosa | 4 hexes |
+
+> ## A trava do poço — a lua
+>
+> **No fundo do poço não há lua.**
+>
+> **Quem não pagou os 5 pontos extras não se transforma lá embaixo. Ponto.** Abaixo da rampa, o
+> Transmutante do pacote básico é **um humano com Regeneração e alergia a prata** — e é só isso
+> que a esquadra leva.
+>
+> **O gatilho é o céu aberto, não a data.** Lua cheia que passa com ele sob a rocha **não dispara
+> nada**. O Mestre de Cena nunca rola transformação de lua abaixo do andar 1.
+>
+> **⟨proposta — a lua cobrada⟩** A lua perdida **fica devendo**: na **primeira noite de céu
+> aberto** depois da descida, a mudança acontece **fora de hora e sem escolha**, com **−2 na
+> Vontade**. Consequência: **ele se transforma na volta, no anel interno do Limiar, com a Guilda
+> por perto.** Sem isso, os 5 pontos extras deixam de ser escolha e viram compra obrigatória.
+
+**Origem.** É o único dos seis que **não é um povo**, e por isso a origem dele é a única que
+ninguém fecha: **não se sabe se nasceu assim lá embaixo ou se subiu como outra coisa.** A lenda do
+contágio pela mordida circula no Limiar, e **a campanha não responde se ela é verdade**. O que
+existe de fato é uma coluna de assentos da Guilda em que o aventureiro desceu, voltou, e voltou
+outro; e uma segunda coluna, mais curta, de gente que desceu e não voltou, cujos parentes olham a
+primeira com atenção.
+
+**Fraqueza e consequência.** Além da lua — que o torna, no lugar onde a campanha acontece, **o
+mais caro dos seis pelo que menos entrega** —, a prata é comprável: 5× o preço do aço. **Registra
+Ilê Ifé**, por doutrina escrita: **uma pessoa, um assento, uma forma de direito**. **Marca a Casa
+de Oxóssi.** As outras seis não aceitam a doutrina, e **Ámenti é onde isso vira caso**: um
+Tribunal que vende intercessão precisa saber **por quem** está intercedendo. Se o homem e o bicho
+são duas pessoas, o assento de óbito cobre uma só. **Nenhuma das duas cidades vai ceder, porque
+ceder custa dinheiro às duas** — e o Transmutante fica no meio, vivo, enquanto elas decidem
+quantos ele é.
+
+# 7 · A regra de acesso
+
+**A porta é uma só, e não se compra: perde-se.** Um jogador que perde um personagem de **rank B
+ou superior** desbloqueia a opção não-humana **para ele**, permanentemente. Não há outro caminho.
+
+**O orçamento é o de substituição do `02` §9, e o custo da raça sai de dentro dele:** média dos
+Pontos totais de todos os personagens com Estado diferente de Morto, arredondada para baixo,
+menos 10%, **piso de 150**. É a mesa inteira, e o morto **não entra** na média.
+
+**A conta, hoje, com as sete fichas vivas:** a média dá **152**; menos 10% dá 136; **o piso
+manda, e o orçamento é 150.**
+
+| Média dos vivos | Orçamento | Goblin 5 | Transm. 10–40 | Anão / Meio-Elfo 30 | Elfo 40 | Minotauro 75 |
+| --- | --- | --- | --- | --- | --- | --- |
+| **152 (hoje)** | **150** | 145 | 140–110 | 120 | **110** | **75** |
+| 170 | 153 | 148 | 143–113 | 123 | 113 | 78 |
+| 190 | 171 | 166 | 161–131 | 141 | 131 | 96 |
+| 235 | 211 | 206 | 201–171 | 181 | 171 | 136 |
+
+**A porta se abre sozinha, no ritmo certo.** O orçamento só sai do piso quando a média dos vivos
+passa de **166**. Quer dizer: **a raça cara não é liberada pelo rank de quem morreu — é liberada
+pelo crescimento da mesa inteira.** É a Carta, artigo 1, funcionando sem regra nova.
+
+**Minotauro no piso é 75 pontos de resto, e o jogador precisa saber antes.** Os 75 da raça já
+compram ST+3, DX+1, HT+3 e RD 3. O que sobra são **75 pontos com IQ 8** — dá para o corpo, não
+dá para a perícia. Enquanto a média da mesa estiver abaixo de ~190, a orientação honesta na
+Sessão Zero é: **Goblin, Anão, Meio-Elfo e Transmutante barato cabem; Elfo aperta; Minotauro
+espera.**
+
+**O resto do procedimento não muda:** background escrito, aprovação do Árbitro antes da primeira
+sessão, e entrada em andar Ancorado com rota conhecida e contrato de contenção.
+
+# 8 · A regra do psí
+
+> **O psí não é racial. É marca de quem veio dos andares fundos, e entra por background aprovado
+> pelo Árbitro.** Nenhuma das seis raças dá psí, e nenhuma o proíbe.
+
+## 8.1 Quem pode
+
+**A porta é a mesma do §7, e é a única:** só um jogador com a opção não-humana desbloqueada pode
+propor um psi. **E o psi não precisa ser não-humano** — humano das sete cidades, Anão, Goblin,
+qualquer um. O que se raciona não é a espécie: é **quantos personagens com poder fora das Casas
+existem na mesa**.
+
+**O background é a regra, não o enfeite.** O personagem esteve **abaixo da linha dos andares
+Ancorados** e voltou outro. Não é "tem um dom desde criança": é um **período datável**, e o
+Árbitro aprova ou recusa o texto antes da ficha.
+
+**Um Poder só por personagem, teto de Potência 10.** ⟨proposta⟩
+
+## 8.2 Como se compra
+
+**Duas compras, e só duas.** **(a) O Poder, por nível de Potência** — a força bruta: alcance,
+dano, peso movido. **(b) As perícias, uma a uma** — toda perícia psíquica é **Mental/Difícil,
+base IQ**, e **não se aprende perícia de um Poder sem ao menos 1 nível naquele Poder**. Mínimo de
+meio ponto. **Memória Eidética não dá bônus nenhum** para aprendê-las.
+
+| Poder | Custo por nível | Na Garganta |
+| --- | --- | --- |
+| **PES** (clarividência, precognição, psicometria) | 3 | sim |
+| **Cura Psíquica** · **Projeção Astral** · **Vampirismo Psíquico** | 3 | sim |
+| **Antipsi** | 3 | sim — **exclusivo: quem o tem não pode ter outro poder psíquico** |
+| **Telepatia** · **Psicocinese** | 5 | sim |
+| **Psicoteleporte** | 5 | ⟨proposta — sim, e é o que precisa de vigilância: passa por porta trancada e por vão de andar⟩ |
+| **Eletrocinese** | 5 | ⟨proposta — **fora**, pelo mesmo recorte de nível tecnológico que tirou Máquinas, Energia e Radiação⟩ |
+
+**No uso:** manobra **Concentrar**, um turno parado, sem defesa ativa; o efeito sai no início do
+turno seguinte. Teste 3D contra o NH. **Em PES, quem rola é sempre o Mestre de Cena**, e numa
+falha por margem maior que 5 **ele mente** — o que casa com a trava de rolagem escondida do `20`
+§1.6: grava-se antes, revela-se na homologação.
+
+**Antecedentes Incomuns, 10 pontos, obrigatórios.** ⟨proposta⟩ O *Psiquismo* calibra essa
+vantagem pela raridade e pediria 150. **Cobrar 150 aqui seria cobrar duas vezes:** a porta do
+rank B já é o racionamento, e é muito mais cara.
+
+## 8.3 A trava que não pode faltar: Empatia e Noção do Perigo continuam Dádivas
+
+**Esta seção é a razão de o documento existir.** O *GURPS Psiquismo* reinterpreta duas vantagens
+do Módulo Básico: numa campanha com psí, **Empatia "é" telepatia com Potência 3** e **Noção do
+Perigo "é" PES com Potência 5**. Se isso valesse aqui, **retroagiria sobre fichas já
+homologadas** — a Tabela de Vantagens lista Empatia como Dádiva de **Oxum** e Noção do Perigo
+como Dádiva de **Loki** e de **Zeus**, e **Karthoz é marcado por Zeus**. O resultado seria
+transformar um personagem homologado em psi sem que o jogador tenha pedido, e disparar para trás
+uma porta que exige a morte de um rank B.
+
+> **DECISÃO: a reinterpretação do *Psiquismo* não se aplica em A Garganta.** **Empatia e Noção do
+> Perigo compradas como Dádiva continuam Dádivas** — concedidas por Casa, retiráveis por
+> excomunhão, e **não são psí**. Quem quiser o poder psíquico compra o Poder, pela porta do
+> §8.1. **Regra nova não retroage**, que é a mesma regra que deixou a Semana 1 sem crônica.
+
+## 8.4 Por que isso não fura a regra de que o sobrenatural humano passa por Casa
+
+**Porque a regra nunca foi essa.** A regra é **sobre magia**: não existe mago sem deus, a
+**Aptidão Mágica** é concedida por uma Casa, e **o colégio é o domínio do deus**. O que a Casa
+concede e retira é **acesso a colégio**.
+
+**O psí não tem nada disso.** Não tem colégio, não tem ritual, não tem pré-requisito de mágica,
+não gasta energia de mana e **não muda com a profundidade**: o mago fica mais forte descendo e
+**o psi no andar 20 é exatamente o que era no andar 1**. Em bolsão de mana nula o mago para e **o
+psi não**.
+
+**A campanha agora tem duas exceções nomeadas ao "só pela Casa", e são a mesma exceção:** a
+**Aptidão racial do Elfo** e o **psí**. As duas vêm de baixo, as duas passam pela porta do rank
+B, e nenhuma abre colégio. **O que sobe do poço não presta contas às Casas** — e é por isso que
+subir do poço custa o que custa.
+
+**Fraqueza estrutural.** **A Casa não pode retirar o que não deu — então faz a única coisa que
+lhe resta, que é não marcar.** E sem Marca o personagem treina até o limite natural e para. O psi
+tem duas saídas e as duas custam: aceitar a Marca de uma Casa que **não ganha alavanca nenhuma
+sobre ele** e vai cobrar o Dever com juros, ou recusar e **parar de crescer** enquanto a mesa
+sobe.
+
+**Consequência política.** A Guilda quer um: um operador que funciona em bolsão de mana nula vale
+mais que uma esquadra. **E a primeira Casa que marcar um psi compra um precedente que não
+consegue devolver.**
+
+**A defesa é de todos.** **Resistência Psíquica** já está na Tabela de Vantagens a 2 pontos por
+nível, é comprável por **qualquer personagem, sem porta nenhuma**, sai do NH de qualquer
+tentativa psíquica contra o portador — **e do NH dele próprio** — e **não se desliga**. Nenhum
+jogador fica indefeso porque outro perdeu um rank B.
+
+# 9 · Nota de mesa — o que muda quando um não-humano entra na esquadra
+
+**1. O limite da mesa se lê antes da primeira cena, não durante.** Carta, artigo 16. Cada ficha
+traz um bloco **LIMITE DE MESA** no alto: é ele que manda, e ele vem antes de qualquer coisa
+escrita aqui. Minotauro, Transmutante e a prata entram em território de material duro — origem
+violenta, corpo alterado, gente tratada como mercadoria —, e **material duro se narra por elipse,
+sempre**: pesa na política da cena e não se descreve em detalhe. Se o bloco da ficha e esta nota
+discordarem, **vale o bloco da ficha**, e o Mestre de Cena não pergunta o motivo do limite: ele
+não é dado da mesa.
+
+**2. O redutor de reação é da esquadra, não do não-humano.** Um Minotauro presente é **−3 mais
+−4** na mesma mesa de negociação, e não existe "ele fica quieto num canto": ou está visível e a
+reação conta, ou esconder é um problema jogado, e o preço do plano é o tempo dele.
+
+**3. Registro é o que faz o pagamento existir.** Se o registro é contestado, **o dinheiro trava
+antes da briga** — e essa é a cena política, não a pancadaria.
+
+**4. Equipamento não serve, e o balcão é humano.** ⟨proposta⟩ **+50% no preço e uma semana de
+espera** para peça de tamanho não-humano; o que se acha no baú **não serve**, e serve para vender.
+
+**5. O tabu do Minotauro se declara antes do primeiro passo**, em voz alta, para a mesa toda
+ouvir. Anunciar depois é armadilha, e a Carta, artigo 6, diz que ninguém morre sem chance de
+recuar. **Anunciado antes, o tabu é a melhor ferramenta de tensão que a campanha tem.**
+
+**6. O Elfo não lança nada sem Casa.** A Aptidão racial **não é autorização**.
+
+**7. Abaixo do andar 1 não existe lua.** O Mestre **nunca** rola transformação embaixo.
+
+**8. Desvantagem racial tem de aparecer.** Cobiça de Anão, Impulsividade de Goblin, Sanguinolência
+de Minotauro — se não aparecem, o Árbitro penaliza por má atuação.
+
+**9. A raça não é o antagonista. O ofício é.** Carta, artigo 19. Quem recusa o registro é um
+escrivão com nome. **Nunca "o povo tal é odiado"; sempre: fulano, por este motivo, neste balcão,
+hoje.**
+
+**10. Reação de personagem de outro jogador é do jogador, sempre.** Os modificadores raciais valem
+para NPC. Entre personagens de jogadores, **quem decide é quem joga**.
+
+# O que espera confirmação do Árbitro
+
+Onze itens. Nenhum inventa número que o livro tenha; todos são pontos em que o livro cala ou em
+que uma decisão anterior abriu buraco.
+
+| # | Onde | O que |
+| --- | --- | --- |
+| 1 | §0 | Peculiaridade racial é grátis e **não** gasta as cinco do `29` §4 |
+| 2 | §1 | Anão, Carga "Nenhuma" = 2,5 × ST — o livro dá só os quatro degraus |
+| 3 | §2 | Elfo: o −2 de reação dos Orcs passa aos **Elfos Negros** |
+| 4 | §2 | "Unaging" vira **Longevidade** + fato narrativo sem custo, porque falta o *Fantasy Folk* |
+| 5 | §3 | Meio-Elfo: **Aptidão Mágica nível 1** — a soma fecha em 30, mas o livro avisa que custo racial ≠ individual |
+| 6 | §3 | **Segredo −20** para quem esconde, contra **Estigma Social −10** para quem declara |
+| 7 | §4 | O tabu fica como **Hábito Detestável −15** com o −3 reancorado, ou vira **Compulsão −15** e o −3 cai |
+| 8 | §4 | **A RD racial da cabeça soma com a RD 2 do crânio?** Somando dá RD 7, e o golpe na cabeça deixa de existir contra Minotauro |
+| 9 | §6 | **A lua cobrada** — a transformação perdida dispara na primeira noite de céu aberto |
+| 10 | §8 | **Um Poder por personagem, teto 10; Eletrocinese fora; Psicoteleporte dentro** |
+| 11 | §8 | **Antecedentes Incomuns = 10**, e não os 150 da calibração do *Psiquismo* |
+
+**E dois itens que não são confirmação, são consequência a executar:**
+
+- **O `02` §7 promete *"entra com cerca de 210"***, e com as sete fichas vivas o orçamento é
+  **150**. Precisa trocar o número pela fórmula e por um exemplo datado.
+- **A §8.3 é a mais urgente desta entrega.** Enquanto não estiver no ar, o *Psiquismo* lido ao pé
+  da letra transforma a Dádiva de Oxum e a de Zeus em poder psíquico — e **Karthoz é marcado por
+  Zeus**. É exatamente o erro de 09/09: decisão que não foi publicada é decisão que não existe.
+
+
+---
+
 titulo: Modelos de Personagem
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Modelos de Personagem
@@ -3308,7 +3751,7 @@ E lembre do **passo 11** da criação: dois NPCs que te conhecem, uma dívida, u
 
 titulo: Ficha Pública e Notoriedade
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Ficha Pública e Notoriedade
@@ -3356,13 +3799,14 @@ O registro é da Guilda, e a Guilda não apaga. Quem quiser suprimir uma linha �
 ---
 
 titulo: Regra de Escrita da Ficha
-versao: 2
-atualizado: 2026-09-11
+versao: 3
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha
 
 > **Nota.**
+> **Versão 3, de 13/09/2026.** Item 9 do checklist: **o Dever da Marca saiu do limite de −40**. Item 10: o Deslocamento passa a descontar a Carga, e a Briga entra na lista de quem apara a ⅔. E entrou o item 11, o **tipo obrigatório** nos dez nomes que existem em duas tabelas.
 > **Versão 2, de 10/09/2026** — segunda rodada de conferência. Entraram três travas que estavam implícitas e não escritas: bônus condicional fica fora do Efetivo; bônus por item exige o item no equipamento; especialização exige a especialidade declarada.
 > **Nenhuma ficha entra em mesa, e nenhuma alteração é homologada, fora deste formato.** Ele existe por um motivo concreto: uma ficha da campanha precisou ser reconstruída do zero para se descobrir que estava 22,5 pontos acima, porque não havia como saber quanto cada linha tinha custado. **Ficha que só mostra o nível não é auditável — é uma afirmação.**
 
@@ -3472,18 +3916,19 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
 6. **Toda mágica fora do domínio da Casa tem acordo registrado?** Com dono, mesmo que o dono só exista na camada do Árbitro.
 7. **A soma das linhas bate com a linha da conta?**
 8. **A conta fecha no orçamento?** 150 na criação.
-9. **Desvantagens dentro de −40, com o Dever da Marca lá dentro?** Peculiaridades até 5.
-10. **Os derivados batem?** PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · Deslocamento=Esquiva=Vel. arredondada · Aparar=perícia÷2, ou **⅔ em Esgrima e Bastão** · Bloquear=Escudo÷2.
-11. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
+9. **Desvantagens dentro de −40, com o Dever da Marca FORA do limite?** O Dever é obrigatório e continua valendo de −5 a −15, mas desde 13/09/2026 **não ocupa espaço no −40** (`29` §1). Peculiaridades até 5, também fora.
+10. **Os derivados batem?** PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · **Deslocamento = Vel. − nível de Carga**, para baixo · Esquiva=Deslocamento · Aparar=perícia÷2, ou **⅔ em Esgrima, Bastão e Briga** · Bloquear=Escudo÷2.
+11. **Nos nomes que existem em duas tabelas, o tipo está declarado na linha?** São dez, e a lista está no `26` §11 — **Escalada · Escudo · Exorcismo · História · Vôo · Prontidão · Visão Aguçada · Ouvido Aguçado · Visão Noturna · Fúria**. Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`. **Linha sem o tipo volta.**
+12. **As Amarras estão preenchidas?** Dois NPCs, uma dívida, um segredo.
 
-**Onze itens. Se um falhar, a ficha volta.** Vale para a ficha do Árbitro também — Carta, artigo 4.
+**Doze itens. Se um falhar, a ficha volta.** Vale para a ficha do Árbitro também — Carta, artigo 4.
 
 
 ---
 
 titulo: A Magia no Mundo e as Sete Forjas
 versao: 3
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # A Magia no Mundo e as Sete Forjas
@@ -3605,7 +4050,7 @@ Ilê Ifé não encanta: **assenta**. O item é consagrado a um orixá — a lâm
 
 titulo: Economia e Tabelas
 versao: 7
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Economia e Tabelas
@@ -4040,7 +4485,7 @@ Contratado que consta em ficha homologada é NPC nomeado e **morre em −HT** (`
 
 titulo: Loot, Balcão e Registro
 versao: 3
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Loot, Balcão e Registro
@@ -4227,7 +4672,7 @@ O balcão compra item comum por **metade** do preço de tabela, menos a taxa da 
 
 titulo: Carta do Árbitro
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Carta do Árbitro
@@ -4274,7 +4719,7 @@ Quando esta Carta e o cânone entrarem em conflito, prevalece esta Carta, e o co
 
 titulo: Protocolo do Mestre de Cena
 versao: 11
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Protocolo do Mestre de Cena
@@ -4541,7 +4986,7 @@ Abra Pendência e pergunte ao Árbitro. Um jogo travado por meia hora é melhor 
 
 titulo: Entrega do Relatório pelo Google Drive
 versao: 7
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Entrega do Relatório pelo Google Drive
@@ -4695,7 +5140,7 @@ Se o personagem morto era de **rank B ou superior**, a opção não-humana fica 
 
 titulo: Índice e Regra de Escrita
 versao: 7
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Índice e Regra de Escrita
@@ -5007,15 +5452,16 @@ entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O `04`
 ---
 
 titulo: Tabela de Perícias
-versao: 2
-atualizado: 2026-09-11
+versao: 3
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Tabela de Perícias
 
 > **Nota.**
-> **Lista fechada.** O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha. Extraída verbete a verbete do **GURPS Módulo Básico**, do **GURPS Magia** e do **GURPS Grimório**, mais as quatro perícias da casa criadas por decisão do Árbitro (`25`, decisão 4).
-> **Versão 2, de 10/09/2026.** Vinte e nove perícias de livro que a versão 1 tinha deixado de fora entraram; **Caligrafia** passou de mental para **Física/Média**, como está no livro; **Boemia** saiu da nota das mentais, porque é física; e as duas perícias da casa cujo nome já estava ocupado por mágica foram renomeadas (§4).
+> **Lista fechada.** O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha.
+> **Versão 3, de 13/09/2026 — e as perícias da casa acabaram.** O Árbitro passou os dez livros de GURPS que a campanha possui a livros de mesa, e as quatro perícias inventadas em setembro se resolveram sozinhas: **Intimidação** tem verbete em quatro livros, e é Mental/Média, exatamente como estava; **Exorcismo** tem verbete no *Horror* (p.43), Mental/Difícil, e o livro diz na cara que *"não é uma mágica, é uma perícia religiosa"* — que era a decisão do Árbitro, palavra por palavra; **Selos e Sigilos** virou **Heráldica**, que já estava na lista, com a mesma dificuldade; e **Cartografia**, a única sem verbete em livro nenhum, saiu (v. §6).
+> **Versão 2, de 10/09/2026.** Vinte e nove perícias de livro que a versão 1 tinha deixado de fora entraram; **Caligrafia** passou de mental para **Física/Média**, como está no livro; e **Boemia** saiu da nota das mentais, porque é física.
 > **Como se lê uma linha de ficha está no `24`.** Toda perícia entra na ficha com sete campos: nome · tipo/dificuldade · relativo ao atributo · pontos · NH comprado · bônus com a fonte · NH efetivo.
 
 # 1. Custo em pontos
@@ -5042,7 +5488,7 @@ O custo depende de **duas coisas só**: quanto acima do atributo você quer cheg
 
 ## Mentais — baseadas em IQ (duas saem de HT)
 
-**Saem de HT, não de IQ:** Sex-Appeal (Média) e Controle da Respiração (Muito Difícil). **Boemia não está aqui** — é Física/Média, também de HT, e vive na tabela física. Erro corrigido em 10/09/2026: a versão anterior listava Boemia como mental.
+**Sai de HT, não de IQ:** apenas **Sex-Appeal** (Média). O livro diz, no verbete de cada uma das que mudam de atributo, que elas mudam — e o verbete de Controle da Respiração **não diz**, logo ela sai de IQ, como toda mental. Corrigido em 13/09/2026; a versão 2 a listava aqui. **Boemia não está aqui** — é Física/Média, também de HT, e vive na tabela física. Erro corrigido em 10/09/2026: a versão anterior listava Boemia como mental.
 
 | Nível final | Fácil | Média | Difícil | Muito Difícil |
 | --- | --- | --- | --- | --- |
@@ -5105,7 +5551,6 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Judô | Difícil | Básico |
 | Lança | Média | Básico |
 | Lança de Justa | Média | Básico |
-| Maça | Média | Básico |
 | Machado de Duas Mãos/Maça | Média | Básico |
 | Machado/Maça | Média | Básico |
 | Mangual | Difícil | Básico |
@@ -5114,13 +5559,12 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Percepção do Corpo | Difícil | Magia |
 | Prestidigitação | Difícil | Básico |
 | Punga | Difícil | Básico |
-| **Rapidez de Recarga** (por tipo de arma) | Fácil | Básico |
 | Rede | Difícil | Básico |
+| **Remo/Vela** | Média | Básico p.68 |
 | **Sacar Rápido** (por tipo de arma) | Fácil | Básico |
 | Salto | Fácil | Básico |
 | Sopro Mágico | Fácil | Magia |
-| **Vela** | Média | Básico |
-| Vôo | Média | Grimório |
+| Vôo | Média | Grimório p.6 |
 | Zarabatana | Difícil | Básico |
 
 # 3. Perícias mentais
@@ -5147,14 +5591,13 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Carpintaria | Fácil | Básico |
 | Carregamento | Difícil | Básico |
 | Carreiro | Média | Básico |
-| **Cartografia** | Média | **da casa** (`25`) |
 | Cerâmica | Média | Básico |
 | **Cirurgia** | **Muito Difícil** | Básico |
 | Comércio | Média | Básico |
 | Conhecimento do Terreno | Fácil | Básico |
 | **Construção de Naves** | Difícil | Básico |
 | **Contabilidade** | Difícil | Básico |
-| Controle da Respiração | Muito Difícil (sai de **HT**) | Básico |
+| Controle da Respiração | Muito Difícil | Básico p.48 |
 | **Criminologia** | Média | Básico |
 | Criptologia | Difícil | Grimório |
 | Culinária | Fácil | Básico |
@@ -5172,18 +5615,18 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Ferreiro | Média | Básico |
 | **Fisiologia** | Muito Difícil | Básico |
 | **Geologia** | Difícil | Básico |
-| Heráldica | Média | Básico |
+| Heráldica | Média | Básico p.58 |
 | Hipnotismo | Difícil | Básico |
 | História | Difícil | Básico |
 | Instrumento Musical | Difícil | Básico |
 | Interrogatório | Média | Básico |
-| **Intimidação** | Média | **da casa** (`25`) |
+| **Intimidação** | Média | Illuminati p.32 |
 | **Joalheiro** | Difícil | Básico |
 | Jogo | Média | Básico |
 | **Jurisprudência** | Difícil | Básico |
 | Lábia | Média | Básico |
 | Leitura Labial | Média | Básico |
-| Liderança | Média | Básico |
+| Liderança | Média | Básico p.63 — **pré-definido ST−5** |
 | **Linguagem de Sinais** | Média | Básico |
 | Lingüística | Muito Difícil | Básico |
 | Literatura | Difícil | Básico |
@@ -5191,7 +5634,6 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | **Marinhagem** | Fácil | Básico |
 | Matemática | Difícil | Básico |
 | **Medicina** | Difícil | Básico |
-| Mergulho | Média | Básico |
 | **Metalografia** | Difícil | Básico |
 | **Metereologia** | Média | Básico |
 | Mímica/Pantomima | Fácil | Básico |
@@ -5210,15 +5652,15 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Psicologia | Difícil | Básico |
 | **Química** | Difícil | Básico |
 | Rastreamento | Média | Básico |
-| **Rito Funerário** | Difícil | **da casa** (`25`) |
-| **Selos e Sigilos** | Média | **da casa** (`25`) |
+| **Exorcismo** *(perícia)* | Difícil | Horror p.43 |
 | **Serviço Secreto** | Difícil | Básico |
 | Sex-Appeal | Média (sai de **HT**) | Básico |
 | Sobrevivência (tipo de área) | Média | Básico |
 | Sombra | Média | Básico |
 | Tática | Difícil | Básico |
 | Tatuagem | Média | Grimório |
-| Taumatologia | Muito Difícil | Grimório |
+| **Sonho Lúcido** | Fácil (sai de **Vontade**) | Grimório p.6 |
+| Taumatologia | Muito Difícil | Grimório p.7 |
 | Técnicas Judiciais | Difícil | Básico |
 | Teologia | Difícil | Básico |
 | Trabalhos em Couro | Fácil | Básico |
@@ -5229,27 +5671,21 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | **Veterinária** | Difícil | Básico |
 | **Zoologia** | Difícil | Básico |
 
-# 4. As quatro perícias da casa
+# 4. As quatro perícias da casa — e o fim delas
 
-Não existem em livro nenhum. Entram por **decisão do Árbitro de 10/09/2026** (`25`, decisão 4), com a dificuldade que faz as fichas já homologadas fecharem sem mexer em um ponto. **São divergência declarada, não erro a corrigir.**
+Em 10/09/2026 o Árbitro criou quatro perícias que não tinham verbete nos três livros de mesa de
+então, com a dificuldade que fazia as fichas já homologadas fecharem sem mexer num ponto. Em
+13/09/2026, com os dez livros da estante passando a ser livros de mesa, **três das quatro
+apareceram — e com os números que ele tinha escolhido.**
 
-| Perícia | Tipo/Dif. | O que faz na mesa |
+| Perícia da casa | O que era | O que é agora |
 | --- | --- | --- |
-| **Cartografia** | Mental/Média | Levanta planta de andar, lê mapa alheio, detecta mapa falso. A economia da campanha já vende mapa — não há mercado de mapa sem a perícia que faz mapa |
-| **Intimidação** | Mental/Média | Força reação por ameaça crível. **Disputa contra a Vontade do alvo** |
-| **Rito Funerário** | Mental/Difícil | Põe o morto-que-anda de volta no lugar. **Não é magia e não exige Aptidão** — é ofício litúrgico. Fengdu e Ámenti licenciam |
-| **Selos e Sigilos** | Mental/Média | Faz, lê e reconhece selo, sinete e talismã, **inclusive falso**. Não encanta: quem encanta é mago |
+| **Intimidação** | Mental/Média, da casa | **Mental/Média, de livro** — *Illuminati* p.32, e também *Artes Marciais* p.31, *Império Romano* p.37 e *Viagem no Tempo* p.34. Mesma dificuldade. O verbete traz ainda a regra de **Intimidação de um Grupo** |
+| **Exorcismo** *(era Rito Funerário)* | Mental/Difícil, da casa, renomeada para não colidir com a mágica | **Mental/Difícil, de livro** — *Horror* p.43, pré-definido **IQ−6 ou Teologia−3**, e **−4 para quem não tem Clericato**. O livro escreve: *"o exorcismo não é uma mágica. É uma perícia religiosa que envolve rituais complexos."* Volta ao nome do livro; a colisão com a mágica resolve-se pela regra do tipo obrigatório (§11) |
+| **Selos e Sigilos** *(era Talismã)* | Mental/Média, da casa | **Vira Heráldica**, que já estava nesta lista — Mental/Média, *Básico* p.58, pré-definido IQ−5 ou Trato Social−3. O verbete cobre *"projetar e reconhecer escudos de armas, cores e divisas de um clã e outros emblemas"*, que é fazer e ler selo. **Mesma dificuldade, mesmo custo, mesmo NH: nenhuma ficha muda de conta.** Na Garganta a Heráldica cobre também selo de Guilda, sinete de contrato e lacre |
+| **Cartografia** | Mental/Média, da casa | **Sai.** É a única sem verbete em livro nenhum dos dez — a única ocorrência em todo o acervo é uma linha de créditos. Levantar planta de andar passa a exigir **Navegação** para medir e **Artística** para desenhar; detectar mapa falso roda por **Artística** |
 
-## Por que duas delas mudaram de nome em 10/09/2026
-
-Duas se chamavam **Exorcismo** e **Talismã**. Os dois nomes já estavam **ocupados por mágicas de livro**, e nome repetido na mesa custa caro: um jogador diz "faço Exorcismo" e ninguém sabe se é o teste de perícia ou o feitiço de 10 de energia.
-
-| Nome antigo | Colide com | Nome novo |
-| --- | --- | --- |
-| Exorcismo | **mágica Exorcismo**, escola de Comunicação e Empatia (*GURPS Magia*) — Com/R-mágica, 10 energia, ← Passageiro da Alma ou Possessão | **Rito Funerário** |
-| Talismã | **encantamento Talismã** (*GURPS Grimório*), que soma ao teste de resistência de quem o usa | **Selos e Sigilos** |
-
-**Nenhuma ficha muda de conta.** Mesma dificuldade, mesmos pontos, mesmo NH — só o nome na linha. Cartografia e Intimidação ficam como estavam: conferi os três livros e nenhum dos dois nomes existe neles.
+**Nenhuma perícia da casa sobrou.** A lista é inteiramente de livro.
 
 # 5. Idiomas
 
@@ -5311,7 +5747,14 @@ Todos estiveram em uso no cânone e foram corrigidos em 10/09/2026.
 | Teologia comparada | **Teologia** |
 | Toxicologia | **Venefício** |
 | Exorcismo *(como perícia)* | **Rito Funerário** — Exorcismo continua existindo, mas **como mágica** |
-| Talismã *(como perícia)* | **Selos e Sigilos** — Talismã continua existindo, mas **como encantamento do Grimório** |
+| Talismã *(como perícia)* | **Heráldica** — Talismã continua existindo, mas **como encantamento do Grimório** |
+| Rito Funerário | **Exorcismo** — voltou ao nome do livro em 13/09, com verbete no *Horror* p.43 |
+| Selos e Sigilos | **Heráldica** — mesma dificuldade e mesmo custo |
+| Cartografia | **não existe** — Navegação para medir, Artística para desenhar |
+| Vela | **Remo/Vela** — o verbete é um par, e cobre canoa e barco a remo |
+| Maça | **Machado/Maça** — não há verbete de "Maça" sozinha, só entrada de índice apontando para a p.49 |
+| Mergulho | **não existe na Garganta** — o verbete é de equipamento de respiração subaquática, tecnologia que as sete cidades não têm. Prender a respiração é **Controle da Respiração** mais **Natação** |
+| Rapidez de Recarga | **não existe na Garganta** — o verbete é de arma de fogo. Para sacar rápido um virote, **Sacar Rápido (Flecha)** |
 
 **Percepção não é perícia.** Quem quer ser bom nisso compra vantagem: **Prontidão, 5 por nível** (todos os sentidos) ou **Visão Aguçada, 2 por nível**. Em quase toda ficha, Visão Aguçada +2 por 4 pontos rende mais do que a perícia rendia.
 
@@ -5327,6 +5770,15 @@ Quase toda perícia tem um nível em que você a usa sem treino nenhum.
 | Média | atributo −5 |
 | Difícil | atributo −6 |
 | Muito Difícil | em geral **nenhum** |
+
+**Quatro fogem dessa regra e precisam ser ditas**, porque o livro as escreve à parte:
+
+| Perícia | Pré-definido impresso | Onde |
+| --- | --- | --- |
+| **Liderança** | **ST−5** — e não IQ−5 | Básico p.63. O livro explica: *"num grupo qualquer, se ninguém tiver treinamento em liderança, **o mais forte normalmente a exercerá**"*. É a única perícia mental do livro cujo pré-definido sai de ST, e é deliberado |
+| **Exorcismo** | **IQ−6 ou Teologia−3**, e **−4 a mais para quem não tem Clericato** | Horror p.43 |
+| **Sonho Lúcido** | **Vontade−4** | Grimório p.6 |
+| **Bastão** | **DX−5 ou Lança−2** — Difícil, e ainda assim −5 | Básico p.52 |
 
 Há exceções, e algumas perícias se pré-definem **umas nas outras** — Espadas de Lâmina Larga é DX−5 **ou** Espadas Curtas −2, o que for melhor. **Perícia sem pré-definido não se tenta**: Caratê, Judô, Alquimia e a maioria das Muito Difíceis.
 
@@ -5363,24 +5815,58 @@ Há exceções, e algumas perícias se pré-definem **umas nas outras** — Espa
 
 # 9. O que existe em livro e **não** existe na Garganta
 
-Não é lacuna: é recorte de mundo. Estas perícias têm verbete nos livros e **estão fora** porque exigem nível tecnológico que as sete cidades não têm.
+Não é lacuna: é recorte de mundo. Estas perícias têm verbete nos livros e **estão fora** porque exigem nível tecnológico que as sete cidades não têm — **salvo a Artilharia, que sai por outra razão, dita abaixo.**
 
-Armas de Fogo · Armas de Feixe · Armas de Pólvora · Artilharia · Astronavegação · Ciclismo · Demolição · Demolição Subaquática · Eletrônica · Escudo de Força · Espada de Luz · Física Nuclear · Fotografia · Genética · Gravidade Zero · Motociclismo · Operação de Aparelhos Eletrônicos · Operação de Computadores · Pára-quedismo · Programação de Computadores · Sistemas de Segurança · Telegrafia · Traje de Combate · Traje Pressurizado
+Armas de Fogo · Armas de Feixe · Armas de Pólvora · Astronavegação · Ciclismo · Demolição · Demolição Subaquática · Eletrônica · Escudo de Força · Espada de Luz · Física Nuclear · Fotografia · Genética · Gravidade Zero · Motociclismo · Operação de Aparelhos Eletrônicos · Operação de Computadores · Pára-quedismo · Programação de Computadores · Sistemas de Segurança · Telegrafia · Traje de Combate · Traje Pressurizado
+
+E mais duas, por nível tecnológico, acrescentadas em 13/09: **Mergulho**, que no livro é a
+habilidade de usar equipamento de respiração subaquática, e **Rapidez de Recarga**, que no
+livro é a habilidade de recarregar arma de fogo.
 
 **Se um andar fundo devolver algo dessa lista**, o Árbitro abre Pendência e decide caso a caso — não se compra na criação.
+
+## Artilharia sai por decisão de mundo, não por tecnologia
+
+O verbete de Artilharia (Básico p.50) abre a lista de especializações com **Balestra** e
+**Catapulta**, que são de nível 2 e 3 — o motivo tecnológico não se sustenta para ela. E há uma
+incoerência que fica registrada: a perícia **Armeiro**, que está na lista, tem *"armas para
+cerco"* entre as especialidades de nível baixo, de modo que o cânone deixa alguém **construir**
+a catapulta e não deixa ninguém **operá-la**.
+
+> **Decisão do Árbitro, 13/09/2026.** Artilharia fica fora, e o motivo é outro: **não há guerra
+> de cerco entre as sete cidades.** Elas disputam por contrato, por registro e por preço, e a
+> Coroa é neutra por construção. Máquina de cerco existe nas muralhas e ninguém a serviu em
+> memória viva. Se isso mudar no mundo, a perícia entra — e a mudança será notícia antes de
+> ser regra.
 
 # 10. Alcance desta tabela, dito na cara
 
 - **As perícias** vêm dos três livros, verbete a verbete, **completas** para o nível tecnológico da campanha.
-- **As mágicas** (`27`) vêm da Relação das Mágicas do **GURPS Magia**: 413 mágicas, todas as escolas. **As mágicas e encantamentos exclusivos do GURPS Grimório ainda não foram transcritos** — o Grimório não traz tabela consolidada, e a transcrição verbete a verbete é trabalho próprio, registrado como Pendência aberta. Enquanto isso, mágica de Grimório **entra só por autorização do Árbitro**, uma a uma.
-- **Talismã**, do Grimório, é um desses encantamentos: existe, mas ainda não está tabelado. É por isso que a perícia da casa com esse nome foi renomeada em vez de disputar o nome.
+- **As mágicas** (`27`) são **429**: **413** da Relação das Mágicas do *GURPS Magia*, mais **16** do *Grimório* — as quatro que a decisão 1 do `25` nomeou e as doze da sub-escola de Eletricidade que o `31` trouxe. **A transcrição do restante do Grimório está em curso desde 13/09/2026**, por decisão do Árbitro, com as três escolas Tecnológicas — Máquinas, Energia e Radiação — ficando de fora pelo mesmo recorte de nível tecnológico desta seção.
+- **Talismã**, do Grimório, é encantamento e não perícia. Foi por isso que a perícia da casa com esse nome primeiro se chamou Selos e Sigilos e depois virou **Heráldica**, que é de livro.
+
+# 11. Nomes que existem em duas tabelas ao mesmo tempo
+
+Alguns nomes são, ao mesmo tempo, perícia e mágica, ou vantagem e mágica. **As duas pontas são
+de livro, e nenhuma pode ceder o nome.**
+
+> **Regra, fixada em 13/09/2026: nesses nomes o tipo é obrigatório na linha da ficha, e a
+> homologação recusa a linha sem ele.** Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`,
+> `Exorcismo (perícia)` ou `Exorcismo (mágica)`. A trava já existia — a Regra de Escrita da
+> Ficha (`24`) manda declarar tipo em toda linha; o que muda é que agora é recusa, e não
+> cortesia.
+
+A lista sai do cruzamento das quatro tabelas fechadas e é conferida a cada versão. Hoje são:
+**Escalada · Escudo · Exorcismo · História · Vôo** (perícia × mágica) · **Prontidão · Visão
+Aguçada · Ouvido Aguçado · Visão Noturna** (vantagem × mágica) · **Fúria** (desvantagem ×
+mágica).
 
 
 ---
 
 titulo: Tabela de Mágicas
-versao: 3
-atualizado: 2026-09-11
+versao: 4
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Tabela de Mágicas
@@ -5388,6 +5874,13 @@ fonte: cânone aberto de A Garganta
 > **Nota.**
 > **429 mágicas, todas as escolas, com pré-requisito, energia e tempo.** Transcrita da Relação das Mágicas do **GURPS Magia**, com as escolas renomeadas pelo livro e as Casas concedentes pela tabela viva do `17` §6.6, refeita em 10/09/2026 (`25`). **Acrescentadas em 11/09/2026 (`31`):** o colégio **Clima** com a sub-escola de **Eletricidade** do *Grimório*, e as quatro mágicas de Grimório que a decisão 1 do `25` nomeou.
 > **Toda mágica é Mental/Difícil**, salvo as marcadas com **\*** — essas são Mental/Muito Difícil.
+>
+> **Versão 4, de 13/09/2026 — a regra de leitura mudou, e ela governa a tabela inteira.**
+> O *GURPS Magia* traz cada mágica em dois lugares: o **verbete**, no capítulo da escola, e a
+> **Relação das Mágicas**, a tabela das páginas 71 a 76. Os dois divergem em dezenas de pontos.
+> Esta tabela foi transcrita da Relação — e, **por decisão do Árbitro de 13/09, onde os dois
+> divergirem vence o verbete**. Dezenove nomes mudaram e oito pré-requisitos foram corrigidos;
+> nenhum custa ponto a ninguém. A tabela de equivalência está no fim, em *Nomes antigos*.
 
 # Como se compra uma mágica
 
@@ -5446,12 +5939,12 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | --- | --- | --- | --- | --- | --- |
 | Compartilhar Idioma | Comum | 3 seg | 1 min | 3/1 | Emprestar Idioma |
 | Compartilhar Perícia | Comum | 3 seg | 1 min | 4/3 | Emprestar Perícia |
-| Compulsão p/ Verdade | Inform/R-IQ | 1 seg | 5 min | 4/2 | AM 2, Percepção Veracidade |
+| Compulsão para a Verdade | Inform/R-IQ | 1 seg | 5 min | 4/2 | AM 2, Percepção da Veracidade |
 | Controle de Pessoas | Com/R-IQ | 10 seg | 1 min | 6/3 | Passageiro da Alma ou Telepatia |
-| Dom das Letras* | Comum | 1 seg | 1 min | 4/2 | Compartilhar Idioma, 3 línguas c/ NH 10+ |
+| Dom da Escrita* | Comum | 1 seg | 1 min | 4/2 | Compartilhar Idioma, 3 línguas c/ NH 10+ |
 | Dom das Línguas* | Comum | 1 seg | 1 min | 4/2 | Compartilhar Idioma, 3 línguas c/ NH 10+ |
-| Emprestar Idioma | Comum | 3 seg | 1 min | 3/1 | Transmissão de Pensamento |
-| Emprestar Perícia | Comum | 3 seg | 1 min | 3/2 | Transmissão de Pensamento, IQ 12+ |
+| Emprestar Idioma | Comum | 3 seg | 1 min | 3/1 | Transmissão de Pensamentos |
+| Emprestar Perícia | Comum | 3 seg | 1 min | 3/2 | Transmissão de Pensamentos, IQ 12+ |
 | Esconder Pensamentos | Comum | 1 seg | 10 min | 3/1 | Percepção da Veracidade |
 | Exorcismo | Com/R-mágica | 10 seg | Inst. | 10 | Passageiro da Alma ou Possessão# |
 | Leitura da Mente | Com/R-IQ | 10 seg | 1 min | 4/2 | Percepção da Veracidade |
@@ -5465,7 +5958,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Possessão* | Com/R-IQ | 1 min | 1 min | 10/4 | AM + Controle de Pessoas ou Possessão de Animais |
 | Sonda Mental* | Com/R-IQ | 1 min | 1 min | 6/3 | Leitura da Mente |
 | Telepatia* | Comum | 4 seg | 1 min | 4/4# | Transmissão de Pensamentos |
-| Transmissão de Pensamento | Comum | 4 seg | 1 min | 4/4 | Leitura da Mente |
+| Transmissão de Pensamentos | Comum | 4 seg | 1 min | 4/4 | Leitura da Mente |
 | Trocar de Corpo* | Com/R-IQ | 1 h. | Perm | 120 | Possessão Permanente, Aprisionar Alma |
 
 # Movimentação
@@ -5488,13 +5981,13 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Golem de Ar | Comum | 10 seg | 1h | 4/2 | AM 2, Aporte |
 | Levitação | Com/R-IQ | 2 seg | 1 min | 1 por 40 kg/h# | Aporte |
 | Manipular | Comum | 3 seg | 1 min | 4/3# | Serralheiro |
-| Marcha Forçada | Comum | 1 min | 1 dia marcha | 4# | AM, Apressar |
+| Marcha Acelerada | Comum | 1 min | 1 dia marcha | 4# | AM, Apressar |
 | Poltergeist | Projétil | 1 seg | Inst. | 1 ou 2# | Aporte |
 | Queda Lenta | Comum | 1 seg | 1 min | 1 por 25 kg/h | Aporte |
 | Reduzir Carga | Comum | 3 seg | 10 min | 3 ou 5/h# | Aporte |
 | Serralheiro | Comum | 1 seg | 1 min # | 2/2 | Aporte |
 | Teleportar Outros* | Com/R-IQ+1 | 1 seg | Inst. | varia# | AM 3, Teleporte |
-| Teleporte | Especial | 1 seg | Inst. | varia# | Voo do Falcão ou IQ 15+ |
+| Teleporte | Especial | 1 seg | Inst. | varia# | Voo do Falcão, ou IQ 15+ e 1 mágica de 10 escolas dif. |
 | Translocação | Bloqueio | 1 seg | Inst. | 2 | Teleporte |
 | Voo | Comum | 2 seg | 1 min | 5/3 | AM 2, Levitação |
 | Voo do Falcão* | Comum | 3 seg | 1 min | 8/4 | Voo |
@@ -5506,20 +5999,20 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Audição Remota | Comum | 3 seg | 1 min | 4/2 | AM, não surdo, 4 outras mág. Som |
-| Escrever | Comum | 1 Seg | 1 min | 3/1 | Voge», Alfabetização, Golem de Ar |
+| Escrever | Comum | 1 Seg | 1 min | 3/1 | Vozes, Alfabetização, Golem de Ar |
 | Estrondo | Comum | 1 seg | Inst | 2 | Som |
 | Furtividade Mágica | Comum | 3 Seg | 1 min | 3/2 | Quietude |
 | Jato de Som | Comum | 1 seg | 1 seg | 1 a 4#/s | Voz Amplificada |
-| Mensagem Retida | Área | 4 seg | indef. # | 3# | AM, Vozes, Detecção de Vida |
+| Mensagem Retida | Área | 4 seg | indef. # | 3# | AM, Vozes, Percepção de Vida |
 | Muro de Silêncio | Área | 1 seg | 1 min | 2/1 | Silêncio |
 | Ouvido Mágico | Comum | 2 seg | 1 min | 4/3 | Aporte, Audição Remota, Visão Sonora |
 | Ouvido Mágico Invisível | Comum | 4 seg | 1 min | 5/3 | Ouvido Mágico, Invisibilidade |
 | Quietude | Com/R-IQ | 2 seg | 10 seg # | 2/1 | Silêncio |
-| Ruído | Área | 1 seg | 5 seg | 4/2 | Muro de Silêncio |
+| Barulho | Área | 1 seg | 5 seg | 4/2 | Muro de Silêncio |
 | Silêncio | Área | 1 seg | 1 min | 2/1 | Som |
 | Som | Comum | 1 seg | varia# | varia# | nenhum |
-| Visão Sonora | Comum | 1 seg | 1 min | 5/2 | Audição Aguçada |
-| Voz Possante | Comum | 2 seg | 1 min | 3/1 | Vozes, Estrondo |
+| Visão Sonora | Comum | 1 seg | 1 min | 5/2 | Ouvido Aguçado |
+| Voz Amplificada | Comum | 2 seg | 1 min | 3/1 | Vozes, Estrondo |
 | Vozes | Comum | 1 seg | 1 min | 3/2 | Som |
 
 # Luz e Trevas
@@ -5585,7 +6078,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Chama Essencial | Área | 3 seg | 1 min | 3/2# | 6 mágicas do Fogo |
 | Criar Fogo | Área | 1 seg | 1 min | 2/1 | Atear Fogo |
 | Extinguir Fogo | Comum | 1 seg | Perm. | 3/hex | Atear Fogo |
-| Fogo Fantasmagórico | Área | 1 seg | 1 min | 1/1 | Moldar Fogo ou Busão Simples |
+| Fogo Fantasmagórico | Área | 1 seg | 1 min | 1/1 | Moldar Fogo ou Ilusão Simples |
 | Frio | Comum | 1 min | 1 min | 3/hex# | Calor |
 | Imunidade ao Fogo | Comum | 1 seg | 1 min | 2/hex# | Extinguir Fogo, Frio |
 | Imunidade ao Frio | Comum | 1 seg | 1 min | 2/hex# | Criar Fogo, Calor |
@@ -5593,7 +6086,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Moldar Fogo | Área | 1 seg | 1 min | 2/1 | Atear Fogo |
 | Projéteis Flamejantes | Comum | 3 seg | 1 min | 4/2# | Arma Flamejante |
 | Resistência ao Fogo | Área | 5 min | 1 dia | 3# | Extinguir Fogo |
-| Sopro de Fogo* | Comum | 2 seg | 1 seg | 1a4 | AM, Jato de Chama, Imunidade ao Fogo |
+| Sopro de Fogo* | Comum | 2 seg | 1 seg | 1a4 | AM, Jato de Chamas, Imunidade ao Fogo |
 
 # Ar
 
@@ -5603,23 +6096,23 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
-| Caminhar no Ar | Comum | 1 seg | 1 min | 3/2 | Moldar Ar |
+| Caminhar no Ar | Comum | 1 seg | 1 min | 3/2 | Semear Ventos |
 | Chuva | Área | 1 min | 1h | 1/10/s | Nuvens |
-| Corpo de Ar | Com/R-HT | 5 seg | 1 min | 4/1 | Moldar Ar |
-| Criar Ar | Área | 1 seg | 5 seg # | 1 | Purificação de Ar |
+| Corpo de Ar | Com/R-HT | 5 seg | 1 min | 4/1 | Semear Ventos |
+| Criar Ar | Área | 1 seg | 5 seg # | 1 | Purificação do Ar |
 | Destruir Ar | Área | 1 seg | Inst | 2 | Criar Ar |
-| Eliminar Odor | Comum | 1 seg | 1h | 2# | Purificação de Ar |
+| Eliminar Odor | Comum | 1 seg | 1h | 2# | Purificação do Ar |
 | Furacão | Área | instante | 1 min# | 4/2 | Tufão |
 | Jato de Ar | Comum | 1 seg | 1 seg | 1 a 3# | Semear Ventos |
-| Mau Cheiro | Área | 1 seg | 5 min | 1# | Purificação de Ar |
-| Moldar Ar | Comum | 1 seg | 1 min | 1 a 10# | Criar Ar |
+| Mau Cheiro | Área | 1 seg | 5 min | 1# | Purificação do Ar |
+| Semear Ventos | Comum | 1 seg | 1 min | 1 a 10# | Criar Ar |
 | Nuvens | Área | 10 seg | 10 min | 1/20/s | 4 mág. Ar, 4 mág. Água |
-| Odor | Área | 1 seg | 1h# | 1 | Eliminar Odor |
+| Gerar Odor | Área | 1 seg | 1h# | 1 | Eliminar Odor |
 | Previsão do Tempo | Informação | 5 seg | Inst. | varia# | 4 mágicas de Ar |
-| Purificação de Ar | Área | 1 seg | Inst. | 1 | nenhum |
+| Purificação do Ar | Área | 1 seg | Inst. | 1 | nenhum |
 | Relâmpago | Projétil | 1 até 3 seg | Inst. | 1 a 3# | 6 mágicas de Ar |
 | Respirar Água | Comum | 1 seg | 1 min | 4/2 | Criar Ar, Dissipar Água |
-| Tufão | Área | instante | 1 min# | 2/1 | Moldar Ar |
+| Tufão | Área | instante | 1 min# | 2/1 | Semear Ventos |
 
 # Água
 
@@ -5642,8 +6135,8 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Dissipar Água | Área | 1 seg | Perm. | 3 | Criar Água |
 | Enregelar | Com/R-HT | 3 seg | Perm. | 1 a 3# | 5 outras mág. Água, incl. Congelar e Geada |
 | Esfera de Gelo | Projétil | 1 até 3 seg | Inst. | 1 a 3# | Moldar Água |
-| Geada | Área | 1 seg | varia# | l | Criar Á^ua, ou Frio |
-| Gelo visão | Comum | 1 seg | 30 seg | 2/10m# | Moldar Água |
+| Geada | Área | 1 seg | varia# | l | Criar Água, ou Frio |
+| Gelovisão | Comum | 1 seg | 30 seg | 2/10m# | Moldar Água |
 | Granizo | Área | 1 seg | 1 min | 1/5/s# | Neve |
 | Guarda-chuva | Comum | 2 seg | 10 min | 1/1 | Moldar Água ou Escudo |
 | Gêiser* | Área | 5 seg | 1 seg | 5/2 | 6 mág. Água + 4 de Fogo ou 4 de Terra |
@@ -5655,7 +6148,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Purificação de Água | Especial | 5-10 seg\gI | Perm. | 1/41 | Localizar Água |
 | Respirar Ar | Comum | 1 seg | 1 min | 4/2 | Criar Água, Destruir Ar |
 | Sapatos de Neve | Comum | 2 seg | 1 min | 2/1 | Moldar Água |
-| lato de Água | Comum | 1 seg | 1 seg | 1 a 3# | Moldar Água |
+| Jato d'Água | Comum | 1 seg | 1 seg | 1 a 3# | Moldar Água |
 | Água Essencial | Comum | 1 seg | Perm. | mar/4l | 6 mágicas da Água |
 
 # Clima
@@ -5665,11 +6158,22 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 > **Nota.** Clima **não é escola no livro** — as mágicas de tempo estão dentro de Ar e de Água, e separá-las é decisão de Mestre que o próprio *Grimório* prevê. **Na Garganta, Clima é colégio próprio**, divergencia declarada (`23` §2.3).
 > **A concessão de Clima abre, em Ar e em Água, exatamente as mágicas que são pré-requisito de uma mágica de Clima — e nada além** (`31` §2). A fronteira é a **árvore**, não a lista.
 
-**Abre por pré-requisito, e só por isso.** Em **Ar**: Purificação de Ar, Criar Ar, Semear Ventos, Moldar Ar, Destruir Ar. Em **Água**: Localizar Água, Purificação de Água, Criar Água, Moldar Água, Geada.
+**Abre por pré-requisito, e só por isso.** Em **Ar**: Purificação do Ar, Criar Ar, Semear Ventos, Destruir Ar. **São quatro, não cinco** — até 12/09 esta lista contava *Moldar Ar* e *Semear Ventos* como duas mágicas, e elas são a mesma (v. *Nomes antigos*). Em **Água**: Localizar Água, Purificação de Água, Criar Água, Moldar Água, Geada.
 
 **Não abre, e nenhum Mestre de Cena inventa:** Jato de Ar, Corpo de Ar, Caminhar no Ar, Eliminar Odor, Odor, Mau Cheiro, Respirar Água, Respirar Ar, e os Elementais do Ar e da Água. Quem quiser uma dessas precisa de **acordo** — e acordo tem dono e tem dívida (`17` §6.6).
 
-**A corrente canônica até o raio**, sete compras de 1 ponto: Purificação de Ar → Criar Ar → Semear Ventos → Moldar Ar → Previsão do Tempo → Tufão → **Relâmpago**. Destruir Ar serve como sexta no lugar de Previsão do Tempo.
+**A corrente canônica até o raio**, sete compras de 1 ponto:
+
+> Purificação do Ar → Criar Ar → **Semear Ventos** → Destruir Ar → Tufão → Furacão → **Relâmpago**
+
+**Reescrita em 13/09/2026, e o preço não mudou.** A corrente publicada até aqui nomeava sete
+compras e tinha seis mágicas — contava *Moldar Ar* e *Semear Ventos* como duas, e são a mesma —
+e por isso **travava duas vezes**: ao chegar em Previsão do Tempo o mago tinha três mágicas de
+Ar e o verbete exige quatro; ao chegar em Relâmpago tinha cinco e o verbete exige seis. Com
+Destruir Ar e Furacão no lugar, são **seis mágicas de Ar distintas mais o Relâmpago**, a
+corrente fecha, e o total continua **22 pontos**: Aptidão Mágica 1 por 15, mais sete compras de
+1. **Previsão do Tempo serve no lugar de Furacão**, se o jogador preferir ler o céu a chamar o
+vento; as duas custam 1 ponto e as duas contam para o pré-requisito de seis.
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
@@ -5682,7 +6186,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Nuvens | Área | 10 seg | 10 min | 1/20/s | 4 mág. Ar, 4 mág. Água |
 | Previsão do Tempo | Informação | 5 seg | Inst. | varia# | 4 mágicas de Ar |
 | Relâmpago | Projétil | 1 até 3 seg | Inst. | 1 a 3# | 6 mágicas de Ar |
-| Tufão | Área | instante | 1 min# | 2/1 | Moldar Ar |
+| Tufão | Área | instante | 1 min# | 2/1 | Semear Ventos |
 
 ## Sub-escola da Eletricidade
 
@@ -5697,7 +6201,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Corpo de Relâmpago\* | Com/R-HT | 5 seg | 1 min | 12/4 | **AM 2**, Relâmpago |
 | Imunidade a Relâmpagos | Comum | 1 seg | 1 min | 2/1 | 6 mágicas de Ar — **fronteira com Proteção e Advertência** |
 | Muralha de Relâmpagos | Área | 1 seg | 1 min | 2 a 6/i# | AM, Relâmpago |
-| Nuvem de Faíscas | Área | 1 a 5 seg | 10 seg | 1 a 5/i# | **Moldar Ar**, Relâmpago |
+| Nuvem de Faíscas | Área | 1 a 5 seg | 10 seg | 1 a 5/i# | **Semear Ventos**, Relâmpago |
 | Olhar de Relâmpago\* | Comum | 2 seg | 1 seg | 1 a 4# | AM, Relâmpago, Imunidade a Relâmpagos |
 | Projéteis Elétricos | Comum | 3 seg | 1 min | 4/2# | Arma Elétrica |
 | Tempestade de Faíscas | Área | como Tufão | 1 min | 2, 4 ou 6/m | **Tufão**, Relâmpago |
@@ -5715,23 +6219,23 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
-| Carne p/ Pedra | Com/R-HT | 2 seg | Perm | 10/hex# | Terra p/Pedra |
-| Corpo de Pedra* | Com/R-HT | 5 seg | 1 min | 10/hex# | Pedra p/Carne |
-| Criar Terra | Comum | 1 seg | Perm. | 4/hex# | Terra p/ Pedra |
+| Carne para Pedra | Com/R-HT | 2 seg | Perm | 10/hex# | Terra para Pedra |
+| Corpo de Pedra* | Com/R-HT | 5 seg | 1 min | 10/hex# | Pedra para Carne |
+| Criar Terra | Comum | 1 seg | Perm. | 4/hex# | Terra para Pedra |
 | Geovisão | Comum | 1 seg | 30 seg | 2/10m | Moldar Terra |
 | Geolocomoção | Comum | 1 seg | 1 seg | 4/3# | Moldar Pedra |
-| Jato de Areia | Comum | 1 seg | 1 seg | 1 a 3/s | Criar Terra. Moldar Terra |
+| Jato de Areia | Comum | 1 seg | 1 seg | 1 a 3/s | Criar Terra, Moldar Terra |
 | Identificar Metal | Informação | 1 seg | Inst. | 1 | Localizar Metal — *Grimório* |
 | Localizar Metal | Informação | 10 seg | Inst. | 3 | nenhum — *Grimório*, idêntica a Localizar Terra |
 | Localizar Terra | Informação | 10 seg | Inst. | 3 | nenhum |
 | Moldar Pedra | Comum | 1 seg | 1 min | 4/hex/2/hex# | Moldar Terra + 3 outras mágicas de Terra |
 | Moldar Terra | Comum | 1 seg | 1 min | 2/hex; 1/hex p/ manter | Localizar Terra |
-| Pedra p/Carne | Comum | 5 seg | Perm. | 10/hex# | AM 2, Pedra p/Terra, Carne p/Pedra |
-| Pedra p/Terra | Comum | 1 seg | Perm. | 10/tiex# | Terra p/ Pedra ou 4 mág. Terra |
+| Pedra para Carne | Comum | 5 seg | Perm. | 10/hex# | AM 2, Pedra para Terra, Carne para Pedra |
+| Pedra para Terra | Comum | 1 seg | Perm. | 10/tiex# | Terra para Pedra ou qualquer outra mágica de Terra |
 | Projétil de Pedra | Projétil | 1 energia | Inst. | 1 a 3# | Criar Terra |
 | Soterramento | Com/R-HT | 3 seg | Perm. | 10# | AM 2, 5 mágicas de Terra |
-| Terra p/ Ar | Comum | 2 seg | Perm. | 8/hex# | Criar Ar, Moldar Ar |
-| Terra p/ Pedra | Comum | 1 seg | Perm. | 5/hex# | AM, Moldar Terra |
+| Terra em Ar | Comum | 2 seg | Perm. | 8/hex# | Criar Ar, Semear Ventos |
+| Terra para Pedra | Comum | 1 seg | Perm. | 5/hex# | AM, Moldar Terra |
 | Terremoto | Área | 30 seg | 1 min | 212 | AM 2, 6 mág Terra incl. Geovisão |
 | Vulcão | Comum | 1 h. | 1 dia | 15/10 | Terremoto, 6 mágicas de Fogo |
 
@@ -5742,7 +6246,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Controlar Elemental | Especial | 2 seg | 1 min | Especial | Convocar Elemental |
-| Convocar Elemental | Especial | 30 seg | 1h# | 4 | AM |
+| Convocar Elemental | Especial | 30 seg | 1h# | 4 | AM + 8 mág. do elemento — ou 4 do elemento + outra convocatória |
 | Criar Elemental | Especial | Especial | Perm. | Especial | AM 2, Controlar Elemental |
 
 # Cura
@@ -5752,21 +6256,21 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Animação Suspensa | Com/R-HT | 30 seg | Indef. # | 6 | Sono, 4 mágicas de Cura |
-| Compartilhar Força | Comum | 1 seg | Especial | varia# | Dar ST |
+| Compartilhar Força | Comum | 1 seg | Especial | varia# | Dar Força |
 | Cura Profunda* | Comum | 1 seg | Perm. | 1 a 4# | AM, Cura Superficial |
 | Cura Superficial | Comum | 1 seg | Perm. | 1 a 3# | Dar Vitalidade |
 | Curar Doenças | Comum | 10 min | Inst | 4# | Esterilizar, Cura Profunda |
 | Dar Força | Comum | 1 seg | Perm. | varia# | AM ou vant. Empatia |
 | Dar Vitalidade | Comum | 1 seg | 1 h | 1 por HT cedida | Dar Força |
-| Despertar | Área | 1 seg | Inst. | 1 | Dar HT |
+| Despertar | Área | 1 seg | Inst. | 1 | Dar Vitalidade |
 | Esterilizar | Área | variável | Inst | 3/hex# | Deteriorar ou Controle de Insetos |
 | Interromper Envelhecimento* | Comum | 1 seg | 5 dias | 20# | AM 2, 6 mágicas de Cura |
-| Juventude* | Comum | 1 seg | Especial | 100# | AM 3, Interromper Envelhecimento |
-| Neutralizar Veneno | Comum | 30 seg | Perm. | 5# | Curar Doenças ou AM 3 + Testar Alimentos |
+| Rejuvenescer* | Comum | 1 seg | Especial | 100# | AM 3, Interromper Envelhecimento |
+| Neutralizar Veneno | Comum | 30 seg | Perm. | 5# | Curar Doenças ou AM 3 + Testar Alimento |
 | Recuperação de Força | Especial | Especial | Especial | nenhum | AM, Dar Força |
 | Regeneração Instantânea* | Comum | Especial | Perm | 80# | AM 3, Regeneração |
 | Regeneração* | Comum | Especial | Perm. | 20# | AM 2, Restauração |
-| Ressurreição* | Comum | 2 hs. | Perm. | 300# | Regeneração Instantânea, Convocação de Espíritos |
+| Ressurreição* | Comum | 2 hs. | Perm. | 300# | Regeneração Instantânea, Convocar Espíritos |
 | Restauração Instantânea* | Comum | Especial | Perm | 50# | AM 2, Restauração |
 | Restauração* | Comum | 1 min | Perm | 15# | Cura Profunda |
 
@@ -5799,16 +6303,16 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | --- | --- | --- | --- | --- | --- |
 | Amnésia | Com/R-IQ ou | 10 seg | 1h | 3/3 | AM, Inépcia, IQ 12+ |
 | Amnésia Permanente* | Com/R-IQ ou | 1 h. | Perm. | 15 | AM 2, Amnésia, IQ 13+ |
-| Atordoamento Mental | Com/R-IQ | 1 seg | Inst. | 2 | Torpor ou Atordoar |
+| Atordoamento Mental | Com/R-IQ | 1 seg | Inst. | 2 | Torpor ou Atordoamento |
 | Bravura | Área/R-IQ-1 | 1 seg | 1h# | 2# | Medo |
-| Cond. Permanente* | Com/R-IQ | 1 min | Perm. | 30 | AM3, 15 mág. Controle Mente incl. Condicionamento |
+| Condicionamento Permanente* | Com/R-IQ | 1 min | Perm. | 30 | AM3, 15 mág. Controle Mente incl. Condicionamento |
 | Condicionamento | Com/R-IQ | 30 seg | Perm | 12 | AM 2, 10 mág. Controle da Mente |
 | Controle de Emoções | Área/R-IQ | 1 seg | 1 h | 2# | Lealdade |
 | Embriaguez | Com/R-IQ | 2 seg | 1 min | varia# | Inépcia, Inabilidade |
 | Enjoo | Com/R-HT | 4 seg | 1 min | 3/3 | Embriaguez ou Pestilência |
 | Escravizar* | Com/R-IQ | 1 seg | Perm. | 30 | Subjugar,Telepatia |
 | Estupidez* | Com/R-IQ | 5 seg | 1 mtn | 8/4 | AM 2, Amnésia |
-| Falsas Recordações | Com/R-IQ | 5 seg | varia# | varia# | Amnésia, 6 outras mág. Controle da Mente |
+| Falsas Lembranças | Com/R-IQ | 5 seg | varia# | varia# | Amnésia, 6 outras mág. Controle da Mente |
 | Fúria | Com/R-I | 4 seg | 10 min# | 3/2 | Bravura |
 | Inépcia | Com/R-IQ | 1 seg | 1 min | 1 por IQ-/h | IQ 12+ |
 | Lealdade | Com/R-SQ | 2seg | 1h | 2/2# | Bravura. 4 outras mág. Controle da Mente |
@@ -5841,11 +6345,11 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Anular Criação | Com/R-mágica | 1 seg | Inst. | 1 por hex # | Controle de Criação |
-| Anular Ilusão | Com/R-mágica | 1 seg | Inst. | 1/hex | Controle de Ilusão |
+| Anular Ilusão | Com/R-mágica | 1 seg | Inst. | 1/hex | Controlar Ilusão |
 | Autossuficiência | Área | variável. | varia# | 2 | Ilusão Simples |
 | Carapaça Ilusória | Comum | 1 seg | 1 min | 2/hex# | Ilusão Simples |
 | Controle de Criação | Com/R-Mágica | 2 seg | Inst. | 1 por hex# | Criar Animal ou Criar Servo |
-| Controle de Ilusão | Com/R-mágica | 2 seg | Perm. | 1/hex# | Ilusão Perfeita |
+| Controlar Ilusão | Com/R-mágica | 2 seg | Perm. | 1/hex# | Ilusão Perfeita |
 | Criar Animal | Comum | Seg=custo | 1 min | varia# | Criar Água, Criar Objeto, IQ 13+ |
 | Criar Guerreiro | Comum | 4 seg | 1 min | 4/4# | Criar Servo |
 | Criar Objeto* | Comum | seg=custo | Indef. # | 2/2,5 kg | AM 2, Criar Terra, Ilusão Perfeita |
@@ -5864,14 +6368,14 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | --- | --- | --- | --- | --- | --- |
 | Afiar | Comum | 4 seg | 1 min | 1 por 15 cm de fio#/m | Consertar |
 | Consertar | Comum | 1 seg/0,5 kg | Perm. | 3/5 kg | AM 2, Remendar |
-| Consertar Flecha | Comum | 4 seg/flecha | Perm. | 2 por flecha | Remendar |
+| Consertar Flechas | Comum | 4 seg/flecha | Perm. | 2 por flecha | Remendar |
 | Copiar | Comum | 5 seg | Perm. | 2 mais 1/cópia | Alfabetização, Tingir |
-| Desintegrar* | Comum | 1 seg | Perm. | 1 a 4# | AM 2, Fragmentar, Estragar |
+| Desintegrar* | Comum | 1 seg | Perm. | 1 a 4# | AM 2, Fragmentar, Estragar, Terra em Ar, Destruir Ar, Dissipar Água |
 | Endurecer | Com/R-Esp. | 2 seg/0,5 kg | 10 min | 1 por 0,5 kg (mín. 2)/m | Remendar |
 | Enfraquecer | Comum | 5 seg | Perm. | 2 | Detectar Pontos Fracos |
 | Estragar | Comum | 5 seg/0,5 kg | 1 min# | 2 por 0,5 kg/i | AM, Enfraquecer, Deteriorar |
 | Fragmentar* | Comum | 1 seg | Inst. | 1 a 3# | AM, Enfraquecer |
-| Identificar Pontos Fracos | Informação | 2 seg | Inst | 1# | 1 mág.de cd. dos 4 elementos |
+| Detectar Pontos Fracos | Informação | 2 seg | Inst | 1# | 1 mág.de cd. dos 4 elementos |
 | Limpar | Área | 1 seg | Perm. | 2/3 | Restaurar |
 | Nós | Comum | 3 seg | Indef. # | 2# | Endurecer |
 | Remendar | Comum | 4 seg\10 lbs | 10 min | 1 por 5 kg/h | Enfraquecer, Restaurar |
@@ -5886,15 +6390,15 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
-| Alterar a Face | Com./R-HT | 1 min | 1 h# | 4/3# | Metamorfose ou Ilusão Perfeita# |
-| Alterar o Corpo | Comum/R-HT | 2 min | 1 h# | 8/6# | Alterar a Face |
-| Atordoar (Atordoamento) | Com/R-HT | 1 seg | Inst. | 2 | Dor |
+| Alterar Feições | Com./R-HT | 1 min | 1 h# | 4/3# | 8 mág. Controle do Corpo, e Metamorfose ou Ilusão Perfeita |
+| Alterar o Corpo | Comum/R-HT | 2 min | 1 h# | 8/6# | Alterar Feições |
+| Atordoamento | Com/R-HT | 1 seg | Inst. | 2 | Dor |
 | Atrofiar Membro | Com/R-HT | 1 seg | Perm. | 5 | AM 2, Paralisar Membros |
-| Cansaço | Com/R-HT | 1 seg | 1 min | 1 por ST-/h | nenhum |
-| Cegar | Com/R-HT | 1 seg | 10 seg | 4/2 | 1 mágica de Controle # |
+| Fadiga | Com/R-HT | 1 seg | 1 min | 1 por ST-/h | nenhum |
+| Cegar | Com/R-HT | 1 seg | 10 seg | 4/2 | Espasmo, 2 mágicas de Luz |
 | Coceira | Com/R-HT | 1 seg | Até passar# | 2 | nenhum |
 | Destreza | Comum | 1 seg | 1 min | 2 por DX+/s | Inabilidade |
-| Desviar Curso | Com/R-HT | 1 seg | Inst. | 3 | Trança-pés |
+| Andar em Círculos | Com/R-HT | 1 seg | Inst. | 3 | Trança-pés |
 | Dor | Com/R-HT | 2 seg | 1 seg | 2 | Espasmo |
 | Emudecer | Com/R-HT | 1 seg | 10 seg | 3/1 | Espasmo |
 | Ensurdecer | Com/R-HT | 1 seg | 10 seg | 3/1 | 2 Mágicas Som, Espasmo |
@@ -5904,7 +6408,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Força | Comum | 1 seg | 1 min | 2 por ST+/s | Dar Força |
 | Imunidade à Dor | Comum | 1 seg | 1 min | 4a | AM 2, Dor |
 | Inabilidade | Com/R-IQ | 1 seg | 1 min | varia# | Espasmo |
-| Paralisar Membro | Com/R-HT | 1 seg | 1 min | 3# | AM, 5 mág. Controle do Corpo incl. Dor |
+| Paralisar Membros | Com/R-HT | 1 seg | 1 min | 3# | AM, 5 mág. Controle do Corpo incl. Dor |
 | Paralisia Total | Com/R-HT | 1 seg | 1 min | 5# | Paralisar Membros |
 | Projétil de Maldição | Projétil | 1 seg+o.mg. | Varia# | 2 | AM 2 + outra mágica |
 | Pés Plantados | Com/R-ST | 1 seg | 1 mín# | 3 | Estorvar |
@@ -5919,20 +6423,20 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Acalmar Animais | Comum | 1 seg | Perm.# | 1a3 | Persuasão ou Vant. Empatia c/Animais |
-| Cavalgar (mágica) | Comum | 1 seg | 5 min | 2/1 | 2 mágicas Luz, Espasmo |
-| Conexão c/Animais | Comum | 5 seg | Especial | 3 | Convocação de Animais |
+| Cavalgar | Comum | 1 seg | 5 min | 2/1 | 1 mág. de Controle do animal — lançada antes |
+| Conexão com Animais | Comum | 5 seg | Especial | 3 | Convocação de Animais |
 | Controle de Insetos | Com/R-IQ | 1 seg | 1 min | 3/2 | Acalmar Animais |
 | Controle de Mamíferos | Com/R-IQ | 1 seg | 1 min | 5/3 | Acalmar Animais ou Subjugar |
-| Controle de Moluscos | Com/R-IQ | 1 aeg | 1 min | 3/2 | Acalmar Amimais |
-| Controle de Peixes | Com/R-IQ | 1 seg | 1 min | 3/2 | Acalmar Amimais |
-| Controle de Pássaros | Com/R-IQ | 1 seg | 1 min | 4/2 | Acalmar Amimais |
+| Controle de Moluscos | Com/R-IQ | 1 aeg | 1 min | 3/2 | Acalmar Animais |
+| Controle de Peixes | Com/R-IQ | 1 seg | 1 min | 3/2 | Acalmar Animais |
+| Controle de Aves | Com/R-IQ | 1 seg | 1 min | 4/2 | Acalmar Animais |
 | Controle de Répteis | Com/R-IQ | 1 seg | 1 min | 4/2 | Acalmar Animais |
 | Convocação de Animais | Comum | 1 seg | 1 min | 3/2# | Acalmar Animais |
 | Dominar Animais | Com/Bl/R-IQ | 1 seg | Indef. | 2 | Acalmar Animais |
-| Falar c/ Animais | Comum | 1 seg | 1 min | 4/2 | Convocação de Animais |
-| Localizar Animais | Informação | 1 seg | Inst | 3# | Conv. Animais, Localizadora ou 2 Mág. Localizar |
+| Falar com Animais | Comum | 1 seg | 1 min | 4/2 | Convocação de Animais |
+| Localizar Animais | Informação | 1 seg | Inst | 3# | Convocação de Animais, Localizadora ou 2 Mág. Localizar |
 | Metamorfose* | Especial | 3 seg | 1h | 6/2 | AM + 6 outras mágicas |
-| Metamorfosear Outros* | Especial/R-IQ | 30 seg | 1h | 6/2 | AM 2, Metamorfose p/ aquela forma |
+| Metamorfosear a Outros* | Especial/R-IQ | 30 seg | 1h | 6/2 | AM 2, Metamorfose (para aquela forma) |
 | Passageiro Interno | Comum | 3 seg | 1 min | 4/1 | 2 mág, Controle de Animais |
 | Possessão de Animais | Com/R-IQ | 5 seg | 1 min | 6/2 | Passageiro Interno ou Possessão |
 
@@ -5946,15 +6450,15 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Alarme Florestal | Área | 1 seg | 10 h | 0,5#/s | 4 mágicas de Plantas |
 | Animação de Plantas | Comum | 5 seg | 1 min | varia# | 7 mágicas de Plantas |
 | Crescimento de Plantas | Área | 10 seg | 1 min | 3/2 | Curar Plantas |
-| Criar Planta | Área | seg=custo | Perm. | varia# | AM, Crescimento de Plantas |
-| Curar Plantas | Área | 1 min | Perm. | 3# | Identificação de Plantas |
+| Criar Plantas | Área | seg=custo | Perm. | varia# | AM, Crescimento de Plantas |
+| Curar Plantas | Área | 1 min | Perm. | 3# | Identificar Plantas |
 | Entrelaçamento | Área | 2 seg | 1 min | 1 ou 2#/h | Crescimento de Plantas |
-| Esconder Trilha | Comum | 1 seg | 1 min | 2/1 | Curar Planta* |
+| Esconder Rastros | Comum | 1 seg | 1 min | 2/1 | Curar Plantas |
 | Forma de Planta | Especial | 1 seg | 1h | 5/2 | AM, 6 mág. Plantas |
-| Identificação de Plantas | Informação | 1 seg | Inst | 2 | Localizar Plantas |
-| Localizar Planta | Informação | 1 seg | Inst. | 2 | nenhum |
-| Moldar Plantas | Comum | 10 seg | 1 min | 3/1# | Identificação de Planta |
-| Murchar Planta | Área/R-HT | 10 seg | Perm. | 2 | Crescimento de Plantas |
+| Identificar Plantas | Informação | 1 seg | Inst | 2 | Localizar Plantas |
+| Localizar Plantas | Informação | 1 seg | Inst. | 2 | nenhum |
+| Moldar Plantas | Comum | 10 seg | 1 min | 3/1# | Identificar Plantas |
+| Murchar Plantas | Área/R-HT | 10 seg | Perm. | 2 | Crescimento de Plantas |
 | Percepção de Plantas | C/R-Esc. Trilha | 1 seg | 1 min | 3/2 | Alarme Florestal, Esconder Rastros |
 
 # Alimentos
@@ -5969,13 +6473,13 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Criar Alimento | Comum | 30 seg | Perm. | 3/refeição | Cozinhar, Localizar Alimento |
 | Destilar | Comum | 10 seg | Perm. | 1/250 ml | Fermentar, Dissipar Água |
 | Deteriorar | Comum | 1 seg | Perm. | 1/refeição | Testar Alimento |
-| Envenenar Alimentos | Comum | 1 seg | Perm. | 3 por refeição | Purificação de Alimentos, Deteriorar |
+| Envenenar Alimento | Comum | 1 seg | Perm. | 3 por refeição | Purificar Alimento, Deteriorar |
 | Fermentar | Comum | 10 seg | 1 h | 1 por litro, ou por pão | Deteriorar |
 | Localizar Alimento | Informação | 1 seg | Inst | 2 | nenhum |
-| Preservar Alimentos | Comum | 1 seg | 1 semana | especial# | Esterilizar, Testar Alimentos |
-| Purificação de Alimento | Comum | 1 seg | Perm. | 1 por 0,5 kg | Preservar Alimentos ou Deteriorar |
+| Preservar Alimento | Comum | 1 seg | 1 semana | especial# | Esterilizar, Testar Alimento |
+| Purificar Alimento\* | Comum | 1 seg | Perm. | 1 por 0,5 kg | Preservar Alimento ou Deteriorar |
 | Testar Alimento | Informação | 1 seg | Inst. | 1 a 3# | nenhum |
-| Água p/Vinho | Comum | 10 seg | Perm. | 4 por 4l# | Purificação de Água, Fermentar |
+| Água para Vinho | Comum | 10 seg | Perm. | 4 por 4l# | Purificação de Água, Fermentar |
 
 # Meta-mágicas
 
@@ -5983,26 +6487,44 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
-| Anular Mágica | Área/R-mágica | seg=custo | Perm. | 3 | Contramágica + 12 outras mág. |
+| Anulação de Magia | Área/R-mágica | seg=custo | Perm. | 3 | Contramágica + 12 outras mág. |
 | Ativação de Runas* | Comum | 1 seg | Inst. | nenhuma | AM, Ciência das Runas 12+ |
 | Bênção | Comum | min=custo | especial | especial | AM 2, 2 mág. 10 esc. dif. |
-| Conexão | Área | 4 h. | Indef.# | 8 | Retardo |
 | Contramágica | Com/R-Mágica | 5 seg | Inst. | varia# | AM |
-| Drenar Mana* | Área | 1 h. | Perm. | 10 | Anular Mágica, 1 mág. 10 esc. dif. |
+| Drenar Mana* | Área | 1 h. | Perm. | 10 | Anulação de Magia, 1 mág. 10 esc. dif. |
 | Escamotear Magia | Comum | 3 seg | 10 h | 1 a 5#/s | Detecção de Magia |
 | Escudo Antimágicas | Área | 1 seg | 1 min | 3/2 | AM 2, Resguardar, Resistência a Magia |
 | Maldição | Comum | variável | Especial | varia# | AM 2, 2 mág. 10 esc. dif. |
-| Pentagrama | Especial | 5 seg/hex | Perm. | 10/hex# | Escudo Anti-mágicas |
+| Pentagrama | Especial | 5 seg/hex | Perm. | 10/hex# | Escudo Antimágicas |
 | Proteção | Bl/R-mágica | nenhum | Inst. | 2 ou 3# | AM |
 | Proteção Total | Bloq/R-mágica | nenhum | Inst. | 1 por objetivo# | AM 2, Proteção |
 | Refletir | Bl/R-mágica | nenhum | Inst. | 4 ou 6# | Proteção |
-| Reflexo | Especial | 10 seg | 1 h | varia# | Proteção, Retardo |
 | Remoção de Maldição | Com/R-mágica | 1 h. | Inst. | 20 | AM 2, 1 mág. 15 esc. dif. |
 | Resguardar | Comum | 5 seg | 10 h | 3/1# | AM |
 | Resguardar Área | Área | seg=custo | 10 h | 3/2 | Resguardar |
 | Resistência a Magia | Com/R-IQ+AM | 3 seg | 1 min | 1 a 5/s | AM, 1 mág. 7 esc. dif. |
-| Restaurar Mana* | Área | 1 h. | Perm. | 10 | Anular Mágica, 1 mág. 10 esc. dif. |
-| Retardo | Comum | 10 seg | 2h | 3/3 | AM 3+10 mág. |
+| Restaurar Mana* | Área | 1 h. | Perm. | 10 | Anulação de Magia, 1 mág. 10 esc. dif. |
+
+# Conexão
+
+**Casas que concedem:** Thoth · Odin
+
+> **Nota.** Colégio novo em 13/09/2026. O *GURPS Magia* imprime estas três sob o cabeçalho
+> **Mágicas de Conexão** (p.55-56); o `27` as mantinha em Meta-mágicas, e a mágica *Conexão*
+> figurava como fronteira para uma escola que não existia na Garganta. Agora existe.
+> **As duas Casas que já concediam Meta-mágicas concedem também esta** — nenhum mago perde
+> acesso, e nenhuma ficha muda de conta.
+>
+> **É colégio pequeno e fundo.** São três mágicas, e *Retardo* — que é a porta das outras duas —
+> exige Aptidão Mágica 3 mais quinze mágicas quaisquer. Quem chega aqui é mago de fim de carreira.
+> **O que ele faz:** ligar uma coisa a outra à distância. O que se faz aqui acontece lá; o que se
+> lança volta; o que se prepara dispara depois.
+
+| Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
+| --- | --- | --- | --- | --- | --- |
+| Conexão | Área | 4 h. | Indef.# | 8 | Retardo |
+| Reflexo | Especial | 10 seg | 1 h | varia# | Proteção, Retardo |
+| Retardo | Comum | 10 seg | 2h | 3/3 | AM 3 + 15 mágicas quaisquer |
 
 # Necromancia
 
@@ -6014,20 +6536,20 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Aprisionar Alma* | Comum | 1 min | Perm. | 8 | AM, 6 mág. Necro. incl. Roubar ST |
 | Controle de Zumbi | Com/R-mágica | 1 seg | Perm. | 3 | Zumbi |
 | Convocar Demônio | Especial | 5 min | 1h# | 20 | AM, 1 mág. 10 esc. dif. |
-| Convocar Sombra* | Inform/R-IQ | 10 min | 1 min | 50/20 | Convocação de Espíritos |
-| Convocar de Espírito | Inform/R-IQ | 5 min | 1 min | 20/10# | Visão da Morte AM 2 |
+| Convocar Sombra* | Inform/R-IQ | 10 min | 1 min | 50/20 | Convocar Espíritos |
+| Convocar Espíritos | Inform/R-IQ | 5 min | 1 min | 20/10# | Visão da Morte AM 2 |
 | Convocação Extradimensional | Especial | 5 min | varia# | 20# | AM, 1 mág. 10 esc. dif. |
-| Envelhecer* | Com/R-HT | 1 min | Perm. | 5 a 50 | Juventude ou 6 outras mágicas Necromânticas |
+| Envelhecimento* | Com/R-HT | 1 min | Perm. | 5 a 50 | Rejuvenescer ou 6 outras mágicas Necromânticas |
 | Espantar Zumbi | Área | 2 seg | 1 dia | 2# | Zumbi# |
 | Espírito de Caveira | Comum | 1 seg | 24 h | 20 | 4 outras mágicas Necrominticas |
 | Expulsar | Esp/R-ST+IQ | 5 seg | Inst. | Especial | AM, 1 mágica de 10 esc. dif. |
 | Percepção de Espíritos | Inform/Área | 1 seg | Inst. | 0,5 | Visão da Morte ou Percepção de Vida + AM |
-| Pestilência | Comum | 30 seg | Perm. | 6 | AM, Roubar HT, Deteriorar |
+| Pestilência | Comum | 30 seg | Perm. | 6 | AM, Roubar Vitalidade, Deteriorar |
 | Roubar Força | Comum | 1 min\3 ST | Perm. | nenhum# | Cura Superficial |
-| Roubar Juventude* | Com/R-HT | 1 h. | Perm. | 10 a 30 | Juventude, Envelhecimento, Roubar HT |
-| Roubar Vitalidade | Comum | 1 min\3 HT | Perm | nenhum# | Roubar ST |
+| Roubar Juventude* | Com/R-HT | 1 h. | Perm. | 10 a 30 | Rejuvenescer, Envelhecimento, Roubar Vitalidade |
+| Roubar Vitalidade | Comum | 1 min\3 HT | Perm | nenhum# | Roubar Força |
 | Visão da Morte | Comum | 3 seg | 1 seg | 2 | AM |
-| Zumbi | Comum | 1 mim. | Perm. | 8# | Convocação de Espíritos, Dar HT |
+| Zumbi | Comum | 1 mim. | Perm. | 8# | Convocar Espíritos, Dar Vitalidade |
 
 # Encantamentos
 
@@ -6036,7 +6558,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
 | Arma Dançante | Encantamento | — | Perm. | 1.000/0,5 kg# | Golem de Ar |
-| Bola de Cristal | Encantamento | — | Perm. | 1.000 | Adivinhação (Cristalomancia) |
+| Bola de Cristal | Encantamento | — | Perm. | 1.000 | Adivinhação |
 | Cajado | Encantamento | — | Perm. | 30 | Encantar |
 | Cornucópia | Encantamento | — | Perm. | 50× valor $# | AM 2, 2 Encantamentos de Armas |
 | Denominar | Encantamento | — | Perm. | 200 ou 400# | Encantar |
@@ -6074,7 +6596,6 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | --- | --- |
 | Audição Remota | Som/Reconhec. |
 | Chuva | Ar/Água |
-| Conexão | Conex/Meta |
 | Enjoo | Mente/Corpo |
 | Geovisão | Terra/Reconhec. |
 | Nadar | Água/Movimt. |
@@ -6085,11 +6606,69 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Terra p/ Ar | Terra/Ar |
 
 
+# Nomes antigos — onde procurar
+
+Até a versão 3 esta tabela usava o nome da **Relação das Mágicas**. Desde a versão 4 usa o do
+**verbete**, que é onde a regra está escrita. Quem procurar pelo nome antigo — em ficha, em
+retificação ou em documento já publicado — encontra aqui para onde ele foi.
+
+| Nome antigo | Nome agora | Onde o livro imprime |
+|---|---|---|
+| Alterar a Face | **Alterar Feições** | Magia p.25 |
+| Anular Mágica | **Anulação de Magia** | Magia p.53 |
+| Cansaço | **Fadiga** | Magia p.25 |
+| Controle de Ilusão | **Controlar Ilusão** | Magia p.46 |
+| Controle de Pássaros | **Controle de Aves** | MB p.155 · Magia p.22 |
+| Convocar de Espírito | **Convocar Espíritos** | Magia p.63 |
+| Desviar Curso | **Andar em Círculos** | Magia p.25 |
+| Dom das Letras | **Dom da Escrita** | Magia p.27 |
+| Envelhecer | **Envelhecimento** | Magia p.65 |
+| Esconder Trilha | **Esconder Rastros** | Magia p.67 |
+| Falsas Recordações | **Falsas Lembranças** | Magia p.58 |
+| Identificar Pontos Fracos | **Detectar Pontos Fracos** | MB p.164 · Magia p.51 |
+| Juventude | **Rejuvenescer** | Magia p.45 |
+| Marcha Forçada | **Marcha Acelerada** | Magia p.60 |
+| Moldar Ar | **Semear Ventos** | Magia p.30 |
+| Odor | **Gerar Odor** | Magia p.32 |
+| Ruído | **Barulho** | Magia p.69 |
+| Terra p/ Ar | **Terra em Ar** | MB p.156 · Magia p.29 |
+| Voz Possante | **Voz Amplificada** | Magia p.69 |
+
+E as correções de grafia — a Relação saiu do arquivo com erro de leitura, ou o `27` abreviou:
+
+| Estava | Está | Onde o livro imprime |
+|---|---|---|
+| Atordoar (Atordoamento) | **Atordoamento** | Magia p.23 |
+| Carne p/ Pedra | **Carne para Pedra** | Magia p.29 |
+| Cavalgar (mágica) | **Cavalgar** | Magia p.22 |
+| Compulsão p/ Verdade | **Compulsão para a Verdade** | Magia p.26 |
+| Cond. Permanente | **Condicionamento Permanente** | Magia p.59 |
+| Conexão c/Animais | **Conexão com Animais** | Magia p.21 |
+| Consertar Flecha | **Consertar Flechas** | Magia p.52 |
+| Criar Planta | **Criar Plantas** | Magia p.66 |
+| Envenenar Alimentos | **Envenenar Alimento** | Magia p.42 |
+| Falar c/ Animais | **Falar com Animais** | Magia p.22 |
+| Gelo visão | **Gelovisão** | Magia p.37 |
+| Identificação de Plantas | **Identificar Plantas** | Magia p.66 |
+| Localizar Planta | **Localizar Plantas** | Magia p.66 |
+| Metamorfosear Outros | **Metamorfosear a Outros** | Magia p.23 |
+| Murchar Planta | **Murchar Plantas** | Magia p.66 |
+| Paralisar Membro | **Paralisar Membros** | Magia p.24 |
+| Pedra p/Carne | **Pedra para Carne** | Magia p.29 |
+| Pedra p/Terra | **Pedra para Terra** | MB p.156 · Magia p.28 |
+| Preservar Alimentos | **Preservar Alimento** | Magia p.42 |
+| Purificação de Alimento | **Purificar Alimento** | Magia p.42 |
+| Purificação de Ar | **Purificação do Ar** | Magia p.30 · MB p.157 |
+| Terra p/ Pedra | **Terra para Pedra** | MB p.156 · Magia p.28 |
+| lato de Água | **Jato d'Água** | Magia p.36 |
+| Água p/Vinho | **Água para Vinho** | Magia p.43 |
+
+
 ---
 
 titulo: Tabela de Vantagens
-versao: 3
-atualizado: 2026-09-11
+versao: 4
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Tabela de Vantagens
@@ -6097,6 +6676,7 @@ fonte: cânone aberto de A Garganta
 > **Nota.**
 > **Custo e efeito em números, do GURPS Módulo Básico.** Sem descrição literária: o que está aqui é o que muda rolagem. **Quando a vantagem dá bônus em perícia, as perícias estão nomeadas** — é isso que a coluna *Bônus* da ficha (`24`) precisa para ser auditável.
 > **Vantagem fora desta lista pode ser comprada pelo livro.** Se o custo divergir, **vale o livro**, e o Árbitro corrige por linha nova.
+> **Versão 4, de 13/09/2026.** Entraram **Abençoado** e **Familiares**, do *GURPS Magia*. **Imunidade a doenças voltou ao nome do livro, Imunidade.** **Memória Eidética** recebeu, com três dias de atraso, a retificação que o `23` mandou aplicar em 10/09. E a seção 5 traz o **índice inverso de bônus** — dada a perícia, quais vantagens somam nela —, que é o que a Regra de Escrita da Ficha cobra e nunca teve onde consultar.
 > **Versão 3, de 10/09/2026.** Corrigidos: Abascanto (dobra contra área), Empatia com Animais (a lista de perícias é aberta), Força de Vontade (resiste a qualquer mágica resistível, e também a Diplomacia, Lábia e Sex-Appeal), Longevidade (bloqueia os pontos de Idade), Talento para Matemática (a exceção e o +2 de Engenharia), Talento Musical (é bônus de aprendizado) e a manutenção de Status, que é **mensal**, não semanal.
 
 # 1. A lista
@@ -6104,11 +6684,12 @@ fonte: cânone aberto de A Garganta
 | Vantagem | Custo | Efeito em números |
 | --- | --- | --- |
 | Abascanto (Resistência à Magia) | 2/nível | Nível subtraído do NH de quem lança magia contra você; soma à resistência contra magia bloqueável. **Contra mágica de ÁREA o nível conta em dobro** (*GURPS Magia*, pág. 13): Abascanto 3 vale 6 na resistência a um Sono Coletivo. **Incompatível com Aptidão Mágica** — o portador não lança magia nenhuma, e não pode desligar. **Não ajuda contra mágica não-resistível, nem contra projétil mágico**, arma mágica ou ataque psíquico |
+| **Abençoado** | **10 / 20** | *GURPS Magia* p.85-86. É o **degrau acima da Marca**: o marcado que a Casa distingue. Concede a mágica **Adivinhação** com NH igual ao IQ (IQ+5 no grau de 20) e **+1 de Reputação** entre os seguidores do mesmo Poder e os aliados dele — passando pelos dois cortes de Reputação do `23` §4.1, como toda Reputação. **Exige conduta compatível com o Poder, e perde-se ao desviar** — é a mesma alavanca da Dádiva. **Não exige Clericato.** *(Exceção declarada: a Adivinhação é mágica de Reconhecimento, e esta vantagem a concede a marcado de Casa que não conceda Reconhecimento. É furo ao recorte de colégio, aceito por decisão de 13/09/2026.)* |
 | **Alfabetização** | **0 na Garganta** | O livro cobra 10 em cultura NT≤4, mas **as sete cidades são cultura letrada** por decisão registrada (`23`). Analfabetismo existe como desvantagem de −10 |
 | Aliado | 5+ | Ver §2 |
 | Ambidestria | 10 | Elimina o −4 de DX da mão inábil; luta com qualquer mão, ou com as duas em Ataque Total |
 | Antecedentes Incomuns | 10+ | Benefício especial vindo da história do personagem |
-| **Aptidão Mágica** | **15 / 25 / 35** | 15 no primeiro nível, +10 por nível, **máximo 3**. Aprende magia como se IQ = (IQ + Aptidão) — é o **IQ efetivo** que a ficha declara. Teste contra (IQ+Aptidão) ao ver e ao tocar objeto encantado; 3 ou 4 revela se é salutar ou perigoso. **Sem Aptidão não há teste, e na Garganta não há feitiço** |
+| **Aptidão Mágica** | **15 / 25 / 35** | 15 no primeiro nível, +10 por nível, **máximo 3**. Aprende magia como se IQ = (IQ + Aptidão) — é o **IQ efetivo** que a ficha declara. Teste contra (IQ+Aptidão) ao ver e ao tocar objeto encantado; 3 ou 4 revela se é salutar ou perigoso. **Sem Aptidão não há teste, e na Garganta não há feitiço**. **Cinco limitações podem baixar este preço** — Seletiva ao Sol, à Lua ou às Estrelas, Uma Única Escola e Solitária; estão no `29`, no fim da seção 3, e não se escolhe mais de uma |
 | Atratividade | −20 a 25 | Hediondo −4 de reação (−20) · Feio −2 (−10) · Desagradável −1 só com a própria raça (−5) · Comum 0 · Atraente +1 (5) · Elegante +2/+4 conforme o sexo (15) · Muito Elegante +2/+6 (25) |
 | Bom Senso | 10 | Teste de IQ quando for fazer bobagem; sucesso obriga o Árbitro a avisar antes |
 | Cálculos Instantâneos | 5 | Conta de cabeça, instantânea |
@@ -6117,13 +6698,14 @@ fonte: cânone aberto de A Garganta
 | **Empatia** | **15** | Teste de IQ ao conhecer alguém: o Árbitro diz o que você **sente**. Serve para sinceridade, não para verdade. **Numa falha, o Árbitro pode mentir.** *Não é mágica* |
 | Empatia com Animais | 5 | +2 de reação de animal selvagem; **+4 em qualquer perícia com animais** — o livro diz "Adestramento de Animais, Cavalgar, Veterinária, etc.", e o **etc. é literal**: entram também **Falcoaria** e **Carregamento**, e qualquer outra que a lista de perícias (`26`) traga como perícia com animal; +3 para achar caça. Não mata animal sem motivo forte |
 | **Facilidade para Línguas** | **2/nível** | **+1 no IQ por nível, só para aprender língua** e para Lingüística. Acumula com Memória Eidética |
+| **Familiares** | **variável** | *GURPS Magia* p.105-106. **Só para quem tem Aptidão Mágica 2 ou 3** — na Garganta, portanto, só para quem tem Casa. Custo montado item a item: a **fonte de ST** custa ⅓ do que custaria elevar a ST do mago até a soma das duas; ver pelos olhos do bicho **+5**; torná-lo inteligente **5** no primeiro nível e **+10** por nível; fazê-lo falar **5 / 10 / 15**. **O mago sofre os ferimentos do familiar: −15.** Nenhum componente conta abaixo de zero. Convocar leva **uma semana de trabalho ininterrupto** e um teste secreto contra **IQ−6**; **falha crítica traz um demônio disfarçado**. **Um por vez.** *(E na Garganta o que atende à convocação **sobe do poço** — o que explica o demônio disfarçado sem inventar nada.)* |
 | **Força de Vontade** | **4/nível** | **+1 por nível em todo teste de Vontade**: medo, dor, **Interrogatório (com ou sem tortura)**, Hipnotismo, e também quando alguém tenta influenciá-lo por **Diplomacia, Lábia ou Sex-Appeal**. E soma à resistência **de qualquer mágica que se possa resistir** — não só as de dominação da mente (MB pág. 20). Não ajuda contra choque de combate |
 | Hierarquia Militar | 5/nível (máx. 8) | 1 nível de Status a cada 3 de Hierarquia. Nível 5–6 exige Liderança 12+; 7+ exige 13+ |
 | **Hipoalgia** (alto limiar de dor) | **10** | **Não fica atordoado nem perde DX no turno seguinte ao ferimento** (exceto golpe na cabeça ou fulminante); +3 para resistir a tortura; +3 em Vontade para ignorar dor |
-| Imunidade a doenças | 10 | Nunca contrai doença ou infecção naturalmente. Exige HT inicial 12+ |
+| **Imunidade** | 10 | Nunca contrai doença ou infecção naturalmente. Exige **HT inicial 12+** — e se a HT cair abaixo disso depois, a imunidade fica. Fungo e vírus contam como doença; parasita maior, como solitária, não. *(Chamava-se "Imunidade a doenças" até 12/09; o nome de livro é **Imunidade**, seco — Básico p.20. A colisão com as mágicas Imunidade ao Fogo, ao Frio, a Relâmpagos, à Dor e a Doenças resolve-se pelo tipo obrigatório na linha, `26` §11.)* |
 | Intuição | 15 | Uma pergunta por problema: o Árbitro rola contra IQ + acertos − erros. 3 ou 4 aponta a melhor opção; falha crítica aponta uma ruim |
 | Longevidade | 5 | Só falha teste de envelhecimento em 17 ou 18. **Quem a tem não recebe ponto nenhum pela desvantagem Idade** — as duas não se somam |
-| **Memória Eidética** | **30 / 60** | 30: **todo ponto em perícia mental conta em dobro** (magia e psiquismo **não**), e teste de IQ para lembrar detalhe. 60: contam em quádruplo |
+| **Memória Eidética** | **30 / 60** | 30: **todo ponto em perícia mental conta em dobro**, e teste de IQ para lembrar detalhe. 60: contam em quádruplo. **O ponto gasto em mágica não dobra — mas a vantagem soma ao IQ com que se aprende mágica: +1 no primeiro nível, +2 no segundo, e para aí.** *(Retificação do `23` de 10/09/2026, que o `27` recebeu na hora e esta tabela só recebeu em 13/09.)* |
 | **Noção do Perigo** | **15** | Teste secreto de IQ diante de emboscada ou desastre iminente; sucesso avisa que algo está errado; 3 ou 4 dá detalhes |
 | Noção Exata do Tempo | 5 | Sabe a hora exata e mede qualquer intervalo; acorda na hora marcada |
 | Olfato/Paladar Apurado | 2/nível | +1 por nível em Olfato e Paladar — veneno na comida antes do segundo gole |
@@ -6276,12 +6858,58 @@ Estiveram em uso no cânone e foram substituídas. **Não entram em ficha nova.*
 | Vigor | **Hipoalgia**, 10 |
 | Voz | **Voz Melodiosa**, 10 |
 
+# 5. Índice inverso de bônus — dada a perícia, quem soma nela
+
+A Regra de Escrita da Ficha (`24`) exige que todo bônus venha **com a fonte nomeada**, e que a
+homologação confira se o bônus existe. Até 13/09/2026 não havia onde conferir: era preciso ler
+as vantagens uma a uma e montar o índice de cabeça. Aqui está montado.
+
+**E há uma armadilha que este índice resolve:** *sete destes bônus estão impressos **só no
+verbete da perícia**, e não no da vantagem.* Quem lê o capítulo de vantagens do livro não os vê.
+Estão marcados com **▲**.
+
+| Perícia | Vantagem que soma | Bônus | Onde o livro imprime |
+| --- | --- | --- | --- |
+| Trovador | Voz Melodiosa | +2 | Básico p.23 e p.47 |
+| Trovador | **Carisma** ▲ | + o nível | Básico **p.47**, só no verbete da perícia |
+| Liderança | **Carisma** ▲ | + o nível | Básico **p.63**, só no verbete da perícia |
+| Diplomacia | Voz Melodiosa | +2 | Básico p.23 e p.63 |
+| Atuação · Trato Social | Voz Melodiosa | +2 | Básico p.23 |
+| Política | Voz Melodiosa | +2 | Básico p.23 e p.64 |
+| Sex-Appeal | Voz Melodiosa | +2 | Básico p.23 e p.64 |
+| Canto | Voz Melodiosa | +2 | Básico p.23 e p.48 |
+| **Detecção de Mentiras** | **Empatia** ▲ | **+4** | Básico **p.65**, só no verbete da perícia |
+| **Psicologia** | **Empatia** ▲ | +3, com o paciente presente | Básico **p.62**, só no verbete da perícia |
+| **Contabilidade** | **Talento para Matemática** ▲ | **+5** | Básico **p.58** — e o verbete da vantagem, na p.22, diz **+3**. **O livro se contradiz consigo mesmo**; até haver decisão, vale o +3 da vantagem, e a linha é Pendência |
+| Perícia matemática, exceto Operação de Computadores | Talento para Matemática | +3 | Básico p.22 |
+| Escalada | Ultra-flexibilidade das Juntas | +3 | Básico p.20 e p.57 |
+| **Fuga** | **Ultra-flexibilidade das Juntas** ▲ | **+3** | Básico **p.65**, só no verbete da perícia |
+| Navegação | Senso de Direção | +3 | Básico p.19 e p.57 |
+| Percepção do Corpo | Senso de Direção | +3 | Magia p.94 |
+| **Trato Social** | **Status relativo** ▲ | **+2** se o seu Status é maior que o do NPC, **−2** se é menor | Básico **p.64**, só no verbete da perícia |
+| Trato Social | Status alto | pré-definido IQ+2 na própria cultura | Básico p.18 |
+| Sacar Rápido | Reflexos em Combate | +1 | Básico p.20 e p.50 |
+| Adestramento de Animais · Cavalgar · Veterinária · Falcoaria · Carregamento | Empatia com Animais | +4 | Básico p.19, e a lista é aberta |
+| Lingüística, e toda língua aprendida | Facilidade para Línguas | + o nível no IQ | Básico p.20 |
+| Canto · Instrumento Musical | Talento Musical | + o nível **no IQ de aprendizado** | Básico p.22 |
+| Interrogatório · Hipnotismo | Força de Vontade | + o nível | Básico p.23 |
+| **Taumatologia** | **Aptidão Mágica** | **soma ao IQ no aprendizado da perícia**, como se faz para as mágicas | Grimório p.7 |
+| Lingüística | Memória Eidética | acumula com Facilidade para Línguas | Básico p.20 |
+
+**E três bônus que jogam contra você**, e que a ficha também precisa registrar:
+
+| Perícia | De quem vem | Efeito |
+| --- | --- | --- |
+| Prestidigitação | **Visão Aguçada do alvo** | **−3** contra quem a tenha, ou contra quem conheça Prestidigitação (Básico p.67) |
+| Punga | **Prontidão da vítima** | soma à IQ dela na disputa (Básico p.67) |
+| Venefício | Olfato/Paladar Apurado de quem prova | ajuda a detectar, sem número declarado (Básico p.67) |
+
 
 ---
 
 titulo: Tabela de Desvantagens
-versao: 3
-atualizado: 2026-09-11
+versao: 4
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Tabela de Desvantagens
@@ -6289,6 +6917,7 @@ fonte: cânone aberto de A Garganta
 > **Nota.**
 > **Custo e efeito em números, do GURPS Módulo Básico.** Desvantagem não é castigo: é financiamento. Você aceita um problema e recebe pontos por ele — e **o problema vai aparecer na mesa**, que é para isso que ele serve.
 > **Escolha desvantagem que faça alguém agir contra você.** Uma alergia a nozes não gera cena. Uma dívida com a Casa de Hefesto gera doze.
+> **Versão 4, de 13/09/2026.** O Árbitro passou os dez livros de GURPS que a campanha possui a livros de mesa, e três coisas mudaram de estatuto: **Segredo** e **Obsessão**, que a versão 3 marcava como regra da casa, **têm verbete** — Segredo em quatro livros, Obsessão em dois —, e a marca ⚠︎ sai das duas. Entraram **Suscetibilidade à Magia**, **Número 13**, **Repugnância** e as **cinco limitações de Aptidão Mágica** do livro de Magia. **Dislexia passou a −15** pelo mesmo raciocínio que fez o Analfabetismo valer −10. E **o Dever da Marca saiu do limite de −40** (§1).
 > **Versão 3, de 10/09/2026.** Entraram cinco desvantagens de livro que faltavam — **Disopia, Disosmia/Ageusia, Eunuco, Desdobramento de Personalidade** e o degrau **Pessoa-objeto** do Estigma Social. **Daltonismo** ganhou Química, que o livro lista e a versão 1 tinha perdido. E **Obsessão** e **Segredo** foram marcadas com ⚠︎: **não existem no Módulo Básico** e ficam declaradas como regra da casa, não como regra de livro.
 
 # 1. As regras que valem para todas
@@ -6296,11 +6925,20 @@ fonte: cânone aberto de A Garganta
 | Regra | Valor |
 | --- | --- |
 | **Limite** | **−40 pontos** em desvantagens |
-| **Dever da Marca** | **obrigatório**, e ocupa de −5 a −15 **dentro** do −40 |
+| **Dever da Marca** | **obrigatório**, e **fica FORA do −40** — v. a nota abaixo |
 | Teste de desvantagem mental | quando a desvantagem permite teste de IQ ou Vontade, **qualquer resultado 14 ou mais é falha**, por mais alto que seja o NH |
 | Desvantagem física adquirida em jogo | **não dá pontos** — o Árbitro subtrai do total |
 | Desvantagens contraditórias | **proibidas**: nada anulado por uma vantagem que você tenha |
 | Peculiaridades | até 5, a −1 cada, **fora** do limite de −40 |
+
+> **O Dever da Marca saiu do limite em 13/09/2026, e isso devolveu dez pontos a cada
+> personagem da mesa.** O *GURPS Magia*, p.93, é literal: *"Em alguns mundos, todos os magos têm
+> uma Reputação ruim ou qualquer outra desvantagem **automática**. Estas desvantagens **não devem
+> ser levadas em conta** no cálculo do limite de 40 pontos em desvantagens."* O Dever da Marca é
+> exatamente isso — imposto pelo mundo, obrigatório para todo marcado, sem escolha. Ele
+> continua obrigatório e continua valendo de −5 a −15 conforme a frequência; o que muda é que
+> **não ocupa mais espaço dentro do −40**. Cada ficha da mesa passa a ter até dez pontos a mais
+> de desvantagem para assumir, e **escolher qual é do jogador**, não do Árbitro.
 
 # 2. A lista
 
@@ -6326,7 +6964,7 @@ fonte: cânone aberto de A Garganta
 | **Dever** | **−2 a −15** | Ver §3. **É a desvantagem da Marca**, e é obrigatória |
 | **Disopia** (visão imperfeita) | **−10**, e **−25 na Garganta** | Míope ou hipermétrope, à escolha. **−2** em toda perícia com arma de mão; com arremesso ou projétil, **conta o dobro da distância real**. Hipermétrope: **triplo do tempo** para ler e **−3 de DX** em trabalho manual. **Óculos só existem a partir do NT5** — nas sete cidades não há correção, então o Árbitro paga o valor cheio de −25 em vez de −10 |
 | **Disosmia / Ageusia** | −5 | Não sente cheiro nem sabor de nada. **Não detecta veneno, fumaça, gás nem podridão pelo olfato**; em compensação, come qualquer coisa e não é afetado por fedor |
-| Dislexia | −5 / −15 | −5 em NT≤4, −15 acima. Estuda perícia mental sem professor a **¼ da velocidade**. **Não pode aprender magia** |
+| Dislexia | **−15** | O livro dá −5 em cultura analfabeta e −15 em cultura letrada, *"pós-imprensa"* — e **as sete cidades são cultura letrada**, pelo mesmo fato de mundo que fez a Alfabetização custar 0 e o Analfabetismo valer −10. Estuda perícia mental sem professor a **¼ da velocidade**; **não pode aprender magia**; e **é automaticamente analfabeto sem receber pontos por isso** — não se somam as duas |
 | Distração | −15 | **−5** em qualquer teste de IQ fora da tarefa em foco; teste de Vontade−5 a cada 5 min para se concentrar em tarefa maçante |
 | Duro de Ouvido | −10 | **−4** em todo teste de Audição e ao entender alguém falando |
 | Epilepsia | −30 | Teste de HT em situação de tensão; falha = crise de 1D minutos **e 1D de Fadiga** |
@@ -6363,7 +7001,7 @@ fonte: cânone aberto de A Garganta
 | Mudez | −25 | **+3** em Mímica e Linguagem de Sinais |
 | Nanismo | −15 | Altura 60%; Deslocamento −1; **−1** para quem o acerte com projétil |
 | Obesidade | −10 / −20 | −1 ou **−2** de reação; HT máxima 15 ou 13; **−3** em Disfarce e Sombra; **+5 em Natação**; **+2** em Encontrão |
-| **Obsessão** ⚠︎ | −5 a −15 | **Não tem verbete no Módulo Básico.** Fica como **regra da casa**, com a faixa de Compulsão: teste de Vontade para não perseguir o objeto da obsessão, e o valor sai do estrago que ela causa. **Quem quiser jogar seguro compra Compulsão, que é de livro** |
+| **Obsessão** | **−5 / −10** | *Artes Marciais* p.29 e *Illuminati* p.30. Menor (−5): raramente vem à tona. Grande (−10): aparece na maioria das conversas, e **−2 de reação** de quem note. Teste de Vontade só em situação cotidiana — **em emergência ou perigo não há teste**. Atingido o objetivo, substitui-se ou recompra-se. *(Era regra da casa até 12/09; o verbete apareceu quando os dez livros viraram livros de mesa, e o teto real é −10, não −15.)* |
 | Pacifismo | −15 / −30 | Não-violência total: −30. Só auto-defesa: −15. Incapaz de matar: −15, e depois de matar fica **3D dias inútil** |
 | Paralisia Frente ao Combate | −15 | **Teste de HT**, não de IQ, sempre que lesão pareça iminente; **qualquer resultado acima de 13 falha**; falha = atordoamento |
 | Paranóia | −10 | **−2** nas reações dos outros a você |
@@ -6374,9 +7012,10 @@ fonte: cânone aberto de A Garganta
 | **Má Reputação** | **variável** | Ver §3 |
 | Sadismo | −15 | **−3** de reação de quem o conheça como tal; teste de Vontade para se controlar |
 | Sanguinolência | −10 | Teste de Vontade para aceitar rendição ou fazer prisioneiro |
-| **Segredo** ⚠︎ | −5 a −30 | **Não tem verbete no Módulo Básico.** Fica como **regra da casa**: o valor sai do estrago que o vazamento causa — vergonha (−5), perda de emprego ou Status (−10), morte ou banimento (−20 a −30). O equivalente de livro é a **Má Reputação latente** somada a um **Inimigo**. É ótimo motor de trama, mas **entra declarado como divergência**, não como se fosse do livro |
+| **Segredo** | −5 a −30 | *Artes Marciais* p.29, *Illuminati* p.30, *Psiquismo* p.98, *Império Romano* p.36 — e o índice do próprio Módulo Básico o remete para o **Apêndice, p.A-7**, que não existe no exemplar da campanha. O valor sai do estrago que o vazamento causa: vergonha (−5), perda de emprego ou Status (−10), morte ou banimento (−20 a −30). **Frequência:** o segredo ameaça vir à tona numa sessão com 6 ou menos em 3 dados, rolado antes da aventura. **Vazado**, o personagem adquire desvantagens novas e permanentes valendo **o dobro** do Segredo, usadas primeiro para recomprá-lo. *(Era regra da casa até 12/09.)* |
 | **Senso de Dever** | **−5 a −20** | Ver §3. **+2** nas reações de quem o conheça por isso |
 | Status negativo | −5 por nível | De −1 a −4. O redutor de reação é a **diferença** de Status, com piso de −4 |
+| **Suscetibilidade à Magia** | **−3/nível** | *Grimório* p.5. O nível **é somado ao NH de quem lança magia contra você** — Suscetibilidade 4 contra um operador de NH 12 faz o NH efetivo dele virar **16** — e **é subtraído dos seus testes para resistir**. **Contra mágica de área funciona normalmente**, nem em dobro nem pela metade, ao contrário do Abascanto. **Combina com Aptidão Mágica; não combina com Abascanto.** E **qualquer mago que examine sua aura lê o nível exato** — num mundo onde as Casas leem a Marca, isso é um farol. O livro não dá teto de nível, e o Árbitro decidiu não criar um: **quem a compra alto está apostando que não desce abaixo do andar 8**, onde a mana alta dá +2 de NH a todo mago inimigo |
 | Surdez | −20 | **−3 em IQ** ao aprender língua; **+3** em Mímica, Sinais e Leitura Labial |
 | Teimosia | −5 | **−1** nas reações das outras pessoas |
 | Timidez | −5 / −10 / −15 | **−1**, **−2** ou impossível em Dissimulação, Trovador, Boemia, Diplomacia, Lábia, Liderança, Comércio, Política, Trato Social, Sex-Appeal e Pedagogia |
@@ -6410,12 +7049,21 @@ fonte: cânone aberto de A Garganta
 
 | Capacidade | Base | | Importância | Fator | | Frequência | Jogada | Fator |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 51+ pontos | 0 (é Aliado grátis) | | empregado ou conhecido | ×½ | | quase o tempo todo | ≤15 | ×3 |
+| **51 a 75 pontos** | **0** — é Aliado grátis | | empregado ou conhecido | ×½ | | quase o tempo todo | ≤15 | ×3 |
 | 26 a 50 | −6 | | amigo | ×1 | | muita frequência | ≤12 | ×2 |
 | 1 a 25 | −12 | | amado | ×2 | | pouca frequência | ≤9 | ×1 |
 | 0 ou menos | −16 | | | | | muito raramente | ≤6 | ×½ |
 
 **Máximo 2 dependentes.** Nenhum ponto de aventura em que o dependente morra ou seja gravemente ferido.
+
+> **A faixa fechada em 13/09/2026, porque as duas tabelas do cânone diziam coisas opostas.**
+> O livro tem um buraco: a página de Dependentes diz que de 51 a 75 pontos o NPC é *"em essência
+> um Aliado que não custa nenhum ponto"*, e a página de Aliados diz que *"menos do que 75"* é
+> Dependente e retoma o preço em 76 — o valor 75 exato não pertencia a ninguém. **Fica assim,
+> em três degraus:** até **50 pontos** é Dependente e rende pontos por esta tabela; de **51 a
+> 75** é Aliado grátis, que aparece e ajuda sem custar nem render; de **76 em diante** é Aliado
+> pago, pela tabela do `28`. Aparece toda vez que um jogador escreve uma Amarra, e a ficha
+> exige duas.
 
 ## Dever — a desvantagem da Marca
 
@@ -6481,6 +7129,8 @@ fonte: cânone aberto de A Garganta
 | Répteis | −10 / −20 | −2 muito grande ou venenoso; −4 em quantidade |
 | Ruídos altos | −10 / −20 | ruído súbito exige teste imediato |
 | Sujeira | −10 / −20 | Vontade−5 para comer comida desconhecida |
+| **Repugnância** (sem nome técnico) | −10 / −20 | Imundície, sangue, cadáveres, bichos rastejantes. O livro é expresso: **não é a soma** de insetos, répteis, sujeira e morte — inseto ou réptil grande não perturba, nem fantasma, nem "sujeira limpa". A versão moderada é **peculiaridade** |
+| **Número 13** (triscedecofobia) | −5 / −10 | Verificação de Pânico para fazer o que envolva o número treze; **−5** se houver uma sexta-feira treze no meio |
 | Maquinaria | −5 / −10 em NT baixo | −3 com engenho complexo |
 
 **As cinco primeiras são as que mais aparecem na Garganta.** Escolha com o poço em mente: escuridão e espaço fechado são o cenário, não um acidente.
@@ -6500,6 +7150,28 @@ fonte: cânone aberto de A Garganta
 | altamente viciadora (−5 na Regeneração) | −5 |
 | totalmente viciadora (−10 na Regeneração) | −10 |
 | droga legal no mundo de origem | **+5** |
+
+## As cinco limitações de Aptidão Mágica
+
+Não são linhas desta tabela: são **descontos na linha de Aptidão Mágica**, do *GURPS Magia*
+p.93. Entraram em 13/09/2026. **Nenhum mago pode escolher mais de uma**, e o livro fixa um piso:
+nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 nos seguintes.
+
+> **Elas ficam fora do teto de −40**, porque não são desvantagem: são preço menor numa vantagem.
+
+| Limitação | Aptidão passa a custar | O que ela tira |
+| --- | --- | --- |
+| **Seletiva ao Sol** | 8 no 1º nível, 5 por nível | Poderes só das **6h às 18h**. Perde-os em eclipse solar. Sabe, acordado, quando falta um minuto para o nascer e o pôr do sol. **O livro legislou o subterrâneo:** *"não é afetado pelo fato de estar no interior de um edifício, **sob o solo** e situações similares. O que importa é a posição do sol."* |
+| **Seletiva às Estrelas** | 8 e 5 | O período oposto — **18h às 6h** — e durante os eclipses |
+| **Seletiva à Lua** | 8 e 5 | Só com a lua no céu, cerca de metade do tempo; **+5 durante eclipse solar**. Regra opcional por fase: **+3** na lua cheia, +2 nos dois dias em volta, +1 nos dois seguintes, e **nenhum poder na lua nova e nos cinco dias antes e depois** |
+| **Uma Única Escola** | 10 no 1º nível, 6 por nível | A Aptidão só funciona com **um colégio** e com Recuperação de Força. As demais mágicas ele aprende como não-mago e só as executa em mana alto, podendo usá-las como pré-requisito. Não detecta objeto encantado que não contenha mágica da sua escola |
+| **Solitária** | 10 e 6 | **−3 no NH por cada pessoa ou ser inteligente num raio de 5 metros, e −6 por quem estiver tocando** o mago. Em troca, teste de IQ para perceber quem entra ou sai do raio, uma pessoa de cada vez |
+
+> **Duas ressalvas que o Árbitro conhece e assumiu.** *Uma Única Escola* devolve treze pontos a
+> um mago de nível 3 — e **quinze Casas da Garganta já concedem exatamente um colégio**, de modo
+> que para um marcado por Agni, Zeus, Tyr, Deméter e mais onze ela não tira nada. E *Solitária*,
+> numa esquadra de cinco, põe o mago entre −12 e −15 permanentes, que é três vezes o que a mana
+> alta dá. **As duas entram como o livro imprime, por decisão de 13/09/2026.**
 
 # 4. Peculiaridades
 
@@ -6522,8 +7194,8 @@ fonte: cânone aberto de A Garganta
 ---
 
 titulo: Retificações de livro
-versao: 1
-atualizado: 2026-09-11
+versao: 2
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # Retificações de livro
@@ -6780,12 +7452,188 @@ Quatro correções nesta página, todas contra o livro. **A linha anterior não 
 
 **O parágrafo de Clima da §2.3 recebeu remissão para o `31`**, que fixou o recorte. Lido sozinho, ele deixava o colégio vazio.
 
+# RETIFICAÇÃO — 13/09/2026, a leva do Compêndio dos dez livros
+
+**A maior leva de correção que este documento já registrou.** Ela nasceu de uma conferência
+mecânica de todo o cânone de regras contra os **dez livros de GURPS que a campanha possui**,
+extraídos verbete a verbete, em dois passes de leitura independentes. **A linha anterior não é
+apagada; esta aponta para ela.**
+
+## 1. Os livros de mesa passaram de três a dez
+
+> **DECISÃO DO ÁRBITRO, 13/09/2026.** Módulo Básico, Magia, Grimório, **Fantasy, Artes
+> Marciais, Psiquismo, Illuminati, Horror, Viagem no Tempo e Império Romano** são livros de
+> mesa. **O filtro:** entra o que funciona **sem o cenário do próprio livro** — regra genérica.
+> Fica fora o que só existe naquele mundo: cidadania romana, filiação a conspiração,
+> equipamento temporal.
+
+**A primeira consequência foi apagar três das quatro perícias da casa.** Elas tinham sido
+criadas em 10/09 porque não havia verbete nos três livros de então. Havia nos outros sete:
+
+| Perícia da casa | O que se descobriu |
+| --- | --- |
+| **Intimidação** | Tem verbete em **quatro** livros — Illuminati p.32, Artes Marciais p.31, Império Romano p.37, Viagem no Tempo p.34 — e é **Mental/Média**, exatamente a dificuldade que o Árbitro tinha escolhido |
+| **Rito Funerário** | É o **Exorcismo** do *Horror* p.43: **Mental/Difícil**, pré-definido IQ−6 ou Teologia−3, **−4 sem Clericato** — e o livro escreve *"o exorcismo **não é uma mágica**. É uma perícia religiosa"*, que é a decisão do Árbitro palavra por palavra. **Volta ao nome do livro** |
+| **Selos e Sigilos** | Vira **Heráldica**, que já estava na lista: Mental/Média, mesmo custo, e o verbete cobre *"projetar e reconhecer"* emblema e divisa. **Nenhuma ficha muda de conta** |
+| **Cartografia** | **A única sem verbete em livro nenhum** dos dez. **Sai.** Levantar mapa passa a exigir **Navegação** para medir e **Artística** para desenhar |
+
+**O mesmo aconteceu com duas desvantagens** que o `29` marcava com ⚠︎ como regra da casa:
+**Segredo** tem verbete em quatro livros, e **Obsessão** em dois — e o teto real da Obsessão é
+**−10**, não os −15 que a casa lhe dava.
+
+## 2. Onde a Relação das Mágicas e o verbete divergem, vence o verbete
+
+> **DECISÃO DO ÁRBITRO, 13/09/2026.** A Tabela de Mágicas foi transcrita da **Relação das
+> Mágicas** (*Magia* p.71-76), e a Relação diverge dos **verbetes** em dezenas de pontos, dentro
+> do mesmo livro. **Vence o verbete**, que é onde a regra está escrita.
+
+Isto **inverte a direção** do precedente de Restaurar (decisão 3 do `25`, *"vale a tabela"*) —
+que continua de pé no caso dele, porque lá o verbete era auto-referente e não podia estar certo.
+
+**Dezenove nomes mudaram**, e nenhum custa ponto a ninguém. A tabela de equivalência está no
+fim do `27`, em *Nomes antigos*. Os que aparecem em documento já publicado:
+
+- **Moldar Ar → Semear Ventos.** E as duas eram a mesma mágica, o que ninguém tinha visto: a
+  Relação a nomeia *Moldar Ar* e manda para a p.30, onde o verbete se chama *Semear Ventos*; o
+  índice do Módulo Básico diz *"Moldar Ar, Mágica, 157"* e a p.157 imprime *Semear Ventos*.
+  **O `31` §7.1 decidiu sobre a premissa de que eram duas** — e escreveu *"ele compra os dois de
+  qualquer maneira"*. Não compra.
+- **Voz Possante → Voz Amplificada**, que é o nome que o `23` §2.5 já mandava usar e que a ficha
+  do Lísias já trazia. **A ficha dele passa a estar certa**, e o elo quebrado de Jato de Som
+  fecha sozinho.
+- **Ruído → Barulho** · **Esconder Trilha → Esconder Rastros** · **Juventude → Rejuvenescer** ·
+  **Envelhecer → Envelhecimento** · **Identificar Pontos Fracos → Detectar Pontos Fracos**, e
+  mais doze.
+
+**Oito pré-requisitos mudaram**, e estes mexem em preço:
+
+| Mágica | A Relação dizia | O verbete diz |
+| --- | --- | --- |
+| **Convocar Elemental** | AM | **AM mais 8 mágicas do elemento** — ou 4 mais outra convocatória. De 1 ponto para 9 |
+| **Teleporte** | Voo do Falcão ou IQ 15+ | Voo do Falcão, **ou IQ 15+ e 1 mágica de 10 escolas diferentes** |
+| **Desintegrar** | AM 2, Fragmentar, Estragar | mais **Terra em Ar, Destruir Ar e Dissipar Água** |
+| **Alterar Feições** | Metamorfose ou Ilusão Perfeita | mais **8 mágicas de Controle do Corpo** |
+| **Pedra para Terra** | Terra para Pedra ou 4 de Terra | Terra para Pedra **ou qualquer outra de Terra** |
+| **Retardo** | AM 3 mais 10 mágicas | AM 3 mais **15** |
+| **Cegar** e **Cavalgar** | trocados entre si | **desfeita a troca** — o erro é do livro, e a Relação imprime as duas células invertidas |
+
+E **Purificar Alimento recuperou o asterisco** que a transcrição perdeu: é Mental/**Muito**
+Difícil. Era a única divergência de asterisco em 429 linhas.
+
+## 3. Trinta e seis elos de pré-requisito que não fechavam
+
+Conferência por programa de todas as 439 linhas do `27`: **todo pré-requisito nominal foi
+casado contra os próprios nomes da tabela.** Trinta e seis não fechavam — e **nenhum era mágica
+faltando**: eram todos erro de nome. OCR (`Voge»` por Vozes, `Busão Simples` por Ilusão
+Simples, `Acalmar Amimais`), singular e plural trocados, e — em três casos — **os dois nomes da
+mesma mágica usados dentro da mesma tabela**.
+
+**Sobraram três**, e os três são expressão de contagem que o programa lê como nome
+(*"5 outras mág. Água, incl. Congelar"*), não elo quebrado.
+
+**Zero pontos mudaram. Zero fichas mudaram. E a tabela fechada voltou a fechar.**
+
+## 4. Conexão é o vigésimo terceiro colégio
+
+O livro imprime **Conexão**, **Reflexo** e **Retardo** sob o cabeçalho *Mágicas de Conexão*
+(*Magia* p.55-56). O `27` as mantinha em Meta-mágicas, e declarava *Conexão* como mágica de
+fronteira **para uma escola que não existia na Garganta**.
+
+> **DECISÃO: Conexão vira colégio, concedido por Thoth e Odin** — as duas Casas que já
+> concediam Meta-mágicas. **Nenhum mago perde acesso e nenhuma ficha muda de conta.**
+
+## 5. O Dever da Marca saiu do limite de desvantagens
+
+*GURPS Magia* p.93, literal: *"Em alguns mundos, todos os magos têm uma Reputação ruim ou
+qualquer outra desvantagem **automática**. Estas desvantagens **não devem ser levadas em conta**
+no cálculo do limite de 40 pontos em desvantagens."*
+
+> **DECISÃO: o Dever da Marca é exatamente isso, e sai do −40.** Continua obrigatório e continua
+> valendo de −5 a −15 conforme a frequência. **Cada personagem da mesa passa a ter até dez
+> pontos a mais de desvantagem para assumir — e escolher qual é do jogador, não do Árbitro.**
+
+## 6. As correções de tabela que mexem em preço
+
+- **Dislexia passa a −15.** O livro dá −5 em cultura analfabeta e −15 em cultura letrada, e as
+  sete cidades são cultura letrada — é o mesmo fato de mundo que fez a Alfabetização custar 0.
+- **Imunidade a doenças volta a se chamar Imunidade**, que é o nome do livro.
+- **Dependente fecha em três degraus:** até 50 é Dependente; **de 51 a 75 é Aliado grátis**; de
+  76 em diante é Aliado pago. As duas tabelas do cânone diziam coisas opostas, e o valor 75
+  exato não pertencia a ninguém no livro.
+- **Bastão é Difícil** e **Pesquisa é Média** — o `02` §4 dizia o contrário nas duas, e cobrava
+  pontos errados. *(A ficha do Lísias já tinha comprado Pesquisa pela leitura certa.)*
+- **Controle da Respiração sai de IQ**, não de HT: o livro escreve a frase de atributo em todas
+  as perícias que mudam, e no verbete dela não escreve.
+- **Liderança tem pré-definido ST−5**, e o livro explica por quê: *"num grupo qualquer, se
+  ninguém tiver treinamento em liderança, o mais forte normalmente a exercerá"*.
+- **Vela vira Remo/Vela** — o verbete é um par, e sem isso ninguém podia comprar remo.
+- **Maça sai:** não há verbete, só entrada de índice apontando para Machado/Maça. Uma ficha
+  podia comprar as duas e pagar duas vezes pela mesma coisa.
+- **Mergulho** e **Rapidez de Recarga saem** por nível tecnológico: a primeira é equipamento de
+  respiração subaquática, a segunda é recarga de arma de fogo.
+- **Artilharia continua fora, por outro motivo.** O verbete abre a lista com **balestra e
+  catapulta**, de nível 2 e 3 — o argumento tecnológico não a sustentava. Fica fora **por
+  decisão de mundo: não há guerra de cerco entre as sete cidades.**
+
+## 7. Dez nomes existem em duas tabelas ao mesmo tempo
+
+**Escalada · Escudo · Exorcismo · História · Vôo** são perícia **e** mágica; **Prontidão · Visão
+Aguçada · Ouvido Aguçado · Visão Noturna** são vantagem **e** mágica; **Fúria** é desvantagem
+**e** mágica. É o problema que produziu a decisão 15 do `25`, **dez vezes maior** — e desta vez
+**as duas pontas são de livro, e nenhuma pode ceder o nome.**
+
+> **DECISÃO: nesses nomes o tipo é obrigatório na linha da ficha, e a homologação recusa a
+> linha sem ele.** `Escalada (perícia)` ou `Escalada (mágica)`. Nenhuma ficha muda de conta.
+> A lista está no `26` §11 e é reconferida a cada versão.
+
+*(A renomeação da §2 já resolveu uma: a mágica Juventude virou Rejuvenescer, e a colisão com a
+desvantagem de idade desapareceu.)*
+
+## 8. Três documentos publicados contradiziam as tabelas fechadas — e dois se diziam corrigidos
+
+Este é o achado que mais custava à mesa, porque **jogador novo lê o documento errado e faz a
+coisa certa**.
+
+- **O `02` §5** vendia nove Dádivas com nomes que o `28` §4 declara inexistentes — Talento
+  Tático, Talento com Armas, Talento Social, Velocidade Superior, Recuperação Rápida, Talento
+  para Idiomas, Vigor, Cura e Fúria. **E a decisão 6 do `25` afirma que essa lista *"já está
+  certa, nada a fazer"*.** A lista que estava certa era a do `17` Parte 3; quem verificou olhou
+  o documento certo e concluiu sobre o errado.
+- **O `17` §6.6** publicava os **vinte nomes de colégio** que o `23` §2.3 diz ter refeito — com
+  os sete nomes errados, faltando Controle do Corpo, Encantamentos e Alimentos, e sem Hefesto
+  no Ar. **A tabela refeita ficou dentro do `23`; o `17` nunca foi tocado.**
+- **O `02` §4** carregava doze nomes aposentados e vendia **Luta Livre**, que não tem verbete
+  em livro nenhum.
+- **O `28` e o `17`** não receberam a retificação de **Memória Eidética** que este documento
+  mandou aplicar em 10/09 — e este documento **afirmava que o `17` tinha recebido**. Quem
+  recebeu foi o `27`.
+
+> **DECISÃO, e ela é de método: uma fonte só.** As quatro tabelas fechadas são a fonte; os
+> outros documentos **apontam para elas em vez de repetir**. As cópias foram substituídas por
+> remissão no `02` §4, no `02` §5 e no `17` §6.6.
+>
+> **E a regra que impede a repetição:** retificação registrada aqui **só fecha quando o
+> documento de origem recebe o texto**. Registrar a correção neste documento não é corrigir o
+> outro — foi o que aconteceu três vezes nesta leva.
+
+## 9. O Apêndice do Módulo Básico não existe no exemplar da campanha
+
+O índice do próprio livro anuncia, **entre as páginas 200 e 201**, um Apêndice com **Novas
+Vantagens (A1), Novas Desvantagens (A7), Novas Perícias (A11) e Outras Regras (A16)**. O PDF da
+campanha tem 263 páginas e vai da 200 direto à 201. **Não é falha de extração: as páginas não
+estão no arquivo.** E o *GURPS Artes Marciais* remete cinco vezes para dentro delas, entre elas
+**`Segredo — v. MB pág. A-7`**, que é onde as Novas Desvantagens começam.
+
+**Consequência de método, e ela vale daqui para a frente:** toda afirmação de *"não existe em
+livro"* feita por esta campanha carrega a ressalva de que há quatro seções de regra do livro
+principal que ela não consegue ler. **É pendência de aquisição, não de leitura.**
+
 
 ---
 
 titulo: As decisões de 10/09/2026
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # As decisões de 10/09/2026
@@ -7054,7 +7902,7 @@ A **15** renomeia duas das quatro perícias da casa criadas na decisão 4, porqu
 
 titulo: A Dádiva de Zeus e o recorte de Clima
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
 # A Dádiva de Zeus e o recorte de Clima
@@ -7204,7 +8052,7 @@ As cidades que precisam de água — Deméter pelo grão, Tláloc e Oxum pela pr
 titulo: Boletim da Semana 1
 semana: 1
 versao: 1
-atualizado: 2026-09-11
+atualizado: 2026-09-13
 
 **Caminho no Notion:** A Garganta / Estado do Mundo / Boletins
 **Base de origem:** Boletins (collection://c97575a2-6144-46a2-9322-19eaf618fee8)
