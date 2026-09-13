@@ -1,5 +1,5 @@
 titulo: Bestiário, andares 1 a 12
-versao: 2
+versao: 3
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -285,6 +285,34 @@ Apareceram há três anos. São raros e sobem sem padrão.
 **Não têm ficha porque cada um é único.** Aparição de fundido é **sempre Pendência** e sempre evento de campanha.
 
 Aceitar o que eles são significa aceitar que algo fundamental está errado. É por isso que as sete cidades preferem chamá-los de fraude.
+
+# Poderes que não se compram — o que criatura faz e mago não
+
+**Entrou em 13/09/2026, vindo do Compêndio dos dez livros.** Quatro poderes apareceram na leva de
+mágicas do *Fantasy* e do *Horror* e **não entraram na Tabela de Mágicas**, porque a Tabela é a
+lista do que um personagem pode comprar — e o pré-requisito destes é **ser a criatura**. Não há
+pontos que paguem isso.
+
+**Eles moram aqui porque é aqui que o Mestre de Cena procura**, na hora em que a criatura entra
+em cena, junto do resto do que ela faz.
+
+| Poder | De quem | O que faz | Custo para a criatura |
+| --- | --- | --- | --- |
+| **Enfeitiçar** *(Charm)* | Vampiro | Quem falha em resistir vira **servo fiel** e obedece a qualquer ordem, por perigosa que seja. Resiste-se por **teste de IQ**. Acaba **1 minuto depois** de o vampiro se afastar. | nenhum |
+| **Mudar de Forma** *(Shapeshifting)* | Vampiro | Assume a forma de **morcego gigante**, com os parâmetros do Homem-Águia. | nenhum |
+| **Roubar Saúde** *(Steal Health)* | Vampiro | A cada minuto de alimentação a vítima perde **3 de HT** e o vampiro ganha **1 de HT ou de ST**, à escolha dele. **É a única forma de repor a perda diária** de HT do vampiro. | nenhum |
+| **Materialização** | Fantasma | Torna o fantasma **visível**, na forma em que morreu e com as roupas com que foi enterrado. | **5 de fadiga** no primeiro minuto, mais 5 por minuto |
+
+> **Os nomes em inglês são do livro.** O *GURPS Fantasy* p.123 imprime *Charm*, *Shapeshifting* e
+> *Steal Health* sem traduzir, remetendo ao *GURPS Magic* americano. **A tradução ao lado é da
+> Garganta** e é a que se usa em mesa; o nome inglês fica registrado para quem for conferir a
+> página.
+
+> **Atenção.**
+> **Vampiro e fantasma ainda não existem no cânone da Garganta.** Estes poderes estão escritos
+> **antes** da criatura, o que é o avesso do normal — e é de propósito: se um deles aparecer, o
+> Mestre de Cena não improvisa o que ele faz. **Quem escreve a criatura é o Árbitro**, e até lá
+> nenhum Mestre de Cena põe um vampiro em cena por conta própria.
 
 # Escalonamento rápido
 

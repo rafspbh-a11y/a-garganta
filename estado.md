@@ -18,7 +18,7 @@ e avise o jogador para trocar o anexo.
 15-geografia                 v1    https://rafspbh-a11y.github.io/a-garganta/txt/15-geografia.md
 07a-npcs-nomeados            v2    https://rafspbh-a11y.github.io/a-garganta/txt/07a-npcs-nomeados.md
 05-andares-1-a-12            v2    https://rafspbh-a11y.github.io/a-garganta/txt/05-andares-1-a-12.md
-06-bestiario                 v2    https://rafspbh-a11y.github.io/a-garganta/txt/06-bestiario.md
+06-bestiario                 v3    https://rafspbh-a11y.github.io/a-garganta/txt/06-bestiario.md
 06b-muda-dos-andares         v5    https://rafspbh-a11y.github.io/a-garganta/txt/06b-muda-dos-andares.md
 17-criacao-e-magia           v10   https://rafspbh-a11y.github.io/a-garganta/txt/17-criacao-e-magia.md
 30-improviso-circulo-e-lavra v4    https://rafspbh-a11y.github.io/a-garganta/txt/30-improviso-circulo-e-lavra.md
@@ -34,7 +34,7 @@ e avise o jogador para trocar o anexo.
 04b-entrega-do-relatorio     v7    https://rafspbh-a11y.github.io/a-garganta/txt/04b-entrega-do-relatorio.md
 14-indice                    v8    https://rafspbh-a11y.github.io/a-garganta/txt/14-indice.md
 26-pericias                  v4    https://rafspbh-a11y.github.io/a-garganta/txt/26-pericias.md
-27-magias                    v7    https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
+27-magias                    v8    https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 28-vantagens                 v4    https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md
 29-desvantagens              v4    https://rafspbh-a11y.github.io/a-garganta/txt/29-desvantagens.md
 23-retificacoes-de-livro     v6    https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md

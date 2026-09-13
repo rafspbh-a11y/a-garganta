@@ -1,5 +1,5 @@
 titulo: Tabela de Mágicas
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -169,6 +169,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Deturpar | Com/R-IQ | 1 seg | 1 min | 4/m | Vozes |
 | Eloquência | Comum | 1 seg | 1 min | 3/2 | Vozes, Controle de Emoções |
 | Escrever | Comum | 1 Seg | 1 min | 3/1 | Vozes, Alfabetização, Golem de Ar |
+| Escriba Musical | Comum | 1 seg | 1 min | 3/1 | Escrever |
 | Estrondo | Comum | 1 seg | Inst | 2 | Som |
 | Furtividade Mágica | Comum | 3 Seg | 1 min | 3/2 | Quietude |
 | Imitar Voz | Com/R-HT | 1 seg | 1 min | 3/1 | Vozes |
@@ -250,6 +251,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Projeção da Mente | Comum | 3 seg | 1 min | 4/m | Percepção de Espíritos, pelo menos quatro mágicas de Reconhecimento |
 | Rastrear | Comum | 1 min | 1 h# | 3/1 | Localizadora |
 | Recordar Caminho | Comum | 10 seg | 1 h | 3/1 | Orientação, Memorizar |
+| Revelar Posição | Informação | 1 seg | Inst. | L | Medidas |
 | Tato Remoto | Comum | 3 seg | 1 min | 3/1 | AM |
 | Testar Área | Área | 1 seg | Inst. | 1; mínimo de 2 | Medidas |
 | Ver Forma Real | Informação | 1 seg | Inst. | 2 | — |
@@ -317,6 +319,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Ferver Água | Comum | 10 seg | Perm., embora o vapor irá se condensar n | 1 para uma quantidade de água do tamanho de um punho (gera aproximadam | Moldar Água, Calor |
 | Furacão | Área | instante | 1 min# | 4/2 | Tufão |
 | Gerar Odor | Área | 1 seg | 1h# | 1 | Eliminar Odor |
+| Imunidade à Água | Comum | 1 seg | 1 min | 2/m | Guarda-chuva, ou ambas Moldar Água, Dissipar Água |
 | Jato de Ar | Comum | 1 seg | 1 seg | 1 a 3# | Semear Ventos |
 | Jato de Vapor | Comum | 1 seg | 1 seg | 1 a 3; o mesmo para manter | Jato de Água, Ferver Água |
 | Localizar Ar | Informação | 1 seg | Inst. | 1 | — |
@@ -329,6 +332,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Relâmpago | Projétil | 1 até 3 seg | Inst. | 1 a 3# | 6 mágicas de Ar |
 | Respirar Água | Comum | 1 seg | 1 min | 4/2 | Criar Ar, Dissipar Água |
 | Semear Ventos | Comum | 1 seg | 1 min | 1 a 10# | Criar Ar |
+| Sorvedouro | Área | O sorvedouro começa imediatamente, mas o opera | 1 min após atingir potência total | 2/m | Moldar Água |
 | Tempestade de Areia | Área | A tempestade inicia-se imediatamente, mas o op | 1 min após atingir força total | 3 para fazer, 1,5 para manter | Tufão, Criar Terra |
 | Tufão | Área | instante | 1 min# | 2/1 | Semear Ventos |
 
@@ -348,11 +352,15 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Andar na Água | Comum | 4 seg | 1 min | 3/2 | Moldar Água |
 | Aquavisão | Informação | 1 seg | 30 seg | 1/1# | Moldar Água |
 | Arma Congelante | Comum | 3 seg | 1 min | 3/1 | Criar Água |
+| Bola de Ácido | Projétil | 1 seg | Inst | 1 a 3; a Bola de Ácido provoca 1D pontos de dano por ponto de energia | AM 2, Criar Ácido |
 | Camada de Gelo | Área | 2 seg | Varia# | 3 | Geada |
 | Caminhar na Água | Comum | 4 seg | 1 min | 3/2 | Moldar Água |
 | Carne para Gelo* | Com/R-HT | 2 seg | Perm. até ser revertida por outra mágica | 12 | AM, Enregelar, Corpo de Água |
+| Chuva de Ácido | Área | 1 seg | 1 min | 3/i | AM 2, Criar Água, Criar Terra |
+| Chuva de Adagas de Gelo | Área | 1 seg | 1 min | 2 para fazer, o mesmo para manter | AM 2, Granizo, Adaga de Gelo |
 | Congelar | Comum | 10 seg | até derreter | 2 punho · 4 ≤33cm³ · 6 por hex · +3/hex | Moldar Água |
 | Corpo de Água | Com/R-HT | 5 seg | 1 min | 5/hex# | Moldar Água |
+| Corpo de Gelo* | Com/R-HT | 5 seg | 1 min | 7/3 | AM 2, Corpo de Água, Congelar |
 | Criar Ácido | Comum | 2 seg | O ácido criado é permanente, mas neutral | 1 por litro criado; proporcionalmente menos para ácidos mais fracos | AM, Criar Água, Criar Terra |
 | Criar Água | Comum | 1 seg | Perm. | 2/4 l | Purificação de Água |
 | Criar Gelo | Comum | 1 seg | Perm. | 2 para cada 4 litros de gelo criado | Congelar |
@@ -370,6 +378,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Guarda-chuva | Comum | 2 seg | 10 min | 1/1 | Moldar Água ou Escudo |
 | Imunidade ao Ácido | Comum | 1 seg | 1 min | 2; 6 se o objetivo tiver de ser imune ao Ácido Essencial | Purificação de Água, Criar Ácido |
 | Jato d'Água | Comum | 1 seg | 1 seg | 1 a 3# | Moldar Água |
+| Jato de Ácido | Comum | 1 seg | 1 seg | 1 a 3 | AM 2, Jato de Água, Criar Ácido |
 | Jato de Neve | Comum | 1 seg | 1 seg | 1 a 3 | Jato de Água, Congelar |
 | Localizar Água | Informação | 1 seg | Inst | 2 | nenhum |
 | Moldar Água | Comum | 2 sçg | 1 min | 1/1# | Criar Água |
@@ -381,7 +390,9 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Respirar Ar | Comum | 1 seg | 1 min | 4/2 | Criar Água, Destruir Ar |
 | Sapatos de Neve | Comum | 2 seg | 1 min | 2/1 | Moldar Água |
 | Secar Poço | Comum | 1 min | Perm. | 3 pontos para a redução da produção da fonte em 4 litros por hora | Dissipar Água, Moldar Terra |
+| Sopro Congelante* | Comum | 2 seg | 1 seg | 1 a 4 | AM, Jato de Neve, Imunidade ao Frio |
 | Sopro de Ácido* | Comum | 2 seg | 1 seg | 1 a 4 | AM 3, Jato de Ácido, Imunidade ao Ácido |
+| Toque Congelante | Comum | 1 seg por 6 mm de gelo | Perm. | 2 para cada 6 mm de gelo; deve afetar o objetivo por inteiro, não apen | AM, pelo menos quatro mágicas de Gelo |
 
 # Clima
 
@@ -430,12 +441,14 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Geada | Área | 1 seg | até derreter | 1 | Criar Água ou Frio |
 | Granizo | Área | 1 seg | 1 min | 1/5/s# | Neve |
 | Imunidade a Relâmpagos | Comum | 1 seg | 1 min | 2/1 | 6 mágicas de Ar — **fronteira com Proteção e Advertência** |
+| Maré | Especial | 1 min | 1 h | 1/30 | Pelo menos oito mágicas de Agua |
 | Muralha de Relâmpagos | Área | 1 seg | 1 min | 2 a 6/i# | AM, Relâmpago |
 | Neve | Área | 1 seg | 1h | 1/15# | Nuvens, Geada |
 | Nevoeiro | Área | 1 seg | 1 min | 2/1 | Moldar Água |
 | Nuvem de Faíscas | Área | 1 a 5 seg | 10 seg | 1 a 5/i# | **Semear Ventos**, Relâmpago |
 | Nuvens | Área | 10 seg | 10 min | 1/20/s | 4 mág. Ar, 4 mág. Água |
 | Olhar de Relâmpago\* | Comum | 2 seg | 1 seg | 1 a 4# | AM, Relâmpago, Imunidade a Relâmpagos |
+| Ondas | Especial | 1 min | 1 h | 1/60 | Moldar Água |
 | Previsão do Tempo | Informação | 5 seg | Inst. | 2 × os dias previstos · ×2 fora da região · ×4 noutro continente | 4 mágicas de Ar |
 | Projéteis Elétricos | Comum | 3 seg | 1 min | 4/2# | Arma Elétrica |
 | Relâmpago | Projétil | 1 até 3 seg | Inst. | 1 a 3# | 6 mágicas de Ar |
@@ -502,6 +515,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Convocar um Elemental de Terra | Especial | Tempo necessário: 30 seg | Uma h | 4 | AM; pelo menos mais 8 mágicas do elemento apropriado ou 4 mágicas do element |
 | Criar Elemental | Especial | seg = soma dos atributos do elemental | Perm. | ¼ da soma dos 4 atributos · ×2 em lugar inadequado | AM 2, Controlar Elemental |
 | Criar Elemental (Terra) | Especial | Um número de seg igual ao total dos atributos | Inst. | 1/4 do total do valor dos 4 atributos do elemental | AM 2, Controle de Elemental apropriada |
+| Desvitalizar Ar | Área | 1 seg | Até que a essência vital do ar ao redor | 2 | Destruir Ar [impresso como "Pré-requisito: Destruir Ar" sem ponto final] |
 
 # Cura
 
@@ -516,6 +530,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Cessar Paralisia | Comum | 1 seg | Inst. | 1 para um único membro, 2 para o corpo inteiro | Cura Profunda, ou Cura Superficial, Paralisar Membro |
 | Cessar Sangramento | Comum | 1 seg | Perm., embora ferimentos subsequentes po | 1 | Dar Vitalidade |
 | Compartilhar Força | Comum | 1 seg | a rodada — não se mantém | 2× a ST drenada, mínimo 1 | Dar Força |
+| Compartilhar Vitalidade | Comum* | 1 seg por ponto de HT transferido | Perm. | Nada de Fadiga é gasto; NH alto apenas afeta o tempo de operação | Dar Vitalidade |
 | Cura Profunda* | Comum | 1 seg | Perm. | 1 a 4# | AM, Cura Superficial |
 | Cura Superficial | Comum | 1 seg | Perm. | 1 a 3# | Dar Vitalidade |
 | Curar Desidratação | Comum | 10 seg | A cura é permanente | 2 por ponto de Fadiga por desidratação recuperado pelo objetivo | AM, Cura Superficial, Criar Água |
@@ -590,6 +605,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Atrair | Área/R-IQ | 10 seg | 1 h | 2/i | Controle de Emoções |
 | Atrofiar Audição | Com/R-HT | 1 seg | 30 min | 1 a 3 para fazer, metade para manter | — |
 | Atrofiar Olfato/Paladar | Com/R-HT | 1 seg | 30 min | 1 a 3 para fazer, metade para manter | — |
+| Atrofiar Sentidos* | Com/R-HT | 1 seg | 10 min | 2 a 10 para fazer, metade para manter | — |
 | Atrofiar Visão | Com/R-HT | 1 seg | 30 min | 1 a 3 para fazer, metade para manter | — |
 | Bravura | Área/R-IQ-1 | 1 seg | 1h# | 2# | Medo |
 | Cativar | Especi/R-IQ | 1 seg | 1 h (tempo real) | 3/i | Amnésia, Torpor, Retardar |
@@ -660,6 +676,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Disfarce Ilusório | Comum | 1 seg | o da ilusão | 3 | Ilusão Simples |
 | Duplicar* | Comum | Igual ao custo, em seg | A duplicata dura indefinidamente — mas e | 6 para cada 5 kg de peso do objeto criado | Criar Objeto, Copiar |
 | Entalhar | Área/R-IQ | 1 seg | 1 min | 1/i | Ilusão Simples, Copiar |
+| Espectro* | Área | 1 seg | 1 min | 5; metade para manter | AM 2, Ilusão Perfeita, Estorvar, Aporte |
 | Ilusão Complexa | Área | 1 seg | 1 min | 2/1 | Som,Ilusão Simples |
 | Ilusão Perfeita | Área | 1 seg | 1 min | 3/h# | AM, Ilusão Complexa |
 | Ilusão Simples | Área | 1 seg | 1 min | 1/h | não cego, IQ 11+ |
@@ -719,6 +736,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Atrofiar Membro | Com/R-HT | 1 seg | Perm. | 5 | AM 2, Paralisar Membros |
 | Aumenta Outros* | Com/R-HT | 10 seg | 1 h | 4 para dobrar o tamanho normal do objetivo, 6 para triplicá-lo, 8 para | AM 3, Crescer |
 | Aumentar* | Comum | 5 seg | 1 h | 4 para dobrar o tamanho normal do operador, 6 para triplicá-lo, 8 para | AM 2, Alterar o Corpo |
+| Aumentar (Atributo) | Comum ou Bloqu | 1 seg | 1 min | 1 por ponto de aumento do atributo (máximo de 5) | Há um pré-requisito diferente para cada versão: Aumentar Força — Força; Aume |
 | Cadência | Comum | 10 seg | 1 h | 5/3 | Apressar, Destreza |
 | Cegar | Com/R-HT | 1 seg | 10 seg | 4/2 | Espasmo, 2 mágicas de Luz |
 | Cessar Esphasmo | Comum | 1 seg | Inst. | 1 | Espasmo ou Dar Vitalidade |
@@ -727,6 +745,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Controlar Membro | Com/R-IQ | 1 seg | 5 seg | 3/i | AM, pelo menos 5 mágicas de Controle do Corpo, inclusive Espasmo |
 | Corpulência* | Com/R-HT | 3 seg | 10 min | 6/i | AM 2, Criar Terra, Criar Água, pelo menos 4 mágicas de Controle do Corpo, in |
 | Corte de Cabelo | Com/R-HT | 2 seg | O corte é instantâneo | 2 | Enfraquecer, pelo menos 2 mágicas de Controle do Corpo |
+| Crescimento Capilar | Com/R-HT | 1 seg | 5 seg | 1/i | Pelo menos 5 mágicas de Controle do Corpo |
 | Decapitação* | Com/R-HT+2 | 2 seg | Como acima | 6 | AM 2, Alterar o Corpo |
 | Destreza | Comum | 1 seg | 1 min | 2 por DX+/s | Inabilidade |
 | Dor | Com/R-HT | 2 seg | 1 seg | 2 | Espasmo |
@@ -753,6 +772,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Prender a Respiração | Comum | 1 seg | 1 min | 4/m | AM, Vigor |
 | Projétil de Maldição | Projétil | 1 seg+o.mg. | Varia# | 2 | AM 2 + outra mágica |
 | Provocar Anosmia | Com/R-HT | 1 seg | 10 seg | 2/m | Espasmo |
+| Provocar Dormência | Com/R-HT | 1 seg | 10 seg | 3/1 | Imunidade à Dor |
 | Provocar Esterilidade | Com/R-HT | 30 seg | Perm. | 5 | AM, Roubar Vitalidade, Deteriorar |
 | Sede | Com/R-HT | 10 seg | Inst. | 5 | AM, Fadiga, Destruir Água |
 | Sensibilizar | Com/R-HT | 1 seg | 1 min | 3/2 | AM, Atordoamento |
@@ -788,6 +808,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Localizar Animais | Informação | 1 seg | Inst | 3# | Convocação de Animais, Localizadora ou 2 Mág. Localizar |
 | Metamorfose* | Especial | 3 seg | 1h | 6/2 | AM + 6 outras mágicas |
 | Metamorfose Amálgama* | Especi/R-IQ | 30 seg | 1 h | 8/3 | AM 3, duas versões de Metamorfosear Outros, pelo menos 2 mágicas de Controle |
+| Metamorfose Permanente* | Comum | 1 min | Indefinida (pode ser permanente) | 5 vezes o custo da mágica Metamorfose correspondente | AM 3, Metamorfose para aquela forma |
 | Metamorfosear a Outros* | Especial/R-IQ | 30 seg | 1h | 6/2 | AM 2, Metamorfose (para aquela forma) |
 | Passageiro Interno | Comum | 3 seg | 1 min | 4/1 | 2 mág, Controle de Animais |
 | Possessão de Animais | Com/R-IQ | 5 seg | 1 min | 6/2 | Passageiro Interno ou Possessão |
@@ -1008,8 +1029,10 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Remoção de Encantamento | Encantamento | o mesmo do Encantar | Perm. | 100, ou 1/10 da energia original — o que for maior | Encantar |
 | Sacar Rápido | Encantamento | — | Perm. | 300/0,5 kg # | Aporte |
 | Senha | Encantamento | — | Perm. | 400# | Encantar |
+| Simulacro* | Encantamento | O mesmo que para o golem subjacente, acrescido | Perm | Custo em energia para ativar: O dobro do golem subjacente | AM 3, Golem, Ilusão Perfeita, Disfarce Ilusório |
 | Suspenção de Encantamento | Encantamento | 1 seg | 1 h | 25 ou 1/100 da energia usada originalmente para colocar o encantamento | Encantar |
 | Suspensão de Encantamento | Encantamento | 1 seg | 1 h. | 25# | Encantar |
+| Talismã | Encantamento | 1 seg | Ele dura até que o evento contra o qual | 15 para 1 ponto de proteção, 45 para 2, 90 para 3 e 150 para 4 | Encantar, a mágica a ser contraposta pelo Talismã (se houver) |
 | Vazamento | Encantamento | 1 seg | Inst. | 100 | Encobrir |
 | Velocidade | Encantamento | — | Perm | 500# | Apressar |
 
