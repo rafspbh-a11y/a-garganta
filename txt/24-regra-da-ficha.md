@@ -1,5 +1,5 @@
 titulo: Regra de Escrita da Ficha
-versao: 6
+versao: 7
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -123,7 +123,7 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
 10. **Os derivados batem, e vêm em duas linhas?** PV=HT · Fadiga=ST · Vel.=(DX+HT)÷4 · **Deslocamento = Vel. truncada − nível de Carga** · Esquiva=Deslocamento · Aparar=perícia÷2, ou **⅔ em Esgrima, Bastão e Briga** · Bloquear=Escudo÷2.
     **A ordem importa: desconta-se a Carga primeiro, soma-se a Corrida depois.** Quem tem a perícia soma **⅛ do NH de Corrida** ao Deslocamento já reduzido (`26` §12), e isso é bônus com fonte nomeada — escreve-se `+1 Corrida 16` na coluna Bônus, nunca dentro do número comprado.
     **Desde 13/09/2026 são duas linhas, não uma** (`21` §8): **em cena** — armadura, elmo, roupa e as armas empunhadas ou no cinto —, e **em marcha**, com a mochila de descida. A ficha traz o peso somado das duas, item por item, contra a tabela de pesos do `21` §8.3. **Ficha com um Deslocamento só volta**, porque obriga o Mestre de Cena a escolher qual dos dois usar e ele vai escolher errado metade das vezes.
-11. **Nos nomes que existem em duas tabelas, o tipo está declarado na linha?** São dez, e a lista está no `26` §11 — **Escalada · Escudo · Exorcismo · História · Vôo · Prontidão · Visão Aguçada · Ouvido Aguçado · Visão Noturna · Fúria**. Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`. **Linha sem o tipo volta.**
+11. **Nos nomes que existem em duas tabelas, o tipo está declarado na linha?** São **catorze**, e a lista está no `26` §11 — **Escalada · Escudo · Exorcismo · História · Vôo** (perícia × mágica) · **Ambidestria · Ouvido Aguçado · Prontidão · Visão Aguçada · Visão Noturna** (vantagem × mágica) · **Amnésia · Fúria · Magreza** (desvantagem × mágica) · **Destino**, que é vantagem e desvantagem ao mesmo tempo. Escreve-se `Escalada (perícia)` ou `Escalada (mágica)`; no Destino escreve-se o sinal, `Destino +10` ou `Destino −10`. **Linha sem o tipo volta.**
 12. **Quem tem mágica tem o NH de escola calculado?** Um número por colégio, na ficha, pela
     tabela do `30` §3: cada mágica entre NH 12 e 15 vale 1, entre 16 e 19 vale 1½, de 20 em diante
     2, e abaixo de 12 nada; soma-se por colégio e arredonda-se para baixo, com **teto no menor
