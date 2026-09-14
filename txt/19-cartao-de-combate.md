@@ -1,5 +1,5 @@
 titulo: Cartão de Combate
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -9,9 +9,11 @@ fonte: cânone aberto de A Garganta
 > existindo inteiro e **não é para anexar**: é para abrir quando a resposta não estiver aqui.
 > Tudo abaixo está no `20`, e o `20` tem muito mais. **Quando os dois divergirem, vale o `20`.**
 >
-> **Por que ele existe.** Você tem janela de contexto finita, e o `20` é longo. Cinco documentos
-> anexados rodam uma sessão inteira; trinta sufocam a cena. Este cartão troca trinta páginas de
-> combate por uma.
+> **Por que ele existe.** Você tem janela de contexto finita, e o `20` é longo. Este cartão tem
+> **9,5 KB contra os 60 KB do `20`** — seis vezes menor, e o segundo menor dos cinco documentos
+> que se anexam ao Projeto. **É essa a medida, não o número de páginas:** o cartão cresce quando
+> a regra nova se usa em toda cena, e não cresce quando a regra é rara — aí ela fica no `20` e o
+> cartão aponta.
 
 # 1 · O turno
 
@@ -85,6 +87,11 @@ Esquiva**, e esquivar cancela a recarga · **sem Apontar, arma de longo alcance 
 **Faca apara a −1** · arma arremessada, −1 · faca arremessada, −2 · mangual, −4.
 **Defesa Passiva do escudo e da armadura soma sempre**, e vale mesmo sem defesa ativa.
 
+**Esgrimista com adaga na mão fraca apara TRÊS vezes:** duas com a arma de esgrima a ⅔, e uma com
+a adaga a ½ de Faca, com o −1. **A mão da adaga não segura tocha, corda, nem faz Judô.**
+
+**Quem tiver Apara, Bloqueio ou Esquiva Ampliada** soma **uma defesa daquele tipo** por rodada.
+
 # 5 · Deslocamento, Carga e Esquiva — os dois números da ficha
 
 **Deslocamento = Velocidade Básica truncada − nível de Carga.** E **Esquiva = Deslocamento**.
@@ -110,22 +117,42 @@ seguinte, e a mochila fica no chão, onde pode ser levada, queimada ou usada com
 **Carga acima de Leve tira a Esgrima e o Judô.** *(O Anão tem escala própria: Nenhuma 2,5 × ST,
 Leve 5 × ST, Média 10 × ST.)*
 
-# 6 · Dano
+# 6 · Dano, quedas e trespassar
 
-**Cortante e perfurante nunca fazem menos de 1**; contundente pode fazer 0.
-
-| ST | Golpe de Ponta | Balanço | | ST | Golpe de Ponta | Balanço |
-| --- | --- | --- | --- | --- | --- | --- |
-| 9 | 1d−2 | 1d−1 | | 13 | 1d | 2d−1 |
-| 10 | 1d−2 | 1d | | 14 | 1d | 2d |
-| 11 | 1d−1 | 1d+1 | | 15 | 1d+1 | 2d+1 |
-| 12 | 1d−1 | 1d+2 | | 16 | 1d+1 | 2d+2 |
+**O dano de cada personagem já está escrito na ficha dele** — `Dano: GdP 1d−2 · GeB 1d`. Não se
+consulta tabela de ST no meio da cena. **Cortante e perfurante nunca fazem menos de 1**;
+contundente pode fazer 0.
 
 **Magia de projétil:** duas rolagens — a mágica (sem redutor de distância) e **Arremesso de
-Mágica** (pré-definido DX−3). Energia 1 a 3, **1d por ponto**, um segundo de concentração por
-ponto. **Exceção: Bola de Fogo Explosiva, energia 2 a 6, 1d a cada 2 pontos**, máximo 3d, e pode
-ser jogada no chão com **+4** para pegar quem está em volta. Bloquear e Esquivar valem; **Aparar,
-não.** A armadura protege.
+Mágica** (pré-definido DX−3). Energia 1 a 3, **1d por ponto**. **Exceção: Bola de Fogo Explosiva,
+energia 2 a 6, 1d a cada 2 pontos**, máximo 3d, e pode ir ao chão com **+4** para pegar quem está
+em volta. Bloquear e Esquivar valem; **Aparar, não.** A armadura protege.
+
+## Quedas
+
+| Altura | Dano por metro |
+| --- | --- |
+| até 2 m | **1D−4** |
+| até 4 m | **1D−3** |
+| 5 m ou mais | **1D−2** |
+
+**Teto 45 m.** **Acrobacia tira até 5 m da altura efetiva**, com teste. **Armadura de metal
+protege com metade da RD**; couro não protege contra queda.
+
+## Trespassar — o golpe bom demais
+
+| Onde | O que se perde |
+| --- | --- |
+| Ponta no **tronco** | dano acima da **Vitalidade** |
+| **Cabeça ou vitais** | dano acima do **triplo da Vitalidade** |
+| Feixe, bola de fogo, descarga | **dobram os dois tetos** |
+| **Cérebro** | **sem teto** |
+
+## Falha em magia
+
+**Sucesso decisivo não gasta energia. Falha comum gasta 1 ponto**, não o custo inteiro. **Falha
+crítica gasta o custo inteiro** e rola-se 3d na tabela do `20` §4.15 — dezesseis resultados, do
+feitiço que vira contra o feiticeiro ao **demônio que aparece e ataca**.
 
 # 7 · Quem cai, e quando
 

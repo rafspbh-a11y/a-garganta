@@ -92,14 +92,16 @@ hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
 </ul>
 <h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
 </nav>
-<main><div class="cabeca"><h1>Cartão de Combate</h1><div class="meta">versão 1 · atualizado em 2026-09-13 · Comece aqui</div></div>
+<main><div class="cabeca"><h1>Cartão de Combate</h1><div class="meta">versão 2 · atualizado em 2026-09-13 · Comece aqui</div></div>
 <blockquote>
 <p><strong>Este é o documento de combate que você anexa ao Projeto.</strong> O <code>20 — Como se joga</code> continua
 existindo inteiro e <strong>não é para anexar</strong>: é para abrir quando a resposta não estiver aqui.
 Tudo abaixo está no <code>20</code>, e o <code>20</code> tem muito mais. <strong>Quando os dois divergirem, vale o <code>20</code>.</strong></p>
-<p><strong>Por que ele existe.</strong> Você tem janela de contexto finita, e o <code>20</code> é longo. Cinco documentos
-anexados rodam uma sessão inteira; trinta sufocam a cena. Este cartão troca trinta páginas de
-combate por uma.</p>
+<p><strong>Por que ele existe.</strong> Você tem janela de contexto finita, e o <code>20</code> é longo. Este cartão tem
+<strong>9,5 KB contra os 60 KB do <code>20</code></strong> — seis vezes menor, e o segundo menor dos cinco documentos
+que se anexam ao Projeto. <strong>É essa a medida, não o número de páginas:</strong> o cartão cresce quando
+a regra nova se usa em toda cena, e não cresce quando a regra é rara — aí ela fica no <code>20</code> e o
+cartão aponta.</p>
 </blockquote>
 <h1>1 · O turno</h1>
 <p><strong>1 turno = 1 segundo.</strong> Uma manobra por turno, escolhida no início dele, e <strong>é ela que decide
@@ -321,6 +323,9 @@ Esquiva</strong>, e esquivar cancela a recarga · <strong>sem Apontar, arma de l
 </table>
 <p><strong>Faca apara a −1</strong> · arma arremessada, −1 · faca arremessada, −2 · mangual, −4.
 <strong>Defesa Passiva do escudo e da armadura soma sempre</strong>, e vale mesmo sem defesa ativa.</p>
+<p><strong>Esgrimista com adaga na mão fraca apara TRÊS vezes:</strong> duas com a arma de esgrima a ⅔, e uma com
+a adaga a ½ de Faca, com o −1. <strong>A mão da adaga não segura tocha, corda, nem faz Judô.</strong></p>
+<p><strong>Quem tiver Apara, Bloqueio ou Esquiva Ampliada</strong> soma <strong>uma defesa daquele tipo</strong> por rodada.</p>
 <h1>5 · Deslocamento, Carga e Esquiva — os dois números da ficha</h1>
 <p><strong>Deslocamento = Velocidade Básica truncada − nível de Carga.</strong> E <strong>Esquiva = Deslocamento</strong>.</p>
 <p><strong>Toda ficha traz dois</strong>, e você usa o certo:</p>
@@ -365,64 +370,70 @@ seguinte, e a mochila fica no chão, onde pode ser levada, queimada ou usada com
 </table>
 <p><strong>Carga acima de Leve tira a Esgrima e o Judô.</strong> <em>(O Anão tem escala própria: Nenhuma 2,5 × ST,
 Leve 5 × ST, Média 10 × ST.)</em></p>
-<h1>6 · Dano</h1>
-<p><strong>Cortante e perfurante nunca fazem menos de 1</strong>; contundente pode fazer 0.</p>
+<h1>6 · Dano, quedas e trespassar</h1>
+<p><strong>O dano de cada personagem já está escrito na ficha dele</strong> — <code>Dano: GdP 1d−2 · GeB 1d</code>. Não se
+consulta tabela de ST no meio da cena. <strong>Cortante e perfurante nunca fazem menos de 1</strong>;
+contundente pode fazer 0.</p>
+<p><strong>Magia de projétil:</strong> duas rolagens — a mágica (sem redutor de distância) e <strong>Arremesso de
+Mágica</strong> (pré-definido DX−3). Energia 1 a 3, <strong>1d por ponto</strong>. <strong>Exceção: Bola de Fogo Explosiva,
+energia 2 a 6, 1d a cada 2 pontos</strong>, máximo 3d, e pode ir ao chão com <strong>+4</strong> para pegar quem está
+em volta. Bloquear e Esquivar valem; <strong>Aparar, não.</strong> A armadura protege.</p>
+<h2>Quedas</h2>
 <table>
 <thead>
 <tr>
-<th>ST</th>
-<th>Golpe de Ponta</th>
-<th>Balanço</th>
-<th></th>
-<th>ST</th>
-<th>Golpe de Ponta</th>
-<th>Balanço</th>
+<th>Altura</th>
+<th>Dano por metro</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>9</td>
-<td>1d−2</td>
-<td>1d−1</td>
-<td></td>
-<td>13</td>
-<td>1d</td>
-<td>2d−1</td>
+<td>até 2 m</td>
+<td><strong>1D−4</strong></td>
 </tr>
 <tr>
-<td>10</td>
-<td>1d−2</td>
-<td>1d</td>
-<td></td>
-<td>14</td>
-<td>1d</td>
-<td>2d</td>
+<td>até 4 m</td>
+<td><strong>1D−3</strong></td>
 </tr>
 <tr>
-<td>11</td>
-<td>1d−1</td>
-<td>1d+1</td>
-<td></td>
-<td>15</td>
-<td>1d+1</td>
-<td>2d+1</td>
-</tr>
-<tr>
-<td>12</td>
-<td>1d−1</td>
-<td>1d+2</td>
-<td></td>
-<td>16</td>
-<td>1d+1</td>
-<td>2d+2</td>
+<td>5 m ou mais</td>
+<td><strong>1D−2</strong></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Magia de projétil:</strong> duas rolagens — a mágica (sem redutor de distância) e <strong>Arremesso de
-Mágica</strong> (pré-definido DX−3). Energia 1 a 3, <strong>1d por ponto</strong>, um segundo de concentração por
-ponto. <strong>Exceção: Bola de Fogo Explosiva, energia 2 a 6, 1d a cada 2 pontos</strong>, máximo 3d, e pode
-ser jogada no chão com <strong>+4</strong> para pegar quem está em volta. Bloquear e Esquivar valem; <strong>Aparar,
-não.</strong> A armadura protege.</p>
+<p><strong>Teto 45 m.</strong> <strong>Acrobacia tira até 5 m da altura efetiva</strong>, com teste. <strong>Armadura de metal
+protege com metade da RD</strong>; couro não protege contra queda.</p>
+<h2>Trespassar — o golpe bom demais</h2>
+<table>
+<thead>
+<tr>
+<th>Onde</th>
+<th>O que se perde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ponta no <strong>tronco</strong></td>
+<td>dano acima da <strong>Vitalidade</strong></td>
+</tr>
+<tr>
+<td><strong>Cabeça ou vitais</strong></td>
+<td>dano acima do <strong>triplo da Vitalidade</strong></td>
+</tr>
+<tr>
+<td>Feixe, bola de fogo, descarga</td>
+<td><strong>dobram os dois tetos</strong></td>
+</tr>
+<tr>
+<td><strong>Cérebro</strong></td>
+<td><strong>sem teto</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>Falha em magia</h2>
+<p><strong>Sucesso decisivo não gasta energia. Falha comum gasta 1 ponto</strong>, não o custo inteiro. <strong>Falha
+crítica gasta o custo inteiro</strong> e rola-se 3d na tabela do <code>20</code> §4.15 — dezesseis resultados, do
+feitiço que vira contra o feiticeiro ao <strong>demônio que aparece e ataca</strong>.</p>
 <h1>7 · Quem cai, e quando</h1>
 <table>
 <thead>

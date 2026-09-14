@@ -100,7 +100,7 @@ E mande a ficha ao Árbitro para homologação.
 ---
 
 titulo: Cartão de Combate
-versao: 1
+versao: 2
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -110,9 +110,11 @@ fonte: cânone aberto de A Garganta
 > existindo inteiro e **não é para anexar**: é para abrir quando a resposta não estiver aqui.
 > Tudo abaixo está no `20`, e o `20` tem muito mais. **Quando os dois divergirem, vale o `20`.**
 >
-> **Por que ele existe.** Você tem janela de contexto finita, e o `20` é longo. Cinco documentos
-> anexados rodam uma sessão inteira; trinta sufocam a cena. Este cartão troca trinta páginas de
-> combate por uma.
+> **Por que ele existe.** Você tem janela de contexto finita, e o `20` é longo. Este cartão tem
+> **9,5 KB contra os 60 KB do `20`** — seis vezes menor, e o segundo menor dos cinco documentos
+> que se anexam ao Projeto. **É essa a medida, não o número de páginas:** o cartão cresce quando
+> a regra nova se usa em toda cena, e não cresce quando a regra é rara — aí ela fica no `20` e o
+> cartão aponta.
 
 # 1 · O turno
 
@@ -186,6 +188,11 @@ Esquiva**, e esquivar cancela a recarga · **sem Apontar, arma de longo alcance 
 **Faca apara a −1** · arma arremessada, −1 · faca arremessada, −2 · mangual, −4.
 **Defesa Passiva do escudo e da armadura soma sempre**, e vale mesmo sem defesa ativa.
 
+**Esgrimista com adaga na mão fraca apara TRÊS vezes:** duas com a arma de esgrima a ⅔, e uma com
+a adaga a ½ de Faca, com o −1. **A mão da adaga não segura tocha, corda, nem faz Judô.**
+
+**Quem tiver Apara, Bloqueio ou Esquiva Ampliada** soma **uma defesa daquele tipo** por rodada.
+
 # 5 · Deslocamento, Carga e Esquiva — os dois números da ficha
 
 **Deslocamento = Velocidade Básica truncada − nível de Carga.** E **Esquiva = Deslocamento**.
@@ -211,22 +218,42 @@ seguinte, e a mochila fica no chão, onde pode ser levada, queimada ou usada com
 **Carga acima de Leve tira a Esgrima e o Judô.** *(O Anão tem escala própria: Nenhuma 2,5 × ST,
 Leve 5 × ST, Média 10 × ST.)*
 
-# 6 · Dano
+# 6 · Dano, quedas e trespassar
 
-**Cortante e perfurante nunca fazem menos de 1**; contundente pode fazer 0.
-
-| ST | Golpe de Ponta | Balanço | | ST | Golpe de Ponta | Balanço |
-| --- | --- | --- | --- | --- | --- | --- |
-| 9 | 1d−2 | 1d−1 | | 13 | 1d | 2d−1 |
-| 10 | 1d−2 | 1d | | 14 | 1d | 2d |
-| 11 | 1d−1 | 1d+1 | | 15 | 1d+1 | 2d+1 |
-| 12 | 1d−1 | 1d+2 | | 16 | 1d+1 | 2d+2 |
+**O dano de cada personagem já está escrito na ficha dele** — `Dano: GdP 1d−2 · GeB 1d`. Não se
+consulta tabela de ST no meio da cena. **Cortante e perfurante nunca fazem menos de 1**;
+contundente pode fazer 0.
 
 **Magia de projétil:** duas rolagens — a mágica (sem redutor de distância) e **Arremesso de
-Mágica** (pré-definido DX−3). Energia 1 a 3, **1d por ponto**, um segundo de concentração por
-ponto. **Exceção: Bola de Fogo Explosiva, energia 2 a 6, 1d a cada 2 pontos**, máximo 3d, e pode
-ser jogada no chão com **+4** para pegar quem está em volta. Bloquear e Esquivar valem; **Aparar,
-não.** A armadura protege.
+Mágica** (pré-definido DX−3). Energia 1 a 3, **1d por ponto**. **Exceção: Bola de Fogo Explosiva,
+energia 2 a 6, 1d a cada 2 pontos**, máximo 3d, e pode ir ao chão com **+4** para pegar quem está
+em volta. Bloquear e Esquivar valem; **Aparar, não.** A armadura protege.
+
+## Quedas
+
+| Altura | Dano por metro |
+| --- | --- |
+| até 2 m | **1D−4** |
+| até 4 m | **1D−3** |
+| 5 m ou mais | **1D−2** |
+
+**Teto 45 m.** **Acrobacia tira até 5 m da altura efetiva**, com teste. **Armadura de metal
+protege com metade da RD**; couro não protege contra queda.
+
+## Trespassar — o golpe bom demais
+
+| Onde | O que se perde |
+| --- | --- |
+| Ponta no **tronco** | dano acima da **Vitalidade** |
+| **Cabeça ou vitais** | dano acima do **triplo da Vitalidade** |
+| Feixe, bola de fogo, descarga | **dobram os dois tetos** |
+| **Cérebro** | **sem teto** |
+
+## Falha em magia
+
+**Sucesso decisivo não gasta energia. Falha comum gasta 1 ponto**, não o custo inteiro. **Falha
+crítica gasta o custo inteiro** e rola-se 3d na tabela do `20` §4.15 — dezesseis resultados, do
+feitiço que vira contra o feiticeiro ao **demônio que aparece e ataca**.
 
 # 7 · Quem cai, e quando
 
@@ -271,7 +298,7 @@ perto, surpresa e as tabelas críticas completas moram lá. **Abra, não decore.
 ---
 
 titulo: Como se joga
-versao: 9
+versao: 10
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -800,6 +827,95 @@ As distâncias em "ST" são **metros**, calculados com a ST de quem atira — e,
 - **Mágica de Localizar e parentes** usam a escada própria do Módulo de Magia, que é de quilômetro e não de hexágono: menos de 100 m, 0; até 800 m, −1; até 1,5 km, −2; até 5 km, −3; até 15 km, −4; até 80 km, −5; até 150 km, −6; até 500 km, −7; até 1.500 km, −8, e −1 por cada 1.500 km a mais. **E −1 por cada objeto conhecido que se mande ignorar na busca.** (MAGIA pág. 10)
 
 ---
+
+## 4.12 Quedas
+
+**Decisão 27, aplicada em 13/09/2026.** Num poço sem fundo, isto não é regra de canto.
+
+| Altura da queda | Dano por metro |
+| --- | --- |
+| **até 2 m** | **1D−4** por metro |
+| **até 4 m** | **1D−3** por metro |
+| **de 5 m em diante** | **1D−2** por metro |
+
+**Teto: 45 metros.** Além disso o dano não cresce — a velocidade terminal já foi atingida, e o
+que muda daí para baixo é a certeza, não o número.
+
+**Acrobacia reduz a altura efetiva em até 5 metros**, com um teste. Quem cai de 5 m e passa em
+Acrobacia cai de zero; quem cai de 20 m e passa cai de 15.
+
+**Armadura de metal medieval protege com metade da resistência**, arredondada para baixo — uma
+cota de malha de RD 4 protege com 2. Couro não protege contra queda: amortece golpe, não chão.
+
+> **Na Garganta a queda é o perigo que o mapa não mostra.** Um vão de 6 m entre andares faz
+> **6D−12**, que numa média de 9 é morte para quem tem PV 12 e coura. O cesto de descida, a corda
+> de 30 m e o arpão do Runirsson existem por isto.
+
+## 4.13 Os tetos de trespassar
+
+**Decisão 29, aplicada em 13/09/2026.** Um golpe pode ser bom demais para o corpo que atinge — a
+lâmina atravessa e o que sobra se perde no ar atrás da vítima.
+
+| Onde | O que se perde |
+| --- | --- |
+| **Golpe de ponta no tronco** | dano acima da **Vitalidade** do alvo **é perdido** |
+| **Cabeça ou órgãos vitais** | dano acima do **triplo da Vitalidade** é desperdiçado |
+| **Feixe, bola de fogo, descarga elétrica** | **dobram os dois tetos** |
+| **Cérebro** | **não há teto** — tudo o que passa, conta |
+
+**Por que isto importa mais do que parece:** sem os tetos, um crítico com dano quadruplicado no
+crânio vira número absurdo e a tabela de morte deixa de funcionar. **Com eles, o crânio continua
+sendo o alvo mais letal e para de ser o alvo infinito.**
+
+## 4.14 Esgrimista com adaga — três aparadas por rodada
+
+**Decisão 30, aplicada em 13/09/2026.** Quem tem **Esgrima** e leva uma **adaga na mão fraca**
+apara **três vezes na mesma rodada**:
+
+- **duas com a arma de esgrima**, a **⅔** do nível, como já vale para todo esgrimista;
+- **uma com a adaga**, a **½** do nível em **Faca**, com o **−1** que toda faca sofre ao aparar.
+
+**A adaga tem de estar na mão**, e mão que segura adaga não segura tocha, não segura corda e não
+faz Judô. **O terceiro bloqueio custa a mão livre**, e numa descida isso é caro.
+
+> **Com Defesa Total** (§4.3) o esgrimista já era ilimitado em aparadas. Esta regra vale para o
+> turno normal, que é onde ela decide.
+
+## 4.15 Falha crítica em operação mágica
+
+**Decisão 33, aplicada em 13/09/2026.** Vale para todo teste de mágica, e vem com duas correções
+de custo que mudam o cálculo do mago:
+
+- **Sucesso decisivo não gasta energia nenhuma.**
+- **Falha comum gasta 1 ponto**, não o custo inteiro da mágica.
+- **Falha crítica gasta o custo inteiro** e rola-se **3d** na tabela abaixo.
+
+| 3d | O que acontece |
+| --- | --- |
+| **3** | Falha completa, e o operador sofre **1D de dano** |
+| **4** | **O feitiço vira contra o feiticeiro** |
+| **5** | Atinge **um companheiro**, escolhido ao acaso |
+| **6** | Atinge **um inimigo próximo**, ao acaso |
+| **7** | Só um **som agudo e cheiro de enxofre** |
+| **8** | Atinge **outra coisa** — amigo, inimigo ou objeto. O Mestre de Cena escolhe ao acaso, ou escolhe o interessante |
+| **9** | Falha completa, **1 ponto de dano** no operador |
+| **10** | Falha completa, e o operador fica **atordoado** |
+| **11** | Só **som intenso e um lampejo de luz colorida** |
+| **12** | O efeito sai, mas **pálido** — uma amostra do que devia ser |
+| **13** | **Efeito inverso ao desejado** |
+| **14** | **Efeito inverso, e no alvo errado** |
+| **15** | Nada acontece, e **o operador esquece a mágica**. Teste de IQ por semana até lembrar; estudar no meio não adianta |
+| **16** | **Parece ter funcionado** — e é ilusão inútil |
+| **17** | Falha completa, e o **braço da arma fica incapacitado por uma semana** |
+| **18** | Falha completa, e **um demônio aparece e ataca o operador** — salvo se a mágica e a intenção eram da melhor espécie, e aí rola-se de novo |
+
+> **O Mestre de Cena pode improvisar no lugar da tabela**, e o livro diz isso. Mas a improvisação
+> tem de ser **coerente com a mágica e com a cena** — e se o resultado sorteado for absurdo ali, ou
+> for justamente o que o operador queria, **rola-se de novo.**
+
+> **O 18 é o único resultado desta campanha que traz criatura de outro plano sem licença de
+> Acesso.** Um demônio chamado por acidente não tem contrato, não tem dono e **não volta sozinho
+> em uma hora** — quem o chamou por engano vai precisar de ajuda para mandá-lo embora.
 
 # 5. Ferimento, incapacitação e morte
 
