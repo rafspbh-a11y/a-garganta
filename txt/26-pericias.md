@@ -1,5 +1,5 @@
 titulo: Tabela de Perícias
-versao: 4
+versao: 7
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -123,7 +123,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Adestramento de Animais | Difícil | Básico |
 | Administração | Média | Básico |
 | **Agronomia** | Média | Básico |
-| Alquimia | Muito Difícil | Básico |
+| Alquimia | Muito Difícil | Básico — **ofício licenciado**, v. §13 |
 | **Antropologia** | Difícil | Básico |
 | Armadilhas | Média | Básico |
 | Armeiro | Média | Básico |
@@ -439,3 +439,23 @@ mundo onde se foge de coisa.
 > **Na ficha, isto é bônus com fonte nomeada** e entra na coluna Bônus, não dentro do NH
 > comprado — `24` §1. Escreve-se `+1 Corrida 16` na linha do Deslocamento. **E entra depois da
 > Carga:** desconta-se o nível de Carga primeiro, soma-se o oitavo da Corrida depois.
+
+
+# 13. Alquimia é ofício licenciado, como a Necromancia
+
+**Decisão do Árbitro de 12/09/2026, escrita em 13/09.** A Alquimia existe na Garganta e **não é
+sacerdócio**: é **ofício civil**, e por isso não passa por Casa nenhuma — passa pela **Guilda**.
+
+**Quem pratica, registra.** A licença é a mesma figura da Necromancia: em nome próprio, revogável,
+e **não se herda nem se empresta**. A diferença está em quem a concede — a Necromancia é regulada
+por **Ámenti e Fengdu**, que são Casas; a Alquimia é regulada pela **Guilda**, que não é.
+
+**E é isso que a torna interessante politicamente:** é o único ofício sobrenatural das sete cidades
+que **não deve nada a deus nenhum**. O alquimista não tem Marca, não tem Dever e não perde o ofício
+por excomunhão. Perde por cassação de registro — e quem cassa é Korvas, não uma Casa.
+
+**Na mesa:** praticar sem licença é o mesmo crime que registrar rank falso. **Vender o que se
+produziu sem licença é o crime maior**, porque aí há comprador, e comprador testemunha.
+
+> **Os elixires do *GURPS Magia* são o produto deste ofício** — catorze, com nome de deus grego, de
+> *Apollo* a *Vulcan*. Preço e classe moram no `21`; a perícia que os faz mora aqui.

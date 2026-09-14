@@ -1,5 +1,5 @@
 titulo: Tabela de Mágicas
-versao: 9
+versao: 10
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -64,7 +64,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 
 > **Nenhuma linha desta tabela manda abrir um livro.** Até 13/09/2026, cinquenta e oito delas diziam apenas *"varia"* ou *"Especial"* e mandavam o Mestre de Cena ao *GURPS Magia* — que ele não tem. **Todas foram preenchidas**, a partir do Compêndio dos dez livros. Se você achar uma linha que não responde, **é defeito e entra como Pendência.**
 **Área:** o custo é o **custo básico multiplicado pelo raio em hexágonos** — é por isso que Silêncio de raio 3 custa 6 e não 2.
-**Pré-requisito: AM** = Aptidão Mágica. **Toda cadeia tem que estar comprada**, até a raiz. Mágica sem pré-requisito na ficha é mágica que não se lança.
+**Pré-requisito: AM** = Aptidão Mágica. **O sinal `#` aqui é do livro e quer dizer quantidade** — `Animação#` lê-se *"tantas mágicas de Animação quantas o verbete pedir"*, e não *"veja o livro"*. **Toda cadeia tem que estar comprada**, até a raiz. Mágica sem pré-requisito na ficha é mágica que não se lança.
 **Fora do domínio da sua Casa:** impossível de comprar, **não impossível de ter** — mas exige acordo, e acordo tem dono e tem dívida (`17` §6.6).
 
 **Onde tirar dúvida, sem sair da cena.** Esta tabela é resumo: ela diz o que a mágica custa e o que exige, não o que ela faz em detalhe. Quando a linha não bastar:

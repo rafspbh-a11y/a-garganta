@@ -6015,7 +6015,7 @@ entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O `04`
 ---
 
 titulo: Tabela de Perícias
-versao: 4
+versao: 7
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -6139,7 +6139,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Adestramento de Animais | Difícil | Básico |
 | Administração | Média | Básico |
 | **Agronomia** | Média | Básico |
-| Alquimia | Muito Difícil | Básico |
+| Alquimia | Muito Difícil | Básico — **ofício licenciado**, v. §13 |
 | **Antropologia** | Difícil | Básico |
 | Armadilhas | Média | Básico |
 | Armeiro | Média | Básico |
@@ -6457,10 +6457,30 @@ mundo onde se foge de coisa.
 > Carga:** desconta-se o nível de Carga primeiro, soma-se o oitavo da Corrida depois.
 
 
+# 13. Alquimia é ofício licenciado, como a Necromancia
+
+**Decisão do Árbitro de 12/09/2026, escrita em 13/09.** A Alquimia existe na Garganta e **não é
+sacerdócio**: é **ofício civil**, e por isso não passa por Casa nenhuma — passa pela **Guilda**.
+
+**Quem pratica, registra.** A licença é a mesma figura da Necromancia: em nome próprio, revogável,
+e **não se herda nem se empresta**. A diferença está em quem a concede — a Necromancia é regulada
+por **Ámenti e Fengdu**, que são Casas; a Alquimia é regulada pela **Guilda**, que não é.
+
+**E é isso que a torna interessante politicamente:** é o único ofício sobrenatural das sete cidades
+que **não deve nada a deus nenhum**. O alquimista não tem Marca, não tem Dever e não perde o ofício
+por excomunhão. Perde por cassação de registro — e quem cassa é Korvas, não uma Casa.
+
+**Na mesa:** praticar sem licença é o mesmo crime que registrar rank falso. **Vender o que se
+produziu sem licença é o crime maior**, porque aí há comprador, e comprador testemunha.
+
+> **Os elixires do *GURPS Magia* são o produto deste ofício** — catorze, com nome de deus grego, de
+> *Apollo* a *Vulcan*. Preço e classe moram no `21`; a perícia que os faz mora aqui.
+
+
 ---
 
 titulo: Tabela de Mágicas
-versao: 9
+versao: 10
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -6525,7 +6545,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 
 > **Nenhuma linha desta tabela manda abrir um livro.** Até 13/09/2026, cinquenta e oito delas diziam apenas *"varia"* ou *"Especial"* e mandavam o Mestre de Cena ao *GURPS Magia* — que ele não tem. **Todas foram preenchidas**, a partir do Compêndio dos dez livros. Se você achar uma linha que não responde, **é defeito e entra como Pendência.**
 **Área:** o custo é o **custo básico multiplicado pelo raio em hexágonos** — é por isso que Silêncio de raio 3 custa 6 e não 2.
-**Pré-requisito: AM** = Aptidão Mágica. **Toda cadeia tem que estar comprada**, até a raiz. Mágica sem pré-requisito na ficha é mágica que não se lança.
+**Pré-requisito: AM** = Aptidão Mágica. **O sinal `#` aqui é do livro e quer dizer quantidade** — `Animação#` lê-se *"tantas mágicas de Animação quantas o verbete pedir"*, e não *"veja o livro"*. **Toda cadeia tem que estar comprada**, até a raiz. Mágica sem pré-requisito na ficha é mágica que não se lança.
 **Fora do domínio da sua Casa:** impossível de comprar, **não impossível de ter** — mas exige acordo, e acordo tem dono e tem dívida (`17` §6.6).
 
 **Onde tirar dúvida, sem sair da cena.** Esta tabela é resumo: ela diz o que a mágica custa e o que exige, não o que ela faz em detalhe. Quando a linha não bastar:
@@ -7663,7 +7683,7 @@ E as correções de grafia — a Relação saiu do arquivo com erro de leitura, 
 ---
 
 titulo: Tabela de Vantagens
-versao: 4
+versao: 5
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -7853,6 +7873,22 @@ Estiveram em uso no cânone e foram substituídas. **Não entram em ficha nova.*
 | Velocidade Superior · Recuperação Rápida | não existem |
 | Vigor | **Hipoalgia**, 10 |
 | Voz | **Voz Melodiosa**, 10 |
+
+# 4b. O que foi pedido e não entra
+
+**Magia Intrínseca não existe na Garganta.** O *GURPS Magia* p.92 a oferece: magia que o
+personagem **traz em si**, sem Casa, sem Marca e sem Dever. **Foi recusada por decisão do Árbitro
+em 12/09/2026, e a recusa fica escrita aqui para que o pedido não volte sem resposta.**
+
+**O motivo é de fundação, não de equilíbrio.** Nesta campanha **toda magia vem de uma Casa**, e é
+essa dependência que faz as sete cidades terem política em vez de só terem geografia. Um mago
+intrínseco é um mago que **nenhuma Casa pode excomungar** — e a excomunhão é a única alavanca que
+as Casas têm sobre quem marcaram. Um só deles apagaria o que o `22` inteiro descreve.
+
+**O que existe no lugar, e cobre quase todos os pedidos:** a **Aptidão Mágica racial** do Elfo e do
+Meio-Elfo (`32`), que poupa os 15 pontos e **não abre colégio nenhum** — mago barato, não mago
+livre; e a **exceção do `17` §6.6**, feitiço fora do domínio por acordo, que tem dono, tem dívida e
+tem nome.
 
 # 5. Índice inverso de bônus — dada a perícia, quem soma nela
 

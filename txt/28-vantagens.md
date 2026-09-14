@@ -1,5 +1,5 @@
 titulo: Tabela de Vantagens
-versao: 4
+versao: 5
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -189,6 +189,22 @@ Estiveram em uso no cânone e foram substituídas. **Não entram em ficha nova.*
 | Velocidade Superior · Recuperação Rápida | não existem |
 | Vigor | **Hipoalgia**, 10 |
 | Voz | **Voz Melodiosa**, 10 |
+
+# 4b. O que foi pedido e não entra
+
+**Magia Intrínseca não existe na Garganta.** O *GURPS Magia* p.92 a oferece: magia que o
+personagem **traz em si**, sem Casa, sem Marca e sem Dever. **Foi recusada por decisão do Árbitro
+em 12/09/2026, e a recusa fica escrita aqui para que o pedido não volte sem resposta.**
+
+**O motivo é de fundação, não de equilíbrio.** Nesta campanha **toda magia vem de uma Casa**, e é
+essa dependência que faz as sete cidades terem política em vez de só terem geografia. Um mago
+intrínseco é um mago que **nenhuma Casa pode excomungar** — e a excomunhão é a única alavanca que
+as Casas têm sobre quem marcaram. Um só deles apagaria o que o `22` inteiro descreve.
+
+**O que existe no lugar, e cobre quase todos os pedidos:** a **Aptidão Mágica racial** do Elfo e do
+Meio-Elfo (`32`), que poupa os 15 pontos e **não abre colégio nenhum** — mago barato, não mago
+livre; e a **exceção do `17` §6.6**, feitiço fora do domínio por acordo, que tem dono, tem dívida e
+tem nome.
 
 # 5. Índice inverso de bônus — dada a perícia, quem soma nela
 
