@@ -1,6 +1,6 @@
 titulo: Bestiário, andares 1 a 12
 versao: 3
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Bestiário, andares 1 a 12

@@ -2,13 +2,13 @@
 
 Este arquivo reúne todos os documentos da Camada Aberta, cada um com o seu
 cabeçalho e o seu número de versão. Anexe-o ao seu Projeto do Claude.
-Gerado em 2026-09-13. Confira a atualização em https://rafspbh-a11y.github.io/a-garganta/estado.md
+Gerado em 2026-09-14. Confira a atualização em https://rafspbh-a11y.github.io/a-garganta/estado.md
 
 ---
 
 titulo: Sessão Zero
 versao: 1
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Sessão Zero
@@ -101,7 +101,7 @@ E mande a ficha ao Árbitro para homologação.
 
 titulo: Cartão de Combate
 versao: 3
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Cartão de Combate
@@ -335,7 +335,7 @@ perto, surpresa e as tabelas críticas completas moram lá. **Abra, não decore.
 
 titulo: Como se joga
 versao: 11
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Como se joga
@@ -1333,7 +1333,7 @@ Por registro, conforme o `14`: linha corrigida não some sem que fique dito o qu
 
 titulo: Regras da Mesa
 versao: 7
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Regras da Mesa
@@ -1728,7 +1728,7 @@ O passo 10 não é regra de GURPS. É da casa, e não é opcional: é o que faz 
 
 titulo: Bíblia do Mundo
 versao: 2
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Bíblia do Mundo
@@ -1987,7 +1987,7 @@ Isso mantém os andares 1 a 10 permanentemente relevantes e dá trabalho digno e
 
 titulo: Geografia: a Coroa e as Sete Cidades
 versao: 1
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Geografia: a Coroa e as Sete Cidades
@@ -2115,7 +2115,7 @@ Distrito circular na boca da Garganta, dentro da Coroa. Cerca de quatro quilôme
 
 titulo: NPCs Nomeados
 versao: 2
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # NPCs Nomeados
@@ -2370,7 +2370,7 @@ Foi da esquadra de Funmilayo por quatro anos e rompeu com ela em praça, na fren
 
 titulo: Andares 1 a 12
 versao: 2
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Andares 1 a 12
@@ -2549,7 +2549,7 @@ Do 11 em diante, o tom muda. Menos trabalho, mais descoberta, e o primeiro sinal
 
 titulo: Bestiário, andares 1 a 12
 versao: 3
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Bestiário, andares 1 a 12
@@ -2899,7 +2899,7 @@ A faixa acima serve para uma coisa só: dizer ao jogador de rank C que o 13 não
 
 titulo: Muda dos Andares
 versao: 5
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Muda dos Andares
@@ -3064,7 +3064,7 @@ Só baú com item mágico tem tranca. O jogador escolhe como abrir **antes do da
 
 titulo: Guia de Criação e Manual de Magia
 versao: 11
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Guia de Criação e Manual de Magia
@@ -3514,7 +3514,7 @@ estavam.
 
 titulo: Improviso, Círculo e Lavra
 versao: 4
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Improviso, Círculo e Lavra
@@ -3821,7 +3821,7 @@ decisão a tomar: são gatilhos**, que disparam quando a mesa chegar neles.
 
 titulo: Os Povos que Subiram
 versao: 2
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Os Povos que Subiram
@@ -4321,7 +4321,7 @@ uma a uma. **Nenhuma proposta segue aberta.**
 
 titulo: Modelos de Personagem
 versao: 1
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Modelos de Personagem
@@ -4440,9 +4440,456 @@ E lembre do **passo 11** da criação: dois NPCs que te conhecem, uma dívida, u
 
 ---
 
+titulo: As Escolas de Luta
+versao: 1
+atualizado: 2026-09-14
+fonte: cânone aberto de A Garganta
+
+# As Escolas de Luta
+
+> **Nota.**
+> **Técnica de arte marcial é presa a estilo, e estilo tem dono.** Esta é a lista fechada das
+> escolas que existem na Garganta. Nenhuma outra existe; nome que faltar vira Pendência antes de
+> virar linha de ficha.
+>
+> **As técnicas estão na Tabela de Perícias**, seção 15, com dificuldade, pré-definido, nível
+> máximo e custo. Aqui está de quem elas são.
+
+# 1 · O que um estilo é — e o que ele não é
+
+**Um estilo não dá bônus.** Ele dá **acesso**. Quem entra numa escola não fica mais forte por ter
+entrado: fica autorizado a comprar, com pontos, o que aquela escola ensina. Quem não entrou não
+compra por preço nenhum.
+
+Toda escola desta lista tem as mesmas quatro partes, e todas as quatro entram na ficha:
+
+1. **A lista de técnicas que ela licencia.** Está no verbete de cada escola, abaixo.
+2. **O preço de entrada**, pago uma vez — em grão, em serviço ou em tempo.
+3. **Uma linha de desvantagem**, que vale pontos e que o Mestre de Cena chama. Dever, Juramento,
+   Dívida, Senso de Dever ou Compulsão, conforme a escola.
+4. **Uma condição de expulsão, escrita.** Ver a seção 4.
+
+**Nenhuma escola é de graça, e nenhuma é irrevogável.** Foi assim que a decisão do Árbitro de
+13/09/2026 as encomendou: *quem ensinou tem nome, e quem ensina pode deixar de ensinar.*
+
+## O teto do que uma escola pode dar, e de onde ele vem
+
+O precedente é de 09/09/2026, e está no circuito do pancrácio, seção 2.2: um estilo nomeado foi
+aprovado com **um benefício só, e estreito** — mãos livres, carga no máximo leve, **+2 em teste
+para não ser derrubado e para se levantar**, que não acumula com nada e não dá bônus de ataque, de
+dano nem de defesa.
+
+**É esse o teto.** Escola nenhuma desta lista concede vantagem, atributo, defesa a mais ou
+modificador de dano. O que ela concede é a licença de gastar ponto onde os outros não podem.
+
+## As três defesas ampliadas passam por aqui
+
+**Apara, Bloqueio e Esquiva Ampliadas** (Tabela de Vantagens, seção 4a) não se compram na criação
+do personagem e **exigem um mestre que tenha nome**. O mestre sai desta lista, e de nenhum outro
+lugar. Quem não está numa escola não compra as três, e quem foi expulso de uma para de subir nelas
+no dia da expulsão.
+
+---
+
+# 2 · As nove escolas
+
+## 2.1 · ÔNFALOS — o Pátio de Bronze
+
+*Casa de Atena.*
+
+**Quem ensina, e onde.** A muralha velha de Ônfalos, que ninguém mantém porque ninguém acredita
+que a cidade será atacada, virou o campo de instrução da Casa de Atena. O pátio fica no trecho
+descoberto, entre a muralha e o primeiro terraço de oliveira, e a instrução é diária, ao amanhecer,
+antes do calor.
+
+**O que custa entrar.** Nada em grão. **O Dever da Marca se estende:** a Casa pode chamar o aluno
+para a linha, e a linha não é metáfora — é uma formação que se forma, em Ônfalos ou na Coroa, com
+o aluno no lugar que lhe couber. Quem já tem Dever à Casa de Atena não paga ponto nenhum a mais;
+quem não tem, compra o Dever.
+
+**A fraqueza estrutural.** **Toda técnica do Pátio pressupõe um homem de cada lado.** Ela ensina o
+que fazer quando a linha se fecha e o inimigo entra pelo vão — cabeçada, cotoveladas, pisão no que
+caiu, torção de pulso em quem agarrou a lança. **Sozinho, o Pátio não vale nada**, e em corredor
+mais estreito que três homens vale menos ainda, que é a largura de quase tudo abaixo do andar 4.
+Um aluno do Pátio no fundo da Garganta está usando um estilo fora do lugar dele, e sabe disso.
+
+**A consequência política.** A Casa de Ares mantém instrução rival, na praia, e chama o Pátio de
+escola de covarde que se esconde atrás de escudo alheio. A Assembleia tenta, toda estação,
+transferir o pátio do santuário para a arrecadação da cidade — a mesma briga que trava pelas
+forjas, e pelo mesmo motivo: enquanto o pátio for da Casa, quem decide quem aprende é a Casa.
+**Gapheim copiou a formação há quarenta anos e desistiu**, porque não tinha como fazer onze
+assentamentos treinarem juntos.
+
+**Licencia:** Golpe com a Cabeça · Golpe com o Cotovelo · Pisão · Torção de Pescoço ·
+Chave de Braço ou de Pulso · Queda.
+
+## 2.2 · ÔNFALOS — o circuito do pancrácio
+
+*Sem Casa. A bolsa é o dono.*
+
+**Quem ensina, e onde.** O circuito é um calendário de lutas com bolsa, que roda entre Ônfalos, as
+ilhas e o anel interno do Limiar. Não tem sede: tem mestres, e cada mestre tem os seus. Ensina-se
+no pátio de quem paga.
+
+**O que custa entrar.** **A bolsa.** Quem banca a sua luta é dono dela — escolhe o adversário, a
+data e a parte que fica com ele. A dívida é em grão e é executável; quem não luta quando o dono da
+bolsa marca, deve o valor da bolsa.
+
+**A fraqueza estrutural.** É desarmado e é esportivo. **Roda sob Regras de Torneio**, e o que as
+Regras proíbem o circuito não ensina: não há golpe nos olhos nem ataque ao rosto na instrução, e
+quem precisa deles num corredor escuro descobre que nunca treinou. Contra armadura, mão vazia é
+mão vazia: o pancraciasta que encontra laudel bate e não passa.
+
+**A consequência política.** Aposta. Ônfalos é agonística e o circuito é onde a cidade aposta
+dinheiro em pessoas — o que significa que **perder na hora certa vale mais do que ganhar**, e todo
+mundo sabe, e ninguém prova. As Casas não o controlam e por isso o toleram; a Assembleia o
+regulamenta duas vezes por década e desiste nas duas.
+
+**O estilo de quatro apoios.** Saiu deste circuito, e é a única concessão mecânica que uma escola
+desta lista faz. **Com as duas mãos livres e carga no máximo leve, +2 em teste para não ser
+derrubado e para se levantar.** Não acumula com nada, não dá bônus de ataque, de dano nem de
+defesa. Quem quiser mais que isso compra Judô ou Acrobacia com pontos. *(Decisão do Árbitro de
+09/09/2026, publicada aqui pela primeira vez.)*
+
+**Licencia:** Jab · Soco Circular Amplo · Soco Coelho · Soco em Círculo · Golpe com a Mão ·
+Bloqueio com a Mão · Golpe com o Cotovelo · Golpe com o Joelho · Chute · Telefone ·
+Deslizamento · Queda.
+
+## 2.3 · GAPHEIM — os que levam o machado ao Thing
+
+*A corte de Sigrun a Lei-Dita.*
+
+**Quem ensina, e onde.** No pátio da corte do Thing, no Limiar, e nos três fiordes quando a corte
+viaja. Em Gapheim, palavra dita no Thing é vinculante, e **quem fala pode ser chamado a sustentar
+a palavra pelas armas**. Nem todo mundo pode fazer isso: o velho, o ferido, a viúva, o que perdeu
+a mão. Os que levam o machado são os que se levantam por eles.
+
+**O que custa entrar.** **Você fica disponível.** Qualquer homem livre pode te chamar para
+sustentar a causa dele, e a chamada é pública. Recusar uma vez encerra a sua passagem pela escola,
+e a corte registra a recusa. Na ficha é **Juramento**, não Dever — e é caro, porque cumpre.
+
+**A fraqueza estrutural.** É estilo de **um adversário, em chão plano, com testemunha e com fim
+combinado**. Termina em chave, não em morte: o duelo do Thing acaba quando um cede, e a instrução
+inteira é feita para chegar ali. **Não tem resposta para número**, e não tem nenhuma para o que não
+aceita desafio — que é tudo o que mora na Garganta. Um homem do machado contra três é um homem que
+vai morrer sabendo exatamente como teria vencido um.
+
+**A consequência política.** Sigrun é intocável e não tem aliados, e as duas coisas são a mesma:
+**ela não deixa a escola virar dela**, e por isso ninguém a controla e ninguém a defende. A Casa de
+Odin a quer, e a quer há vinte anos. Ônfalos chama a coisa inteira de superstição até a primeira
+vez que perde uma causa no Limiar, e aí manda observador. **Ámenti a copiou por escrito**, no
+arquivo, e não conseguiu reproduzi-la: o que falta em Ámenti não é a técnica, é gente que acredite
+que perder um duelo encerra a discussão.
+
+**Licencia:** Chave de Braço ou de Pulso · Chave de Cabeça · Mata-Leão · Segurar Perna · Rasteira ·
+Voadora · Torção de Pescoço · Golpe com a Cabeça · Queda.
+
+## 2.4 · ÁMENTI — o Registro dos Golpes
+
+*Casa de Thoth.*
+
+**Quem ensina, e onde.** Em sala fechada, na margem oeste, ao lado do arquivo. **Não se ensina
+lutando: ensina-se lendo.** Ámenti registra cada descida, cada morte e cada disputa desde antes do
+tratado, e o que se compra aqui é o acervo — como um homem de Gapheim mata, o que uma boca-de-poço
+faz antes de saltar, em que ordem um esgrimista de Ônfalos ataca quando está cansado. O treino de
+corpo vem depois, e é secundário.
+
+**O que custa entrar.** **Você deposita.** Toda luta que você sobreviver vira depoimento escrito,
+arquivado dentro do mês, e verdadeiro. O Tribunal de Maat confere contra o que já tem, e depoimento
+falso é o mesmo crime que registro falso. Na ficha é **Dever ao Tribunal**, e quem já tem
+Honestidade não precisa comprar nada a mais.
+
+**A fraqueza estrutural.** **Ganha da segunda vez, nunca da primeira.** A escola inteira é
+defensiva — bloqueio, apara, quebrar a distância, cair sem se machucar — e o golpe que resolve vem
+depois, quando o arquivo já disse o que o outro vai fazer. Contra o que nunca foi visto, o aluno
+não tem nada: fica vivo e não vence. **É por isso que os fundidos assustam Ámenti mais do que
+assustam as outras seis** — coisa sem registro é coisa que a escola não sabe combater.
+
+**A consequência política.** Este é o arquivo usado como arma, que é o que Ámenti faz com tudo. A
+escola é o motivo prático de a embaixada querer o registro da Guilda: **com ele, o acervo ficaria
+completo**, e Ámenti saberia lutar contra qualquer aventureiro registrado antes de encontrá-lo.
+Korvas não cede, e sabe exatamente por que está sendo pedido. **Fengdu tentou comprar cópia e foi
+recusada**, o que é raro o bastante para ter virado assunto de embaixada.
+
+**Licencia:** Bloqueio Agressivo · Bloqueio com a Mão · Bloqueio com o Pé · Apara do Judô ·
+Deslizamento · Queda. **Exige Análise de Estilo** — sem essa perícia, nenhuma técnica desta escola
+pode ser comprada.
+
+## 2.5 · TULÁN — o Comando de Contenção
+
+*Yax Balam, rank A.*
+
+**Quem ensina, e onde.** Na boca do Poço, no Limiar, aos trezentos que ele comanda e a quem a
+Guilda contratar para contenção rasa. **A escola é o trabalho**: treina-se descendo, e o instrutor
+é quem voltou na semana passada. É a maior escola das nove, de longe, e a única que aceita rank F
+no primeiro dia.
+
+**O que custa entrar.** **Você fica de chamada.** Quando a Pressão de um andar raso sobe, você vai,
+e vai onde mandarem — não onde o contrato pagaria melhor. Na ficha é **Senso de Dever à contenção**,
+e o Mestre de Cena o chama na semana em que a Pressão subir, não na semana que convier ao jogador.
+
+**A fraqueza estrutural.** Foi feita para **tomar coisa viva e segurar a boca de um andar**.
+Prende, imobiliza, arremessa, derruba, e é excelente nisso. **É ruim de matar.** Cada turno gasto
+prendendo é um turno em que a coisa não morreu, e no fundo, onde as coisas não se cansam e a
+esquadra sim, prender é o jeito lento de perder. Contra o que precisa morrer agora, o aluno da
+contenção resolve devagar, e devagar mata quem está do lado dele.
+
+**A consequência política.** **As outras seis cidades pegam carona nisto e nenhuma paga.** Tulán
+banca a instrução, a Guilda banca o contrato, e o resto do mundo colhe um Limiar que não é
+invadido. É a maior alavanca que Tulán tem e ela nunca a usou — e o dia em que Yax Balam fechar a
+escola às outras seis é um dia de crise diplomática. **Ele não fecha porque está cansado, não
+porque é generoso.** Amaravati foi a única que ofereceu pagamento e foi recusada, por escrito, sem
+explicação.
+
+**Licencia:** Apara do Judô · Arremesso do Judô · Rasteira · Varredura · Chave de Braço ou de
+Pulso · Chave de Cabeça · Chave de Dedo · Mata-Leão · Segurar Perna · Voadora · Queda.
+
+## 2.6 · FENGDU — o exame de arma
+
+*O nono distrito.*
+
+**Quem ensina, e onde.** No nono distrito da cidade murada, que é o distrito da avaliação. Fengdu
+admite por exame em tudo, e a luta não é exceção: há um programa, há avaliadores e há nota.
+**Ensina-se por formas** — sequências fixas, executadas diante da banca, contadas e pontuadas.
+
+**O que custa entrar.** **Você presta o exame de novo todo ano.** Reprovar não expulsa: rebaixa, e
+o rebaixamento é público e escrito. Na ficha é **Dever ao Departamento**, e a semana do exame é
+ação de mundo gasta, todo ano, para sempre.
+
+**A fraqueza estrutural.** **É rubrica.** A escola ensina o que o exame mede, e o exame mede o que
+está no programa. **O programa não é revisado desde antes de a Garganta ser interessante:** foi
+escrito para adversários humanos, armados, de pé, que atacam de frente e um por vez. O aluno é
+excelente contra isso e desconcertado por tudo o mais. Uma banca não pode graduar o que não se
+demonstra diante dela — e é por isso que **energia interior não entra no programa**, o que a cidade
+apresenta como rigor e as outras seis leem como o contrário.
+
+**A consequência política.** **A nota é portátil.** As guildas das outras seis começaram a lê-la, e
+um aventureiro com nota de Fengdu negocia melhor sem ter descido mais fundo. Isso é um segundo
+registro, e Korvas não tem resposta para ele: a Guilda classifica por profundidade alcançada, e
+Fengdu classifica por competência demonstrada, e as duas coisas não são a mesma. **Ilê Ifé recusa
+reconhecer a nota**, e recusa em voz alta.
+
+**Licencia:** Bloqueio Agressivo · Bloqueio Agressivo com o Pé · Bloqueio com a Mão ·
+Bloqueio com o Pé · Postura do Gato · Shuto (Mão em Espada) · Golpe com a Mão · Chute.
+
+## 2.7 · AMARAVATI — a Casa de Hanuman
+
+*O pátio do santuário.*
+
+**Quem ensina, e onde.** No pátio do santuário de Hanuman, nos anéis internos, que têm mais de mil
+anos. A instrução é longa e não tem pressa, como a cidade.
+
+**O que custa entrar.** **O voto de não sacar fio.** O aluno não carrega nem usa arma de corte ou
+de ponta — bastão, mão aberta e nada mais. **É por isso que a escola ensina a desarmar**: quem não
+pode matar com lâmina aprende a tirar a lâmina do outro. Na ficha é **Juramento**, e o dharma o
+sustenta: em Amaravati, o que é certo depende de quem você é, e o aluno de Hanuman é alguém que não
+corta.
+
+**A fraqueza estrutural.** Duas, e elas se somam. **Bastão contra armadura é ruim**, e a Garganta
+está cheia de coisa com couro, placa e casco. E **contra o que não tem mão, metade da escola
+simplesmente não existe**: garra, mordida, tentáculo e o que nunca empunhou nada não se desarmam.
+O aluno de Hanuman é formidável contra gente e medíocre contra o andar 6.
+
+**A consequência política.** A regra de não cortar é lida pelas outras seis como fraqueza, e quem a
+lê assim apanha — o que fez a escola virar a prova favorita de Amaravati de que o dharma não é
+ingenuidade. Dentro da cidade é o contrário: **o voto é de casta**, e há brâmanes que consideram
+escandaloso que um santuário ensine luta a quem não nasceu para ela. A escola aceita estrangeiro há
+doze anos e a briga sobre isso não terminou.
+
+**Licencia:** Yawara · Golpe com a Mão · Bloqueio com a Mão · Golpe com o Cotovelo ·
+Golpe com o Joelho · Postura do Gato · Shuto (Mão em Espada) · Chute · Pisão · Queda.
+
+## 2.8 · ILÊ IFÉ — os Doze de Baixo
+
+*Vantê, rank A.*
+
+**Quem ensina, e onde.** Vantê, aos doze batedores dele, e a quem ele conduz. Não há sede e não há
+turma: **ensina-se descendo**, e o que se ensina é o que o cliente precisou naquela descida. Quem
+paga condução e presta atenção sai sabendo mais do que entrou, e isso não está no preço — é o que
+ele faz de graça e não admite que faz.
+
+**O que custa entrar.** **Você não vende o que aprendeu.** Nem mapa, nem aula, nem exclusividade a
+embaixada nenhuma — e a recusa é pública, como as dele. Na ficha é **Juramento**, e ele cobra:
+aluno que abriu escola própria ou vendeu rota deixou de ser aluno no dia, e Ilê Ifé fica sabendo.
+
+**A fraqueza estrutural.** É estilo de quem vai embora. Varre a perna, quebra o joelho do que está
+no caminho, desliza para fora do alcance e **atravessa**. **Não sabe segurar terreno e não sabe
+acabar uma luta.** Numa contenção — que é metade do trabalho pago da Garganta — o aluno dos Doze
+faz o inimigo passar por ele, que é exatamente o oposto do contratado. Vantê considera isso uma
+qualidade e não está claro que esteja errado.
+
+**A consequência política.** Ele recusa virar cargo, concessão ou selo de cidade nenhuma, e recusou
+as sete embaixadas uma por uma, em praça, para que a recusa ficasse registrada. Mas **são doze
+bocas por semana**, e é por isso que ele aceita contrato que preferiria recusar — e quem entende
+isso contrata na semana errada de propósito. **A rival é Funmilayo**, que foi da esquadra dele, e a
+briga é sobre método: ela diz que ele vende dependência, ele diz que ela vende gente morta com dois
+anos de atraso. Nenhum dos dois está falando de golpe.
+
+**Licencia:** Chute · Chute Circular (Giratória) · Chute Circular Lateral/para Trás ·
+Chute Descendente · Chute Para Trás · Chute Saltando · Golpe com a Canela · Varredura ·
+Bloqueio com o Pé · Bloqueio Agressivo com o Pé · Rasteira · Deslizamento.
+
+## 2.9 · OS FIADORES — fiança de contrato
+
+*Não é cidade. É companhia.*
+
+**Quem ensina, e onde.** Numa casa de estrada na Coroa, fora das sete, e em qualquer lugar onde
+tenham gente no livro. **Os Fiadores garantem contrato:** uma folha da Guilda com o selo deles paga
+ao contratante mesmo se a esquadra inteira morrer. Quem garante risco tem interesse em risco
+barato, e gente treinada é risco barato — por isso a companhia ensina, e ensina bem.
+
+**O que custa entrar.** **Seu nome entra no livro, com um valor ao lado.** Comida, aço, teto e
+instrução são lançados como empréstimo, e trabalham-se de volta em contrato garantido. O valor não
+é segredo: qualquer um pode perguntar quanto você deve, e a companhia responde. Na ficha é
+**Dívida**, e ela não prescreve — a companhia considera que documento que a pessoa assina em si
+mesma não vale nada, e quem some continua no livro como inadimplente.
+
+**A fraqueza estrutural.** A instrução inteira serve a uma coisa: **trazer a carga de volta**. É
+esgrima de recuo e de distância — impacto de parada, mergulho, romper o alcance, sair. E por isso
+**o aluno recusa a briga que o cliente quer**: quando a escolha é entre entregar a encomenda e
+vencer a luta, a escola manda entregar, e manda por reflexo, antes de qualquer decisão. Já custou
+contrato, já custou aliado, e a companhia trata isso como preço aceitável, o que não é a opinião de
+quem estava do lado.
+
+**A consequência política.** **Uma companhia que possui nomes nas sete cidades é a instituição que
+o tratado do Limiar não previu.** O selo vale dinheiro e o registro da Guilda não promete o que ele
+promete: Korvas registra quem você é, e o Fiador garante que alguém paga. As sete cidades tratam a
+companhia como fornecedor e nenhuma quer discutir o que ela é. **Só eles ensinam esgrima**, e é o
+motivo prático de meio duelista do Limiar dever alguma coisa a eles — inclusive gente que jura não
+dever, e gente que aprendeu com quem aprendeu lá.
+
+**São os únicos que ensinam as duas técnicas que o circuito do pancrácio recusa** — golpe nos olhos
+e ataque ao rosto. Uma companhia que garante entrega ensina o que ganha, não o que é limpo.
+
+**Licencia:** Flecha · Impacto de Parada · Mergulho no Chão · Estocada · Corpo-a-Corpo ·
+Golpe nos Olhos · Ataques contra o Rosto · Deslizamento · Queda.
+
+---
+
+# 3 · As oito técnicas que não têm dono
+
+**Decisão do Árbitro de 14/09/2026.** Oito técnicas do *GURPS Artes Marciais* não têm perícia-mãe
+nomeada: o livro as pré-define contra *"qualquer perícia de combate"*. **Elas não são presas a
+estilo.** Quem tem a perícia da arma tem acesso a elas, sem escola, sem mestre e sem dever nada a
+ninguém.
+
+| Técnica | Pré-definido | O que faz |
+| --- | --- | --- |
+| **Finta** | qualquer perícia de combate | A finta do Como se joga, aperfeiçoada |
+| **Desarmar** | DX · Judô · perícia com arma | Tirar a arma da mão do outro |
+| **Ponto de Impacto** | qualquer perícia de combate−3 | Acertar onde se quer acertar |
+| **Riposta** | perícia com arma−4 | Contra-atacar na aparada |
+| **Conservar a Arma** | perícia com arma · DX | Não perder a arma quando tentam tirá-la |
+| **Combate de Perto** | perícia com arma de perto−2 · outra−6 | Lutar dentro do hex |
+| **Luta no Solo** | qualquer perícia de combate−4 | Lutar caído |
+
+**Por que são livres, e a razão importa.** Fintar, desarmar e mirar são manobra de quem sabe usar a
+arma, não doutrina de escola. Prendê-las a estilo faria com que um soldado de trinta anos de ofício
+não soubesse fintar por não ter frequentado ninguém, o que é falso no livro e falso no mundo. **As
+escolas continuam valendo o preço que cobram**, porque as quarenta e quatro que sobram são delas, e
+são as que decidem uma luta.
+
+> **Uma oitava técnica ficou de fora desta tabela de propósito.** O *Artes Marciais* traz **Treino
+> no Manejo de Armas com a Mão Inábil** (p.53), que é a mesma coisa que a Tabela de Perícias já
+> lista **duas vezes**, como perícia: *Treino do Manejo de Armas com a Mão Inábil* (*Fantasy* p.63)
+> e *Uso da Arma com a Mão Inábil* (*Império Romano* p.37). **Acrescentar um terceiro nome para a
+> mesma coisa numa tabela fechada seria errado**, e reduzir três a um é decisão do Árbitro, não
+> minha. Fica Pendência aberta. Até lá, compra-se pela linha que já existe.
+
+---
+
+# 4 · Entrar, ser expulso, e trocar de escola
+
+**Entra-se com ação de mundo e com o preço pago.** A escola não aceita por dinheiro só: aceita por
+apresentação, por serviço prestado ou por quem responde por você, conforme o verbete. A homologação
+registra a entrada, e a linha de desvantagem entra na ficha na mesma semana.
+
+**A expulsão é escrita em cada verbete**, e é sempre por quebra do preço — não por desempenho
+ruim. Escola nenhuma expulsa aluno fraco; todas expulsam aluno que não pagou o que prometeu.
+
+**O que a expulsão faz, exatamente:**
+
+- **Você não desaprende.** Toda técnica comprada fica no nível em que está, para sempre.
+- **Elas param de subir.** Nenhum ponto novo entra em técnica daquela escola.
+- **As três defesas ampliadas travam**, porque exigem mestre e você não tem mais.
+- **Você pode entrar em outra escola**, e as técnicas que as duas licenciam voltam a subir.
+
+**Trocar de escola é permitido e é caro.** A linha de desvantagem da escola antiga sai da ficha, e
+com ela saem os pontos que ela dava — que precisam vir de algum lugar. **Ninguém troca de graça, e
+ninguém troca sem que a antiga saiba.**
+
+---
+
+# 5 · Estilo não é cidade
+
+**Escola aceita estrangeiro, e quase todas aceitam.** Um tulteca pode ter aprendido com os Fiadores;
+um homem de Ônfalos pode ter passado pelo Comando de Contenção; o Pátio de Bronze já treinou gente
+de Gapheim e tem os nomes anotados.
+
+**Isso é regra, e não exceção**, por três razões:
+
+1. **A Guilda registra pessoas, não cidades.** Quem paga o preço de uma escola entra nela.
+2. **Metade do que acontece na Garganta acontece no Limiar**, onde as sete se misturam por desenho.
+3. **O contrário empobreceria a mesa** sem ganhar nada: personagem nasce onde o jogador quis e
+   aprendeu onde a história dele o levou, e as duas coisas não precisam bater.
+
+**O que a escola cobra, ela cobra igual de todos.** A única diferença que a cidade faz é política:
+aluno estrangeiro numa escola de Casa é assunto de embaixada, e há semanas em que isso custa caro.
+
+> **Para o Mestre de Cena.** Quando um personagem já usa uma perícia de combate e não tem escola
+> declarada, **não invente uma**. Pergunte ao jogador com quem ele aprendeu, e trate a resposta
+> como fato do mundo. Se ele não souber, a resposta existe e ainda não foi dita — e é bom gancho,
+> não é buraco.
+
+---
+
+# 6 · O que ficou de fora, e por quê
+
+**O cinematográfico não entra.** A decisão 34 do Árbitro vale inteira: **doze técnicas** que o
+próprio *GURPS Artes Marciais* marca como Cinematográficas ficam fora, e **dezoito perícias de
+energia interior** ficam fora com elas. Nesta campanha o sobrenatural passa por Casa, por Marca e
+por Dever — poder sem dono foi recusado quando a Magia Intrínseca foi recusada, e é a mesma recusa.
+
+**Quatro técnicas são de criatura, não de gente**, e ficam fora por isso: duas exigem cauda, uma
+pertence a um estilo que o próprio livro dá a um bicho, e **Chute em Varredura exige a perícia
+Vôo** e é manobra de combate aéreo.
+
+**Os estilos nomeados do livro não entram.** Os cinquenta e oito estilos do *GURPS Artes Marciais*
+citam países que não existem neste mundo, e caem no filtro da decisão 53: *entra o que funciona sem
+o cenário do livro; fica fora o que só existe naquele mundo.* **As nove escolas acima são da
+Garganta, e são as únicas.**
+
+**Seis perícias de arma ficaram fora pelo mesmo filtro**, por decisão do Árbitro de 14/09/2026 —
+são armas de nome próprio de um povo que não está entre as sete. Onde uma delas fazia parte do
+pré-definido de uma técnica, **o pré-definido foi reduzido ao que a Tabela de Perícias tem**, e a
+Tabela diz isso na linha.
+
+---
+
+# 7 · O que ainda não tem escola
+
+**Dito na cara, para não parecer lacuna escondida.** Nenhuma das nove ensina técnica de **arco, de
+besta, de funda ou de arremesso** — o livro traz as de projétil no capítulo cinematográfico, e elas
+caíram com ele. Batedor de Ilê Ifé, escriba de Ámenti e caçadora de Fengdu atiram pela perícia,
+como sempre atiraram, e **não perdem nada**: não há técnica de projétil realista neste acervo para
+eles perderem.
+
+**E há três coisas que são Pendência, não lacuna:**
+
+1. **A escola de machado de Gapheim fora da corte.** Os que levam o machado ao Thing ensinam o
+   duelo; quem quiser machado de guerra em formação não tem onde aprender, e o que existe disso na
+   cidade é a família, que não aceita de fora.
+2. **Ámenti tem uma segunda força armada** — a guarda da necrópole, na margem oeste — que não é
+   escola nesta lista e talvez devesse ser.
+3. **A Casa de Sekhmet existe** e é a Casa da guerra numa cidade que nega ser marcial. Não tem
+   verbete aqui, e a ausência é escolha, não esquecimento.
+
+
+---
+
 titulo: Ficha Pública e Notoriedade
 versao: 2
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Ficha Pública e Notoriedade
@@ -4491,7 +4938,7 @@ O registro é da Guilda, e a Guilda não apaga. Quem quiser suprimir uma linha �
 
 titulo: Regra de Escrita da Ficha
 versao: 7
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha
@@ -4630,7 +5077,7 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
 
 titulo: A Magia no Mundo e as Sete Forjas
 versao: 3
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # A Magia no Mundo e as Sete Forjas
@@ -4752,7 +5199,7 @@ Ilê Ifé não encanta: **assenta**. O item é consagrado a um orixá — a lâm
 
 titulo: Economia e Tabelas
 versao: 8
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Economia e Tabelas
@@ -5208,7 +5655,7 @@ Contratado que consta em ficha homologada é NPC nomeado e **morre em −HT** (`
 
 titulo: Loot, Balcão e Registro
 versao: 4
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Loot, Balcão e Registro
@@ -5488,7 +5935,7 @@ companheiro, a mochila do morto. E aí é uma soma, contra esta tabela.
 
 titulo: Carta do Árbitro
 versao: 1
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Carta do Árbitro
@@ -5535,7 +5982,7 @@ Quando esta Carta e o cânone entrarem em conflito, prevalece esta Carta, e o co
 
 titulo: Protocolo do Mestre de Cena
 versao: 12
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Protocolo do Mestre de Cena
@@ -5843,7 +6290,7 @@ Abra Pendência e pergunte ao Árbitro. Um jogo travado por meia hora é melhor 
 
 titulo: Entrega do Relatório pelo Google Drive
 versao: 7
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Entrega do Relatório pelo Google Drive
@@ -5996,8 +6443,8 @@ Se o personagem morto era de **rank B ou superior**, a opção não-humana fica 
 ---
 
 titulo: Índice e Regra de Escrita
-versao: 8
-atualizado: 2026-09-13
+versao: 9
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Índice e Regra de Escrita
@@ -6086,6 +6533,10 @@ fonte: cânone aberto de A Garganta
 <tr>
 <td>**30**</td>
 <td>Improviso, Círculo e Lavra — como se cria magia nova</td>
+</tr>
+<tr>
+<td>**33**</td>
+<td>As Escolas de Luta — as nove escolas que ensinam técnica de arte marcial</td>
 </tr>
 <tr>
 <td>**04b**</td>
@@ -6309,14 +6760,15 @@ entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O `04`
 ---
 
 titulo: Tabela de Perícias
-versao: 10
-atualizado: 2026-09-13
+versao: 11
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Tabela de Perícias
 
 > **Nota.**
 > **Lista fechada.** O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha.
+> **Versão 4, de 14/09/2026 — as técnicas entraram, e têm dono.** A seção 15 é nova: **51 técnicas de *Artes Marciais***, com pré-definido, teto e escola. **Quarenta e quatro são presas a estilo** — a decisão 56 do Árbitro —, e as **nove escolas que as ensinam estão em *As Escolas de Luta* (`33`)**, com quem ensina, o que cobra e o que a expulsão custa. **Sete são livres**, porque o livro as pré-define contra *qualquer perícia de combate*, e prender fintar e desarmar a uma escola seria falso. Na mesma passada, a seção 14 passou de "as outras sete" para **as outras dezoito**, que é o número real, e a seção 10 corrigiu a contagem das mágicas.
 > **Versão 3, de 13/09/2026 — e as perícias da casa acabaram.** O Árbitro passou os dez livros de GURPS que a campanha possui a livros de mesa, e as quatro perícias inventadas em setembro se resolveram sozinhas: **Intimidação** tem verbete em quatro livros, e é Mental/Média, exatamente como estava; **Exorcismo** tem verbete no *Horror* (p.43), Mental/Difícil, e o livro diz na cara que *"não é uma mágica, é uma perícia religiosa"* — que era a decisão do Árbitro, palavra por palavra; **Selos e Sigilos** virou **Heráldica**, que já estava na lista, com a mesma dificuldade; e **Cartografia**, a única sem verbete em livro nenhum, saiu (v. §6).
 > **Versão 2, de 10/09/2026.** Vinte e nove perícias de livro que a versão 1 tinha deixado de fora entraram; **Caligrafia** passou de mental para **Física/Média**, como está no livro; e **Boemia** saiu da nota das mentais, porque é física.
 > **Como se lê uma linha de ficha está no `24`.** Toda perícia entra na ficha com sete campos: nome · tipo/dificuldade · relativo ao atributo · pontos · NH comprado · bônus com a fonte · NH efetivo.
@@ -6736,9 +7188,18 @@ a catapulta e não deixa ninguém **operá-la**.
 
 # 10. Alcance desta tabela, dito na cara
 
-- **As perícias** vêm dos três livros, verbete a verbete, **completas** para o nível tecnológico da campanha.
-- **As mágicas** (`27`) são **429**: **413** da Relação das Mágicas do *GURPS Magia*, mais **16** do *Grimório* — as quatro que a decisão 1 do `25` nomeou e as doze da sub-escola de Eletricidade que o `31` trouxe. **A transcrição do restante do Grimório está em curso desde 13/09/2026**, por decisão do Árbitro, com as três escolas Tecnológicas — Máquinas, Energia e Radiação — ficando de fora pelo mesmo recorte de nível tecnológico desta seção.
-- **Talismã**, do Grimório, é encantamento e não perícia. Foi por isso que a perícia da casa com esse nome primeiro se chamou Selos e Sigilos e depois virou **Heráldica**, que é de livro.
+- **As perícias** são **191**, e vêm dos **dez** livros que a campanha possui, verbete a verbete,
+  **completas** para o nível tecnológico das sete cidades. *(Esta linha dizia "os três livros", que
+  era verdade até 13/09/2026, quando o Árbitro passou os dez livros da estante a livros de mesa.)*
+- **As técnicas** (§15) são **51**, todas do *GURPS Artes Marciais*, e **quarenta e quatro são
+  presas a estilo** — as escolas estão em *As Escolas de Luta* (`33`). Entraram em 14/09/2026.
+- **As mágicas** (`27`) são **768**, em 778 linhas — contadas em 14/09/2026. *(Esta linha dizia
+  **429**, que era o número antes da leva da noite de 13/09, quando 274 mágicas do Grimório
+  entraram. O cabeçalho da própria Tabela de Mágicas ainda repete o 429 e também está errado.)*
+  **As três escolas Tecnológicas — Máquinas, Energia e Radiação — ficam de fora** pelo mesmo recorte
+  de nível tecnológico da §9.
+- **Talismã**, do Grimório, é encantamento e não perícia. Foi por isso que a perícia da casa com
+  esse nome primeiro se chamou Selos e Sigilos e depois virou **Heráldica**, que é de livro.
 
 # 11. Nomes que existem em duas tabelas ao mesmo tempo
 
@@ -6752,11 +7213,11 @@ de livro, e nenhuma pode ceder o nome.**
 > cortesia.
 
 A lista sai do cruzamento das quatro tabelas fechadas e **é conferida a cada versão**. Hoje são
-**catorze**:
+**dezesseis**:
 
 | Nome | Vive em |
 | --- | --- |
-| **Escalada · Escudo · Exorcismo · História · Vôo** | perícia × mágica |
+| **Cavalgar · Escalada · Escudo · Exorcismo · História · Sacar Rápido · Vôo** | perícia × mágica |
 | **Ambidestria · Ouvido Aguçado · Prontidão · Visão Aguçada · Visão Noturna** | vantagem × mágica |
 | **Amnésia · Fúria · Magreza** | desvantagem × mágica |
 | **Destino** | **vantagem × desvantagem** — e este é de outra natureza |
@@ -6766,7 +7227,14 @@ A lista sai do cruzamento das quatro tabelas fechadas e **é conferida a cada ve
 > Na ficha escreve-se o sinal, não o tipo — `Destino +10` ou `Destino −10` —, e **ninguém compra
 > os dois.**
 
-> **Quatro entraram em 13/09/2026 e não estavam na lista de dez desta manhã:** Ambidestria,
+> **Dois entraram em 14/09/2026, e a conferência que os achou foi a desta leva.** **Cavalgar** é
+> perícia (*Básico*, por tipo de montaria) e é mágica (*Magia* p.22, escola de Controle Animal);
+> **Sacar Rápido** é perícia (*Básico*, por tipo de arma) e é **encantamento** na Tabela de
+> Mágicas. Os dois são nomes que aparecem em ficha de verdade, e os dois passam a exigir o tipo na
+> linha. A lista dizia catorze desde 13/09 e estava incompleta — **a frase foi corrigida, não
+> anotada.**
+
+> **Quatro entraram em 13/09/2026 e não estavam na lista de dez daquela manhã:** Ambidestria,
 > Amnésia, Magreza e Destino. As três primeiras vieram com as 339 mágicas do Grimório; Destino
 > veio do Império Romano, pela decisão 53. **A conferência de colisão passou a ser item da bateria
 > de verificação** — tabela que cresce cria nome repetido, e nome repetido em ficha é linha que
@@ -6849,17 +7317,153 @@ o que sobra quando se tira o chi** — respiração, controle de dor e alavanca.
 | **Controle das Funções Involuntárias** | Domínio de respiração, batimento e dor: retarda hemorragia, aguenta frio, engana quem toma o pulso |
 | **Arte do Arremesso** | Arremessar o que não foi feito para ser arremessado, com precisão |
 
-**As outras sete ficam fora** — Pontos de Pressão, Pontos Secretos, Punhos Voadores, Mãos
-Hipnóticas, Resistência Mental, Deslocar e Desviar. Elas dependem de energia interior, e **nesta
-campanha o sobrenatural passa por Casa, por Marca e por Dever**. Poder sem dono é o que a recusa da
-Magia Intrínseca barrou no mesmo dia.
+**As outras dezoito ficam fora** — Apara Precognitiva, Arqueiro Zen, Arte da Invisibilidade,
+Ch'in Kung, Cura Yin/Yang, Deslocar, Desviar, Golpe Desintegrador, Kiai, Mãos Hipnóticas, Ponto de
+Cegamento, Pontos de Pressão, Pontos Secretos, Postura Imóvel, Punhos Voadores, Resistência Mental,
+Salto Voador e Toque da Morte. Elas dependem de energia interior, e **nesta campanha o sobrenatural
+passa por Casa, por Marca e por Dever**. Poder sem dono é o que a recusa da Magia Intrínseca barrou
+no mesmo dia.
+
+> **Esta frase dizia "as outras sete", e nomeava sete.** São dezoito, e as onze que faltavam não
+> apareciam em documento nenhum do cânone — nem para entrar, nem para ficar de fora. Contadas
+> contra o Compêndio em 14/09/2026 e corrigidas aqui, no lugar da frase errada. Nenhuma decisão
+> mudou: a decisão 34 já as barrava todas, em bloco. **Estilo Embriagado** é a única de fronteira,
+> porque o verbete não cita energia interior — fica fora com as outras, e a razão é o filtro do
+> nome, não o do chi.
+
+
+# 15. As técnicas de Artes Marciais — e de quem elas são
+
+**Entraram em 14/09/2026, e nenhuma é livre de graça.** A decisão 56 do Árbitro diz que **técnica é
+presa a estilo, e estilo tem dono**: vêm em pacotes que uma cidade, uma Casa ou uma companhia
+ensina, e quem ensina pode deixar de ensinar. **As nove escolas estão em *As Escolas de Luta*
+(`33`)** — com quem ensina, o que cobra, o que faz mal e o que a expulsão custa.
+
+**São 51 linhas: 44 presas a escola e 7 livres.** As sete livres são as que o livro pré-define
+contra *"qualquer perícia de combate"* — quem sabe usar a arma as compra sem escola, sem mestre e
+sem dever nada (decisão do Árbitro, 14/09/2026).
+
+## Como se compra uma técnica
+
+**Técnica não é perícia**, e não usa a tabela da seção 1. Compra-se **acima do pré-definido**, e o
+teto está na coluna *Teto*:
+
+| Dificuldade | +1 | +2 | +3 | +4 | acima |
+| --- | --- | --- | --- | --- | --- |
+| **Média** | ½ | 1 | 2 | 4 | +2/nível |
+| **Difícil** | 1 | 2 | 4 | 6 | +2/nível |
+| **Especial** | — | — | — | — | **não se compra: vem junto com a perícia-mãe, de graça** |
+
+**As de dificuldade Especial não custam ponto nenhum.** Quem tem a perícia-mãe e a escola que as
+licencia já as tem. O que elas não fazem é subir.
+
+**Três travas, e valem para todas:**
+
+1. **Sem escola, não se compra** — nem meio ponto, nem pelo pré-definido. As sete livres são a
+   exceção, e estão marcadas.
+2. **Nenhuma técnica ultrapassa o teto**, e o teto quase sempre é o NH da perícia-mãe. Subir a
+   técnica exige subir a perícia primeiro.
+3. **Expulso da escola, a técnica para no nível em que está** e nunca mais sobe (`33` §4).
+
+## A tabela
+
+| Técnica | Dif. | Pré-definido | Teto | Escola | Livro |
+| --- | --- | --- | --- | --- | --- |
+| Apara do Judô | Especial | 2/3 do NH em Judô | não sobe | Registro · Contenção | p.51 |
+| Arremesso do Judô | Especial | NH em Judô | não sobe | Contenção | p.51 |
+| Ataques contra o Rosto | Difícil | Briga-5 | NH da perícia-mãe | Fiadores | p.48 |
+| Bloqueio Agressivo | Difícil | Apara de Caratê-4 | ⅔ do NH em Caratê | Registro · exame | p.43 |
+| Bloqueio Agressivo com o Pé | Difícil | Bloqueio com o Pé-4 | metade do NH da perícia-mãe | exame · Doze de Baixo | p.44 |
+| Bloqueio com a Mão | Especial | 2/3 do NH em Caratê, Briga ou Boxe | só com Apara Ampliada | pancrácio · Registro · exame · Hanuman | p.49 |
+| Bloqueio com o Pé | Especial | Briga/2 · Caratê/2 | não sobe | Registro · exame · Doze de Baixo | p.53 |
+| Chave de Braço ou de Pulso | Média | Judô · perícia com arma que sirva de alavanca (Bastão Curto, Espada Curta) | — | Pátio de Bronze · Thing · Contenção | p.44 |
+| Chave de Cabeça | Difícil | Judô-4 | NH da perícia-mãe | Thing · Contenção | p.50 |
+| Chave de Dedo | Difícil | Chave de Braço-3 | — | Contenção | p.48 |
+| Chute | Difícil | Caratê-2 · Briga-2 | NH da perícia-mãe | pancrácio · exame · Hanuman · Doze de Baixo | p.52 |
+| Chute Circular (Giratória) | Difícil | Caratê-3 · Chute-1 | NH da perícia-mãe | Doze de Baixo | p.51 |
+| Chute Circular Lateral/para Trás | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Doze de Baixo | p.55 |
+| Chute Descendente | Difícil | Caratê-4 · Chute-2 | NH da perícia-mãe | Doze de Baixo | p.44 |
+| Chute Para Trás | Difícil | Caratê-4 · Chute-2 | NH em Caratê | Doze de Baixo | p.45 |
+| Chute Saltando | Difícil | Caratê-4 · Chute-2 | NH da perícia-mãe | Doze de Baixo | p.52 |
+| Combate de Perto | Média | perícia de arma de combate de perto−2 · outra perícia com arma−6 | NH da perícia-mãe | **livre** | p.46 |
+| Conservar a Arma | Difícil | perícia com arma (arma de mão) · DX (arma de alcance, por tipo) | — | **livre** | p.53 |
+| Corpo-a-Corpo | Difícil | Esgrima | NH da perícia-mãe +2 | Fiadores | p.46-47 |
+| Desarmar | Difícil | DX · Judô · perícia com arma | — | **livre** | p.47 |
+| Deslizamento | Difícil | Esquiva-3 | Esquiva sem Carga | pancrácio · Registro · Doze de Baixo · Fiadores | p.54 |
+| Estocada | Média | Esgrima-2 | NH da perícia-mãe | Fiadores | p.52 |
+| Finta | Difícil | qualquer perícia de combate | NH da perícia-mãe+4 | **livre** | p.48 |
+| Flecha | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.48-49 |
+| Golpe com a Cabeça | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | Pátio de Bronze · Thing | p.50 |
+| Golpe com a Canela | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Doze de Baixo | p.54 |
+| Golpe com a Mão | Especial | NH em Caratê, Briga ou Boxe | não sobe | pancrácio · exame · Hanuman | p.49 |
+| Golpe com o Cotovelo | Média | Caratê-2 | NH da perícia-mãe | Pátio de Bronze · pancrácio · Hanuman | p.47 |
+| Golpe com o Joelho | Média | Caratê-1 · Briga-1 | NH da perícia-mãe+2 | pancrácio · Hanuman | p.52 |
+| Golpe nos Olhos | Difícil | Caratê-9 · Briga-9 | NH da perícia-mãe | Fiadores | p.47-48 |
+| Impacto de Parada | Difícil | Esgrima-4 | NH em Esgrima | Fiadores | p.55-56 |
+| Jab | Média | Boxe-3 · Caratê-3 | NH da perícia-mãe | pancrácio | p.51 |
+| Luta no Solo | Difícil | qualquer perícia de combate-4 | NH da perícia-mãe | **livre** | p.49 |
+| Mata-Leão | Difícil | Judô-2 | NH da perícia-mãe | Thing · Contenção | p.45-46 |
+| Mergulho no Chão | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.49 |
+| Pisão | Média | Briga-3 · Caratê-3 · Chute-1 | NH da perícia-mãe | Pátio de Bronze · Hanuman | p.56 |
+| Ponto de Impacto | Difícil | qualquer perícia de combate-3 | NH da perícia-mãe | **livre** | p.50-51 |
+| Postura do Gato | Média | Caratê-3 | NH em Caratê+2 | exame · Hanuman | p.45 |
+| Queda | Média | Judô · Acrobacia | — | Pátio de Bronze · pancrácio · Thing · Registro · Contenção · Hanuman · Fiadores | p.45 |
+| Rasteira | Especial | NH em Judô | não sobe | Thing · Contenção · Doze de Baixo | p.56 |
+| Riposta | Difícil | perícia com arma-4 | NH da perícia-mãe | **livre** | p.54 |
+| Segurar Perna | Especial | NH em Briga, Judô ou Caratê | não sobe | Thing · Contenção | p.52 |
+| Shuto (Mão em Espada) | Difícil | Caratê-3 | NH em Caratê | exame · Hanuman | p.54 |
+| Soco Circular Amplo | Média | Briga-3 · Boxe-3 | NH da perícia-mãe | pancrácio | p.54 |
+| Soco Coelho | Média | Briga-3 | NH em Briga | pancrácio | p.53 |
+| Soco em Círculo | Difícil | Caratê-2 | NH em Caratê | pancrácio | p.55 |
+| Telefone | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | pancrácio | p.47 |
+| Torção de Pescoço | Difícil | ST-4 | ST+3 | Pátio de Bronze · Thing | p.53 |
+| Varredura | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Contenção · Doze de Baixo | p.56 |
+| Voadora | Difícil | Caratê-4 | NH da perícia-mãe | Thing · Contenção | p.47 |
+| Yawara | Média | Briga-5 · Caratê-3 | NH da perícia-mãe | Hanuman | p.57 |
+
+## O que foi cortado dos pré-definidos, e por quê
+
+**Seis perícias de arma do *GURPS Artes Marciais* não existem na Garganta** — são armas de nome
+próprio de um povo que não está entre as sete, e caem no filtro da decisão 53. Onde o livro as
+oferecia como pré-definido alternativo, **a alternativa foi cortada e o que sobrou é o que esta
+tabela tem**:
+
+| Técnica | O livro também oferece | Aqui vale |
+| --- | --- | --- |
+| **Estocada** | Katana−2 | **só Esgrima−2** |
+| **Corpo-a-Corpo** | Jitte/Sai | **só Esgrima** |
+| **Chave de Braço ou de Pulso** | alavanca com Tonfa | **Bastão Curto ou Espada Curta** |
+| **Chave de Cabeça · Mata-Leão · Voadora · Chave de Braço** | Luta Livre | **só Judô e Caratê** — v. nota |
+
+> **A nota da Luta Livre.** O livro dá **Luta Livre** como pré-definido alternativo dessas quatro, e
+> a seção 6 desta tabela manda trocar Luta Livre por Judô. **Mas a Luta Livre tem verbete** —
+> *Artes Marciais* p.35, Física/Média —, e o verbete dela é quase palavra por palavra o da **Luta
+> Romana**, que já está na seção 2 desta tabela. As duas são a mesma perícia com dois nomes.
+> **Resolver isso é decisão do Árbitro e está pendente**; até lá, estas quatro técnicas se compram
+> por Judô ou Caratê, que são as perícias que a tabela tem, e ninguém fica sem caminho.
+
+## O que não entrou
+
+- **Doze técnicas cinematográficas**, que o próprio livro marca como tais: Ataque Duplo com Armas ·
+  Ataque Furacão · Bloqueio com Telefone · Chute Acrobático · Colagem · Gravação de Iniciais ·
+  Lutar Sentado · Quebrapilha · Restringir · Rolar com o Golpe · Salto de Ataque · Voadora Lateral.
+  **Decisão 34**, e as três defesas ampliadas continuam sendo a única exceção declarada a ela
+  (`28` §4a).
+- **Quatro técnicas de criatura, não de gente:** Bloqueio Agressivo com a Cauda e Laçar Pescoço
+  (exigem cauda), Salto em Arco com o Bastão (manobra de um estilo que o livro dá a um bicho) e
+  **Chute em Varredura**, que é combate aéreo e exige a perícia Vôo.
+- **Treino no Manejo de Armas com a Mão Inábil** (p.53). **É a mesma coisa que esta tabela já lista
+  duas vezes**, na seção 2: *Treino do Manejo de Armas com a Mão Inábil* (*Fantasy* p.63) e *Uso da
+  Arma com a Mão Inábil* (*Império Romano* p.37). Um terceiro nome para a mesma coisa numa tabela
+  fechada seria erro; reduzir os três a um é decisão do Árbitro. **Pendência aberta** — até lá,
+  compra-se pela linha que já existe.
 
 
 ---
 
 titulo: Tabela de Mágicas
 versao: 10
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Tabela de Mágicas
@@ -8062,7 +8666,7 @@ E as correções de grafia — a Relação saiu do arquivo com erro de leitura, 
 
 titulo: Tabela de Vantagens
 versao: 7
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Tabela de Vantagens
@@ -8348,7 +8952,7 @@ Estão marcados com **▲**.
 
 titulo: Tabela de Desvantagens
 versao: 8
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Tabela de Desvantagens
@@ -8657,8 +9261,8 @@ nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 n
 ---
 
 titulo: Retificações de livro
-versao: 8
-atualizado: 2026-09-13
+versao: 9
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Retificações de livro
@@ -9573,12 +10177,123 @@ rocha guarda calor, e armadura de metal vira forno. É mais uma razão para a me
 **Terreno se declara antes do primeiro dado**, como o chefe de encontro. **Galeria de um hex faz
 todo combate virar de perto** — que é a situação mais comum de uma descida e não tinha regra.
 
+# RETIFICAÇÃO — 14/09/2026: as técnicas de Artes Marciais entram, e o estilo passa a ter dono
+
+**A leva fecha a decisão 56** — *técnica de arte marcial é presa a estilo, e o estilo tem dono*.
+Até hoje as técnicas não existiam na campanha: a Tabela de Perícias tinha 191 linhas e nenhuma
+seção de técnicas, e cerca de noventa entradas do *GURPS Artes Marciais* ficavam fora por não ter
+de onde vir. **A fonte foi o Compêndio**, nunca o PDF, e a comparação de nome foi por forma
+normalizada — sem acento, sem plural, sem preposição, sem parêntese.
+
+## 1. Nove escolas, e todas com dono, preço e porta de saída
+
+Documento novo: **`33` — As Escolas de Luta**. Uma por cidade, mais a companhia dos Fiadores, mais
+o circuito do pancrácio de Ônfalos, que já existia no cânone e não tinha verbete. Cada uma traz as
+quatro coisas que o padrão desta pasta exige: **quem ensina e onde · o que custa entrar · a
+fraqueza estrutural · a consequência política** — e mais a lista do que licencia e a condição de
+expulsão.
+
+**O princípio, e ele governa o documento inteiro: escola não dá bônus, escola dá acesso.** Quem
+entra não fica mais forte por ter entrado; fica autorizado a gastar ponto onde os outros não podem.
+O teto do que uma escola concede é o precedente de 09/09/2026 — um benefício só, e estreito.
+
+## 2. Cinquenta e uma técnicas na Tabela de Perícias, seção 15 nova
+
+Com dificuldade, pré-definido, teto, escola e página impressa. **Quarenta e quatro são presas a
+escola; sete são livres.** A tabela de custo de técnica é própria e não é a das perícias: as de
+dificuldade **Especial não custam ponto nenhum** — vêm junto com a perícia-mãe — e as outras se
+compram acima do pré-definido, com teto quase sempre no NH da perícia-mãe.
+
+## 3. Sete técnicas ficam livres — e isto é exceção declarada à decisão 56
+
+**Finta · Desarmar · Ponto de Impacto · Riposta · Conservar a Arma · Combate de Perto · Luta no
+Solo.** O livro as pré-define contra *"qualquer perícia de combate"*, sem perícia-mãe nomeada.
+**Decisão do Árbitro de 14/09/2026:** prendê-las a estilo faria um soldado de trinta anos de ofício
+não saber fintar por não ter frequentado ninguém, o que é falso no livro e falso no mundo. As
+quarenta e quatro que sobram continuam sendo o que decide uma luta, e é por elas que as escolas
+cobram.
+
+## 4. O estilo de quatro apoios sai da Pendência e vira cânone publicado
+
+Aprovado em **09/09/2026** e nunca publicado — exatamente o erro que esta pasta já registrou como
+*decisão de homologação que não foi publicada é decisão que não existe*. Está agora no `33`, seção
+2.2, como o único benefício mecânico que uma escola desta lista concede: **mãos livres, carga no
+máximo leve, +2 em teste para não ser derrubado e para se levantar**, sem acumular com nada.
+
+## 5. A seção 14 dizia "as outras sete" e são dezoito
+
+A frase enumerava sete perícias de energia interior recusadas. **Contadas contra o Compêndio: são
+dezoito**, e as onze que faltavam — Apara Precognitiva, Arqueiro Zen, Arte da Invisibilidade,
+Ch'in Kung, Cura Yin/Yang, Golpe Desintegrador, Kiai, Ponto de Cegamento, Postura Imóvel, Salto
+Voador e Toque da Morte — **não apareciam em documento nenhum do cânone**, nem para entrar nem para
+ficar de fora. Procuradas uma a uma, por nome: zero ocorrência.
+
+**Nenhuma decisão mudou** — a decisão 34 já as barrava em bloco. O que mudou é a frase, que passou
+a dizer o número certo e a nomear as dezoito. **Corrigida no lugar, não com nota por cima**, que é
+a quinta trava de conferência desta pasta.
+
+## 6. A contagem das mágicas estava em 429, e são 768
+
+A seção 10 da Tabela de Perícias anunciava **429 mágicas**, que era o número antes da leva de
+13/09. Contadas as linhas em 14/09: **778 linhas, 768 nomes distintos.** Corrigido. *(O cabeçalho
+da própria Tabela de Mágicas repete o 429 e continua errado — fica como pendência de redação, e não
+muda número de ficha nenhuma.)*
+
+## 7. Seis pré-definidos foram cortados por falta da perícia de arma
+
+**Decisão do Árbitro de 14/09/2026:** as seis perícias de arma de nome próprio do *Artes Marciais*
+não entram — caem no filtro da decisão 53, pelo mesmo motivo que os cinquenta e oito estilos
+nomeados do livro. Onde o livro as oferecia como pré-definido alternativo, **a alternativa foi
+cortada e a linha diz isso**: Estocada perdeu a Katana, Corpo-a-Corpo perdeu o Jitte/Sai, Chave de
+Braço perdeu a Tonfa. **Nenhuma técnica ficou sem caminho de compra**, porque todas mantêm ao menos
+um pré-definido que a tabela tem.
+
+## 8. Quatro achados de conferência que NÃO foram aplicados
+
+Foram medidos contra o Compêndio e ficam registrados aqui. **Aplicá-los é decisão do Árbitro, e
+cada um vai em Pendência própria** — nenhum foi mexido nesta leva.
+
+| O que a conferência achou | O que o cânone diz hoje | Por que não mexi |
+| --- | --- | --- |
+| **Luta Livre tem verbete** (*Artes Marciais* p.35, Física/Média) e o verbete dela é quase palavra por palavra o da **Luta Romana**, que já está na tabela | a seção 6 manda trocar Luta Livre por Judô, e uma decisão de 08/09 a fez perícia da casa, Física/Difícil | reduzir duas linhas a uma mexe no modelo do Jurado de Gapheim e numa retificação de ficha já feita |
+| **Capa tem verbete em dois livros** — *Fantasy* p.61 e *Artes Marciais* p.32, Física/Média nos dois, mesmos pré-definidos | a seção 6 diz **"Capa — não existe"** | a correção beneficia o personagem do Árbitro, que cortou a Capa por esse motivo. **Artigo 4:** quem decide é ele |
+| **Pugilismo e Boxe são duas linhas para a mesma perícia**, ambas Física/Média — e o índice do próprio *Império Romano* registra o verbete como "Boxe" | as duas estão na seção 2, em linhas separadas | duplicata em tabela fechada é decisão de redução, não de leva |
+| **Três nomes para o treino de mão inábil**, dois deles na tabela | *Treino do Manejo…* (*Fantasy*) e *Uso da Arma…* (*Império Romano*) | por isso a técnica homônima **não entrou** na seção 15: um terceiro nome seria erro |
+
+## 9. A lista de nomes em duas tabelas dizia catorze, e são dezesseis
+
+A conferência de colisão desta leva — obrigatória, e feita **nas quatro tabelas na mesma passada** —
+achou dois nomes que a seção 11 da Tabela de Perícias não listava:
+
+- **Cavalgar** é perícia (*Módulo Básico*, por tipo de montaria) **e é mágica** (*Magia* p.22, na
+  escola de Controle Animal).
+- **Sacar Rápido** é perícia (*Módulo Básico*, por tipo de arma) **e é encantamento** na Tabela de
+  Mágicas.
+
+**Os dois passam a exigir o tipo na linha da ficha**, como os outros catorze, e a homologação recusa
+a linha sem ele. Nenhuma regra nova: a regra de 13/09 sempre valeu para todo nome que colidisse — o
+que faltava era o nome estar na lista. **Corrigido no lugar da frase.**
+
+**As 51 técnicas novas não colidem com nada**, nas quatro tabelas, por forma normalizada — sem
+acento, sem plural, sem preposição, sem parêntese —, e não há duplicata dentro da própria seção 15.
+
+## 10. O que muda em ficha: nada
+
+**Nenhum dos sete personagens da mesa tem técnica de arte marcial, e nenhum está numa escola.** A
+leva não move um ponto de ninguém — ela abre um caminho de gasto que não existia. **Ninguém compra
+técnica na criação sem declarar a escola**, e entrar numa escola é ação de mundo com preço,
+homologada como qualquer outra.
+
+**O que ela abre na mesa, dito na cara:** os esgrimistas passam a ter de onde vir, quem luta de mão
+vazia ganha uma escola que o aceita no primeiro dia, e **cada um deles passa a dever alguma coisa a
+alguém com nome** — que é o que a decisão 56 quis.
+
 
 ---
 
 titulo: As decisões de 10/09/2026
 versao: 1
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # As decisões de 10/09/2026
@@ -9847,7 +10562,7 @@ A **15** renomeia duas das quatro perícias da casa criadas na decisão 4, porqu
 
 titulo: A Dádiva de Zeus e o recorte de Clima
 versao: 1
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # A Dádiva de Zeus e o recorte de Clima
@@ -9997,7 +10712,7 @@ As cidades que precisam de água — Deméter pelo grão, Tláloc e Oxum pela pr
 titulo: Boletim da Semana 1
 semana: 1
 versao: 1
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 
 **Caminho no Notion:** A Garganta / Estado do Mundo / Boletins
 **Base de origem:** Boletins (collection://c97575a2-6144-46a2-9322-19eaf618fee8)

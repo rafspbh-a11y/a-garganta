@@ -1,6 +1,6 @@
 titulo: Retificações de livro
-versao: 8
-atualizado: 2026-09-13
+versao: 9
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Retificações de livro
@@ -914,3 +914,114 @@ rocha guarda calor, e armadura de metal vira forno. É mais uma razão para a me
 
 **Terreno se declara antes do primeiro dado**, como o chefe de encontro. **Galeria de um hex faz
 todo combate virar de perto** — que é a situação mais comum de uma descida e não tinha regra.
+
+# RETIFICAÇÃO — 14/09/2026: as técnicas de Artes Marciais entram, e o estilo passa a ter dono
+
+**A leva fecha a decisão 56** — *técnica de arte marcial é presa a estilo, e o estilo tem dono*.
+Até hoje as técnicas não existiam na campanha: a Tabela de Perícias tinha 191 linhas e nenhuma
+seção de técnicas, e cerca de noventa entradas do *GURPS Artes Marciais* ficavam fora por não ter
+de onde vir. **A fonte foi o Compêndio**, nunca o PDF, e a comparação de nome foi por forma
+normalizada — sem acento, sem plural, sem preposição, sem parêntese.
+
+## 1. Nove escolas, e todas com dono, preço e porta de saída
+
+Documento novo: **`33` — As Escolas de Luta**. Uma por cidade, mais a companhia dos Fiadores, mais
+o circuito do pancrácio de Ônfalos, que já existia no cânone e não tinha verbete. Cada uma traz as
+quatro coisas que o padrão desta pasta exige: **quem ensina e onde · o que custa entrar · a
+fraqueza estrutural · a consequência política** — e mais a lista do que licencia e a condição de
+expulsão.
+
+**O princípio, e ele governa o documento inteiro: escola não dá bônus, escola dá acesso.** Quem
+entra não fica mais forte por ter entrado; fica autorizado a gastar ponto onde os outros não podem.
+O teto do que uma escola concede é o precedente de 09/09/2026 — um benefício só, e estreito.
+
+## 2. Cinquenta e uma técnicas na Tabela de Perícias, seção 15 nova
+
+Com dificuldade, pré-definido, teto, escola e página impressa. **Quarenta e quatro são presas a
+escola; sete são livres.** A tabela de custo de técnica é própria e não é a das perícias: as de
+dificuldade **Especial não custam ponto nenhum** — vêm junto com a perícia-mãe — e as outras se
+compram acima do pré-definido, com teto quase sempre no NH da perícia-mãe.
+
+## 3. Sete técnicas ficam livres — e isto é exceção declarada à decisão 56
+
+**Finta · Desarmar · Ponto de Impacto · Riposta · Conservar a Arma · Combate de Perto · Luta no
+Solo.** O livro as pré-define contra *"qualquer perícia de combate"*, sem perícia-mãe nomeada.
+**Decisão do Árbitro de 14/09/2026:** prendê-las a estilo faria um soldado de trinta anos de ofício
+não saber fintar por não ter frequentado ninguém, o que é falso no livro e falso no mundo. As
+quarenta e quatro que sobram continuam sendo o que decide uma luta, e é por elas que as escolas
+cobram.
+
+## 4. O estilo de quatro apoios sai da Pendência e vira cânone publicado
+
+Aprovado em **09/09/2026** e nunca publicado — exatamente o erro que esta pasta já registrou como
+*decisão de homologação que não foi publicada é decisão que não existe*. Está agora no `33`, seção
+2.2, como o único benefício mecânico que uma escola desta lista concede: **mãos livres, carga no
+máximo leve, +2 em teste para não ser derrubado e para se levantar**, sem acumular com nada.
+
+## 5. A seção 14 dizia "as outras sete" e são dezoito
+
+A frase enumerava sete perícias de energia interior recusadas. **Contadas contra o Compêndio: são
+dezoito**, e as onze que faltavam — Apara Precognitiva, Arqueiro Zen, Arte da Invisibilidade,
+Ch'in Kung, Cura Yin/Yang, Golpe Desintegrador, Kiai, Ponto de Cegamento, Postura Imóvel, Salto
+Voador e Toque da Morte — **não apareciam em documento nenhum do cânone**, nem para entrar nem para
+ficar de fora. Procuradas uma a uma, por nome: zero ocorrência.
+
+**Nenhuma decisão mudou** — a decisão 34 já as barrava em bloco. O que mudou é a frase, que passou
+a dizer o número certo e a nomear as dezoito. **Corrigida no lugar, não com nota por cima**, que é
+a quinta trava de conferência desta pasta.
+
+## 6. A contagem das mágicas estava em 429, e são 768
+
+A seção 10 da Tabela de Perícias anunciava **429 mágicas**, que era o número antes da leva de
+13/09. Contadas as linhas em 14/09: **778 linhas, 768 nomes distintos.** Corrigido. *(O cabeçalho
+da própria Tabela de Mágicas repete o 429 e continua errado — fica como pendência de redação, e não
+muda número de ficha nenhuma.)*
+
+## 7. Seis pré-definidos foram cortados por falta da perícia de arma
+
+**Decisão do Árbitro de 14/09/2026:** as seis perícias de arma de nome próprio do *Artes Marciais*
+não entram — caem no filtro da decisão 53, pelo mesmo motivo que os cinquenta e oito estilos
+nomeados do livro. Onde o livro as oferecia como pré-definido alternativo, **a alternativa foi
+cortada e a linha diz isso**: Estocada perdeu a Katana, Corpo-a-Corpo perdeu o Jitte/Sai, Chave de
+Braço perdeu a Tonfa. **Nenhuma técnica ficou sem caminho de compra**, porque todas mantêm ao menos
+um pré-definido que a tabela tem.
+
+## 8. Quatro achados de conferência que NÃO foram aplicados
+
+Foram medidos contra o Compêndio e ficam registrados aqui. **Aplicá-los é decisão do Árbitro, e
+cada um vai em Pendência própria** — nenhum foi mexido nesta leva.
+
+| O que a conferência achou | O que o cânone diz hoje | Por que não mexi |
+| --- | --- | --- |
+| **Luta Livre tem verbete** (*Artes Marciais* p.35, Física/Média) e o verbete dela é quase palavra por palavra o da **Luta Romana**, que já está na tabela | a seção 6 manda trocar Luta Livre por Judô, e uma decisão de 08/09 a fez perícia da casa, Física/Difícil | reduzir duas linhas a uma mexe no modelo do Jurado de Gapheim e numa retificação de ficha já feita |
+| **Capa tem verbete em dois livros** — *Fantasy* p.61 e *Artes Marciais* p.32, Física/Média nos dois, mesmos pré-definidos | a seção 6 diz **"Capa — não existe"** | a correção beneficia o personagem do Árbitro, que cortou a Capa por esse motivo. **Artigo 4:** quem decide é ele |
+| **Pugilismo e Boxe são duas linhas para a mesma perícia**, ambas Física/Média — e o índice do próprio *Império Romano* registra o verbete como "Boxe" | as duas estão na seção 2, em linhas separadas | duplicata em tabela fechada é decisão de redução, não de leva |
+| **Três nomes para o treino de mão inábil**, dois deles na tabela | *Treino do Manejo…* (*Fantasy*) e *Uso da Arma…* (*Império Romano*) | por isso a técnica homônima **não entrou** na seção 15: um terceiro nome seria erro |
+
+## 9. A lista de nomes em duas tabelas dizia catorze, e são dezesseis
+
+A conferência de colisão desta leva — obrigatória, e feita **nas quatro tabelas na mesma passada** —
+achou dois nomes que a seção 11 da Tabela de Perícias não listava:
+
+- **Cavalgar** é perícia (*Módulo Básico*, por tipo de montaria) **e é mágica** (*Magia* p.22, na
+  escola de Controle Animal).
+- **Sacar Rápido** é perícia (*Módulo Básico*, por tipo de arma) **e é encantamento** na Tabela de
+  Mágicas.
+
+**Os dois passam a exigir o tipo na linha da ficha**, como os outros catorze, e a homologação recusa
+a linha sem ele. Nenhuma regra nova: a regra de 13/09 sempre valeu para todo nome que colidisse — o
+que faltava era o nome estar na lista. **Corrigido no lugar da frase.**
+
+**As 51 técnicas novas não colidem com nada**, nas quatro tabelas, por forma normalizada — sem
+acento, sem plural, sem preposição, sem parêntese —, e não há duplicata dentro da própria seção 15.
+
+## 10. O que muda em ficha: nada
+
+**Nenhum dos sete personagens da mesa tem técnica de arte marcial, e nenhum está numa escola.** A
+leva não move um ponto de ninguém — ela abre um caminho de gasto que não existia. **Ninguém compra
+técnica na criação sem declarar a escola**, e entrar numa escola é ação de mundo com preço,
+homologada como qualquer outra.
+
+**O que ela abre na mesa, dito na cara:** os esgrimistas passam a ter de onde vir, quem luta de mão
+vazia ganha uma escola que o aceita no primeiro dia, e **cada um deles passa a dever alguma coisa a
+alguém com nome** — que é o que a decisão 56 quis.

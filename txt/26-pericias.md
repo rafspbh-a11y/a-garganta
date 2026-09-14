@@ -1,12 +1,13 @@
 titulo: Tabela de Perícias
-versao: 10
-atualizado: 2026-09-13
+versao: 11
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Tabela de Perícias
 
 > **Nota.**
 > **Lista fechada.** O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha.
+> **Versão 4, de 14/09/2026 — as técnicas entraram, e têm dono.** A seção 15 é nova: **51 técnicas de *Artes Marciais***, com pré-definido, teto e escola. **Quarenta e quatro são presas a estilo** — a decisão 56 do Árbitro —, e as **nove escolas que as ensinam estão em *As Escolas de Luta* (`33`)**, com quem ensina, o que cobra e o que a expulsão custa. **Sete são livres**, porque o livro as pré-define contra *qualquer perícia de combate*, e prender fintar e desarmar a uma escola seria falso. Na mesma passada, a seção 14 passou de "as outras sete" para **as outras dezoito**, que é o número real, e a seção 10 corrigiu a contagem das mágicas.
 > **Versão 3, de 13/09/2026 — e as perícias da casa acabaram.** O Árbitro passou os dez livros de GURPS que a campanha possui a livros de mesa, e as quatro perícias inventadas em setembro se resolveram sozinhas: **Intimidação** tem verbete em quatro livros, e é Mental/Média, exatamente como estava; **Exorcismo** tem verbete no *Horror* (p.43), Mental/Difícil, e o livro diz na cara que *"não é uma mágica, é uma perícia religiosa"* — que era a decisão do Árbitro, palavra por palavra; **Selos e Sigilos** virou **Heráldica**, que já estava na lista, com a mesma dificuldade; e **Cartografia**, a única sem verbete em livro nenhum, saiu (v. §6).
 > **Versão 2, de 10/09/2026.** Vinte e nove perícias de livro que a versão 1 tinha deixado de fora entraram; **Caligrafia** passou de mental para **Física/Média**, como está no livro; e **Boemia** saiu da nota das mentais, porque é física.
 > **Como se lê uma linha de ficha está no `24`.** Toda perícia entra na ficha com sete campos: nome · tipo/dificuldade · relativo ao atributo · pontos · NH comprado · bônus com a fonte · NH efetivo.
@@ -426,9 +427,18 @@ a catapulta e não deixa ninguém **operá-la**.
 
 # 10. Alcance desta tabela, dito na cara
 
-- **As perícias** vêm dos três livros, verbete a verbete, **completas** para o nível tecnológico da campanha.
-- **As mágicas** (`27`) são **429**: **413** da Relação das Mágicas do *GURPS Magia*, mais **16** do *Grimório* — as quatro que a decisão 1 do `25` nomeou e as doze da sub-escola de Eletricidade que o `31` trouxe. **A transcrição do restante do Grimório está em curso desde 13/09/2026**, por decisão do Árbitro, com as três escolas Tecnológicas — Máquinas, Energia e Radiação — ficando de fora pelo mesmo recorte de nível tecnológico desta seção.
-- **Talismã**, do Grimório, é encantamento e não perícia. Foi por isso que a perícia da casa com esse nome primeiro se chamou Selos e Sigilos e depois virou **Heráldica**, que é de livro.
+- **As perícias** são **191**, e vêm dos **dez** livros que a campanha possui, verbete a verbete,
+  **completas** para o nível tecnológico das sete cidades. *(Esta linha dizia "os três livros", que
+  era verdade até 13/09/2026, quando o Árbitro passou os dez livros da estante a livros de mesa.)*
+- **As técnicas** (§15) são **51**, todas do *GURPS Artes Marciais*, e **quarenta e quatro são
+  presas a estilo** — as escolas estão em *As Escolas de Luta* (`33`). Entraram em 14/09/2026.
+- **As mágicas** (`27`) são **768**, em 778 linhas — contadas em 14/09/2026. *(Esta linha dizia
+  **429**, que era o número antes da leva da noite de 13/09, quando 274 mágicas do Grimório
+  entraram. O cabeçalho da própria Tabela de Mágicas ainda repete o 429 e também está errado.)*
+  **As três escolas Tecnológicas — Máquinas, Energia e Radiação — ficam de fora** pelo mesmo recorte
+  de nível tecnológico da §9.
+- **Talismã**, do Grimório, é encantamento e não perícia. Foi por isso que a perícia da casa com
+  esse nome primeiro se chamou Selos e Sigilos e depois virou **Heráldica**, que é de livro.
 
 # 11. Nomes que existem em duas tabelas ao mesmo tempo
 
@@ -442,11 +452,11 @@ de livro, e nenhuma pode ceder o nome.**
 > cortesia.
 
 A lista sai do cruzamento das quatro tabelas fechadas e **é conferida a cada versão**. Hoje são
-**catorze**:
+**dezesseis**:
 
 | Nome | Vive em |
 | --- | --- |
-| **Escalada · Escudo · Exorcismo · História · Vôo** | perícia × mágica |
+| **Cavalgar · Escalada · Escudo · Exorcismo · História · Sacar Rápido · Vôo** | perícia × mágica |
 | **Ambidestria · Ouvido Aguçado · Prontidão · Visão Aguçada · Visão Noturna** | vantagem × mágica |
 | **Amnésia · Fúria · Magreza** | desvantagem × mágica |
 | **Destino** | **vantagem × desvantagem** — e este é de outra natureza |
@@ -456,7 +466,14 @@ A lista sai do cruzamento das quatro tabelas fechadas e **é conferida a cada ve
 > Na ficha escreve-se o sinal, não o tipo — `Destino +10` ou `Destino −10` —, e **ninguém compra
 > os dois.**
 
-> **Quatro entraram em 13/09/2026 e não estavam na lista de dez desta manhã:** Ambidestria,
+> **Dois entraram em 14/09/2026, e a conferência que os achou foi a desta leva.** **Cavalgar** é
+> perícia (*Básico*, por tipo de montaria) e é mágica (*Magia* p.22, escola de Controle Animal);
+> **Sacar Rápido** é perícia (*Básico*, por tipo de arma) e é **encantamento** na Tabela de
+> Mágicas. Os dois são nomes que aparecem em ficha de verdade, e os dois passam a exigir o tipo na
+> linha. A lista dizia catorze desde 13/09 e estava incompleta — **a frase foi corrigida, não
+> anotada.**
+
+> **Quatro entraram em 13/09/2026 e não estavam na lista de dez daquela manhã:** Ambidestria,
 > Amnésia, Magreza e Destino. As três primeiras vieram com as 339 mágicas do Grimório; Destino
 > veio do Império Romano, pela decisão 53. **A conferência de colisão passou a ser item da bateria
 > de verificação** — tabela que cresce cria nome repetido, e nome repetido em ficha é linha que
@@ -539,7 +556,143 @@ o que sobra quando se tira o chi** — respiração, controle de dor e alavanca.
 | **Controle das Funções Involuntárias** | Domínio de respiração, batimento e dor: retarda hemorragia, aguenta frio, engana quem toma o pulso |
 | **Arte do Arremesso** | Arremessar o que não foi feito para ser arremessado, com precisão |
 
-**As outras sete ficam fora** — Pontos de Pressão, Pontos Secretos, Punhos Voadores, Mãos
-Hipnóticas, Resistência Mental, Deslocar e Desviar. Elas dependem de energia interior, e **nesta
-campanha o sobrenatural passa por Casa, por Marca e por Dever**. Poder sem dono é o que a recusa da
-Magia Intrínseca barrou no mesmo dia.
+**As outras dezoito ficam fora** — Apara Precognitiva, Arqueiro Zen, Arte da Invisibilidade,
+Ch'in Kung, Cura Yin/Yang, Deslocar, Desviar, Golpe Desintegrador, Kiai, Mãos Hipnóticas, Ponto de
+Cegamento, Pontos de Pressão, Pontos Secretos, Postura Imóvel, Punhos Voadores, Resistência Mental,
+Salto Voador e Toque da Morte. Elas dependem de energia interior, e **nesta campanha o sobrenatural
+passa por Casa, por Marca e por Dever**. Poder sem dono é o que a recusa da Magia Intrínseca barrou
+no mesmo dia.
+
+> **Esta frase dizia "as outras sete", e nomeava sete.** São dezoito, e as onze que faltavam não
+> apareciam em documento nenhum do cânone — nem para entrar, nem para ficar de fora. Contadas
+> contra o Compêndio em 14/09/2026 e corrigidas aqui, no lugar da frase errada. Nenhuma decisão
+> mudou: a decisão 34 já as barrava todas, em bloco. **Estilo Embriagado** é a única de fronteira,
+> porque o verbete não cita energia interior — fica fora com as outras, e a razão é o filtro do
+> nome, não o do chi.
+
+
+# 15. As técnicas de Artes Marciais — e de quem elas são
+
+**Entraram em 14/09/2026, e nenhuma é livre de graça.** A decisão 56 do Árbitro diz que **técnica é
+presa a estilo, e estilo tem dono**: vêm em pacotes que uma cidade, uma Casa ou uma companhia
+ensina, e quem ensina pode deixar de ensinar. **As nove escolas estão em *As Escolas de Luta*
+(`33`)** — com quem ensina, o que cobra, o que faz mal e o que a expulsão custa.
+
+**São 51 linhas: 44 presas a escola e 7 livres.** As sete livres são as que o livro pré-define
+contra *"qualquer perícia de combate"* — quem sabe usar a arma as compra sem escola, sem mestre e
+sem dever nada (decisão do Árbitro, 14/09/2026).
+
+## Como se compra uma técnica
+
+**Técnica não é perícia**, e não usa a tabela da seção 1. Compra-se **acima do pré-definido**, e o
+teto está na coluna *Teto*:
+
+| Dificuldade | +1 | +2 | +3 | +4 | acima |
+| --- | --- | --- | --- | --- | --- |
+| **Média** | ½ | 1 | 2 | 4 | +2/nível |
+| **Difícil** | 1 | 2 | 4 | 6 | +2/nível |
+| **Especial** | — | — | — | — | **não se compra: vem junto com a perícia-mãe, de graça** |
+
+**As de dificuldade Especial não custam ponto nenhum.** Quem tem a perícia-mãe e a escola que as
+licencia já as tem. O que elas não fazem é subir.
+
+**Três travas, e valem para todas:**
+
+1. **Sem escola, não se compra** — nem meio ponto, nem pelo pré-definido. As sete livres são a
+   exceção, e estão marcadas.
+2. **Nenhuma técnica ultrapassa o teto**, e o teto quase sempre é o NH da perícia-mãe. Subir a
+   técnica exige subir a perícia primeiro.
+3. **Expulso da escola, a técnica para no nível em que está** e nunca mais sobe (`33` §4).
+
+## A tabela
+
+| Técnica | Dif. | Pré-definido | Teto | Escola | Livro |
+| --- | --- | --- | --- | --- | --- |
+| Apara do Judô | Especial | 2/3 do NH em Judô | não sobe | Registro · Contenção | p.51 |
+| Arremesso do Judô | Especial | NH em Judô | não sobe | Contenção | p.51 |
+| Ataques contra o Rosto | Difícil | Briga-5 | NH da perícia-mãe | Fiadores | p.48 |
+| Bloqueio Agressivo | Difícil | Apara de Caratê-4 | ⅔ do NH em Caratê | Registro · exame | p.43 |
+| Bloqueio Agressivo com o Pé | Difícil | Bloqueio com o Pé-4 | metade do NH da perícia-mãe | exame · Doze de Baixo | p.44 |
+| Bloqueio com a Mão | Especial | 2/3 do NH em Caratê, Briga ou Boxe | só com Apara Ampliada | pancrácio · Registro · exame · Hanuman | p.49 |
+| Bloqueio com o Pé | Especial | Briga/2 · Caratê/2 | não sobe | Registro · exame · Doze de Baixo | p.53 |
+| Chave de Braço ou de Pulso | Média | Judô · perícia com arma que sirva de alavanca (Bastão Curto, Espada Curta) | — | Pátio de Bronze · Thing · Contenção | p.44 |
+| Chave de Cabeça | Difícil | Judô-4 | NH da perícia-mãe | Thing · Contenção | p.50 |
+| Chave de Dedo | Difícil | Chave de Braço-3 | — | Contenção | p.48 |
+| Chute | Difícil | Caratê-2 · Briga-2 | NH da perícia-mãe | pancrácio · exame · Hanuman · Doze de Baixo | p.52 |
+| Chute Circular (Giratória) | Difícil | Caratê-3 · Chute-1 | NH da perícia-mãe | Doze de Baixo | p.51 |
+| Chute Circular Lateral/para Trás | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Doze de Baixo | p.55 |
+| Chute Descendente | Difícil | Caratê-4 · Chute-2 | NH da perícia-mãe | Doze de Baixo | p.44 |
+| Chute Para Trás | Difícil | Caratê-4 · Chute-2 | NH em Caratê | Doze de Baixo | p.45 |
+| Chute Saltando | Difícil | Caratê-4 · Chute-2 | NH da perícia-mãe | Doze de Baixo | p.52 |
+| Combate de Perto | Média | perícia de arma de combate de perto−2 · outra perícia com arma−6 | NH da perícia-mãe | **livre** | p.46 |
+| Conservar a Arma | Difícil | perícia com arma (arma de mão) · DX (arma de alcance, por tipo) | — | **livre** | p.53 |
+| Corpo-a-Corpo | Difícil | Esgrima | NH da perícia-mãe +2 | Fiadores | p.46-47 |
+| Desarmar | Difícil | DX · Judô · perícia com arma | — | **livre** | p.47 |
+| Deslizamento | Difícil | Esquiva-3 | Esquiva sem Carga | pancrácio · Registro · Doze de Baixo · Fiadores | p.54 |
+| Estocada | Média | Esgrima-2 | NH da perícia-mãe | Fiadores | p.52 |
+| Finta | Difícil | qualquer perícia de combate | NH da perícia-mãe+4 | **livre** | p.48 |
+| Flecha | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.48-49 |
+| Golpe com a Cabeça | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | Pátio de Bronze · Thing | p.50 |
+| Golpe com a Canela | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Doze de Baixo | p.54 |
+| Golpe com a Mão | Especial | NH em Caratê, Briga ou Boxe | não sobe | pancrácio · exame · Hanuman | p.49 |
+| Golpe com o Cotovelo | Média | Caratê-2 | NH da perícia-mãe | Pátio de Bronze · pancrácio · Hanuman | p.47 |
+| Golpe com o Joelho | Média | Caratê-1 · Briga-1 | NH da perícia-mãe+2 | pancrácio · Hanuman | p.52 |
+| Golpe nos Olhos | Difícil | Caratê-9 · Briga-9 | NH da perícia-mãe | Fiadores | p.47-48 |
+| Impacto de Parada | Difícil | Esgrima-4 | NH em Esgrima | Fiadores | p.55-56 |
+| Jab | Média | Boxe-3 · Caratê-3 | NH da perícia-mãe | pancrácio | p.51 |
+| Luta no Solo | Difícil | qualquer perícia de combate-4 | NH da perícia-mãe | **livre** | p.49 |
+| Mata-Leão | Difícil | Judô-2 | NH da perícia-mãe | Thing · Contenção | p.45-46 |
+| Mergulho no Chão | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.49 |
+| Pisão | Média | Briga-3 · Caratê-3 · Chute-1 | NH da perícia-mãe | Pátio de Bronze · Hanuman | p.56 |
+| Ponto de Impacto | Difícil | qualquer perícia de combate-3 | NH da perícia-mãe | **livre** | p.50-51 |
+| Postura do Gato | Média | Caratê-3 | NH em Caratê+2 | exame · Hanuman | p.45 |
+| Queda | Média | Judô · Acrobacia | — | Pátio de Bronze · pancrácio · Thing · Registro · Contenção · Hanuman · Fiadores | p.45 |
+| Rasteira | Especial | NH em Judô | não sobe | Thing · Contenção · Doze de Baixo | p.56 |
+| Riposta | Difícil | perícia com arma-4 | NH da perícia-mãe | **livre** | p.54 |
+| Segurar Perna | Especial | NH em Briga, Judô ou Caratê | não sobe | Thing · Contenção | p.52 |
+| Shuto (Mão em Espada) | Difícil | Caratê-3 | NH em Caratê | exame · Hanuman | p.54 |
+| Soco Circular Amplo | Média | Briga-3 · Boxe-3 | NH da perícia-mãe | pancrácio | p.54 |
+| Soco Coelho | Média | Briga-3 | NH em Briga | pancrácio | p.53 |
+| Soco em Círculo | Difícil | Caratê-2 | NH em Caratê | pancrácio | p.55 |
+| Telefone | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | pancrácio | p.47 |
+| Torção de Pescoço | Difícil | ST-4 | ST+3 | Pátio de Bronze · Thing | p.53 |
+| Varredura | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Contenção · Doze de Baixo | p.56 |
+| Voadora | Difícil | Caratê-4 | NH da perícia-mãe | Thing · Contenção | p.47 |
+| Yawara | Média | Briga-5 · Caratê-3 | NH da perícia-mãe | Hanuman | p.57 |
+
+## O que foi cortado dos pré-definidos, e por quê
+
+**Seis perícias de arma do *GURPS Artes Marciais* não existem na Garganta** — são armas de nome
+próprio de um povo que não está entre as sete, e caem no filtro da decisão 53. Onde o livro as
+oferecia como pré-definido alternativo, **a alternativa foi cortada e o que sobrou é o que esta
+tabela tem**:
+
+| Técnica | O livro também oferece | Aqui vale |
+| --- | --- | --- |
+| **Estocada** | Katana−2 | **só Esgrima−2** |
+| **Corpo-a-Corpo** | Jitte/Sai | **só Esgrima** |
+| **Chave de Braço ou de Pulso** | alavanca com Tonfa | **Bastão Curto ou Espada Curta** |
+| **Chave de Cabeça · Mata-Leão · Voadora · Chave de Braço** | Luta Livre | **só Judô e Caratê** — v. nota |
+
+> **A nota da Luta Livre.** O livro dá **Luta Livre** como pré-definido alternativo dessas quatro, e
+> a seção 6 desta tabela manda trocar Luta Livre por Judô. **Mas a Luta Livre tem verbete** —
+> *Artes Marciais* p.35, Física/Média —, e o verbete dela é quase palavra por palavra o da **Luta
+> Romana**, que já está na seção 2 desta tabela. As duas são a mesma perícia com dois nomes.
+> **Resolver isso é decisão do Árbitro e está pendente**; até lá, estas quatro técnicas se compram
+> por Judô ou Caratê, que são as perícias que a tabela tem, e ninguém fica sem caminho.
+
+## O que não entrou
+
+- **Doze técnicas cinematográficas**, que o próprio livro marca como tais: Ataque Duplo com Armas ·
+  Ataque Furacão · Bloqueio com Telefone · Chute Acrobático · Colagem · Gravação de Iniciais ·
+  Lutar Sentado · Quebrapilha · Restringir · Rolar com o Golpe · Salto de Ataque · Voadora Lateral.
+  **Decisão 34**, e as três defesas ampliadas continuam sendo a única exceção declarada a ela
+  (`28` §4a).
+- **Quatro técnicas de criatura, não de gente:** Bloqueio Agressivo com a Cauda e Laçar Pescoço
+  (exigem cauda), Salto em Arco com o Bastão (manobra de um estilo que o livro dá a um bicho) e
+  **Chute em Varredura**, que é combate aéreo e exige a perícia Vôo.
+- **Treino no Manejo de Armas com a Mão Inábil** (p.53). **É a mesma coisa que esta tabela já lista
+  duas vezes**, na seção 2: *Treino do Manejo de Armas com a Mão Inábil* (*Fantasy* p.63) e *Uso da
+  Arma com a Mão Inábil* (*Império Romano* p.37). Um terceiro nome para a mesma coisa numa tabela
+  fechada seria erro; reduzir os três a um é decisão do Árbitro. **Pendência aberta** — até lá,
+  compra-se pela linha que já existe.

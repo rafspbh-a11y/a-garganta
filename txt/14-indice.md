@@ -1,6 +1,6 @@
 titulo: Índice e Regra de Escrita
-versao: 8
-atualizado: 2026-09-13
+versao: 9
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Índice e Regra de Escrita
@@ -89,6 +89,10 @@ fonte: cânone aberto de A Garganta
 <tr>
 <td>**30**</td>
 <td>Improviso, Círculo e Lavra — como se cria magia nova</td>
+</tr>
+<tr>
+<td>**33**</td>
+<td>As Escolas de Luta — as nove escolas que ensinam técnica de arte marcial</td>
 </tr>
 <tr>
 <td>**04b**</td>

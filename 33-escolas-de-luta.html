@@ -1,0 +1,483 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>As Escolas de Luta — A Garganta</title><style>
+:root{--tinta:#1b1714;--fundo:#f6f2ea;--papel:#fffdf8;--linha:#ddd3c2;--suave:#6c6154;--realce:#8a3324;--caixa:#f0e9dc}
+@media(prefers-color-scheme:dark){:root{--tinta:#e8e2d8;--fundo:#16130f;--papel:#1d1915;--linha:#3a332a;--suave:#a99d8c;--realce:#d98a6a;--caixa:#241f19}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:17px/1.65 Iowan Old Style,Palatino,Georgia,serif}
+a{color:var(--realce);text-decoration:none}a:hover{text-decoration:underline}
+.envelope{display:flex;max-width:1180px;margin:0 auto;gap:0;align-items:flex-start}
+nav.lateral{width:264px;flex:0 0 264px;padding:28px 20px 60px;position:sticky;top:0;max-height:100vh;overflow-y:auto;border-right:1px solid var(--linha)}
+nav.lateral .marca{font-size:20px;font-weight:700;letter-spacing:.02em;display:block;color:var(--tinta);margin-bottom:4px}
+nav.lateral .sub{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+nav.lateral h4{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--suave);margin:20px 0 7px;font-weight:600}
+nav.lateral ul{list-style:none;margin:0;padding:0}
+nav.lateral li{margin:0 0 2px}
+nav.lateral a{display:block;padding:4px 8px;margin-left:-8px;border-radius:5px;font-size:15px}
+nav.lateral a.atual{background:var(--caixa);font-weight:600}
+main{flex:1;min-width:0;padding:30px 40px 90px;background:var(--papel);border-right:1px solid var(--linha);min-height:100vh}
+.busca{width:100%;padding:8px 11px;border:1px solid var(--linha);border-radius:6px;background:var(--papel);color:var(--tinta);font:inherit;font-size:14px;margin-bottom:6px}
+#resultados{font-size:14px}#resultados a{display:block;padding:4px 0}#resultados .nada{color:var(--suave);padding:4px 0}
+.cabeca{border-bottom:1px solid var(--linha);padding-bottom:14px;margin-bottom:26px}
+.cabeca h1{margin:0 0 6px;font-size:33px;line-height:1.2}
+.meta{font-size:12.5px;color:var(--suave)}
+h2{font-size:24px;margin:34px 0 10px;border-bottom:1px solid var(--linha);padding-bottom:5px}
+h3{font-size:19px;margin:26px 0 8px}h4{font-size:16px;margin:20px 0 6px}
+p{margin:0 0 14px}
+blockquote{margin:18px 0;padding:12px 16px;background:var(--caixa);border-left:3px solid var(--realce);border-radius:0 6px 6px 0}
+blockquote p:last-child{margin-bottom:0}
+code{background:var(--caixa);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Menlo,monospace}
+pre{background:var(--caixa);padding:14px 16px;border-radius:7px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--linha);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--caixa);font-weight:600}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:5px}
+hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:18px 0 30px}
+.cartao{border:1px solid var(--linha);border-radius:8px;padding:14px 16px;background:var(--fundo)}
+.cartao a{font-weight:600;font-size:16.5px}.cartao p{font-size:14px;color:var(--suave);margin:5px 0 0}
+.rodape{margin-top:60px;padding-top:16px;border-top:1px solid var(--linha);font-size:13px;color:var(--suave)}
+@media(max-width:860px){.envelope{flex-direction:column}nav.lateral{width:100%;flex:none;position:static;max-height:none;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 70px;border-right:0}}
+</style></head><body><div class="envelope">
+<nav class="lateral"><a class="marca" href="index.html">A Garganta</a>
+<div class="sub">cânone aberto · semana 1</div>
+<input class="busca" id="busca" placeholder="buscar no cânone" autocomplete="off">
+<div id="resultados"></div>
+<h4>Comece aqui</h4><ul>
+<li><a href="13-sessao-zero.html">Sessão Zero</a></li>
+<li><a href="19-cartao-de-combate.html">Cartão de Combate</a></li>
+<li><a href="20-como-se-joga.html">Como se joga</a></li>
+<li><a href="02-regras-da-mesa.html">Regras da Mesa</a></li>
+</ul>
+<h4>O mundo</h4><ul>
+<li><a href="01a-biblia-do-mundo.html">Bíblia do Mundo</a></li>
+<li><a href="15-geografia.html">Geografia: a Coroa e as Sete Cidades</a></li>
+<li><a href="07a-npcs-nomeados.html">NPCs Nomeados</a></li>
+<li><a href="22-magia-no-mundo.html">A Magia no Mundo e as Sete Forjas</a></li>
+</ul>
+<h4>A Garganta</h4><ul>
+<li><a href="05-andares-1-a-12.html">Andares 1 a 12</a></li>
+<li><a href="06-bestiario.html">Bestiário, andares 1 a 12</a></li>
+<li><a href="06b-muda-dos-andares.html">Muda dos Andares</a></li>
+</ul>
+<h4>Seu personagem</h4><ul>
+<li><a href="17-criacao-e-magia.html">Guia de Criação e Manual de Magia</a></li>
+<li><a href="30-improviso-circulo-e-lavra.html">Improviso, Círculo e Lavra</a></li>
+<li><a href="32-os-povos-que-subiram.html">Os Povos que Subiram</a></li>
+<li><a href="08-modelos-de-personagem.html">Modelos de Personagem</a></li>
+<li><a href="33-escolas-de-luta.html" class="atual">As Escolas de Luta</a></li>
+<li><a href="18-ficha-publica.html">Ficha Pública e Notoriedade</a></li>
+<li><a href="24-regra-da-ficha.html">Regra de Escrita da Ficha</a></li>
+</ul>
+<h4>Economia</h4><ul>
+<li><a href="03-economia-e-tabelas.html">Economia e Tabelas</a></li>
+<li><a href="21-loot-balcao-e-registro.html">Loot, Balcão e Registro</a></li>
+</ul>
+<h4>A mesa</h4><ul>
+<li><a href="10-carta-do-arbitro.html">Carta do Árbitro</a></li>
+<li><a href="04-protocolo-do-mestre.html">Protocolo do Mestre de Cena</a></li>
+<li><a href="04b-entrega-do-relatorio.html">Entrega do Relatório pelo Google Drive</a></li>
+<li><a href="14-indice.html">Índice e Regra de Escrita</a></li>
+</ul>
+<h4>Decisões e retificações</h4><ul>
+<li><a href="23-retificacoes-de-livro.html">Retificações de livro</a></li>
+<li><a href="25-decisoes-de-10-09-2026.html">As decisões de 10/09/2026</a></li>
+<li><a href="31-dadiva-de-zeus-e-clima.html">A Dádiva de Zeus e o recorte de Clima</a></li>
+</ul>
+<h4>Tabelas de referência</h4><ul>
+<li><a href="26-pericias.html">Tabela de Perícias</a></li>
+<li><a href="27-magias.html">Tabela de Mágicas</a></li>
+<li><a href="28-vantagens.html">Tabela de Vantagens</a></li>
+<li><a href="29-desvantagens.html">Tabela de Desvantagens</a></li>
+</ul>
+<h4>Para a IA</h4><ul><li><a href="estado.md">estado.md</a></li><li><a href="txt/">texto puro</a></li></ul>
+</nav>
+<main><div class="cabeca"><h1>As Escolas de Luta</h1><div class="meta">versão 1 · atualizado em 2026-09-14 · Seu personagem</div></div>
+<blockquote>
+<p><strong>Nota.</strong>
+<strong>Técnica de arte marcial é presa a estilo, e estilo tem dono.</strong> Esta é a lista fechada das
+escolas que existem na Garganta. Nenhuma outra existe; nome que faltar vira Pendência antes de
+virar linha de ficha.</p>
+<p><strong>As técnicas estão na Tabela de Perícias</strong>, seção 15, com dificuldade, pré-definido, nível
+máximo e custo. Aqui está de quem elas são.</p>
+</blockquote>
+<h1>1 · O que um estilo é — e o que ele não é</h1>
+<p><strong>Um estilo não dá bônus.</strong> Ele dá <strong>acesso</strong>. Quem entra numa escola não fica mais forte por ter
+entrado: fica autorizado a comprar, com pontos, o que aquela escola ensina. Quem não entrou não
+compra por preço nenhum.</p>
+<p>Toda escola desta lista tem as mesmas quatro partes, e todas as quatro entram na ficha:</p>
+<ol>
+<li><strong>A lista de técnicas que ela licencia.</strong> Está no verbete de cada escola, abaixo.</li>
+<li><strong>O preço de entrada</strong>, pago uma vez — em grão, em serviço ou em tempo.</li>
+<li><strong>Uma linha de desvantagem</strong>, que vale pontos e que o Mestre de Cena chama. Dever, Juramento,
+   Dívida, Senso de Dever ou Compulsão, conforme a escola.</li>
+<li><strong>Uma condição de expulsão, escrita.</strong> Ver a seção 4.</li>
+</ol>
+<p><strong>Nenhuma escola é de graça, e nenhuma é irrevogável.</strong> Foi assim que a decisão do Árbitro de
+13/09/2026 as encomendou: <em>quem ensinou tem nome, e quem ensina pode deixar de ensinar.</em></p>
+<h2>O teto do que uma escola pode dar, e de onde ele vem</h2>
+<p>O precedente é de 09/09/2026, e está no circuito do pancrácio, seção 2.2: um estilo nomeado foi
+aprovado com <strong>um benefício só, e estreito</strong> — mãos livres, carga no máximo leve, <strong>+2 em teste
+para não ser derrubado e para se levantar</strong>, que não acumula com nada e não dá bônus de ataque, de
+dano nem de defesa.</p>
+<p><strong>É esse o teto.</strong> Escola nenhuma desta lista concede vantagem, atributo, defesa a mais ou
+modificador de dano. O que ela concede é a licença de gastar ponto onde os outros não podem.</p>
+<h2>As três defesas ampliadas passam por aqui</h2>
+<p><strong>Apara, Bloqueio e Esquiva Ampliadas</strong> (Tabela de Vantagens, seção 4a) não se compram na criação
+do personagem e <strong>exigem um mestre que tenha nome</strong>. O mestre sai desta lista, e de nenhum outro
+lugar. Quem não está numa escola não compra as três, e quem foi expulso de uma para de subir nelas
+no dia da expulsão.</p>
+<hr />
+<h1>2 · As nove escolas</h1>
+<h2>2.1 · ÔNFALOS — o Pátio de Bronze</h2>
+<p><em>Casa de Atena.</em></p>
+<p><strong>Quem ensina, e onde.</strong> A muralha velha de Ônfalos, que ninguém mantém porque ninguém acredita
+que a cidade será atacada, virou o campo de instrução da Casa de Atena. O pátio fica no trecho
+descoberto, entre a muralha e o primeiro terraço de oliveira, e a instrução é diária, ao amanhecer,
+antes do calor.</p>
+<p><strong>O que custa entrar.</strong> Nada em grão. <strong>O Dever da Marca se estende:</strong> a Casa pode chamar o aluno
+para a linha, e a linha não é metáfora — é uma formação que se forma, em Ônfalos ou na Coroa, com
+o aluno no lugar que lhe couber. Quem já tem Dever à Casa de Atena não paga ponto nenhum a mais;
+quem não tem, compra o Dever.</p>
+<p><strong>A fraqueza estrutural.</strong> <strong>Toda técnica do Pátio pressupõe um homem de cada lado.</strong> Ela ensina o
+que fazer quando a linha se fecha e o inimigo entra pelo vão — cabeçada, cotoveladas, pisão no que
+caiu, torção de pulso em quem agarrou a lança. <strong>Sozinho, o Pátio não vale nada</strong>, e em corredor
+mais estreito que três homens vale menos ainda, que é a largura de quase tudo abaixo do andar 4.
+Um aluno do Pátio no fundo da Garganta está usando um estilo fora do lugar dele, e sabe disso.</p>
+<p><strong>A consequência política.</strong> A Casa de Ares mantém instrução rival, na praia, e chama o Pátio de
+escola de covarde que se esconde atrás de escudo alheio. A Assembleia tenta, toda estação,
+transferir o pátio do santuário para a arrecadação da cidade — a mesma briga que trava pelas
+forjas, e pelo mesmo motivo: enquanto o pátio for da Casa, quem decide quem aprende é a Casa.
+<strong>Gapheim copiou a formação há quarenta anos e desistiu</strong>, porque não tinha como fazer onze
+assentamentos treinarem juntos.</p>
+<p><strong>Licencia:</strong> Golpe com a Cabeça · Golpe com o Cotovelo · Pisão · Torção de Pescoço ·
+Chave de Braço ou de Pulso · Queda.</p>
+<h2>2.2 · ÔNFALOS — o circuito do pancrácio</h2>
+<p><em>Sem Casa. A bolsa é o dono.</em></p>
+<p><strong>Quem ensina, e onde.</strong> O circuito é um calendário de lutas com bolsa, que roda entre Ônfalos, as
+ilhas e o anel interno do Limiar. Não tem sede: tem mestres, e cada mestre tem os seus. Ensina-se
+no pátio de quem paga.</p>
+<p><strong>O que custa entrar.</strong> <strong>A bolsa.</strong> Quem banca a sua luta é dono dela — escolhe o adversário, a
+data e a parte que fica com ele. A dívida é em grão e é executável; quem não luta quando o dono da
+bolsa marca, deve o valor da bolsa.</p>
+<p><strong>A fraqueza estrutural.</strong> É desarmado e é esportivo. <strong>Roda sob Regras de Torneio</strong>, e o que as
+Regras proíbem o circuito não ensina: não há golpe nos olhos nem ataque ao rosto na instrução, e
+quem precisa deles num corredor escuro descobre que nunca treinou. Contra armadura, mão vazia é
+mão vazia: o pancraciasta que encontra laudel bate e não passa.</p>
+<p><strong>A consequência política.</strong> Aposta. Ônfalos é agonística e o circuito é onde a cidade aposta
+dinheiro em pessoas — o que significa que <strong>perder na hora certa vale mais do que ganhar</strong>, e todo
+mundo sabe, e ninguém prova. As Casas não o controlam e por isso o toleram; a Assembleia o
+regulamenta duas vezes por década e desiste nas duas.</p>
+<p><strong>O estilo de quatro apoios.</strong> Saiu deste circuito, e é a única concessão mecânica que uma escola
+desta lista faz. <strong>Com as duas mãos livres e carga no máximo leve, +2 em teste para não ser
+derrubado e para se levantar.</strong> Não acumula com nada, não dá bônus de ataque, de dano nem de
+defesa. Quem quiser mais que isso compra Judô ou Acrobacia com pontos. <em>(Decisão do Árbitro de
+09/09/2026, publicada aqui pela primeira vez.)</em></p>
+<p><strong>Licencia:</strong> Jab · Soco Circular Amplo · Soco Coelho · Soco em Círculo · Golpe com a Mão ·
+Bloqueio com a Mão · Golpe com o Cotovelo · Golpe com o Joelho · Chute · Telefone ·
+Deslizamento · Queda.</p>
+<h2>2.3 · GAPHEIM — os que levam o machado ao Thing</h2>
+<p><em>A corte de Sigrun a Lei-Dita.</em></p>
+<p><strong>Quem ensina, e onde.</strong> No pátio da corte do Thing, no Limiar, e nos três fiordes quando a corte
+viaja. Em Gapheim, palavra dita no Thing é vinculante, e <strong>quem fala pode ser chamado a sustentar
+a palavra pelas armas</strong>. Nem todo mundo pode fazer isso: o velho, o ferido, a viúva, o que perdeu
+a mão. Os que levam o machado são os que se levantam por eles.</p>
+<p><strong>O que custa entrar.</strong> <strong>Você fica disponível.</strong> Qualquer homem livre pode te chamar para
+sustentar a causa dele, e a chamada é pública. Recusar uma vez encerra a sua passagem pela escola,
+e a corte registra a recusa. Na ficha é <strong>Juramento</strong>, não Dever — e é caro, porque cumpre.</p>
+<p><strong>A fraqueza estrutural.</strong> É estilo de <strong>um adversário, em chão plano, com testemunha e com fim
+combinado</strong>. Termina em chave, não em morte: o duelo do Thing acaba quando um cede, e a instrução
+inteira é feita para chegar ali. <strong>Não tem resposta para número</strong>, e não tem nenhuma para o que não
+aceita desafio — que é tudo o que mora na Garganta. Um homem do machado contra três é um homem que
+vai morrer sabendo exatamente como teria vencido um.</p>
+<p><strong>A consequência política.</strong> Sigrun é intocável e não tem aliados, e as duas coisas são a mesma:
+<strong>ela não deixa a escola virar dela</strong>, e por isso ninguém a controla e ninguém a defende. A Casa de
+Odin a quer, e a quer há vinte anos. Ônfalos chama a coisa inteira de superstição até a primeira
+vez que perde uma causa no Limiar, e aí manda observador. <strong>Ámenti a copiou por escrito</strong>, no
+arquivo, e não conseguiu reproduzi-la: o que falta em Ámenti não é a técnica, é gente que acredite
+que perder um duelo encerra a discussão.</p>
+<p><strong>Licencia:</strong> Chave de Braço ou de Pulso · Chave de Cabeça · Mata-Leão · Segurar Perna · Rasteira ·
+Voadora · Torção de Pescoço · Golpe com a Cabeça · Queda.</p>
+<h2>2.4 · ÁMENTI — o Registro dos Golpes</h2>
+<p><em>Casa de Thoth.</em></p>
+<p><strong>Quem ensina, e onde.</strong> Em sala fechada, na margem oeste, ao lado do arquivo. <strong>Não se ensina
+lutando: ensina-se lendo.</strong> Ámenti registra cada descida, cada morte e cada disputa desde antes do
+tratado, e o que se compra aqui é o acervo — como um homem de Gapheim mata, o que uma boca-de-poço
+faz antes de saltar, em que ordem um esgrimista de Ônfalos ataca quando está cansado. O treino de
+corpo vem depois, e é secundário.</p>
+<p><strong>O que custa entrar.</strong> <strong>Você deposita.</strong> Toda luta que você sobreviver vira depoimento escrito,
+arquivado dentro do mês, e verdadeiro. O Tribunal de Maat confere contra o que já tem, e depoimento
+falso é o mesmo crime que registro falso. Na ficha é <strong>Dever ao Tribunal</strong>, e quem já tem
+Honestidade não precisa comprar nada a mais.</p>
+<p><strong>A fraqueza estrutural.</strong> <strong>Ganha da segunda vez, nunca da primeira.</strong> A escola inteira é
+defensiva — bloqueio, apara, quebrar a distância, cair sem se machucar — e o golpe que resolve vem
+depois, quando o arquivo já disse o que o outro vai fazer. Contra o que nunca foi visto, o aluno
+não tem nada: fica vivo e não vence. <strong>É por isso que os fundidos assustam Ámenti mais do que
+assustam as outras seis</strong> — coisa sem registro é coisa que a escola não sabe combater.</p>
+<p><strong>A consequência política.</strong> Este é o arquivo usado como arma, que é o que Ámenti faz com tudo. A
+escola é o motivo prático de a embaixada querer o registro da Guilda: <strong>com ele, o acervo ficaria
+completo</strong>, e Ámenti saberia lutar contra qualquer aventureiro registrado antes de encontrá-lo.
+Korvas não cede, e sabe exatamente por que está sendo pedido. <strong>Fengdu tentou comprar cópia e foi
+recusada</strong>, o que é raro o bastante para ter virado assunto de embaixada.</p>
+<p><strong>Licencia:</strong> Bloqueio Agressivo · Bloqueio com a Mão · Bloqueio com o Pé · Apara do Judô ·
+Deslizamento · Queda. <strong>Exige Análise de Estilo</strong> — sem essa perícia, nenhuma técnica desta escola
+pode ser comprada.</p>
+<h2>2.5 · TULÁN — o Comando de Contenção</h2>
+<p><em>Yax Balam, rank A.</em></p>
+<p><strong>Quem ensina, e onde.</strong> Na boca do Poço, no Limiar, aos trezentos que ele comanda e a quem a
+Guilda contratar para contenção rasa. <strong>A escola é o trabalho</strong>: treina-se descendo, e o instrutor
+é quem voltou na semana passada. É a maior escola das nove, de longe, e a única que aceita rank F
+no primeiro dia.</p>
+<p><strong>O que custa entrar.</strong> <strong>Você fica de chamada.</strong> Quando a Pressão de um andar raso sobe, você vai,
+e vai onde mandarem — não onde o contrato pagaria melhor. Na ficha é <strong>Senso de Dever à contenção</strong>,
+e o Mestre de Cena o chama na semana em que a Pressão subir, não na semana que convier ao jogador.</p>
+<p><strong>A fraqueza estrutural.</strong> Foi feita para <strong>tomar coisa viva e segurar a boca de um andar</strong>.
+Prende, imobiliza, arremessa, derruba, e é excelente nisso. <strong>É ruim de matar.</strong> Cada turno gasto
+prendendo é um turno em que a coisa não morreu, e no fundo, onde as coisas não se cansam e a
+esquadra sim, prender é o jeito lento de perder. Contra o que precisa morrer agora, o aluno da
+contenção resolve devagar, e devagar mata quem está do lado dele.</p>
+<p><strong>A consequência política.</strong> <strong>As outras seis cidades pegam carona nisto e nenhuma paga.</strong> Tulán
+banca a instrução, a Guilda banca o contrato, e o resto do mundo colhe um Limiar que não é
+invadido. É a maior alavanca que Tulán tem e ela nunca a usou — e o dia em que Yax Balam fechar a
+escola às outras seis é um dia de crise diplomática. <strong>Ele não fecha porque está cansado, não
+porque é generoso.</strong> Amaravati foi a única que ofereceu pagamento e foi recusada, por escrito, sem
+explicação.</p>
+<p><strong>Licencia:</strong> Apara do Judô · Arremesso do Judô · Rasteira · Varredura · Chave de Braço ou de
+Pulso · Chave de Cabeça · Chave de Dedo · Mata-Leão · Segurar Perna · Voadora · Queda.</p>
+<h2>2.6 · FENGDU — o exame de arma</h2>
+<p><em>O nono distrito.</em></p>
+<p><strong>Quem ensina, e onde.</strong> No nono distrito da cidade murada, que é o distrito da avaliação. Fengdu
+admite por exame em tudo, e a luta não é exceção: há um programa, há avaliadores e há nota.
+<strong>Ensina-se por formas</strong> — sequências fixas, executadas diante da banca, contadas e pontuadas.</p>
+<p><strong>O que custa entrar.</strong> <strong>Você presta o exame de novo todo ano.</strong> Reprovar não expulsa: rebaixa, e
+o rebaixamento é público e escrito. Na ficha é <strong>Dever ao Departamento</strong>, e a semana do exame é
+ação de mundo gasta, todo ano, para sempre.</p>
+<p><strong>A fraqueza estrutural.</strong> <strong>É rubrica.</strong> A escola ensina o que o exame mede, e o exame mede o que
+está no programa. <strong>O programa não é revisado desde antes de a Garganta ser interessante:</strong> foi
+escrito para adversários humanos, armados, de pé, que atacam de frente e um por vez. O aluno é
+excelente contra isso e desconcertado por tudo o mais. Uma banca não pode graduar o que não se
+demonstra diante dela — e é por isso que <strong>energia interior não entra no programa</strong>, o que a cidade
+apresenta como rigor e as outras seis leem como o contrário.</p>
+<p><strong>A consequência política.</strong> <strong>A nota é portátil.</strong> As guildas das outras seis começaram a lê-la, e
+um aventureiro com nota de Fengdu negocia melhor sem ter descido mais fundo. Isso é um segundo
+registro, e Korvas não tem resposta para ele: a Guilda classifica por profundidade alcançada, e
+Fengdu classifica por competência demonstrada, e as duas coisas não são a mesma. <strong>Ilê Ifé recusa
+reconhecer a nota</strong>, e recusa em voz alta.</p>
+<p><strong>Licencia:</strong> Bloqueio Agressivo · Bloqueio Agressivo com o Pé · Bloqueio com a Mão ·
+Bloqueio com o Pé · Postura do Gato · Shuto (Mão em Espada) · Golpe com a Mão · Chute.</p>
+<h2>2.7 · AMARAVATI — a Casa de Hanuman</h2>
+<p><em>O pátio do santuário.</em></p>
+<p><strong>Quem ensina, e onde.</strong> No pátio do santuário de Hanuman, nos anéis internos, que têm mais de mil
+anos. A instrução é longa e não tem pressa, como a cidade.</p>
+<p><strong>O que custa entrar.</strong> <strong>O voto de não sacar fio.</strong> O aluno não carrega nem usa arma de corte ou
+de ponta — bastão, mão aberta e nada mais. <strong>É por isso que a escola ensina a desarmar</strong>: quem não
+pode matar com lâmina aprende a tirar a lâmina do outro. Na ficha é <strong>Juramento</strong>, e o dharma o
+sustenta: em Amaravati, o que é certo depende de quem você é, e o aluno de Hanuman é alguém que não
+corta.</p>
+<p><strong>A fraqueza estrutural.</strong> Duas, e elas se somam. <strong>Bastão contra armadura é ruim</strong>, e a Garganta
+está cheia de coisa com couro, placa e casco. E <strong>contra o que não tem mão, metade da escola
+simplesmente não existe</strong>: garra, mordida, tentáculo e o que nunca empunhou nada não se desarmam.
+O aluno de Hanuman é formidável contra gente e medíocre contra o andar 6.</p>
+<p><strong>A consequência política.</strong> A regra de não cortar é lida pelas outras seis como fraqueza, e quem a
+lê assim apanha — o que fez a escola virar a prova favorita de Amaravati de que o dharma não é
+ingenuidade. Dentro da cidade é o contrário: <strong>o voto é de casta</strong>, e há brâmanes que consideram
+escandaloso que um santuário ensine luta a quem não nasceu para ela. A escola aceita estrangeiro há
+doze anos e a briga sobre isso não terminou.</p>
+<p><strong>Licencia:</strong> Yawara · Golpe com a Mão · Bloqueio com a Mão · Golpe com o Cotovelo ·
+Golpe com o Joelho · Postura do Gato · Shuto (Mão em Espada) · Chute · Pisão · Queda.</p>
+<h2>2.8 · ILÊ IFÉ — os Doze de Baixo</h2>
+<p><em>Vantê, rank A.</em></p>
+<p><strong>Quem ensina, e onde.</strong> Vantê, aos doze batedores dele, e a quem ele conduz. Não há sede e não há
+turma: <strong>ensina-se descendo</strong>, e o que se ensina é o que o cliente precisou naquela descida. Quem
+paga condução e presta atenção sai sabendo mais do que entrou, e isso não está no preço — é o que
+ele faz de graça e não admite que faz.</p>
+<p><strong>O que custa entrar.</strong> <strong>Você não vende o que aprendeu.</strong> Nem mapa, nem aula, nem exclusividade a
+embaixada nenhuma — e a recusa é pública, como as dele. Na ficha é <strong>Juramento</strong>, e ele cobra:
+aluno que abriu escola própria ou vendeu rota deixou de ser aluno no dia, e Ilê Ifé fica sabendo.</p>
+<p><strong>A fraqueza estrutural.</strong> É estilo de quem vai embora. Varre a perna, quebra o joelho do que está
+no caminho, desliza para fora do alcance e <strong>atravessa</strong>. <strong>Não sabe segurar terreno e não sabe
+acabar uma luta.</strong> Numa contenção — que é metade do trabalho pago da Garganta — o aluno dos Doze
+faz o inimigo passar por ele, que é exatamente o oposto do contratado. Vantê considera isso uma
+qualidade e não está claro que esteja errado.</p>
+<p><strong>A consequência política.</strong> Ele recusa virar cargo, concessão ou selo de cidade nenhuma, e recusou
+as sete embaixadas uma por uma, em praça, para que a recusa ficasse registrada. Mas <strong>são doze
+bocas por semana</strong>, e é por isso que ele aceita contrato que preferiria recusar — e quem entende
+isso contrata na semana errada de propósito. <strong>A rival é Funmilayo</strong>, que foi da esquadra dele, e a
+briga é sobre método: ela diz que ele vende dependência, ele diz que ela vende gente morta com dois
+anos de atraso. Nenhum dos dois está falando de golpe.</p>
+<p><strong>Licencia:</strong> Chute · Chute Circular (Giratória) · Chute Circular Lateral/para Trás ·
+Chute Descendente · Chute Para Trás · Chute Saltando · Golpe com a Canela · Varredura ·
+Bloqueio com o Pé · Bloqueio Agressivo com o Pé · Rasteira · Deslizamento.</p>
+<h2>2.9 · OS FIADORES — fiança de contrato</h2>
+<p><em>Não é cidade. É companhia.</em></p>
+<p><strong>Quem ensina, e onde.</strong> Numa casa de estrada na Coroa, fora das sete, e em qualquer lugar onde
+tenham gente no livro. <strong>Os Fiadores garantem contrato:</strong> uma folha da Guilda com o selo deles paga
+ao contratante mesmo se a esquadra inteira morrer. Quem garante risco tem interesse em risco
+barato, e gente treinada é risco barato — por isso a companhia ensina, e ensina bem.</p>
+<p><strong>O que custa entrar.</strong> <strong>Seu nome entra no livro, com um valor ao lado.</strong> Comida, aço, teto e
+instrução são lançados como empréstimo, e trabalham-se de volta em contrato garantido. O valor não
+é segredo: qualquer um pode perguntar quanto você deve, e a companhia responde. Na ficha é
+<strong>Dívida</strong>, e ela não prescreve — a companhia considera que documento que a pessoa assina em si
+mesma não vale nada, e quem some continua no livro como inadimplente.</p>
+<p><strong>A fraqueza estrutural.</strong> A instrução inteira serve a uma coisa: <strong>trazer a carga de volta</strong>. É
+esgrima de recuo e de distância — impacto de parada, mergulho, romper o alcance, sair. E por isso
+<strong>o aluno recusa a briga que o cliente quer</strong>: quando a escolha é entre entregar a encomenda e
+vencer a luta, a escola manda entregar, e manda por reflexo, antes de qualquer decisão. Já custou
+contrato, já custou aliado, e a companhia trata isso como preço aceitável, o que não é a opinião de
+quem estava do lado.</p>
+<p><strong>A consequência política.</strong> <strong>Uma companhia que possui nomes nas sete cidades é a instituição que
+o tratado do Limiar não previu.</strong> O selo vale dinheiro e o registro da Guilda não promete o que ele
+promete: Korvas registra quem você é, e o Fiador garante que alguém paga. As sete cidades tratam a
+companhia como fornecedor e nenhuma quer discutir o que ela é. <strong>Só eles ensinam esgrima</strong>, e é o
+motivo prático de meio duelista do Limiar dever alguma coisa a eles — inclusive gente que jura não
+dever, e gente que aprendeu com quem aprendeu lá.</p>
+<p><strong>São os únicos que ensinam as duas técnicas que o circuito do pancrácio recusa</strong> — golpe nos olhos
+e ataque ao rosto. Uma companhia que garante entrega ensina o que ganha, não o que é limpo.</p>
+<p><strong>Licencia:</strong> Flecha · Impacto de Parada · Mergulho no Chão · Estocada · Corpo-a-Corpo ·
+Golpe nos Olhos · Ataques contra o Rosto · Deslizamento · Queda.</p>
+<hr />
+<h1>3 · As oito técnicas que não têm dono</h1>
+<p><strong>Decisão do Árbitro de 14/09/2026.</strong> Oito técnicas do <em>GURPS Artes Marciais</em> não têm perícia-mãe
+nomeada: o livro as pré-define contra <em>"qualquer perícia de combate"</em>. <strong>Elas não são presas a
+estilo.</strong> Quem tem a perícia da arma tem acesso a elas, sem escola, sem mestre e sem dever nada a
+ninguém.</p>
+<table>
+<thead>
+<tr>
+<th>Técnica</th>
+<th>Pré-definido</th>
+<th>O que faz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Finta</strong></td>
+<td>qualquer perícia de combate</td>
+<td>A finta do Como se joga, aperfeiçoada</td>
+</tr>
+<tr>
+<td><strong>Desarmar</strong></td>
+<td>DX · Judô · perícia com arma</td>
+<td>Tirar a arma da mão do outro</td>
+</tr>
+<tr>
+<td><strong>Ponto de Impacto</strong></td>
+<td>qualquer perícia de combate−3</td>
+<td>Acertar onde se quer acertar</td>
+</tr>
+<tr>
+<td><strong>Riposta</strong></td>
+<td>perícia com arma−4</td>
+<td>Contra-atacar na aparada</td>
+</tr>
+<tr>
+<td><strong>Conservar a Arma</strong></td>
+<td>perícia com arma · DX</td>
+<td>Não perder a arma quando tentam tirá-la</td>
+</tr>
+<tr>
+<td><strong>Combate de Perto</strong></td>
+<td>perícia com arma de perto−2 · outra−6</td>
+<td>Lutar dentro do hex</td>
+</tr>
+<tr>
+<td><strong>Luta no Solo</strong></td>
+<td>qualquer perícia de combate−4</td>
+<td>Lutar caído</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Por que são livres, e a razão importa.</strong> Fintar, desarmar e mirar são manobra de quem sabe usar a
+arma, não doutrina de escola. Prendê-las a estilo faria com que um soldado de trinta anos de ofício
+não soubesse fintar por não ter frequentado ninguém, o que é falso no livro e falso no mundo. <strong>As
+escolas continuam valendo o preço que cobram</strong>, porque as quarenta e quatro que sobram são delas, e
+são as que decidem uma luta.</p>
+<blockquote>
+<p><strong>Uma oitava técnica ficou de fora desta tabela de propósito.</strong> O <em>Artes Marciais</em> traz <strong>Treino
+no Manejo de Armas com a Mão Inábil</strong> (p.53), que é a mesma coisa que a Tabela de Perícias já
+lista <strong>duas vezes</strong>, como perícia: <em>Treino do Manejo de Armas com a Mão Inábil</em> (<em>Fantasy</em> p.63)
+e <em>Uso da Arma com a Mão Inábil</em> (<em>Império Romano</em> p.37). <strong>Acrescentar um terceiro nome para a
+mesma coisa numa tabela fechada seria errado</strong>, e reduzir três a um é decisão do Árbitro, não
+minha. Fica Pendência aberta. Até lá, compra-se pela linha que já existe.</p>
+</blockquote>
+<hr />
+<h1>4 · Entrar, ser expulso, e trocar de escola</h1>
+<p><strong>Entra-se com ação de mundo e com o preço pago.</strong> A escola não aceita por dinheiro só: aceita por
+apresentação, por serviço prestado ou por quem responde por você, conforme o verbete. A homologação
+registra a entrada, e a linha de desvantagem entra na ficha na mesma semana.</p>
+<p><strong>A expulsão é escrita em cada verbete</strong>, e é sempre por quebra do preço — não por desempenho
+ruim. Escola nenhuma expulsa aluno fraco; todas expulsam aluno que não pagou o que prometeu.</p>
+<p><strong>O que a expulsão faz, exatamente:</strong></p>
+<ul>
+<li><strong>Você não desaprende.</strong> Toda técnica comprada fica no nível em que está, para sempre.</li>
+<li><strong>Elas param de subir.</strong> Nenhum ponto novo entra em técnica daquela escola.</li>
+<li><strong>As três defesas ampliadas travam</strong>, porque exigem mestre e você não tem mais.</li>
+<li><strong>Você pode entrar em outra escola</strong>, e as técnicas que as duas licenciam voltam a subir.</li>
+</ul>
+<p><strong>Trocar de escola é permitido e é caro.</strong> A linha de desvantagem da escola antiga sai da ficha, e
+com ela saem os pontos que ela dava — que precisam vir de algum lugar. <strong>Ninguém troca de graça, e
+ninguém troca sem que a antiga saiba.</strong></p>
+<hr />
+<h1>5 · Estilo não é cidade</h1>
+<p><strong>Escola aceita estrangeiro, e quase todas aceitam.</strong> Um tulteca pode ter aprendido com os Fiadores;
+um homem de Ônfalos pode ter passado pelo Comando de Contenção; o Pátio de Bronze já treinou gente
+de Gapheim e tem os nomes anotados.</p>
+<p><strong>Isso é regra, e não exceção</strong>, por três razões:</p>
+<ol>
+<li><strong>A Guilda registra pessoas, não cidades.</strong> Quem paga o preço de uma escola entra nela.</li>
+<li><strong>Metade do que acontece na Garganta acontece no Limiar</strong>, onde as sete se misturam por desenho.</li>
+<li><strong>O contrário empobreceria a mesa</strong> sem ganhar nada: personagem nasce onde o jogador quis e
+   aprendeu onde a história dele o levou, e as duas coisas não precisam bater.</li>
+</ol>
+<p><strong>O que a escola cobra, ela cobra igual de todos.</strong> A única diferença que a cidade faz é política:
+aluno estrangeiro numa escola de Casa é assunto de embaixada, e há semanas em que isso custa caro.</p>
+<blockquote>
+<p><strong>Para o Mestre de Cena.</strong> Quando um personagem já usa uma perícia de combate e não tem escola
+declarada, <strong>não invente uma</strong>. Pergunte ao jogador com quem ele aprendeu, e trate a resposta
+como fato do mundo. Se ele não souber, a resposta existe e ainda não foi dita — e é bom gancho,
+não é buraco.</p>
+</blockquote>
+<hr />
+<h1>6 · O que ficou de fora, e por quê</h1>
+<p><strong>O cinematográfico não entra.</strong> A decisão 34 do Árbitro vale inteira: <strong>doze técnicas</strong> que o
+próprio <em>GURPS Artes Marciais</em> marca como Cinematográficas ficam fora, e <strong>dezoito perícias de
+energia interior</strong> ficam fora com elas. Nesta campanha o sobrenatural passa por Casa, por Marca e
+por Dever — poder sem dono foi recusado quando a Magia Intrínseca foi recusada, e é a mesma recusa.</p>
+<p><strong>Quatro técnicas são de criatura, não de gente</strong>, e ficam fora por isso: duas exigem cauda, uma
+pertence a um estilo que o próprio livro dá a um bicho, e <strong>Chute em Varredura exige a perícia
+Vôo</strong> e é manobra de combate aéreo.</p>
+<p><strong>Os estilos nomeados do livro não entram.</strong> Os cinquenta e oito estilos do <em>GURPS Artes Marciais</em>
+citam países que não existem neste mundo, e caem no filtro da decisão 53: <em>entra o que funciona sem
+o cenário do livro; fica fora o que só existe naquele mundo.</em> <strong>As nove escolas acima são da
+Garganta, e são as únicas.</strong></p>
+<p><strong>Seis perícias de arma ficaram fora pelo mesmo filtro</strong>, por decisão do Árbitro de 14/09/2026 —
+são armas de nome próprio de um povo que não está entre as sete. Onde uma delas fazia parte do
+pré-definido de uma técnica, <strong>o pré-definido foi reduzido ao que a Tabela de Perícias tem</strong>, e a
+Tabela diz isso na linha.</p>
+<hr />
+<h1>7 · O que ainda não tem escola</h1>
+<p><strong>Dito na cara, para não parecer lacuna escondida.</strong> Nenhuma das nove ensina técnica de <strong>arco, de
+besta, de funda ou de arremesso</strong> — o livro traz as de projétil no capítulo cinematográfico, e elas
+caíram com ele. Batedor de Ilê Ifé, escriba de Ámenti e caçadora de Fengdu atiram pela perícia,
+como sempre atiraram, e <strong>não perdem nada</strong>: não há técnica de projétil realista neste acervo para
+eles perderem.</p>
+<p><strong>E há três coisas que são Pendência, não lacuna:</strong></p>
+<ol>
+<li><strong>A escola de machado de Gapheim fora da corte.</strong> Os que levam o machado ao Thing ensinam o
+   duelo; quem quiser machado de guerra em formação não tem onde aprender, e o que existe disso na
+   cidade é a família, que não aceita de fora.</li>
+<li><strong>Ámenti tem uma segunda força armada</strong> — a guarda da necrópole, na margem oeste — que não é
+   escola nesta lista e talvez devesse ser.</li>
+<li><strong>A Casa de Sekhmet existe</strong> e é a Casa da guerra numa cidade que nega ser marcial. Não tem
+   verbete aqui, e a ausência é escolha, não esquecimento.</li>
+</ol>
+<div class="rodape">A Garganta · cânone aberto · gerado em 2026-09-14 · <a href="txt/33-escolas-de-luta.md">ver em texto puro</a></div>
+</main></div><script>
+(function(){var c=document.getElementById('busca');if(!c)return;var r=document.getElementById('resultados'),ix=null;
+fetch('busca.json').then(function(x){return x.json()}).then(function(d){ix=d});
+c.addEventListener('input',function(){var q=c.value.trim().toLowerCase();r.innerHTML='';if(q.length<2||!ix)return;
+var n=0;for(var i=0;i<ix.length&&n<12;i++){var it=ix[i];if((it.t+' '+it.h+' '+it.d).toLowerCase().indexOf(q)>=0){
+var a=document.createElement('a');a.href=it.u;a.textContent=it.t+(it.s?' · '+it.s:'');r.appendChild(a);n++}}
+if(!n)r.innerHTML='<div class="nada">nada encontrado</div>'})})();
+</script></body></html>

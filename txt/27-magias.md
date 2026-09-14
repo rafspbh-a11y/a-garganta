@@ -1,6 +1,6 @@
 titulo: Tabela de Mágicas
 versao: 10
-atualizado: 2026-09-13
+atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Tabela de Mágicas
