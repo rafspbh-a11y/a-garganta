@@ -8657,7 +8657,7 @@ nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 n
 ---
 
 titulo: Retificações de livro
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -9520,6 +9520,58 @@ existe.
   tabela de preços por variação ficou ilegível.
 
 **A Tabela de Mágicas fecha o dia em 778 linhas**, contra 429 de manhã.
+
+
+---
+
+# RETIFICAÇÃO — 13/09/2026: a reescrita de combate, e o que ela cobra das sete fichas
+
+**As quatro decisões que estavam paradas entraram, e mais oito blocos com elas.** O `20` foi de 60
+para 67 KB; o `19 — Cartão de Combate`, de 9,5 para 11,4. **Nenhum documento perdeu nada.**
+
+## 1. As quatro decisões, aplicadas
+
+- **27 — Quedas.** 1D−4 por metro até 2 m, 1D−3 até 4 m, 1D−2 daí em diante, teto em 45.
+  Acrobacia tira até 5 m; **armadura de metal protege com metade da RD, e couro não protege.**
+- **29 — Trespassar.** Dano de ponta no tronco acima da Vitalidade se perde; acima do triplo na
+  cabeça e nos vitais se desperdiça; feixe, bola de fogo e descarga dobram os tetos; **contra o
+  cérebro não há teto.** Sem isso, o crítico quadruplicado no crânio vira número absurdo e a
+  tabela de morte deixa de funcionar.
+- **30 — A terceira aparada.** Esgrimista com faca na mão fraca apara três vezes.
+- **33 — Falha crítica em magia.** Os dezesseis resultados, mais duas correções de custo que valem
+  em todo lançamento: **sucesso decisivo não gasta energia, e falha comum gasta 1 ponto.**
+
+## 2. O que isso muda em ficha — três consequências, todas hoje
+
+**Karthoz e Lísias ganharam a terceira aparada sem comprar nada.** Os dois têm **Esgrima e faca**.
+Karthoz apara **10, 10 e 6** (11, 11 e 7 com Reflexos); Lísias, **9, 9 e 5**. A Nota Tática do
+Lísias dizia que a Esgrima *"resolve dois atacantes, não seis"* — **com a faca na mão fraca,
+resolve três.** E o preço está no enunciado: a mão da faca não segura tocha, não segura corda e
+não faz Judô. **É escolha de turno, não de ficha.**
+
+**Três fichas ficaram mais caras por não terem comprado um kit de 50 grãos.** Itzcoatl, Lísias e
+Runirsson carregam `+1 só com kit` **sem o kit**, o que já estava marcado desde 10/09. Agora pesa
+mais: **infecção de ferimento testa HT +3 e o kit dá +1** — sem ele, nenhum dos três trata
+ferimento sujo, nem o próprio nem o de companheiro. **Cinquenta grãos.**
+
+**E as sete usam couro, o que as expõe duas vezes.** Nenhuma ficha da mesa veste metal. **Couro não
+protege contra queda** — num vão de 6 m, 6D−12 cai inteiro sobre PV 12. E **couro protege pela
+metade contra fogo**, o que é melhor que o metal, que esquenta e não protege nada. **A armadura da
+mesa é a certa para incêndio e a errada para queda.**
+
+## 3. O que a reescrita confirmou, e que a ficha já dizia
+
+**Combate de perto: agarrar e imobilizar não são perícia** — são Disputa de DX e depois de ST, com
+Judô ou Briga desempatando. **A ficha do Runirsson já afirmava isso desde 10/09**, e a regra não
+existia em documento nenhum. Agora existe, e as duas dizem a mesma coisa.
+
+## 4. Duas regras que cobram o que a mesa vinha ignorando
+
+**RD de metal não protege contra fogo** — esquenta. E **do andar 9 para baixo isso inverte**: a
+rocha guarda calor, e armadura de metal vira forno. É mais uma razão para a mesa estar de couro.
+
+**Terreno se declara antes do primeiro dado**, como o chefe de encontro. **Galeria de um hex faz
+todo combate virar de perto** — que é a situação mais comum de uma descida e não tinha regra.
 
 
 ---

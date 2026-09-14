@@ -37,7 +37,7 @@ e avise o jogador para trocar o anexo.
 27-magias                    v10   https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 28-vantagens                 v7    https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md
 29-desvantagens              v8    https://rafspbh-a11y.github.io/a-garganta/txt/29-desvantagens.md
-23-retificacoes-de-livro     v7    https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md
+23-retificacoes-de-livro     v8    https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md
 25-decisoes-de-10-09-2026    v1    https://rafspbh-a11y.github.io/a-garganta/txt/25-decisoes-de-10-09-2026.md
 31-dadiva-de-zeus-e-clima    v1    https://rafspbh-a11y.github.io/a-garganta/txt/31-dadiva-de-zeus-e-clima.md
 boletim-atual                v1    https://rafspbh-a11y.github.io/a-garganta/txt/boletim-atual.md
