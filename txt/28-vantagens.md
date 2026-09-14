@@ -1,5 +1,5 @@
 titulo: Tabela de Vantagens
-versao: 6
+versao: 7
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -29,12 +29,14 @@ fonte: cânone aberto de A Garganta
 | Cálculos Instantâneos | 5 | Conta de cabeça, instantânea |
 | **Carisma** | **5/nível** | **+1 por nível em todo teste de reação** de criatura inteligente. Soma também em **Trovador** e **Liderança** |
 | Clericato | 5+ | +1 de reação com correligionários e com quem respeita a fé. 10+ se clérigos invocam ajuda do Além |
+| **Destino** | **+1 a +15** | *Império Romano* p.34. Uma força empurra a vida do personagem para um fim pré-estabelecido. **O jogador compra o valor; o Árbitro escreve o conteúdo, em segredo.** A face negativa está no `29` — é o mesmo traço |
 | **Empatia** | **15** | Teste de IQ ao conhecer alguém: o Árbitro diz o que você **sente**. Serve para sinceridade, não para verdade. **Numa falha, o Árbitro pode mentir.** *Não é mágica* |
 | Empatia com Animais | 5 | +2 de reação de animal selvagem; **+4 em qualquer perícia com animais** — o livro diz "Adestramento de Animais, Cavalgar, Veterinária, etc.", e o **etc. é literal**: entram também **Falcoaria** e **Carregamento**, e qualquer outra que a lista de perícias (`26`) traga como perícia com animal; +3 para achar caça. Não mata animal sem motivo forte |
 | **Esquiva Ampliada** | **15** | *Artes Marciais* p.58. **Uma esquiva a mais por rodada** — e a Esquiva já é ilimitada contra o que se vê vir, então ela vale contra o que **não** se vê: ataque surpresa, segundo atacante no mesmo turno. **Só depois da criação**, e com mestre |
 | **Facilidade para Línguas** | **2/nível** | **+1 no IQ por nível, só para aprender língua** e para Lingüística. Acumula com Memória Eidética |
 | **Familiares** | **variável** | *GURPS Magia* p.105-106. **Só para quem tem Aptidão Mágica 2 ou 3** — na Garganta, portanto, só para quem tem Casa. Custo montado item a item: a **fonte de ST** custa ⅓ do que custaria elevar a ST do mago até a soma das duas; ver pelos olhos do bicho **+5**; torná-lo inteligente **5** no primeiro nível e **+10** por nível; fazê-lo falar **5 / 10 / 15**. **O mago sofre os ferimentos do familiar: −15.** Nenhum componente conta abaixo de zero. Convocar leva **uma semana de trabalho ininterrupto** e um teste secreto contra **IQ−6**; **falha crítica traz um demônio disfarçado**. **Um por vez.** *(E na Garganta o que atende à convocação **sobe do poço** — o que explica o demônio disfarçado sem inventar nada.)* |
 | **Força de Vontade** | **4/nível** | **+1 por nível em todo teste de Vontade**: medo, dor, **Interrogatório (com ou sem tortura)**, Hipnotismo, e também quando alguém tenta influenciá-lo por **Diplomacia, Lábia ou Sex-Appeal**. E soma à resistência **de qualquer mágica que se possa resistir** — não só as de dominação da mente (MB pág. 20). Não ajuda contra choque de combate |
+| **Grupo Aliado** | variável, por tamanho | *Illuminati* p.28. Um conjunto de NPCs que age como aliado coletivo — a companhia, o culto, a casa mercante. Força e frequência como no Aliado |
 | Hierarquia Militar | 5/nível (máx. 8) | 1 nível de Status a cada 3 de Hierarquia. Nível 5–6 exige Liderança 12+; 7+ exige 13+ |
 | **Hipoalgia** (alto limiar de dor) | **10** | **Não fica atordoado nem perde DX no turno seguinte ao ferimento** (exceto golpe na cabeça ou fulminante); +3 para resistir a tortura; +3 em Vontade para ignorar dor |
 | **Imunidade** | 10 | Nunca contrai doença ou infecção naturalmente. Exige **HT inicial 12+** — e se a HT cair abaixo disso depois, a imunidade fica. Fungo e vírus contam como doença; parasita maior, como solitária, não. *(Chamava-se "Imunidade a doenças" até 12/09; o nome de livro é **Imunidade**, seco — Básico p.20. A colisão com as mágicas Imunidade ao Fogo, ao Frio, a Relâmpagos, à Dor e a Doenças resolve-se pelo tipo obrigatório na linha, `26` §11.)* |
@@ -48,6 +50,7 @@ fonte: cânone aberto de A Garganta
 | Olfato/Paladar Apurado | 2/nível | +1 por nível em Olfato e Paladar — veneno na comida antes do segundo gole |
 | Ouvido Aguçado | 2/nível | +1 por nível em Audição e nos testes de IQ para notar ruído |
 | Patrono | 10+ | Ver §2 |
+| **Patrono Secreto** | **o do Patrono, −5** | *Illuminati* p.28-29. Igual ao Patrono, **mas o personagem não sabe quem o adotou**: não há como pedir ajuda, e a intervenção só vem quando convém ao patrono — e quase sempre de forma que ele não reconheça |
 | Poderes Legais | 5 / 10 / 15 | Conforme jurisdição e alçada |
 | **Prontidão** | **5/nível** | **+1 por nível em teste de QUALQUER sentido** e nos testes de IQ para perceber algo. Acumula com Visão Aguçada e as demais |
 | Recuperação Alígera | 5 | **+5 na HT efetiva** para recuperar PV e curar aleijão. Exige HT 10+. Não ajuda contra atordoamento |

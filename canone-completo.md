@@ -7720,7 +7720,7 @@ E as correções de grafia — a Relação saiu do arquivo com erro de leitura, 
 ---
 
 titulo: Tabela de Vantagens
-versao: 6
+versao: 7
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -7750,12 +7750,14 @@ fonte: cânone aberto de A Garganta
 | Cálculos Instantâneos | 5 | Conta de cabeça, instantânea |
 | **Carisma** | **5/nível** | **+1 por nível em todo teste de reação** de criatura inteligente. Soma também em **Trovador** e **Liderança** |
 | Clericato | 5+ | +1 de reação com correligionários e com quem respeita a fé. 10+ se clérigos invocam ajuda do Além |
+| **Destino** | **+1 a +15** | *Império Romano* p.34. Uma força empurra a vida do personagem para um fim pré-estabelecido. **O jogador compra o valor; o Árbitro escreve o conteúdo, em segredo.** A face negativa está no `29` — é o mesmo traço |
 | **Empatia** | **15** | Teste de IQ ao conhecer alguém: o Árbitro diz o que você **sente**. Serve para sinceridade, não para verdade. **Numa falha, o Árbitro pode mentir.** *Não é mágica* |
 | Empatia com Animais | 5 | +2 de reação de animal selvagem; **+4 em qualquer perícia com animais** — o livro diz "Adestramento de Animais, Cavalgar, Veterinária, etc.", e o **etc. é literal**: entram também **Falcoaria** e **Carregamento**, e qualquer outra que a lista de perícias (`26`) traga como perícia com animal; +3 para achar caça. Não mata animal sem motivo forte |
 | **Esquiva Ampliada** | **15** | *Artes Marciais* p.58. **Uma esquiva a mais por rodada** — e a Esquiva já é ilimitada contra o que se vê vir, então ela vale contra o que **não** se vê: ataque surpresa, segundo atacante no mesmo turno. **Só depois da criação**, e com mestre |
 | **Facilidade para Línguas** | **2/nível** | **+1 no IQ por nível, só para aprender língua** e para Lingüística. Acumula com Memória Eidética |
 | **Familiares** | **variável** | *GURPS Magia* p.105-106. **Só para quem tem Aptidão Mágica 2 ou 3** — na Garganta, portanto, só para quem tem Casa. Custo montado item a item: a **fonte de ST** custa ⅓ do que custaria elevar a ST do mago até a soma das duas; ver pelos olhos do bicho **+5**; torná-lo inteligente **5** no primeiro nível e **+10** por nível; fazê-lo falar **5 / 10 / 15**. **O mago sofre os ferimentos do familiar: −15.** Nenhum componente conta abaixo de zero. Convocar leva **uma semana de trabalho ininterrupto** e um teste secreto contra **IQ−6**; **falha crítica traz um demônio disfarçado**. **Um por vez.** *(E na Garganta o que atende à convocação **sobe do poço** — o que explica o demônio disfarçado sem inventar nada.)* |
 | **Força de Vontade** | **4/nível** | **+1 por nível em todo teste de Vontade**: medo, dor, **Interrogatório (com ou sem tortura)**, Hipnotismo, e também quando alguém tenta influenciá-lo por **Diplomacia, Lábia ou Sex-Appeal**. E soma à resistência **de qualquer mágica que se possa resistir** — não só as de dominação da mente (MB pág. 20). Não ajuda contra choque de combate |
+| **Grupo Aliado** | variável, por tamanho | *Illuminati* p.28. Um conjunto de NPCs que age como aliado coletivo — a companhia, o culto, a casa mercante. Força e frequência como no Aliado |
 | Hierarquia Militar | 5/nível (máx. 8) | 1 nível de Status a cada 3 de Hierarquia. Nível 5–6 exige Liderança 12+; 7+ exige 13+ |
 | **Hipoalgia** (alto limiar de dor) | **10** | **Não fica atordoado nem perde DX no turno seguinte ao ferimento** (exceto golpe na cabeça ou fulminante); +3 para resistir a tortura; +3 em Vontade para ignorar dor |
 | **Imunidade** | 10 | Nunca contrai doença ou infecção naturalmente. Exige **HT inicial 12+** — e se a HT cair abaixo disso depois, a imunidade fica. Fungo e vírus contam como doença; parasita maior, como solitária, não. *(Chamava-se "Imunidade a doenças" até 12/09; o nome de livro é **Imunidade**, seco — Básico p.20. A colisão com as mágicas Imunidade ao Fogo, ao Frio, a Relâmpagos, à Dor e a Doenças resolve-se pelo tipo obrigatório na linha, `26` §11.)* |
@@ -7769,6 +7771,7 @@ fonte: cânone aberto de A Garganta
 | Olfato/Paladar Apurado | 2/nível | +1 por nível em Olfato e Paladar — veneno na comida antes do segundo gole |
 | Ouvido Aguçado | 2/nível | +1 por nível em Audição e nos testes de IQ para notar ruído |
 | Patrono | 10+ | Ver §2 |
+| **Patrono Secreto** | **o do Patrono, −5** | *Illuminati* p.28-29. Igual ao Patrono, **mas o personagem não sabe quem o adotou**: não há como pedir ajuda, e a intervenção só vem quando convém ao patrono — e quase sempre de forma que ele não reconheça |
 | Poderes Legais | 5 / 10 / 15 | Conforme jurisdição e alçada |
 | **Prontidão** | **5/nível** | **+1 por nível em teste de QUALQUER sentido** e nos testes de IQ para perceber algo. Acumula com Visão Aguçada e as demais |
 | Recuperação Alígera | 5 | **+5 na HT efetiva** para recuperar PV e curar aleijão. Exige HT 10+. Não ajuda contra atordoamento |
@@ -8003,7 +8006,7 @@ Estão marcados com **▲**.
 ---
 
 titulo: Tabela de Desvantagens
-versao: 4
+versao: 7
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -8053,13 +8056,15 @@ fonte: cânone aberto de A Garganta
 | Covardia | −10 | Teste de Vontade ao surgir risco físico, **−5** se houver risco de vida; **−2** de reação de soldados e guardas que saibam |
 | Credulidade | −10 | Teste de IQ para não acreditar, **−6** se a mentira for bem contada; **−3 em Comércio**. **Não pode aprender Detecção de Mentiras** |
 | Daltonismo | −10 | Não distingue **nenhuma** cor. **−1** em Condução, Pilotagem, **Química**, Rastreamento e Comércio. Mais as dificuldades que o Árbitro impuser onde a cor decide — comprar pedra, reconhecer libré, ler selo colorido |
-| **Desdobramento de Personalidade** | −10 / −15 | Duas ou mais personalidades, **cada uma com sua própria ficha** e pelo menos **50 pontos de diferença** entre elas. Permite carregar desvantagens mentais incompatíveis entre si (Pacifismo numa, Fúria noutra). ST, DX e HT podem variar um pouco; IQ e perícias podem ser outros |
 | Deficiente Físico | −15 / −25 / −35 | Perna mutilada: Deslocamento −3, **−3** em tudo que exija andar. Perneta: **−6**, Deslocamento máx. 2, não corre. Sem pernas: velocidade ST÷4, **−6** para lutar com espada |
 | **Dependentes** | **variável** | Ver §3. **Máximo 2** |
+| **Desdobramento de Personalidade** | −10 / −15 | Duas ou mais personalidades, **cada uma com sua própria ficha** e pelo menos **50 pontos de diferença** entre elas. Permite carregar desvantagens mentais incompatíveis entre si (Pacifismo numa, Fúria noutra). ST, DX e HT podem variar um pouco; IQ e perícias podem ser outros |
+| **Destino** | **−1 a −15** | *Império Romano* p.34. O mesmo traço da vantagem, comprado do lado ruim: leva a alguma coisa má, **não necessariamente imediata, e nunca sem chance de conquistar honra lidando corretamente com ela.** O Árbitro escreve o conteúdo |
 | **Dever** | **−2 a −15** | Ver §3. **É a desvantagem da Marca**, e é obrigatória |
+| **Dever Extremamente Perigoso** | **−20** | *Artes Marciais* p.30. **Só para o Dever da Marca** (`29` §1): o marcado que a Casa chama quase sempre e que arrisca a vida nisso. **Fica fora do limite de −40**, como os outros degraus do Dever. Não vale para Dever de empregador nem de Guilda |
+| Dislexia | **−15** | O livro dá −5 em cultura analfabeta e −15 em cultura letrada, *"pós-imprensa"* — e **as sete cidades são cultura letrada**, pelo mesmo fato de mundo que fez a Alfabetização custar 0 e o Analfabetismo valer −10. Estuda perícia mental sem professor a **¼ da velocidade**; **não pode aprender magia**; e **é automaticamente analfabeto sem receber pontos por isso** — não se somam as duas |
 | **Disopia** (visão imperfeita) | **−10**, e **−25 na Garganta** | Míope ou hipermétrope, à escolha. **−2** em toda perícia com arma de mão; com arremesso ou projétil, **conta o dobro da distância real**. Hipermétrope: **triplo do tempo** para ler e **−3 de DX** em trabalho manual. **Óculos só existem a partir do NT5** — nas sete cidades não há correção, então o Árbitro paga o valor cheio de −25 em vez de −10 |
 | **Disosmia / Ageusia** | −5 | Não sente cheiro nem sabor de nada. **Não detecta veneno, fumaça, gás nem podridão pelo olfato**; em compensação, come qualquer coisa e não é afetado por fedor |
-| Dislexia | **−15** | O livro dá −5 em cultura analfabeta e −15 em cultura letrada, *"pós-imprensa"* — e **as sete cidades são cultura letrada**, pelo mesmo fato de mundo que fez a Alfabetização custar 0 e o Analfabetismo valer −10. Estuda perícia mental sem professor a **¼ da velocidade**; **não pode aprender magia**; e **é automaticamente analfabeto sem receber pontos por isso** — não se somam as duas |
 | Distração | −15 | **−5** em qualquer teste de IQ fora da tarefa em foco; teste de Vontade−5 a cada 5 min para se concentrar em tarefa maçante |
 | Duro de Ouvido | −10 | **−4** em todo teste de Audição e ao entender alguém falando |
 | Epilepsia | −30 | Teste de HT em situação de tensão; falha = crise de 1D minutos **e 1D de Fadiga** |
@@ -8082,11 +8087,14 @@ fonte: cânone aberto de A Garganta
 | Idade | −3 por ano acima de 50 | Jogadas de envelhecimento por atributo |
 | Impulsividade | −10 | Teste de Vontade para conseguir esperar e ponderar |
 | **Inimigo** | **variável** | Ver §3. **Máximo 2, ou 60 pontos** |
+| **Inimigos Desconhecidos** | variável | *Illuminati* p.31. Inimigo de quem **não se sabe o nome nem o lugar**. O jogador diz quanto vale; **o Árbitro monta o grupo em segredo** |
 | Intolerância | −5 / −10 | Total: **−3** de reação a qualquer um de fora. Religiosa a uma seita: −5. A todo não-membro: −10 |
 | Inveja | −10 | Reação automaticamente ruim a quem pareça superior |
 | **Juramento / Voto** | **−1 a −15** | Ver §3. **Em Gapheim tem peso jurídico** |
 | Juventude | −2 a −6 | −2 por ano abaixo da maioridade; **−2** de reação com adultos. Recompra obrigatória ao crescer |
 | Luxúria | −15 | Teste de Vontade em contato com pessoa atraente; **−5** se bonita, **−10** se muito bonita |
+| **Má Reputação** | **variável** | Ver §3 |
+| **Magnetismo Sobrenatural** | **−15** | *Horror* p.11. O estranho acontece o tempo todo: demônios param para conversar, objeto encantado o encontra, **e portal fechado há séculos se abre à sua passagem.** Quase nada é letal de imediato e quase tudo é inconveniente |
 | Magreza | −5 | HT máxima 14; **ST −2** para dar e resistir a Encontrão; **−2** em Disfarce e Sombra em multidão |
 | Maneta (um braço) | −20 | **−4 em DX** nos casos limítrofes; nada que exija duas mãos, **inclusive espada com escudo** |
 | Maneta (uma mão) | −15 | Prótese: **−1** de reação e DX reduzida em 2 (mão) ou 4 (garra) |
@@ -8104,14 +8112,13 @@ fonte: cânone aberto de A Garganta
 | **Pobreza** | **variável** | Ver a tabela de Riqueza no `28` |
 | Preguiça | −10 | Promoção e aumento pela metade; **renda mensal pela metade** por conta própria |
 | Primitivismo | −5 por NT de diferença | Nenhum conhecimento nem pré-definido para equipamento de NT superior |
-| **Má Reputação** | **variável** | Ver §3 |
 | Sadismo | −15 | **−3** de reação de quem o conheça como tal; teste de Vontade para se controlar |
 | Sanguinolência | −10 | Teste de Vontade para aceitar rendição ou fazer prisioneiro |
 | **Segredo** | −5 a −30 | *Artes Marciais* p.29, *Illuminati* p.30, *Psiquismo* p.98, *Império Romano* p.36 — e o índice do próprio Módulo Básico o remete para o **Apêndice, p.A-7**, que não existe no exemplar da campanha. O valor sai do estrago que o vazamento causa: vergonha (−5), perda de emprego ou Status (−10), morte ou banimento (−20 a −30). **Frequência:** o segredo ameaça vir à tona numa sessão com 6 ou menos em 3 dados, rolado antes da aventura. **Vazado**, o personagem adquire desvantagens novas e permanentes valendo **o dobro** do Segredo, usadas primeiro para recomprá-lo. *(Era regra da casa até 12/09.)* |
 | **Senso de Dever** | **−5 a −20** | Ver §3. **+2** nas reações de quem o conheça por isso |
 | Status negativo | −5 por nível | De −1 a −4. O redutor de reação é a **diferença** de Status, com piso de −4 |
-| **Suscetibilidade à Magia** | **−3/nível** | *Grimório* p.5. O nível **é somado ao NH de quem lança magia contra você** — Suscetibilidade 4 contra um operador de NH 12 faz o NH efetivo dele virar **16** — e **é subtraído dos seus testes para resistir**. **Contra mágica de área funciona normalmente**, nem em dobro nem pela metade, ao contrário do Abascanto. **Combina com Aptidão Mágica; não combina com Abascanto.** E **qualquer mago que examine sua aura lê o nível exato** — num mundo onde as Casas leem a Marca, isso é um farol. O livro não dá teto de nível, e o Árbitro decidiu não criar um: **quem a compra alto está apostando que não desce abaixo do andar 8**, onde a mana alta dá +2 de NH a todo mago inimigo |
 | Surdez | −20 | **−3 em IQ** ao aprender língua; **+3** em Mímica, Sinais e Leitura Labial |
+| **Suscetibilidade à Magia** | **−3/nível** | *Grimório* p.5. O nível **é somado ao NH de quem lança magia contra você** — Suscetibilidade 4 contra um operador de NH 12 faz o NH efetivo dele virar **16** — e **é subtraído dos seus testes para resistir**. **Contra mágica de área funciona normalmente**, nem em dobro nem pela metade, ao contrário do Abascanto. **Combina com Aptidão Mágica; não combina com Abascanto.** E **qualquer mago que examine sua aura lê o nível exato** — num mundo onde as Casas leem a Marca, isso é um farol. O livro não dá teto de nível, e o Árbitro decidiu não criar um: **quem a compra alto está apostando que não desce abaixo do andar 8**, onde a mana alta dá +2 de NH a todo mago inimigo |
 | Teimosia | −5 | **−1** nas reações das outras pessoas |
 | Timidez | −5 / −10 / −15 | **−1**, **−2** ou impossível em Dissimulação, Trovador, Boemia, Diplomacia, Lábia, Liderança, Comércio, Política, Trato Social, Sex-Appeal e Pedagogia |
 | Veracidade | −5 | Teste de Vontade para calar uma verdade; **−5** para de fato mentir |
