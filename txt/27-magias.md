@@ -1,5 +1,5 @@
 titulo: Tabela de Mágicas
-versao: 8
+versao: 9
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -144,6 +144,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Marcha Lenta | Com/R-HT | 1 min | 1 dia | 3 | AM mais Inabilidade ou Fadiga |
 | Passo Leve | Comum | 1 seg | 10 min | 4/1 | Aporte, Moldar Terra |
 | Poltergeist | Projétil | 1 seg | Inst. | 1 ou 2# | Aporte |
+| Puxar | Comum | 5 seg | 1 min | 1 por 2 ST de empuxo | AM 2, 4 mágicas de Movimentação, inclusive Levitação |
 | Queda Lenta | Comum | 1 seg | 1 min | 1 por 25 kg/h | Aporte |
 | Reduzir Carga | Comum | 3 seg | 10 min | 3 ou 5/h# | Aporte |
 | Retardar | Com/R-HT | 3 seg | 10 seg | 5/4 | AM, Apressar, Estorvar |
@@ -175,6 +176,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Imitar Voz | Com/R-HT | 1 seg | 1 min | 3/1 | Vozes |
 | Imunidade ao Som | Comum | 1 seg | 1 min | 2 por hex do objetivo para fazer, metade para manter | 4 mágicas de Som |
 | Jato de Som | Comum | 1 seg | 1 seg | 1 a 4#/s | Voz Amplificada |
+| Mensagem | Com/R-som | o tempo da mensagem falada | até chegar — viaja a 50 km/h, ×2 pagando o dobro | 1 por 15 seg de mensagem | Voz Amplificada, Localização |
 | Mensagem Retida | Área | 4 seg | indef. # | 3# | AM, Vozes, Percepção de Vida |
 | Muro de Silêncio | Área | 1 seg | 1 min | 2/1 | Silêncio |
 | Ouvido Mágico | Comum | 2 seg | 1 min | 4/3 | Aporte, Audição Remota, Visão Sonora |
@@ -213,6 +215,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Muralha de Luz | Área | 1 seg | 1 min | 1 a 3/i | Luz Constante |
 | Olhos de Falcão | Comum | 2 seg | 1 min | 4/2 | Visão Aguçada ou 5 mágicas de Luz# |
 | Penumbra | Comum | 2 seg | 1 min | 1 a 5/s | Trevas |
+| Raio Solar | Projétil | 1 a 3 seg | Inst. | 1 a 3 · 1d−1 perfurante por ponto | 6 mágicas de Luz e Trevas |
 | Remover Reflexo | Com/R-IQ | 1 seg | 1 min | 2/m | Remover Sombra |
 | Remover Sombra | Com/R-IQ | 1 seg | 1 min | 2/m | Luz |
 | Trevas | Área | 1 seg | 1 min | 2/1 | Luz Constante |
@@ -230,10 +233,12 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | --- | --- | --- | --- | --- | --- |
 | Adivinhação | Informação | 1 h. | Inst. | 10 | História, mágicas c/ elementais |
 | Analisar Mágica | Inform/R-mág. | 1 h. | Inst. | 8 | Identificação de Mágica |
+| Aromas do Passado | Comum | 10 seg | 1 min | 1/i · +3 por 1 dia de passado, +5 por semana, +10 por mês | AM 2, História, Gerar Odor |
 | Aura | Informação | 1 seg | Inst. | 3 | Detecção de Magia |
 | Boca Mágica | Comum | 2 seg | 1 min | 4/m | Aporte, Paladar Remoto, Voz Amplificada |
 | Despertador | Comum | 1 seg | 1 semana | 1# | Hora Certa |
 | Detecção de Magia | Comum | 5 seg | Inst. | 2 | AM |
+| Ecos do Passado | Comum | 10 seg | 1 min | 2/i · +3 por 1 dia de passado, +5 por semana, +10 por mês | AM 2, História, Vozes |
 | Guia | Informação | 10 seg | Inst. | 4# | AM, IQ 12+, 2 mág. Localizar |
 | História | Informação | seg=custo | Inst. | 3 p/ 1 dia · 5 p/ 1 semana · 10 p/ 1 mês | Rastrear |
 | História Antiga | Informação | min=custo | Inst | 5 p/ 10 anos · 8 p/ 100 · 10 p/ 1.000 | História |
@@ -392,6 +397,7 @@ Com NH 15+, uma mágica de manutenção 1 **se sustenta indefinidamente sem cust
 | Secar Poço | Comum | 1 min | Perm. | 3 pontos para a redução da produção da fonte em 4 litros por hora | Dissipar Água, Moldar Terra |
 | Sopro Congelante* | Comum | 2 seg | 1 seg | 1 a 4 | AM, Jato de Neve, Imunidade ao Frio |
 | Sopro de Ácido* | Comum | 2 seg | 1 seg | 1 a 4 | AM 3, Jato de Ácido, Imunidade ao Ácido |
+| Sopro de Vapor* | Comum | 2 seg | 1 seg | 1 a 4 · 1d por ponto — não se mantém | AM, Jato de Vapor, Imunidade ao Fogo |
 | Toque Congelante | Comum | 1 seg por 6 mm de gelo | Perm. | 2 para cada 6 mm de gelo; deve afetar o objetivo por inteiro, não apen | AM, pelo menos quatro mágicas de Gelo |
 
 # Clima
@@ -470,6 +476,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 
 | Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
 | --- | --- | --- | --- | --- | --- |
+| Alterar Terreno* | Área | 10 seg | 2D dias | 1 básico, mínimo 15 · ×2 acima de 4 hexes | AM 3, as 4 mágicas de Moldar elementais, Moldar Pedra |
 | Carne para Pedra | Com/R-HT | 2 seg | Perm | 10/hex# | Terra para Pedra |
 | Chuva de Pedras | Área | 1 seg | 1 min | 1 para fazer (mínimo de 2), o mesmo para manter | AM 2, Criar Terra |
 | Corpo de Metal* | Com/R-HT | 5 seg | 1 min | 12/m | AM 2, Moldar Metal |
@@ -581,6 +588,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Escudo Anti-projéteis | Comum | 1 seg | 1 min | 5/2 | Aporte ou Escudo |
 | Escudo Anti-teleporte | Área | 10 seg | 1 h | 1/3#/s | Sentinela + escudo Anti-magia ou Teleporte |
 | Gira-lâminas | Comum | 1 seg | 1 min | 2 para fazer; 2 para manter | Escudo ou Girar Lâmina |
+| Girar Lâmina | Bloq/R-DX | 1 seg | Inst. | 1 | Aporte, Espasmo |
 | Muro Absoluto | Comum | 1 seg | 1 min | 4 por hex para fazer; o mesmo para manter | Domo Absoluto, Muralha de Mágica |
 | Muro de Força | Comum | 1 seg | 10 min | 2 por hex para fazer; o mesmo para manter | Domo de Força |
 | Neblina Mística | Área | 5 min | 10 h | 1/1 | AM e Sentinela ou Escudo |
@@ -588,6 +596,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Percepção do Perigo | Informação | 1 seg | Inst. | 3 | Percepção de Inimigos ou vant. Noção do Perigo |
 | Refletir Olhar* | Bloqueio | 1 seg | Inst. | 2 | Espelho |
 | Reverter Projéteis | Comum | 1 seg | 1 min | 7/3 | Escudo Anti-projéteis ou Domo de Força |
+| Robustez | Bloqueio | 1 seg | 1 min | 1 por ponto de **RD**, teto 5 | Endurecer |
 | Rouxinol | Área | 1 seg | 10 h | 1/2/s# | Percepção do Perigo |
 | Sentinela | Área | 10 seg | 10 h | 1/1 | Percepção do Perigo |
 | Trava Mágica | Comum | 4 seg | 6h | 3/2 | AM |
@@ -690,6 +699,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | --- | --- | --- | --- | --- | --- |
 | Afiar | Comum | 4 seg | 1 min | 1 por 15 cm de fio#/m | Consertar |
 | Ampliar Objeto* | Comum [a palav | 3 seg | 1 h | 1 por 1/2 kg de peso original (mínimo de 1/2 kg) por duplicação da dim | Prolongar Objeto |
+| Animar Objeto* | Com/R-esp. | 3 seg | 1 min | 2 por 5 kg · ×2 pedra · ×3 metal · /i | AM 2, 3 mágicas de Moldar |
 | Atar | Com/R-DX | 1 seg | Perm. | 3 | Nó |
 | Cartógrafo | Especial | 10 seg | 1 h | 4/m | Entalhar, Medidas |
 | Consertar | Comum | 1 seg/0,5 kg | Perm. | 3/5 kg | AM 2, Remendar |
@@ -704,6 +714,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Estragar | Comum | 5 seg/0,5 kg | 1 min# | 2 por 0,5 kg/i | AM, Enfraquecer, Deteriorar |
 | Explodir* | Comum | 1 seg | Inst. | 2 a 6; provoca 1D de dano para cada 2 pontos aplicados à mágica | AM 2, Fragmentar, Aporte |
 | Fender* | Comum | 1 seg | Inst. | 1 por dado de dano a ser infligido no objeto | AM 2, Fragmentar |
+| Fortalecer | Comum | 5 seg | 1 h | 1 por ponto de RD, teto 8 — objeto de punho; ×2 médio, ×3 grande | Resistência a Choques |
 | Fragmentar* | Comum | 1 seg | Inst. | 1 a 3# | AM, Enfraquecer |
 | Fusão com Arma* | Com/R-HT | 5 seg | 1 min | 8/m | AM 2, Aporte, pelo menos seis mágicas para Quebrar, Consertar, inclusive Rem |
 | Imunidade à Sujeira | Comum | 2 seg | 10 min | 1 para manter | Limpar |
@@ -716,6 +727,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Resistência a Choques | Comum | 1 seg | 1h | 3/3 | Consertar, Fragmentar |
 | Restaurar | Comum | 3 seg | 10 min | 2 por hex/h | Enfraquecer ou Ilusão Simples |
 | Tingir | Comum | 3 seg | 2D dias | 1 objeto pequeno · 2 cabelo ou 0,1 m² · 5 pessoa ou 1 hex | Restaurar, Cores |
+| Transformar Objeto* | Com/R-esp. | seg = custo | 1 h | 1 por ½ kg, mínimo ½ kg · ×2 rocha · ×3 metal | AM 2, Remodelar, 4 mágicas de Moldar |
 | Transparência | Comum | 10 seg | 1 min | 4 por hexágono para fazer, 2 para manter | Tingir, Pedra para Terra |
 
 # Controle do Corpo
@@ -808,10 +820,12 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Localizar Animais | Informação | 1 seg | Inst | 3# | Convocação de Animais, Localizadora ou 2 Mág. Localizar |
 | Metamorfose* | Especial | 3 seg | 1h | 6/2 | AM + 6 outras mágicas |
 | Metamorfose Amálgama* | Especi/R-IQ | 30 seg | 1 h | 8/3 | AM 3, duas versões de Metamorfosear Outros, pelo menos 2 mágicas de Controle |
+| Metamorfose Parcial* | Com/R-IQ | 10 seg | 1 h | mínimo 3, um terço para manter — o Mestre preça a parte pelo que ela faz | AM 3, Metamorfosear Outros, Alterar o Corpo |
 | Metamorfose Permanente* | Comum | 1 min | Indefinida (pode ser permanente) | 5 vezes o custo da mágica Metamorfose correspondente | AM 3, Metamorfose para aquela forma |
 | Metamorfosear a Outros* | Especial/R-IQ | 30 seg | 1h | 6/2 | AM 2, Metamorfose (para aquela forma) |
 | Passageiro Interno | Comum | 3 seg | 1 min | 4/1 | 2 mág, Controle de Animais |
 | Possessão de Animais | Com/R-IQ | 5 seg | 1 min | 6/2 | Passageiro Interno ou Possessão |
+| Possessão Permanente de Animais* | Com/R-IQ | 1 min | indefinida, pode ser permanente | 20 | AM 2, Possessão de Animais |
 | Repelir (animal) | Área/R-HT | 10 seg | 1 h | Igual ao custo da mágica Controlar para aquele tipo de animal | a mágica Controlar (animal) apropriada ao tipo de animal a ser repelido |
 | Repelir Híbridos* | Área/R-HT | 10 seg | 1 h | 6/m | Controle de Híbridos |
 | Teia de Aranha | Especial | 1 seg | 1 min | 1 para fazer por 5 hexágonos de comprimento de fio (máximo de 30); met | AM, Controle de Aracnídeos |
@@ -848,6 +862,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Ocultar | Área | 4 seg | 1 h | Numa floresta ou selva (ou sob a água), 1 para fazer; em planícies ou | Crescimento de Plantas |
 | Pegadas Falsas | Com/R-IQ | 1 seg | 1 min | 2/m | Moldar Plantas, Moldar Terra |
 | Percepção de Plantas | C/R-Esc. Trilha | 1 seg | 1 min | 3/2 | Alarme Florestal, Esconder Rastros |
+| Reflorestar | Área | 1 seg | Perm. | 3 por hex | AM, Crescimento de Plantas |
 | Secar Plantas | Área | 5 min | Uma temporada de safra ou de crescimento | 1 | Crescimento de Plantas |
 
 # Alimentos
@@ -896,10 +911,12 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Escudo Antimágicas | Área | 1 seg | 1 min | 3/2 | AM 2, Resguardar, Resistência a Magia |
 | Guarda-mágicas* | Comum | 1 seg para cada ponto de energia gasto | 10 h | 1 a 3/i | Anular Mágica |
 | Maldição | Comum | 2 seg p/ 1 ponto · 4 p/ 2 · 6 p/ 3 | permanente até ser removida | 3 p/ 1 ponto · 10 p/ 2 · 20 p/ 3 — não acumulam | AM 2, 2 mág. 10 esc. dif. |
+| Manter Mágica* | Especial | 2 seg, mais o tempo de programação | até a fonte de energia secar ou a mágica cessar | o custo de manutenção normal da mágica, pelo tempo que se quiser | Retardo |
 | Muralha de Mágica | Comum | 1 seg | 1 min | 2/i | Escudo Anti-mágicas |
 | Pentagrama | Especial | 5 seg/hex | Perm. | 10 por hex protegido — mais energia faz pentagrama melhor | Escudo Antimágicas |
 | Proteção | Bl/R-mágica | nenhum | Inst. | 2 ou 3# | AM |
 | Proteção Total | Bloq/R-mágica | nenhum | Inst. | 1 por objetivo# | AM 2, Proteção |
+| Recarregar Gema de Energia | Comum | 10 min | a energia fica na gema até ser usada | 3 de ST do operador por 1 ponto recarregado | AM 3, Gema de Energia |
 | Refletir | Bl/R-mágica | nenhum | Inst. | 4 ou 6# | Proteção |
 | Remoção de Maldição | Com/R-mágica | 1 h. | Inst. | 20 | AM 2, 1 mág. 15 esc. dif. |
 | Remover Aura | Com/R-IQ | 10 seg | Perm. (mas veja acima) | 5 | Anular Mágica, Aura |
@@ -936,6 +953,72 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Reflexo | Especial | 10 seg | 1 h | igual ao custo da mágica refletida, mínimo 1 · /i | Proteção, Retardo |
 | Retardo | Comum | 10 seg | 2h | 3/3 | AM 3 + 15 mágicas quaisquer |
 
+# Acesso
+
+**Casas que concedem:** **REGULADO.** Exu e Hermes, e **só com licença da Guilda** — e só a partir do **rank B**.
+
+**Colégio novo, entrado em 13/09/2026, o vigésimo quarto.** É o colégio das portas, dos planos e do
+tempo, e é o único cuja existência muda o que a campanha é: quem cria portal torna a descida
+opcional, e quem suspende o tempo reescreve toda cena de combate.
+
+> ## As três travas, e nenhuma é negociável
+>
+> **1. Licença, como a Necromancia.** Nenhuma Casa concede Acesso por Marca. A licença é da
+> **Guilda**, registrada em nome próprio, revogável, e **não se herda nem se empresta**. Exu e
+> Hermes são as duas Casas que podem pedir a licença por um marcado — Exu porque as portas são
+> dele, Hermes porque atravessar é o ofício dele — e **pedir não é obter**.
+>
+> **2. Rank B, e não antes.** Abaixo disso não se compra nenhuma mágica deste colégio, nem com
+> pontos sobrando, nem com acordo, nem pela exceção do `17` §6.6. **Aqui essa exceção não vale:**
+> fora de domínio, o normal é ser impossível de comprar e possível de ter, por acordo com dono e
+> com dívida. **No Acesso é impossível das duas formas.**
+>
+> **3. A Cronologia continua não se editando, e isso vale para quem volta no tempo.** Viagem no
+> Tempo **não desfaz o que está escrito**. Quem foi, sempre tinha ido; o que fez, sempre tinha
+> feito; e o registro da Guilda não muda porque alguém voltou. **O passado não é um rascunho.** O
+> que a mágica compra é *estar lá*, não *ter sido outro*. Mestre de Cena que narrar uma volta no
+> tempo alterando fato homologado está narrando outra campanha.
+
+**Fraqueza estrutural.** O Acesso é a única magia que a Guilda **precisa** e **não pode deixar
+solta**: um operador que abre porta no andar 9 vale mais que uma esquadra, e o mesmo operador pode
+levar o que quiser para fora do registro. Por isso a licença vem com a obrigação de **declarar cada
+travessia** — e declaração falsa é o mesmo crime que registrar rank falso.
+
+**Consequência política.** **A sétima porta.** Existe uma porta na Garganta que ninguém mapeou e
+que o cânone não escreve. No dia em que um operador de Acesso a localizar com Localizar Portal, a
+Guilda vai saber antes dele terminar de rolar — porque a licença obriga a declarar — e **quem
+controla a resposta a essa pergunta controla a campanha**. É por isso que a licença existe.
+
+| Mágica | Classe | Tempo | Duração | Energia | Pré-requisito |
+| --- | --- | --- | --- | --- | --- |
+| Acelerar Tempo* | Área | 2 seg | 1 min (tempo de fora) | 2 dobro · 3 triplo · 4 quádruplo, e assim por diante | AM 2, IQ 15+, 2 mágicas de 10 escolas dif. |
+| Baliza | Área | 30 seg | 24 h | 10/m | Teleporte, Viagem no Tempo ou Transferir de Plano |
+| Controlar Portal | Comum | 10 seg | 1 min | 6/m | AM 3, Localizar Portal |
+| Criar Porta | Comum | 5 seg | 10 seg | 2 por hex de porta · /i | Teleporte, 1 mágica de Andar por |
+| Criar Portal* | Comum | 1 seg por ponto | 1 min | 10× o custo de Teleporte ou Viagem no Tempo para o mesmo destino | Controlar Portal |
+| Defasar | Bloqueio | 1 seg | Inst. | 3 | AM 3, Transferir de Plano ou Corpo Etéreo |
+| Defasar Outros* | Bloqueio | 1 seg | Inst. | 3 | Defasar |
+| Desviar Teleporte* | Bloq/R-Mágica | 1 seg | Inst. | o do teleporte desviado, mínimo 3 | AM 3, Rastrear Teleporte |
+| Esconder Objeto | Comum | 10 seg | 1 h | 2 por kg do objeto · /i | Encobrir, Teleporte |
+| Espiar Portal | Comum | 10 seg | 1 min | 4/i | Localizar Portal |
+| Intervalo* | Área | 5 min | um instante (tempo de fora) | 5 | AM 3, Acelerar Tempo |
+| Jornada Rápida* | Especial | 5 seg | 1 min | o de Teleporte ou Viagem no Tempo, mais ¼ do custo da viagem | AM 3, Teleporte ou Viagem no Tempo |
+| Localizar Portal | Informação | 10 seg | Inst. | 3 | AM 2, Localizar Magia, 1 mágica de 10 escolas dif. |
+| Rastrear Teleporte | Inform/R-Mágica | 1 seg | Inst. | 3 | Teleporte, Viagem no Tempo ou Transferir de Plano |
+| Retardar Tempo* | Área | 2 seg | 1 min (tempo de fora) | 2 metade · 3 um terço · 4 um quarto, e assim por diante | AM 2, IQ 15+, 2 mágicas de 10 escolas dif. |
+| Santuário* | Especial | 10 seg | 1 h | 5/i | Esconder Objeto |
+| Suspender Tempo* | Área | 5 min | 1 dia (tempo de fora) | 5/i | AM 3, Retardar Tempo |
+| Transferir de Plano* | Especial | 5 seg | Perm. | 20 | Convocação Extradimensional |
+| Transferir Outros de Plano* | Com/R-IQ+1 | 5 seg | Perm. | 20 | AM 3, Transferir de Plano |
+| Translocação Temporal | Bloqueio | 1 seg | Inst. | 1 por segundo de deslocamento | Viagem no Tempo |
+| Translocação Temporal em Outros* | Bloqueio | 1 seg | Inst. | 1 por segundo de deslocamento | Translocação Temporal |
+| Transportar Outros no Tempo* | Com/R-IQ+1 | 1 seg | Inst. | o de Viagem no Tempo, mais o multiplicador de peso do Teleportar Outros | Viagem no Tempo |
+| Viagem no Tempo* | Especial | 1 seg | Inst. | 4 dentro de 1 min · sobe com a distância no tempo — a escada está no verbete | AM 3, Teleporte |
+| Visita Planar* | Especial | 30 seg | 1 min | 4/m | AM 2, Projeção da Mente ou Convocação Extradimensional |
+
+> **Duas do colégio não entraram:** *Convocar Demônios Menores* e *Translocar Outros*, porque o
+> Compêndio não trouxe energia para nenhuma das duas. Estão na lista de conferência.
+
 # Necromancia
 
 **Casas que concedem:** **REGULADA.** Ámenti e Fengdu, e só com licença
@@ -954,6 +1037,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Convocação Extradimensional | Especial | 5 min | varia com a dimensão | 20, em geral | AM, 1 mág. 10 esc. dif. |
 | Convocar Demônio | Especial | 5 min | 1h# | 20 | AM, 1 mág. 10 esc. dif. |
 | Convocar Espíritos | Inform/R-IQ | 5 min | 1 min | 20/10# | Visão da Morte AM 2 |
+| Convocar Monstro | Com/R-ST+IQ | 5 min | 1 h — a criatura volta sozinha | igual a ST + IQ do monstro — **o operador não sabe antes de pagar** | AM, 1 mágica de 10 escolas dif. |
 | Convocar Sombra* | Inform/R-IQ | 10 min | 1 min | 50/20 | Convocar Espíritos |
 | Convocar Zumbis | Comum | 4 seg | 1 min | 5/2 | impresso sem ponto final |
 | Envelhecimento* | Com/R-HT | 1 min | Perm. | 5 a 50 | Rejuvenescer ou 6 outras mágicas Necromânticas |
@@ -962,6 +1046,7 @@ Do *GURPS Grimório*, por força da decisão 1 do `25`. **Pertence a Clima, e qu
 | Evisceração* | Com/R-HT | 5 seg | Inst. | 10 | AM 3, Aporte, Roubar Vitalidade |
 | Expulsar | Esp/R-ST+IQ | 5 seg | Inst. | (ST + IQ do objetivo) ÷ 2 — o mago pode não saber quanto é | AM, 1 mágica de 10 esc. dif. |
 | Materializar | Especi/R-ST | 1 seg | 1 min | 5/i | Operadores não-fantasmas precisam conhecer Convocar Espíritos para aprender |
+| Morte Putrefacta* | Com/R-HT | 3 seg | 1 seg | 3/2 | AM 2, Enjôo, Pestilência |
 | Percepção de Espíritos | Inform/Área | 1 seg | Inst. | 0,5 | Visão da Morte ou Percepção de Vida + AM |
 | Pestilência | Comum | 30 seg | Perm. | 6 | AM, Roubar Vitalidade, Deteriorar |
 | Repelir Espíritos | Área/R-IQ | 10 seg | 1 h | 4/m | Expulsar, Afugentar Espírito |

@@ -1,5 +1,5 @@
 titulo: Guia de Criação e Manual de Magia
-versao: 10
+versao: 11
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -384,9 +384,15 @@ Você só aprende feitiços dos colégios que são **domínio do seu deus**. For
 > seção nunca foi tocada.** Corrigido em 13/09/2026 pela decisão de **uma fonte só**: a tabela
 > fechada manda, e os outros documentos apontam para ela.
 >
-> **Hoje são vinte e três colégios.** Os vinte e um do livro de Magia, mais **Clima**, que é
+> **Hoje são vinte e quatro colégios.** Os vinte e um do livro de Magia, mais **Clima**, que é
 > divergência declarada da Garganta (`23` §2.3 e `31`), mais **Conexão**, promovido em
-> 13/09/2026 a partir das três mágicas que o livro imprime sob esse cabeçalho.
+> 13/09/2026 a partir das três mágicas que o livro imprime sob esse cabeçalho, mais **Acesso**,
+> entrado na mesma data com as mágicas do *Grimório*.
+>
+> **Acesso é o único colégio regulado junto com a Necromancia, e o único com piso de rank.**
+> Portas, planos e tempo: licença da Guilda, **rank B no mínimo**, e nenhuma Casa o concede por
+> Marca. A tabela dele traz as três travas, e a mais importante é esta: **Viagem no Tempo não
+> desfaz o que está escrito.** A Cronologia continua não se editando.
 
 ## 6.7 O que cada tipo de mago faz de útil aqui embaixo
 

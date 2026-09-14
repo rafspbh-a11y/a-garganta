@@ -1,5 +1,5 @@
 titulo: Retificações de livro
-versao: 6
+versao: 7
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -814,3 +814,51 @@ duplicata passou a ignorar plural, preposição e acento.
   o da Necromancia: colégio **regulado**, com licença.
 - **30 saem pelo recorte tecnológico** — Máquinas, Energia, Radiação e Plástico. Decisão já tomada;
   ficam listadas para que ninguém as procure achando que foram esquecidas.
+
+## 6. O vigésimo quarto colégio — Acesso, regulado
+
+**Decidido em 13/09/2026, e é a decisão que mais mexe na campanha desde que ela começou.**
+
+O colégio de Acesso entrou **inteiro, regulado e com piso de rank**. Não é o que o nome sugere:
+das vinte e quatro que entraram, **quatro criam ou controlam portais**, **três atravessam planos**
+e **sete operam sobre o tempo** — Retardar, Acelerar, Suspender, Intervalo, Translocação Temporal,
+Transportar Outros no Tempo e a própria Viagem no Tempo.
+
+**Três travas, e nenhuma é decorativa:**
+
+1. **Licença da Guilda, como a Necromancia.** Nenhuma Casa concede Acesso por Marca. **Exu e
+   Hermes** podem pedir por um marcado — Exu porque as portas são dele, Hermes porque atravessar é
+   o ofício dele — e **pedir não é obter**.
+2. **Rank B no mínimo.** Abaixo disso não se compra, nem com pontos sobrando, nem por acordo.
+   **Aqui não vale a exceção do `17` §6.6:** fora de domínio, o normal é ser impossível de comprar
+   e possível de ter, por acordo. **No Acesso é impossível das duas formas.**
+3. **Viagem no Tempo não desfaz o que está escrito.** Quem foi, sempre tinha ido; o que fez, sempre
+   tinha feito. **O passado não é rascunho**, e a Cronologia continua não se editando — que é a
+   trava mais antiga desta campanha. O que a mágica compra é *estar lá*, não *ter sido outro*.
+
+**A consequência política é a sétima porta.** Existe uma porta que ninguém mapeou e que o cânone
+não escreve. No dia em que um operador de Acesso a localizar, **a Guilda saberá antes de ele
+terminar de rolar** — porque a licença obriga a declarar cada travessia. É para isso que a licença
+existe.
+
+## 7. As últimas da lista de conferência
+
+- **Girar Lâmina** custava *"L"*. Era o algarismo **1** lido como letra — e a Tabela de Mágicas do
+  próprio Grimório, p.109, traz 1. Mesmo defeito da barra, letra diferente.
+- **Robustez** dá **RD**, não DP. O custo dizia DP; a descrição do mesmo verbete diz Resistência a
+  Dano, e o pré-requisito dela — Endurecer — também mexe em RD. **A sigla estava trocada na linha
+  de custo.**
+- **Mensagem** não tem duração, tem velocidade: **viaja a 50 km/h**, dobrável pagando o dobro. Num
+  poço, isso decide se uma esquadra é socorrida.
+- **Aromas do Passado** e **Ecos do Passado** dependiam de uma tabela que mora no Acesso. Ganharam
+  **escada própria**, a mesma de História: +3 por dia de passado, +5 por semana, +10 por mês.
+- **Reflorestar** é nome da Garganta. O título do verbete **foi coberto por uma ilustração** na
+  digitalização e não existe no Compêndio; o resto do verbete está inteiro — Plantas, área,
+  permanente, 3 por hex, vinda de Crescimento de Plantas. **O nome é nosso e está declarado como
+  nosso.**
+- **Convocar Monstro** entrou como o livro a escreveu: **o custo é ST + IQ do monstro e o operador
+  não sabe antes de pagar.** Pode desmaiar no meio. É o tipo de aposta que esta campanha faz.
+- **Metamorfose Parcial** tem piso 3 e **o Mestre de Cena preça a parte** pelo que ela faz — a
+  tabela de preços por variação ficou ilegível.
+
+**A Tabela de Mágicas fecha o dia em 778 linhas**, contra 429 de manhã.
