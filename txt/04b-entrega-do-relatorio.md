@@ -1,5 +1,5 @@
 titulo: Entrega do Relatório pelo Google Drive
-versao: 7
+versao: 8
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -10,13 +10,16 @@ fonte: cânone aberto de A Garganta
 Este documento substitui **apenas o canal de entrega** do relatório. Todo o resto do `04` continua valendo, sem uma vírgula de diferença.
 
 > \[!IMPORTANT\]
-> **Mudança de canal — 09/09/2026. Esta versão substitui a v2, que mandava gravar numa base do Notion.**
+> **O canal é o Google Drive, e é o único.** Cada jogador tem **uma pasta**, compartilhada só com
+> ele, e é dela que sai o relatório e para ela que volta a homologação.
 >
-> **O canal agora é o Google Drive.** A base do Notion está desativada para entrega e **não se usa mais**, nem como cópia, nem "só desta vez". Se o seu Projeto ainda tiver a URL de uma base do Notion nas instruções, ela está morta: apague-a.
+> **Não há mesa com dois canais.** Entrega que chegue por qualquer outro caminho — outro conector,
+> outro aplicativo, mensagem avulsa — **não é lida pela rodada de homologação, e a semana passa em
+> branco**. Se o seu Projeto ainda tiver, nas instruções, o endereço de um canal antigo, ele está
+> morto: **apague-o.**
 >
-> **Por que mudou, e a razão importa porque não é capricho.** A Notion bloqueia o conector para quem é *convidado* de um workspace, nas duas direções — a mensagem do próprio Notion é literal: *"You are a guest, so you cannot connect to Notion MCP"*. Ler e escrever pelo navegador funciona; por conector, não. Não é configuração e não tem contorno. Só quem tem cadeira paga no workspace escapa, e não se compra cadeira para jogar RPG. O Google Drive não tem essa distinção: pasta compartilhada como editor funciona para qualquer conta Google, de graça.
->
-> **Quem já entregava pelo Notion muda também.** Não há mesa com dois canais: entrega que chega fora do Drive não é lida pela rodada de homologação e a semana passa em branco.
+> **Todo o cânone está no site**, em `rafspbh-a11y.github.io/a-garganta`, e o `estado.md` de lá diz
+> a versão de cada documento. **Não há nada para conferir em nenhum outro lugar.**
 
 # 1. A pasta
 

@@ -46,6 +46,7 @@ Para entender o mundo e montar personagem. Depois disso não voltam à mesa — 
 - **Os Povos que Subiram** → https://rafspbh-a11y.github.io/a-garganta/txt/32-os-povos-que-subiram.md
 - **Modelos de Personagem** → https://rafspbh-a11y.github.io/a-garganta/txt/08-modelos-de-personagem.md
 - **Ficha Pública e Notoriedade** → https://rafspbh-a11y.github.io/a-garganta/txt/18-ficha-publica.md
+- **Gabarito de ficha pública** → https://rafspbh-a11y.github.io/a-garganta/txt/18b-gabarito-ficha-publica.md
 - **A Magia no Mundo e as Sete Forjas** → https://rafspbh-a11y.github.io/a-garganta/txt/22-magia-no-mundo.md
 - **Improviso, Círculo e Lavra** → https://rafspbh-a11y.github.io/a-garganta/txt/30-improviso-circulo-e-lavra.md
 
@@ -83,6 +84,7 @@ Histórico e método: o que o cânone decidiu, quando, e por quê. Nenhuma sess�
 - **Modelos de Personagem** — Sete fichas prontas de 150 pontos, uma por cidade. → https://rafspbh-a11y.github.io/a-garganta/txt/08-modelos-de-personagem.md
 - **As Escolas de Luta** — As onze escolas que ensinam técnica de arte marcial: quem ensina, o que cobra, o que faz mal e o que a expulsão custa. → https://rafspbh-a11y.github.io/a-garganta/txt/33-escolas-de-luta.md
 - **Ficha Pública e Notoriedade** — O que a Guilda registra sobre você, e o que os outros veem. → https://rafspbh-a11y.github.io/a-garganta/txt/18-ficha-publica.md
+- **Gabarito de ficha pública** — A estrutura em branco da ficha pública: o que o Árbitro preenche, e o que nunca entra nela. → https://rafspbh-a11y.github.io/a-garganta/txt/18b-gabarito-ficha-publica.md
 - **Regra de Escrita da Ficha** — Os sete campos de uma linha de ficha, e o que confere com o quê. → https://rafspbh-a11y.github.io/a-garganta/txt/24-regra-da-ficha.md
 
 ### Economia
@@ -102,7 +104,7 @@ Histórico e método: o que o cânone decidiu, quando, e por quê. Nenhuma sess�
 
 ### Tabelas de referência
 - **Tabela de Perícias** — Lista fechada de perícias, com tipo, dificuldade e custo em pontos. → https://rafspbh-a11y.github.io/a-garganta/txt/26-pericias.md
-- **Tabela de Mágicas** — 429 mágicas, com escola, classe, pré-requisito, energia e tempo. → https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
+- **Tabela de Mágicas** — 768 mágicas, com escola, classe, pré-requisito, energia e tempo. → https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 - **Tabela de Vantagens** — Custo e efeito em números, com as perícias que recebem bônus. → https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md
 - **Tabela de Desvantagens** — Custo e efeito em números, com as escalas próprias e as peculiaridades. → https://rafspbh-a11y.github.io/a-garganta/txt/29-desvantagens.md
 

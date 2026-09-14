@@ -3805,8 +3805,8 @@ decisão a tomar: são gatilhos**, que disparam quando a mesa chegar neles.
 2. ~~**Presságio e Taumatologia sem uso amarrado.**~~ **Taumatologia é obrigatória para
    improvisar** — §3b. *(Presságio segue sem uso amarrado e não é pendência: é perícia de
    adivinhação, e o uso aparece quando um jogador a comprar.)*
-3. ~~**O `23` e o `25` existem só no Notion.**~~ Os dois estão na pasta e no ar desde 11/09/2026.
-   *(A pendência nasceu numa arquitetura que não existe mais: o Notion saiu, a pasta é a fonte e o
+3. ~~**O `23` e o `25` não estão publicados.**~~ Os dois estão na pasta e no ar desde 11/09/2026.
+   *(A pendência nasceu numa arquitetura que não existe mais: a pasta é a fonte e o
    GitHub é o espelho.)*
 
 **Os dois gatilhos, que ficam armados e não pedem nada de ninguém agora:**
@@ -5000,6 +5000,86 @@ O registro é da Guilda, e a Guilda não apaga. Quem quiser suprimir uma linha �
 
 ---
 
+titulo: Gabarito de ficha pública
+versao: 1
+atualizado: 2026-09-14
+fonte: cânone aberto de A Garganta
+
+# Gabarito de ficha pública
+
+> [!NOTE]
+> Estrutura em branco da ficha pública. O modelo preenchido é a **Ficha pública — Lísias de Ônfalos**.
+>
+> **Quem preenche o que:** o jogador entrega ao Árbitro apenas o bloco **Registro** — nome, cidade, Marca e rank vêm da criação de personagem. Todo o resto é escrito **pelo Árbitro**, a partir da Cronologia homologada, e atualizado na virada de semana junto com o Boletim. Jogador não escreve a própria reputação; se escrevesse, o registro viraria propaganda.
+>
+> **Nunca entra aqui:** atributos, perícias, pontos, feitiços, equipamento, dinheiro, Estado de Retomada, amarras, segredo do personagem, dívidas ocultas, e o campo do que o personagem ainda não sabe. Isso vive em `Personagens` e não sai de lá.
+
+---
+
+*Registro da Guilda · Limiar · atualizado na Semana ___*
+
+## Registro
+
+| Campo | Valor |
+| --- | --- |
+| Nome | *Como o nome está escrito no registro, na forma que o balcão chama em voz alta.* |
+| Cidade declarada | *Uma das sete. É a cidade que o registro diz, que não é necessariamente onde o personagem nasceu.* |
+| Marca declarada (divindade patrona) | *O deus da Marca. É visível nas costas e a Guilda a usa para identificar — não há como omitir.* |
+| Rank | *F ao entrar. Sobe por avaliação jogada na Guilda, nunca por narrativa.* |
+| Estado | *Ativo, inativo ou registro cassado. Seis semanas sem nenhuma ação de mundo movem o nome para inativo.* |
+| Registrado em | *A semana de mundo em que o nome entrou no livro.* |
+
+## Atividade registrada
+
+| Item | Registro |
+| --- | --- |
+| Descidas | *Quantas e até que andar, contando só o que foi homologado. "Nenhuma" é uma resposta legítima.* |
+| Contratos aceitos | *Nome do contrato, pela base de Contratos. Aceitar já é público; o balcão anota na hora.* |
+| Contratos concluídos | *Concluído, abandonado ou fracassado — o Registro anota os três, sem adjetivo.* |
+| Espólio avaliado no balcão | *Só o que passou pela avaliação da Guilda. Espólio não declarado é contrabando, e contrabando cassa registro.* |
+| Notas do Registro (sanções, disputas, perda de registro) | *Multa, suspensão, disputa julgada, promoção segurada. Entra a decisão, não o motivo político por trás dela.* |
+
+## Feitos públicos
+
+*Abre no rank D. Até lá, escreva apenas: "Não se abre em rank F/E." Depois disso, uma linha por feito, no passado e sem adjetivo — o que aconteceu, onde, e com testemunha. Nada de "heroicamente".*
+
+## Reputação registrada
+
+*Abre no rank D. É a reputação que a Guilda anotou, não a que o personagem gostaria de ter: como as embaixadas e o balcão passaram a tratá-lo depois do que ele fez.*
+
+## Alianças, dívidas assumidas em público, cargo ou patronato
+
+*Abre no rank A. Só o que foi assumido diante de testemunha ou registrado por uma embaixada. Dívida oculta e amarra particular nunca sobem para cá — a diferença entre as duas coisas é o assunto de metade da política das sete cidades.*
+
+## Rumores
+
+*A Guilda não confirma nem desmente. O que está aqui é conversa de balcão, não fato homologado.*
+
+*Cada rumor em uma linha, marcado como rumor, e só se o Limiar realmente comentaria — um nome que ninguém conhece não gera rumor, e "nenhum em circulação" é o estado normal de quem acabou de se registrar. Rumor pode ser falso; isso é uma característica, não um defeito.*
+
+---
+
+## Como esta ficha cresce
+
+| Rank | O que passa a aparecer |
+| --- | --- |
+| F e E | Nome, cidade, divindade patrona, rank. Nada mais. |
+| D a B | O acima, mais feitos públicos e reputação registrada. |
+| A e acima | O acima, mais alianças, dívidas públicas e cargo ou patronato. |
+
+Aparecer na lista é recompensa. Um rank F tem quatro linhas, e é isso que faz a quinta linha significar alguma coisa.
+
+> [!WARNING]
+> **Uso em mesa.** O Mestre de Cena pode tratar o que está escrito na ficha pública de outro personagem como sabido no Limiar e deixar NPC comentar. Não pode deduzir número de ficha a partir dela, inventar linha que não está escrita, nem agir contra o personagem de outro jogador. Ficha pública é matéria de conversa e de política, nunca de ação.
+
+> [!NOTE]
+> **Apagar linha custa.** O registro é da Guilda, e a Guilda não apaga. Quem quiser suprimir uma linha não compra silêncio: compra intercessão política, que passa por uma cidade disposta a pedir, e cria dívida com quem pediu. Ámenti nunca suprime, por princípio de arquivo. Fengdu suprime, por procedimento, e cobra caro.
+
+*Regra completa em `18 — Ficha Pública e Notoriedade`.*
+
+
+---
+
 titulo: Regra de Escrita da Ficha
 versao: 7
 atualizado: 2026-09-14
@@ -6045,7 +6125,7 @@ Quando esta Carta e o cânone entrarem em conflito, prevalece esta Carta, e o co
 ---
 
 titulo: Protocolo do Mestre de Cena
-versao: 12
+versao: 13
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -6061,7 +6141,7 @@ fonte: cânone aberto de A Garganta
 
 **Abra o documento pelo nome. Não busque palavra solta.** A busca por palavra varre tudo o que estiver ao alcance e devolve trecho de página reservada dentro do próprio resultado, sem que ninguém tenha aberto nada — já aconteceu nesta campanha. Então vá direto ao documento certo pelo nome dele. Se mesmo assim aparecer trecho reservado, descarte, não o use nem como inspiração, e avise o jogador para avisar o Árbitro.
 
-**Você não alcança mais nada, e não deve alcançar.** Sua fonte é o que está anexado a este Projeto, mais as URLs do cânone aberto que o arquivo de estado indica, mais o que o jogador colar na conversa. **Você tem, além disso, exatamente um conector e exatamente uma pasta: a pasta de entrada do seu jogador, no Google Drive, descrita no `04b`.** Ela serve para escrever o relatório, ler a homologação e ler a ficha de trabalho, e para mais nada. Você não busca no Drive fora dela — nem por nome, nem por conteúdo — e não abre pasta de outro jogador, pasta raiz nem arquivo de cópias fechadas. Se qualquer outro arquivo aparecer ao seu alcance, descarte o conteúdo, não o use nem como inspiração, e avise o jogador para avisar o Árbitro. **Você não usa o conector do Notion**: a base de entrada do Notion foi desativada em 09/09/2026 e a Camada Reservada mora lá.
+**Você não alcança mais nada, e não deve alcançar.** Sua fonte é o que está anexado a este Projeto, mais as URLs do cânone aberto que o arquivo de estado indica, mais o que o jogador colar na conversa. **Você tem, além disso, exatamente um conector e exatamente uma pasta: a pasta de entrada do seu jogador, no Google Drive, descrita no `04b`.** Ela serve para escrever o relatório, ler a homologação e ler a ficha de trabalho, e para mais nada. Você não busca no Drive fora dela — nem por nome, nem por conteúdo — e não abre pasta de outro jogador, pasta raiz nem arquivo de cópias fechadas. Se qualquer outro arquivo aparecer ao seu alcance, descarte o conteúdo, não o use nem como inspiração, e avise o jogador para avisar o Árbitro. **Um conector, uma pasta, e mais nada.** Qualquer outro conector que apareça ligado no seu Projeto não é fonte desta campanha, e você não o usa — nem para conferir.
 
 ---
 
@@ -6353,7 +6433,7 @@ Abra Pendência e pergunte ao Árbitro. Um jogo travado por meia hora é melhor 
 ---
 
 titulo: Entrega do Relatório pelo Google Drive
-versao: 7
+versao: 8
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -6364,13 +6444,16 @@ fonte: cânone aberto de A Garganta
 Este documento substitui **apenas o canal de entrega** do relatório. Todo o resto do `04` continua valendo, sem uma vírgula de diferença.
 
 > \[!IMPORTANT\]
-> **Mudança de canal — 09/09/2026. Esta versão substitui a v2, que mandava gravar numa base do Notion.**
+> **O canal é o Google Drive, e é o único.** Cada jogador tem **uma pasta**, compartilhada só com
+> ele, e é dela que sai o relatório e para ela que volta a homologação.
 >
-> **O canal agora é o Google Drive.** A base do Notion está desativada para entrega e **não se usa mais**, nem como cópia, nem "só desta vez". Se o seu Projeto ainda tiver a URL de uma base do Notion nas instruções, ela está morta: apague-a.
+> **Não há mesa com dois canais.** Entrega que chegue por qualquer outro caminho — outro conector,
+> outro aplicativo, mensagem avulsa — **não é lida pela rodada de homologação, e a semana passa em
+> branco**. Se o seu Projeto ainda tiver, nas instruções, o endereço de um canal antigo, ele está
+> morto: **apague-o.**
 >
-> **Por que mudou, e a razão importa porque não é capricho.** A Notion bloqueia o conector para quem é *convidado* de um workspace, nas duas direções — a mensagem do próprio Notion é literal: *"You are a guest, so you cannot connect to Notion MCP"*. Ler e escrever pelo navegador funciona; por conector, não. Não é configuração e não tem contorno. Só quem tem cadeira paga no workspace escapa, e não se compra cadeira para jogar RPG. O Google Drive não tem essa distinção: pasta compartilhada como editor funciona para qualquer conta Google, de graça.
->
-> **Quem já entregava pelo Notion muda também.** Não há mesa com dois canais: entrega que chega fora do Drive não é lida pela rodada de homologação e a semana passa em branco.
+> **Todo o cânone está no site**, em `rafspbh-a11y.github.io/a-garganta`, e o `estado.md` de lá diz
+> a versão de cada documento. **Não há nada para conferir em nenhum outro lugar.**
 
 # 1. A pasta
 
@@ -6507,111 +6590,81 @@ Se o personagem morto era de **rank B ou superior**, a opção não-humana fica 
 ---
 
 titulo: Índice e Regra de Escrita
-versao: 9
+versao: 10
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Índice e Regra de Escrita
 
 # PARTE 1 — OS DOCUMENTOS
-## Camada Aberta — vai para o Projeto de todo jogador
+## Camada Aberta — o cânone publicado
 
+**Nem tudo se anexa ao Projeto do jogador, e essa é a decisão de 13/09/2026.** Anexar trinta
+documentos sufoca a janela de contexto do Mestre de Cena. A lista abaixo é a mesma da página
+inicial do site, e diz **o que anexar, o que só consultar, o que ler uma vez e o que só o Árbitro
+precisa**.
 
-<table>
-<tr>
-<th>#</th>
-<th>Documento</th>
-</tr>
-<tr>
-<td>**01a**</td>
-<td>Bíblia do Mundo (edição de mesa) — **sem a Parte V**</td>
-</tr>
-<tr>
-<td>**02**</td>
-<td>Regras da Mesa</td>
-</tr>
-<tr>
-<td>**03**</td>
-<td>Economia e Tabelas</td>
-</tr>
-<tr>
-<td>**04**</td>
-<td>Protocolo do Mestre-IA — cola nas instruções do Projeto</td>
-</tr>
-<tr>
-<td>**05**</td>
-<td>Andares 1 a 12</td>
-</tr>
-<tr>
-<td>**06**</td>
-<td>Bestiário</td>
-</tr>
-<tr>
-<td>**06b**</td>
-<td>Muda dos Andares — composição variável e posição na faixa</td>
-</tr>
-<tr>
-<td>**07a**</td>
-<td>NPCs Nomeados (edição de mesa) — **sem as dívidas**</td>
-</tr>
-<tr>
-<td>**08**</td>
-<td>Modelos de Personagem</td>
-</tr>
-<tr>
-<td>**10**</td>
-<td>Carta do Árbitro — **precisa ser pública**</td>
-</tr>
-<tr>
-<td>**13**</td>
-<td>Sessão Zero</td>
-</tr>
-<tr>
-<td>**18**</td>
-<td>Ficha Pública e Notoriedade</td>
-</tr>
-<tr>
-<td>**15**</td>
-<td>Geografia: a Coroa e as Sete Cidades</td>
-</tr>
-<tr>
-<td>**17**</td>
-<td>Guia de Criação e Manual de Magia</td>
-</tr>
-<tr>
-<td>**18b**</td>
-<td>Gabarito de ficha pública</td>
-</tr>
-<tr>
-<td>**20**</td>
-<td>Como se joga — as regras básicas</td>
-</tr>
-<tr>
-<td>**21**</td>
-<td>Loot, Balcão e Registro — as tabelas de item e o que se registra</td>
-</tr>
-<tr>
-<td>**22**</td>
-<td>A Magia no Mundo e as Sete Forjas</td>
-</tr>
-<tr>
-<td>**30**</td>
-<td>Improviso, Círculo e Lavra — como se cria magia nova</td>
-</tr>
-<tr>
-<td>**33**</td>
-<td>As Escolas de Luta — as nove escolas que ensinam técnica de arte marcial</td>
-</tr>
-<tr>
-<td>**04b**</td>
-<td>Entrega do Relatório pelo Google Drive</td>
-</tr>
-<tr>
-<td>**14**</td>
-<td>Este documento</td>
-</tr>
-</table>
+### Anexe ao Projeto, e só isto
 
+Cinco documentos. São o bastante para rodar qualquer sessão do começo ao fim, e cabem folgados na janela de contexto do Mestre de Cena. O combate entra aqui pelo Cartão, de uma página; o Como se joga inteiro ficou na trilha de consulta, onde se abre sem ocupar a sessão.
+
+| Documento | Seção | Versão |
+| --- | --- | --- |
+| **Protocolo do Mestre de Cena** | A mesa | v13 |
+| **Cartão de Combate** | Comece aqui | v3 |
+| **Regras da Mesa** | Comece aqui | v7 |
+| **Carta do Árbitro** | A mesa | v1 |
+| **Entrega do Relatório pelo Google Drive** | A mesa | v8 |
+
+### Consulte na hora, sem anexar
+
+Abra a página, leia a linha que precisa, feche. São tabelas e catálogos: ninguém os lê inteiros, e carregá-los no Projeto gasta contexto que a cena vai precisar.
+
+| Documento | Seção | Versão |
+| --- | --- | --- |
+| **Como se joga** | Comece aqui | v11 |
+| **Tabela de Perícias** | Tabelas de referência | v13 |
+| **As Escolas de Luta** | Seu personagem | v3 |
+| **Tabela de Mágicas** | Tabelas de referência | v11 |
+| **Tabela de Vantagens** | Tabelas de referência | v7 |
+| **Tabela de Desvantagens** | Tabelas de referência | v8 |
+| **Regra de Escrita da Ficha** | Seu personagem | v7 |
+| **Economia e Tabelas** | Economia | v8 |
+| **Loot, Balcão e Registro** | Economia | v4 |
+| **Andares 1 a 12** | A Garganta | v2 |
+| **Bestiário, andares 1 a 12** | A Garganta | v3 |
+| **Muda dos Andares** | A Garganta | v5 |
+| **NPCs Nomeados** | O mundo | v2 |
+| **Geografia: a Coroa e as Sete Cidades** | O mundo | v1 |
+
+### Leia uma vez, antes de começar
+
+Para entender o mundo e montar personagem. Depois disso não voltam à mesa — o que mudar vira linha no Boletim da semana.
+
+| Documento | Seção | Versão |
+| --- | --- | --- |
+| **Sessão Zero** | Comece aqui | v1 |
+| **Bíblia do Mundo** | O mundo | v2 |
+| **Guia de Criação e Manual de Magia** | Seu personagem | v11 |
+| **Os Povos que Subiram** | Seu personagem | v2 |
+| **Modelos de Personagem** | Seu personagem | v2 |
+| **Ficha Pública e Notoriedade** | Seu personagem | v2 |
+| **Gabarito de ficha pública** | Seu personagem | v1 |
+| **A Magia no Mundo e as Sete Forjas** | O mundo | v3 |
+| **Improviso, Círculo e Lavra** | Seu personagem | v4 |
+
+### Só o Árbitro precisa
+
+Histórico e método: o que o cânone decidiu, quando, e por quê. Nenhuma sessão precisa disto aberto — está aqui para auditar uma decisão, não para jogar.
+
+| Documento | Seção | Versão |
+| --- | --- | --- |
+| **Retificações de livro** | Decisões e retificações | v12 |
+| **As decisões de 10/09/2026** | Decisões e retificações | v1 |
+| **A Dádiva de Zeus e o recorte de Clima** | Decisões e retificações | v1 |
+| **Índice e Regra de Escrita** | A mesa | v10 |
+
+**32 documentos, e esta lista é gerada.** Ela sai da mesma fonte que decide o que vai ao ar, então não há como ela envelhecer: documento novo aparece aqui sozinho, na rodada em que entrar.
 
 ## Camada Reservada
 A Camada Reservada existe, nunca é anexada a Projeto de jogador e não se lê.
@@ -7549,14 +7602,14 @@ tabela tem**:
 ---
 
 titulo: Tabela de Mágicas
-versao: 10
+versao: 11
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Tabela de Mágicas
 
 > **Nota.**
-> **429 mágicas, todas as escolas, com pré-requisito, energia e tempo.** Transcrita da Relação das Mágicas do **GURPS Magia**, com as escolas renomeadas pelo livro e as Casas concedentes pela tabela viva do `17` §6.6, refeita em 10/09/2026 (`25`). **Acrescentadas em 11/09/2026 (`31`):** o colégio **Clima** com a sub-escola de **Eletricidade** do *Grimório*, e as quatro mágicas de Grimório que a decisão 1 do `25` nomeou.
+> **768 mágicas, em 778 linhas, todas as escolas, com pré-requisito, energia e tempo.** *(Contadas em 14/09/2026. Esta linha dizia **429**, que era o número antes da leva da noite de 13/09.)* Transcrita da Relação das Mágicas do **GURPS Magia**, com as escolas renomeadas pelo livro e as Casas concedentes pela tabela viva do `17` §6.6, refeita em 10/09/2026 (`25`). **Acrescentadas em 11/09/2026 (`31`):** o colégio **Clima** com a sub-escola de **Eletricidade** do *Grimório*, e as quatro mágicas de Grimório que a decisão 1 do `25` nomeou.
 > **Toda mágica é Mental/Difícil**, salvo as marcadas com **\*** — essas são Mental/Muito Difícil.
 >
 > **Versão 4, de 13/09/2026 — a regra de leitura mudou, e ela governa a tabela inteira.**
@@ -9348,7 +9401,7 @@ nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 n
 ---
 
 titulo: Retificações de livro
-versao: 11
+versao: 12
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -9596,7 +9649,7 @@ Quatro correções nesta página, todas contra o livro. **A linha anterior não 
 
 # RETIFICAÇÃO — 11/09/2026, publicação e passe de nomes
 
-**Esta página existia só no Notion até 11/09/2026**, e foi publicada agora junto com o `25`. **A linha anterior não é apagada; esta aponta para ela.**
+**Esta página não estava publicada até 11/09/2026**, e foi publicada agora junto com o `25`. **A linha anterior não é apagada; esta aponta para ela.**
 
 **O passe de nomes que o `25` deixou aberto foi feito.** A §3 e a §5 ainda tratavam **Exorcismo** e **Talismã** como Pendência, o que a decisão 4 do `25` já tinha fechado e a decisão 15 já tinha renomeado. As duas seções agora trazem **Rito Funerário** e **Selos e Sigilos**, com os nomes antigos entre parênteses. **Nenhuma ficha muda de conta.**
 
@@ -10038,7 +10091,7 @@ Conferindo versão de arquivo contra o `versoes.tsv`, apareceu que
 lido pelo gerador e ninguém percebeu porque ele nunca aparece no site.**
 
 **O risco é editar o arquivo errado** e achar que publicou. Havia dois nessa situação: este e o
-`00-Indice-Camada-Aberta.md`, exportação do Notion que ainda mandava ativar o conector e anexar a
+`00-Indice-Camada-Aberta.md`, exportação antiga que ainda mandava ativar um conector e anexar a
 seção inteira ao Projeto.
 
 **Decisão do Árbitro, 13/09/2026: os dois foram apagados.** Nenhum era lido por nada, os dois
@@ -10530,6 +10583,89 @@ projétil, porque o livro traz as de arco e arremesso no capítulo cinematográf
 a decisão 34. **Batedor, escriba e caçadora não perdem nada** — não há técnica de projétil realista
 neste acervo para eles perderem.
 
+# RETIFICAÇÃO — 14/09/2026, madrugada: o canal antigo sai do cânone inteiro
+
+**Decisão do Árbitro:** *nada leva ao canal antigo, e tudo tem de estar no site sem que ninguém
+precise conferir nada em outro lugar.* A varredura foi feita no cânone inteiro, e **não sobrou
+nenhuma ocorrência**.
+
+## 1. Uma frase errada no documento que o Mestre de Cena cola no Projeto
+
+O **Protocolo do Mestre de Cena** trazia, no ar, uma oração que **afirmava erradamente onde mora
+material que não se publica** — e, ao afirmá-lo, dizia ao Mestre de Cena onde procurar. Foi
+substituída pela regra que de fato interessa a quem lê o documento: **um conector, uma pasta, e mais
+nada; qualquer outro conector que apareça ligado no seu Projeto não é fonte desta campanha, e você
+não o usa, nem para conferir.**
+
+**A exceção correspondente saiu do hook de sigilo.** Ela existia para deixar aquela frase passar; sem
+a frase, só serviria para deixar passar a próxima.
+
+## 2. O Boletim publicava um caminho de pasta do canal antigo
+
+O **Boletim da Semana 1**, no ar, abria com duas linhas de cabeçalho de exportação — um caminho de
+pasta e um identificador de base. **Saíram**, e no lugar ficou onde o boletim mora de verdade.
+
+## 3. Trezentas e vinte e três linhas de metadado morto nas bases
+
+Cada linha das bases do Estado do Mundo carregava um campo `url` apontando para o canal antigo.
+**Todas saíram** — inclusive na **Cronologia**, e isto é dito na cara porque a Cronologia tem a regra
+mais dura desta pasta: *nunca é editada*. **Nenhum fato registrado foi alterado**; o que saiu foi
+metadado de exportação, que não é registro de nada.
+
+**E trinta campos de dado guardavam um endereço em vez de um nome.** `Contratante` virou *A Guilda*,
+*Comando de Contenção* e *Ônfalos*; `Personagens` virou *Karthoz*, *Runirsson Ákmon*, *Itzcoatl
+Nove-Casa* e *Eilif Kverk* — cada um conferido pelo título da própria entrada da Cronologia, e o do
+Eilif conferido também contra a ficha dele. **Esses campos eram ilegíveis**, e agora dizem o que
+sempre quiseram dizer.
+
+## 4. A raiz do cânone e o índice do Estado do Mundo
+
+A **raiz do cânone** listava as camadas como links para páginas do canal antigo, e a lista de
+preparação mandava conferir permissões que não existem mais. Reescrita: agora traz **onde mora o
+quê** — a pasta é a fonte, os dois repositórios do GitHub são espelhos, e **nada se edita num
+espelho**.
+
+O **índice do Estado do Mundo** trazia uma tabela com duas colunas de endereço externo. Viraram o
+arquivo inteiro e a pasta de um arquivo por linha, que é o que existe.
+
+## 5. O que era registro histórico também saiu, por decisão
+
+**Levado ao Árbitro com o custo à vista**, porque reescreve registro de retificação e decisão
+arquivada, que é o que a regra de append existe para impedir. **Ele decidiu que sai de tudo.**
+
+**Como foi executado, e isto importa:** cada frase foi **reescrita para continuar dizendo o que
+aconteceu**, sem o nome próprio. *"Esta página existia só no canal antigo até 11/09/2026"* virou
+*"esta página não estava publicada até 11/09/2026"*; a pendência riscada do Improviso continua
+riscada e continua dizendo por que nasceu. **Nenhum fato se perdeu — o que saiu foi o nome.** Cinco
+frases tinham virado absurdo com a troca automática — falavam de *ler* numa ferramenta que não
+existe — e foram reescritas à mão.
+
+## 6. A contagem das mágicas, corrigida onde ainda estava viva
+
+O cabeçalho da **Tabela de Mágicas** anunciava **429 mágicas**, e o **resumo do cartão dela na página
+inicial do site** repetia o mesmo número. **São 768, em 778 linhas.** Os dois foram corrigidos.
+
+> **E o registro da noite de 13/09 estava errado, em duas cifras.** Ele diz *"as 274 mágicas novas"*
+> e *"de 429 para 703 nomes"*. **A conta não fecha:** o próprio bloco daquela noite registra **778
+> linhas**, e a contagem de 14/09 dá **768 nomes distintos**. Entraram **339**, não 274 — que é o
+> número que a seção 11 da Tabela de Perícias já usava ao falar das mágicas do Grimório.
+> **Esta linha não apaga aquela: aponta para ela**, que é a regra.
+
+## 7. O índice deste cânone deixou de ser mantido à mão
+
+A Parte 1 do **Índice e Regra de Escrita** listava os documentos numa tabela escrita à mão, e ela
+**chegou a ficar dez documentos atrasada** — e ainda prometia um documento que o site não publicava,
+o *Gabarito de ficha pública*, que agora entrou.
+
+**Decisão do Árbitro: o gerador passa a escrever a lista.** A Parte 1 tem hoje um marcador que o
+`montar-site.py` troca, na hora de publicar, pela lista real — organizada pelas quatro trilhas de
+leitura, com seção e versão de cada documento. **Não há como envelhecer de novo:** a fonte da lista
+passou a ser a mesma que decide o que vai ao ar.
+
+**E o cabeçalho dela era falso.** Dizia *"vai para o Projeto de todo jogador"*, quando a decisão de
+13/09 fixou que **só cinco documentos vão ao Projeto** e que anexar trinta sufoca a sessão do Mestre
+de Cena.
+
 
 ---
 
@@ -10795,7 +10931,7 @@ A **15** renomeia duas das quatro perícias da casa criadas na decisão 4, porqu
 
 # RETIFICAÇÃO — 11/09/2026, publicação
 
-**Esta página existia só no Notion até 11/09/2026.** Ela não estava no site nem no `estado.md`, e foi por isso que um Mestre de Cena abriu Pendência dizendo que *"o documento 25 não está no estado.md"* — a observação estava certa. **Publicada agora**, junto com o `23`, pela mesma correção. **Nenhuma decisão desta página mudou de conteúdo na publicação.**
+**Esta página não estava publicada até 11/09/2026.** Ela não estava no site nem no `estado.md`, e foi por isso que um Mestre de Cena abriu Pendência dizendo que *"o documento 25 não está no estado.md"* — a observação estava certa. **Publicada agora**, junto com o `23`, pela mesma correção. **Nenhuma decisão desta página mudou de conteúdo na publicação.**
 
 **Fica fechado aqui o que a retificação anterior deixou aberto:** os nomes antigos **Exorcismo** e **Talismã** ainda apareciam no `23` §3 e §5 e no `24` seção 5 como Pendência. A decisão 4 desta página já os tinha fechado, e o `23` recebeu a remissão na publicação.
 
@@ -10956,8 +11092,7 @@ semana: 1
 versao: 1
 atualizado: 2026-09-14
 
-**Caminho no Notion:** A Garganta / Estado do Mundo / Boletins
-**Base de origem:** Boletins (collection://c97575a2-6144-46a2-9322-19eaf618fee8)
+**Onde mora:** `Canone/Estado-do-Mundo/Boletins/`, e no ar em `boletim-atual.md`.
 
 ## Propriedades
 

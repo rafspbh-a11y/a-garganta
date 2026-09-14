@@ -1,5 +1,5 @@
 titulo: Retificações de livro
-versao: 11
+versao: 12
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -247,7 +247,7 @@ Quatro correções nesta página, todas contra o livro. **A linha anterior não 
 
 # RETIFICAÇÃO — 11/09/2026, publicação e passe de nomes
 
-**Esta página existia só no Notion até 11/09/2026**, e foi publicada agora junto com o `25`. **A linha anterior não é apagada; esta aponta para ela.**
+**Esta página não estava publicada até 11/09/2026**, e foi publicada agora junto com o `25`. **A linha anterior não é apagada; esta aponta para ela.**
 
 **O passe de nomes que o `25` deixou aberto foi feito.** A §3 e a §5 ainda tratavam **Exorcismo** e **Talismã** como Pendência, o que a decisão 4 do `25` já tinha fechado e a decisão 15 já tinha renomeado. As duas seções agora trazem **Rito Funerário** e **Selos e Sigilos**, com os nomes antigos entre parênteses. **Nenhuma ficha muda de conta.**
 
@@ -689,7 +689,7 @@ Conferindo versão de arquivo contra o `versoes.tsv`, apareceu que
 lido pelo gerador e ninguém percebeu porque ele nunca aparece no site.**
 
 **O risco é editar o arquivo errado** e achar que publicou. Havia dois nessa situação: este e o
-`00-Indice-Camada-Aberta.md`, exportação do Notion que ainda mandava ativar o conector e anexar a
+`00-Indice-Camada-Aberta.md`, exportação antiga que ainda mandava ativar um conector e anexar a
 seção inteira ao Projeto.
 
 **Decisão do Árbitro, 13/09/2026: os dois foram apagados.** Nenhum era lido por nada, os dois
@@ -1180,3 +1180,86 @@ as duas escolas — o documento apontou o próprio buraco e o buraco foi fechado
 projétil, porque o livro traz as de arco e arremesso no capítulo cinematográfico e elas caíram com
 a decisão 34. **Batedor, escriba e caçadora não perdem nada** — não há técnica de projétil realista
 neste acervo para eles perderem.
+
+# RETIFICAÇÃO — 14/09/2026, madrugada: o canal antigo sai do cânone inteiro
+
+**Decisão do Árbitro:** *nada leva ao canal antigo, e tudo tem de estar no site sem que ninguém
+precise conferir nada em outro lugar.* A varredura foi feita no cânone inteiro, e **não sobrou
+nenhuma ocorrência**.
+
+## 1. Uma frase errada no documento que o Mestre de Cena cola no Projeto
+
+O **Protocolo do Mestre de Cena** trazia, no ar, uma oração que **afirmava erradamente onde mora
+material que não se publica** — e, ao afirmá-lo, dizia ao Mestre de Cena onde procurar. Foi
+substituída pela regra que de fato interessa a quem lê o documento: **um conector, uma pasta, e mais
+nada; qualquer outro conector que apareça ligado no seu Projeto não é fonte desta campanha, e você
+não o usa, nem para conferir.**
+
+**A exceção correspondente saiu do hook de sigilo.** Ela existia para deixar aquela frase passar; sem
+a frase, só serviria para deixar passar a próxima.
+
+## 2. O Boletim publicava um caminho de pasta do canal antigo
+
+O **Boletim da Semana 1**, no ar, abria com duas linhas de cabeçalho de exportação — um caminho de
+pasta e um identificador de base. **Saíram**, e no lugar ficou onde o boletim mora de verdade.
+
+## 3. Trezentas e vinte e três linhas de metadado morto nas bases
+
+Cada linha das bases do Estado do Mundo carregava um campo `url` apontando para o canal antigo.
+**Todas saíram** — inclusive na **Cronologia**, e isto é dito na cara porque a Cronologia tem a regra
+mais dura desta pasta: *nunca é editada*. **Nenhum fato registrado foi alterado**; o que saiu foi
+metadado de exportação, que não é registro de nada.
+
+**E trinta campos de dado guardavam um endereço em vez de um nome.** `Contratante` virou *A Guilda*,
+*Comando de Contenção* e *Ônfalos*; `Personagens` virou *Karthoz*, *Runirsson Ákmon*, *Itzcoatl
+Nove-Casa* e *Eilif Kverk* — cada um conferido pelo título da própria entrada da Cronologia, e o do
+Eilif conferido também contra a ficha dele. **Esses campos eram ilegíveis**, e agora dizem o que
+sempre quiseram dizer.
+
+## 4. A raiz do cânone e o índice do Estado do Mundo
+
+A **raiz do cânone** listava as camadas como links para páginas do canal antigo, e a lista de
+preparação mandava conferir permissões que não existem mais. Reescrita: agora traz **onde mora o
+quê** — a pasta é a fonte, os dois repositórios do GitHub são espelhos, e **nada se edita num
+espelho**.
+
+O **índice do Estado do Mundo** trazia uma tabela com duas colunas de endereço externo. Viraram o
+arquivo inteiro e a pasta de um arquivo por linha, que é o que existe.
+
+## 5. O que era registro histórico também saiu, por decisão
+
+**Levado ao Árbitro com o custo à vista**, porque reescreve registro de retificação e decisão
+arquivada, que é o que a regra de append existe para impedir. **Ele decidiu que sai de tudo.**
+
+**Como foi executado, e isto importa:** cada frase foi **reescrita para continuar dizendo o que
+aconteceu**, sem o nome próprio. *"Esta página existia só no canal antigo até 11/09/2026"* virou
+*"esta página não estava publicada até 11/09/2026"*; a pendência riscada do Improviso continua
+riscada e continua dizendo por que nasceu. **Nenhum fato se perdeu — o que saiu foi o nome.** Cinco
+frases tinham virado absurdo com a troca automática — falavam de *ler* numa ferramenta que não
+existe — e foram reescritas à mão.
+
+## 6. A contagem das mágicas, corrigida onde ainda estava viva
+
+O cabeçalho da **Tabela de Mágicas** anunciava **429 mágicas**, e o **resumo do cartão dela na página
+inicial do site** repetia o mesmo número. **São 768, em 778 linhas.** Os dois foram corrigidos.
+
+> **E o registro da noite de 13/09 estava errado, em duas cifras.** Ele diz *"as 274 mágicas novas"*
+> e *"de 429 para 703 nomes"*. **A conta não fecha:** o próprio bloco daquela noite registra **778
+> linhas**, e a contagem de 14/09 dá **768 nomes distintos**. Entraram **339**, não 274 — que é o
+> número que a seção 11 da Tabela de Perícias já usava ao falar das mágicas do Grimório.
+> **Esta linha não apaga aquela: aponta para ela**, que é a regra.
+
+## 7. O índice deste cânone deixou de ser mantido à mão
+
+A Parte 1 do **Índice e Regra de Escrita** listava os documentos numa tabela escrita à mão, e ela
+**chegou a ficar dez documentos atrasada** — e ainda prometia um documento que o site não publicava,
+o *Gabarito de ficha pública*, que agora entrou.
+
+**Decisão do Árbitro: o gerador passa a escrever a lista.** A Parte 1 tem hoje um marcador que o
+`montar-site.py` troca, na hora de publicar, pela lista real — organizada pelas quatro trilhas de
+leitura, com seção e versão de cada documento. **Não há como envelhecer de novo:** a fonte da lista
+passou a ser a mesma que decide o que vai ao ar.
+
+**E o cabeçalho dela era falso.** Dizia *"vai para o Projeto de todo jogador"*, quando a decisão de
+13/09 fixou que **só cinco documentos vão ao Projeto** e que anexar trinta sufoca a sessão do Mestre
+de Cena.

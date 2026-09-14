@@ -3,8 +3,7 @@ semana: 1
 versao: 1
 atualizado: 2026-09-14
 
-**Caminho no Notion:** A Garganta / Estado do Mundo / Boletins
-**Base de origem:** Boletins (collection://c97575a2-6144-46a2-9322-19eaf618fee8)
+**Onde mora:** `Canone/Estado-do-Mundo/Boletins/`, e no ar em `boletim-atual.md`.
 
 ## Propriedades
 

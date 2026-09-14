@@ -291,8 +291,8 @@ decisão a tomar: são gatilhos**, que disparam quando a mesa chegar neles.
 2. ~~**Presságio e Taumatologia sem uso amarrado.**~~ **Taumatologia é obrigatória para
    improvisar** — §3b. *(Presságio segue sem uso amarrado e não é pendência: é perícia de
    adivinhação, e o uso aparece quando um jogador a comprar.)*
-3. ~~**O `23` e o `25` existem só no Notion.**~~ Os dois estão na pasta e no ar desde 11/09/2026.
-   *(A pendência nasceu numa arquitetura que não existe mais: o Notion saiu, a pasta é a fonte e o
+3. ~~**O `23` e o `25` não estão publicados.**~~ Os dois estão na pasta e no ar desde 11/09/2026.
+   *(A pendência nasceu numa arquitetura que não existe mais: a pasta é a fonte e o
    GitHub é o espelho.)*
 
 **Os dois gatilhos, que ficam armados e não pedem nada de ninguém agora:**

@@ -1,12 +1,12 @@
 titulo: Tabela de Mágicas
-versao: 10
+versao: 11
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Tabela de Mágicas
 
 > **Nota.**
-> **429 mágicas, todas as escolas, com pré-requisito, energia e tempo.** Transcrita da Relação das Mágicas do **GURPS Magia**, com as escolas renomeadas pelo livro e as Casas concedentes pela tabela viva do `17` §6.6, refeita em 10/09/2026 (`25`). **Acrescentadas em 11/09/2026 (`31`):** o colégio **Clima** com a sub-escola de **Eletricidade** do *Grimório*, e as quatro mágicas de Grimório que a decisão 1 do `25` nomeou.
+> **768 mágicas, em 778 linhas, todas as escolas, com pré-requisito, energia e tempo.** *(Contadas em 14/09/2026. Esta linha dizia **429**, que era o número antes da leva da noite de 13/09.)* Transcrita da Relação das Mágicas do **GURPS Magia**, com as escolas renomeadas pelo livro e as Casas concedentes pela tabela viva do `17` §6.6, refeita em 10/09/2026 (`25`). **Acrescentadas em 11/09/2026 (`31`):** o colégio **Clima** com a sub-escola de **Eletricidade** do *Grimório*, e as quatro mágicas de Grimório que a decisão 1 do `25` nomeou.
 > **Toda mágica é Mental/Difícil**, salvo as marcadas com **\*** — essas são Mental/Muito Difícil.
 >
 > **Versão 4, de 13/09/2026 — a regra de leitura mudou, e ela governa a tabela inteira.**

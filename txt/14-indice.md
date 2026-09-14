@@ -1,109 +1,79 @@
 titulo: Índice e Regra de Escrita
-versao: 9
+versao: 10
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
 # Índice e Regra de Escrita
 
 # PARTE 1 — OS DOCUMENTOS
-## Camada Aberta — vai para o Projeto de todo jogador
+## Camada Aberta — o cânone publicado
 
+**Nem tudo se anexa ao Projeto do jogador, e essa é a decisão de 13/09/2026.** Anexar trinta
+documentos sufoca a janela de contexto do Mestre de Cena. A lista abaixo é a mesma da página
+inicial do site, e diz **o que anexar, o que só consultar, o que ler uma vez e o que só o Árbitro
+precisa**.
 
-<table>
-<tr>
-<th>#</th>
-<th>Documento</th>
-</tr>
-<tr>
-<td>**01a**</td>
-<td>Bíblia do Mundo (edição de mesa) — **sem a Parte V**</td>
-</tr>
-<tr>
-<td>**02**</td>
-<td>Regras da Mesa</td>
-</tr>
-<tr>
-<td>**03**</td>
-<td>Economia e Tabelas</td>
-</tr>
-<tr>
-<td>**04**</td>
-<td>Protocolo do Mestre-IA — cola nas instruções do Projeto</td>
-</tr>
-<tr>
-<td>**05**</td>
-<td>Andares 1 a 12</td>
-</tr>
-<tr>
-<td>**06**</td>
-<td>Bestiário</td>
-</tr>
-<tr>
-<td>**06b**</td>
-<td>Muda dos Andares — composição variável e posição na faixa</td>
-</tr>
-<tr>
-<td>**07a**</td>
-<td>NPCs Nomeados (edição de mesa) — **sem as dívidas**</td>
-</tr>
-<tr>
-<td>**08**</td>
-<td>Modelos de Personagem</td>
-</tr>
-<tr>
-<td>**10**</td>
-<td>Carta do Árbitro — **precisa ser pública**</td>
-</tr>
-<tr>
-<td>**13**</td>
-<td>Sessão Zero</td>
-</tr>
-<tr>
-<td>**18**</td>
-<td>Ficha Pública e Notoriedade</td>
-</tr>
-<tr>
-<td>**15**</td>
-<td>Geografia: a Coroa e as Sete Cidades</td>
-</tr>
-<tr>
-<td>**17**</td>
-<td>Guia de Criação e Manual de Magia</td>
-</tr>
-<tr>
-<td>**18b**</td>
-<td>Gabarito de ficha pública</td>
-</tr>
-<tr>
-<td>**20**</td>
-<td>Como se joga — as regras básicas</td>
-</tr>
-<tr>
-<td>**21**</td>
-<td>Loot, Balcão e Registro — as tabelas de item e o que se registra</td>
-</tr>
-<tr>
-<td>**22**</td>
-<td>A Magia no Mundo e as Sete Forjas</td>
-</tr>
-<tr>
-<td>**30**</td>
-<td>Improviso, Círculo e Lavra — como se cria magia nova</td>
-</tr>
-<tr>
-<td>**33**</td>
-<td>As Escolas de Luta — as nove escolas que ensinam técnica de arte marcial</td>
-</tr>
-<tr>
-<td>**04b**</td>
-<td>Entrega do Relatório pelo Google Drive</td>
-</tr>
-<tr>
-<td>**14**</td>
-<td>Este documento</td>
-</tr>
-</table>
+### Anexe ao Projeto, e só isto
 
+Cinco documentos. São o bastante para rodar qualquer sessão do começo ao fim, e cabem folgados na janela de contexto do Mestre de Cena. O combate entra aqui pelo Cartão, de uma página; o Como se joga inteiro ficou na trilha de consulta, onde se abre sem ocupar a sessão.
+
+| Documento | Seção | Versão |
+| --- | --- | --- |
+| **Protocolo do Mestre de Cena** | A mesa | v13 |
+| **Cartão de Combate** | Comece aqui | v3 |
+| **Regras da Mesa** | Comece aqui | v7 |
+| **Carta do Árbitro** | A mesa | v1 |
+| **Entrega do Relatório pelo Google Drive** | A mesa | v8 |
+
+### Consulte na hora, sem anexar
+
+Abra a página, leia a linha que precisa, feche. São tabelas e catálogos: ninguém os lê inteiros, e carregá-los no Projeto gasta contexto que a cena vai precisar.
+
+| Documento | Seção | Versão |
+| --- | --- | --- |
+| **Como se joga** | Comece aqui | v11 |
+| **Tabela de Perícias** | Tabelas de referência | v13 |
+| **As Escolas de Luta** | Seu personagem | v3 |
+| **Tabela de Mágicas** | Tabelas de referência | v11 |
+| **Tabela de Vantagens** | Tabelas de referência | v7 |
+| **Tabela de Desvantagens** | Tabelas de referência | v8 |
+| **Regra de Escrita da Ficha** | Seu personagem | v7 |
+| **Economia e Tabelas** | Economia | v8 |
+| **Loot, Balcão e Registro** | Economia | v4 |
+| **Andares 1 a 12** | A Garganta | v2 |
+| **Bestiário, andares 1 a 12** | A Garganta | v3 |
+| **Muda dos Andares** | A Garganta | v5 |
+| **NPCs Nomeados** | O mundo | v2 |
+| **Geografia: a Coroa e as Sete Cidades** | O mundo | v1 |
+
+### Leia uma vez, antes de começar
+
+Para entender o mundo e montar personagem. Depois disso não voltam à mesa — o que mudar vira linha no Boletim da semana.
+
+| Documento | Seção | Versão |
+| --- | --- | --- |
+| **Sessão Zero** | Comece aqui | v1 |
+| **Bíblia do Mundo** | O mundo | v2 |
+| **Guia de Criação e Manual de Magia** | Seu personagem | v11 |
+| **Os Povos que Subiram** | Seu personagem | v2 |
+| **Modelos de Personagem** | Seu personagem | v2 |
+| **Ficha Pública e Notoriedade** | Seu personagem | v2 |
+| **Gabarito de ficha pública** | Seu personagem | v1 |
+| **A Magia no Mundo e as Sete Forjas** | O mundo | v3 |
+| **Improviso, Círculo e Lavra** | Seu personagem | v4 |
+
+### Só o Árbitro precisa
+
+Histórico e método: o que o cânone decidiu, quando, e por quê. Nenhuma sessão precisa disto aberto — está aqui para auditar uma decisão, não para jogar.
+
+| Documento | Seção | Versão |
+| --- | --- | --- |
+| **Retificações de livro** | Decisões e retificações | v12 |
+| **As decisões de 10/09/2026** | Decisões e retificações | v1 |
+| **A Dádiva de Zeus e o recorte de Clima** | Decisões e retificações | v1 |
+| **Índice e Regra de Escrita** | A mesa | v10 |
+
+**32 documentos, e esta lista é gerada.** Ela sai da mesma fonte que decide o que vai ao ar, então não há como ela envelhecer: documento novo aparece aqui sozinho, na rodada em que entrar.
 
 ## Camada Reservada
 A Camada Reservada existe, nunca é anexada a Projeto de jogador e não se lê.
