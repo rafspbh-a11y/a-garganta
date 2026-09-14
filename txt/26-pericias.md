@@ -1,5 +1,5 @@
 titulo: Tabela de Perícias
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -69,6 +69,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Arremesso de Lança | Fácil | Básico |
 | Arremesso de Machado | Fácil | Básico |
 | Arremesso de Mágica | Fácil | Magia · Grimório |
+| Arte do Arremesso | Difícil | Artes Marciais p.40 |
 | Bastão | Difícil | Básico |
 | Besta | Fácil | Básico |
 | Boemia | Média (sai de **HT**) | Básico |
@@ -80,6 +81,8 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Caratê | Difícil | Básico |
 | **Cavalgar** (por tipo de montaria) | Média | Básico |
 | Chicote | Média | Básico |
+| **Combate às Cegas** | Muito Difícil (Mental) | Império Romano p.96 — v. §14 |
+| Controle das Funções Involuntárias | Muito Difícil (Mental) | Artes Marciais p.36 |
 | Corrida | Difícil | Básico — **soma ⅛ do NH ao Deslocamento, e portanto à Esquiva** (`26` §12) |
 | Dança | Média | Básico |
 | Escalada | Média | Básico |
@@ -95,6 +98,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Fuga | Difícil | Básico |
 | Funda | Difícil | Básico |
 | Furtividade | Média | Básico |
+| Golpe Vigoroso | Difícil (Mental) | Artes Marciais p.39 |
 | Jato Mágico | Fácil | Magia |
 | Judô | Difícil | Básico |
 | Laço (Reata) | Média | Básico |
@@ -459,3 +463,36 @@ produziu sem licença é o crime maior**, porque aí há comprador, e comprador 
 
 > **Os elixires do *GURPS Magia* são o produto deste ofício** — catorze, com nome de deus grego, de
 > *Apollo* a *Vulcan*. Preço e classe moram no `21`; a perícia que os faz mora aqui.
+
+
+# 14. Combate às Cegas, e as três perícias de treino extremo
+
+## Combate às Cegas
+
+**Mental/Muito Difícil.** Localiza atacantes pela **audição, olfato e tato**, e cada teste
+bem-sucedido permite **um ataque corpo-a-corpo ou uma defesa ativa sem o modificador de
+iluminação** — no escuro total, ou contra quem não se vê.
+
+**Entrou em 13/09/2026, e nesta campanha ela não é perícia de nicho.** A tocha queima uma hora, o
+óleo acaba, e o baú do andar 9 está no escuro. Até hoje, quem perdia a luz simplesmente não lutava.
+
+> **O nome é o do *Império Romano* p.96, e a perícia é a mesma que o *Artes Marciais* chama de
+> Luta às Cegas** — o próprio livro de Roma diz que a tirou de lá. **É uma linha só**, e o nome
+> escolhido é o que descreve o que ela faz sem prometer um estilo que a Garganta ainda não escreveu.
+
+## As três de treino extremo
+
+Do *Artes Marciais*, **e entram como treino, não como energia interior**. A decisão 34 mandou o
+cinematográfico ficar fora, e o livro descreve as três com a linguagem do chi; **o que entra aqui é
+o que sobra quando se tira o chi** — respiração, controle de dor e alavanca.
+
+| Perícia | O que é, sem o misticismo |
+| --- | --- |
+| **Golpe Vigoroso** | Concentra-se **20 − NH turnos** (mínimo 1) e desfere um golpe desferido com o corpo inteiro. Também serve fora de combate, para feito de força |
+| **Controle das Funções Involuntárias** | Domínio de respiração, batimento e dor: retarda hemorragia, aguenta frio, engana quem toma o pulso |
+| **Arte do Arremesso** | Arremessar o que não foi feito para ser arremessado, com precisão |
+
+**As outras sete ficam fora** — Pontos de Pressão, Pontos Secretos, Punhos Voadores, Mãos
+Hipnóticas, Resistência Mental, Deslocar e Desviar. Elas dependem de energia interior, e **nesta
+campanha o sobrenatural passa por Casa, por Marca e por Dever**. Poder sem dono é o que a recusa da
+Magia Intrínseca barrou no mesmo dia.

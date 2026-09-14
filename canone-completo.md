@@ -6015,7 +6015,7 @@ entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O `04`
 ---
 
 titulo: Tabela de Perícias
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -6085,6 +6085,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Arremesso de Lança | Fácil | Básico |
 | Arremesso de Machado | Fácil | Básico |
 | Arremesso de Mágica | Fácil | Magia · Grimório |
+| Arte do Arremesso | Difícil | Artes Marciais p.40 |
 | Bastão | Difícil | Básico |
 | Besta | Fácil | Básico |
 | Boemia | Média (sai de **HT**) | Básico |
@@ -6096,6 +6097,8 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Caratê | Difícil | Básico |
 | **Cavalgar** (por tipo de montaria) | Média | Básico |
 | Chicote | Média | Básico |
+| **Combate às Cegas** | Muito Difícil (Mental) | Império Romano p.96 — v. §14 |
+| Controle das Funções Involuntárias | Muito Difícil (Mental) | Artes Marciais p.36 |
 | Corrida | Difícil | Básico — **soma ⅛ do NH ao Deslocamento, e portanto à Esquiva** (`26` §12) |
 | Dança | Média | Básico |
 | Escalada | Média | Básico |
@@ -6111,6 +6114,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Fuga | Difícil | Básico |
 | Funda | Difícil | Básico |
 | Furtividade | Média | Básico |
+| Golpe Vigoroso | Difícil (Mental) | Artes Marciais p.39 |
 | Jato Mágico | Fácil | Magia |
 | Judô | Difícil | Básico |
 | Laço (Reata) | Média | Básico |
@@ -6475,6 +6479,39 @@ produziu sem licença é o crime maior**, porque aí há comprador, e comprador 
 
 > **Os elixires do *GURPS Magia* são o produto deste ofício** — catorze, com nome de deus grego, de
 > *Apollo* a *Vulcan*. Preço e classe moram no `21`; a perícia que os faz mora aqui.
+
+
+# 14. Combate às Cegas, e as três perícias de treino extremo
+
+## Combate às Cegas
+
+**Mental/Muito Difícil.** Localiza atacantes pela **audição, olfato e tato**, e cada teste
+bem-sucedido permite **um ataque corpo-a-corpo ou uma defesa ativa sem o modificador de
+iluminação** — no escuro total, ou contra quem não se vê.
+
+**Entrou em 13/09/2026, e nesta campanha ela não é perícia de nicho.** A tocha queima uma hora, o
+óleo acaba, e o baú do andar 9 está no escuro. Até hoje, quem perdia a luz simplesmente não lutava.
+
+> **O nome é o do *Império Romano* p.96, e a perícia é a mesma que o *Artes Marciais* chama de
+> Luta às Cegas** — o próprio livro de Roma diz que a tirou de lá. **É uma linha só**, e o nome
+> escolhido é o que descreve o que ela faz sem prometer um estilo que a Garganta ainda não escreveu.
+
+## As três de treino extremo
+
+Do *Artes Marciais*, **e entram como treino, não como energia interior**. A decisão 34 mandou o
+cinematográfico ficar fora, e o livro descreve as três com a linguagem do chi; **o que entra aqui é
+o que sobra quando se tira o chi** — respiração, controle de dor e alavanca.
+
+| Perícia | O que é, sem o misticismo |
+| --- | --- |
+| **Golpe Vigoroso** | Concentra-se **20 − NH turnos** (mínimo 1) e desfere um golpe desferido com o corpo inteiro. Também serve fora de combate, para feito de força |
+| **Controle das Funções Involuntárias** | Domínio de respiração, batimento e dor: retarda hemorragia, aguenta frio, engana quem toma o pulso |
+| **Arte do Arremesso** | Arremessar o que não foi feito para ser arremessado, com precisão |
+
+**As outras sete ficam fora** — Pontos de Pressão, Pontos Secretos, Punhos Voadores, Mãos
+Hipnóticas, Resistência Mental, Deslocar e Desviar. Elas dependem de energia interior, e **nesta
+campanha o sobrenatural passa por Casa, por Marca e por Dever**. Poder sem dono é o que a recusa da
+Magia Intrínseca barrou no mesmo dia.
 
 
 ---
@@ -7683,7 +7720,7 @@ E as correções de grafia — a Relação saiu do arquivo com erro de leitura, 
 ---
 
 titulo: Tabela de Vantagens
-versao: 5
+versao: 6
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -7705,14 +7742,17 @@ fonte: cânone aberto de A Garganta
 | Aliado | 5+ | Ver §2 |
 | Ambidestria | 10 | Elimina o −4 de DX da mão inábil; luta com qualquer mão, ou com as duas em Ataque Total |
 | Antecedentes Incomuns | 10+ | Benefício especial vindo da história do personagem |
+| **Apara Ampliada** | **6 / 10** | *Artes Marciais* p.58. **Uma aparada a mais por rodada** — 6 pontos por uma arma (ou mãos nuas), 10 por todas. **Só depois da criação**, e com mestre que tenha nome (`26` §14, decisão 56) |
 | **Aptidão Mágica** | **15 / 25 / 35** | 15 no primeiro nível, +10 por nível, **máximo 3**. Aprende magia como se IQ = (IQ + Aptidão) — é o **IQ efetivo** que a ficha declara. Teste contra (IQ+Aptidão) ao ver e ao tocar objeto encantado; 3 ou 4 revela se é salutar ou perigoso. **Sem Aptidão não há teste, e na Garganta não há feitiço**. **Cinco limitações podem baixar este preço** — Seletiva ao Sol, à Lua ou às Estrelas, Uma Única Escola e Solitária; estão no `29`, no fim da seção 3, e não se escolhe mais de uma |
 | Atratividade | −20 a 25 | Hediondo −4 de reação (−20) · Feio −2 (−10) · Desagradável −1 só com a própria raça (−5) · Comum 0 · Atraente +1 (5) · Elegante +2/+4 conforme o sexo (15) · Muito Elegante +2/+6 (25) |
+| **Bloqueio Ampliado** | **6** | *Artes Marciais* p.58. **Um bloqueio a mais por rodada**, com escudo, broquel ou manto. **Só depois da criação**, e com mestre |
 | Bom Senso | 10 | Teste de IQ quando for fazer bobagem; sucesso obriga o Árbitro a avisar antes |
 | Cálculos Instantâneos | 5 | Conta de cabeça, instantânea |
 | **Carisma** | **5/nível** | **+1 por nível em todo teste de reação** de criatura inteligente. Soma também em **Trovador** e **Liderança** |
 | Clericato | 5+ | +1 de reação com correligionários e com quem respeita a fé. 10+ se clérigos invocam ajuda do Além |
 | **Empatia** | **15** | Teste de IQ ao conhecer alguém: o Árbitro diz o que você **sente**. Serve para sinceridade, não para verdade. **Numa falha, o Árbitro pode mentir.** *Não é mágica* |
 | Empatia com Animais | 5 | +2 de reação de animal selvagem; **+4 em qualquer perícia com animais** — o livro diz "Adestramento de Animais, Cavalgar, Veterinária, etc.", e o **etc. é literal**: entram também **Falcoaria** e **Carregamento**, e qualquer outra que a lista de perícias (`26`) traga como perícia com animal; +3 para achar caça. Não mata animal sem motivo forte |
+| **Esquiva Ampliada** | **15** | *Artes Marciais* p.58. **Uma esquiva a mais por rodada** — e a Esquiva já é ilimitada contra o que se vê vir, então ela vale contra o que **não** se vê: ataque surpresa, segundo atacante no mesmo turno. **Só depois da criação**, e com mestre |
 | **Facilidade para Línguas** | **2/nível** | **+1 no IQ por nível, só para aprender língua** e para Lingüística. Acumula com Memória Eidética |
 | **Familiares** | **variável** | *GURPS Magia* p.105-106. **Só para quem tem Aptidão Mágica 2 ou 3** — na Garganta, portanto, só para quem tem Casa. Custo montado item a item: a **fonte de ST** custa ⅓ do que custaria elevar a ST do mago até a soma das duas; ver pelos olhos do bicho **+5**; torná-lo inteligente **5** no primeiro nível e **+10** por nível; fazê-lo falar **5 / 10 / 15**. **O mago sofre os ferimentos do familiar: −15.** Nenhum componente conta abaixo de zero. Convocar leva **uma semana de trabalho ininterrupto** e um teste secreto contra **IQ−6**; **falha crítica traz um demônio disfarçado**. **Um por vez.** *(E na Garganta o que atende à convocação **sobe do poço** — o que explica o demônio disfarçado sem inventar nada.)* |
 | **Força de Vontade** | **4/nível** | **+1 por nível em todo teste de Vontade**: medo, dor, **Interrogatório (com ou sem tortura)**, Hipnotismo, e também quando alguém tenta influenciá-lo por **Diplomacia, Lábia ou Sex-Appeal**. E soma à resistência **de qualquer mágica que se possa resistir** — não só as de dominação da mente (MB pág. 20). Não ajuda contra choque de combate |
@@ -7721,7 +7761,9 @@ fonte: cânone aberto de A Garganta
 | **Imunidade** | 10 | Nunca contrai doença ou infecção naturalmente. Exige **HT inicial 12+** — e se a HT cair abaixo disso depois, a imunidade fica. Fungo e vírus contam como doença; parasita maior, como solitária, não. *(Chamava-se "Imunidade a doenças" até 12/09; o nome de livro é **Imunidade**, seco — Básico p.20. A colisão com as mágicas Imunidade ao Fogo, ao Frio, a Relâmpagos, à Dor e a Doenças resolve-se pelo tipo obrigatório na linha, `26` §11.)* |
 | Intuição | 15 | Uma pergunta por problema: o Árbitro rola contra IQ + acertos − erros. 3 ou 4 aponta a melhor opção; falha crítica aponta uma ruim |
 | Longevidade | 5 | Só falha teste de envelhecimento em 17 ou 18. **Quem a tem não recebe ponto nenhum pela desvantagem Idade** — as duas não se somam |
+| **Mão de Ferro** | **10 / 15** | *Artes Marciais* p.27. As mãos endurecem até virar arma — 10 por uma, 15 pelas duas. Em jogo, adquiri-la **incapacita as mãos por um período** |
 | **Memória Eidética** | **30 / 60** | 30: **todo ponto em perícia mental conta em dobro**, e teste de IQ para lembrar detalhe. 60: contam em quádruplo. **O ponto gasto em mágica não dobra — mas a vantagem soma ao IQ com que se aprende mágica: +1 no primeiro nível, +2 no segundo, e para aí.** *(Retificação do `23` de 10/09/2026, que o `27` recebeu na hora e esta tabela só recebeu em 13/09.)* |
+| **Mestre de Armas** | **45 / 20** | *Artes Marciais* p.28. Treino intensivo em **arma arcaica** mais conhecimento dos pontos letais — 45 por todas, **20 por uma perícia só**. **Nenhum bônus com arma moderna**, o que nesta campanha não tira nada |
 | **Noção do Perigo** | **15** | Teste secreto de IQ diante de emboscada ou desastre iminente; sucesso avisa que algo está errado; 3 ou 4 dá detalhes |
 | Noção Exata do Tempo | 5 | Sabe a hora exata e mede qualquer intervalo; acorda na hora marcada |
 | Olfato/Paladar Apurado | 2/nível | +1 por nível em Olfato e Paladar — veneno na comida antes do segundo gole |
@@ -7873,6 +7915,27 @@ Estiveram em uso no cânone e foram substituídas. **Não entram em ficha nova.*
 | Velocidade Superior · Recuperação Rápida | não existem |
 | Vigor | **Hipoalgia**, 10 |
 | Voz | **Voz Melodiosa**, 10 |
+
+# 4a. A exceção declarada à decisão 34 — as três defesas ampliadas
+
+**A decisão 34 diz que o realista de Artes Marciais entra e o cinematográfico fica fora.** O livro
+lista **Apara, Bloqueio e Esquiva Ampliadas** entre as Manobras Cinematográficas. **Elas entram
+mesmo assim, e isto é exceção declarada, não esquecimento.**
+
+**O motivo é o preço.** Esquiva Ampliada custa **15 pontos** — exatamente o que custa **Reflexos em
+Combate**, que a mesa já usa e que dá **+1 de Esquiva, +1 em toda defesa ativa e nunca ser
+surpreendido**. Pelo que cobram, as três não são mais fortes do que já existe na mesa.
+
+**E vêm com duas travas que o próprio livro dá:**
+
+1. **Nenhuma se compra na criação do personagem.** São treino, e treino leva tempo de jogo.
+2. **Exigem um mestre**, e pela decisão 56 **quem ensina tem nome e pode deixar de ensinar.** Uma
+   defesa a mais por rodada passa a ser uma dívida com alguém.
+
+> **O que isso faz na mesa, dito na cara:** um esgrimista que já apara duas vezes passaria a aparar
+> **três**. É muito. Mas custa 6 pontos que ele não gasta noutra coisa, custa tempo de jogo, e
+> custa dever um favor a quem ensinou. **Numa campanha de morte permanente, uma defesa a mais é
+> exatamente o tipo de coisa que um personagem deveria poder perseguir.**
 
 # 4b. O que foi pedido e não entra
 
