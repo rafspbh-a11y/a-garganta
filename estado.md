@@ -24,7 +24,7 @@ e avise o jogador para trocar o anexo.
 30-improviso-circulo-e-lavra v4    https://rafspbh-a11y.github.io/a-garganta/txt/30-improviso-circulo-e-lavra.md
 32-os-povos-que-subiram      v2    https://rafspbh-a11y.github.io/a-garganta/txt/32-os-povos-que-subiram.md
 08-modelos-de-personagem     v2    https://rafspbh-a11y.github.io/a-garganta/txt/08-modelos-de-personagem.md
-33-escolas-de-luta           v2    https://rafspbh-a11y.github.io/a-garganta/txt/33-escolas-de-luta.md
+33-escolas-de-luta           v3    https://rafspbh-a11y.github.io/a-garganta/txt/33-escolas-de-luta.md
 18-ficha-publica             v2    https://rafspbh-a11y.github.io/a-garganta/txt/18-ficha-publica.md
 24-regra-da-ficha            v7    https://rafspbh-a11y.github.io/a-garganta/txt/24-regra-da-ficha.md
 22-magia-no-mundo            v3    https://rafspbh-a11y.github.io/a-garganta/txt/22-magia-no-mundo.md
@@ -34,11 +34,11 @@ e avise o jogador para trocar o anexo.
 04-protocolo-do-mestre       v12   https://rafspbh-a11y.github.io/a-garganta/txt/04-protocolo-do-mestre.md
 04b-entrega-do-relatorio     v7    https://rafspbh-a11y.github.io/a-garganta/txt/04b-entrega-do-relatorio.md
 14-indice                    v9    https://rafspbh-a11y.github.io/a-garganta/txt/14-indice.md
-26-pericias                  v12   https://rafspbh-a11y.github.io/a-garganta/txt/26-pericias.md
+26-pericias                  v13   https://rafspbh-a11y.github.io/a-garganta/txt/26-pericias.md
 27-magias                    v10   https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 28-vantagens                 v7    https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md
 29-desvantagens              v8    https://rafspbh-a11y.github.io/a-garganta/txt/29-desvantagens.md
-23-retificacoes-de-livro     v10   https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md
+23-retificacoes-de-livro     v11   https://rafspbh-a11y.github.io/a-garganta/txt/23-retificacoes-de-livro.md
 25-decisoes-de-10-09-2026    v1    https://rafspbh-a11y.github.io/a-garganta/txt/25-decisoes-de-10-09-2026.md
 31-dadiva-de-zeus-e-clima    v1    https://rafspbh-a11y.github.io/a-garganta/txt/31-dadiva-de-zeus-e-clima.md
 boletim-atual                v1    https://rafspbh-a11y.github.io/a-garganta/txt/boletim-atual.md

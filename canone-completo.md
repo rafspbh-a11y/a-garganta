@@ -4443,7 +4443,7 @@ E lembre do **passo 11** da criação: dois NPCs que te conhecem, uma dívida, u
 ---
 
 titulo: As Escolas de Luta
-versao: 2
+versao: 3
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -4493,7 +4493,7 @@ no dia da expulsão.
 
 ---
 
-# 2 · As nove escolas
+# 2 · As onze escolas
 
 ## 2.1 · ÔNFALOS — o Pátio de Bronze
 
@@ -4520,7 +4520,7 @@ escola de covarde que se esconde atrás de escudo alheio. A Assembleia tenta, to
 transferir o pátio do santuário para a arrecadação da cidade — a mesma briga que trava pelas
 forjas, e pelo mesmo motivo: enquanto o pátio for da Casa, quem decide quem aprende é a Casa.
 **Gapheim copiou a formação há quarenta anos e desistiu**, porque não tinha como fazer onze
-assentamentos treinarem juntos.
+assentamentos treinarem juntos — e o que restou daquela cópia é a casa que arma o fiorde, §2.10.
 
 **Licencia:** Golpe com a Cabeça · Golpe com o Cotovelo · Pisão · Torção de Pescoço ·
 Chave de Braço ou de Pulso · Queda.
@@ -4766,6 +4766,65 @@ e ataque ao rosto. Uma companhia que garante entrega ensina o que ganha, não o 
 **Licencia:** Flecha · Impacto de Parada · Mergulho no Chão · Estocada · Corpo-a-Corpo ·
 Golpe nos Olhos · Ataques contra o Rosto · Deslizamento · Queda.
 
+## 2.10 · GAPHEIM — a casa que arma o fiorde
+
+*Cada casa mercante, e não há escola pública.*
+
+**Quem ensina, e onde.** Nas onze povoações dos três fiordes, dentro de casa. **É o que restou da
+formação que Gapheim copiou de Ônfalos há quarenta anos e abandonou**: não havia como fazer onze
+assentamentos treinarem juntos, então cada casa guardou a parte que dava para treinar sozinha — o
+aperto, a cabeçada, o joelho, o pisão no que caiu. Ensina-se contra saqueador, não contra o que
+sobe do poço: as povoações não têm muralha, e a defesa é a água e o fato de que todos se conhecem.
+
+**O que custa entrar.** Parentesco, ou juramento de hospitalidade aceito diante da casa. E o preço
+verdadeiro é o outro: **você herda o feud da casa**, o que ela deve e o que lhe devem. Na ficha é
+**Inimigo**, e é o mesmo valor que já vale nesta campanha para grupo médio que aparece de vez em
+quando.
+
+**A fraqueza estrutural.** **Nunca lutou contra quem não é vizinho.** O estilo passou de pai para
+filho dentro de uma casa, sem contraditório: aprendeu o que funcionou contra o saqueador do fiorde
+ao lado, e **a primeira Esgrima que encontra o mata**. E a segunda metade da fraqueza é pior: **não
+sabe operar ao lado de quem não é da casa.** Dois alunos de casas diferentes, na mesma esquadra,
+atrapalham-se — e é literalmente por isso que a formação foi abandonada.
+
+**A consequência política.** É exatamente isto que **paralisa expedição**, que é a fraqueza
+declarada de Gapheim. A Guilda já tentou registrar as famílias e foi recusada, e recusada em voz
+alta. E há uma consequência que a cidade não discute: **casa que não consegue mais armar os seus
+perde o nome antes de perder o dinheiro** — a Casa de Hrafnkel, descapitalizada desde que os
+saqueadores entraram pelo fiorde, é o caso que todo mundo em Gapheim está olhando de lado.
+
+**Licencia:** Golpe com a Cabeça · Golpe com o Cotovelo · Golpe com o Joelho · Soco Coelho ·
+Pisão · Torção de Pescoço · Voadora · Chave de Braço ou de Pulso · Queda.
+
+## 2.11 · ÁMENTI — a guarda da leoa
+
+*Casa de Sekhmet, na margem oeste.*
+
+**Quem ensina, e onde.** Entre os túmulos, no recinto da leoa, dentro da necrópole — que é maior
+que a cidade dos vivos e tem ruas, portões e administração própria. **A guarda da necrópole é a
+única força armada permanente de qualquer das sete cidades**, e a coisa que ninguém diz em voz alta
+é de quem ela é: **não responde ao Tribunal de Maat. Responde à Casa de Sekhmet.**
+
+**O que custa entrar.** Um turno de vigília por estação, cumprido na margem oeste. E, com ele, **o
+seu nome no rol de quem pode entrar na necrópole** — o que significa que a Casa sabe onde você
+esteve todas as noites em que esteve em Ámenti. Na ficha é **Dever à Casa de Sekhmet**.
+
+**A fraqueza estrutural.** É estilo de **segurar porta e de não ser movido**. Ancora, bloqueia,
+prende a perna do que passou e quebra o que insiste — e **não persegue**. O que corre, ganha. A
+necrópole é de corredor reto e portão contado; a Garganta não é nem uma coisa nem outra, e o aluno
+da leoa lá embaixo descobre que treinou para um lugar que só existe em casa.
+
+**A consequência política.** **É por isto que Ámenti pode dizer que não é marcial e estar
+tecnicamente certa:** a cidade não tem tropa — uma Casa tem. O Tribunal tenta absorver a guarda há
+um século e não consegue, e não pode nem insistir muito, porque absorvê-la seria admitir em juízo
+que a tropa existe. E o que a leoa guarda não é Ámenti: **são os mortos das outras seis**, que
+Ámenti enterra quando a família não pode levar o corpo para casa. Uma Casa que guarda os mortos de
+todo mundo e responde a ninguém é a coisa mais próxima de um exército neutro que este mundo tem, e
+as sete cidades preferem não somar essa conta em voz alta.
+
+**Licencia:** Bloqueio com o Pé · Bloqueio Agressivo com o Pé · Postura do Gato · Segurar Perna ·
+Chave de Braço ou de Pulso · Mata-Leão · Torção de Pescoço · Queda.
+
 ---
 
 # 3 · As oito técnicas que não têm dono
@@ -4870,21 +4929,24 @@ Tabela diz isso na linha.
 
 # 7 · O que ainda não tem escola
 
-**Dito na cara, para não parecer lacuna escondida.** Nenhuma das nove ensina técnica de **arco, de
+**Dito na cara, para não parecer lacuna escondida.** Nenhuma das onze ensina técnica de **arco, de
 besta, de funda ou de arremesso** — o livro traz as de projétil no capítulo cinematográfico, e elas
 caíram com ele. Batedor de Ilê Ifé, escriba de Ámenti e caçadora de Fengdu atiram pela perícia,
 como sempre atiraram, e **não perdem nada**: não há técnica de projétil realista neste acervo para
 eles perderem.
 
-**E há três coisas que são Pendência, não lacuna:**
+**E há uma coisa que continua sem escola, por decisão e não por esquecimento.**
 
-1. **A escola de machado de Gapheim fora da corte.** Os que levam o machado ao Thing ensinam o
-   duelo; quem quiser machado de guerra em formação não tem onde aprender, e o que existe disso na
-   cidade é a família, que não aceita de fora.
-2. **Ámenti tem uma segunda força armada** — a guarda da necrópole, na margem oeste — que não é
-   escola nesta lista e talvez devesse ser.
-3. **A Casa de Sekhmet existe** e é a Casa da guerra numa cidade que nega ser marcial. Não tem
-   verbete aqui, e a ausência é escolha, não esquecimento.
+**A Casa de Sekhmet não tem verbete próprio nesta lista, e não vai ter.** Ela é dona de uma escola —
+a guarda da leoa, §2.11 —, e isso é o papel marcial dela. O que ela concede de resto é magia:
+o colégio de **Controle do Corpo** e a Dádiva **Recuperação Alígera**, que estão onde sempre
+estiveram. **Casa que já tem escola não ganha uma segunda.**
+
+> **As três Pendências que esta seção listava fecharam em 14/09/2026.** Eram a escola de machado de
+> Gapheim fora da corte, a guarda da necrópole de Ámenti e a Casa de Sekhmet. As duas primeiras
+> viraram as escolas **§2.10** e **§2.11**; a terceira fechou junto com a segunda, porque **eram a
+> mesma pergunta**: a guarda da necrópole é de Sekhmet, e é por isso que ela não responde ao
+> Tribunal.
 
 
 ---
@@ -6762,7 +6824,7 @@ entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O `04`
 ---
 
 titulo: Tabela de Perícias
-versao: 12
+versao: 13
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -6770,6 +6832,7 @@ fonte: cânone aberto de A Garganta
 
 > **Nota.**
 > **Lista fechada.** O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha.
+> **Versão 6, de 14/09/2026 — duas escolas novas.** As nove viraram **onze**: a **casa que arma o fiorde**, em Gapheim, e a **guarda da leoa**, na necrópole de Ámenti. Fecham as três Pendências que *As Escolas de Luta* listava como lacuna. **Nenhuma técnica nova entrou** — as duas licenciam o que já estava na tabela, e a coluna *Escola* é que cresceu.
 > **Versão 5, de 14/09/2026 — quatro duplicatas resolvidas, e a Capa entrou.** A conferência da leva das técnicas achou quatro nomes que eram a mesma coisa duas vezes, e o Árbitro decidiu os quatro: **Luta Romana virou Luta Livre**; **Boxe virou Pugilismo**; os **três nomes do treino de mão inábil viraram um, e é técnica**; e a **Capa entrou**, Física/Média, porque tem verbete em dois livros e esta tabela dizia que ela não existia. **A lista caiu de 191 para 189 perícias e subiu para 52 técnicas**, e nenhuma ficha de jogador muda — só o Jurado de Gapheim, nos *Modelos de Personagem*.
 > **Versão 4, de 14/09/2026 — as técnicas entraram, e têm dono.** A seção 15 é nova: **51 técnicas de *Artes Marciais***, com pré-definido, teto e escola. **Quarenta e quatro são presas a estilo** — a decisão 56 do Árbitro —, e as **nove escolas que as ensinam estão em *As Escolas de Luta* (`33`)**, com quem ensina, o que cobra e o que a expulsão custa. **Sete são livres**, porque o livro as pré-define contra *qualquer perícia de combate*, e prender fintar e desarmar a uma escola seria falso. Na mesma passada, a seção 14 passou de "as outras sete" para **as outras dezoito**, que é o número real, e a seção 10 corrigiu a contagem das mágicas.
 > **Versão 3, de 13/09/2026 — e as perícias da casa acabaram.** O Árbitro passou os dez livros de GURPS que a campanha possui a livros de mesa, e as quatro perícias inventadas em setembro se resolveram sozinhas: **Intimidação** tem verbete em quatro livros, e é Mental/Média, exatamente como estava; **Exorcismo** tem verbete no *Horror* (p.43), Mental/Difícil, e o livro diz na cara que *"não é uma mágica, é uma perícia religiosa"* — que era a decisão do Árbitro, palavra por palavra; **Selos e Sigilos** virou **Heráldica**, que já estava na lista, com a mesma dificuldade; e **Cartografia**, a única sem verbete em livro nenhum, saiu (v. §6).
@@ -7340,7 +7403,7 @@ no mesmo dia.
 
 **Entraram em 14/09/2026, e nenhuma é livre de graça.** A decisão 56 do Árbitro diz que **técnica é
 presa a estilo, e estilo tem dono**: vêm em pacotes que uma cidade, uma Casa ou uma companhia
-ensina, e quem ensina pode deixar de ensinar. **As nove escolas estão em *As Escolas de Luta*
+ensina, e quem ensina pode deixar de ensinar. **As onze escolas estão em *As Escolas de Luta*
 (`33`)** — com quem ensina, o que cobra, o que faz mal e o que a expulsão custa.
 
 **São 52 linhas: 44 presas a escola e 8 livres.** As oito livres são as que o livro pré-define
@@ -7379,16 +7442,33 @@ licencia já as tem. O que elas não fazem é subir.
 
 ## A tabela
 
+**A coluna *Escola* vai em nome curto.** Cada um é uma escola de *As Escolas de Luta* (`33`), e é lá
+que está quem ensina, o que cobra e o que a expulsão custa:
+
+| Nome curto | A escola | Cidade |
+| --- | --- | --- |
+| **Pátio de Bronze** | o Pátio de Bronze, da Casa de Atena | Ônfalos |
+| **pancrácio** | o circuito do pancrácio | Ônfalos |
+| **Thing** | os que levam o machado ao Thing | Gapheim |
+| **casa do fiorde** | a casa que arma o fiorde | Gapheim |
+| **Registro** | o Registro dos Golpes, da Casa de Thoth | Ámenti |
+| **guarda da leoa** | a guarda da leoa, da Casa de Sekhmet | Ámenti |
+| **Contenção** | o Comando de Contenção | Tulán |
+| **exame** | o exame de arma, do nono distrito | Fengdu |
+| **Hanuman** | a Casa de Hanuman | Amaravati |
+| **Doze de Baixo** | os Doze de Baixo | Ilê Ifé |
+| **Fiadores** | fiança de contrato | — não é cidade |
+
 | Técnica | Dif. | Pré-definido | Teto | Escola | Livro |
 | --- | --- | --- | --- | --- | --- |
 | Apara do Judô | Especial | 2/3 do NH em Judô | não sobe | Registro · Contenção | p.51 |
 | Arremesso do Judô | Especial | NH em Judô | não sobe | Contenção | p.51 |
 | Ataques contra o Rosto | Difícil | Briga-5 | NH da perícia-mãe | Fiadores | p.48 |
 | Bloqueio Agressivo | Difícil | Apara de Caratê-4 | ⅔ do NH em Caratê | Registro · exame | p.43 |
-| Bloqueio Agressivo com o Pé | Difícil | Bloqueio com o Pé-4 | metade do NH da perícia-mãe | exame · Doze de Baixo | p.44 |
+| Bloqueio Agressivo com o Pé | Difícil | Bloqueio com o Pé-4 | metade do NH da perícia-mãe | exame · Doze de Baixo · guarda da leoa | p.44 |
 | Bloqueio com a Mão | Especial | 2/3 do NH em Caratê, Briga ou Pugilismo | só com Apara Ampliada | pancrácio · Registro · exame · Hanuman | p.49 |
-| Bloqueio com o Pé | Especial | Briga/2 · Caratê/2 | não sobe | Registro · exame · Doze de Baixo | p.53 |
-| Chave de Braço ou de Pulso | Média | Judô · Luta Livre · perícia com arma que sirva de alavanca (Bastão Curto, Espada Curta) | — | Pátio de Bronze · Thing · Contenção | p.44 |
+| Bloqueio com o Pé | Especial | Briga/2 · Caratê/2 | não sobe | Registro · exame · Doze de Baixo · guarda da leoa | p.53 |
+| Chave de Braço ou de Pulso | Média | Judô · Luta Livre · perícia com arma que sirva de alavanca (Bastão Curto, Espada Curta) | — | Pátio de Bronze · Thing · Contenção · casa do fiorde · guarda da leoa | p.44 |
 | Chave de Cabeça | Difícil | Judô-4 · Luta Livre-4 | NH da perícia-mãe | Thing · Contenção | p.50 |
 | Chave de Dedo | Difícil | Chave de Braço-3 | — | Contenção | p.48 |
 | Chute | Difícil | Caratê-2 · Briga-2 | NH da perícia-mãe | pancrácio · exame · Hanuman · Doze de Baixo | p.52 |
@@ -7405,33 +7485,33 @@ licencia já as tem. O que elas não fazem é subir.
 | Estocada | Média | Esgrima-2 | NH da perícia-mãe | Fiadores | p.52 |
 | Finta | Difícil | qualquer perícia de combate | NH da perícia-mãe+4 | **livre** | p.48 |
 | Flecha | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.48-49 |
-| Golpe com a Cabeça | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | Pátio de Bronze · Thing | p.50 |
+| Golpe com a Cabeça | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | Pátio de Bronze · Thing · casa do fiorde | p.50 |
 | Golpe com a Canela | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Doze de Baixo | p.54 |
 | Golpe com a Mão | Especial | NH em Caratê, Briga ou Pugilismo | não sobe | pancrácio · exame · Hanuman | p.49 |
-| Golpe com o Cotovelo | Média | Caratê-2 | NH da perícia-mãe | Pátio de Bronze · pancrácio · Hanuman | p.47 |
-| Golpe com o Joelho | Média | Caratê-1 · Briga-1 | NH da perícia-mãe+2 | pancrácio · Hanuman | p.52 |
+| Golpe com o Cotovelo | Média | Caratê-2 | NH da perícia-mãe | Pátio de Bronze · pancrácio · Hanuman · casa do fiorde | p.47 |
+| Golpe com o Joelho | Média | Caratê-1 · Briga-1 | NH da perícia-mãe+2 | pancrácio · Hanuman · casa do fiorde | p.52 |
 | Golpe nos Olhos | Difícil | Caratê-9 · Briga-9 | NH da perícia-mãe | Fiadores | p.47-48 |
 | Impacto de Parada | Difícil | Esgrima-4 | NH em Esgrima | Fiadores | p.55-56 |
 | Jab | Média | Pugilismo-3 · Caratê-3 | NH da perícia-mãe | pancrácio | p.51 |
 | Luta no Solo | Difícil | qualquer perícia de combate-4 | NH da perícia-mãe | **livre** | p.49 |
-| Mata-Leão | Difícil | Judô-2 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção | p.45-46 |
+| Mata-Leão | Difícil | Judô-2 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção · guarda da leoa | p.45-46 |
 | Mergulho no Chão | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.49 |
-| Pisão | Média | Briga-3 · Caratê-3 · Chute-1 | NH da perícia-mãe | Pátio de Bronze · Hanuman | p.56 |
+| Pisão | Média | Briga-3 · Caratê-3 · Chute-1 | NH da perícia-mãe | Pátio de Bronze · Hanuman · casa do fiorde | p.56 |
 | Ponto de Impacto | Difícil | qualquer perícia de combate-3 | NH da perícia-mãe | **livre** | p.50-51 |
-| Postura do Gato | Média | Caratê-3 | NH em Caratê+2 | exame · Hanuman | p.45 |
-| Queda | Média | Judô · Acrobacia | — | Pátio de Bronze · pancrácio · Thing · Registro · Contenção · Hanuman · Fiadores | p.45 |
+| Postura do Gato | Média | Caratê-3 | NH em Caratê+2 | exame · Hanuman · guarda da leoa | p.45 |
+| Queda | Média | Judô · Acrobacia | — | Pátio de Bronze · pancrácio · Thing · Registro · Contenção · Hanuman · Fiadores · casa do fiorde · guarda da leoa | p.45 |
 | Rasteira | Especial | NH em Judô | não sobe | Thing · Contenção · Doze de Baixo | p.56 |
 | Riposta | Difícil | perícia com arma-4 | NH da perícia-mãe | **livre** | p.54 |
-| Segurar Perna | Especial | NH em Briga, Judô ou Caratê | não sobe | Thing · Contenção | p.52 |
+| Segurar Perna | Especial | NH em Briga, Judô ou Caratê | não sobe | Thing · Contenção · guarda da leoa | p.52 |
 | Shuto (Mão em Espada) | Difícil | Caratê-3 | NH em Caratê | exame · Hanuman | p.54 |
 | Soco Circular Amplo | Média | Briga-3 · Pugilismo-3 | NH da perícia-mãe | pancrácio | p.54 |
-| Soco Coelho | Média | Briga-3 | NH em Briga | pancrácio | p.53 |
+| Soco Coelho | Média | Briga-3 | NH em Briga | pancrácio · casa do fiorde | p.53 |
 | Soco em Círculo | Difícil | Caratê-2 | NH em Caratê | pancrácio | p.55 |
 | Telefone | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | pancrácio | p.47 |
-| Torção de Pescoço | Difícil | ST-4 | ST+3 | Pátio de Bronze · Thing | p.53 |
+| Torção de Pescoço | Difícil | ST-4 | ST+3 | Pátio de Bronze · Thing · casa do fiorde · guarda da leoa | p.53 |
 | Varredura | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Contenção · Doze de Baixo | p.56 |
 | Treino da Mão Inábil | Difícil | qualquer perícia de combate−4 | NH da perícia-mãe | **livre** | p.53 |
-| Voadora | Difícil | Caratê-4 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção | p.47 |
+| Voadora | Difícil | Caratê-4 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção · casa do fiorde | p.47 |
 | Yawara | Média | Briga-5 · Caratê-3 | NH da perícia-mãe | Hanuman | p.57 |
 
 ## O que foi cortado dos pré-definidos, e por quê
@@ -9268,7 +9348,7 @@ nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 n
 ---
 
 titulo: Retificações de livro
-versao: 10
+versao: 11
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -10379,6 +10459,76 @@ trava de conferência desta pasta.
 **Tabela que cresce cria nome repetido.** A conferência de colisão já era item obrigatório da bateria
 de verificação desde 13/09; o que faltava era ela olhar **dentro de cada tabela**, e não só entre
 elas.
+
+# RETIFICAÇÃO — 14/09/2026, noite: as três lacunas declaradas viram duas escolas
+
+**A seção 7 de *As Escolas de Luta* listava três coisas como Pendência, não como lacuna** — a
+escola de machado de Gapheim fora da corte, a guarda da necrópole de Ámenti e a Casa de Sekhmet.
+**As três fecharam, e em duas escolas, não em três**, porque duas delas eram a mesma pergunta.
+**As nove escolas viraram onze, e nenhuma técnica nova entrou:** as duas licenciam o que a tabela já
+tinha, e o que cresceu foi a coluna *Escola*.
+
+## 1. Gapheim — a casa que arma o fiorde
+
+**O buraco era real e era estrutural.** A cidade que faz o melhor ferro das sete não ensinava
+ninguém a usá-lo: os que levam o machado ao Thing ensinam **o duelo**, que por construção *"não tem
+resposta para número"*.
+
+**A escola nova é o que restou de uma coisa que o cânone já dizia.** O verbete do Pátio de Bronze
+afirmava que *"Gapheim copiou a formação há quarenta anos e desistiu, porque não tinha como fazer
+onze assentamentos treinarem juntos"*. **A casa que arma o fiorde é o resíduo daquela cópia:** cada
+casa guardou a parte que dava para treinar sozinha — o aperto, a cabeçada, o joelho, o pisão no que
+caiu. E ensina contra **saqueador**, não contra o que sobe do poço: as onze povoações não têm
+muralha, e a defesa é a água e o fato de que todos se conhecem.
+
+**O preço é o feud**, e é o mais caro desta lista: entra-se por parentesco ou por juramento de
+hospitalidade, e **herda-se o que a casa deve e o que lhe devem**. Na ficha é **Inimigo**, no valor
+que esta campanha já fixou para grupo médio que aparece de vez em quando.
+
+**A fraqueza é dupla e se soma:** o estilo nunca lutou contra quem não é vizinho, e **a primeira
+Esgrima que encontra o mata**; e **não sabe operar ao lado de quem não é da casa**, que é
+literalmente o motivo de a formação ter sido abandonada.
+
+**E a política encosta numa facção viva.** A Casa de Hrafnkel está descapitalizada desde a noite em
+que saqueadores entraram pelo fiorde e levaram carga e quatro homens. **Casa que não consegue mais
+armar os seus perde o nome antes de perder o dinheiro** — e é o caso que Gapheim inteira está
+olhando de lado.
+
+## 2. Ámenti — a guarda da leoa, e as duas lacunas que eram uma
+
+**A pergunta não era "a guarda vira escola?" e "Sekhmet vira escola?".** Era **de quem é a única
+tropa permanente das sete cidades** — e respondê-la fecha as duas.
+
+**A guarda da necrópole é da Casa de Sekhmet.** A *Geografia* já dizia que a necrópole da margem
+oeste tem ruas, guardas e **administração própria**, e que ela não responde ao Tribunal. O que
+faltava era o nome do dono.
+
+**E isso resolve uma contradição que estava no cânone sem ninguém ter apontado:** a *Bíblia do
+Mundo* descreve Ámenti como cidade de ordem, memória e julgamento, que **manda escriba ao fundo do
+poço em vez de mandar soldado** — e ao mesmo tempo a cidade mantém a única tropa permanente do
+mundo conhecido. **As duas coisas passam a ser verdade ao mesmo tempo:** a cidade não tem tropa. Uma
+Casa tem.
+
+**O Tribunal tenta absorvê-la há um século e não consegue** — e não pode nem insistir muito, porque
+absorvê-la seria **admitir em juízo que a tropa existe**. E o que a leoa guarda não é Ámenti: são
+**os mortos das outras seis**, que Ámenti enterra quando a família não pode levar o corpo para casa.
+
+**A fraqueza é a que o posto produz:** segura porta e **não persegue**. O que corre, ganha. A
+necrópole é de corredor reto e portão contado, e a Garganta não é nem uma coisa nem outra.
+
+**Sekhmet não ganha verbete próprio, e isso é decisão.** Ela é **dona** de uma escola, e esse é o
+papel marcial dela; o que concede de resto continua sendo magia — o colégio de Controle do Corpo e
+a Dádiva Recuperação Alígera, onde sempre estiveram. **Casa que já tem escola não ganha uma
+segunda.**
+
+## 3. O que isto deixa dito sobre lacuna declarada
+
+**A seção 7 existia para que as três lacunas não parecessem esquecimento**, e foi ela que produziu
+as duas escolas — o documento apontou o próprio buraco e o buraco foi fechado no mesmo dia.
+**Continua havendo uma coisa sem escola, e ela fica escrita lá:** nenhuma das onze ensina técnica de
+projétil, porque o livro traz as de arco e arremesso no capítulo cinematográfico e elas caíram com
+a decisão 34. **Batedor, escriba e caçadora não perdem nada** — não há técnica de projétil realista
+neste acervo para eles perderem.
 
 
 ---

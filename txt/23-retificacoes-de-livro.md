@@ -1,5 +1,5 @@
 titulo: Retificações de livro
-versao: 10
+versao: 11
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -1110,3 +1110,73 @@ trava de conferência desta pasta.
 **Tabela que cresce cria nome repetido.** A conferência de colisão já era item obrigatório da bateria
 de verificação desde 13/09; o que faltava era ela olhar **dentro de cada tabela**, e não só entre
 elas.
+
+# RETIFICAÇÃO — 14/09/2026, noite: as três lacunas declaradas viram duas escolas
+
+**A seção 7 de *As Escolas de Luta* listava três coisas como Pendência, não como lacuna** — a
+escola de machado de Gapheim fora da corte, a guarda da necrópole de Ámenti e a Casa de Sekhmet.
+**As três fecharam, e em duas escolas, não em três**, porque duas delas eram a mesma pergunta.
+**As nove escolas viraram onze, e nenhuma técnica nova entrou:** as duas licenciam o que a tabela já
+tinha, e o que cresceu foi a coluna *Escola*.
+
+## 1. Gapheim — a casa que arma o fiorde
+
+**O buraco era real e era estrutural.** A cidade que faz o melhor ferro das sete não ensinava
+ninguém a usá-lo: os que levam o machado ao Thing ensinam **o duelo**, que por construção *"não tem
+resposta para número"*.
+
+**A escola nova é o que restou de uma coisa que o cânone já dizia.** O verbete do Pátio de Bronze
+afirmava que *"Gapheim copiou a formação há quarenta anos e desistiu, porque não tinha como fazer
+onze assentamentos treinarem juntos"*. **A casa que arma o fiorde é o resíduo daquela cópia:** cada
+casa guardou a parte que dava para treinar sozinha — o aperto, a cabeçada, o joelho, o pisão no que
+caiu. E ensina contra **saqueador**, não contra o que sobe do poço: as onze povoações não têm
+muralha, e a defesa é a água e o fato de que todos se conhecem.
+
+**O preço é o feud**, e é o mais caro desta lista: entra-se por parentesco ou por juramento de
+hospitalidade, e **herda-se o que a casa deve e o que lhe devem**. Na ficha é **Inimigo**, no valor
+que esta campanha já fixou para grupo médio que aparece de vez em quando.
+
+**A fraqueza é dupla e se soma:** o estilo nunca lutou contra quem não é vizinho, e **a primeira
+Esgrima que encontra o mata**; e **não sabe operar ao lado de quem não é da casa**, que é
+literalmente o motivo de a formação ter sido abandonada.
+
+**E a política encosta numa facção viva.** A Casa de Hrafnkel está descapitalizada desde a noite em
+que saqueadores entraram pelo fiorde e levaram carga e quatro homens. **Casa que não consegue mais
+armar os seus perde o nome antes de perder o dinheiro** — e é o caso que Gapheim inteira está
+olhando de lado.
+
+## 2. Ámenti — a guarda da leoa, e as duas lacunas que eram uma
+
+**A pergunta não era "a guarda vira escola?" e "Sekhmet vira escola?".** Era **de quem é a única
+tropa permanente das sete cidades** — e respondê-la fecha as duas.
+
+**A guarda da necrópole é da Casa de Sekhmet.** A *Geografia* já dizia que a necrópole da margem
+oeste tem ruas, guardas e **administração própria**, e que ela não responde ao Tribunal. O que
+faltava era o nome do dono.
+
+**E isso resolve uma contradição que estava no cânone sem ninguém ter apontado:** a *Bíblia do
+Mundo* descreve Ámenti como cidade de ordem, memória e julgamento, que **manda escriba ao fundo do
+poço em vez de mandar soldado** — e ao mesmo tempo a cidade mantém a única tropa permanente do
+mundo conhecido. **As duas coisas passam a ser verdade ao mesmo tempo:** a cidade não tem tropa. Uma
+Casa tem.
+
+**O Tribunal tenta absorvê-la há um século e não consegue** — e não pode nem insistir muito, porque
+absorvê-la seria **admitir em juízo que a tropa existe**. E o que a leoa guarda não é Ámenti: são
+**os mortos das outras seis**, que Ámenti enterra quando a família não pode levar o corpo para casa.
+
+**A fraqueza é a que o posto produz:** segura porta e **não persegue**. O que corre, ganha. A
+necrópole é de corredor reto e portão contado, e a Garganta não é nem uma coisa nem outra.
+
+**Sekhmet não ganha verbete próprio, e isso é decisão.** Ela é **dona** de uma escola, e esse é o
+papel marcial dela; o que concede de resto continua sendo magia — o colégio de Controle do Corpo e
+a Dádiva Recuperação Alígera, onde sempre estiveram. **Casa que já tem escola não ganha uma
+segunda.**
+
+## 3. O que isto deixa dito sobre lacuna declarada
+
+**A seção 7 existia para que as três lacunas não parecessem esquecimento**, e foi ela que produziu
+as duas escolas — o documento apontou o próprio buraco e o buraco foi fechado no mesmo dia.
+**Continua havendo uma coisa sem escola, e ela fica escrita lá:** nenhuma das onze ensina técnica de
+projétil, porque o livro traz as de arco e arremesso no capítulo cinematográfico e elas caíram com
+a decisão 34. **Batedor, escriba e caçadora não perdem nada** — não há técnica de projétil realista
+neste acervo para eles perderem.

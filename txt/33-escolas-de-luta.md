@@ -1,5 +1,5 @@
 titulo: As Escolas de Luta
-versao: 2
+versao: 3
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -49,7 +49,7 @@ no dia da expulsão.
 
 ---
 
-# 2 · As nove escolas
+# 2 · As onze escolas
 
 ## 2.1 · ÔNFALOS — o Pátio de Bronze
 
@@ -76,7 +76,7 @@ escola de covarde que se esconde atrás de escudo alheio. A Assembleia tenta, to
 transferir o pátio do santuário para a arrecadação da cidade — a mesma briga que trava pelas
 forjas, e pelo mesmo motivo: enquanto o pátio for da Casa, quem decide quem aprende é a Casa.
 **Gapheim copiou a formação há quarenta anos e desistiu**, porque não tinha como fazer onze
-assentamentos treinarem juntos.
+assentamentos treinarem juntos — e o que restou daquela cópia é a casa que arma o fiorde, §2.10.
 
 **Licencia:** Golpe com a Cabeça · Golpe com o Cotovelo · Pisão · Torção de Pescoço ·
 Chave de Braço ou de Pulso · Queda.
@@ -322,6 +322,65 @@ e ataque ao rosto. Uma companhia que garante entrega ensina o que ganha, não o 
 **Licencia:** Flecha · Impacto de Parada · Mergulho no Chão · Estocada · Corpo-a-Corpo ·
 Golpe nos Olhos · Ataques contra o Rosto · Deslizamento · Queda.
 
+## 2.10 · GAPHEIM — a casa que arma o fiorde
+
+*Cada casa mercante, e não há escola pública.*
+
+**Quem ensina, e onde.** Nas onze povoações dos três fiordes, dentro de casa. **É o que restou da
+formação que Gapheim copiou de Ônfalos há quarenta anos e abandonou**: não havia como fazer onze
+assentamentos treinarem juntos, então cada casa guardou a parte que dava para treinar sozinha — o
+aperto, a cabeçada, o joelho, o pisão no que caiu. Ensina-se contra saqueador, não contra o que
+sobe do poço: as povoações não têm muralha, e a defesa é a água e o fato de que todos se conhecem.
+
+**O que custa entrar.** Parentesco, ou juramento de hospitalidade aceito diante da casa. E o preço
+verdadeiro é o outro: **você herda o feud da casa**, o que ela deve e o que lhe devem. Na ficha é
+**Inimigo**, e é o mesmo valor que já vale nesta campanha para grupo médio que aparece de vez em
+quando.
+
+**A fraqueza estrutural.** **Nunca lutou contra quem não é vizinho.** O estilo passou de pai para
+filho dentro de uma casa, sem contraditório: aprendeu o que funcionou contra o saqueador do fiorde
+ao lado, e **a primeira Esgrima que encontra o mata**. E a segunda metade da fraqueza é pior: **não
+sabe operar ao lado de quem não é da casa.** Dois alunos de casas diferentes, na mesma esquadra,
+atrapalham-se — e é literalmente por isso que a formação foi abandonada.
+
+**A consequência política.** É exatamente isto que **paralisa expedição**, que é a fraqueza
+declarada de Gapheim. A Guilda já tentou registrar as famílias e foi recusada, e recusada em voz
+alta. E há uma consequência que a cidade não discute: **casa que não consegue mais armar os seus
+perde o nome antes de perder o dinheiro** — a Casa de Hrafnkel, descapitalizada desde que os
+saqueadores entraram pelo fiorde, é o caso que todo mundo em Gapheim está olhando de lado.
+
+**Licencia:** Golpe com a Cabeça · Golpe com o Cotovelo · Golpe com o Joelho · Soco Coelho ·
+Pisão · Torção de Pescoço · Voadora · Chave de Braço ou de Pulso · Queda.
+
+## 2.11 · ÁMENTI — a guarda da leoa
+
+*Casa de Sekhmet, na margem oeste.*
+
+**Quem ensina, e onde.** Entre os túmulos, no recinto da leoa, dentro da necrópole — que é maior
+que a cidade dos vivos e tem ruas, portões e administração própria. **A guarda da necrópole é a
+única força armada permanente de qualquer das sete cidades**, e a coisa que ninguém diz em voz alta
+é de quem ela é: **não responde ao Tribunal de Maat. Responde à Casa de Sekhmet.**
+
+**O que custa entrar.** Um turno de vigília por estação, cumprido na margem oeste. E, com ele, **o
+seu nome no rol de quem pode entrar na necrópole** — o que significa que a Casa sabe onde você
+esteve todas as noites em que esteve em Ámenti. Na ficha é **Dever à Casa de Sekhmet**.
+
+**A fraqueza estrutural.** É estilo de **segurar porta e de não ser movido**. Ancora, bloqueia,
+prende a perna do que passou e quebra o que insiste — e **não persegue**. O que corre, ganha. A
+necrópole é de corredor reto e portão contado; a Garganta não é nem uma coisa nem outra, e o aluno
+da leoa lá embaixo descobre que treinou para um lugar que só existe em casa.
+
+**A consequência política.** **É por isto que Ámenti pode dizer que não é marcial e estar
+tecnicamente certa:** a cidade não tem tropa — uma Casa tem. O Tribunal tenta absorver a guarda há
+um século e não consegue, e não pode nem insistir muito, porque absorvê-la seria admitir em juízo
+que a tropa existe. E o que a leoa guarda não é Ámenti: **são os mortos das outras seis**, que
+Ámenti enterra quando a família não pode levar o corpo para casa. Uma Casa que guarda os mortos de
+todo mundo e responde a ninguém é a coisa mais próxima de um exército neutro que este mundo tem, e
+as sete cidades preferem não somar essa conta em voz alta.
+
+**Licencia:** Bloqueio com o Pé · Bloqueio Agressivo com o Pé · Postura do Gato · Segurar Perna ·
+Chave de Braço ou de Pulso · Mata-Leão · Torção de Pescoço · Queda.
+
 ---
 
 # 3 · As oito técnicas que não têm dono
@@ -426,18 +485,21 @@ Tabela diz isso na linha.
 
 # 7 · O que ainda não tem escola
 
-**Dito na cara, para não parecer lacuna escondida.** Nenhuma das nove ensina técnica de **arco, de
+**Dito na cara, para não parecer lacuna escondida.** Nenhuma das onze ensina técnica de **arco, de
 besta, de funda ou de arremesso** — o livro traz as de projétil no capítulo cinematográfico, e elas
 caíram com ele. Batedor de Ilê Ifé, escriba de Ámenti e caçadora de Fengdu atiram pela perícia,
 como sempre atiraram, e **não perdem nada**: não há técnica de projétil realista neste acervo para
 eles perderem.
 
-**E há três coisas que são Pendência, não lacuna:**
+**E há uma coisa que continua sem escola, por decisão e não por esquecimento.**
 
-1. **A escola de machado de Gapheim fora da corte.** Os que levam o machado ao Thing ensinam o
-   duelo; quem quiser machado de guerra em formação não tem onde aprender, e o que existe disso na
-   cidade é a família, que não aceita de fora.
-2. **Ámenti tem uma segunda força armada** — a guarda da necrópole, na margem oeste — que não é
-   escola nesta lista e talvez devesse ser.
-3. **A Casa de Sekhmet existe** e é a Casa da guerra numa cidade que nega ser marcial. Não tem
-   verbete aqui, e a ausência é escolha, não esquecimento.
+**A Casa de Sekhmet não tem verbete próprio nesta lista, e não vai ter.** Ela é dona de uma escola —
+a guarda da leoa, §2.11 —, e isso é o papel marcial dela. O que ela concede de resto é magia:
+o colégio de **Controle do Corpo** e a Dádiva **Recuperação Alígera**, que estão onde sempre
+estiveram. **Casa que já tem escola não ganha uma segunda.**
+
+> **As três Pendências que esta seção listava fecharam em 14/09/2026.** Eram a escola de machado de
+> Gapheim fora da corte, a guarda da necrópole de Ámenti e a Casa de Sekhmet. As duas primeiras
+> viraram as escolas **§2.10** e **§2.11**; a terceira fechou junto com a segunda, porque **eram a
+> mesma pergunta**: a guarda da necrópole é de Sekhmet, e é por isso que ela não responde ao
+> Tribunal.

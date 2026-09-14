@@ -1,5 +1,5 @@
 titulo: Tabela de Perícias
-versao: 12
+versao: 13
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -7,6 +7,7 @@ fonte: cânone aberto de A Garganta
 
 > **Nota.**
 > **Lista fechada.** O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha.
+> **Versão 6, de 14/09/2026 — duas escolas novas.** As nove viraram **onze**: a **casa que arma o fiorde**, em Gapheim, e a **guarda da leoa**, na necrópole de Ámenti. Fecham as três Pendências que *As Escolas de Luta* listava como lacuna. **Nenhuma técnica nova entrou** — as duas licenciam o que já estava na tabela, e a coluna *Escola* é que cresceu.
 > **Versão 5, de 14/09/2026 — quatro duplicatas resolvidas, e a Capa entrou.** A conferência da leva das técnicas achou quatro nomes que eram a mesma coisa duas vezes, e o Árbitro decidiu os quatro: **Luta Romana virou Luta Livre**; **Boxe virou Pugilismo**; os **três nomes do treino de mão inábil viraram um, e é técnica**; e a **Capa entrou**, Física/Média, porque tem verbete em dois livros e esta tabela dizia que ela não existia. **A lista caiu de 191 para 189 perícias e subiu para 52 técnicas**, e nenhuma ficha de jogador muda — só o Jurado de Gapheim, nos *Modelos de Personagem*.
 > **Versão 4, de 14/09/2026 — as técnicas entraram, e têm dono.** A seção 15 é nova: **51 técnicas de *Artes Marciais***, com pré-definido, teto e escola. **Quarenta e quatro são presas a estilo** — a decisão 56 do Árbitro —, e as **nove escolas que as ensinam estão em *As Escolas de Luta* (`33`)**, com quem ensina, o que cobra e o que a expulsão custa. **Sete são livres**, porque o livro as pré-define contra *qualquer perícia de combate*, e prender fintar e desarmar a uma escola seria falso. Na mesma passada, a seção 14 passou de "as outras sete" para **as outras dezoito**, que é o número real, e a seção 10 corrigiu a contagem das mágicas.
 > **Versão 3, de 13/09/2026 — e as perícias da casa acabaram.** O Árbitro passou os dez livros de GURPS que a campanha possui a livros de mesa, e as quatro perícias inventadas em setembro se resolveram sozinhas: **Intimidação** tem verbete em quatro livros, e é Mental/Média, exatamente como estava; **Exorcismo** tem verbete no *Horror* (p.43), Mental/Difícil, e o livro diz na cara que *"não é uma mágica, é uma perícia religiosa"* — que era a decisão do Árbitro, palavra por palavra; **Selos e Sigilos** virou **Heráldica**, que já estava na lista, com a mesma dificuldade; e **Cartografia**, a única sem verbete em livro nenhum, saiu (v. §6).
@@ -577,7 +578,7 @@ no mesmo dia.
 
 **Entraram em 14/09/2026, e nenhuma é livre de graça.** A decisão 56 do Árbitro diz que **técnica é
 presa a estilo, e estilo tem dono**: vêm em pacotes que uma cidade, uma Casa ou uma companhia
-ensina, e quem ensina pode deixar de ensinar. **As nove escolas estão em *As Escolas de Luta*
+ensina, e quem ensina pode deixar de ensinar. **As onze escolas estão em *As Escolas de Luta*
 (`33`)** — com quem ensina, o que cobra, o que faz mal e o que a expulsão custa.
 
 **São 52 linhas: 44 presas a escola e 8 livres.** As oito livres são as que o livro pré-define
@@ -616,16 +617,33 @@ licencia já as tem. O que elas não fazem é subir.
 
 ## A tabela
 
+**A coluna *Escola* vai em nome curto.** Cada um é uma escola de *As Escolas de Luta* (`33`), e é lá
+que está quem ensina, o que cobra e o que a expulsão custa:
+
+| Nome curto | A escola | Cidade |
+| --- | --- | --- |
+| **Pátio de Bronze** | o Pátio de Bronze, da Casa de Atena | Ônfalos |
+| **pancrácio** | o circuito do pancrácio | Ônfalos |
+| **Thing** | os que levam o machado ao Thing | Gapheim |
+| **casa do fiorde** | a casa que arma o fiorde | Gapheim |
+| **Registro** | o Registro dos Golpes, da Casa de Thoth | Ámenti |
+| **guarda da leoa** | a guarda da leoa, da Casa de Sekhmet | Ámenti |
+| **Contenção** | o Comando de Contenção | Tulán |
+| **exame** | o exame de arma, do nono distrito | Fengdu |
+| **Hanuman** | a Casa de Hanuman | Amaravati |
+| **Doze de Baixo** | os Doze de Baixo | Ilê Ifé |
+| **Fiadores** | fiança de contrato | — não é cidade |
+
 | Técnica | Dif. | Pré-definido | Teto | Escola | Livro |
 | --- | --- | --- | --- | --- | --- |
 | Apara do Judô | Especial | 2/3 do NH em Judô | não sobe | Registro · Contenção | p.51 |
 | Arremesso do Judô | Especial | NH em Judô | não sobe | Contenção | p.51 |
 | Ataques contra o Rosto | Difícil | Briga-5 | NH da perícia-mãe | Fiadores | p.48 |
 | Bloqueio Agressivo | Difícil | Apara de Caratê-4 | ⅔ do NH em Caratê | Registro · exame | p.43 |
-| Bloqueio Agressivo com o Pé | Difícil | Bloqueio com o Pé-4 | metade do NH da perícia-mãe | exame · Doze de Baixo | p.44 |
+| Bloqueio Agressivo com o Pé | Difícil | Bloqueio com o Pé-4 | metade do NH da perícia-mãe | exame · Doze de Baixo · guarda da leoa | p.44 |
 | Bloqueio com a Mão | Especial | 2/3 do NH em Caratê, Briga ou Pugilismo | só com Apara Ampliada | pancrácio · Registro · exame · Hanuman | p.49 |
-| Bloqueio com o Pé | Especial | Briga/2 · Caratê/2 | não sobe | Registro · exame · Doze de Baixo | p.53 |
-| Chave de Braço ou de Pulso | Média | Judô · Luta Livre · perícia com arma que sirva de alavanca (Bastão Curto, Espada Curta) | — | Pátio de Bronze · Thing · Contenção | p.44 |
+| Bloqueio com o Pé | Especial | Briga/2 · Caratê/2 | não sobe | Registro · exame · Doze de Baixo · guarda da leoa | p.53 |
+| Chave de Braço ou de Pulso | Média | Judô · Luta Livre · perícia com arma que sirva de alavanca (Bastão Curto, Espada Curta) | — | Pátio de Bronze · Thing · Contenção · casa do fiorde · guarda da leoa | p.44 |
 | Chave de Cabeça | Difícil | Judô-4 · Luta Livre-4 | NH da perícia-mãe | Thing · Contenção | p.50 |
 | Chave de Dedo | Difícil | Chave de Braço-3 | — | Contenção | p.48 |
 | Chute | Difícil | Caratê-2 · Briga-2 | NH da perícia-mãe | pancrácio · exame · Hanuman · Doze de Baixo | p.52 |
@@ -642,33 +660,33 @@ licencia já as tem. O que elas não fazem é subir.
 | Estocada | Média | Esgrima-2 | NH da perícia-mãe | Fiadores | p.52 |
 | Finta | Difícil | qualquer perícia de combate | NH da perícia-mãe+4 | **livre** | p.48 |
 | Flecha | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.48-49 |
-| Golpe com a Cabeça | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | Pátio de Bronze · Thing | p.50 |
+| Golpe com a Cabeça | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | Pátio de Bronze · Thing · casa do fiorde | p.50 |
 | Golpe com a Canela | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Doze de Baixo | p.54 |
 | Golpe com a Mão | Especial | NH em Caratê, Briga ou Pugilismo | não sobe | pancrácio · exame · Hanuman | p.49 |
-| Golpe com o Cotovelo | Média | Caratê-2 | NH da perícia-mãe | Pátio de Bronze · pancrácio · Hanuman | p.47 |
-| Golpe com o Joelho | Média | Caratê-1 · Briga-1 | NH da perícia-mãe+2 | pancrácio · Hanuman | p.52 |
+| Golpe com o Cotovelo | Média | Caratê-2 | NH da perícia-mãe | Pátio de Bronze · pancrácio · Hanuman · casa do fiorde | p.47 |
+| Golpe com o Joelho | Média | Caratê-1 · Briga-1 | NH da perícia-mãe+2 | pancrácio · Hanuman · casa do fiorde | p.52 |
 | Golpe nos Olhos | Difícil | Caratê-9 · Briga-9 | NH da perícia-mãe | Fiadores | p.47-48 |
 | Impacto de Parada | Difícil | Esgrima-4 | NH em Esgrima | Fiadores | p.55-56 |
 | Jab | Média | Pugilismo-3 · Caratê-3 | NH da perícia-mãe | pancrácio | p.51 |
 | Luta no Solo | Difícil | qualquer perícia de combate-4 | NH da perícia-mãe | **livre** | p.49 |
-| Mata-Leão | Difícil | Judô-2 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção | p.45-46 |
+| Mata-Leão | Difícil | Judô-2 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção · guarda da leoa | p.45-46 |
 | Mergulho no Chão | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.49 |
-| Pisão | Média | Briga-3 · Caratê-3 · Chute-1 | NH da perícia-mãe | Pátio de Bronze · Hanuman | p.56 |
+| Pisão | Média | Briga-3 · Caratê-3 · Chute-1 | NH da perícia-mãe | Pátio de Bronze · Hanuman · casa do fiorde | p.56 |
 | Ponto de Impacto | Difícil | qualquer perícia de combate-3 | NH da perícia-mãe | **livre** | p.50-51 |
-| Postura do Gato | Média | Caratê-3 | NH em Caratê+2 | exame · Hanuman | p.45 |
-| Queda | Média | Judô · Acrobacia | — | Pátio de Bronze · pancrácio · Thing · Registro · Contenção · Hanuman · Fiadores | p.45 |
+| Postura do Gato | Média | Caratê-3 | NH em Caratê+2 | exame · Hanuman · guarda da leoa | p.45 |
+| Queda | Média | Judô · Acrobacia | — | Pátio de Bronze · pancrácio · Thing · Registro · Contenção · Hanuman · Fiadores · casa do fiorde · guarda da leoa | p.45 |
 | Rasteira | Especial | NH em Judô | não sobe | Thing · Contenção · Doze de Baixo | p.56 |
 | Riposta | Difícil | perícia com arma-4 | NH da perícia-mãe | **livre** | p.54 |
-| Segurar Perna | Especial | NH em Briga, Judô ou Caratê | não sobe | Thing · Contenção | p.52 |
+| Segurar Perna | Especial | NH em Briga, Judô ou Caratê | não sobe | Thing · Contenção · guarda da leoa | p.52 |
 | Shuto (Mão em Espada) | Difícil | Caratê-3 | NH em Caratê | exame · Hanuman | p.54 |
 | Soco Circular Amplo | Média | Briga-3 · Pugilismo-3 | NH da perícia-mãe | pancrácio | p.54 |
-| Soco Coelho | Média | Briga-3 | NH em Briga | pancrácio | p.53 |
+| Soco Coelho | Média | Briga-3 | NH em Briga | pancrácio · casa do fiorde | p.53 |
 | Soco em Círculo | Difícil | Caratê-2 | NH em Caratê | pancrácio | p.55 |
 | Telefone | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | pancrácio | p.47 |
-| Torção de Pescoço | Difícil | ST-4 | ST+3 | Pátio de Bronze · Thing | p.53 |
+| Torção de Pescoço | Difícil | ST-4 | ST+3 | Pátio de Bronze · Thing · casa do fiorde · guarda da leoa | p.53 |
 | Varredura | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Contenção · Doze de Baixo | p.56 |
 | Treino da Mão Inábil | Difícil | qualquer perícia de combate−4 | NH da perícia-mãe | **livre** | p.53 |
-| Voadora | Difícil | Caratê-4 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção | p.47 |
+| Voadora | Difícil | Caratê-4 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção · casa do fiorde | p.47 |
 | Yawara | Média | Briga-5 · Caratê-3 | NH da perícia-mãe | Hanuman | p.57 |
 
 ## O que foi cortado dos pré-definidos, e por quê

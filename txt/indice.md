@@ -81,7 +81,7 @@ Histórico e método: o que o cânone decidiu, quando, e por quê. Nenhuma sess�
 - **Improviso, Círculo e Lavra** — Como se cria magia nova: improviso, círculo cerimonial e a corrida pela Lavra. → https://rafspbh-a11y.github.io/a-garganta/txt/30-improviso-circulo-e-lavra.md
 - **Os Povos que Subiram** — As seis raças jogáveis, como se desbloqueia a opção não-humana, e a regra do psí. → https://rafspbh-a11y.github.io/a-garganta/txt/32-os-povos-que-subiram.md
 - **Modelos de Personagem** — Sete fichas prontas de 150 pontos, uma por cidade. → https://rafspbh-a11y.github.io/a-garganta/txt/08-modelos-de-personagem.md
-- **As Escolas de Luta** — As nove escolas que ensinam técnica de arte marcial: quem ensina, o que cobra, o que faz mal e o que a expulsão custa. → https://rafspbh-a11y.github.io/a-garganta/txt/33-escolas-de-luta.md
+- **As Escolas de Luta** — As onze escolas que ensinam técnica de arte marcial: quem ensina, o que cobra, o que faz mal e o que a expulsão custa. → https://rafspbh-a11y.github.io/a-garganta/txt/33-escolas-de-luta.md
 - **Ficha Pública e Notoriedade** — O que a Guilda registra sobre você, e o que os outros veem. → https://rafspbh-a11y.github.io/a-garganta/txt/18-ficha-publica.md
 - **Regra de Escrita da Ficha** — Os sete campos de uma linha de ficha, e o que confere com o quê. → https://rafspbh-a11y.github.io/a-garganta/txt/24-regra-da-ficha.md
 
