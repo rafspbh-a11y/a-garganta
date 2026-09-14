@@ -4320,7 +4320,7 @@ uma a uma. **Nenhuma proposta segue aberta.**
 ---
 
 titulo: Modelos de Personagem
-versao: 1
+versao: 2
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -4367,8 +4367,10 @@ Todo modelo inclui o **Dever da Marca**, obrigatório, e **Falar do Limiar**.
 **Vantagens (20):** Hipoalgia 10 (Dádiva de Tyr) · Reputação +2 em Gapheim 5 · Aliado (irmão de juramento) 5
 **Desvantagens (−40):** Dever à Casa de Tyr −10 · Juramento (nunca quebrar palavra dada) −15 · Inimigo (feud herdado, a família inteira) −10 · Teimosia −5
 **Peculiaridades (−5):** aperta a mão de todo mundo · não bebe antes de descer · fala o que pensa · guarda o machado do pai · nunca senta de costas para a porta
-**Perícias (75):** Machado 16 (16) · Luta Livre 15 (16) · Escudo 16 (8) · Direito (Thing) 13 (8) · Intimidação 13 (6) · Arremesso 13 (4) · Sobrevivência (Garganta) 12 (4) · Rastreamento 12 (4) · Observação 12 (4) · Primeiros Socorros 12 (2) · Falar do Limiar 11 (2) · Idioma grego 10 (1)
+**Perícias (75):** Machado 16 (16) · Luta Livre 16 (16) · Escudo 16 (8) · Direito (Thing) 13 (8) · Intimidação 13 (6) · Arremesso 13 (4) · Sobrevivência (Garganta) 12 (4) · Rastreamento 12 (4) · Observação 12 (4) · Primeiros Socorros 12 (2) · Falar do Limiar 11 (2) · Idioma grego 10 (1)
 **A conta:** 100 atributos + 20 vantagens + 75 perícias − 40 − 5 = **150**
+> **A Luta Livre subiu de 15 para 16, e não custou ponto nenhum.** Em 14/09/2026 o Árbitro fechou que *Luta Livre* e *Luta Romana* eram a mesma perícia com dois nomes, e que ela é **Física/Média**, como os dois livros imprimem — não Difícil, como uma decisão de 08/09 tinha fixado quando ela parecia não ter verbete. Na curva Média, os mesmos **16 pontos compram DX+3**, e a DX dele é 13. **A conta continua fechando em 150**, e o modelo ficou um degrau melhor exatamente onde um jurado morre.
+
 > Duas trocas. A **Hipoalgia** entrou no lugar do inexistente "Vigor", e é mais Tyr do que ele: dor não atordoa o jurado nem derruba a DX dele no turno seguinte. E a **Reputação +2 restrita a Gapheim vale 5, não 10** — o livro corta pela metade a fama que só um grupo grande reconhece. Os 20 pontos economizados foram todos para perícia de combate, que é onde um jurado morre.
 **Equipamento (1.000 g, Riqueza Média — e ele compra em Gapheim, sem ágio):** cota de malha com laudel, PD 3 / RD 4, 550 · escudo redondo (perfil de escudo médio) 60 · machado de guerra de uma mão 50 · capacete de couro 20. **Total 680 · saldo 320 g**
 > A malha cai para PD 1 / RD 2 contra perfurante (`03`, 9.4). No 9, onde a boca-de-poço bate perfurante, o jurado sente isso na primeira rodada.
@@ -4441,7 +4443,7 @@ E lembre do **passo 11** da criação: dois NPCs que te conhecem, uma dívida, u
 ---
 
 titulo: As Escolas de Luta
-versao: 1
+versao: 2
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -4782,6 +4784,7 @@ ninguém.
 | **Conservar a Arma** | perícia com arma · DX | Não perder a arma quando tentam tirá-la |
 | **Combate de Perto** | perícia com arma de perto−2 · outra−6 | Lutar dentro do hex |
 | **Luta no Solo** | qualquer perícia de combate−4 | Lutar caído |
+| **Treino da Mão Inábil** | qualquer perícia de combate−4 | Comprar de volta o redutor da mão ruim, arma por arma |
 
 **Por que são livres, e a razão importa.** Fintar, desarmar e mirar são manobra de quem sabe usar a
 arma, não doutrina de escola. Prendê-las a estilo faria com que um soldado de trinta anos de ofício
@@ -4789,13 +4792,12 @@ não soubesse fintar por não ter frequentado ninguém, o que é falso no livro 
 escolas continuam valendo o preço que cobram**, porque as quarenta e quatro que sobram são delas, e
 são as que decidem uma luta.
 
-> **Uma oitava técnica ficou de fora desta tabela de propósito.** O *Artes Marciais* traz **Treino
-> no Manejo de Armas com a Mão Inábil** (p.53), que é a mesma coisa que a Tabela de Perícias já
-> lista **duas vezes**, como perícia: *Treino do Manejo de Armas com a Mão Inábil* (*Fantasy* p.63)
-> e *Uso da Arma com a Mão Inábil* (*Império Romano* p.37). **Acrescentar um terceiro nome para a
-> mesma coisa numa tabela fechada seria errado**, e reduzir três a um é decisão do Árbitro, não
-> minha. Fica Pendência aberta. Até lá, compra-se pela linha que já existe.
-
+> **A oitava entrou em 14/09/2026, e com nome novo.** Ela existia três vezes: como técnica no
+> *Artes Marciais* (p.53) e como perícia em duas linhas da Tabela de Perícias — *Treino do Manejo
+> de Armas com a Mão Inábil* (*Fantasy* p.63) e *Uso da Arma com a Mão Inábil* (*Império Romano*
+> p.37). **Decisão do Árbitro:** os três verbetes descrevem a mesma coisa, e só o do *Artes
+> Marciais* traz pré-definido e teto. As duas linhas de perícia saíram e ficou **Treino da Mão
+> Inábil**, técnica, Difícil, livre.
 ---
 
 # 4 · Entrar, ser expulso, e trocar de escola
@@ -6760,7 +6762,7 @@ entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O `04`
 ---
 
 titulo: Tabela de Perícias
-versao: 11
+versao: 12
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -6768,6 +6770,7 @@ fonte: cânone aberto de A Garganta
 
 > **Nota.**
 > **Lista fechada.** O que não está aqui não existe na Garganta. Nome que faltar vira Pendência antes de virar linha de ficha.
+> **Versão 5, de 14/09/2026 — quatro duplicatas resolvidas, e a Capa entrou.** A conferência da leva das técnicas achou quatro nomes que eram a mesma coisa duas vezes, e o Árbitro decidiu os quatro: **Luta Romana virou Luta Livre**; **Boxe virou Pugilismo**; os **três nomes do treino de mão inábil viraram um, e é técnica**; e a **Capa entrou**, Física/Média, porque tem verbete em dois livros e esta tabela dizia que ela não existia. **A lista caiu de 191 para 189 perícias e subiu para 52 técnicas**, e nenhuma ficha de jogador muda — só o Jurado de Gapheim, nos *Modelos de Personagem*.
 > **Versão 4, de 14/09/2026 — as técnicas entraram, e têm dono.** A seção 15 é nova: **51 técnicas de *Artes Marciais***, com pré-definido, teto e escola. **Quarenta e quatro são presas a estilo** — a decisão 56 do Árbitro —, e as **nove escolas que as ensinam estão em *As Escolas de Luta* (`33`)**, com quem ensina, o que cobra e o que a expulsão custa. **Sete são livres**, porque o livro as pré-define contra *qualquer perícia de combate*, e prender fintar e desarmar a uma escola seria falso. Na mesma passada, a seção 14 passou de "as outras sete" para **as outras dezoito**, que é o número real, e a seção 10 corrigiu a contagem das mágicas.
 > **Versão 3, de 13/09/2026 — e as perícias da casa acabaram.** O Árbitro passou os dez livros de GURPS que a campanha possui a livros de mesa, e as quatro perícias inventadas em setembro se resolveram sozinhas: **Intimidação** tem verbete em quatro livros, e é Mental/Média, exatamente como estava; **Exorcismo** tem verbete no *Horror* (p.43), Mental/Difícil, e o livro diz na cara que *"não é uma mágica, é uma perícia religiosa"* — que era a decisão do Árbitro, palavra por palavra; **Selos e Sigilos** virou **Heráldica**, que já estava na lista, com a mesma dificuldade; e **Cartografia**, a única sem verbete em livro nenhum, saiu (v. §6).
 > **Versão 2, de 10/09/2026.** Vinte e nove perícias de livro que a versão 1 tinha deixado de fora entraram; **Caligrafia** passou de mental para **Física/Média**, como está no livro; e **Boemia** saiu da nota das mentais, porque é física.
@@ -6844,10 +6847,10 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Boleadeiras | Média | Básico |
 | Bombeiro | Média (Mental) | Império Romano p.30 |
 | Bordado | Média | Fantasy p.114 |
-| Boxe | Média | Artes Marciais p.32 |
 | Briga | Fácil | Básico |
 | Broquel | Fácil | Básico |
 | Caligrafia | Média | Básico |
+| Capa | Média | Fantasy p.61 · Artes Marciais p.32 |
 | Caminhada | Média | Império Romano p.37 |
 | Canto | Fácil (sai de **HT**) | Básico |
 | Caratê | Difícil | Básico |
@@ -6883,7 +6886,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Lança | Média | Básico |
 | Lança de Justa | Média | Básico |
 | Linguagem Corporal | Difícil (Mental) | Artes Marciais p.32 |
-| Luta Romana | Média | Império Romano p.37 |
+| Luta Livre | Média | Artes Marciais p.35 · Império Romano p.37 |
 | Machado de Duas Mãos/Maça | Média | Básico |
 | Machado/Maça | Média | Básico |
 | Mangual | Difícil | Básico |
@@ -6893,7 +6896,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Natação | Fácil | Básico |
 | Percepção do Corpo | Difícil | Magia |
 | Prestidigitação | Difícil | Básico |
-| Pugilismo | Média | Império Romano p.37 |
+| Pugilismo | Média | Artes Marciais p.32 · Império Romano p.37 |
 | Punga | Difícil | Básico |
 | Rede | Difícil | Básico |
 | Redeiro | Fácil | Fantasy p.114 |
@@ -6907,8 +6910,6 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Tecelagem | Fácil | Fantasy p.114 |
 | Teoria da Conspiração | Muito Difícil (Mental) | Illuminati p.31 |
 | Tinturaria | Média (Mental) | Fantasy p.113 |
-| Treino do Manejo de Armas com a Mão Inábil | Média | Fantasy p.63 |
-| Uso da Arma com a Mão Inábil | Média | Império Romano p.37 |
 | Vidraria | Difícil | Fantasy p.114 |
 | Vôo | Média | Grimório p.6 |
 | Zarabatana | Difícil | Básico |
@@ -7076,7 +7077,6 @@ Todos estiveram em uso no cânone e foram corrigidos em 10/09/2026.
 | Avaliação | **Comércio** |
 | Bajulação | **Lábia** |
 | Burocracia | **Administração** |
-| Capa | **não existe** — a Esgrima já dá duas aparadas por rodada |
 | Conhecimento de Área | **Conhecimento do Terreno** |
 | Direito Comparado · Direito (Thing) | **Jurisprudência** |
 | Biologia | **não existe como perícia geral** — o *Módulo Básico* p.60 diz que o campo é coberto por perícias independentes (Naturalista, Medicina, Veterinária). Quem quiser "saber de bicho" compra a perícia do bicho |
@@ -7084,7 +7084,9 @@ Todos estiveram em uso no cânone e foram corrigidos em 10/09/2026.
 | Etiqueta | **Trato Social** |
 | Herança Antiga | **Arqueologia** |
 | Lança-Dardo (arremessador) | **Arremessador de Lança** |
-| Luta Livre | **Judô** |
+| Luta Romana | **Luta Livre** — mesma perícia, mesmo Física/Média; a linha única ficou com o nome do *Artes Marciais* (14/09/2026) |
+| Boxe | **Pugilismo** — mesma perícia; o índice do próprio *Império Romano* registra o verbete de Pugilismo como "Boxe" (14/09/2026) |
+| Treino do Manejo de Armas com a Mão Inábil · Uso da Arma com a Mão Inábil | **Treino da Mão Inábil**, e virou **técnica** (§15), Difícil, livre — só o verbete do *Artes Marciais* traz pré-definido e teto (14/09/2026) |
 | Naturalismo | **Naturalista** |
 | Observação | **não existe** — percepção é teste de IQ ou de Visão |
 | Ocultação | **Ocultamento** |
@@ -7188,10 +7190,12 @@ a catapulta e não deixa ninguém **operá-la**.
 
 # 10. Alcance desta tabela, dito na cara
 
-- **As perícias** são **191**, e vêm dos **dez** livros que a campanha possui, verbete a verbete,
+- **As perícias** são **189**, e vêm dos **dez** livros que a campanha possui, verbete a verbete,
   **completas** para o nível tecnológico das sete cidades. *(Esta linha dizia "os três livros", que
-  era verdade até 13/09/2026, quando o Árbitro passou os dez livros da estante a livros de mesa.)*
-- **As técnicas** (§15) são **51**, todas do *GURPS Artes Marciais*, e **quarenta e quatro são
+  era verdade até 13/09/2026, quando o Árbitro passou os dez livros da estante a livros de mesa.
+  Em 14/09 caiu de 191 para 189: três pares de linhas que eram a mesma perícia com nomes diferentes
+  viraram uma linha cada, e a Capa entrou.)*
+- **As técnicas** (§15) são **52**, todas do *GURPS Artes Marciais*, e **quarenta e quatro são
   presas a estilo** — as escolas estão em *As Escolas de Luta* (`33`). Entraram em 14/09/2026.
 - **As mágicas** (`27`) são **768**, em 778 linhas — contadas em 14/09/2026. *(Esta linha dizia
   **429**, que era o número antes da leva da noite de 13/09, quando 274 mágicas do Grimório
@@ -7339,9 +7343,17 @@ presa a estilo, e estilo tem dono**: vêm em pacotes que uma cidade, uma Casa ou
 ensina, e quem ensina pode deixar de ensinar. **As nove escolas estão em *As Escolas de Luta*
 (`33`)** — com quem ensina, o que cobra, o que faz mal e o que a expulsão custa.
 
-**São 51 linhas: 44 presas a escola e 7 livres.** As sete livres são as que o livro pré-define
+**São 52 linhas: 44 presas a escola e 8 livres.** As oito livres são as que o livro pré-define
 contra *"qualquer perícia de combate"* — quem sabe usar a arma as compra sem escola, sem mestre e
 sem dever nada (decisão do Árbitro, 14/09/2026).
+
+> **A oitava entrou na tarde do mesmo dia, e veio de fora do capítulo de técnicas.** *Treino do
+> Manejo de Armas com a Mão Inábil* (*Fantasy* p.63) e *Uso da Arma com a Mão Inábil* (*Império
+> Romano* p.37) **eram duas linhas da seção 2 desta tabela**, e o *Artes Marciais* p.53 traz a mesma
+> coisa como técnica. **Decisão do Árbitro de 14/09/2026:** os três verbetes descrevem a mesma coisa
+> — comprar de volta o redutor de −4 da mão ruim, arma por arma —, e **só o do *Artes Marciais* traz
+> pré-definido e teto**, que é o que uma linha de tabela precisa ter. As duas linhas de perícia
+> saíram e ficou **Treino da Mão Inábil**, aqui.
 
 ## Como se compra uma técnica
 
@@ -7359,7 +7371,7 @@ licencia já as tem. O que elas não fazem é subir.
 
 **Três travas, e valem para todas:**
 
-1. **Sem escola, não se compra** — nem meio ponto, nem pelo pré-definido. As sete livres são a
+1. **Sem escola, não se compra** — nem meio ponto, nem pelo pré-definido. As oito livres são a
    exceção, e estão marcadas.
 2. **Nenhuma técnica ultrapassa o teto**, e o teto quase sempre é o NH da perícia-mãe. Subir a
    técnica exige subir a perícia primeiro.
@@ -7374,10 +7386,10 @@ licencia já as tem. O que elas não fazem é subir.
 | Ataques contra o Rosto | Difícil | Briga-5 | NH da perícia-mãe | Fiadores | p.48 |
 | Bloqueio Agressivo | Difícil | Apara de Caratê-4 | ⅔ do NH em Caratê | Registro · exame | p.43 |
 | Bloqueio Agressivo com o Pé | Difícil | Bloqueio com o Pé-4 | metade do NH da perícia-mãe | exame · Doze de Baixo | p.44 |
-| Bloqueio com a Mão | Especial | 2/3 do NH em Caratê, Briga ou Boxe | só com Apara Ampliada | pancrácio · Registro · exame · Hanuman | p.49 |
+| Bloqueio com a Mão | Especial | 2/3 do NH em Caratê, Briga ou Pugilismo | só com Apara Ampliada | pancrácio · Registro · exame · Hanuman | p.49 |
 | Bloqueio com o Pé | Especial | Briga/2 · Caratê/2 | não sobe | Registro · exame · Doze de Baixo | p.53 |
-| Chave de Braço ou de Pulso | Média | Judô · perícia com arma que sirva de alavanca (Bastão Curto, Espada Curta) | — | Pátio de Bronze · Thing · Contenção | p.44 |
-| Chave de Cabeça | Difícil | Judô-4 | NH da perícia-mãe | Thing · Contenção | p.50 |
+| Chave de Braço ou de Pulso | Média | Judô · Luta Livre · perícia com arma que sirva de alavanca (Bastão Curto, Espada Curta) | — | Pátio de Bronze · Thing · Contenção | p.44 |
+| Chave de Cabeça | Difícil | Judô-4 · Luta Livre-4 | NH da perícia-mãe | Thing · Contenção | p.50 |
 | Chave de Dedo | Difícil | Chave de Braço-3 | — | Contenção | p.48 |
 | Chute | Difícil | Caratê-2 · Briga-2 | NH da perícia-mãe | pancrácio · exame · Hanuman · Doze de Baixo | p.52 |
 | Chute Circular (Giratória) | Difícil | Caratê-3 · Chute-1 | NH da perícia-mãe | Doze de Baixo | p.51 |
@@ -7395,14 +7407,14 @@ licencia já as tem. O que elas não fazem é subir.
 | Flecha | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.48-49 |
 | Golpe com a Cabeça | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | Pátio de Bronze · Thing | p.50 |
 | Golpe com a Canela | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Doze de Baixo | p.54 |
-| Golpe com a Mão | Especial | NH em Caratê, Briga ou Boxe | não sobe | pancrácio · exame · Hanuman | p.49 |
+| Golpe com a Mão | Especial | NH em Caratê, Briga ou Pugilismo | não sobe | pancrácio · exame · Hanuman | p.49 |
 | Golpe com o Cotovelo | Média | Caratê-2 | NH da perícia-mãe | Pátio de Bronze · pancrácio · Hanuman | p.47 |
 | Golpe com o Joelho | Média | Caratê-1 · Briga-1 | NH da perícia-mãe+2 | pancrácio · Hanuman | p.52 |
 | Golpe nos Olhos | Difícil | Caratê-9 · Briga-9 | NH da perícia-mãe | Fiadores | p.47-48 |
 | Impacto de Parada | Difícil | Esgrima-4 | NH em Esgrima | Fiadores | p.55-56 |
-| Jab | Média | Boxe-3 · Caratê-3 | NH da perícia-mãe | pancrácio | p.51 |
+| Jab | Média | Pugilismo-3 · Caratê-3 | NH da perícia-mãe | pancrácio | p.51 |
 | Luta no Solo | Difícil | qualquer perícia de combate-4 | NH da perícia-mãe | **livre** | p.49 |
-| Mata-Leão | Difícil | Judô-2 | NH da perícia-mãe | Thing · Contenção | p.45-46 |
+| Mata-Leão | Difícil | Judô-2 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção | p.45-46 |
 | Mergulho no Chão | Média | Esgrima-3 | NH da perícia-mãe | Fiadores | p.49 |
 | Pisão | Média | Briga-3 · Caratê-3 · Chute-1 | NH da perícia-mãe | Pátio de Bronze · Hanuman | p.56 |
 | Ponto de Impacto | Difícil | qualquer perícia de combate-3 | NH da perícia-mãe | **livre** | p.50-51 |
@@ -7412,13 +7424,14 @@ licencia já as tem. O que elas não fazem é subir.
 | Riposta | Difícil | perícia com arma-4 | NH da perícia-mãe | **livre** | p.54 |
 | Segurar Perna | Especial | NH em Briga, Judô ou Caratê | não sobe | Thing · Contenção | p.52 |
 | Shuto (Mão em Espada) | Difícil | Caratê-3 | NH em Caratê | exame · Hanuman | p.54 |
-| Soco Circular Amplo | Média | Briga-3 · Boxe-3 | NH da perícia-mãe | pancrácio | p.54 |
+| Soco Circular Amplo | Média | Briga-3 · Pugilismo-3 | NH da perícia-mãe | pancrácio | p.54 |
 | Soco Coelho | Média | Briga-3 | NH em Briga | pancrácio | p.53 |
 | Soco em Círculo | Difícil | Caratê-2 | NH em Caratê | pancrácio | p.55 |
 | Telefone | Média | Caratê-6 · Briga-6 | NH da perícia-mãe | pancrácio | p.47 |
 | Torção de Pescoço | Difícil | ST-4 | ST+3 | Pátio de Bronze · Thing | p.53 |
 | Varredura | Difícil | Caratê-3 · Chute-1 | NH em Caratê | Contenção · Doze de Baixo | p.56 |
-| Voadora | Difícil | Caratê-4 | NH da perícia-mãe | Thing · Contenção | p.47 |
+| Treino da Mão Inábil | Difícil | qualquer perícia de combate−4 | NH da perícia-mãe | **livre** | p.53 |
+| Voadora | Difícil | Caratê-4 · Luta Livre-3 | NH da perícia-mãe | Thing · Contenção | p.47 |
 | Yawara | Média | Briga-5 · Caratê-3 | NH da perícia-mãe | Hanuman | p.57 |
 
 ## O que foi cortado dos pré-definidos, e por quê
@@ -7433,14 +7446,13 @@ tabela tem**:
 | **Estocada** | Katana−2 | **só Esgrima−2** |
 | **Corpo-a-Corpo** | Jitte/Sai | **só Esgrima** |
 | **Chave de Braço ou de Pulso** | alavanca com Tonfa | **Bastão Curto ou Espada Curta** |
-| **Chave de Cabeça · Mata-Leão · Voadora · Chave de Braço** | Luta Livre | **só Judô e Caratê** — v. nota |
 
-> **A nota da Luta Livre.** O livro dá **Luta Livre** como pré-definido alternativo dessas quatro, e
-> a seção 6 desta tabela manda trocar Luta Livre por Judô. **Mas a Luta Livre tem verbete** —
-> *Artes Marciais* p.35, Física/Média —, e o verbete dela é quase palavra por palavra o da **Luta
-> Romana**, que já está na seção 2 desta tabela. As duas são a mesma perícia com dois nomes.
-> **Resolver isso é decisão do Árbitro e está pendente**; até lá, estas quatro técnicas se compram
-> por Judô ou Caratê, que são as perícias que a tabela tem, e ninguém fica sem caminho.
+> **A Luta Livre voltou, e as quatro técnicas que dependiam dela também.** Chave de Braço, Chave de
+> Cabeça, Mata-Leão e Voadora tinham perdido esse pré-definido enquanto a perícia não existia na
+> tabela. **Decisão do Árbitro de 14/09/2026:** *Luta Livre* e *Luta Romana* eram a mesma perícia
+> com dois nomes — os dois verbetes são quase palavra por palavra iguais e os dois dizem
+> Física/Média — e **a linha única ficou com o nome do *Artes Marciais***. Os pré-definidos foram
+> restaurados.
 
 ## O que não entrou
 
@@ -7452,11 +7464,6 @@ tabela tem**:
 - **Quatro técnicas de criatura, não de gente:** Bloqueio Agressivo com a Cauda e Laçar Pescoço
   (exigem cauda), Salto em Arco com o Bastão (manobra de um estilo que o livro dá a um bicho) e
   **Chute em Varredura**, que é combate aéreo e exige a perícia Vôo.
-- **Treino no Manejo de Armas com a Mão Inábil** (p.53). **É a mesma coisa que esta tabela já lista
-  duas vezes**, na seção 2: *Treino do Manejo de Armas com a Mão Inábil* (*Fantasy* p.63) e *Uso da
-  Arma com a Mão Inábil* (*Império Romano* p.37). Um terceiro nome para a mesma coisa numa tabela
-  fechada seria erro; reduzir os três a um é decisão do Árbitro. **Pendência aberta** — até lá,
-  compra-se pela linha que já existe.
 
 
 ---
@@ -9261,7 +9268,7 @@ nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 n
 ---
 
 titulo: Retificações de livro
-versao: 9
+versao: 10
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -10287,6 +10294,91 @@ homologada como qualquer outra.
 **O que ela abre na mesa, dito na cara:** os esgrimistas passam a ter de onde vir, quem luta de mão
 vazia ganha uma escola que o aceita no primeiro dia, e **cada um deles passa a dever alguma coisa a
 alguém com nome** — que é o que a decisão 56 quis.
+
+# RETIFICAÇÃO — 14/09/2026, tarde: as quatro duplicatas que a leva das técnicas achou
+
+**A leva da manhã registrou quatro achados e não aplicou nenhum**, porque aplicar era decisão do
+Árbitro. As quatro foram levadas a ele, uma pergunta por pendência, e as quatro foram decididas no
+mesmo dia. **A Tabela de Perícias caiu de 191 para 189 perícias e subiu de 51 para 52 técnicas.**
+
+## 1. Luta Romana e Luta Livre eram a mesma perícia — ficou Luta Livre
+
+Os dois verbetes são quase palavra por palavra o mesmo, incluindo *"menos efetiva que o Judô, dá
+vantagem em Combate de Perto"*, e **os dois livros a imprimem Física/Média** — *Artes Marciais* p.35
+e *Império Romano* p.37-38. **Uma linha só, com o nome do *Artes Marciais*.**
+
+**Isto supera a decisão de 08/09/2026**, que a fixou como perícia de campanha, Física/Difícil.
+Aquela decisão foi tomada quando a perícia parecia não ter verbete em livro nenhum — e a decisão 35,
+de 13/09, já tinha declarado que nenhuma perícia da casa sobrara.
+
+**A consequência é uma só, e está num modelo publicado.** O **Jurado de Gapheim** (*Modelos de
+Personagem*, modelo 3) tem **Luta Livre por 16 pontos** e DX 13. Na curva Média, 16 pontos compram
+**DX+3**: o NH dele passa de **15 para 16**, sem gastar ponto nenhum, e **a conta continua fechando
+em 150**. O modelo ficou um degrau melhor exatamente onde a nota dele diz que um jurado morre.
+
+**Nenhuma ficha de jogador muda.** A Nix trocou por Briga e o Runirsson por Judô, os dois por
+escolha registrada em Pendência, e as duas escolhas ficam de pé — o Judô dele não é a mesma perícia,
+e é o Judô que reduz o estrago de aparar lâmina com a mão vazia.
+
+**E quatro técnicas recuperaram um pré-definido** que tinham perdido enquanto a perícia não existia:
+Chave de Braço ou de Pulso, Chave de Cabeça, Mata-Leão e Voadora.
+
+## 2. A Capa entra, e a tabela para de dizer que ela não existe
+
+**Verbete em dois livros** — *Fantasy* p.61 e *Artes Marciais* p.32 —, **Física/Média** nos dois,
+com os mesmos pré-definidos: **DX−5 · Broquel−4 · Escudo−4**. A seção 6 dizia *"Capa — não existe"*,
+e isso era falso.
+
+**O artigo 4 foi conferido antes, e é por isso que esta não foi aplicada pela Árbitra.** A correção
+beneficia o personagem do Árbitro, que cortou a Capa da ficha por esse motivo e carrega uma capa
+pesada de esgrima no equipamento. **A pergunta foi levada a ele**, e ele decidiu que a perícia entra.
+O artigo fica satisfeito porque **ele paga os 4 pontos como qualquer um** — e, com 1 ponto não gasto,
+não a compra hoje.
+
+**O motivo de fundo, e vale para a próxima vez:** esconder um verbete de dois livros porque o
+personagem do Árbitro se beneficiaria é injusto com os outros seis jogadores, que perdiam a mesma
+coisa sem que ninguém lhes explicasse por quê.
+
+**A mesa ganha o verbete inteiro:** bloqueio com metade do NH, PD 2, arremessar a capa como arma,
+envolver o braço do adversário, desequilibrar em disputa de ST com +2 — e a capa pesada se inutiliza
+com 5 pontos de dano cortante.
+
+## 3. Boxe e Pugilismo eram a mesma perícia — ficou Pugilismo
+
+Ambas Física/Média, ambas na tabela, e **o índice do próprio *Império Romano*, p.128, registra o
+verbete de Pugilismo como "Boxe"**. Uma linha só.
+
+**Ficou o nome que o livro credita aos gregos**, e não o que o outro livro imprime em inglês: o
+*Império Romano* descreve a perícia como *"forma científica de luta desarmada desenvolvida pelos
+gregos"*, e é em Ônfalos que essa luta vive nesta campanha, no circuito do pancrácio. **"Boxe" é
+palavra do século XVIII num mundo de idade do ferro.**
+
+**Quatro técnicas trocaram o pré-definido** — Jab, Soco Circular Amplo, Bloqueio com a Mão e Golpe
+com a Mão. **Nenhuma ficha muda:** ninguém tem nenhuma das duas, em ficha ou em modelo.
+
+## 4. Os três nomes do treino de mão inábil viraram um, e é técnica
+
+*Treino do Manejo de Armas com a Mão Inábil* (*Fantasy* p.63) e *Uso da Arma com a Mão Inábil*
+(*Império Romano* p.37) **saíram da lista de perícias**. Entrou **Treino da Mão Inábil**, técnica,
+**Difícil**, pré-definido *qualquer perícia de combate−4*, teto no NH da perícia-mãe, e **livre** —
+sem escola, como as outras sete genéricas. **As técnicas livres passaram de sete para oito.**
+
+**Os três verbetes descrevem exatamente a mesma coisa** — comprar de volta o redutor de −4 da mão
+ruim, arma por arma —, e **só o do *Artes Marciais* traz pré-definido e teto**, que é o que uma
+linha de tabela precisa ter. O do *Fantasy* é ainda o menos confiável dos três: o Compêndio registra
+o campo de dificuldade dele como ilegível, e **a Média que estava na tabela tinha sido deduzida, não
+lida**.
+
+## 5. O que isso deixa dito sobre o método
+
+**As quatro duplicatas entraram no mesmo dia, em 13/09**, quando a decisão 53 trouxe as entradas dos
+sete livros novos — e nenhuma foi vista, porque a conferência de então comparou **nome exato**. As
+quatro só apareceram quando a leva das técnicas comparou **por forma normalizada**, que é a terceira
+trava de conferência desta pasta.
+
+**Tabela que cresce cria nome repetido.** A conferência de colisão já era item obrigatório da bateria
+de verificação desde 13/09; o que faltava era ela olhar **dentro de cada tabela**, e não só entre
+elas.
 
 
 ---

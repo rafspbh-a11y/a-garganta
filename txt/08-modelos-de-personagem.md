@@ -1,5 +1,5 @@
 titulo: Modelos de Personagem
-versao: 1
+versao: 2
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -46,8 +46,10 @@ Todo modelo inclui o **Dever da Marca**, obrigatório, e **Falar do Limiar**.
 **Vantagens (20):** Hipoalgia 10 (Dádiva de Tyr) · Reputação +2 em Gapheim 5 · Aliado (irmão de juramento) 5
 **Desvantagens (−40):** Dever à Casa de Tyr −10 · Juramento (nunca quebrar palavra dada) −15 · Inimigo (feud herdado, a família inteira) −10 · Teimosia −5
 **Peculiaridades (−5):** aperta a mão de todo mundo · não bebe antes de descer · fala o que pensa · guarda o machado do pai · nunca senta de costas para a porta
-**Perícias (75):** Machado 16 (16) · Luta Livre 15 (16) · Escudo 16 (8) · Direito (Thing) 13 (8) · Intimidação 13 (6) · Arremesso 13 (4) · Sobrevivência (Garganta) 12 (4) · Rastreamento 12 (4) · Observação 12 (4) · Primeiros Socorros 12 (2) · Falar do Limiar 11 (2) · Idioma grego 10 (1)
+**Perícias (75):** Machado 16 (16) · Luta Livre 16 (16) · Escudo 16 (8) · Direito (Thing) 13 (8) · Intimidação 13 (6) · Arremesso 13 (4) · Sobrevivência (Garganta) 12 (4) · Rastreamento 12 (4) · Observação 12 (4) · Primeiros Socorros 12 (2) · Falar do Limiar 11 (2) · Idioma grego 10 (1)
 **A conta:** 100 atributos + 20 vantagens + 75 perícias − 40 − 5 = **150**
+> **A Luta Livre subiu de 15 para 16, e não custou ponto nenhum.** Em 14/09/2026 o Árbitro fechou que *Luta Livre* e *Luta Romana* eram a mesma perícia com dois nomes, e que ela é **Física/Média**, como os dois livros imprimem — não Difícil, como uma decisão de 08/09 tinha fixado quando ela parecia não ter verbete. Na curva Média, os mesmos **16 pontos compram DX+3**, e a DX dele é 13. **A conta continua fechando em 150**, e o modelo ficou um degrau melhor exatamente onde um jurado morre.
+
 > Duas trocas. A **Hipoalgia** entrou no lugar do inexistente "Vigor", e é mais Tyr do que ele: dor não atordoa o jurado nem derruba a DX dele no turno seguinte. E a **Reputação +2 restrita a Gapheim vale 5, não 10** — o livro corta pela metade a fama que só um grupo grande reconhece. Os 20 pontos economizados foram todos para perícia de combate, que é onde um jurado morre.
 **Equipamento (1.000 g, Riqueza Média — e ele compra em Gapheim, sem ágio):** cota de malha com laudel, PD 3 / RD 4, 550 · escudo redondo (perfil de escudo médio) 60 · machado de guerra de uma mão 50 · capacete de couro 20. **Total 680 · saldo 320 g**
 > A malha cai para PD 1 / RD 2 contra perfurante (`03`, 9.4). No 9, onde a boca-de-poço bate perfurante, o jurado sente isso na primeira rodada.

@@ -1,5 +1,5 @@
 titulo: Retificações de livro
-versao: 9
+versao: 10
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -1025,3 +1025,88 @@ homologada como qualquer outra.
 **O que ela abre na mesa, dito na cara:** os esgrimistas passam a ter de onde vir, quem luta de mão
 vazia ganha uma escola que o aceita no primeiro dia, e **cada um deles passa a dever alguma coisa a
 alguém com nome** — que é o que a decisão 56 quis.
+
+# RETIFICAÇÃO — 14/09/2026, tarde: as quatro duplicatas que a leva das técnicas achou
+
+**A leva da manhã registrou quatro achados e não aplicou nenhum**, porque aplicar era decisão do
+Árbitro. As quatro foram levadas a ele, uma pergunta por pendência, e as quatro foram decididas no
+mesmo dia. **A Tabela de Perícias caiu de 191 para 189 perícias e subiu de 51 para 52 técnicas.**
+
+## 1. Luta Romana e Luta Livre eram a mesma perícia — ficou Luta Livre
+
+Os dois verbetes são quase palavra por palavra o mesmo, incluindo *"menos efetiva que o Judô, dá
+vantagem em Combate de Perto"*, e **os dois livros a imprimem Física/Média** — *Artes Marciais* p.35
+e *Império Romano* p.37-38. **Uma linha só, com o nome do *Artes Marciais*.**
+
+**Isto supera a decisão de 08/09/2026**, que a fixou como perícia de campanha, Física/Difícil.
+Aquela decisão foi tomada quando a perícia parecia não ter verbete em livro nenhum — e a decisão 35,
+de 13/09, já tinha declarado que nenhuma perícia da casa sobrara.
+
+**A consequência é uma só, e está num modelo publicado.** O **Jurado de Gapheim** (*Modelos de
+Personagem*, modelo 3) tem **Luta Livre por 16 pontos** e DX 13. Na curva Média, 16 pontos compram
+**DX+3**: o NH dele passa de **15 para 16**, sem gastar ponto nenhum, e **a conta continua fechando
+em 150**. O modelo ficou um degrau melhor exatamente onde a nota dele diz que um jurado morre.
+
+**Nenhuma ficha de jogador muda.** A Nix trocou por Briga e o Runirsson por Judô, os dois por
+escolha registrada em Pendência, e as duas escolhas ficam de pé — o Judô dele não é a mesma perícia,
+e é o Judô que reduz o estrago de aparar lâmina com a mão vazia.
+
+**E quatro técnicas recuperaram um pré-definido** que tinham perdido enquanto a perícia não existia:
+Chave de Braço ou de Pulso, Chave de Cabeça, Mata-Leão e Voadora.
+
+## 2. A Capa entra, e a tabela para de dizer que ela não existe
+
+**Verbete em dois livros** — *Fantasy* p.61 e *Artes Marciais* p.32 —, **Física/Média** nos dois,
+com os mesmos pré-definidos: **DX−5 · Broquel−4 · Escudo−4**. A seção 6 dizia *"Capa — não existe"*,
+e isso era falso.
+
+**O artigo 4 foi conferido antes, e é por isso que esta não foi aplicada pela Árbitra.** A correção
+beneficia o personagem do Árbitro, que cortou a Capa da ficha por esse motivo e carrega uma capa
+pesada de esgrima no equipamento. **A pergunta foi levada a ele**, e ele decidiu que a perícia entra.
+O artigo fica satisfeito porque **ele paga os 4 pontos como qualquer um** — e, com 1 ponto não gasto,
+não a compra hoje.
+
+**O motivo de fundo, e vale para a próxima vez:** esconder um verbete de dois livros porque o
+personagem do Árbitro se beneficiaria é injusto com os outros seis jogadores, que perdiam a mesma
+coisa sem que ninguém lhes explicasse por quê.
+
+**A mesa ganha o verbete inteiro:** bloqueio com metade do NH, PD 2, arremessar a capa como arma,
+envolver o braço do adversário, desequilibrar em disputa de ST com +2 — e a capa pesada se inutiliza
+com 5 pontos de dano cortante.
+
+## 3. Boxe e Pugilismo eram a mesma perícia — ficou Pugilismo
+
+Ambas Física/Média, ambas na tabela, e **o índice do próprio *Império Romano*, p.128, registra o
+verbete de Pugilismo como "Boxe"**. Uma linha só.
+
+**Ficou o nome que o livro credita aos gregos**, e não o que o outro livro imprime em inglês: o
+*Império Romano* descreve a perícia como *"forma científica de luta desarmada desenvolvida pelos
+gregos"*, e é em Ônfalos que essa luta vive nesta campanha, no circuito do pancrácio. **"Boxe" é
+palavra do século XVIII num mundo de idade do ferro.**
+
+**Quatro técnicas trocaram o pré-definido** — Jab, Soco Circular Amplo, Bloqueio com a Mão e Golpe
+com a Mão. **Nenhuma ficha muda:** ninguém tem nenhuma das duas, em ficha ou em modelo.
+
+## 4. Os três nomes do treino de mão inábil viraram um, e é técnica
+
+*Treino do Manejo de Armas com a Mão Inábil* (*Fantasy* p.63) e *Uso da Arma com a Mão Inábil*
+(*Império Romano* p.37) **saíram da lista de perícias**. Entrou **Treino da Mão Inábil**, técnica,
+**Difícil**, pré-definido *qualquer perícia de combate−4*, teto no NH da perícia-mãe, e **livre** —
+sem escola, como as outras sete genéricas. **As técnicas livres passaram de sete para oito.**
+
+**Os três verbetes descrevem exatamente a mesma coisa** — comprar de volta o redutor de −4 da mão
+ruim, arma por arma —, e **só o do *Artes Marciais* traz pré-definido e teto**, que é o que uma
+linha de tabela precisa ter. O do *Fantasy* é ainda o menos confiável dos três: o Compêndio registra
+o campo de dificuldade dele como ilegível, e **a Média que estava na tabela tinha sido deduzida, não
+lida**.
+
+## 5. O que isso deixa dito sobre o método
+
+**As quatro duplicatas entraram no mesmo dia, em 13/09**, quando a decisão 53 trouxe as entradas dos
+sete livros novos — e nenhuma foi vista, porque a conferência de então comparou **nome exato**. As
+quatro só apareceram quando a leva das técnicas comparou **por forma normalizada**, que é a terceira
+trava de conferência desta pasta.
+
+**Tabela que cresce cria nome repetido.** A conferência de colisão já era item obrigatório da bateria
+de verificação desde 13/09; o que faltava era ela olhar **dentro de cada tabela**, e não só entre
+elas.

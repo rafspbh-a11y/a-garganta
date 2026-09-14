@@ -1,5 +1,5 @@
 titulo: As Escolas de Luta
-versao: 1
+versao: 2
 atualizado: 2026-09-14
 fonte: cânone aberto de A Garganta
 
@@ -340,6 +340,7 @@ ninguém.
 | **Conservar a Arma** | perícia com arma · DX | Não perder a arma quando tentam tirá-la |
 | **Combate de Perto** | perícia com arma de perto−2 · outra−6 | Lutar dentro do hex |
 | **Luta no Solo** | qualquer perícia de combate−4 | Lutar caído |
+| **Treino da Mão Inábil** | qualquer perícia de combate−4 | Comprar de volta o redutor da mão ruim, arma por arma |
 
 **Por que são livres, e a razão importa.** Fintar, desarmar e mirar são manobra de quem sabe usar a
 arma, não doutrina de escola. Prendê-las a estilo faria com que um soldado de trinta anos de ofício
@@ -347,13 +348,12 @@ não soubesse fintar por não ter frequentado ninguém, o que é falso no livro 
 escolas continuam valendo o preço que cobram**, porque as quarenta e quatro que sobram são delas, e
 são as que decidem uma luta.
 
-> **Uma oitava técnica ficou de fora desta tabela de propósito.** O *Artes Marciais* traz **Treino
-> no Manejo de Armas com a Mão Inábil** (p.53), que é a mesma coisa que a Tabela de Perícias já
-> lista **duas vezes**, como perícia: *Treino do Manejo de Armas com a Mão Inábil* (*Fantasy* p.63)
-> e *Uso da Arma com a Mão Inábil* (*Império Romano* p.37). **Acrescentar um terceiro nome para a
-> mesma coisa numa tabela fechada seria errado**, e reduzir três a um é decisão do Árbitro, não
-> minha. Fica Pendência aberta. Até lá, compra-se pela linha que já existe.
-
+> **A oitava entrou em 14/09/2026, e com nome novo.** Ela existia três vezes: como técnica no
+> *Artes Marciais* (p.53) e como perícia em duas linhas da Tabela de Perícias — *Treino do Manejo
+> de Armas com a Mão Inábil* (*Fantasy* p.63) e *Uso da Arma com a Mão Inábil* (*Império Romano*
+> p.37). **Decisão do Árbitro:** os três verbetes descrevem a mesma coisa, e só o do *Artes
+> Marciais* traz pré-definido e teto. As duas linhas de perícia saíram e ficou **Treino da Mão
+> Inábil**, técnica, Difícil, livre.
 ---
 
 # 4 · Entrar, ser expulso, e trocar de escola
