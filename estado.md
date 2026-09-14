@@ -11,8 +11,8 @@ Se o seu estiver atrasado, leia a versão nova pela URL abaixo para esta sessão
 e avise o jogador para trocar o anexo.
 
 13-sessao-zero               v1    https://rafspbh-a11y.github.io/a-garganta/txt/13-sessao-zero.md
-19-cartao-de-combate         v2    https://rafspbh-a11y.github.io/a-garganta/txt/19-cartao-de-combate.md
-20-como-se-joga              v10   https://rafspbh-a11y.github.io/a-garganta/txt/20-como-se-joga.md
+19-cartao-de-combate         v3    https://rafspbh-a11y.github.io/a-garganta/txt/19-cartao-de-combate.md
+20-como-se-joga              v11   https://rafspbh-a11y.github.io/a-garganta/txt/20-como-se-joga.md
 02-regras-da-mesa            v7    https://rafspbh-a11y.github.io/a-garganta/txt/02-regras-da-mesa.md
 01a-biblia-do-mundo          v2    https://rafspbh-a11y.github.io/a-garganta/txt/01a-biblia-do-mundo.md
 15-geografia                 v1    https://rafspbh-a11y.github.io/a-garganta/txt/15-geografia.md

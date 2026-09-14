@@ -1,5 +1,5 @@
 titulo: Cartão de Combate
-versao: 2
+versao: 3
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -176,6 +176,42 @@ feitiço que vira contra o feiticeiro ao **demônio que aparece e ataca**.
 **Misericórdia exige alvo indefeso ou inconsciente** — **atordoado não basta**, porque atordoado
 ainda tem defesa ativa, só que a −4. Alvo parado que não te vê: **+4**, sem defesa ativa, e órgão
 vital a −3.
+
+# 7b · Surpresa, terreno e combate de perto
+
+**Surpresa parcial** — sabe que há inimigo, não sabe de onde: **perde o primeiro turno**.
+**Surpresa total** — não sabia de nada: **teste de IQ por turno** para começar a agir, e enquanto
+falhar **fica parado e sem defesa ativa**. **Reflexos em Combate testa a +6.**
+
+**Alvo parado que não te vê:** **+4**, sem defesa ativa, órgão vital a **−3**. *(Morte automática
+exige alvo **indefeso ou inconsciente** — atordoado não basta.)*
+
+| Terreno | Custa |
+| --- | --- |
+| **Ruim** — pedra solta, entulho | Deslocamento **pela metade** |
+| **Muito ruim** — lama, gelo, encosta | **um terço**, e queda em falha crítica de movimento |
+| **Aperto** — galeria de um hex | **todo combate vira de perto**; não se recua nem se rodeia |
+| **Água pela cintura** | metade do Deslocamento, **balanço a −2** |
+
+**Declare o terreno antes do primeiro dado**, como se declara chefe de encontro.
+
+**Combate de perto — mesmo hexágono.** Lança, haste e espada de duas mãos **não atacam**. Espada
+curta e rapieira, **a −4**. Faca, adaga, soco e mordida, normal. **Quem está agarrado não
+esquiva.** Agarrar e imobilizar são **Disputa de DX e de ST**, com Judô ou Briga desempatando.
+
+# 7c · O que o cartão não traz
+
+Abra o `20 — Como se joga` quando a cena pedir:
+
+- **Verificação de Pânico** (§5b) — a tabela dos 26 resultados, de atordoado a catatonia. **Peça
+  Vontade quando a cena rompe a expectativa**, não em combate comum.
+- **Fogo, veneno e doença** (§5g) — arder custa 1D por turno; veneno só entrega se o golpe passa a
+  RD; infecção testa HT +3, e **o kit dá +1 a quem o comprou**.
+- **Calor e frio** (§5h) — 1 de Fadiga por hora, e do andar 9 para baixo **armadura de metal vira
+  forno**.
+- **Quebrar coisa** (§5f) — porta de madeira é RD 2 e 10 PV; grade de ferro, RD 6 e 30. **Objeto
+  não esquiva.**
+- **As duas tabelas de golpe fulminante e a de erros críticos** (§4.8) — as três estão lá inteiras.
 
 # 8 · Fadiga, em três linhas
 

@@ -100,7 +100,7 @@ E mande a ficha ao Árbitro para homologação.
 ---
 
 titulo: Cartão de Combate
-versao: 2
+versao: 3
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -278,6 +278,42 @@ feitiço que vira contra o feiticeiro ao **demônio que aparece e ataca**.
 ainda tem defesa ativa, só que a −4. Alvo parado que não te vê: **+4**, sem defesa ativa, e órgão
 vital a −3.
 
+# 7b · Surpresa, terreno e combate de perto
+
+**Surpresa parcial** — sabe que há inimigo, não sabe de onde: **perde o primeiro turno**.
+**Surpresa total** — não sabia de nada: **teste de IQ por turno** para começar a agir, e enquanto
+falhar **fica parado e sem defesa ativa**. **Reflexos em Combate testa a +6.**
+
+**Alvo parado que não te vê:** **+4**, sem defesa ativa, órgão vital a **−3**. *(Morte automática
+exige alvo **indefeso ou inconsciente** — atordoado não basta.)*
+
+| Terreno | Custa |
+| --- | --- |
+| **Ruim** — pedra solta, entulho | Deslocamento **pela metade** |
+| **Muito ruim** — lama, gelo, encosta | **um terço**, e queda em falha crítica de movimento |
+| **Aperto** — galeria de um hex | **todo combate vira de perto**; não se recua nem se rodeia |
+| **Água pela cintura** | metade do Deslocamento, **balanço a −2** |
+
+**Declare o terreno antes do primeiro dado**, como se declara chefe de encontro.
+
+**Combate de perto — mesmo hexágono.** Lança, haste e espada de duas mãos **não atacam**. Espada
+curta e rapieira, **a −4**. Faca, adaga, soco e mordida, normal. **Quem está agarrado não
+esquiva.** Agarrar e imobilizar são **Disputa de DX e de ST**, com Judô ou Briga desempatando.
+
+# 7c · O que o cartão não traz
+
+Abra o `20 — Como se joga` quando a cena pedir:
+
+- **Verificação de Pânico** (§5b) — a tabela dos 26 resultados, de atordoado a catatonia. **Peça
+  Vontade quando a cena rompe a expectativa**, não em combate comum.
+- **Fogo, veneno e doença** (§5g) — arder custa 1D por turno; veneno só entrega se o golpe passa a
+  RD; infecção testa HT +3, e **o kit dá +1 a quem o comprou**.
+- **Calor e frio** (§5h) — 1 de Fadiga por hora, e do andar 9 para baixo **armadura de metal vira
+  forno**.
+- **Quebrar coisa** (§5f) — porta de madeira é RD 2 e 10 PV; grade de ferro, RD 6 e 30. **Objeto
+  não esquiva.**
+- **As duas tabelas de golpe fulminante e a de erros críticos** (§4.8) — as três estão lá inteiras.
+
 # 8 · Fadiga, em três linhas
 
 **Fadiga = ST.** Cada ponto de energia de magia é 1 de Fadiga. **A Fadiga não afeta o
@@ -298,7 +334,7 @@ perto, surpresa e as tabelas críticas completas moram lá. **Abra, não decore.
 ---
 
 titulo: Como se joga
-versao: 10
+versao: 11
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -1008,6 +1044,148 @@ Dano além do necessário para incapacitar o membro **é perdido**, num golpe ou
 > Use a tabela do livro para arranhão dentro da descida — ataduras e Primeiros Socorros no meio do andar 6 são jogo. Use o `03` para o que sai da descida.
 
 ---
+
+# 5b. Verificação de Pânico
+
+**Entrou em 13/09/2026.** É o teste de **Vontade** que o Mestre de Cena pede quando o personagem
+encontra o que a cabeça dele não estava preparada para ver. **Falhou, rola-se 3d na tabela abaixo
+e soma-se a margem pela qual a Verificação falhou** — falhar por 5 é muito pior que falhar por 1.
+
+**Quando se pede.** Diante de horror, de morte de companheiro, de criatura que não deveria
+existir, de queda que não teve fim. **Não se pede por combate comum** — a Garganta é um ofício, e
+quem desce sabe o que faz. Pede-se quando a cena rompe a expectativa.
+
+| 3d + margem | O que acontece |
+| --- | --- |
+| **4, 5** | Atordoado por um turno; recupera-se sozinho |
+| **6, 7** | Atordoado; **teste de IQ por turno** para voltar |
+| **8, 9** | Atordoado; **teste de Vontade por turno**, com os mesmos modificadores do teste original |
+| **10** | Atordoado **1D turnos**, depois teste de Vontade por turno |
+| **11** | Atordoado **2D turnos**, idem |
+| **12** | **Vômito** — atordoamento de 15 turnos, depois teste de HT por turno |
+| **13** | **Peculiaridade nova.** É o único jeito de passar de cinco |
+| **14, 15** | **1D de Fadiga** e 1D turnos de atordoamento |
+| **16** | 1D turnos atordoado, mais **Peculiaridade nova** |
+| **17** | **Desmaia 1D minutos**; teste de HT por minuto |
+| **18** | Desmaia, teste de HT na hora; falhando, **perde 1 PV** |
+| **19** | Desmaio de **2D minutos**, e **perde 1 PV** |
+| **20** | Desmaio beirando choque, **4D minutos**, e **1 de Fadiga** |
+| **21** | **Pânico** — corre em círculos, grita ou chora por 1D minutos; teste de IQ por minuto |
+| **22** | **Fantasia grande** nova |
+| **23** | **Fobia suave** nova, ou desvantagem mental de 10 pontos |
+| **24** | **Consequência física**: o cabelo encanece, envelhece cinco anos numa noite, fica meio surdo — **15 pontos de desvantagem física** |
+| **25** | Fobia suave que ele já tinha **vira grave**; se não tinha, ganha uma |
+| **26, 27** | Desmaia 1D minutos **e** ganha Fantasia ou desvantagem mental de 10 pontos |
+| **28** | **Coma leve** — teste de IQ a cada 30 min; depois, **−2 em tudo por 6 horas** |
+| **29** | **Coma** de 1D horas, e teste de HT para sair |
+| **30** | **Catatonia** — 1D dias olhando o vazio. **Sem cuidado médico perde 1 PV no primeiro dia, 2 no segundo**, e assim por diante |
+| **31** | **Crise** — convulsão de 1D minutos, **2D de Fadiga**; teste de HT ou mais 1D de dano |
+| **32** | **Pontada de dor** — colapso cardíaco |
+| **33** | **Pânico total** — perde a cabeça e faz a coisa mais inútil possível, inclusive pular de um penhasco para fugir |
+| **34, 35** | **Fantasia grave** ou **Fobia grave** nova |
+| **36+** | **Consequências físicas graves** — 20 pontos ou mais de desvantagem física |
+
+> **As desvantagens ganhas aqui baixam o valor em pontos do personagem**, e **o Árbitro escolhe
+> qual é** — tem de ter a ver com o que causou o susto, e de preferência com alguma peculiaridade
+> ou medo que o personagem já trazia. **Não se sorteia a cicatriz: ela se escreve.**
+
+# 5c. Combate de perto
+
+**Quando duas pessoas ocupam o mesmo hexágono.** Acontece toda vez que alguém avança para agarrar,
+que um corpo cai em cima de outro, ou que a galeria é estreita demais para recuar.
+
+- **Arma longa não serve.** Lança, arma de haste e espada de duas mãos **não atacam** de perto.
+  Faca, adaga, soco, cotovelada e mordida, sim. Espada curta e rapieira atacam **a −4**.
+- **Para sair, é preciso evadir-se do inimigo e ultrapassá-lo** — não basta andar.
+- **Quem está agarrado não esquiva.** Aparar e bloquear seguem valendo, com a arma que serve ali.
+- **Agarrar e imobilizar não são perícia**: são **Disputa de DX e depois de ST**, com **Judô** ou
+  **Briga** entrando como desempate.
+
+# 5d. Terreno e o que ele cobra
+
+| Terreno | O que custa |
+| --- | --- |
+| **Ruim** — pedra solta, raiz, entulho | **Deslocamento pela metade** |
+| **Muito ruim** — lama funda, gelo, encosta | **um terço**, e queda em falha crítica de qualquer movimento |
+| **Escuro** | redutor de iluminação em tudo, salvo quem tem **Combate às Cegas** (§4.14) |
+| **Aperto** — galeria de um hex | não há como recuar nem rodear; **todo combate vira de perto** |
+| **Água pela cintura** | Deslocamento pela metade, e **arma de balanço a −2** |
+
+**O Mestre de Cena declara o terreno antes do primeiro dado**, como declara o chefe de encontro.
+Terreno declarado depois não vale.
+
+# 5e. Surpresa
+
+**Duas situações, e elas não são a mesma coisa.**
+
+**Surpresa parcial** — o lado atacado sabe que há inimigo, mas não de onde vem. **Perde o primeiro
+turno**; a partir do segundo age normalmente.
+
+**Surpresa total** — não sabia de nada. **Testa IQ a cada turno** para começar a agir; enquanto
+falhar, **fica parado e não tem defesa ativa**. Quem tem **Reflexos em Combate** testa a **+6**.
+
+> **Alvo parado que não te vê:** **+4** para acertar, **sem defesa ativa**, e órgão vital a **−3**.
+> **Não é morte automática** — isso exige alvo **indefeso ou inconsciente**, e atordoado não basta
+> (§5.4).
+
+# 5f. Atacar coisa que não se defende
+
+Porta, corda, corrente, arma na mão do inimigo. **Objeto não esquiva**: acerta-se sem rolagem de
+defesa, e o que decide é a **RD** e os **PV** dele.
+
+| Objeto | RD | PV |
+| --- | --- | --- |
+| Corda, couro fino | 0 | 1 a 3 |
+| Porta de madeira | 2 | 10 |
+| Porta reforçada, baú | 4 | 20 |
+| Grade de ferro, corrente | 6 | 30 |
+| Parede de pedra, por hex | 8 | 50+ |
+
+**Arma em punho é caso à parte:** para quebrá-la é preciso mirá-la, a **−5**, e ela tem a RD da
+própria qualidade. **Arma de obra-prima praticamente não quebra.**
+
+# 5g. Fogo, veneno e doença
+
+## Fogo
+
+- **Estar em chamas** custa **1D por turno**, e o fogo continua até ser apagado — rolar no chão,
+  água, ou abafar leva **1 turno** com sucesso em DX.
+- **Tocha em combate** faz **1D−3** e **incendeia** com 5 ou menos em 1d.
+- **Óleo em chamas** faz **1D−1 por turno** enquanto arder, e **a armadura não protege** contra
+  fogo que entra por baixo dela.
+- **RD de metal não protege contra fogo**: esquenta. Couro protege pela metade.
+
+## Veneno
+
+**Arma envenenada** entrega o veneno **só se o golpe passar a RD**. Resistência: **teste de HT**,
+com o redutor que o veneno tiver.
+
+| Tipo | Efeito de um golpe que passa |
+| --- | --- |
+| **De sangue** | HT ou **1D de dano** por minuto, até passar num teste |
+| **De nervo** | HT ou **paralisia** por 1D minutos |
+| **Sonífero** | HT −2 ou **dorme** 1D horas |
+
+**Antídoto testa Farmacologia**, ou **Primeiros Socorros a −4** se for improvisado.
+
+## Doença
+
+Vem do ferimento sujo, da água parada e do que se come lá embaixo. **Teste de HT**, com o redutor
+da doença, **uma vez por dia**; três sucessos seguidos curam, três falhas agravam.
+
+**Infecção de ferimento:** **HT +3** para evitar, **HT** normal em área de infecção especial.
+**O kit de primeiros socorros dá +1**, e **quem não tem kit não trata**.
+
+# 5h. Calor e frio
+
+| Situação | O que cobra |
+| --- | --- |
+| **Calor extremo** | **1 de Fadiga por hora**, e o dobro com armadura de metal |
+| **Frio extremo** | **1 de Fadiga por hora**, e **1D de dano por hora** sem roupa de inverno |
+| **Água gelada** | **1D por minuto** sem proteção |
+
+**Roupa de inverno anula o frio comum.** Do andar 9 para baixo o problema **inverte-se**: a rocha
+guarda calor, e **armadura de metal vira forno**.
 
 # 6. Fadiga
 
