@@ -6015,7 +6015,7 @@ entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O `04`
 ---
 
 titulo: Tabela de Perícias
-versao: 8
+versao: 9
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -6075,8 +6075,13 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Perícia | Dificuldade | Livro |
 | --- | --- | --- |
 | Acrobacia | Difícil | Básico |
+| Adaga de Esgrima (Main Gauche) | Média | Fantasy p.62 |
+| Alvenaria | Fácil | Fantasy p.114 |
+| Análise de Estilo | Difícil (Mental) | Artes Marciais p.34 |
+| Aparar Armas de Projétil | Difícil | Artes Marciais p.34 |
 | Aparar Projéteis | Difícil | Grimório |
 | Arco | Difícil | Básico |
+| Aritmética | Fácil (Mental) | Fantasy p.114 |
 | Armas Arremessadas | Fácil | Básico |
 | Armas de Haste | Média | Básico |
 | Arremessador de Lança | Média | Básico |
@@ -6087,20 +6092,29 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Arremesso de Mágica | Fácil | Magia · Grimório |
 | Arte do Arremesso | Difícil | Artes Marciais p.40 |
 | Bastão | Difícil | Básico |
+| Bastão Curto | Difícil | Artes Marciais p.34 |
 | Besta | Fácil | Básico |
 | Boemia | Média (sai de **HT**) | Básico |
 | Boleadeiras | Média | Básico |
+| Bombeiro | Média (Mental) | Império Romano p.30 |
+| Bordado | Média | Fantasy p.114 |
+| Boxe | Média | Artes Marciais p.32 |
 | Briga | Fácil | Básico |
 | Broquel | Fácil | Básico |
 | Caligrafia | Média | Básico |
+| Caminhada | Média | Império Romano p.37 |
 | Canto | Fácil (sai de **HT**) | Básico |
 | Caratê | Difícil | Básico |
 | **Cavalgar** (por tipo de montaria) | Média | Básico |
+| Cavalgar (sem estribos) | Difícil | Império Romano p.36 |
 | Chicote | Média | Básico |
 | **Combate às Cegas** | Muito Difícil (Mental) | Império Romano p.96 — v. §14 |
 | Controle das Funções Involuntárias | Muito Difícil (Mental) | Artes Marciais p.36 |
 | Corrida | Difícil | Básico — **soma ⅛ do NH ao Deslocamento, e portanto à Esquiva** (`26` §12) |
+| Curtimento | Média | Fantasy p.114 |
 | Dança | Média | Básico |
+| Destilaria | Média (Mental) | Fantasy p.113 |
+| Engenharia (Militar) | Difícil (Mental) | Império Romano p.36 |
 | Escalada | Média | Básico |
 | Escudo | Fácil | Básico |
 | **Escultura** | Média | Básico |
@@ -6111,28 +6125,45 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Esportes (por esporte) | Média | Básico |
 | Esqui | Difícil | Básico |
 | Faca | Fácil | Básico |
+| Filosofia | Difícil (Mental) | Artes Marciais p.34 · Império Romano p.37 |
 | Fuga | Difícil | Básico |
 | Funda | Difícil | Básico |
 | Furtividade | Média | Básico |
+| Garrote | Fácil | Artes Marciais p.33 |
 | Golpe Vigoroso | Difícil (Mental) | Artes Marciais p.39 |
 | Jato Mágico | Fácil | Magia |
 | Judô | Difícil | Básico |
 | Laço (Reata) | Média | Básico |
 | Lança | Média | Básico |
 | Lança de Justa | Média | Básico |
+| Linguagem Corporal | Difícil (Mental) | Artes Marciais p.32 |
+| Luta Romana | Média | Império Romano p.37 |
 | Machado de Duas Mãos/Maça | Média | Básico |
 | Machado/Maça | Média | Básico |
 | Mangual | Difícil | Básico |
 | Marcenaria | Média | Básico |
+| Massagem | Média | Império Romano p.39 |
+| Meditação | Muito Difícil (Mental) | Artes Marciais p.34 |
 | Natação | Fácil | Básico |
 | Percepção do Corpo | Difícil | Magia |
 | Prestidigitação | Difícil | Básico |
+| Pugilismo | Média | Império Romano p.37 |
 | Punga | Difícil | Básico |
 | Rede | Difícil | Básico |
+| Redeiro | Fácil | Fantasy p.114 |
+| Regras de Torneio | Fácil (Mental) | Artes Marciais p.35 |
 | **Remo/Vela** | Média | Básico p.68 |
+| Sacar Rápido (faca borboleta) | Fácil | Artes Marciais p.32 |
 | **Sacar Rápido** (por tipo de arma) | Fácil | Básico |
 | Salto | Fácil | Básico |
 | Sopro Mágico | Fácil | Magia |
+| Suscetibilidade | Muito Difícil (Mental) | Artes Marciais p.34 |
+| Tecelagem | Fácil | Fantasy p.114 |
+| Teoria da Conspiração | Muito Difícil (Mental) | Illuminati p.31 |
+| Tinturaria | Média (Mental) | Fantasy p.113 |
+| Treino do Manejo de Armas com a Mão Inábil | Média | Fantasy p.63 |
+| Uso da Arma com a Mão Inábil | Média | Império Romano p.37 |
+| Vidraria | Difícil | Fantasy p.114 |
 | Vôo | Média | Grimório p.6 |
 | Zarabatana | Difícil | Básico |
 
@@ -8006,7 +8037,7 @@ Estão marcados com **▲**.
 ---
 
 titulo: Tabela de Desvantagens
-versao: 7
+versao: 8
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -8044,10 +8075,12 @@ fonte: cânone aberto de A Garganta
 | --- | --- | --- |
 | Albinismo | −10 | 1 de dano por 30 min ao sol (15 min no verão); **−2 em Visão e em arma de longo alcance** ao sol |
 | Alcoolismo | −15 / −20 | Teste de Vontade a cada exposição; falha = porre de 2D horas e ressaca pelo dobro, com **−3 em todos os atributos e perícias** |
+| **Amnésia** | **−10 / −25** | *Illuminati* p.30. **Parcial:** o jogador vê a ficha, e o Árbitro esconde **até 30 pontos de desvantagem** que o personagem tem e não sabe. **Total:** o jogador não vê a ficha. **Carta, artigo 16: nenhuma das duas se atribui — só existem se o jogador as escolher** |
 | Analfabetismo | −10 | Não lê nem escreve. **Na Garganta vale −10**, porque as sete cidades são cultura letrada |
 | Aparência: Desagradável / Feio / Hediondo | −5 / −10 / −20 | −1 (só com a própria raça) / −2 / **−4** em todo teste de reação |
 | Avareza | −10 | Teste de Vontade para gastar dinheiro; **−5 ou pior** se a despesa for grande |
 | Azar | −10 | **Um evento adverso por sessão**, escolhido pelo Árbitro. Ele não pode matar você com isso |
+| **Boemia Compulsiva** | **−5 a −15** | *Império Romano* p.35. Não recusa festa, banquete nem rodada — e na Garganta a festa é onde a Guilda ouve |
 | Cegueira | −50 | **−6 em toda perícia de combate**; +1 de reação em país civilizado; sem penalidade por escuridão |
 | Cleptomania | −15 | Teste de Vontade **com até −3** sempre que houver chance de roubar |
 | Cobiça | −15 | Teste de Vontade para resistir; **−5 ou mais** para o pobre diante de prêmio rico. Honestidade dá +5 e +10 |
@@ -8074,6 +8107,7 @@ fonte: cânone aberto de A Garganta
 | Excesso de Peso | −5 | Peso +30%, conta como Carga; **+2 em Natação**; −1 de reação onde isso importa |
 | Fanatismo | −15 | A causa vem antes de tudo, inclusive da própria vida |
 | Fanfarronice | −10 | Teste de Vontade para evitar a bravata; **−2 em todo teste de reação** |
+| **Fantasia: \"augúrio é bobagem\"** | **−10** | *Império Romano* p.109. Recusa-se a acreditar em presságio, oráculo ou sinal — **num mundo onde os deuses são demonstráveis e Presságio é perícia de livro.** Age contra todo aviso que venha por essa via |
 | Fantasias | −1 a −15 | −1 sem redutor · −5 dá **−1** de reação · −10 dá **−2** · −15 dá **−3** |
 | **Fobias** | **variável** | Ver §3 |
 | Fúria | −15 | Teste de Vontade sempre que atingido **mais de 3 vezes numa rodada**. Enfurecido faz **Ataque Total**; imune a atordoamento e a penalidade de ferimento; testa para viver contra **HT+4**; morre em −5×HT. Incompatível com Mau Humor |
@@ -8086,6 +8120,7 @@ fonte: cânone aberto de A Garganta
 | Honestidade | −10 | Teste de IQ diante de lei irracional; teste de Vontade para não se entregar depois. **+1** de reação onde não há combate, **+3** em questão de honra |
 | Idade | −3 por ano acima de 50 | Jogadas de envelhecimento por atributo |
 | Impulsividade | −10 | Teste de Vontade para conseguir esperar e ponderar |
+| **Incompetência** | **−1 por perícia** | *Viagem no Tempo* p.33. Não consegue aprender aquela perícia, e a tenta **pior que um leigo** |
 | **Inimigo** | **variável** | Ver §3. **Máximo 2, ou 60 pontos** |
 | **Inimigos Desconhecidos** | variável | *Illuminati* p.31. Inimigo de quem **não se sabe o nome nem o lugar**. O jogador diz quanto vale; **o Árbitro monta o grupo em segredo** |
 | Intolerância | −5 / −10 | Total: **−3** de reação a qualquer um de fora. Religiosa a uma seita: −5. A todo não-membro: −10 |
@@ -8098,6 +8133,7 @@ fonte: cânone aberto de A Garganta
 | Magreza | −5 | HT máxima 14; **ST −2** para dar e resistir a Encontrão; **−2** em Disfarce e Sombra em multidão |
 | Maneta (um braço) | −20 | **−4 em DX** nos casos limítrofes; nada que exija duas mãos, **inclusive espada com escudo** |
 | Maneta (uma mão) | −15 | Prótese: **−1** de reação e DX reduzida em 2 (mão) ou 4 (garra) |
+| **Marca Registrada** | **−1 a −15** | *Artes Marciais* p.30. Deixa um símbolo no lugar da ação, como assinatura. Quanto mais elaborado e mais obrigatório, mais vale — e nesta campanha ele chega ao Registro da Guilda antes do autor |
 | Mau Humor | −10 | Teste de Vontade em situação de tensão. Incompatível com Fúria |
 | Megalomania | −10 | **+2** de reação de jovens e fanáticos, **−2** de todo o resto |
 | Mentir Compulsivamente | −15 | Teste contra **Vontade−4** para dizer uma verdade simples |
@@ -8122,6 +8158,7 @@ fonte: cânone aberto de A Garganta
 | Teimosia | −5 | **−1** nas reações das outras pessoas |
 | Timidez | −5 / −10 / −15 | **−1**, **−2** ou impossível em Dissimulação, Trovador, Boemia, Diplomacia, Lábia, Liderança, Comércio, Política, Trato Social, Sex-Appeal e Pedagogia |
 | Veracidade | −5 | Teste de Vontade para calar uma verdade; **−5** para de fato mentir |
+| **Viciado no Reconhecimento Público** | **−15** | *Império Romano* p.36 · *Artes Marciais* p.28 chama de **Luta pela Fama** — é a mesma. Caso agudo de Excesso de Confiança: insiste em estar em evidência, corre todo risco, lidera o ataque |
 | Vício | variável | Ver §3 |
 | Vontade Fraca | −8/nível | **−1 por nível** em todo teste de Vontade. Incompatível com Força de Vontade |
 | Zarolho | −15 | **DX −1** em combate; **−3** com projétil, arremesso e condução rápida; −1 de reação |
@@ -8252,6 +8289,20 @@ fonte: cânone aberto de A Garganta
 | altamente viciadora (−5 na Regeneração) | −5 |
 | totalmente viciadora (−10 na Regeneração) | −10 |
 | droga legal no mundo de origem | **+5** |
+
+## O que ficou de fora, e por quê
+
+**Decidido em 13/09/2026, ao aplicar o filtro da decisão 53 sobre os nove livros que não são o
+Módulo Básico.** Fica registrado para que o pedido não volte sem resposta.
+
+| O que | Por que não entra |
+| --- | --- |
+| **Salta-Tempos, Salta-Dimensões, Retrogressão, Arrebatador, Cronolocalização** | Entregariam **por vantagem** o que o colégio de **Acesso** só dá por **licença da Guilda e rank B**. Tempo e planos passam por uma porta só |
+| **Multimilionário** | Vinte e cinco pontos por nível, e cada nível **multiplica o patrimônio por dez**. Não quebra combate: **quebra a Economia e Tabelas**, que é o que faz o espólio importar. Fortuna grande existe nas Casas e nas cidades, não em ficha |
+| **Bloqueio Mental, Percepção Corporal, Supersensitivo, Viciado em Telepatia, Sonâmbulo** | São de *Psiquismo*, e **ficam atrás da porta do psí** com os Poderes — nada daquele livro entra antes de a porta abrir. *(A **Resistência Psíquica** continua livre e comprável por qualquer um: ela já está no `32` §8, e é defesa, não poder.)* |
+| **Pontos de Pressão, Pontos Secretos, Punhos Voadores, Mãos Hipnóticas, Resistência Mental, Deslocar, Desviar** | Dependem de **energia interior**, e a decisão 34 deixou o cinematográfico fora. Nesta campanha o sobrenatural passa por Casa, por Marca e por Dever |
+| **No Limite, Circunspecção** | Remetem ao **Apêndice do Módulo Básico, p. A-9 e A-10** — o apêndice que **não existe no exemplar da campanha**. Entrariam com a regra ilegível |
+| **Atirador de Escol, Treinado por um Mestre, Fleuma** | Cinematográficas no próprio livro (decisão 34). E Atirador de Escol é precisão com **arma de fogo**, que não existe aqui |
 
 ## As cinco limitações de Aptidão Mágica
 

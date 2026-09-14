@@ -1,5 +1,5 @@
 titulo: Tabela de Perícias
-versao: 8
+versao: 9
 atualizado: 2026-09-13
 fonte: cânone aberto de A Garganta
 
@@ -59,8 +59,13 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Perícia | Dificuldade | Livro |
 | --- | --- | --- |
 | Acrobacia | Difícil | Básico |
+| Adaga de Esgrima (Main Gauche) | Média | Fantasy p.62 |
+| Alvenaria | Fácil | Fantasy p.114 |
+| Análise de Estilo | Difícil (Mental) | Artes Marciais p.34 |
+| Aparar Armas de Projétil | Difícil | Artes Marciais p.34 |
 | Aparar Projéteis | Difícil | Grimório |
 | Arco | Difícil | Básico |
+| Aritmética | Fácil (Mental) | Fantasy p.114 |
 | Armas Arremessadas | Fácil | Básico |
 | Armas de Haste | Média | Básico |
 | Arremessador de Lança | Média | Básico |
@@ -71,20 +76,29 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Arremesso de Mágica | Fácil | Magia · Grimório |
 | Arte do Arremesso | Difícil | Artes Marciais p.40 |
 | Bastão | Difícil | Básico |
+| Bastão Curto | Difícil | Artes Marciais p.34 |
 | Besta | Fácil | Básico |
 | Boemia | Média (sai de **HT**) | Básico |
 | Boleadeiras | Média | Básico |
+| Bombeiro | Média (Mental) | Império Romano p.30 |
+| Bordado | Média | Fantasy p.114 |
+| Boxe | Média | Artes Marciais p.32 |
 | Briga | Fácil | Básico |
 | Broquel | Fácil | Básico |
 | Caligrafia | Média | Básico |
+| Caminhada | Média | Império Romano p.37 |
 | Canto | Fácil (sai de **HT**) | Básico |
 | Caratê | Difícil | Básico |
 | **Cavalgar** (por tipo de montaria) | Média | Básico |
+| Cavalgar (sem estribos) | Difícil | Império Romano p.36 |
 | Chicote | Média | Básico |
 | **Combate às Cegas** | Muito Difícil (Mental) | Império Romano p.96 — v. §14 |
 | Controle das Funções Involuntárias | Muito Difícil (Mental) | Artes Marciais p.36 |
 | Corrida | Difícil | Básico — **soma ⅛ do NH ao Deslocamento, e portanto à Esquiva** (`26` §12) |
+| Curtimento | Média | Fantasy p.114 |
 | Dança | Média | Básico |
+| Destilaria | Média (Mental) | Fantasy p.113 |
+| Engenharia (Militar) | Difícil (Mental) | Império Romano p.36 |
 | Escalada | Média | Básico |
 | Escudo | Fácil | Básico |
 | **Escultura** | Média | Básico |
@@ -95,28 +109,45 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Esportes (por esporte) | Média | Básico |
 | Esqui | Difícil | Básico |
 | Faca | Fácil | Básico |
+| Filosofia | Difícil (Mental) | Artes Marciais p.34 · Império Romano p.37 |
 | Fuga | Difícil | Básico |
 | Funda | Difícil | Básico |
 | Furtividade | Média | Básico |
+| Garrote | Fácil | Artes Marciais p.33 |
 | Golpe Vigoroso | Difícil (Mental) | Artes Marciais p.39 |
 | Jato Mágico | Fácil | Magia |
 | Judô | Difícil | Básico |
 | Laço (Reata) | Média | Básico |
 | Lança | Média | Básico |
 | Lança de Justa | Média | Básico |
+| Linguagem Corporal | Difícil (Mental) | Artes Marciais p.32 |
+| Luta Romana | Média | Império Romano p.37 |
 | Machado de Duas Mãos/Maça | Média | Básico |
 | Machado/Maça | Média | Básico |
 | Mangual | Difícil | Básico |
 | Marcenaria | Média | Básico |
+| Massagem | Média | Império Romano p.39 |
+| Meditação | Muito Difícil (Mental) | Artes Marciais p.34 |
 | Natação | Fácil | Básico |
 | Percepção do Corpo | Difícil | Magia |
 | Prestidigitação | Difícil | Básico |
+| Pugilismo | Média | Império Romano p.37 |
 | Punga | Difícil | Básico |
 | Rede | Difícil | Básico |
+| Redeiro | Fácil | Fantasy p.114 |
+| Regras de Torneio | Fácil (Mental) | Artes Marciais p.35 |
 | **Remo/Vela** | Média | Básico p.68 |
+| Sacar Rápido (faca borboleta) | Fácil | Artes Marciais p.32 |
 | **Sacar Rápido** (por tipo de arma) | Fácil | Básico |
 | Salto | Fácil | Básico |
 | Sopro Mágico | Fácil | Magia |
+| Suscetibilidade | Muito Difícil (Mental) | Artes Marciais p.34 |
+| Tecelagem | Fácil | Fantasy p.114 |
+| Teoria da Conspiração | Muito Difícil (Mental) | Illuminati p.31 |
+| Tinturaria | Média (Mental) | Fantasy p.113 |
+| Treino do Manejo de Armas com a Mão Inábil | Média | Fantasy p.63 |
+| Uso da Arma com a Mão Inábil | Média | Império Romano p.37 |
+| Vidraria | Difícil | Fantasy p.114 |
 | Vôo | Média | Grimório p.6 |
 | Zarabatana | Difícil | Básico |
 
