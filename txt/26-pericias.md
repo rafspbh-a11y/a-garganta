@@ -89,6 +89,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Espadas Curtas | Média | Básico |
 | Espadas de Duas Mãos | Média | Básico |
 | Espadas de Lâmina Larga | Média | Básico |
+| Esportes (por esporte) | Média | Básico |
 | Esqui | Difícil | Básico |
 | Faca | Fácil | Básico |
 | Fuga | Difícil | Básico |
@@ -96,6 +97,7 @@ Acima de +5: **4 pontos** por nível em Muito Difícil, **2 pontos** nas demais.
 | Furtividade | Média | Básico |
 | Jato Mágico | Fácil | Magia |
 | Judô | Difícil | Básico |
+| Laço (Reata) | Média | Básico |
 | Lança | Média | Básico |
 | Lança de Justa | Média | Básico |
 | Machado de Duas Mãos/Maça | Média | Básico |
@@ -280,6 +282,7 @@ Todos estiveram em uso no cânone e foram corrigidos em 10/09/2026.
 | Capa | **não existe** — a Esgrima já dá duas aparadas por rodada |
 | Conhecimento de Área | **Conhecimento do Terreno** |
 | Direito Comparado · Direito (Thing) | **Jurisprudência** |
+| Biologia | **não existe como perícia geral** — o *Módulo Básico* p.60 diz que o campo é coberto por perícias independentes (Naturalista, Medicina, Veterinária). Quem quiser "saber de bicho" compra a perícia do bicho |
 | Escrita Antiga | **não existe** — é a língua + Alfabetização |
 | Etiqueta | **Trato Social** |
 | Herança Antiga | **Arqueologia** |
