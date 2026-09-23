@@ -1,6 +1,6 @@
 titulo: Regra de Escrita da Ficha
 versao: 7
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha

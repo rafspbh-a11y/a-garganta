@@ -1,6 +1,6 @@
 titulo: Geografia: a Coroa e as Sete Cidades
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Geografia: a Coroa e as Sete Cidades

@@ -1,6 +1,6 @@
 titulo: Carta do Árbitro
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Carta do Árbitro

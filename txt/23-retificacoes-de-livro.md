@@ -1,6 +1,6 @@
 titulo: Retificações de livro
 versao: 12
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Retificações de livro

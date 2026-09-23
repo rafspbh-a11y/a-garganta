@@ -1,6 +1,6 @@
 titulo: Índice e Regra de Escrita
-versao: 10
-atualizado: 2026-09-14
+versao: 11
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Índice e Regra de Escrita
@@ -41,7 +41,7 @@ Abra a página, leia a linha que precisa, feche. São tabelas e catálogos: ning
 | **Economia e Tabelas** | Economia | v8 |
 | **Loot, Balcão e Registro** | Economia | v4 |
 | **Andares 1 a 12** | A Garganta | v2 |
-| **Bestiário, andares 1 a 12** | A Garganta | v3 |
+| **Bestiário, andares 1 a 12** | A Garganta | v4 |
 | **Muda dos Andares** | A Garganta | v5 |
 | **NPCs Nomeados** | O mundo | v2 |
 | **Geografia: a Coroa e as Sete Cidades** | O mundo | v1 |
@@ -71,7 +71,7 @@ Histórico e método: o que o cânone decidiu, quando, e por quê. Nenhuma sess�
 | **Retificações de livro** | Decisões e retificações | v12 |
 | **As decisões de 10/09/2026** | Decisões e retificações | v1 |
 | **A Dádiva de Zeus e o recorte de Clima** | Decisões e retificações | v1 |
-| **Índice e Regra de Escrita** | A mesa | v10 |
+| **Índice e Regra de Escrita** | A mesa | v11 |
 
 **32 documentos, e esta lista é gerada.** Ela sai da mesma fonte que decide o que vai ao ar, então não há como ela envelhecer: documento novo aparece aqui sozinho, na rodada em que entrar.
 

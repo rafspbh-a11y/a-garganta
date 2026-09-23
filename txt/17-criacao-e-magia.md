@@ -1,6 +1,6 @@
 titulo: Guia de Criação e Manual de Magia
 versao: 11
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Guia de Criação e Manual de Magia

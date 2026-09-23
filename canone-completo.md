@@ -2,13 +2,13 @@
 
 Este arquivo reúne todos os documentos da Camada Aberta, cada um com o seu
 cabeçalho e o seu número de versão. Anexe-o ao seu Projeto do Claude.
-Gerado em 2026-09-14. Confira a atualização em https://rafspbh-a11y.github.io/a-garganta/estado.md
+Gerado em 2026-09-20. Confira a atualização em https://rafspbh-a11y.github.io/a-garganta/estado.md
 
 ---
 
 titulo: Sessão Zero
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Sessão Zero
@@ -101,7 +101,7 @@ E mande a ficha ao Árbitro para homologação.
 
 titulo: Cartão de Combate
 versao: 3
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Cartão de Combate
@@ -335,7 +335,7 @@ perto, surpresa e as tabelas críticas completas moram lá. **Abra, não decore.
 
 titulo: Como se joga
 versao: 11
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Como se joga
@@ -1333,7 +1333,7 @@ Por registro, conforme o `14`: linha corrigida não some sem que fique dito o qu
 
 titulo: Regras da Mesa
 versao: 7
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Regras da Mesa
@@ -1728,7 +1728,7 @@ O passo 10 não é regra de GURPS. É da casa, e não é opcional: é o que faz 
 
 titulo: Bíblia do Mundo
 versao: 2
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Bíblia do Mundo
@@ -1987,7 +1987,7 @@ Isso mantém os andares 1 a 10 permanentemente relevantes e dá trabalho digno e
 
 titulo: Geografia: a Coroa e as Sete Cidades
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Geografia: a Coroa e as Sete Cidades
@@ -2115,7 +2115,7 @@ Distrito circular na boca da Garganta, dentro da Coroa. Cerca de quatro quilôme
 
 titulo: NPCs Nomeados
 versao: 2
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # NPCs Nomeados
@@ -2370,7 +2370,7 @@ Foi da esquadra de Funmilayo por quatro anos e rompeu com ela em praça, na fren
 
 titulo: Andares 1 a 12
 versao: 2
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Andares 1 a 12
@@ -2548,8 +2548,8 @@ Do 11 em diante, o tom muda. Menos trabalho, mais descoberta, e o primeiro sinal
 ---
 
 titulo: Bestiário, andares 1 a 12
-versao: 3
-atualizado: 2026-09-14
+versao: 4
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Bestiário, andares 1 a 12
@@ -2769,7 +2769,7 @@ Não há descrição oficial. Há seis relatos registrados por Ámenti, e eles n
 >
 > O que não se explica é o resto. Um draugr nórdico não tem porta próxima nenhuma. Um rakshasa, muito menos. Narre o jiangshi como rotina desagradável e os outros dois como coisa que não fecha — porque é do contraste entre eles que sai a descoberta, e um Mestre que trate tudo como igualmente errado apaga a descoberta inteira sem perceber.
 
-O Mestre deve tratar draugr e rakshasa como **evento**, não como combate comum — e o jogador que perceber o padrão está segurando informação política de valor real.
+As três **rolam como qualquer outro encontro**: aparecem pela tabela do andar, lutam pelas próprias regras e morrem pelas regras de todos. O que as separa não é a mecânica — é o que significam. Narre o combate como combate; e trate o **achado** como o que ele é, porque o jogador que perceber o padrão está segurando informação política de valor real.
 
 ## DRAUGR
 
@@ -2899,7 +2899,7 @@ A faixa acima serve para uma coisa só: dizer ao jogador de rank C que o 13 não
 
 titulo: Muda dos Andares
 versao: 5
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Muda dos Andares
@@ -3064,7 +3064,7 @@ Só baú com item mágico tem tranca. O jogador escolhe como abrir **antes do da
 
 titulo: Guia de Criação e Manual de Magia
 versao: 11
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Guia de Criação e Manual de Magia
@@ -3514,7 +3514,7 @@ estavam.
 
 titulo: Improviso, Círculo e Lavra
 versao: 4
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Improviso, Círculo e Lavra
@@ -3821,7 +3821,7 @@ decisão a tomar: são gatilhos**, que disparam quando a mesa chegar neles.
 
 titulo: Os Povos que Subiram
 versao: 2
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Os Povos que Subiram
@@ -4321,7 +4321,7 @@ uma a uma. **Nenhuma proposta segue aberta.**
 
 titulo: Modelos de Personagem
 versao: 2
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Modelos de Personagem
@@ -4444,7 +4444,7 @@ E lembre do **passo 11** da criação: dois NPCs que te conhecem, uma dívida, u
 
 titulo: As Escolas de Luta
 versao: 3
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # As Escolas de Luta
@@ -4953,7 +4953,7 @@ estiveram. **Casa que já tem escola não ganha uma segunda.**
 
 titulo: Ficha Pública e Notoriedade
 versao: 2
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Ficha Pública e Notoriedade
@@ -5002,7 +5002,7 @@ O registro é da Guilda, e a Guilda não apaga. Quem quiser suprimir uma linha �
 
 titulo: Gabarito de ficha pública
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Gabarito de ficha pública
@@ -5082,7 +5082,7 @@ Aparecer na lista é recompensa. Um rank F tem quatro linhas, e é isso que faz 
 
 titulo: Regra de Escrita da Ficha
 versao: 7
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Regra de Escrita da Ficha
@@ -5221,7 +5221,7 @@ Antes de qualquer ficha entrar em mesa, nesta ordem:
 
 titulo: A Magia no Mundo e as Sete Forjas
 versao: 3
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # A Magia no Mundo e as Sete Forjas
@@ -5343,7 +5343,7 @@ Ilê Ifé não encanta: **assenta**. O item é consagrado a um orixá — a lâm
 
 titulo: Economia e Tabelas
 versao: 8
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Economia e Tabelas
@@ -5799,7 +5799,7 @@ Contratado que consta em ficha homologada é NPC nomeado e **morre em −HT** (`
 
 titulo: Loot, Balcão e Registro
 versao: 4
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Loot, Balcão e Registro
@@ -6079,7 +6079,7 @@ companheiro, a mochila do morto. E aí é uma soma, contra esta tabela.
 
 titulo: Carta do Árbitro
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Carta do Árbitro
@@ -6126,7 +6126,7 @@ Quando esta Carta e o cânone entrarem em conflito, prevalece esta Carta, e o co
 
 titulo: Protocolo do Mestre de Cena
 versao: 13
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Protocolo do Mestre de Cena
@@ -6434,7 +6434,7 @@ Abra Pendência e pergunte ao Árbitro. Um jogo travado por meia hora é melhor 
 
 titulo: Entrega do Relatório pelo Google Drive
 versao: 8
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Entrega do Relatório pelo Google Drive
@@ -6590,8 +6590,8 @@ Se o personagem morto era de **rank B ou superior**, a opção não-humana fica 
 ---
 
 titulo: Índice e Regra de Escrita
-versao: 10
-atualizado: 2026-09-14
+versao: 11
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Índice e Regra de Escrita
@@ -6632,7 +6632,7 @@ Abra a página, leia a linha que precisa, feche. São tabelas e catálogos: ning
 | **Economia e Tabelas** | Economia | v8 |
 | **Loot, Balcão e Registro** | Economia | v4 |
 | **Andares 1 a 12** | A Garganta | v2 |
-| **Bestiário, andares 1 a 12** | A Garganta | v3 |
+| **Bestiário, andares 1 a 12** | A Garganta | v4 |
 | **Muda dos Andares** | A Garganta | v5 |
 | **NPCs Nomeados** | O mundo | v2 |
 | **Geografia: a Coroa e as Sete Cidades** | O mundo | v1 |
@@ -6662,7 +6662,7 @@ Histórico e método: o que o cânone decidiu, quando, e por quê. Nenhuma sess�
 | **Retificações de livro** | Decisões e retificações | v12 |
 | **As decisões de 10/09/2026** | Decisões e retificações | v1 |
 | **A Dádiva de Zeus e o recorte de Clima** | Decisões e retificações | v1 |
-| **Índice e Regra de Escrita** | A mesa | v10 |
+| **Índice e Regra de Escrita** | A mesa | v11 |
 
 **32 documentos, e esta lista é gerada.** Ela sai da mesma fonte que decide o que vai ao ar, então não há como ela envelhecer: documento novo aparece aqui sozinho, na rodada em que entrar.
 
@@ -6878,7 +6878,7 @@ entrou no reservado fala com o Árbitro, e sai — mesmo sem nomear nada. O `04`
 
 titulo: Tabela de Perícias
 versao: 13
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Tabela de Perícias
@@ -7603,7 +7603,7 @@ tabela tem**:
 
 titulo: Tabela de Mágicas
 versao: 11
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Tabela de Mágicas
@@ -8806,7 +8806,7 @@ E as correções de grafia — a Relação saiu do arquivo com erro de leitura, 
 
 titulo: Tabela de Vantagens
 versao: 7
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Tabela de Vantagens
@@ -9092,7 +9092,7 @@ Estão marcados com **▲**.
 
 titulo: Tabela de Desvantagens
 versao: 8
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Tabela de Desvantagens
@@ -9402,7 +9402,7 @@ nenhuma limitação baixa a Aptidão abaixo de 5 pontos no primeiro nível e 3 n
 
 titulo: Retificações de livro
 versao: 12
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Retificações de livro
@@ -10671,7 +10671,7 @@ de Cena.
 
 titulo: As decisões de 10/09/2026
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # As decisões de 10/09/2026
@@ -10940,7 +10940,7 @@ A **15** renomeia duas das quatro perícias da casa criadas na decisão 4, porqu
 
 titulo: A Dádiva de Zeus e o recorte de Clima
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # A Dádiva de Zeus e o recorte de Clima
@@ -11090,7 +11090,7 @@ As cidades que precisam de água — Deméter pelo grão, Tláloc e Oxum pela pr
 titulo: Boletim da Semana 1
 semana: 1
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 
 **Onde mora:** `Canone/Estado-do-Mundo/Boletins/`, e no ar em `boletim-atual.md`.
 

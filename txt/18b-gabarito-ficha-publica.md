@@ -1,6 +1,6 @@
 titulo: Gabarito de ficha pública
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Gabarito de ficha pública

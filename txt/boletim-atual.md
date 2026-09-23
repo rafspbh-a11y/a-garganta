@@ -1,7 +1,7 @@
 titulo: Boletim da Semana 1
 semana: 1
 versao: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 
 **Onde mora:** `Canone/Estado-do-Mundo/Boletins/`, e no ar em `boletim-atual.md`.
 

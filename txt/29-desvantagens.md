@@ -1,6 +1,6 @@
 titulo: Tabela de Desvantagens
 versao: 8
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Tabela de Desvantagens

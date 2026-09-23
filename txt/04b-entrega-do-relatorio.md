@@ -1,6 +1,6 @@
 titulo: Entrega do Relatório pelo Google Drive
 versao: 8
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Entrega do Relatório pelo Google Drive

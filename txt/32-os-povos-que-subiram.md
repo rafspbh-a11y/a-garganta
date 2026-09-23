@@ -1,6 +1,6 @@
 titulo: Os Povos que Subiram
 versao: 2
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Os Povos que Subiram

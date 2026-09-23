@@ -1,5 +1,5 @@
 titulo: Índice do cânone aberto
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 
 # Índice do cânone aberto de A Garganta
 

@@ -1,6 +1,6 @@
 titulo: Bestiário, andares 1 a 12
-versao: 3
-atualizado: 2026-09-14
+versao: 4
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Bestiário, andares 1 a 12
@@ -220,7 +220,7 @@ Não há descrição oficial. Há seis relatos registrados por Ámenti, e eles n
 >
 > O que não se explica é o resto. Um draugr nórdico não tem porta próxima nenhuma. Um rakshasa, muito menos. Narre o jiangshi como rotina desagradável e os outros dois como coisa que não fecha — porque é do contraste entre eles que sai a descoberta, e um Mestre que trate tudo como igualmente errado apaga a descoberta inteira sem perceber.
 
-O Mestre deve tratar draugr e rakshasa como **evento**, não como combate comum — e o jogador que perceber o padrão está segurando informação política de valor real.
+As três **rolam como qualquer outro encontro**: aparecem pela tabela do andar, lutam pelas próprias regras e morrem pelas regras de todos. O que as separa não é a mecânica — é o que significam. Narre o combate como combate; e trate o **achado** como o que ele é, porque o jogador que perceber o padrão está segurando informação política de valor real.
 
 ## DRAUGR
 

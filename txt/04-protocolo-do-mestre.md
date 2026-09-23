@@ -1,6 +1,6 @@
 titulo: Protocolo do Mestre de Cena
 versao: 13
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Protocolo do Mestre de Cena

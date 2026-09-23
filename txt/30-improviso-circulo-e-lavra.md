@@ -1,6 +1,6 @@
 titulo: Improviso, Círculo e Lavra
 versao: 4
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Improviso, Círculo e Lavra

@@ -1,7 +1,7 @@
 # A Garganta — estado do cânone
 
 semana-atual: 1
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 boletim: https://rafspbh-a11y.github.io/a-garganta/txt/boletim-atual.md
 
 ## versões dos documentos
@@ -18,7 +18,7 @@ e avise o jogador para trocar o anexo.
 15-geografia                 v1    https://rafspbh-a11y.github.io/a-garganta/txt/15-geografia.md
 07a-npcs-nomeados            v2    https://rafspbh-a11y.github.io/a-garganta/txt/07a-npcs-nomeados.md
 05-andares-1-a-12            v2    https://rafspbh-a11y.github.io/a-garganta/txt/05-andares-1-a-12.md
-06-bestiario                 v3    https://rafspbh-a11y.github.io/a-garganta/txt/06-bestiario.md
+06-bestiario                 v4    https://rafspbh-a11y.github.io/a-garganta/txt/06-bestiario.md
 06b-muda-dos-andares         v5    https://rafspbh-a11y.github.io/a-garganta/txt/06b-muda-dos-andares.md
 17-criacao-e-magia           v11   https://rafspbh-a11y.github.io/a-garganta/txt/17-criacao-e-magia.md
 30-improviso-circulo-e-lavra v4    https://rafspbh-a11y.github.io/a-garganta/txt/30-improviso-circulo-e-lavra.md
@@ -34,7 +34,7 @@ e avise o jogador para trocar o anexo.
 10-carta-do-arbitro          v1    https://rafspbh-a11y.github.io/a-garganta/txt/10-carta-do-arbitro.md
 04-protocolo-do-mestre       v13   https://rafspbh-a11y.github.io/a-garganta/txt/04-protocolo-do-mestre.md
 04b-entrega-do-relatorio     v8    https://rafspbh-a11y.github.io/a-garganta/txt/04b-entrega-do-relatorio.md
-14-indice                    v10   https://rafspbh-a11y.github.io/a-garganta/txt/14-indice.md
+14-indice                    v11   https://rafspbh-a11y.github.io/a-garganta/txt/14-indice.md
 26-pericias                  v13   https://rafspbh-a11y.github.io/a-garganta/txt/26-pericias.md
 27-magias                    v11   https://rafspbh-a11y.github.io/a-garganta/txt/27-magias.md
 28-vantagens                 v7    https://rafspbh-a11y.github.io/a-garganta/txt/28-vantagens.md

@@ -1,6 +1,6 @@
 titulo: Modelos de Personagem
 versao: 2
-atualizado: 2026-09-14
+atualizado: 2026-09-20
 fonte: cânone aberto de A Garganta
 
 # Modelos de Personagem
